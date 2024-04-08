@@ -1,22 +1,16 @@
-name: Manual workflow
+name: Daily Workflow at 7 AM Beijing Time
 
 on:
-  workflow_dispatch:
-    inputs:
-      name:
-        description: 'Person to greet'
-        default: 'World'
-        required: true
-        type: string
+  schedule:
+    - cron: '0 23 * * *'  # Runs at 23:00 UTC, which is 7:00 AM Beijing Time
 
 jobs:
-  greet:
+  my_job:
     runs-on: ubuntu-latest
 
     steps:
     - name: Checkout repository
       uses: actions/checkout@v2
-
 
     - name: Set up Python
       uses: actions/setup-python@v2
@@ -26,17 +20,15 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install arxiv  # 确保安装 arxiv 包
+        pip install arxiv  # Replace with your actual dependencies
 
-    - name: Send greeting
-      env:
-        PERSON_NAME: ${{ github.event.inputs.name }}
-      run: python daily_arxiv.py
-      
+    - name: Execute script
+      run: python your_script.py  # Replace with your actual script
+
     - name: Commit and push if changed
       run: |
         git config --global user.email "actions@github.com"
         git config --global user.name "GitHub Actions"
-        git add README.md
-        git commit -m "Update README.md with latest arXiv papers" -a || echo "No changes to commit"
+        git add .  # Add changes to commit
+        git commit -m "Automated update" -a || echo "No changes to commit"
         git push
