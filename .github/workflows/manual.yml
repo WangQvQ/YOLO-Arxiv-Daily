@@ -18,6 +18,10 @@ on:
         # The data type of the input
         type: string
 
+env:
+    PERSON_NAME: ${{ github.event.inputs.name }}
+    run: python daily_arxiv.py
+
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "greet"
