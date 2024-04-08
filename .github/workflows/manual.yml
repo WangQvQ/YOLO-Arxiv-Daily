@@ -24,7 +24,7 @@ jobs:
         pip install arxiv  # 安装 arxiv 包
 
     - name: Execute the script
-      run: python your_script.py  # 替换为你的脚本文件名
+      run: python daily_arxiv.py  # 替换为你的脚本文件名
 
     - name: Configure Git
       run: |
