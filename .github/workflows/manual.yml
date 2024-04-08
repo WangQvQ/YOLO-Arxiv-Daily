@@ -22,4 +22,4 @@ jobs:
 
     - name: Fetch YOLO papers and update markdown
       run: |
-        python path/to/your_script.py
+        python daily_arxiv.py
