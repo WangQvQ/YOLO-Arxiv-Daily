@@ -1,4 +1,4 @@
-# 每日YOLO相关论文从arXiv
+# 每日从arXiv中获取最新YOLO相关论文
 
 
 ## FlightScope: A Deep Comprehensive Assessment of Aircraft Detection Algorithms in Satellite Imagery
