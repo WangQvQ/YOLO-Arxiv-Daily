@@ -15,7 +15,7 @@ def escape_markdown(text):
 
 def save_papers_to_md_file(query="YOLO", max_results=5, filename="README.md"):
     """根据给定查询从arXiv获取论文，并将其保存到Markdown文件。"""
-    md_content = ["# 每日YOLO相关论文从arXiv\n\n"]
+    md_content = ["# 每日从arXiv中获取最新YOLO相关论文\n\n"]
     search = arxiv.Search(query=query, max_results=max_results, sort_by=arxiv.SortCriterion.SubmittedDate)
 
     for result in search.results():
