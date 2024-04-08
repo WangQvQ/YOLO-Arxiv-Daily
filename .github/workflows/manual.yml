@@ -1,5 +1,8 @@
 name: Daily Workflow at 7 AM Beijing Time
 
+on:
+  schedule:
+    - cron: '0 23 * * *'  # 在 UTC 时间23:00运行，即北京时间早上7:00
 
 jobs:
   update_readme:
