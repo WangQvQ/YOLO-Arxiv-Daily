@@ -1,5 +1,12 @@
 import re
 import arxiv
+import os
+
+# Read the value of PERSON_NAME environment variable
+person_name = os.getenv('PERSON_NAME', 'World')
+
+# Use person_name in your script
+print(f"Hello, {person_name}!")
 
 def get_authors(authors, first_author=False):
     """Return a formatted string of authors."""
