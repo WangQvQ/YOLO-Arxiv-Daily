@@ -17,6 +17,7 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v2
 
+
     - name: Set up Python
       uses: actions/setup-python@v2
       with:
@@ -31,3 +32,11 @@ jobs:
       env:
         PERSON_NAME: ${{ github.event.inputs.name }}
       run: python daily_arxiv.py
+      
+    - name: Commit and push if changed
+      run: |
+        git config --global user.email "actions@github.com"
+        git config --global user.name "GitHub Actions"
+        git add README.md
+        git commit -m "Update README.md with latest arXiv papers" -a || echo "No changes to commit"
+        git push
