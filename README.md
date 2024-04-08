@@ -1,13 +1,13 @@
-# Daily YOLO Papers from arXiv
+# 每日YOLO相关论文从arXiv
 
 
 ## FlightScope: A Deep Comprehensive Assessment of Aircraft Detection Algorithms in Satellite Imagery
 
-**Published Date**: 2024-04-03
+**发布日期**：2024-04-03
 
-**Authors**: Safouane El Ghazouali
+**作者**：Safouane El Ghazouali
 
-**Abstract**: Object detection in remotely sensed satellite pictures is fundamental in many
+**摘要**：Object detection in remotely sensed satellite pictures is fundamental in many
 fields such as biophysical, and environmental monitoring. While deep learning
 algorithms are constantly evolving, they have been mostly implemented and
 tested on popular ground\-based taken photos. This paper critically evaluates
@@ -32,20 +32,20 @@ paving the way for improved analytical methodologies in satellite imagery
 applications.
 
 
-**Code Links**: https://github.com/toelt-llc/FlightScope_Bench,
+**代码链接**：https://github.com/toelt-llc/FlightScope_Bench,
 
-**Paper URL**: [Read More](http://arxiv.org/abs/2404.02877v1)
+**论文链接**：[阅读更多](http://arxiv.org/abs/2404.02877v1)
 
 ---
 
 
 ## Leveraging YOLO\-World and GPT\-4V LMMs for Zero\-Shot Person Detection and Action Recognition in Drone Imagery
 
-**Published Date**: 2024-04-02
+**发布日期**：2024-04-02
 
-**Authors**: Christian Limberg
+**作者**：Christian Limberg
 
-**Abstract**: In this article, we explore the potential of zero\-shot Large Multimodal
+**摘要**：In this article, we explore the potential of zero\-shot Large Multimodal
 Models \(LMMs\) in the domain of drone perception. We focus on person detection
 and action recognition tasks and evaluate two prominent LMMs, namely YOLO\-World
 and GPT\-4V\(ision\) using a publicly available dataset captured from aerial
@@ -63,20 +63,20 @@ drone perception and establishes a foundation for future investigations in this
 area.
 
 
-**Code Links**: No code link found in abstract.
+**代码链接**：摘要中未找到代码链接。
 
-**Paper URL**: [Read More](http://arxiv.org/abs/2404.01571v1)
+**论文链接**：[阅读更多](http://arxiv.org/abs/2404.01571v1)
 
 ---
 
 
 ## YOLOOC: YOLO\-based Open\-Class Incremental Object Detection with Novel Class Discovery
 
-**Published Date**: 2024-03-30
+**发布日期**：2024-03-30
 
-**Authors**: Qian Wan
+**作者**：Qian Wan
 
-**Abstract**: Because of its use in practice, open\-world object detection \(OWOD\) has gotten
+**摘要**：Because of its use in practice, open\-world object detection \(OWOD\) has gotten
 a lot of attention recently. The challenge is how can a model detect novel
 classes and then incrementally learn them without forgetting previously known
 classes. Previous approaches hinge on strongly\-supervised or weakly\-supervised
@@ -90,20 +90,20 @@ on our more realistic setup demonstrate the effectiveness of our method for
 discovering novel classes in our new benchmark.
 
 
-**Code Links**: No code link found in abstract.
+**代码链接**：摘要中未找到代码链接。
 
-**Paper URL**: [Read More](http://arxiv.org/abs/2404.00257v1)
+**论文链接**：[阅读更多](http://arxiv.org/abs/2404.00257v1)
 
 ---
 
 
 ## SMOF: Streaming Modern CNNs on FPGAs with Smart Off\-Chip Eviction
 
-**Published Date**: 2024-03-27
+**发布日期**：2024-03-27
 
-**Authors**: Petros Toupas
+**作者**：Petros Toupas
 
-**Abstract**: Convolutional Neural Networks \(CNNs\) have demonstrated their effectiveness in
+**摘要**：Convolutional Neural Networks \(CNNs\) have demonstrated their effectiveness in
 numerous vision tasks. However, their high processing requirements necessitate
 efficient hardware acceleration to meet the application's performance targets.
 In the space of FPGAs, streaming\-based dataflow architectures are often adopted
@@ -123,20 +123,20 @@ state\-of\-the\-art performance across a spectrum of computer vision tasks,
 achieving up to 10.65 X throughput improvement compared to previous works.
 
 
-**Code Links**: No code link found in abstract.
+**代码链接**：摘要中未找到代码链接。
 
-**Paper URL**: [Read More](http://arxiv.org/abs/2403.18921v1)
+**论文链接**：[阅读更多](http://arxiv.org/abs/2403.18921v1)
 
 ---
 
 
 ## State of the art applications of deep learning within tracking and detecting marine debris: A survey
 
-**Published Date**: 2024-03-26
+**发布日期**：2024-03-26
 
-**Authors**: Zoe Moorton
+**作者**：Zoe Moorton
 
-**Abstract**: Deep learning techniques have been explored within the marine litter problem
+**摘要**：Deep learning techniques have been explored within the marine litter problem
 for approximately 20 years but the majority of the research has developed
 rapidly in the last five years. We provide an in\-depth, up to date, summary and
 analysis of 28 of the most recent and significant contributions of deep
@@ -151,20 +151,20 @@ importance of a comprehensive database. We conclude this survey with over 40
 future research recommendations and open challenges.
 
 
-**Code Links**: No code link found in abstract.
+**代码链接**：摘要中未找到代码链接。
 
-**Paper URL**: [Read More](http://arxiv.org/abs/2403.18067v1)
+**论文链接**：[阅读更多](http://arxiv.org/abs/2403.18067v1)
 
 ---
 
 
 ## VisionGPT: LLM\-Assisted Real\-Time Anomaly Detection for Safe Visual Navigation
 
-**Published Date**: 2024-03-19
+**发布日期**：2024-03-19
 
-**Authors**: Hao Wang
+**作者**：Hao Wang
 
-**Abstract**: This paper explores the potential of Large Language Models\(LLMs\) in zero\-shot
+**摘要**：This paper explores the potential of Large Language Models\(LLMs\) in zero\-shot
 anomaly detection for safe visual navigation. With the assistance of the
 state\-of\-the\-art real\-time open\-world object detection model Yolo\-World and
 specialized prompts, the proposed framework can identify anomalies within
@@ -180,20 +180,20 @@ improvement in visual accessibility, and paved the way for LLMs in video
 anomaly detection and vision\-language understanding.
 
 
-**Code Links**: No code link found in abstract.
+**代码链接**：摘要中未找到代码链接。
 
-**Paper URL**: [Read More](http://arxiv.org/abs/2403.12415v1)
+**论文链接**：[阅读更多](http://arxiv.org/abs/2403.12415v1)
 
 ---
 
 
 ## YOLOv9 for Fracture Detection in Pediatric Wrist Trauma X\-ray Images
 
-**Published Date**: 2024-03-17
+**发布日期**：2024-03-17
 
-**Authors**: Chun\-Tse Chien
+**作者**：Chun\-Tse Chien
 
-**Abstract**: The introduction of YOLOv9, the latest version of the You Only Look Once
+**摘要**：The introduction of YOLOv9, the latest version of the You Only Look Once
 \(YOLO\) series, has led to its widespread adoption across various scenarios.
 This paper is the first to apply the YOLOv9 algorithm model to the fracture
 detection task as computer\-assisted diagnosis \(CAD\) to help radiologists and
@@ -206,20 +206,20 @@ an improvement of 3.7%. The implementation code is publicly available at
 https://github.com/RuiyangJu/YOLOv9\-Fracture\-Detection.
 
 
-**Code Links**: https://github.com/RuiyangJu/YOLOv9-Fracture-Detection.
+**代码链接**：https://github.com/RuiyangJu/YOLOv9-Fracture-Detection.
 
-**Paper URL**: [Read More](http://arxiv.org/abs/2403.11249v1)
+**论文链接**：[阅读更多](http://arxiv.org/abs/2403.11249v1)
 
 ---
 
 
 ## Intelligent Railroad Grade Crossing: Leveraging Semantic Segmentation and Object Detection for Enhanced Safety
 
-**Published Date**: 2024-03-17
+**发布日期**：2024-03-17
 
-**Authors**: Al Amin
+**作者**：Al Amin
 
-**Abstract**: Crashes and delays at Railroad Highway Grade Crossings \(RHGC\), where highways
+**摘要**：Crashes and delays at Railroad Highway Grade Crossings \(RHGC\), where highways
 and railroads intersect, pose significant safety concerns for the U.S. Federal
 Railroad Administration \(FRA\). Despite the critical importance of addressing
 accidents and traffic delays at highway\-railroad intersections, there is a
@@ -243,20 +243,20 @@ intelligence represents a promising solution for enhancing safety at
 highway\-railroad intersections.
 
 
-**Code Links**: No code link found in abstract.
+**代码链接**：摘要中未找到代码链接。
 
-**Paper URL**: [Read More](http://arxiv.org/abs/2403.11060v1)
+**论文链接**：[阅读更多](http://arxiv.org/abs/2403.11060v1)
 
 ---
 
 
 ## Few\-Shot Image Classification and Segmentation as Visual Question Answering Using Vision\-Language Models
 
-**Published Date**: 2024-03-15
+**发布日期**：2024-03-15
 
-**Authors**: Tian Meng
+**作者**：Tian Meng
 
-**Abstract**: The task of few\-shot image classification and segmentation \(FS\-CS\) involves
+**摘要**：The task of few\-shot image classification and segmentation \(FS\-CS\) involves
 classifying and segmenting target objects in a query image, given only a few
 examples of the target classes. We introduce the Vision\-Instructed Segmentation
 and Evaluation \(VISE\) method that transforms the FS\-CS problem into the Visual
@@ -272,20 +272,20 @@ approach achieves state\-of\-the\-art performance on the Pascal\-5i and COCO\-20
 datasets.
 
 
-**Code Links**: No code link found in abstract.
+**代码链接**：摘要中未找到代码链接。
 
-**Paper URL**: [Read More](http://arxiv.org/abs/2403.10287v1)
+**论文链接**：[阅读更多](http://arxiv.org/abs/2403.10287v1)
 
 ---
 
 
 ## FogGuard: guarding YOLO against fog using perceptual loss
 
-**Published Date**: 2024-03-13
+**发布日期**：2024-03-13
 
-**Authors**: Soheil Gharatappeh
+**作者**：Soheil Gharatappeh
 
-**Abstract**: In this paper, we present a novel fog\-aware object detection network called
+**摘要**：In this paper, we present a novel fog\-aware object detection network called
 FogGuard, designed to address the challenges posed by foggy weather conditions.
 Autonomous driving systems heavily rely on accurate object detection
 algorithms, but adverse weather conditions can significantly impact the
@@ -311,9 +311,9 @@ complexity, it does not introduce any additional overhead during inference
 compared to the regular YOLO network.
 
 
-**Code Links**: No code link found in abstract.
+**代码链接**：摘要中未找到代码链接。
 
-**Paper URL**: [Read More](http://arxiv.org/abs/2403.08939v1)
+**论文链接**：[阅读更多](http://arxiv.org/abs/2403.08939v1)
 
 ---
 
