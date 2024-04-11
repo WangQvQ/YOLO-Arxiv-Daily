@@ -3,7 +3,7 @@ name: Daily Workflow at 7 AM Beijing Time
 on:
   schedule:
     - cron: '0 23 * * *'  # 在 UTC 时间23:00运行，即北京时间早上7:00
-  workflow_dispatch: # 
+  workflow_dispatch: 
 
 jobs:
   update_readme:
@@ -31,11 +31,20 @@ jobs:
         git config --global user.email "actions@github.com"
         git config --global user.name "GitHub Actions"
 
-    - name: Pull latest changes to avoid conflicts
-      run: git pull --rebase origin main
-
-    - name: Commit and push if README.md changed
+    - name: Commit changes if any
       run: |
         git add README.md
         git commit -m "Update README.md with latest arXiv papers" -a || echo "No changes to commit"
-        git push origin main --force-with-lease
+
+    - name: Stash any remaining changes
+      run: git stash || echo "No changes to stash"
+      
+    - name: Pull latest changes to avoid conflicts
+      run: git pull --rebase origin main
+
+    - name: Pop stashed changes
+      run: git stash pop || echo "No stash to pop"
+
+    - name: Push changes
+      run: |
+        git push origin main --force-with-lease 
