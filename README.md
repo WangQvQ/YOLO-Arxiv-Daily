@@ -1,6 +1,76 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## YOLO based Ocean Eddy Localization with AWS SageMaker
+
+**发布日期**：2024-04-10
+
+**作者**：Seraj Al Mahmud Mostafa
+
+**摘要**：Ocean eddies play a significant role both on the sea surface and beneath it,
+contributing to the sustainability of marine life dependent on oceanic
+behaviors. Therefore, it is crucial to investigate ocean eddies to monitor
+changes in the Earth, particularly in the oceans, and their impact on climate.
+This study aims to pinpoint ocean eddies using AWS cloud services, specifically
+SageMaker. The primary objective is to detect small\-scale \(<20km\) ocean eddies
+from satellite remote images and assess the feasibility of utilizing SageMaker,
+which offers tools for deploying AI applications. Moreover, this research not
+only explores the deployment of cloud\-based services for remote sensing of
+Earth data but also evaluates several YOLO \(You Only Look Once\) models using
+single and multi\-GPU\-based services in the cloud. Furthermore, this study
+underscores the potential of these services, their limitations, challenges
+related to deployment and resource management, and their user\-riendliness for
+Earth science projects.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2404.06744v1)
+
+---
+
+
+## Towards Improved Semiconductor Defect Inspection for high\-NA EUVL based on SEMI\-SuperYOLO\-NAS
+
+**发布日期**：2024-04-08
+
+**作者**：Ying\-Lin Chen
+
+**摘要**：Due to potential pitch reduction, the semiconductor industry is adopting
+High\-NA EUVL technology. However, its low depth of focus presents challenges
+for High Volume Manufacturing. To address this, suppliers are exploring thinner
+photoresists and new underlayers/hardmasks. These may suffer from poor SNR,
+complicating defect detection. Vision\-based ML algorithms offer a promising
+solution for semiconductor defect inspection. However, developing a robust ML
+model across various image resolutions without explicit training remains a
+challenge for nano\-scale defect inspection. This research's goal is to propose
+a scale\-invariant ADCD framework capable to upscale images, addressing this
+issue. We propose an improvised ADCD framework as SEMI\-SuperYOLO\-NAS, which
+builds upon the baseline YOLO\-NAS architecture. This framework integrates a SR
+assisted branch to aid in learning HR features by the defect detection
+backbone, particularly for detecting nano\-scale defect instances from LR
+images. Additionally, the SR\-assisted branch can recursively generate upscaled
+images from their corresponding downscaled counterparts, enabling defect
+detection inference across various image resolutions without requiring explicit
+training. Moreover, we investigate improved data augmentation strategy aimed at
+generating diverse and realistic training datasets to enhance model
+performance. We have evaluated our proposed approach using two original FAB
+datasets obtained from two distinct processes and captured using two different
+imaging tools. Finally, we demonstrate zero\-shot inference for our model on a
+new, originating from a process condition distinct from the training dataset
+and possessing different Pitch characteristics. Experimental validation
+demonstrates that our proposed ADCD framework aids in increasing the throughput
+of imaging tools for defect inspection by reducing the required image pixel
+resolutions.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2404.05862v1)
+
+---
+
+
 ## FlightScope: A Deep Comprehensive Assessment of Aircraft Detection Algorithms in Satellite Imagery
 
 **发布日期**：2024-04-03
@@ -246,74 +316,6 @@ highway\-railroad intersections.
 **代码链接**：摘要中未找到代码链接。
 
 **论文链接**：[阅读更多](http://arxiv.org/abs/2403.11060v1)
-
----
-
-
-## Few\-Shot Image Classification and Segmentation as Visual Question Answering Using Vision\-Language Models
-
-**发布日期**：2024-03-15
-
-**作者**：Tian Meng
-
-**摘要**：The task of few\-shot image classification and segmentation \(FS\-CS\) involves
-classifying and segmenting target objects in a query image, given only a few
-examples of the target classes. We introduce the Vision\-Instructed Segmentation
-and Evaluation \(VISE\) method that transforms the FS\-CS problem into the Visual
-Question Answering \(VQA\) problem, utilising Vision\-Language Models \(VLMs\), and
-addresses it in a training\-free manner. By enabling a VLM to interact with
-off\-the\-shelf vision models as tools, the proposed method is capable of
-classifying and segmenting target objects using only image\-level labels.
-Specifically, chain\-of\-thought prompting and in\-context learning guide the VLM
-to answer multiple\-choice questions like a human; vision models such as YOLO
-and Segment Anything Model \(SAM\) assist the VLM in completing the task. The
-modular framework of the proposed method makes it easily extendable. Our
-approach achieves state\-of\-the\-art performance on the Pascal\-5i and COCO\-20i
-datasets.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2403.10287v1)
-
----
-
-
-## FogGuard: guarding YOLO against fog using perceptual loss
-
-**发布日期**：2024-03-13
-
-**作者**：Soheil Gharatappeh
-
-**摘要**：In this paper, we present a novel fog\-aware object detection network called
-FogGuard, designed to address the challenges posed by foggy weather conditions.
-Autonomous driving systems heavily rely on accurate object detection
-algorithms, but adverse weather conditions can significantly impact the
-reliability of deep neural networks \(DNNs\).
-  Existing approaches fall into two main categories, 1\) image enhancement such
-as IA\-YOLO 2\) domain adaptation based approaches. Image enhancement based
-techniques attempt to generate fog\-free image. However, retrieving a fogless
-image from a foggy image is a much harder problem than detecting objects in a
-foggy image. Domain\-adaptation based approaches, on the other hand, do not make
-use of labelled datasets in the target domain. Both categories of approaches
-are attempting to solve a harder version of the problem. Our approach builds
-over fine\-tuning on the
-  Our framework is specifically designed to compensate for foggy conditions
-present in the scene, ensuring robust performance even. We adopt YOLOv3 as the
-baseline object detection algorithm and introduce a novel Teacher\-Student
-Perceptual loss, to high accuracy object detection in foggy images.
-  Through extensive evaluations on common datasets such as PASCAL VOC and RTTS,
-we demonstrate the improvement in performance achieved by our network. We
-demonstrate that FogGuard achieves 69.43\\% mAP, as compared to 57.78\\% for
-YOLOv3 on the RTTS dataset.
-  Furthermore, we show that while our training method increases time
-complexity, it does not introduce any additional overhead during inference
-compared to the regular YOLO network.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2403.08939v1)
 
 ---
 
