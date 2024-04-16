@@ -1,6 +1,43 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## BG\-YOLO: A Bidirectional\-Guided Method for Underwater Object Detection
+
+**发布日期**：2024-04-13
+
+**作者**：Jian Zhang
+
+**摘要**：Degraded underwater images decrease the accuracy of underwater object
+detection. However, existing methods for underwater image enhancement mainly
+focus on improving the indicators in visual aspects, which may not benefit the
+tasks of underwater image detection, and may lead to serious degradation in
+performance. To alleviate this problem, we proposed a bidirectional\-guided
+method for underwater object detection, referred to as BG\-YOLO. In the proposed
+method, network is organized by constructing an enhancement branch and a
+detection branch in a parallel way. The enhancement branch consists of a
+cascade of an image enhancement subnet and an object detection subnet. And the
+detection branch only consists of a detection subnet. A feature guided module
+connects the shallow convolution layer of the two branches. When training the
+enhancement branch, the object detection subnet in the enhancement branch
+guides the image enhancement subnet to be optimized towards the direction that
+is most conducive to the detection task. The shallow feature map of the trained
+enhancement branch will be output to the feature guided module, constraining
+the optimization of detection branch through consistency loss and prompting
+detection branch to learn more detailed information of the objects. And hence
+the detection performance will be refined. During the detection tasks, only
+detection branch will be reserved so that no additional cost of computation
+will be introduced. Extensive experiments demonstrate that the proposed method
+shows significant improvement in performance of the detector in severely
+degraded underwater scenes while maintaining a remarkable detection speed.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2404.08979v1)
+
+---
+
+
 ## YOLO based Ocean Eddy Localization with AWS SageMaker
 
 **发布日期**：2024-04-10
@@ -279,43 +316,6 @@ https://github.com/RuiyangJu/YOLOv9\-Fracture\-Detection.
 **代码链接**：https://github.com/RuiyangJu/YOLOv9-Fracture-Detection.
 
 **论文链接**：[阅读更多](http://arxiv.org/abs/2403.11249v1)
-
----
-
-
-## Intelligent Railroad Grade Crossing: Leveraging Semantic Segmentation and Object Detection for Enhanced Safety
-
-**发布日期**：2024-03-17
-
-**作者**：Al Amin
-
-**摘要**：Crashes and delays at Railroad Highway Grade Crossings \(RHGC\), where highways
-and railroads intersect, pose significant safety concerns for the U.S. Federal
-Railroad Administration \(FRA\). Despite the critical importance of addressing
-accidents and traffic delays at highway\-railroad intersections, there is a
-notable dearth of research on practical solutions for managing these issues. In
-response to this gap in the literature, our study introduces an intelligent
-system that leverages machine learning and computer vision techniques to
-enhance safety at Railroad Highway Grade crossings \(RHGC\). This research
-proposed a Non\-Maximum Suppression \(NMS\)\- based ensemble model that integrates
-a variety of YOLO variants, specifically YOLOv5S, YOLOv5M, and YOLOv5L, for
-grade\-crossing object detection, utilizes segmentation techniques from the UNet
-architecture for detecting approaching rail at a grade crossing. Both methods
-are implemented on a Raspberry Pi. Moreover, the strategy employs
-high\-definition cameras installed at the RHGC. This framework enables the
-system to monitor objects within the Region of Interest \(ROI\) at crossings,
-detect the approach of trains, and clear the crossing area before a train
-arrives. Regarding accuracy, precision, recall, and Intersection over Union
-\(IoU\), the proposed state\-of\-the\-art NMS\-based object detection ensemble model
-achieved 96% precision. In addition, the UNet segmentation model obtained a 98%
-IoU value. This automated railroad grade crossing system powered by artificial
-intelligence represents a promising solution for enhancing safety at
-highway\-railroad intersections.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2403.11060v1)
 
 ---
 
