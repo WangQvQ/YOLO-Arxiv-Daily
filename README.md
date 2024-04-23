@@ -1,6 +1,37 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## A Nasal Cytology Dataset for Object Detection and Deep Learning
+
+**发布日期**：2024-04-21
+
+**作者**：Mauro Camporeale
+
+**摘要**：Nasal Cytology is a new and efficient clinical technique to diagnose rhinitis
+and allergies that is not much widespread due to the time\-consuming nature of
+cell counting; that is why AI\-aided counting could be a turning point for the
+diffusion of this technique. In this article we present the first dataset of
+rhino\-cytological field images: the NCD \(Nasal Cytology Dataset\), aimed to
+train and deploy Object Detection models to support physicians and biologists
+during clinical practice. The real distribution of the cytotypes, populating
+the nasal mucosa has been replicated, sampling images from slides of clinical
+patients, and manually annotating each cell found on them. The correspondent
+object detection task presents non'trivial issues associated with the strong
+class imbalancement, involving the rarest cell types. This work contributes to
+some of open challenges by presenting a novel machine learning\-based approach
+to aid the automated detection and classification of nasal mucosa cells: the
+DETR and YOLO models shown good performance in detecting cells and classifying
+them correctly, revealing great potential to accelerate the work of rhinology
+experts.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2404.13745v1)
+
+---
+
+
 ## BG\-YOLO: A Bidirectional\-Guided Method for Underwater Object Detection
 
 **发布日期**：2024-04-13
@@ -199,7 +230,7 @@ discovering novel classes in our new benchmark.
 
 **代码链接**：摘要中未找到代码链接。
 
-**论文链接**：[阅读更多](http://arxiv.org/abs/2404.00257v1)
+**论文链接**：[阅读更多](http://arxiv.org/abs/2404.00257v2)
 
 ---
 
@@ -290,32 +321,6 @@ anomaly detection and vision\-language understanding.
 **代码链接**：摘要中未找到代码链接。
 
 **论文链接**：[阅读更多](http://arxiv.org/abs/2403.12415v1)
-
----
-
-
-## YOLOv9 for Fracture Detection in Pediatric Wrist Trauma X\-ray Images
-
-**发布日期**：2024-03-17
-
-**作者**：Chun\-Tse Chien
-
-**摘要**：The introduction of YOLOv9, the latest version of the You Only Look Once
-\(YOLO\) series, has led to its widespread adoption across various scenarios.
-This paper is the first to apply the YOLOv9 algorithm model to the fracture
-detection task as computer\-assisted diagnosis \(CAD\) to help radiologists and
-surgeons to interpret X\-ray images. Specifically, this paper trained the model
-on the GRAZPEDWRI\-DX dataset and extended the training set using data
-augmentation techniques to improve the model performance. Experimental results
-demonstrate that compared to the mAP 50\-95 of the current state\-of\-the\-art
-\(SOTA\) model, the YOLOv9 model increased the value from 42.16% to 43.73%, with
-an improvement of 3.7%. The implementation code is publicly available at
-https://github.com/RuiyangJu/YOLOv9\-Fracture\-Detection.
-
-
-**代码链接**：https://github.com/RuiyangJu/YOLOv9-Fracture-Detection.
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2403.11249v1)
 
 ---
 
