@@ -1,6 +1,33 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Gallbladder Cancer Detection in Ultrasound Images based on YOLO and Faster R\-CNN
+
+**发布日期**：2024-04-23
+
+**作者**：Sara Dadjouy
+
+**摘要**：Medical image analysis is a significant application of artificial
+intelligence for disease diagnosis. A crucial step in this process is the
+identification of regions of interest within the images. This task can be
+automated using object detection algorithms. YOLO and Faster R\-CNN are renowned
+for such algorithms, each with its own strengths and weaknesses. This study
+aims to explore the advantages of both techniques to select more accurate
+bounding boxes for gallbladder detection from ultrasound images, thereby
+enhancing gallbladder cancer classification. A fusion method that leverages the
+benefits of both techniques is presented in this study. The proposed method
+demonstrated superior classification performance, with an accuracy of 92.62%,
+compared to the individual use of Faster R\-CNN and YOLOv8, which yielded
+accuracies of 90.16% and 82.79%, respectively.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2404.15129v1)
+
+---
+
+
 ## A Nasal Cytology Dataset for Object Detection and Deep Learning
 
 **发布日期**：2024-04-21
@@ -292,35 +319,6 @@ future research recommendations and open challenges.
 **代码链接**：摘要中未找到代码链接。
 
 **论文链接**：[阅读更多](http://arxiv.org/abs/2403.18067v1)
-
----
-
-
-## VisionGPT: LLM\-Assisted Real\-Time Anomaly Detection for Safe Visual Navigation
-
-**发布日期**：2024-03-19
-
-**作者**：Hao Wang
-
-**摘要**：This paper explores the potential of Large Language Models\(LLMs\) in zero\-shot
-anomaly detection for safe visual navigation. With the assistance of the
-state\-of\-the\-art real\-time open\-world object detection model Yolo\-World and
-specialized prompts, the proposed framework can identify anomalies within
-camera\-captured frames that include any possible obstacles, then generate
-concise, audio\-delivered descriptions emphasizing abnormalities, assist in safe
-visual navigation in complex circumstances. Moreover, our proposed framework
-leverages the advantages of LLMs and the open\-vocabulary object detection model
-to achieve the dynamic scenario switch, which allows users to transition
-smoothly from scene to scene, which addresses the limitation of traditional
-visual navigation. Furthermore, this paper explored the performance
-contribution of different prompt components, provided the vision for future
-improvement in visual accessibility, and paved the way for LLMs in video
-anomaly detection and vision\-language understanding.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2403.12415v1)
 
 ---
 
