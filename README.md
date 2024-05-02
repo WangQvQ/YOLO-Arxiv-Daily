@@ -199,7 +199,7 @@ applications.
 
 **代码链接**：https://github.com/toelt-llc/FlightScope_Bench,
 
-**论文链接**：[阅读更多](http://arxiv.org/abs/2404.02877v1)
+**论文链接**：[阅读更多](http://arxiv.org/abs/2404.02877v2)
 
 ---
 
