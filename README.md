@@ -1,6 +1,110 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## FER\-YOLO\-Mamba: Facial Expression Detection and Classification Based on Selective State Space
+
+**发布日期**：2024-05-03
+
+**作者**：Hui Ma
+
+**摘要**：Facial Expression Recognition \(FER\) plays a pivotal role in understanding
+human emotional cues. However, traditional FER methods based on visual
+information have some limitations, such as preprocessing, feature extraction,
+and multi\-stage classification procedures. These not only increase
+computational complexity but also require a significant amount of computing
+resources. Considering Convolutional Neural Network \(CNN\)\-based FER schemes
+frequently prove inadequate in identifying the deep, long\-distance dependencies
+embedded within facial expression images, and the Transformer's inherent
+quadratic computational complexity, this paper presents the FER\-YOLO\-Mamba
+model, which integrates the principles of Mamba and YOLO technologies to
+facilitate efficient coordination in facial expression image recognition and
+localization. Within the FER\-YOLO\-Mamba model, we further devise a FER\-YOLO\-VSS
+dual\-branch module, which combines the inherent strengths of convolutional
+layers in local feature extraction with the exceptional capability of State
+Space Models \(SSMs\) in revealing long\-distance dependencies. To the best of our
+knowledge, this is the first Vision Mamba model designed for facial expression
+detection and classification. To evaluate the performance of the proposed
+FER\-YOLO\-Mamba model, we conducted experiments on two benchmark datasets,
+RAF\-DB and SFEW. The experimental results indicate that the FER\-YOLO\-Mamba
+model achieved better results compared to other models. The code is available
+from https://github.com/SwjtuMa/FER\-YOLO\-Mamba.
+
+
+**代码链接**：https://github.com/SwjtuMa/FER-YOLO-Mamba.
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2405.01828v1)
+
+---
+
+
+## Active Learning Enabled Low\-cost Cell Image Segmentation Using Bounding Box Annotation
+
+**发布日期**：2024-05-02
+
+**作者**：Yu Zhu
+
+**摘要**：Cell image segmentation is usually implemented using fully supervised deep
+learning methods, which heavily rely on extensive annotated training data. Yet,
+due to the complexity of cell morphology and the requirement for specialized
+knowledge, pixel\-level annotation of cell images has become a highly
+labor\-intensive task. To address the above problems, we propose an active
+learning framework for cell segmentation using bounding box annotations, which
+greatly reduces the data annotation cost of cell segmentation algorithms.
+First, we generate a box\-supervised learning method \(denoted as YOLO\-SAM\) by
+combining the YOLOv8 detector with the Segment Anything Model \(SAM\), which
+effectively reduces the complexity of data annotation. Furthermore, it is
+integrated into an active learning framework that employs the MC DropBlock
+method to train the segmentation model with fewer box\-annotated samples.
+Extensive experiments demonstrate that our model saves more than ninety percent
+of data annotation time compared to mask\-supervised deep learning methods.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2405.01701v1)
+
+---
+
+
+## SOAR: Advancements in Small Body Object Detection for Aerial Imagery Using State Space Models and Programmable Gradients
+
+**发布日期**：2024-05-02
+
+**作者**：Tushar Verma
+
+**摘要**：Small object detection in aerial imagery presents significant challenges in
+computer vision due to the minimal data inherent in small\-sized objects and
+their propensity to be obscured by larger objects and background noise.
+Traditional methods using transformer\-based models often face limitations
+stemming from the lack of specialized databases, which adversely affect their
+performance with objects of varying orientations and scales. This underscores
+the need for more adaptable, lightweight models. In response, this paper
+introduces two innovative approaches that significantly enhance detection and
+segmentation capabilities for small aerial objects. Firstly, we explore the use
+of the SAHI framework on the newly introduced lightweight YOLO v9 architecture,
+which utilizes Programmable Gradient Information \(PGI\) to reduce the
+substantial information loss typically encountered in sequential feature
+extraction processes. The paper employs the Vision Mamba model, which
+incorporates position embeddings to facilitate precise location\-aware visual
+understanding, combined with a novel bidirectional State Space Model \(SSM\) for
+effective visual context modeling. This State Space Model adeptly harnesses the
+linear complexity of CNNs and the global receptive field of Transformers,
+making it particularly effective in remote sensing image classification. Our
+experimental results demonstrate substantial improvements in detection accuracy
+and processing efficiency, validating the applicability of these approaches for
+real\-time small object detection across diverse aerial scenarios. This paper
+also discusses how these methodologies could serve as foundational models for
+future advancements in aerial object recognition technologies. The source code
+will be made accessible here.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2405.01699v1)
+
+---
+
+
 ## Gallbladder Cancer Detection in Ultrasound Images based on YOLO and Faster R\-CNN
 
 **发布日期**：2024-04-23
@@ -231,94 +335,6 @@ area.
 **代码链接**：摘要中未找到代码链接。
 
 **论文链接**：[阅读更多](http://arxiv.org/abs/2404.01571v1)
-
----
-
-
-## YOLOOC: YOLO\-based Open\-Class Incremental Object Detection with Novel Class Discovery
-
-**发布日期**：2024-03-30
-
-**作者**：Qian Wan
-
-**摘要**：Because of its use in practice, open\-world object detection \(OWOD\) has gotten
-a lot of attention recently. The challenge is how can a model detect novel
-classes and then incrementally learn them without forgetting previously known
-classes. Previous approaches hinge on strongly\-supervised or weakly\-supervised
-novel\-class data for novel\-class detection, which may not apply to real
-applications. We construct a new benchmark that novel classes are only
-encountered at the inference stage. And we propose a new OWOD detector YOLOOC,
-based on the YOLO architecture yet for the Open\-Class setup. We introduce label
-smoothing to prevent the detector from over\-confidently mapping novel classes
-to known classes and to discover novel classes. Extensive experiments conducted
-on our more realistic setup demonstrate the effectiveness of our method for
-discovering novel classes in our new benchmark.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2404.00257v2)
-
----
-
-
-## SMOF: Streaming Modern CNNs on FPGAs with Smart Off\-Chip Eviction
-
-**发布日期**：2024-03-27
-
-**作者**：Petros Toupas
-
-**摘要**：Convolutional Neural Networks \(CNNs\) have demonstrated their effectiveness in
-numerous vision tasks. However, their high processing requirements necessitate
-efficient hardware acceleration to meet the application's performance targets.
-In the space of FPGAs, streaming\-based dataflow architectures are often adopted
-by users, as significant performance gains can be achieved through layer\-wise
-pipelining and reduced off\-chip memory access by retaining data on\-chip.
-However, modern topologies, such as the UNet, YOLO, and X3D models, utilise
-long skip connections, requiring significant on\-chip storage and thus limiting
-the performance achieved by such system architectures. The paper addresses the
-above limitation by introducing weight and activation eviction mechanisms to
-off\-chip memory along the computational pipeline, taking into account the
-available compute and memory resources. The proposed mechanism is incorporated
-into an existing toolflow, expanding the design space by utilising off\-chip
-memory as a buffer. This enables the mapping of such modern CNNs to devices
-with limited on\-chip memory, under the streaming architecture design approach.
-SMOF has demonstrated the capacity to deliver competitive and, in some cases,
-state\-of\-the\-art performance across a spectrum of computer vision tasks,
-achieving up to 10.65 X throughput improvement compared to previous works.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2403.18921v1)
-
----
-
-
-## State of the art applications of deep learning within tracking and detecting marine debris: A survey
-
-**发布日期**：2024-03-26
-
-**作者**：Zoe Moorton
-
-**摘要**：Deep learning techniques have been explored within the marine litter problem
-for approximately 20 years but the majority of the research has developed
-rapidly in the last five years. We provide an in\-depth, up to date, summary and
-analysis of 28 of the most recent and significant contributions of deep
-learning in marine debris. From cross referencing the research paper results,
-the YOLO family significantly outperforms all other methods of object detection
-but there are many respected contributions to this field that have
-categorically agreed that a comprehensive database of underwater debris is not
-currently available for machine learning. Using a small dataset curated and
-labelled by us, we tested YOLOv5 on a binary classification task and found the
-accuracy was low and the rate of false positives was high; highlighting the
-importance of a comprehensive database. We conclude this survey with over 40
-future research recommendations and open challenges.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2403.18067v1)
 
 ---
 
