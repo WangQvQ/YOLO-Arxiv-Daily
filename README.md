@@ -1,6 +1,150 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## RepVGG\-GELAN: Enhanced GELAN with VGG\-STYLE ConvNets for Brain Tumour Detection
+
+**发布日期**：2024-05-06
+
+**作者**：Thennarasi Balakrishnan
+
+**摘要**：Object detection algorithms particularly those based on YOLO have
+demonstrated remarkable efficiency in balancing speed and accuracy. However,
+their application in brain tumour detection remains underexplored. This study
+proposes RepVGG\-GELAN, a novel YOLO architecture enhanced with RepVGG, a
+reparameterized convolutional approach for object detection tasks particularly
+focusing on brain tumour detection within medical images. RepVGG\-GELAN
+leverages the RepVGG architecture to improve both speed and accuracy in
+detecting brain tumours. Integrating RepVGG into the YOLO framework aims to
+achieve a balance between computational efficiency and detection performance.
+This study includes a spatial pyramid pooling\-based Generalized Efficient Layer
+Aggregation Network \(GELAN\) architecture which further enhances the capability
+of RepVGG. Experimental evaluation conducted on a brain tumour dataset
+demonstrates the effectiveness of RepVGG\-GELAN surpassing existing RCS\-YOLO in
+terms of precision and speed. Specifically, RepVGG\-GELAN achieves an increased
+precision of 4.91% and an increased AP50 of 2.54% over the latest existing
+approach while operating at 240.7 GFLOPs. The proposed RepVGG\-GELAN with GELAN
+architecture presents promising results establishing itself as a
+state\-of\-the\-art solution for accurate and efficient brain tumour detection in
+medical images. The implementation code is publicly available at
+https://github.com/ThensiB/RepVGG\-GELAN.
+
+
+**代码链接**：https://github.com/ThensiB/RepVGG-GELAN.
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2405.03541v1)
+
+---
+
+
+## Performance Evaluation of Real\-Time Object Detection for Electric Scooters
+
+**发布日期**：2024-05-05
+
+**作者**：Dong Chen
+
+**摘要**：Electric scooters \(e\-scooters\) have rapidly emerged as a popular mode of
+transportation in urban areas, yet they pose significant safety challenges. In
+the United States, the rise of e\-scooters has been marked by a concerning
+increase in related injuries and fatalities. Recently, while deep\-learning
+object detection holds paramount significance in autonomous vehicles to avoid
+potential collisions, its application in the context of e\-scooters remains
+relatively unexplored. This paper addresses this gap by assessing the
+effectiveness and efficiency of cutting\-edge object detectors designed for
+e\-scooters. To achieve this, the first comprehensive benchmark involving 22
+state\-of\-the\-art YOLO object detectors, including five versions \(YOLOv3,
+YOLOv5, YOLOv6, YOLOv7, and YOLOv8\), has been established for real\-time traffic
+object detection using a self\-collected dataset featuring e\-scooters. The
+detection accuracy, measured in terms of mAP@0.5, ranges from 27.4%
+\(YOLOv7\-E6E\) to 86.8% \(YOLOv5s\). All YOLO models, particularly YOLOv3\-tiny,
+have displayed promising potential for real\-time object detection in the
+context of e\-scooters. Both the traffic scene dataset
+\(https://zenodo.org/records/10578641\) and software program codes
+\(https://github.com/DongChen06/ScooterDet\) for model benchmarking in this study
+are publicly available, which will not only improve e\-scooter safety with
+advanced object detection but also lay the groundwork for tailored solutions,
+promising a safer and more sustainable urban micromobility landscape.
+
+
+**代码链接**：https://zenodo.org/records/10578641)，https://github.com/DongChen06/ScooterDet)
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2405.03039v1)
+
+---
+
+
+## Fused attention mechanism\-based ore sorting network
+
+**发布日期**：2024-05-05
+
+**作者**：Junjiang Zhen
+
+**摘要**：Deep learning has had a significant impact on the identification and
+classification of mineral resources, especially playing a key role in
+efficiently and accurately identifying different minerals, which is important
+for improving the efficiency and accuracy of mining. However, traditional ore
+sorting meth\- ods often suffer from inefficiency and lack of accuracy,
+especially in complex mineral environments. To address these challenges, this
+study proposes a method called OreYOLO, which incorporates an attentional
+mechanism and a multi\-scale feature fusion strategy, based on ore data from
+gold and sul\- fide ores. By introducing the progressive feature pyramid
+structure into YOLOv5 and embedding the attention mechanism in the feature
+extraction module, the detection performance and accuracy of the model are
+greatly improved. In order to adapt to the diverse ore sorting scenarios and
+the deployment requirements of edge devices, the network structure is designed
+to be lightweight, which achieves a low number of parameters \(3.458M\) and
+computational complexity \(6.3GFLOPs\) while maintaining high accuracy \(99.3% and
+99.2%, respectively\). In the experimental part, a target detection dataset
+containing 6000 images of gold and sulfuric iron ore is constructed for gold
+and sulfuric iron ore classification training, and several sets of comparison
+experiments are set up, including the YOLO series, EfficientDet, Faster\-RCNN,
+and CenterNet, etc., and the experiments prove that OreYOLO outperforms the
+commonly used high\-performance object detection of these architectures
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2405.02785v1)
+
+---
+
+
+## Better YOLO with Attention\-Augmented Network and Enhanced Generalization Performance for Safety Helmet Detection
+
+**发布日期**：2024-05-04
+
+**作者**：Shuqi Shen
+
+**摘要**：Safety helmets play a crucial role in protecting workers from head injuries
+in construction sites, where potential hazards are prevalent. However,
+currently, there is no approach that can simultaneously achieve both model
+accuracy and performance in complex environments. In this study, we utilized a
+Yolo\-based model for safety helmet detection, achieved a 2% improvement in mAP
+\(mean Average Precision\) performance while reducing parameters and Flops count
+by over 25%. YOLO\(You Only Look Once\) is a widely used, high\-performance,
+lightweight model architecture that is well suited for complex environments. We
+presents a novel approach by incorporating a lightweight feature extraction
+network backbone based on GhostNetv2, integrating attention modules such as
+Spatial Channel\-wise Attention Net\(SCNet\) and Coordination Attention
+Net\(CANet\), and adopting the Gradient Norm Aware optimizer \(GAM\) for improved
+generalization ability. In safety\-critical environments, the accurate detection
+and speed of safety helmets plays a pivotal role in preventing occupational
+hazards and ensuring compliance with safety protocols. This work addresses the
+pressing need for robust and efficient helmet detection methods, offering a
+comprehensive framework that not only enhances accuracy but also improves the
+adaptability of detection models to real\-world conditions. Our experimental
+results underscore the synergistic effects of GhostNetv2, attention modules,
+and the GAM optimizer, presenting a compelling solution for safety helmet
+detection that achieves superior performance in terms of accuracy,
+generalization, and efficiency.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2405.02591v1)
+
+---
+
+
 ## FER\-YOLO\-Mamba: Facial Expression Detection and Classification Based on Selective State Space
 
 **发布日期**：2024-05-03
@@ -100,7 +244,7 @@ will be made accessible here.
 
 **代码链接**：摘要中未找到代码链接。
 
-**论文链接**：[阅读更多](http://arxiv.org/abs/2405.01699v1)
+**论文链接**：[阅读更多](http://arxiv.org/abs/2405.01699v2)
 
 ---
 
@@ -163,178 +307,39 @@ experts.
 ---
 
 
-## BG\-YOLO: A Bidirectional\-Guided Method for Underwater Object Detection
+## Long\-term Human Participation Assessment In Collaborative Learning Environments Using Dynamic Scene Analysis
 
-**发布日期**：2024-04-13
+**发布日期**：2024-04-14
 
-**作者**：Jian Zhang
+**作者**：Wenjing Shi
 
-**摘要**：Degraded underwater images decrease the accuracy of underwater object
-detection. However, existing methods for underwater image enhancement mainly
-focus on improving the indicators in visual aspects, which may not benefit the
-tasks of underwater image detection, and may lead to serious degradation in
-performance. To alleviate this problem, we proposed a bidirectional\-guided
-method for underwater object detection, referred to as BG\-YOLO. In the proposed
-method, network is organized by constructing an enhancement branch and a
-detection branch in a parallel way. The enhancement branch consists of a
-cascade of an image enhancement subnet and an object detection subnet. And the
-detection branch only consists of a detection subnet. A feature guided module
-connects the shallow convolution layer of the two branches. When training the
-enhancement branch, the object detection subnet in the enhancement branch
-guides the image enhancement subnet to be optimized towards the direction that
-is most conducive to the detection task. The shallow feature map of the trained
-enhancement branch will be output to the feature guided module, constraining
-the optimization of detection branch through consistency loss and prompting
-detection branch to learn more detailed information of the objects. And hence
-the detection performance will be refined. During the detection tasks, only
-detection branch will be reserved so that no additional cost of computation
-will be introduced. Extensive experiments demonstrate that the proposed method
-shows significant improvement in performance of the detector in severely
-degraded underwater scenes while maintaining a remarkable detection speed.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2404.08979v1)
-
----
-
-
-## YOLO based Ocean Eddy Localization with AWS SageMaker
-
-**发布日期**：2024-04-10
-
-**作者**：Seraj Al Mahmud Mostafa
-
-**摘要**：Ocean eddies play a significant role both on the sea surface and beneath it,
-contributing to the sustainability of marine life dependent on oceanic
-behaviors. Therefore, it is crucial to investigate ocean eddies to monitor
-changes in the Earth, particularly in the oceans, and their impact on climate.
-This study aims to pinpoint ocean eddies using AWS cloud services, specifically
-SageMaker. The primary objective is to detect small\-scale \(<20km\) ocean eddies
-from satellite remote images and assess the feasibility of utilizing SageMaker,
-which offers tools for deploying AI applications. Moreover, this research not
-only explores the deployment of cloud\-based services for remote sensing of
-Earth data but also evaluates several YOLO \(You Only Look Once\) models using
-single and multi\-GPU\-based services in the cloud. Furthermore, this study
-underscores the potential of these services, their limitations, challenges
-related to deployment and resource management, and their user\-riendliness for
-Earth science projects.
+**摘要**：The paper develops datasets and methods to assess student participation in
+real\-life collaborative learning environments. In collaborative learning
+environments, students are organized into small groups where they are free to
+interact within their group. Thus, students can move around freely causing
+issues with strong pose variation, move out and re\-enter the camera scene, or
+face away from the camera. We formulate the problem of assessing student
+participation into two subproblems: \(i\) student group detection against strong
+background interference from other groups, and \(ii\) dynamic participant
+tracking within the group. A massive independent testing dataset of 12,518,250
+student label instances, of total duration of 21 hours and 22 minutes of
+real\-life videos, is used for evaluating the performance of our proposed method
+for student group detection. The proposed method of using multiple image
+representations is shown to perform equally or better than YOLO on all video
+instances. Over the entire dataset, the proposed method achieved an F1 score of
+0.85 compared to 0.80 for YOLO. Following student group detection, the paper
+presents the development of a dynamic participant tracking system for assessing
+student group participation through long video sessions. The proposed dynamic
+participant tracking system is shown to perform exceptionally well, missing a
+student in just one out of 35 testing videos. In comparison, a state of the art
+method fails to track students in 14 out of the 35 testing videos. The proposed
+method achieves 82.3% accuracy on an independent set of long, real\-life
+collaborative videos.
 
 
 **代码链接**：摘要中未找到代码链接。
 
-**论文链接**：[阅读更多](http://arxiv.org/abs/2404.06744v1)
-
----
-
-
-## Towards Improved Semiconductor Defect Inspection for high\-NA EUVL based on SEMI\-SuperYOLO\-NAS
-
-**发布日期**：2024-04-08
-
-**作者**：Ying\-Lin Chen
-
-**摘要**：Due to potential pitch reduction, the semiconductor industry is adopting
-High\-NA EUVL technology. However, its low depth of focus presents challenges
-for High Volume Manufacturing. To address this, suppliers are exploring thinner
-photoresists and new underlayers/hardmasks. These may suffer from poor SNR,
-complicating defect detection. Vision\-based ML algorithms offer a promising
-solution for semiconductor defect inspection. However, developing a robust ML
-model across various image resolutions without explicit training remains a
-challenge for nano\-scale defect inspection. This research's goal is to propose
-a scale\-invariant ADCD framework capable to upscale images, addressing this
-issue. We propose an improvised ADCD framework as SEMI\-SuperYOLO\-NAS, which
-builds upon the baseline YOLO\-NAS architecture. This framework integrates a SR
-assisted branch to aid in learning HR features by the defect detection
-backbone, particularly for detecting nano\-scale defect instances from LR
-images. Additionally, the SR\-assisted branch can recursively generate upscaled
-images from their corresponding downscaled counterparts, enabling defect
-detection inference across various image resolutions without requiring explicit
-training. Moreover, we investigate improved data augmentation strategy aimed at
-generating diverse and realistic training datasets to enhance model
-performance. We have evaluated our proposed approach using two original FAB
-datasets obtained from two distinct processes and captured using two different
-imaging tools. Finally, we demonstrate zero\-shot inference for our model on a
-new, originating from a process condition distinct from the training dataset
-and possessing different Pitch characteristics. Experimental validation
-demonstrates that our proposed ADCD framework aids in increasing the throughput
-of imaging tools for defect inspection by reducing the required image pixel
-resolutions.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2404.05862v1)
-
----
-
-
-## FlightScope: A Deep Comprehensive Assessment of Aircraft Detection Algorithms in Satellite Imagery
-
-**发布日期**：2024-04-03
-
-**作者**：Safouane El Ghazouali
-
-**摘要**：Object detection in remotely sensed satellite pictures is fundamental in many
-fields such as biophysical, and environmental monitoring. While deep learning
-algorithms are constantly evolving, they have been mostly implemented and
-tested on popular ground\-based taken photos. This paper critically evaluates
-and compares a suite of advanced object detection algorithms customized for the
-task of identifying aircraft within satellite imagery. Using the large
-HRPlanesV2 dataset, together with a rigorous validation with the GDIT dataset,
-this research encompasses an array of methodologies including YOLO versions 5
-and 8, Faster RCNN, CenterNet, RetinaNet, RTMDet, and DETR, all trained from
-scratch. This exhaustive training and validation study reveal YOLOv5 as the
-preeminent model for the specific case of identifying airplanes from remote
-sensing data, showcasing high precision and adaptability across diverse imaging
-conditions. This research highlight the nuanced performance landscapes of these
-algorithms, with YOLOv5 emerging as a robust solution for aerial object
-detection, underlining its importance through superior mean average precision,
-Recall, and Intersection over Union scores. The findings described here
-underscore the fundamental role of algorithm selection aligned with the
-specific demands of satellite imagery analysis and extend a comprehensive
-framework to evaluate model efficacy. The benchmark toolkit and codes,
-available via https://github.com/toelt\-llc/FlightScope\_Bench, aims to further
-exploration and innovation in the realm of remote sensing object detection,
-paving the way for improved analytical methodologies in satellite imagery
-applications.
-
-
-**代码链接**：https://github.com/toelt-llc/FlightScope_Bench,
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2404.02877v2)
-
----
-
-
-## Leveraging YOLO\-World and GPT\-4V LMMs for Zero\-Shot Person Detection and Action Recognition in Drone Imagery
-
-**发布日期**：2024-04-02
-
-**作者**：Christian Limberg
-
-**摘要**：In this article, we explore the potential of zero\-shot Large Multimodal
-Models \(LMMs\) in the domain of drone perception. We focus on person detection
-and action recognition tasks and evaluate two prominent LMMs, namely YOLO\-World
-and GPT\-4V\(ision\) using a publicly available dataset captured from aerial
-views. Traditional deep learning approaches rely heavily on large and
-high\-quality training datasets. However, in certain robotic settings, acquiring
-such datasets can be resource\-intensive or impractical within a reasonable
-timeframe. The flexibility of prompt\-based Large Multimodal Models \(LMMs\) and
-their exceptional generalization capabilities have the potential to
-revolutionize robotics applications in these scenarios. Our findings suggest
-that YOLO\-World demonstrates good detection performance. GPT\-4V struggles with
-accurately classifying action classes but delivers promising results in
-filtering out unwanted region proposals and in providing a general description
-of the scenery. This research represents an initial step in leveraging LMMs for
-drone perception and establishes a foundation for future investigations in this
-area.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2404.01571v1)
+**论文链接**：[阅读更多](http://arxiv.org/abs/2405.02317v1)
 
 ---
 
