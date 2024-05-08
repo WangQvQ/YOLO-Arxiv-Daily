@@ -108,6 +108,34 @@ commonly used high\-performance object detection of these architectures
 ---
 
 
+## Iterative Filter Pruning for Concatenation\-based CNN Architectures
+
+**发布日期**：2024-05-04
+
+**作者**：Svetlana Pavlitska
+
+**摘要**：Model compression and hardware acceleration are essential for the
+resource\-efficient deployment of deep neural networks. Modern object detectors
+have highly interconnected convolutional layers with concatenations. In this
+work, we study how pruning can be applied to such architectures, exemplary for
+YOLOv7. We propose a method to handle concatenation layers, based on the
+connectivity graph of convolutional layers. By automating iterative sensitivity
+analysis, pruning, and subsequent model fine\-tuning, we can significantly
+reduce model size both in terms of the number of parameters and FLOPs, while
+keeping comparable model accuracy. Finally, we deploy pruned models to FPGA and
+NVIDIA Jetson Xavier AGX. Pruned models demonstrate a 2x speedup for the
+convolutional layers in comparison to the unpruned counterparts and reach
+real\-time capability with 14 FPS on FPGA. Our code is available at
+https://github.com/fzi\-forschungszentrum\-informatik/iterative\-yolo\-pruning.
+
+
+**代码链接**：https://github.com/fzi-forschungszentrum-informatik/iterative-yolo-pruning.
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2405.03715v1)
+
+---
+
+
 ## Better YOLO with Attention\-Augmented Network and Enhanced Generalization Performance for Safety Helmet Detection
 
 **发布日期**：2024-05-04
@@ -303,43 +331,6 @@ experts.
 **代码链接**：摘要中未找到代码链接。
 
 **论文链接**：[阅读更多](http://arxiv.org/abs/2404.13745v1)
-
----
-
-
-## Long\-term Human Participation Assessment In Collaborative Learning Environments Using Dynamic Scene Analysis
-
-**发布日期**：2024-04-14
-
-**作者**：Wenjing Shi
-
-**摘要**：The paper develops datasets and methods to assess student participation in
-real\-life collaborative learning environments. In collaborative learning
-environments, students are organized into small groups where they are free to
-interact within their group. Thus, students can move around freely causing
-issues with strong pose variation, move out and re\-enter the camera scene, or
-face away from the camera. We formulate the problem of assessing student
-participation into two subproblems: \(i\) student group detection against strong
-background interference from other groups, and \(ii\) dynamic participant
-tracking within the group. A massive independent testing dataset of 12,518,250
-student label instances, of total duration of 21 hours and 22 minutes of
-real\-life videos, is used for evaluating the performance of our proposed method
-for student group detection. The proposed method of using multiple image
-representations is shown to perform equally or better than YOLO on all video
-instances. Over the entire dataset, the proposed method achieved an F1 score of
-0.85 compared to 0.80 for YOLO. Following student group detection, the paper
-presents the development of a dynamic participant tracking system for assessing
-student group participation through long video sessions. The proposed dynamic
-participant tracking system is shown to perform exceptionally well, missing a
-student in just one out of 35 testing videos. In comparison, a state of the art
-method fails to track students in 14 out of the 35 testing videos. The proposed
-method achieves 82.3% accuracy on an independent set of long, real\-life
-collaborative videos.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2405.02317v1)
 
 ---
 
