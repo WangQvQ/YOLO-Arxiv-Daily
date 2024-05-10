@@ -204,7 +204,7 @@ from https://github.com/SwjtuMa/FER\-YOLO\-Mamba.
 
 **代码链接**：https://github.com/SwjtuMa/FER-YOLO-Mamba.
 
-**论文链接**：[阅读更多](http://arxiv.org/abs/2405.01828v1)
+**论文链接**：[阅读更多](http://arxiv.org/abs/2405.01828v2)
 
 ---
 
