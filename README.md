@@ -1,6 +1,35 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Real\-Time Pill Identification for the Visually Impaired Using Deep Learning
+
+**发布日期**：2024-05-08
+
+**作者**：Bo Dang
+
+**摘要**：The prevalence of mobile technology offers unique opportunities for
+addressing healthcare challenges, especially for individuals with visual
+impairments. This paper explores the development and implementation of a deep
+learning\-based mobile application designed to assist blind and visually
+impaired individuals in real\-time pill identification. Utilizing the YOLO
+framework, the application aims to accurately recognize and differentiate
+between various pill types through real\-time image processing on mobile
+devices. The system incorporates Text\-to\- Speech \(TTS\) to provide immediate
+auditory feedback, enhancing usability and independence for visually impaired
+users. Our study evaluates the application's effectiveness in terms of
+detection accuracy and user experience, highlighting its potential to improve
+medication management and safety among the visually impaired community.
+Keywords\-Deep Learning; YOLO Framework; Mobile Application; Visual Impairment;
+Pill Identification; Healthcare
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2405.05983v1)
+
+---
+
+
 ## RepVGG\-GELAN: Enhanced GELAN with VGG\-STYLE ConvNets for Brain Tumour Detection
 
 **发布日期**：2024-05-06
@@ -204,7 +233,7 @@ from https://github.com/SwjtuMa/FER\-YOLO\-Mamba.
 
 **代码链接**：https://github.com/SwjtuMa/FER-YOLO-Mamba.
 
-**论文链接**：[阅读更多](http://arxiv.org/abs/2405.01828v2)
+**论文链接**：[阅读更多](http://arxiv.org/abs/2405.01828v3)
 
 ---
 
@@ -300,37 +329,6 @@ accuracies of 90.16% and 82.79%, respectively.
 **代码链接**：摘要中未找到代码链接。
 
 **论文链接**：[阅读更多](http://arxiv.org/abs/2404.15129v1)
-
----
-
-
-## A Nasal Cytology Dataset for Object Detection and Deep Learning
-
-**发布日期**：2024-04-21
-
-**作者**：Mauro Camporeale
-
-**摘要**：Nasal Cytology is a new and efficient clinical technique to diagnose rhinitis
-and allergies that is not much widespread due to the time\-consuming nature of
-cell counting; that is why AI\-aided counting could be a turning point for the
-diffusion of this technique. In this article we present the first dataset of
-rhino\-cytological field images: the NCD \(Nasal Cytology Dataset\), aimed to
-train and deploy Object Detection models to support physicians and biologists
-during clinical practice. The real distribution of the cytotypes, populating
-the nasal mucosa has been replicated, sampling images from slides of clinical
-patients, and manually annotating each cell found on them. The correspondent
-object detection task presents non'trivial issues associated with the strong
-class imbalancement, involving the rarest cell types. This work contributes to
-some of open challenges by presenting a novel machine learning\-based approach
-to aid the automated detection and classification of nasal mucosa cells: the
-DETR and YOLO models shown good performance in detecting cells and classifying
-them correctly, revealing great potential to accelerate the work of rhinology
-experts.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2404.13745v1)
 
 ---
 
