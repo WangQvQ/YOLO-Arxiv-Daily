@@ -1,6 +1,112 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## WeedScout: Real\-Time Autonomous blackgrass Classification and Mapping using dedicated hardware
+
+**发布日期**：2024-05-12
+
+**作者**：Matthew Gazzard
+
+**摘要**：Blackgrass \(Alopecurus myosuroides\) is a competitive weed that has
+wide\-ranging impacts on food security by reducing crop yields and increasing
+cultivation costs. In addition to the financial burden on agriculture, the
+application of herbicides as a preventive to blackgrass can negatively affect
+access to clean water and sanitation. The WeedScout project introduces a
+Real\-Rime Autonomous Black\-Grass Classification and Mapping \(RT\-ABGCM\), a
+cutting\-edge solution tailored for real\-time detection of blackgrass, for
+precision weed management practices. Leveraging Artificial Intelligence \(AI\)
+algorithms, the system processes live image feeds, infers blackgrass density,
+and covers two stages of maturation. The research investigates the deployment
+of You Only Look Once \(YOLO\) models, specifically the streamlined YOLOv8 and
+YOLO\-NAS, accelerated at the edge with the NVIDIA Jetson Nano \(NJN\). By
+optimising inference speed and model performance, the project advances the
+integration of AI into agricultural practices, offering potential solutions to
+challenges such as herbicide resistance and environmental impact. Additionally,
+two datasets and model weights are made available to the research community,
+facilitating further advancements in weed detection and precision farming
+technologies.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2405.07349v1)
+
+---
+
+
+## Differentiable Model Scaling using Differentiable Topk
+
+**发布日期**：2024-05-12
+
+**作者**：Kai Liu
+
+**摘要**：Over the past few years, as large language models have ushered in an era of
+intelligence emergence, there has been an intensified focus on scaling
+networks. Currently, many network architectures are designed manually, often
+resulting in sub\-optimal configurations. Although Neural Architecture Search
+\(NAS\) methods have been proposed to automate this process, they suffer from low
+search efficiency. This study introduces Differentiable Model Scaling \(DMS\),
+increasing the efficiency for searching optimal width and depth in networks.
+DMS can model both width and depth in a direct and fully differentiable way,
+making it easy to optimize. We have evaluated our DMS across diverse tasks,
+ranging from vision tasks to NLP tasks and various network architectures,
+including CNNs and Transformers. Results consistently indicate that our DMS can
+find improved structures and outperforms state\-of\-the\-art NAS methods.
+Specifically, for image classification on ImageNet, our DMS improves the top\-1
+accuracy of EfficientNet\-B0 and Deit\-Tiny by 1.4% and 0.6%, respectively, and
+outperforms the state\-of\-the\-art zero\-shot NAS method, ZiCo, by 1.3% while
+requiring only 0.4 GPU days for searching. For object detection on COCO, DMS
+improves the mAP of Yolo\-v8\-n by 2.0%. For language modeling, our pruned
+Llama\-7B outperforms the prior method with lower perplexity and higher
+zero\-shot classification accuracy. We will release our code in the future.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2405.07194v1)
+
+---
+
+
+## Common Corruptions for Enhancing and Evaluating Robustness in Air\-to\-Air Visual Object Detection
+
+**发布日期**：2024-05-10
+
+**作者**：Anastasios Arsenos
+
+**摘要**：The main barrier to achieving fully autonomous flights lies in autonomous
+aircraft navigation. Managing non\-cooperative traffic presents the most
+important challenge in this problem. The most efficient strategy for handling
+non\-cooperative traffic is based on monocular video processing through deep
+learning models. This study contributes to the vision\-based deep learning
+aircraft detection and tracking literature by investigating the impact of data
+corruption arising from environmental and hardware conditions on the
+effectiveness of these methods. More specifically, we designed $7$ types of
+common corruptions for camera inputs taking into account real\-world flight
+conditions. By applying these corruptions to the Airborne Object Tracking \(AOT\)
+dataset we constructed the first robustness benchmark dataset named AOT\-C for
+air\-to\-air aerial object detection. The corruptions included in this dataset
+cover a wide range of challenging conditions such as adverse weather and sensor
+noise. The second main contribution of this letter is to present an extensive
+experimental evaluation involving $8$ diverse object detectors to explore the
+degradation in the performance under escalating levels of corruptions \(domain
+shifts\). Based on the evaluation results, the key observations that emerge are
+the following: 1\) One\-stage detectors of the YOLO family demonstrate better
+robustness, 2\) Transformer\-based and multi\-stage detectors like Faster R\-CNN
+are extremely vulnerable to corruptions, 3\) Robustness against corruptions is
+related to the generalization ability of models. The third main contribution is
+to present that finetuning on our augmented synthetic data results in
+improvements in the generalisation ability of the object detector in real\-world
+flight experiments.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2405.06765v1)
+
+---
+
+
 ## Real\-Time Pill Identification for the Visually Impaired Using Deep Learning
 
 **发布日期**：2024-05-08
@@ -234,101 +340,6 @@ from https://github.com/SwjtuMa/FER\-YOLO\-Mamba.
 **代码链接**：https://github.com/SwjtuMa/FER-YOLO-Mamba.
 
 **论文链接**：[阅读更多](http://arxiv.org/abs/2405.01828v3)
-
----
-
-
-## Active Learning Enabled Low\-cost Cell Image Segmentation Using Bounding Box Annotation
-
-**发布日期**：2024-05-02
-
-**作者**：Yu Zhu
-
-**摘要**：Cell image segmentation is usually implemented using fully supervised deep
-learning methods, which heavily rely on extensive annotated training data. Yet,
-due to the complexity of cell morphology and the requirement for specialized
-knowledge, pixel\-level annotation of cell images has become a highly
-labor\-intensive task. To address the above problems, we propose an active
-learning framework for cell segmentation using bounding box annotations, which
-greatly reduces the data annotation cost of cell segmentation algorithms.
-First, we generate a box\-supervised learning method \(denoted as YOLO\-SAM\) by
-combining the YOLOv8 detector with the Segment Anything Model \(SAM\), which
-effectively reduces the complexity of data annotation. Furthermore, it is
-integrated into an active learning framework that employs the MC DropBlock
-method to train the segmentation model with fewer box\-annotated samples.
-Extensive experiments demonstrate that our model saves more than ninety percent
-of data annotation time compared to mask\-supervised deep learning methods.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2405.01701v1)
-
----
-
-
-## SOAR: Advancements in Small Body Object Detection for Aerial Imagery Using State Space Models and Programmable Gradients
-
-**发布日期**：2024-05-02
-
-**作者**：Tushar Verma
-
-**摘要**：Small object detection in aerial imagery presents significant challenges in
-computer vision due to the minimal data inherent in small\-sized objects and
-their propensity to be obscured by larger objects and background noise.
-Traditional methods using transformer\-based models often face limitations
-stemming from the lack of specialized databases, which adversely affect their
-performance with objects of varying orientations and scales. This underscores
-the need for more adaptable, lightweight models. In response, this paper
-introduces two innovative approaches that significantly enhance detection and
-segmentation capabilities for small aerial objects. Firstly, we explore the use
-of the SAHI framework on the newly introduced lightweight YOLO v9 architecture,
-which utilizes Programmable Gradient Information \(PGI\) to reduce the
-substantial information loss typically encountered in sequential feature
-extraction processes. The paper employs the Vision Mamba model, which
-incorporates position embeddings to facilitate precise location\-aware visual
-understanding, combined with a novel bidirectional State Space Model \(SSM\) for
-effective visual context modeling. This State Space Model adeptly harnesses the
-linear complexity of CNNs and the global receptive field of Transformers,
-making it particularly effective in remote sensing image classification. Our
-experimental results demonstrate substantial improvements in detection accuracy
-and processing efficiency, validating the applicability of these approaches for
-real\-time small object detection across diverse aerial scenarios. This paper
-also discusses how these methodologies could serve as foundational models for
-future advancements in aerial object recognition technologies. The source code
-will be made accessible here.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2405.01699v2)
-
----
-
-
-## Gallbladder Cancer Detection in Ultrasound Images based on YOLO and Faster R\-CNN
-
-**发布日期**：2024-04-23
-
-**作者**：Sara Dadjouy
-
-**摘要**：Medical image analysis is a significant application of artificial
-intelligence for disease diagnosis. A crucial step in this process is the
-identification of regions of interest within the images. This task can be
-automated using object detection algorithms. YOLO and Faster R\-CNN are renowned
-for such algorithms, each with its own strengths and weaknesses. This study
-aims to explore the advantages of both techniques to select more accurate
-bounding boxes for gallbladder detection from ultrasound images, thereby
-enhancing gallbladder cancer classification. A fusion method that leverages the
-benefits of both techniques is presented in this study. The proposed method
-demonstrated superior classification performance, with an accuracy of 92.62%,
-compared to the individual use of Faster R\-CNN and YOLOv8, which yielded
-accuracies of 90.16% and 82.79%, respectively.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2404.15129v1)
 
 ---
 
