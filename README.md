@@ -102,7 +102,7 @@ flight experiments.
 
 **代码链接**：摘要中未找到代码链接。
 
-**论文链接**：[阅读更多](http://arxiv.org/abs/2405.06765v1)
+**论文链接**：[阅读更多](http://arxiv.org/abs/2405.06765v2)
 
 ---
 
