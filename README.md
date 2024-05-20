@@ -1,6 +1,37 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Drone\-type\-Set: Drone types detection benchmark for drone detection and tracking
+
+**发布日期**：2024-05-16
+
+**作者**：Kholoud AlDosari
+
+**摘要**：The Unmanned Aerial Vehicles \(UAVs\) market has been significantly growing and
+Considering the availability of drones at low\-cost prices the possibility of
+misusing them, for illegal purposes such as drug trafficking, spying, and
+terrorist attacks posing high risks to national security, is rising. Therefore,
+detecting and tracking unauthorized drones to prevent future attacks that
+threaten lives, facilities, and security, become a necessity. Drone detection
+can be performed using different sensors, while image\-based detection is one of
+them due to the development of artificial intelligence techniques. However,
+knowing unauthorized drone types is one of the challenges due to the lack of
+drone types datasets. For that, in this paper, we provide a dataset of various
+drones as well as a comparison of recognized object detection models on the
+proposed dataset including YOLO algorithms with their different versions, like,
+v3, v4, and v5 along with the Detectronv2. The experimental results of
+different models are provided along with a description of each method. The
+collected dataset can be found in
+https://drive.google.com/drive/folders/1EPOpqlF4vG7hp4MYnfAecVOsdQ2JwBEd?usp=share\_link
+
+
+**代码链接**：https://drive.google.com/drive/folders/1EPOpqlF4vG7hp4MYnfAecVOsdQ2JwBEd?usp=share_link
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2405.10398v1)
+
+---
+
+
 ## WeedScout: Real\-Time Autonomous blackgrass Classification and Mapping using dedicated hardware
 
 **发布日期**：2024-05-12
@@ -304,42 +335,6 @@ generalization, and efficiency.
 **代码链接**：摘要中未找到代码链接。
 
 **论文链接**：[阅读更多](http://arxiv.org/abs/2405.02591v1)
-
----
-
-
-## FER\-YOLO\-Mamba: Facial Expression Detection and Classification Based on Selective State Space
-
-**发布日期**：2024-05-03
-
-**作者**：Hui Ma
-
-**摘要**：Facial Expression Recognition \(FER\) plays a pivotal role in understanding
-human emotional cues. However, traditional FER methods based on visual
-information have some limitations, such as preprocessing, feature extraction,
-and multi\-stage classification procedures. These not only increase
-computational complexity but also require a significant amount of computing
-resources. Considering Convolutional Neural Network \(CNN\)\-based FER schemes
-frequently prove inadequate in identifying the deep, long\-distance dependencies
-embedded within facial expression images, and the Transformer's inherent
-quadratic computational complexity, this paper presents the FER\-YOLO\-Mamba
-model, which integrates the principles of Mamba and YOLO technologies to
-facilitate efficient coordination in facial expression image recognition and
-localization. Within the FER\-YOLO\-Mamba model, we further devise a FER\-YOLO\-VSS
-dual\-branch module, which combines the inherent strengths of convolutional
-layers in local feature extraction with the exceptional capability of State
-Space Models \(SSMs\) in revealing long\-distance dependencies. To the best of our
-knowledge, this is the first Vision Mamba model designed for facial expression
-detection and classification. To evaluate the performance of the proposed
-FER\-YOLO\-Mamba model, we conducted experiments on two benchmark datasets,
-RAF\-DB and SFEW. The experimental results indicate that the FER\-YOLO\-Mamba
-model achieved better results compared to other models. The code is available
-from https://github.com/SwjtuMa/FER\-YOLO\-Mamba.
-
-
-**代码链接**：https://github.com/SwjtuMa/FER-YOLO-Mamba.
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2405.01828v3)
 
 ---
 
