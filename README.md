@@ -1,6 +1,41 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Bangladeshi Native Vehicle Detection in Wild
+
+**发布日期**：2024-05-20
+
+**作者**：Bipin Saha
+
+**摘要**：The success of autonomous navigation relies on robust and precise vehicle
+recognition, hindered by the scarcity of region\-specific vehicle detection
+datasets, impeding the development of context\-aware systems. To advance
+terrestrial object detection research, this paper proposes a native vehicle
+detection dataset for the most commonly appeared vehicle classes in Bangladesh.
+17 distinct vehicle classes have been taken into account, with fully annotated
+81542 instances of 17326 images. Each image width is set to at least 1280px.
+The dataset's average vehicle bounding box\-to\-image ratio is 4.7036. This
+Bangladesh Native Vehicle Dataset \(BNVD\) has accounted for several
+geographical, illumination, variety of vehicle sizes, and orientations to be
+more robust on surprised scenarios. In the context of examining the BNVD
+dataset, this work provides a thorough assessment with four successive You Only
+Look Once \(YOLO\) models, namely YOLO v5, v6, v7, and v8. These dataset's
+effectiveness is methodically evaluated and contrasted with other vehicle
+datasets already in use. The BNVD dataset exhibits mean average precision\(mAP\)
+at 50% intersection over union \(IoU\) is 0.848 corresponding precision and
+recall values of 0.841 and 0.774. The research findings indicate a mAP of 0.643
+at an IoU range of 0.5 to 0.95. The experiments show that the BNVD dataset
+serves as a reliable representation of vehicle distribution and presents
+considerable complexities.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2405.12150v1)
+
+---
+
+
 ## Drone\-type\-Set: Drone types detection benchmark for drone detection and tracking
 
 **发布日期**：2024-05-16
@@ -298,43 +333,6 @@ https://github.com/fzi\-forschungszentrum\-informatik/iterative\-yolo\-pruning.
 **代码链接**：https://github.com/fzi-forschungszentrum-informatik/iterative-yolo-pruning.
 
 **论文链接**：[阅读更多](http://arxiv.org/abs/2405.03715v1)
-
----
-
-
-## Better YOLO with Attention\-Augmented Network and Enhanced Generalization Performance for Safety Helmet Detection
-
-**发布日期**：2024-05-04
-
-**作者**：Shuqi Shen
-
-**摘要**：Safety helmets play a crucial role in protecting workers from head injuries
-in construction sites, where potential hazards are prevalent. However,
-currently, there is no approach that can simultaneously achieve both model
-accuracy and performance in complex environments. In this study, we utilized a
-Yolo\-based model for safety helmet detection, achieved a 2% improvement in mAP
-\(mean Average Precision\) performance while reducing parameters and Flops count
-by over 25%. YOLO\(You Only Look Once\) is a widely used, high\-performance,
-lightweight model architecture that is well suited for complex environments. We
-presents a novel approach by incorporating a lightweight feature extraction
-network backbone based on GhostNetv2, integrating attention modules such as
-Spatial Channel\-wise Attention Net\(SCNet\) and Coordination Attention
-Net\(CANet\), and adopting the Gradient Norm Aware optimizer \(GAM\) for improved
-generalization ability. In safety\-critical environments, the accurate detection
-and speed of safety helmets plays a pivotal role in preventing occupational
-hazards and ensuring compliance with safety protocols. This work addresses the
-pressing need for robust and efficient helmet detection methods, offering a
-comprehensive framework that not only enhances accuracy but also improves the
-adaptability of detection models to real\-world conditions. Our experimental
-results underscore the synergistic effects of GhostNetv2, attention modules,
-and the GAM optimizer, presenting a compelling solution for safety helmet
-detection that achieves superior performance in terms of accuracy,
-generalization, and efficiency.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2405.02591v1)
 
 ---
 
