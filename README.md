@@ -1,6 +1,47 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## YOLOv10: Real\-Time End\-to\-End Object Detection
+
+**发布日期**：2024-05-23
+
+**作者**：Ao Wang
+
+**摘要**：Over the past years, YOLOs have emerged as the predominant paradigm in the
+field of real\-time object detection owing to their effective balance between
+computational cost and detection performance. Researchers have explored the
+architectural designs, optimization objectives, data augmentation strategies,
+and others for YOLOs, achieving notable progress. However, the reliance on the
+non\-maximum suppression \(NMS\) for post\-processing hampers the end\-to\-end
+deployment of YOLOs and adversely impacts the inference latency. Besides, the
+design of various components in YOLOs lacks the comprehensive and thorough
+inspection, resulting in noticeable computational redundancy and limiting the
+model's capability. It renders the suboptimal efficiency, along with
+considerable potential for performance improvements. In this work, we aim to
+further advance the performance\-efficiency boundary of YOLOs from both the
+post\-processing and model architecture. To this end, we first present the
+consistent dual assignments for NMS\-free training of YOLOs, which brings
+competitive performance and low inference latency simultaneously. Moreover, we
+introduce the holistic efficiency\-accuracy driven model design strategy for
+YOLOs. We comprehensively optimize various components of YOLOs from both
+efficiency and accuracy perspectives, which greatly reduces the computational
+overhead and enhances the capability. The outcome of our effort is a new
+generation of YOLO series for real\-time end\-to\-end object detection, dubbed
+YOLOv10. Extensive experiments show that YOLOv10 achieves state\-of\-the\-art
+performance and efficiency across various model scales. For example, our
+YOLOv10\-S is 1.8$\\times$ faster than RT\-DETR\-R18 under the similar AP on COCO,
+meanwhile enjoying 2.8$\\times$ smaller number of parameters and FLOPs. Compared
+with YOLOv9\-C, YOLOv10\-B has 46\\% less latency and 25\\% fewer parameters for
+the same performance.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2405.14458v1)
+
+---
+
+
 ## Bangladeshi Native Vehicle Detection in Wild
 
 **发布日期**：2024-05-20
@@ -305,34 +346,6 @@ commonly used high\-performance object detection of these architectures
 **代码链接**：摘要中未找到代码链接。
 
 **论文链接**：[阅读更多](http://arxiv.org/abs/2405.02785v1)
-
----
-
-
-## Iterative Filter Pruning for Concatenation\-based CNN Architectures
-
-**发布日期**：2024-05-04
-
-**作者**：Svetlana Pavlitska
-
-**摘要**：Model compression and hardware acceleration are essential for the
-resource\-efficient deployment of deep neural networks. Modern object detectors
-have highly interconnected convolutional layers with concatenations. In this
-work, we study how pruning can be applied to such architectures, exemplary for
-YOLOv7. We propose a method to handle concatenation layers, based on the
-connectivity graph of convolutional layers. By automating iterative sensitivity
-analysis, pruning, and subsequent model fine\-tuning, we can significantly
-reduce model size both in terms of the number of parameters and FLOPs, while
-keeping comparable model accuracy. Finally, we deploy pruned models to FPGA and
-NVIDIA Jetson Xavier AGX. Pruned models demonstrate a 2x speedup for the
-convolutional layers in comparison to the unpruned counterparts and reach
-real\-time capability with 14 FPS on FPGA. Our code is available at
-https://github.com/fzi\-forschungszentrum\-informatik/iterative\-yolo\-pruning.
-
-
-**代码链接**：https://github.com/fzi-forschungszentrum-informatik/iterative-yolo-pruning.
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2405.03715v1)
 
 ---
 
