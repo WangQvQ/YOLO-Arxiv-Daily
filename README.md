@@ -1,6 +1,38 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Enhancing Pollinator Conservation towards Agriculture 4.0: Monitoring of Bees through Object Recognition
+
+**发布日期**：2024-05-24
+
+**作者**：Ajay John Alex
+
+**摘要**：In an era of rapid climate change and its adverse effects on food production,
+technological intervention to monitor pollinator conservation is of paramount
+importance for environmental monitoring and conservation for global food
+security. The survival of the human species depends on the conservation of
+pollinators. This article explores the use of Computer Vision and Object
+Recognition to autonomously track and report bee behaviour from images. A novel
+dataset of 9664 images containing bees is extracted from video streams and
+annotated with bounding boxes. With training, validation and testing sets
+\(6722, 1915, and 997 images, respectively\), the results of the COCO\-based YOLO
+model fine\-tuning approaches show that YOLOv5m is the most effective approach
+in terms of recognition accuracy. However, YOLOv5s was shown to be the most
+optimal for real\-time bee detection with an average processing and inference
+time of 5.1ms per video frame at the cost of slightly lower ability. The
+trained model is then packaged within an explainable AI interface, which
+converts detection events into timestamped reports and charts, with the aim of
+facilitating use by non\-technical users such as expert stakeholders from the
+apiculture industry towards informing responsible consumption and production.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2405.15428v1)
+
+---
+
+
 ## YOLOv10: Real\-Time End\-to\-End Object Detection
 
 **发布日期**：2024-05-23
@@ -310,42 +342,6 @@ promising a safer and more sustainable urban micromobility landscape.
 **代码链接**：https://zenodo.org/records/10578641)，https://github.com/DongChen06/ScooterDet)
 
 **论文链接**：[阅读更多](http://arxiv.org/abs/2405.03039v1)
-
----
-
-
-## Fused attention mechanism\-based ore sorting network
-
-**发布日期**：2024-05-05
-
-**作者**：Junjiang Zhen
-
-**摘要**：Deep learning has had a significant impact on the identification and
-classification of mineral resources, especially playing a key role in
-efficiently and accurately identifying different minerals, which is important
-for improving the efficiency and accuracy of mining. However, traditional ore
-sorting meth\- ods often suffer from inefficiency and lack of accuracy,
-especially in complex mineral environments. To address these challenges, this
-study proposes a method called OreYOLO, which incorporates an attentional
-mechanism and a multi\-scale feature fusion strategy, based on ore data from
-gold and sul\- fide ores. By introducing the progressive feature pyramid
-structure into YOLOv5 and embedding the attention mechanism in the feature
-extraction module, the detection performance and accuracy of the model are
-greatly improved. In order to adapt to the diverse ore sorting scenarios and
-the deployment requirements of edge devices, the network structure is designed
-to be lightweight, which achieves a low number of parameters \(3.458M\) and
-computational complexity \(6.3GFLOPs\) while maintaining high accuracy \(99.3% and
-99.2%, respectively\). In the experimental part, a target detection dataset
-containing 6000 images of gold and sulfuric iron ore is constructed for gold
-and sulfuric iron ore classification training, and several sets of comparison
-experiments are set up, including the YOLO series, EfficientDet, Faster\-RCNN,
-and CenterNet, etc., and the experiments prove that OreYOLO outperforms the
-commonly used high\-performance object detection of these architectures
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2405.02785v1)
 
 ---
 
