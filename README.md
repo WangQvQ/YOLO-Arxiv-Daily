@@ -1,6 +1,67 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## "Pass the butter": A study on desktop\-classic multitasking robotic arm based on advanced YOLOv7 and BERT
+
+**发布日期**：2024-05-27
+
+**作者**：Haohua Que
+
+**摘要**：In recent years, various intelligent autonomous robots have begun to appear
+in daily life and production. Desktop\-level robots are characterized by their
+flexible deployment, rapid response, and suitability for light workload
+environments. In order to meet the current societal demand for service robot
+technology, this study proposes using a miniaturized desktop\-level robot \(by
+ROS\) as a carrier, locally deploying a natural language model \(NLP\-BERT\), and
+integrating visual recognition \(CV\-YOLO\) and speech recognition technology
+\(ASR\-Whisper\) as inputs to achieve autonomous decision\-making and rational
+action by the desktop robot. Three comprehensive experiments were designed to
+validate the robotic arm, and the results demonstrate excellent performance
+using this approach across all three experiments. In Task 1, the execution
+rates for speech recognition and action performance were 92.6% and 84.3%,
+respectively. In Task 2, the highest execution rates under the given conditions
+reached 92.1% and 84.6%, while in Task 3, the highest execution rates were
+95.2% and 80.8%, respectively. Therefore, it can be concluded that the proposed
+solution integrating ASR, NLP, and other technologies on edge devices is
+feasible and provides a technical and engineering foundation for realizing
+multimodal desktop\-level robots.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2405.17250v1)
+
+---
+
+
+## Evaluation of Resource\-Efficient Crater Detectors on Embedded Systems
+
+**发布日期**：2024-05-27
+
+**作者**：Simon Vellas
+
+**摘要**：Real\-time analysis of Martian craters is crucial for mission\-critical
+operations, including safe landings and geological exploration. This work
+leverages the latest breakthroughs for on\-the\-edge crater detection aboard
+spacecraft. We rigorously benchmark several YOLO networks using a Mars craters
+dataset, analyzing their performance on embedded systems with a focus on
+optimization for low\-power devices. We optimize this process for a new wave of
+cost\-effective, commercial\-off\-the\-shelf\-based smaller satellites.
+Implementations on diverse platforms, including Google Coral Edge TPU, AMD
+Versal SoC VCK190, Nvidia Jetson Nano and Jetson AGX Orin, undergo a detailed
+trade\-off analysis. Our findings identify optimal network\-device pairings,
+enhancing the feasibility of crater detection on resource\-constrained hardware
+and setting a new precedent for efficient and resilient extraterrestrial
+imaging. Code at: https://github.com/billpsomas/mars\_crater\_detection.
+
+
+**代码链接**：https://github.com/billpsomas/mars_crater_detection.
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2405.16953v1)
+
+---
+
+
 ## Enhancing Pollinator Conservation towards Agriculture 4.0: Monitoring of Bees through Object Recognition
 
 **发布日期**：2024-05-24
@@ -271,77 +332,6 @@ Pill Identification; Healthcare
 **代码链接**：摘要中未找到代码链接。
 
 **论文链接**：[阅读更多](http://arxiv.org/abs/2405.05983v1)
-
----
-
-
-## RepVGG\-GELAN: Enhanced GELAN with VGG\-STYLE ConvNets for Brain Tumour Detection
-
-**发布日期**：2024-05-06
-
-**作者**：Thennarasi Balakrishnan
-
-**摘要**：Object detection algorithms particularly those based on YOLO have
-demonstrated remarkable efficiency in balancing speed and accuracy. However,
-their application in brain tumour detection remains underexplored. This study
-proposes RepVGG\-GELAN, a novel YOLO architecture enhanced with RepVGG, a
-reparameterized convolutional approach for object detection tasks particularly
-focusing on brain tumour detection within medical images. RepVGG\-GELAN
-leverages the RepVGG architecture to improve both speed and accuracy in
-detecting brain tumours. Integrating RepVGG into the YOLO framework aims to
-achieve a balance between computational efficiency and detection performance.
-This study includes a spatial pyramid pooling\-based Generalized Efficient Layer
-Aggregation Network \(GELAN\) architecture which further enhances the capability
-of RepVGG. Experimental evaluation conducted on a brain tumour dataset
-demonstrates the effectiveness of RepVGG\-GELAN surpassing existing RCS\-YOLO in
-terms of precision and speed. Specifically, RepVGG\-GELAN achieves an increased
-precision of 4.91% and an increased AP50 of 2.54% over the latest existing
-approach while operating at 240.7 GFLOPs. The proposed RepVGG\-GELAN with GELAN
-architecture presents promising results establishing itself as a
-state\-of\-the\-art solution for accurate and efficient brain tumour detection in
-medical images. The implementation code is publicly available at
-https://github.com/ThensiB/RepVGG\-GELAN.
-
-
-**代码链接**：https://github.com/ThensiB/RepVGG-GELAN.
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2405.03541v1)
-
----
-
-
-## Performance Evaluation of Real\-Time Object Detection for Electric Scooters
-
-**发布日期**：2024-05-05
-
-**作者**：Dong Chen
-
-**摘要**：Electric scooters \(e\-scooters\) have rapidly emerged as a popular mode of
-transportation in urban areas, yet they pose significant safety challenges. In
-the United States, the rise of e\-scooters has been marked by a concerning
-increase in related injuries and fatalities. Recently, while deep\-learning
-object detection holds paramount significance in autonomous vehicles to avoid
-potential collisions, its application in the context of e\-scooters remains
-relatively unexplored. This paper addresses this gap by assessing the
-effectiveness and efficiency of cutting\-edge object detectors designed for
-e\-scooters. To achieve this, the first comprehensive benchmark involving 22
-state\-of\-the\-art YOLO object detectors, including five versions \(YOLOv3,
-YOLOv5, YOLOv6, YOLOv7, and YOLOv8\), has been established for real\-time traffic
-object detection using a self\-collected dataset featuring e\-scooters. The
-detection accuracy, measured in terms of mAP@0.5, ranges from 27.4%
-\(YOLOv7\-E6E\) to 86.8% \(YOLOv5s\). All YOLO models, particularly YOLOv3\-tiny,
-have displayed promising potential for real\-time object detection in the
-context of e\-scooters. Both the traffic scene dataset
-\(https://zenodo.org/records/10578641\) and software program codes
-\(https://github.com/DongChen06/ScooterDet\) for model benchmarking in this study
-are publicly available, which will not only improve e\-scooter safety with
-advanced object detection but also lay the groundwork for tailored solutions,
-promising a safer and more sustainable urban micromobility landscape.
-
-
-**代码链接**：https://zenodo.org/records/10578641)，https://github.com/DongChen06/ScooterDet)
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2405.03039v1)
 
 ---
 
