@@ -1,6 +1,45 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Open\-YOLO 3D: Towards Fast and Accurate Open\-Vocabulary 3D Instance Segmentation
+
+**发布日期**：2024-06-04
+
+**作者**：Mohamed El Amine Boudjoghra
+
+**摘要**：Recent works on open\-vocabulary 3D instance segmentation show strong promise,
+but at the cost of slow inference speed and high computation requirements. This
+high computation cost is typically due to their heavy reliance on 3D clip
+features, which require computationally expensive 2D foundation models like
+Segment Anything \(SAM\) and CLIP for multi\-view aggregation into 3D. As a
+consequence, this hampers their applicability in many real\-world applications
+that require both fast and accurate predictions. To this end, we propose a fast
+yet accurate open\-vocabulary 3D instance segmentation approach, named Open\-YOLO
+3D, that effectively leverages only 2D object detection from multi\-view RGB
+images for open\-vocabulary 3D instance segmentation. We address this task by
+generating class\-agnostic 3D masks for objects in the scene and associating
+them with text prompts. We observe that the projection of class\-agnostic 3D
+point cloud instances already holds instance information; thus, using SAM might
+only result in redundancy that unnecessarily increases the inference time. We
+empirically find that a better performance of matching text prompts to 3D masks
+can be achieved in a faster fashion with a 2D object detector. We validate our
+Open\-YOLO 3D on two benchmarks, ScanNet200 and Replica, under two scenarios:
+\(i\) with ground truth masks, where labels are required for given object
+proposals, and \(ii\) with class\-agnostic 3D proposals generated from a 3D
+proposal network. Our Open\-YOLO 3D achieves state\-of\-the\-art performance on
+both datasets while obtaining up to $\\sim$16$\\times$ speedup compared to the
+best existing method in literature. On ScanNet200 val. set, our Open\-YOLO 3D
+achieves mean average precision \(mAP\) of 24.7\\% while operating at 22 seconds
+per scene. Code and model are available at github.com/aminebdj/OpenYOLO3D.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2406.02548v1)
+
+---
+
+
 ## "Pass the butter": A study on desktop\-classic multitasking robotic arm based on advanced YOLOv7 and BERT
 
 **发布日期**：2024-05-27
@@ -303,35 +342,6 @@ flight experiments.
 **代码链接**：摘要中未找到代码链接。
 
 **论文链接**：[阅读更多](http://arxiv.org/abs/2405.06765v2)
-
----
-
-
-## Real\-Time Pill Identification for the Visually Impaired Using Deep Learning
-
-**发布日期**：2024-05-08
-
-**作者**：Bo Dang
-
-**摘要**：The prevalence of mobile technology offers unique opportunities for
-addressing healthcare challenges, especially for individuals with visual
-impairments. This paper explores the development and implementation of a deep
-learning\-based mobile application designed to assist blind and visually
-impaired individuals in real\-time pill identification. Utilizing the YOLO
-framework, the application aims to accurately recognize and differentiate
-between various pill types through real\-time image processing on mobile
-devices. The system incorporates Text\-to\- Speech \(TTS\) to provide immediate
-auditory feedback, enhancing usability and independence for visually impaired
-users. Our study evaluates the application's effectiveness in terms of
-detection accuracy and user experience, highlighting its potential to improve
-medication management and safety among the visually impaired community.
-Keywords\-Deep Learning; YOLO Framework; Mobile Application; Visual Impairment;
-Pill Identification; Healthcare
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2405.05983v1)
 
 ---
 
