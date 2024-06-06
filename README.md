@@ -1,6 +1,34 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## LW\-DETR: A Transformer Replacement to YOLO for Real\-Time Detection
+
+**发布日期**：2024-06-05
+
+**作者**：Qiang Chen
+
+**摘要**：In this paper, we present a light\-weight detection transformer, LW\-DETR,
+which outperforms YOLOs for real\-time object detection. The architecture is a
+simple stack of a ViT encoder, a projector, and a shallow DETR decoder. Our
+approach leverages recent advanced techniques, such as training\-effective
+techniques, e.g., improved loss and pretraining, and interleaved window and
+global attentions for reducing the ViT encoder complexity. We improve the ViT
+encoder by aggregating multi\-level feature maps, and the intermediate and final
+feature maps in the ViT encoder, forming richer feature maps, and introduce
+window\-major feature map organization for improving the efficiency of
+interleaved attention computation. Experimental results demonstrate that the
+proposed approach is superior over existing real\-time detectors, e.g., YOLO and
+its variants, on COCO and other benchmark datasets. Code and models are
+available at \(https://github.com/Atten4Vis/LW\-DETR\).
+
+
+**代码链接**：https://github.com/Atten4Vis/LW-DETR).
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2406.03459v1)
+
+---
+
+
 ## Open\-YOLO 3D: Towards Fast and Accurate Open\-Vocabulary 3D Instance Segmentation
 
 **发布日期**：2024-06-04
@@ -303,45 +331,6 @@ zero\-shot classification accuracy. We will release our code in the future.
 **代码链接**：摘要中未找到代码链接。
 
 **论文链接**：[阅读更多](http://arxiv.org/abs/2405.07194v1)
-
----
-
-
-## Common Corruptions for Enhancing and Evaluating Robustness in Air\-to\-Air Visual Object Detection
-
-**发布日期**：2024-05-10
-
-**作者**：Anastasios Arsenos
-
-**摘要**：The main barrier to achieving fully autonomous flights lies in autonomous
-aircraft navigation. Managing non\-cooperative traffic presents the most
-important challenge in this problem. The most efficient strategy for handling
-non\-cooperative traffic is based on monocular video processing through deep
-learning models. This study contributes to the vision\-based deep learning
-aircraft detection and tracking literature by investigating the impact of data
-corruption arising from environmental and hardware conditions on the
-effectiveness of these methods. More specifically, we designed $7$ types of
-common corruptions for camera inputs taking into account real\-world flight
-conditions. By applying these corruptions to the Airborne Object Tracking \(AOT\)
-dataset we constructed the first robustness benchmark dataset named AOT\-C for
-air\-to\-air aerial object detection. The corruptions included in this dataset
-cover a wide range of challenging conditions such as adverse weather and sensor
-noise. The second main contribution of this letter is to present an extensive
-experimental evaluation involving $8$ diverse object detectors to explore the
-degradation in the performance under escalating levels of corruptions \(domain
-shifts\). Based on the evaluation results, the key observations that emerge are
-the following: 1\) One\-stage detectors of the YOLO family demonstrate better
-robustness, 2\) Transformer\-based and multi\-stage detectors like Faster R\-CNN
-are extremely vulnerable to corruptions, 3\) Robustness against corruptions is
-related to the generalization ability of models. The third main contribution is
-to present that finetuning on our augmented synthetic data results in
-improvements in the generalisation ability of the object detector in real\-world
-flight experiments.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2405.06765v2)
 
 ---
 
