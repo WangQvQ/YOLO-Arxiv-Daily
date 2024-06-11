@@ -1,6 +1,43 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Mamba YOLO: SSMs\-Based YOLO For Object Detection
+
+**发布日期**：2024-06-09
+
+**作者**：Zeyu Wang
+
+**摘要**：Propelled by the rapid advancement of deep learning technologies, the YOLO
+series has set a new benchmark for real\-time object detectors. Researchers have
+continuously explored innovative applications of reparameterization, efficient
+layer aggregation networks, and anchor\-free techniques on the foundation of
+YOLO. To further enhance detection performance, Transformer\-based structures
+have been introduced, significantly expanding the model's receptive field and
+achieving notable performance gains. However, such improvements come at a cost,
+as the quadratic complexity of the self\-attention mechanism increases the
+computational burden of the model. Fortunately, the emergence of State Space
+Models \(SSM\) as an innovative technology has effectively mitigated the issues
+caused by quadratic complexity. In light of these advancements, we introduce
+Mamba\-YOLO a novel object detection model based on SSM. Mamba\-YOLO not only
+optimizes the SSM foundation but also adapts specifically for object detection
+tasks. Given the potential limitations of SSM in sequence modeling, such as
+insufficient receptive field and weak image locality, we have designed the
+LSBlock and RGBlock. These modules enable more precise capture of local image
+dependencies and significantly enhance the robustness of the model. Extensive
+experimental results on the publicly available benchmark datasets COCO and VOC
+demonstrate that Mamba\-YOLO surpasses the existing YOLO series models in both
+performance and competitiveness, showcasing its substantial potential and
+competitive edge.The PyTorch code is available
+at:\\url\{https://github.com/HZAI\-ZJNU/Mamba\-YOLO\}
+
+
+**代码链接**：https://github.com/HZAI-ZJNU/Mamba-YOLO}
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2406.05835v1)
+
+---
+
+
 ## LW\-DETR: A Transformer Replacement to YOLO for Real\-Time Detection
 
 **发布日期**：2024-06-05
@@ -297,40 +334,6 @@ technologies.
 **代码链接**：摘要中未找到代码链接。
 
 **论文链接**：[阅读更多](http://arxiv.org/abs/2405.07349v1)
-
----
-
-
-## Differentiable Model Scaling using Differentiable Topk
-
-**发布日期**：2024-05-12
-
-**作者**：Kai Liu
-
-**摘要**：Over the past few years, as large language models have ushered in an era of
-intelligence emergence, there has been an intensified focus on scaling
-networks. Currently, many network architectures are designed manually, often
-resulting in sub\-optimal configurations. Although Neural Architecture Search
-\(NAS\) methods have been proposed to automate this process, they suffer from low
-search efficiency. This study introduces Differentiable Model Scaling \(DMS\),
-increasing the efficiency for searching optimal width and depth in networks.
-DMS can model both width and depth in a direct and fully differentiable way,
-making it easy to optimize. We have evaluated our DMS across diverse tasks,
-ranging from vision tasks to NLP tasks and various network architectures,
-including CNNs and Transformers. Results consistently indicate that our DMS can
-find improved structures and outperforms state\-of\-the\-art NAS methods.
-Specifically, for image classification on ImageNet, our DMS improves the top\-1
-accuracy of EfficientNet\-B0 and Deit\-Tiny by 1.4% and 0.6%, respectively, and
-outperforms the state\-of\-the\-art zero\-shot NAS method, ZiCo, by 1.3% while
-requiring only 0.4 GPU days for searching. For object detection on COCO, DMS
-improves the mAP of Yolo\-v8\-n by 2.0%. For language modeling, our pruned
-Llama\-7B outperforms the prior method with lower perplexity and higher
-zero\-shot classification accuracy. We will release our code in the future.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2405.07194v1)
 
 ---
 
