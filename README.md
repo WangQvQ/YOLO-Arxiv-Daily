@@ -1,6 +1,69 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## A Deep Learning Approach to Detect Complete Safety Equipment For Construction Workers Based On YOLOv7
+
+**发布日期**：2024-06-11
+
+**作者**：Md. Shariful Islam
+
+**摘要**：In the construction sector, ensuring worker safety is of the utmost
+significance. In this study, a deep learning\-based technique is presented for
+identifying safety gear worn by construction workers, such as helmets, goggles,
+jackets, gloves, and footwears. The recommended approach uses the YOLO v7 \(You
+Only Look Once\) object detection algorithm to precisely locate these safety
+items. The dataset utilized in this work consists of labeled images split into
+training, testing and validation sets. Each image has bounding box labels that
+indicate where the safety equipment is located within the image. The model is
+trained to identify and categorize the safety equipment based on the labeled
+dataset through an iterative training approach. We used custom dataset to train
+this model. Our trained model performed admirably well, with good precision,
+recall, and F1\-score for safety equipment recognition. Also, the model's
+evaluation produced encouraging results, with a mAP@0.5 score of 87.7\\%. The
+model performs effectively, making it possible to quickly identify safety
+equipment violations on building sites. A thorough evaluation of the outcomes
+reveals the model's advantages and points up potential areas for development.
+By offering an automatic and trustworthy method for safety equipment detection,
+this research makes a contribution to the fields of computer vision and
+workplace safety. The proposed deep learning\-based approach will increase
+safety compliance and reduce the risk of accidents in the construction industry
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2406.07707v1)
+
+---
+
+
+## Automated Pavement Cracks Detection and Classification Using Deep Learning
+
+**发布日期**：2024-06-11
+
+**作者**：Selvia Nafaa
+
+**摘要**：Monitoring asset conditions is a crucial factor in building efficient
+transportation asset management. Because of substantial advances in image
+processing, traditional manual classification has been largely replaced by
+semi\-automatic/automatic techniques. As a result, automated asset detection and
+classification techniques are required. This paper proposes a methodology to
+detect and classify roadway pavement cracks using the well\-known You Only Look
+Once \(YOLO\) version five \(YOLOv5\) and version 8 \(YOLOv8\) algorithms.
+Experimental results indicated that the precision of pavement crack detection
+reaches up to 67.3% under different illumination conditions and image sizes.
+The findings of this study can assist highway agencies in accurately detecting
+and classifying asset conditions under different illumination conditions. This
+will reduce the cost and time that are associated with manual inspection, which
+can greatly reduce the cost of highway asset maintenance.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2406.07674v1)
+
+---
+
+
 ## Mamba YOLO: SSMs\-Based YOLO For Object Detection
 
 **发布日期**：2024-06-09
@@ -270,70 +333,6 @@ considerable complexities.
 **代码链接**：摘要中未找到代码链接。
 
 **论文链接**：[阅读更多](http://arxiv.org/abs/2405.12150v1)
-
----
-
-
-## Drone\-type\-Set: Drone types detection benchmark for drone detection and tracking
-
-**发布日期**：2024-05-16
-
-**作者**：Kholoud AlDosari
-
-**摘要**：The Unmanned Aerial Vehicles \(UAVs\) market has been significantly growing and
-Considering the availability of drones at low\-cost prices the possibility of
-misusing them, for illegal purposes such as drug trafficking, spying, and
-terrorist attacks posing high risks to national security, is rising. Therefore,
-detecting and tracking unauthorized drones to prevent future attacks that
-threaten lives, facilities, and security, become a necessity. Drone detection
-can be performed using different sensors, while image\-based detection is one of
-them due to the development of artificial intelligence techniques. However,
-knowing unauthorized drone types is one of the challenges due to the lack of
-drone types datasets. For that, in this paper, we provide a dataset of various
-drones as well as a comparison of recognized object detection models on the
-proposed dataset including YOLO algorithms with their different versions, like,
-v3, v4, and v5 along with the Detectronv2. The experimental results of
-different models are provided along with a description of each method. The
-collected dataset can be found in
-https://drive.google.com/drive/folders/1EPOpqlF4vG7hp4MYnfAecVOsdQ2JwBEd?usp=share\_link
-
-
-**代码链接**：https://drive.google.com/drive/folders/1EPOpqlF4vG7hp4MYnfAecVOsdQ2JwBEd?usp=share_link
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2405.10398v1)
-
----
-
-
-## WeedScout: Real\-Time Autonomous blackgrass Classification and Mapping using dedicated hardware
-
-**发布日期**：2024-05-12
-
-**作者**：Matthew Gazzard
-
-**摘要**：Blackgrass \(Alopecurus myosuroides\) is a competitive weed that has
-wide\-ranging impacts on food security by reducing crop yields and increasing
-cultivation costs. In addition to the financial burden on agriculture, the
-application of herbicides as a preventive to blackgrass can negatively affect
-access to clean water and sanitation. The WeedScout project introduces a
-Real\-Rime Autonomous Black\-Grass Classification and Mapping \(RT\-ABGCM\), a
-cutting\-edge solution tailored for real\-time detection of blackgrass, for
-precision weed management practices. Leveraging Artificial Intelligence \(AI\)
-algorithms, the system processes live image feeds, infers blackgrass density,
-and covers two stages of maturation. The research investigates the deployment
-of You Only Look Once \(YOLO\) models, specifically the streamlined YOLOv8 and
-YOLO\-NAS, accelerated at the edge with the NVIDIA Jetson Nano \(NJN\). By
-optimising inference speed and model performance, the project advances the
-integration of AI into agricultural practices, offering potential solutions to
-challenges such as herbicide resistance and environmental impact. Additionally,
-two datasets and model weights are made available to the research community,
-facilitating further advancements in weed detection and precision farming
-technologies.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2405.07349v1)
 
 ---
 
