@@ -31,7 +31,7 @@ safety compliance and reduce the risk of accidents in the construction industry
 
 **代码链接**：摘要中未找到代码链接。
 
-**论文链接**：[阅读更多](http://arxiv.org/abs/2406.07707v1)
+**论文链接**：[阅读更多](http://arxiv.org/abs/2406.07707v2)
 
 ---
 
