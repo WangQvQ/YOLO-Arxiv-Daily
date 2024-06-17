@@ -1,6 +1,40 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## YOLOv1 to YOLOv10: A comprehensive review of YOLO variants and their application in the agricultural domain
+
+**发布日期**：2024-06-14
+
+**作者**：Mujadded Al Rabbani Alif
+
+**摘要**：This survey investigates the transformative potential of various YOLO
+variants, from YOLOv1 to the state\-of\-the\-art YOLOv10, in the context of
+agricultural advancements. The primary objective is to elucidate how these
+cutting\-edge object detection models can re\-energise and optimize diverse
+aspects of agriculture, ranging from crop monitoring to livestock management.
+It aims to achieve key objectives, including the identification of contemporary
+challenges in agriculture, a detailed assessment of YOLO's incremental
+advancements, and an exploration of its specific applications in agriculture.
+This is one of the first surveys to include the latest YOLOv10, offering a
+fresh perspective on its implications for precision farming and sustainable
+agricultural practices in the era of Artificial Intelligence and automation.
+Further, the survey undertakes a critical analysis of YOLO's performance,
+synthesizes existing research, and projects future trends. By scrutinizing the
+unique capabilities packed in YOLO variants and their real\-world applications,
+this survey provides valuable insights into the evolving relationship between
+YOLO variants and agriculture. The findings contribute towards a nuanced
+understanding of the potential for precision farming and sustainable
+agricultural practices, marking a significant step forward in the integration
+of advanced object detection technologies within the agricultural sector.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2406.10139v1)
+
+---
+
+
 ## A Deep Learning Approach to Detect Complete Safety Equipment For Construction Workers Based On YOLOv7
 
 **发布日期**：2024-06-11
@@ -32,6 +66,34 @@ safety compliance and reduce the risk of accidents in the construction industry
 **代码链接**：摘要中未找到代码链接。
 
 **论文链接**：[阅读更多](http://arxiv.org/abs/2406.07707v2)
+
+---
+
+
+## Advancing Roadway Sign Detection with YOLO Models and Transfer Learning
+
+**发布日期**：2024-06-11
+
+**作者**：Selvia Nafaa
+
+**摘要**：Roadway signs detection and recognition is an essential element in the
+Advanced Driving Assistant Systems \(ADAS\). Several artificial intelligence
+methods have been used widely among of them YOLOv5 and YOLOv8. In this paper,
+we used a modified YOLOv5 and YOLOv8 to detect and classify different roadway
+signs under different illumination conditions. Experimental results indicated
+that for the YOLOv8 model, varying the number of epochs and batch size yields
+consistent MAP50 scores, ranging from 94.6% to 97.1% on the testing set. The
+YOLOv5 model demonstrates competitive performance, with MAP50 scores ranging
+from 92.4% to 96.9%. These results suggest that both models perform well across
+different training setups, with YOLOv8 generally achieving slightly higher
+MAP50 scores. These findings suggest that both models can perform well under
+different training setups, offering valuable insights for practitioners seeking
+reliable and adaptable solutions in object detection applications.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2406.09437v1)
 
 ---
 
@@ -257,82 +319,6 @@ apiculture industry towards informing responsible consumption and production.
 **代码链接**：摘要中未找到代码链接。
 
 **论文链接**：[阅读更多](http://arxiv.org/abs/2405.15428v1)
-
----
-
-
-## YOLOv10: Real\-Time End\-to\-End Object Detection
-
-**发布日期**：2024-05-23
-
-**作者**：Ao Wang
-
-**摘要**：Over the past years, YOLOs have emerged as the predominant paradigm in the
-field of real\-time object detection owing to their effective balance between
-computational cost and detection performance. Researchers have explored the
-architectural designs, optimization objectives, data augmentation strategies,
-and others for YOLOs, achieving notable progress. However, the reliance on the
-non\-maximum suppression \(NMS\) for post\-processing hampers the end\-to\-end
-deployment of YOLOs and adversely impacts the inference latency. Besides, the
-design of various components in YOLOs lacks the comprehensive and thorough
-inspection, resulting in noticeable computational redundancy and limiting the
-model's capability. It renders the suboptimal efficiency, along with
-considerable potential for performance improvements. In this work, we aim to
-further advance the performance\-efficiency boundary of YOLOs from both the
-post\-processing and model architecture. To this end, we first present the
-consistent dual assignments for NMS\-free training of YOLOs, which brings
-competitive performance and low inference latency simultaneously. Moreover, we
-introduce the holistic efficiency\-accuracy driven model design strategy for
-YOLOs. We comprehensively optimize various components of YOLOs from both
-efficiency and accuracy perspectives, which greatly reduces the computational
-overhead and enhances the capability. The outcome of our effort is a new
-generation of YOLO series for real\-time end\-to\-end object detection, dubbed
-YOLOv10. Extensive experiments show that YOLOv10 achieves state\-of\-the\-art
-performance and efficiency across various model scales. For example, our
-YOLOv10\-S is 1.8$\\times$ faster than RT\-DETR\-R18 under the similar AP on COCO,
-meanwhile enjoying 2.8$\\times$ smaller number of parameters and FLOPs. Compared
-with YOLOv9\-C, YOLOv10\-B has 46\\% less latency and 25\\% fewer parameters for
-the same performance.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2405.14458v1)
-
----
-
-
-## Bangladeshi Native Vehicle Detection in Wild
-
-**发布日期**：2024-05-20
-
-**作者**：Bipin Saha
-
-**摘要**：The success of autonomous navigation relies on robust and precise vehicle
-recognition, hindered by the scarcity of region\-specific vehicle detection
-datasets, impeding the development of context\-aware systems. To advance
-terrestrial object detection research, this paper proposes a native vehicle
-detection dataset for the most commonly appeared vehicle classes in Bangladesh.
-17 distinct vehicle classes have been taken into account, with fully annotated
-81542 instances of 17326 images. Each image width is set to at least 1280px.
-The dataset's average vehicle bounding box\-to\-image ratio is 4.7036. This
-Bangladesh Native Vehicle Dataset \(BNVD\) has accounted for several
-geographical, illumination, variety of vehicle sizes, and orientations to be
-more robust on surprised scenarios. In the context of examining the BNVD
-dataset, this work provides a thorough assessment with four successive You Only
-Look Once \(YOLO\) models, namely YOLO v5, v6, v7, and v8. These dataset's
-effectiveness is methodically evaluated and contrasted with other vehicle
-datasets already in use. The BNVD dataset exhibits mean average precision\(mAP\)
-at 50% intersection over union \(IoU\) is 0.848 corresponding precision and
-recall values of 0.841 and 0.774. The research findings indicate a mAP of 0.643
-at an IoU range of 0.5 to 0.95. The experiments show that the BNVD dataset
-serves as a reliable representation of vehicle distribution and presents
-considerable complexities.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2405.12150v1)
 
 ---
 
