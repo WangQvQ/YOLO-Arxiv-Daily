@@ -1,6 +1,71 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## YOLO\-FEDER FusionNet: A Novel Deep Learning Architecture for Drone Detection
+
+**发布日期**：2024-06-17
+
+**作者**：Tamara R. Lenhard
+
+**摘要**：Predominant methods for image\-based drone detection frequently rely on
+employing generic object detection algorithms like YOLOv5. While proficient in
+identifying drones against homogeneous backgrounds, these algorithms often
+struggle in complex, highly textured environments. In such scenarios, drones
+seamlessly integrate into the background, creating camouflage effects that
+adversely affect the detection quality. To address this issue, we introduce a
+novel deep learning architecture called YOLO\-FEDER FusionNet. Unlike
+conventional approaches, YOLO\-FEDER FusionNet combines generic object detection
+methods with the specialized strength of camouflage object detection techniques
+to enhance drone detection capabilities. Comprehensive evaluations of
+YOLO\-FEDER FusionNet show the efficiency of the proposed model and demonstrate
+substantial improvements in both reducing missed detections and false alarms.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2406.11641v1)
+
+---
+
+
+## ChildDiffusion: Unlocking the Potential of Generative AI and Controllable Augmentations for Child Facial Data using Stable Diffusion and Large Language Models
+
+**发布日期**：2024-06-17
+
+**作者**：Muhammad Ali Farooq
+
+**摘要**：In this research work we have proposed high\-level ChildDiffusion framework
+capable of generating photorealistic child facial samples and further embedding
+several intelligent augmentations on child facial data using short text
+prompts, detailed textual guidance from LLMs, and further image to image
+transformation using text guidance control conditioning thus providing an
+opportunity to curate fully synthetic large scale child datasets. The framework
+is validated by rendering high\-quality child faces representing ethnicity data,
+micro expressions, face pose variations, eye blinking effects, facial
+accessories, different hair colours and styles, aging, multiple and different
+child gender subjects in a single frame. Addressing privacy concerns regarding
+child data acquisition requires a comprehensive approach that involves legal,
+ethical, and technological considerations. Keeping this in view this framework
+can be adapted to synthesise child facial data which can be effectively used
+for numerous downstream machine learning tasks. The proposed method circumvents
+common issues encountered in generative AI tools, such as temporal
+inconsistency and limited control over the rendered outputs. As an exemplary
+use case we have open\-sourced child ethnicity data consisting of 2.5k child
+facial samples of five different classes which includes African, Asian, White,
+South Asian/ Indian, and Hispanic races by deploying the model in production
+inference phase. The rendered data undergoes rigorous qualitative as well as
+quantitative tests to cross validate its efficacy and further fine\-tuning Yolo
+architecture for detecting and classifying child ethnicity as an exemplary
+downstream machine learning task.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2406.11592v1)
+
+---
+
+
 ## YOLOv1 to YOLOv10: A comprehensive review of YOLO variants and their application in the agricultural domain
 
 **发布日期**：2024-06-14
@@ -259,66 +324,6 @@ multimodal desktop\-level robots.
 **代码链接**：摘要中未找到代码链接。
 
 **论文链接**：[阅读更多](http://arxiv.org/abs/2405.17250v1)
-
----
-
-
-## Evaluation of Resource\-Efficient Crater Detectors on Embedded Systems
-
-**发布日期**：2024-05-27
-
-**作者**：Simon Vellas
-
-**摘要**：Real\-time analysis of Martian craters is crucial for mission\-critical
-operations, including safe landings and geological exploration. This work
-leverages the latest breakthroughs for on\-the\-edge crater detection aboard
-spacecraft. We rigorously benchmark several YOLO networks using a Mars craters
-dataset, analyzing their performance on embedded systems with a focus on
-optimization for low\-power devices. We optimize this process for a new wave of
-cost\-effective, commercial\-off\-the\-shelf\-based smaller satellites.
-Implementations on diverse platforms, including Google Coral Edge TPU, AMD
-Versal SoC VCK190, Nvidia Jetson Nano and Jetson AGX Orin, undergo a detailed
-trade\-off analysis. Our findings identify optimal network\-device pairings,
-enhancing the feasibility of crater detection on resource\-constrained hardware
-and setting a new precedent for efficient and resilient extraterrestrial
-imaging. Code at: https://github.com/billpsomas/mars\_crater\_detection.
-
-
-**代码链接**：https://github.com/billpsomas/mars_crater_detection.
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2405.16953v1)
-
----
-
-
-## Enhancing Pollinator Conservation towards Agriculture 4.0: Monitoring of Bees through Object Recognition
-
-**发布日期**：2024-05-24
-
-**作者**：Ajay John Alex
-
-**摘要**：In an era of rapid climate change and its adverse effects on food production,
-technological intervention to monitor pollinator conservation is of paramount
-importance for environmental monitoring and conservation for global food
-security. The survival of the human species depends on the conservation of
-pollinators. This article explores the use of Computer Vision and Object
-Recognition to autonomously track and report bee behaviour from images. A novel
-dataset of 9664 images containing bees is extracted from video streams and
-annotated with bounding boxes. With training, validation and testing sets
-\(6722, 1915, and 997 images, respectively\), the results of the COCO\-based YOLO
-model fine\-tuning approaches show that YOLOv5m is the most effective approach
-in terms of recognition accuracy. However, YOLOv5s was shown to be the most
-optimal for real\-time bee detection with an average processing and inference
-time of 5.1ms per video frame at the cost of slightly lower ability. The
-trained model is then packaged within an explainable AI interface, which
-converts detection events into timestamped reports and charts, with the aim of
-facilitating use by non\-technical users such as expert stakeholders from the
-apiculture industry towards informing responsible consumption and production.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2405.15428v1)
 
 ---
 
