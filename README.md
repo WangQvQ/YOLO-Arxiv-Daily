@@ -1,6 +1,71 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## SDNIA\-YOLO: A Robust Object Detection Model for Extreme Weather Conditions
+
+**发布日期**：2024-06-18
+
+**作者**：Yuexiong Ding
+
+**摘要**：Though current object detection models based on deep learning have achieved
+excellent results on many conventional benchmark datasets, their performance
+will dramatically decline on real\-world images taken under extreme conditions.
+Existing methods either used image augmentation based on traditional image
+processing algorithms or applied customized and scene\-limited image adaptation
+technologies for robust modeling. This study thus proposes a stylization
+data\-driven neural\-image\-adaptive YOLO \(SDNIA\-YOLO\), which improves the model's
+robustness by enhancing image quality adaptively and learning valuable
+information related to extreme weather conditions from images synthesized by
+neural style transfer \(NST\). Experiments show that the developed SDNIA\-YOLOv3
+achieves significant mAP@.5 improvements of at least 15% on the real\-world
+foggy \(RTTS\) and lowlight \(ExDark\) test sets compared with the baseline model.
+Besides, the experiments also highlight the outstanding potential of
+stylization data in simulating extreme weather conditions. The developed
+SDNIA\-YOLO remains excellent characteristics of the native YOLO to a great
+extent, such as end\-to\-end one\-stage, data\-driven, and fast.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2406.12395v1)
+
+---
+
+
+## DASSF: Dynamic\-Attention Scale\-Sequence Fusion for Aerial Object Detection
+
+**发布日期**：2024-06-18
+
+**作者**：Haodong Li
+
+**摘要**：The detection of small objects in aerial images is a fundamental task in the
+field of computer vision. Moving objects in aerial photography have problems
+such as different shapes and sizes, dense overlap, occlusion by the background,
+and object blur, however, the original YOLO algorithm has low overall detection
+accuracy due to its weak ability to perceive targets of different scales. In
+order to improve the detection accuracy of densely overlapping small targets
+and fuzzy targets, this paper proposes a dynamic\-attention scale\-sequence
+fusion algorithm \(DASSF\) for small target detection in aerial images. First, we
+propose a dynamic scale sequence feature fusion \(DSSFF\) module that improves
+the up\-sampling mechanism and reduces computational load. Secondly, a x\-small
+object detection head is specially added to enhance the detection capability of
+small targets. Finally, in order to improve the expressive ability of targets
+of different types and sizes, we use the dynamic head \(DyHead\). The model we
+proposed solves the problem of small target detection in aerial images and can
+be applied to multiple different versions of the YOLO algorithm, which is
+universal. Experimental results show that when the DASSF method is applied to
+YOLOv8, compared to YOLOv8n, on the VisDrone\-2019 and DIOR datasets, the model
+shows an increase of 9.2% and 2.4% in the mean average precision \(mAP\),
+respectively, and outperforms the current mainstream methods.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2406.12285v1)
+
+---
+
+
 ## YOLO\-FEDER FusionNet: A Novel Deep Learning Architecture for Drone Detection
 
 **发布日期**：2024-06-17
@@ -252,78 +317,6 @@ available at \(https://github.com/Atten4Vis/LW\-DETR\).
 **代码链接**：https://github.com/Atten4Vis/LW-DETR).
 
 **论文链接**：[阅读更多](http://arxiv.org/abs/2406.03459v1)
-
----
-
-
-## Open\-YOLO 3D: Towards Fast and Accurate Open\-Vocabulary 3D Instance Segmentation
-
-**发布日期**：2024-06-04
-
-**作者**：Mohamed El Amine Boudjoghra
-
-**摘要**：Recent works on open\-vocabulary 3D instance segmentation show strong promise,
-but at the cost of slow inference speed and high computation requirements. This
-high computation cost is typically due to their heavy reliance on 3D clip
-features, which require computationally expensive 2D foundation models like
-Segment Anything \(SAM\) and CLIP for multi\-view aggregation into 3D. As a
-consequence, this hampers their applicability in many real\-world applications
-that require both fast and accurate predictions. To this end, we propose a fast
-yet accurate open\-vocabulary 3D instance segmentation approach, named Open\-YOLO
-3D, that effectively leverages only 2D object detection from multi\-view RGB
-images for open\-vocabulary 3D instance segmentation. We address this task by
-generating class\-agnostic 3D masks for objects in the scene and associating
-them with text prompts. We observe that the projection of class\-agnostic 3D
-point cloud instances already holds instance information; thus, using SAM might
-only result in redundancy that unnecessarily increases the inference time. We
-empirically find that a better performance of matching text prompts to 3D masks
-can be achieved in a faster fashion with a 2D object detector. We validate our
-Open\-YOLO 3D on two benchmarks, ScanNet200 and Replica, under two scenarios:
-\(i\) with ground truth masks, where labels are required for given object
-proposals, and \(ii\) with class\-agnostic 3D proposals generated from a 3D
-proposal network. Our Open\-YOLO 3D achieves state\-of\-the\-art performance on
-both datasets while obtaining up to $\\sim$16$\\times$ speedup compared to the
-best existing method in literature. On ScanNet200 val. set, our Open\-YOLO 3D
-achieves mean average precision \(mAP\) of 24.7\\% while operating at 22 seconds
-per scene. Code and model are available at github.com/aminebdj/OpenYOLO3D.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2406.02548v1)
-
----
-
-
-## "Pass the butter": A study on desktop\-classic multitasking robotic arm based on advanced YOLOv7 and BERT
-
-**发布日期**：2024-05-27
-
-**作者**：Haohua Que
-
-**摘要**：In recent years, various intelligent autonomous robots have begun to appear
-in daily life and production. Desktop\-level robots are characterized by their
-flexible deployment, rapid response, and suitability for light workload
-environments. In order to meet the current societal demand for service robot
-technology, this study proposes using a miniaturized desktop\-level robot \(by
-ROS\) as a carrier, locally deploying a natural language model \(NLP\-BERT\), and
-integrating visual recognition \(CV\-YOLO\) and speech recognition technology
-\(ASR\-Whisper\) as inputs to achieve autonomous decision\-making and rational
-action by the desktop robot. Three comprehensive experiments were designed to
-validate the robotic arm, and the results demonstrate excellent performance
-using this approach across all three experiments. In Task 1, the execution
-rates for speech recognition and action performance were 92.6% and 84.3%,
-respectively. In Task 2, the highest execution rates under the given conditions
-reached 92.1% and 84.6%, while in Task 3, the highest execution rates were
-95.2% and 80.8%, respectively. Therefore, it can be concluded that the proposed
-solution integrating ASR, NLP, and other technologies on edge devices is
-feasible and provides a technical and engineering foundation for realizing
-multimodal desktop\-level robots.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2405.17250v1)
 
 ---
 
