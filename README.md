@@ -1,6 +1,114 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## LeYOLO, New Scalable and Efficient CNN Architecture for Object Detection
+
+**发布日期**：2024-06-20
+
+**作者**：Lilian Hollard
+
+**摘要**：Computational efficiency in deep neural networks is critical for object
+detection, especially as newer models prioritize speed over efficient
+computation \(FLOP\). This evolution has somewhat left behind embedded and
+mobile\-oriented AI object detection applications. In this paper, we focus on
+design choices of neural network architectures for efficient object detection
+computation based on FLOP and propose several optimizations to enhance the
+efficiency of YOLO\-based models.
+  Firstly, we introduce an efficient backbone scaling inspired by inverted
+bottlenecks and theoretical insights from the Information Bottleneck principle.
+Secondly, we present the Fast Pyramidal Architecture Network \(FPAN\), designed
+to facilitate fast multiscale feature sharing while reducing computational
+resources. Lastly, we propose a Decoupled Network\-in\-Network \(DNiN\) detection
+head engineered to deliver rapid yet lightweight computations for
+classification and regression tasks.
+  Building upon these optimizations and leveraging more efficient backbones,
+this paper contributes to a new scaling paradigm for object detection and
+YOLO\-centric models called LeYOLO. Our contribution consistently outperforms
+existing models in various resource constraints, achieving unprecedented
+accuracy and flop ratio. Notably, LeYOLO\-Small achieves a competitive mAP score
+of 38.2% on the COCOval with just 4.5 FLOP\(G\), representing a 42% reduction in
+computational load compared to the latest state\-of\-the\-art YOLOv9\-Tiny model
+while achieving similar accuracy. Our novel model family achieves a
+FLOP\-to\-accuracy ratio previously unattained, offering scalability that spans
+from ultra\-low neural network configurations \(< 1 GFLOP\) to efficient yet
+demanding object detection setups \(> 4 GFLOPs\) with 25.2, 31.3, 35.2, 38.2,
+39.3 and 41 mAP for 0.66, 1.47, 2.53, 4.51, 5.8 and 8.4 FLOP\(G\).
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2406.14239v1)
+
+---
+
+
+## Enhancing the LLM\-Based Robot Manipulation Through Human\-Robot Collaboration
+
+**发布日期**：2024-06-20
+
+**作者**：Haokun Liu
+
+**摘要**：Large Language Models \(LLMs\) are gaining popularity in the field of robotics.
+However, LLM\-based robots are limited to simple, repetitive motions due to the
+poor integration between language models, robots, and the environment. This
+paper proposes a novel approach to enhance the performance of LLM\-based
+autonomous manipulation through Human\-Robot Collaboration \(HRC\). The approach
+involves using a prompted GPT\-4 language model to decompose high\-level language
+commands into sequences of motions that can be executed by the robot. The
+system also employs a YOLO\-based perception algorithm, providing visual cues to
+the LLM, which aids in planning feasible motions within the specific
+environment. Additionally, an HRC method is proposed by combining teleoperation
+and Dynamic Movement Primitives \(DMP\), allowing the LLM\-based robot to learn
+from human guidance. Real\-world experiments have been conducted using the
+Toyota Human Support Robot for manipulation tasks. The outcomes indicate that
+tasks requiring complex trajectory planning and reasoning over environments can
+be efficiently accomplished through the incorporation of human demonstrations.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2406.14097v1)
+
+---
+
+
+## Towards the in\-situ Trunk Identification and Length Measurement of Sea Cucumbers via Bézier Curve Modelling
+
+**发布日期**：2024-06-20
+
+**作者**：Shuaixin Liu
+
+**摘要**：We introduce a novel vision\-based framework for in\-situ trunk identification
+and length measurement of sea cucumbers, which plays a crucial role in the
+monitoring of marine ranching resources and mechanized harvesting. To model sea
+cucumber trunk curves with varying degrees of bending, we utilize the
+parametric B\\'\{e\}zier curve due to its computational simplicity, stability, and
+extensive range of transformation possibilities. Then, we propose an end\-to\-end
+unified framework that combines parametric B\\'\{e\}zier curve modeling with the
+widely used You\-Only\-Look\-Once \(YOLO\) pipeline, abbreviated as TISC\-Net, and
+incorporates effective funnel activation and efficient multi\-scale attention
+modules to enhance curve feature perception and learning. Furthermore, we
+propose incorporating trunk endpoint loss as an additional constraint to
+effectively mitigate the impact of endpoint deviations on the overall curve.
+Finally, by utilizing the depth information of pixels located along the trunk
+curve captured by a binocular camera, we propose accurately estimating the
+in\-situ length of sea cucumbers through space curve integration. We established
+two challenging benchmark datasets for curve\-based in\-situ sea cucumber trunk
+identification. These datasets consist of over 1,000 real\-world marine
+environment images of sea cucumbers, accompanied by B\\'\{e\}zier format
+annotations. We conduct evaluation on SC\-ISTI, for which our method achieves
+mAP50 above 0.9 on both object detection and trunk identification tasks.
+Extensive length measurement experiments demonstrate that the average absolute
+relative error is around 0.15.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2406.13951v1)
+
+---
+
+
 ## SDNIA\-YOLO: A Robust Object Detection Model for Extreme Weather Conditions
 
 **发布日期**：2024-06-18
@@ -224,99 +332,6 @@ reliable and adaptable solutions in object detection applications.
 **代码链接**：摘要中未找到代码链接。
 
 **论文链接**：[阅读更多](http://arxiv.org/abs/2406.09437v1)
-
----
-
-
-## Automated Pavement Cracks Detection and Classification Using Deep Learning
-
-**发布日期**：2024-06-11
-
-**作者**：Selvia Nafaa
-
-**摘要**：Monitoring asset conditions is a crucial factor in building efficient
-transportation asset management. Because of substantial advances in image
-processing, traditional manual classification has been largely replaced by
-semi\-automatic/automatic techniques. As a result, automated asset detection and
-classification techniques are required. This paper proposes a methodology to
-detect and classify roadway pavement cracks using the well\-known You Only Look
-Once \(YOLO\) version five \(YOLOv5\) and version 8 \(YOLOv8\) algorithms.
-Experimental results indicated that the precision of pavement crack detection
-reaches up to 67.3% under different illumination conditions and image sizes.
-The findings of this study can assist highway agencies in accurately detecting
-and classifying asset conditions under different illumination conditions. This
-will reduce the cost and time that are associated with manual inspection, which
-can greatly reduce the cost of highway asset maintenance.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2406.07674v1)
-
----
-
-
-## Mamba YOLO: SSMs\-Based YOLO For Object Detection
-
-**发布日期**：2024-06-09
-
-**作者**：Zeyu Wang
-
-**摘要**：Propelled by the rapid advancement of deep learning technologies, the YOLO
-series has set a new benchmark for real\-time object detectors. Researchers have
-continuously explored innovative applications of reparameterization, efficient
-layer aggregation networks, and anchor\-free techniques on the foundation of
-YOLO. To further enhance detection performance, Transformer\-based structures
-have been introduced, significantly expanding the model's receptive field and
-achieving notable performance gains. However, such improvements come at a cost,
-as the quadratic complexity of the self\-attention mechanism increases the
-computational burden of the model. Fortunately, the emergence of State Space
-Models \(SSM\) as an innovative technology has effectively mitigated the issues
-caused by quadratic complexity. In light of these advancements, we introduce
-Mamba\-YOLO a novel object detection model based on SSM. Mamba\-YOLO not only
-optimizes the SSM foundation but also adapts specifically for object detection
-tasks. Given the potential limitations of SSM in sequence modeling, such as
-insufficient receptive field and weak image locality, we have designed the
-LSBlock and RGBlock. These modules enable more precise capture of local image
-dependencies and significantly enhance the robustness of the model. Extensive
-experimental results on the publicly available benchmark datasets COCO and VOC
-demonstrate that Mamba\-YOLO surpasses the existing YOLO series models in both
-performance and competitiveness, showcasing its substantial potential and
-competitive edge.The PyTorch code is available
-at:\\url\{https://github.com/HZAI\-ZJNU/Mamba\-YOLO\}
-
-
-**代码链接**：https://github.com/HZAI-ZJNU/Mamba-YOLO}
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2406.05835v1)
-
----
-
-
-## LW\-DETR: A Transformer Replacement to YOLO for Real\-Time Detection
-
-**发布日期**：2024-06-05
-
-**作者**：Qiang Chen
-
-**摘要**：In this paper, we present a light\-weight detection transformer, LW\-DETR,
-which outperforms YOLOs for real\-time object detection. The architecture is a
-simple stack of a ViT encoder, a projector, and a shallow DETR decoder. Our
-approach leverages recent advanced techniques, such as training\-effective
-techniques, e.g., improved loss and pretraining, and interleaved window and
-global attentions for reducing the ViT encoder complexity. We improve the ViT
-encoder by aggregating multi\-level feature maps, and the intermediate and final
-feature maps in the ViT encoder, forming richer feature maps, and introduce
-window\-major feature map organization for improving the efficiency of
-interleaved attention computation. Experimental results demonstrate that the
-proposed approach is superior over existing real\-time detectors, e.g., YOLO and
-its variants, on COCO and other benchmark datasets. Code and models are
-available at \(https://github.com/Atten4Vis/LW\-DETR\).
-
-
-**代码链接**：https://github.com/Atten4Vis/LW-DETR).
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2406.03459v1)
 
 ---
 
