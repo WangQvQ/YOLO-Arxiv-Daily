@@ -1,6 +1,46 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Review of Zero\-Shot and Few\-Shot AI Algorithms in The Medical Domain
+
+**发布日期**：2024-06-23
+
+**作者**：Maged Badawi
+
+**摘要**：In this paper, different techniques of few\-shot, zero\-shot, and regular
+object detection have been investigated. The need for few\-shot learning and
+zero\-shot learning techniques is crucial and arises from the limitations and
+challenges in traditional machine learning, deep learning, and computer vision
+methods where they require large amounts of data, plus the poor generalization
+of those traditional methods.
+  Those techniques can give us prominent results by using only a few training
+sets reducing the required amounts of data and improving the generalization.
+  This survey will highlight the recent papers of the last three years that
+introduce the usage of few\-shot learning and zero\-shot learning techniques in
+addressing the challenges mentioned earlier. In this paper we reviewed the
+Zero\-shot, few\-shot and regular object detection methods and categorized them
+in an understandable manner. Based on the comparison made within each category.
+It been found that the approaches are quite impressive.
+  This integrated review of diverse papers on few\-shot, zero\-shot, and regular
+object detection reveals a shared focus on advancing the field through novel
+frameworks and techniques. A noteworthy observation is the scarcity of detailed
+discussions regarding the difficulties encountered during the development
+phase. Contributions include the introduction of innovative models, such as
+ZSD\-YOLO and GTNet, often showcasing improvements with various metrics such as
+mean average precision \(mAP\),Recall@100 \(RE@100\), the area under the receiver
+operating characteristic curve \(AUROC\) and precision. These findings underscore
+a collective move towards leveraging vision\-language models for versatile
+applications, with potential areas for future research including a more
+thorough exploration of limitations and domain\-specific adaptations.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2406.16143v1)
+
+---
+
+
 ## LeYOLO, New Scalable and Efficient CNN Architecture for Object Detection
 
 **发布日期**：2024-06-20
@@ -169,7 +209,7 @@ respectively, and outperforms the current mainstream methods.
 
 **代码链接**：摘要中未找到代码链接。
 
-**论文链接**：[阅读更多](http://arxiv.org/abs/2406.12285v1)
+**论文链接**：[阅读更多](http://arxiv.org/abs/2406.12285v2)
 
 ---
 
@@ -304,34 +344,6 @@ safety compliance and reduce the risk of accidents in the construction industry
 **代码链接**：摘要中未找到代码链接。
 
 **论文链接**：[阅读更多](http://arxiv.org/abs/2406.07707v2)
-
----
-
-
-## Advancing Roadway Sign Detection with YOLO Models and Transfer Learning
-
-**发布日期**：2024-06-11
-
-**作者**：Selvia Nafaa
-
-**摘要**：Roadway signs detection and recognition is an essential element in the
-Advanced Driving Assistant Systems \(ADAS\). Several artificial intelligence
-methods have been used widely among of them YOLOv5 and YOLOv8. In this paper,
-we used a modified YOLOv5 and YOLOv8 to detect and classify different roadway
-signs under different illumination conditions. Experimental results indicated
-that for the YOLOv8 model, varying the number of epochs and batch size yields
-consistent MAP50 scores, ranging from 94.6% to 97.1% on the testing set. The
-YOLOv5 model demonstrates competitive performance, with MAP50 scores ranging
-from 92.4% to 96.9%. These results suggest that both models perform well across
-different training setups, with YOLOv8 generally achieving slightly higher
-MAP50 scores. These findings suggest that both models can perform well under
-different training setups, offering valuable insights for practitioners seeking
-reliable and adaptable solutions in object detection applications.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2406.09437v1)
 
 ---
 
