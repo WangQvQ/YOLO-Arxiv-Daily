@@ -1,6 +1,70 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Detection of Synthetic Face Images: Accuracy, Robustness, Generalization
+
+**发布日期**：2024-06-25
+
+**作者**：Nela Petrzelkova
+
+**摘要**：An experimental study on detecting synthetic face images is presented. We
+collected a dataset, called FF5, of five fake face image generators, including
+recent diffusion models. We find that a simple model trained on a specific
+image generator can achieve near\-perfect accuracy in separating synthetic and
+real images. The model handles common image distortions \(reduced resolution,
+compression\) by using data augmentation. Moreover, partial manipulations, where
+synthetic images are blended into real ones by inpainting, are identified and
+the area of the manipulation is localized by a simple model of YOLO
+architecture. However, the model turned out to be vulnerable to adversarial
+attacks and does not generalize to unseen generators. Failure to generalize to
+detect images produced by a newer generator also occurs for recent
+state\-of\-the\-art methods, which we tested on Realistic Vision, a fine\-tuned
+version of StabilityAI's Stable Diffusion image generator.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2406.17547v1)
+
+---
+
+
+## POPCat: Propagation of particles for complex annotation tasks
+
+**发布日期**：2024-06-24
+
+**作者**：Adam Srebrnjak Yang
+
+**摘要**：Novel dataset creation for all multi\-object tracking, crowd\-counting, and
+industrial\-based videos is arduous and time\-consuming when faced with a unique
+class that densely populates a video sequence. We propose a time efficient
+method called POPCat that exploits the multi\-target and temporal features of
+video data to produce a semi\-supervised pipeline for segmentation or box\-based
+video annotation. The method retains the accuracy level associated with human
+level annotation while generating a large volume of semi\-supervised annotations
+for greater generalization. The method capitalizes on temporal features through
+the use of a particle tracker to expand the domain of human\-provided target
+points. This is done through the use of a particle tracker to reassociate the
+initial points to a set of images that follow the labeled frame. A YOLO model
+is then trained with this generated data, and then rapidly infers on the target
+video. Evaluations are conducted on GMOT\-40, AnimalTrack, and Visdrone\-2019
+benchmarks. These multi\-target video tracking/detection sets contain multiple
+similar\-looking targets, camera movements, and other features that would
+commonly be seen in "wild" situations. We specifically choose these difficult
+datasets to demonstrate the efficacy of the pipeline and for comparison
+purposes. The method applied on GMOT\-40, AnimalTrack, and Visdrone shows a
+margin of improvement on recall/mAP50/mAP over the best results by a value of
+24.5%/9.6%/4.8%, \-/43.1%/27.8%, and 7.5%/9.4%/7.5% where metrics were
+collected.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2406.17183v1)
+
+---
+
+
 ## Review of Zero\-Shot and Few\-Shot AI Algorithms in The Medical Domain
 
 **发布日期**：2024-06-23
@@ -275,75 +339,6 @@ downstream machine learning task.
 **代码链接**：摘要中未找到代码链接。
 
 **论文链接**：[阅读更多](http://arxiv.org/abs/2406.11592v1)
-
----
-
-
-## YOLOv1 to YOLOv10: A comprehensive review of YOLO variants and their application in the agricultural domain
-
-**发布日期**：2024-06-14
-
-**作者**：Mujadded Al Rabbani Alif
-
-**摘要**：This survey investigates the transformative potential of various YOLO
-variants, from YOLOv1 to the state\-of\-the\-art YOLOv10, in the context of
-agricultural advancements. The primary objective is to elucidate how these
-cutting\-edge object detection models can re\-energise and optimize diverse
-aspects of agriculture, ranging from crop monitoring to livestock management.
-It aims to achieve key objectives, including the identification of contemporary
-challenges in agriculture, a detailed assessment of YOLO's incremental
-advancements, and an exploration of its specific applications in agriculture.
-This is one of the first surveys to include the latest YOLOv10, offering a
-fresh perspective on its implications for precision farming and sustainable
-agricultural practices in the era of Artificial Intelligence and automation.
-Further, the survey undertakes a critical analysis of YOLO's performance,
-synthesizes existing research, and projects future trends. By scrutinizing the
-unique capabilities packed in YOLO variants and their real\-world applications,
-this survey provides valuable insights into the evolving relationship between
-YOLO variants and agriculture. The findings contribute towards a nuanced
-understanding of the potential for precision farming and sustainable
-agricultural practices, marking a significant step forward in the integration
-of advanced object detection technologies within the agricultural sector.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2406.10139v1)
-
----
-
-
-## A Deep Learning Approach to Detect Complete Safety Equipment For Construction Workers Based On YOLOv7
-
-**发布日期**：2024-06-11
-
-**作者**：Md. Shariful Islam
-
-**摘要**：In the construction sector, ensuring worker safety is of the utmost
-significance. In this study, a deep learning\-based technique is presented for
-identifying safety gear worn by construction workers, such as helmets, goggles,
-jackets, gloves, and footwears. The recommended approach uses the YOLO v7 \(You
-Only Look Once\) object detection algorithm to precisely locate these safety
-items. The dataset utilized in this work consists of labeled images split into
-training, testing and validation sets. Each image has bounding box labels that
-indicate where the safety equipment is located within the image. The model is
-trained to identify and categorize the safety equipment based on the labeled
-dataset through an iterative training approach. We used custom dataset to train
-this model. Our trained model performed admirably well, with good precision,
-recall, and F1\-score for safety equipment recognition. Also, the model's
-evaluation produced encouraging results, with a mAP@0.5 score of 87.7\\%. The
-model performs effectively, making it possible to quickly identify safety
-equipment violations on building sites. A thorough evaluation of the outcomes
-reveals the model's advantages and points up potential areas for development.
-By offering an automatic and trustworthy method for safety equipment detection,
-this research makes a contribution to the fields of computer vision and
-workplace safety. The proposed deep learning\-based approach will increase
-safety compliance and reduce the risk of accidents in the construction industry
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2406.07707v2)
 
 ---
 
