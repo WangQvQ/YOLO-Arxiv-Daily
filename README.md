@@ -1,6 +1,33 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## A Universal Railway Obstacle Detection System based on Semi\-supervised Segmentation And Optical Flow
+
+**发布日期**：2024-06-27
+
+**作者**：Qiushi Guo
+
+**摘要**：Detecting obstacles in railway scenarios is both crucial and challenging due
+to the wide range of obstacle categories and varying ambient conditions such as
+weather and light. Given the impossibility of encompassing all obstacle
+categories during the training stage, we address this out\-of\-distribution \(OOD\)
+issue with a semi\-supervised segmentation approach guided by optical flow
+clues. We reformulate the task as a binary segmentation problem instead of the
+traditional object detection approach. To mitigate data shortages, we generate
+highly realistic synthetic images using Segment Anything \(SAM\) and YOLO,
+eliminating the need for manual annotation to produce abundant pixel\-level
+annotations. Additionally, we leverage optical flow as prior knowledge to train
+the model effectively. Several experiments are conducted, demonstrating the
+feasibility and effectiveness of our approach.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2406.18908v1)
+
+---
+
+
 ## Detection of Synthetic Face Images: Accuracy, Robustness, Generalization
 
 **发布日期**：2024-06-25
@@ -301,44 +328,6 @@ substantial improvements in both reducing missed detections and false alarms.
 **代码链接**：摘要中未找到代码链接。
 
 **论文链接**：[阅读更多](http://arxiv.org/abs/2406.11641v1)
-
----
-
-
-## ChildDiffusion: Unlocking the Potential of Generative AI and Controllable Augmentations for Child Facial Data using Stable Diffusion and Large Language Models
-
-**发布日期**：2024-06-17
-
-**作者**：Muhammad Ali Farooq
-
-**摘要**：In this research work we have proposed high\-level ChildDiffusion framework
-capable of generating photorealistic child facial samples and further embedding
-several intelligent augmentations on child facial data using short text
-prompts, detailed textual guidance from LLMs, and further image to image
-transformation using text guidance control conditioning thus providing an
-opportunity to curate fully synthetic large scale child datasets. The framework
-is validated by rendering high\-quality child faces representing ethnicity data,
-micro expressions, face pose variations, eye blinking effects, facial
-accessories, different hair colours and styles, aging, multiple and different
-child gender subjects in a single frame. Addressing privacy concerns regarding
-child data acquisition requires a comprehensive approach that involves legal,
-ethical, and technological considerations. Keeping this in view this framework
-can be adapted to synthesise child facial data which can be effectively used
-for numerous downstream machine learning tasks. The proposed method circumvents
-common issues encountered in generative AI tools, such as temporal
-inconsistency and limited control over the rendered outputs. As an exemplary
-use case we have open\-sourced child ethnicity data consisting of 2.5k child
-facial samples of five different classes which includes African, Asian, White,
-South Asian/ Indian, and Hispanic races by deploying the model in production
-inference phase. The rendered data undergoes rigorous qualitative as well as
-quantitative tests to cross validate its efficacy and further fine\-tuning Yolo
-architecture for detecting and classifying child ethnicity as an exemplary
-downstream machine learning task.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2406.11592v1)
 
 ---
 
