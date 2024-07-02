@@ -198,7 +198,7 @@ be efficiently accomplished through the incorporation of human demonstrations.
 
 **代码链接**：摘要中未找到代码链接。
 
-**论文链接**：[阅读更多](http://arxiv.org/abs/2406.14097v1)
+**论文链接**：[阅读更多](http://arxiv.org/abs/2406.14097v2)
 
 ---
 
