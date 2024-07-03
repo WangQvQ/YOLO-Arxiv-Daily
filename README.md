@@ -1,6 +1,36 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## GSO\-YOLO: Global Stability Optimization YOLO for Construction Site Detection
+
+**发布日期**：2024-07-01
+
+**作者**：Yuming Zhang
+
+**摘要**：Safety issues at construction sites have long plagued the industry, posing
+risks to worker safety and causing economic damage due to potential hazards.
+With the advancement of artificial intelligence, particularly in the field of
+computer vision, the automation of safety monitoring on construction sites has
+emerged as a solution to this longstanding issue. Despite achieving impressive
+performance, advanced object detection methods like YOLOv8 still face
+challenges in handling the complex conditions found at construction sites. To
+solve these problems, this study presents the Global Stability Optimization
+YOLO \(GSO\-YOLO\) model to address challenges in complex construction sites. The
+model integrates the Global Optimization Module \(GOM\) and Steady Capture Module
+\(SCM\) to enhance global contextual information capture and detection stability.
+The innovative AIoU loss function, which combines CIoU and EIoU, improves
+detection accuracy and efficiency. Experiments on datasets like SODA, MOCS, and
+CIS show that GSO\-YOLO outperforms existing methods, achieving SOTA
+performance.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2407.00906v1)
+
+---
+
+
 ## A Universal Railway Obstacle Detection System based on Semi\-supervised Segmentation And Optical Flow
 
 **发布日期**：2024-06-27
@@ -301,33 +331,6 @@ respectively, and outperforms the current mainstream methods.
 **代码链接**：摘要中未找到代码链接。
 
 **论文链接**：[阅读更多](http://arxiv.org/abs/2406.12285v2)
-
----
-
-
-## YOLO\-FEDER FusionNet: A Novel Deep Learning Architecture for Drone Detection
-
-**发布日期**：2024-06-17
-
-**作者**：Tamara R. Lenhard
-
-**摘要**：Predominant methods for image\-based drone detection frequently rely on
-employing generic object detection algorithms like YOLOv5. While proficient in
-identifying drones against homogeneous backgrounds, these algorithms often
-struggle in complex, highly textured environments. In such scenarios, drones
-seamlessly integrate into the background, creating camouflage effects that
-adversely affect the detection quality. To address this issue, we introduce a
-novel deep learning architecture called YOLO\-FEDER FusionNet. Unlike
-conventional approaches, YOLO\-FEDER FusionNet combines generic object detection
-methods with the specialized strength of camouflage object detection techniques
-to enhance drone detection capabilities. Comprehensive evaluations of
-YOLO\-FEDER FusionNet show the efficiency of the proposed model and demonstrate
-substantial improvements in both reducing missed detections and false alarms.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2406.11641v1)
 
 ---
 
