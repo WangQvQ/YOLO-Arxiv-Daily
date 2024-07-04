@@ -1,6 +1,37 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## YOLOv5, YOLOv8 and YOLOv10: The Go\-To Detectors for Real\-time Vision
+
+**发布日期**：2024-07-03
+
+**作者**：Muhammad Hussain
+
+**摘要**：This paper presents a comprehensive review of the evolution of the YOLO \(You
+Only Look Once\) object detection algorithm, focusing on YOLOv5, YOLOv8, and
+YOLOv10. We analyze the architectural advancements, performance improvements,
+and suitability for edge deployment across these versions. YOLOv5 introduced
+significant innovations such as the CSPDarknet backbone and Mosaic
+Augmentation, balancing speed and accuracy. YOLOv8 built upon this foundation
+with enhanced feature extraction and anchor\-free detection, improving
+versatility and performance. YOLOv10 represents a leap forward with NMS\-free
+training, spatial\-channel decoupled downsampling, and large\-kernel
+convolutions, achieving state\-of\-the\-art performance with reduced computational
+overhead. Our findings highlight the progressive enhancements in accuracy,
+efficiency, and real\-time performance, particularly emphasizing their
+applicability in resource\-constrained environments. This review provides
+insights into the trade\-offs between model complexity and detection accuracy,
+offering guidance for selecting the most appropriate YOLO version for specific
+edge computing applications.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2407.02988v1)
+
+---
+
+
 ## GSO\-YOLO: Global Stability Optimization YOLO for Construction Site Detection
 
 **发布日期**：2024-07-01
@@ -297,40 +328,6 @@ extent, such as end\-to\-end one\-stage, data\-driven, and fast.
 **代码链接**：摘要中未找到代码链接。
 
 **论文链接**：[阅读更多](http://arxiv.org/abs/2406.12395v1)
-
----
-
-
-## DASSF: Dynamic\-Attention Scale\-Sequence Fusion for Aerial Object Detection
-
-**发布日期**：2024-06-18
-
-**作者**：Haodong Li
-
-**摘要**：The detection of small objects in aerial images is a fundamental task in the
-field of computer vision. Moving objects in aerial photography have problems
-such as different shapes and sizes, dense overlap, occlusion by the background,
-and object blur, however, the original YOLO algorithm has low overall detection
-accuracy due to its weak ability to perceive targets of different scales. In
-order to improve the detection accuracy of densely overlapping small targets
-and fuzzy targets, this paper proposes a dynamic\-attention scale\-sequence
-fusion algorithm \(DASSF\) for small target detection in aerial images. First, we
-propose a dynamic scale sequence feature fusion \(DSSFF\) module that improves
-the up\-sampling mechanism and reduces computational load. Secondly, a x\-small
-object detection head is specially added to enhance the detection capability of
-small targets. Finally, in order to improve the expressive ability of targets
-of different types and sizes, we use the dynamic head \(DyHead\). The model we
-proposed solves the problem of small target detection in aerial images and can
-be applied to multiple different versions of the YOLO algorithm, which is
-universal. Experimental results show that when the DASSF method is applied to
-YOLOv8, compared to YOLOv8n, on the VisDrone\-2019 and DIOR datasets, the model
-shows an increase of 9.2% and 2.4% in the mean average precision \(mAP\),
-respectively, and outperforms the current mainstream methods.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2406.12285v2)
 
 ---
 
