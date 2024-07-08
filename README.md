@@ -1,6 +1,74 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## SH17: A Dataset for Human Safety and Personal Protective Equipment Detection in Manufacturing Industry
+
+**发布日期**：2024-07-05
+
+**作者**：Hafiz Mughees Ahmad
+
+**摘要**：Workplace accidents continue to pose significant risks for human safety,
+particularly in industries such as construction and manufacturing, and the
+necessity for effective Personal Protective Equipment \(PPE\) compliance has
+become increasingly paramount. Our research focuses on the development of
+non\-invasive techniques based on the Object Detection \(OD\) and Convolutional
+Neural Network \(CNN\) to detect and verify the proper use of various types of
+PPE such as helmets, safety glasses, masks, and protective clothing. This study
+proposes the SH17 Dataset, consisting of 8,099 annotated images containing
+75,994 instances of 17 classes collected from diverse industrial environments,
+to train and validate the OD models. We have trained state\-of\-the\-art OD models
+for benchmarking, and initial results demonstrate promising accuracy levels
+with You Only Look Once \(YOLO\)v9\-e model variant exceeding 70.9% in PPE
+detection. The performance of the model validation on cross\-domain datasets
+suggests that integrating these technologies can significantly improve safety
+management systems, providing a scalable and efficient solution for industries
+striving to meet human safety regulations and protect their workforce. The
+dataset is available at https://github.com/ahmadmughees/sh17dataset.
+
+
+**代码链接**：https://github.com/ahmadmughees/sh17dataset.
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2407.04590v1)
+
+---
+
+
+## Multi\-Branch Auxiliary Fusion YOLO with Re\-parameterization Heterogeneous Convolutional for accurate object detection
+
+**发布日期**：2024-07-05
+
+**作者**：Zhiqiang Yang
+
+**摘要**：Due to the effective performance of multi\-scale feature fusion, Path
+Aggregation FPN \(PAFPN\) is widely employed in YOLO detectors. However, it
+cannot efficiently and adaptively integrate high\-level semantic information
+with low\-level spatial information simultaneously. We propose a new model named
+MAF\-YOLO in this paper, which is a novel object detection framework with a
+versatile neck named Multi\-Branch Auxiliary FPN \(MAFPN\). Within MAFPN, the
+Superficial Assisted Fusion \(SAF\) module is designed to combine the output of
+the backbone with the neck, preserving an optimal level of shallow information
+to facilitate subsequent learning. Meanwhile, the Advanced Assisted Fusion
+\(AAF\) module deeply embedded within the neck conveys a more diverse range of
+gradient information to the output layer.
+  Furthermore, our proposed Re\-parameterized Heterogeneous Efficient Layer
+Aggregation Network \(RepHELAN\) module ensures that both the overall model
+architecture and convolutional design embrace the utilization of heterogeneous
+large convolution kernels. Therefore, this guarantees the preservation of
+information related to small targets while simultaneously achieving the
+multi\-scale receptive field. Finally, taking the nano version of MAF\-YOLO for
+example, it can achieve 42.4% AP on COCO with only 3.76M learnable parameters
+and 10.51G FLOPs, and approximately outperforms YOLOv8n by about 5.1%. The
+source code of this work is available at:
+https://github.com/yang\-0201/MAF\-YOLO.
+
+
+**代码链接**：https://github.com/yang-0201/MAF-YOLO.
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2407.04381v1)
+
+---
+
+
 ## YOLOv5, YOLOv8 and YOLOv10: The Go\-To Detectors for Real\-time Vision
 
 **发布日期**：2024-07-03
@@ -260,74 +328,6 @@ be efficiently accomplished through the incorporation of human demonstrations.
 **代码链接**：摘要中未找到代码链接。
 
 **论文链接**：[阅读更多](http://arxiv.org/abs/2406.14097v2)
-
----
-
-
-## Towards the in\-situ Trunk Identification and Length Measurement of Sea Cucumbers via Bézier Curve Modelling
-
-**发布日期**：2024-06-20
-
-**作者**：Shuaixin Liu
-
-**摘要**：We introduce a novel vision\-based framework for in\-situ trunk identification
-and length measurement of sea cucumbers, which plays a crucial role in the
-monitoring of marine ranching resources and mechanized harvesting. To model sea
-cucumber trunk curves with varying degrees of bending, we utilize the
-parametric B\\'\{e\}zier curve due to its computational simplicity, stability, and
-extensive range of transformation possibilities. Then, we propose an end\-to\-end
-unified framework that combines parametric B\\'\{e\}zier curve modeling with the
-widely used You\-Only\-Look\-Once \(YOLO\) pipeline, abbreviated as TISC\-Net, and
-incorporates effective funnel activation and efficient multi\-scale attention
-modules to enhance curve feature perception and learning. Furthermore, we
-propose incorporating trunk endpoint loss as an additional constraint to
-effectively mitigate the impact of endpoint deviations on the overall curve.
-Finally, by utilizing the depth information of pixels located along the trunk
-curve captured by a binocular camera, we propose accurately estimating the
-in\-situ length of sea cucumbers through space curve integration. We established
-two challenging benchmark datasets for curve\-based in\-situ sea cucumber trunk
-identification. These datasets consist of over 1,000 real\-world marine
-environment images of sea cucumbers, accompanied by B\\'\{e\}zier format
-annotations. We conduct evaluation on SC\-ISTI, for which our method achieves
-mAP50 above 0.9 on both object detection and trunk identification tasks.
-Extensive length measurement experiments demonstrate that the average absolute
-relative error is around 0.15.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2406.13951v1)
-
----
-
-
-## SDNIA\-YOLO: A Robust Object Detection Model for Extreme Weather Conditions
-
-**发布日期**：2024-06-18
-
-**作者**：Yuexiong Ding
-
-**摘要**：Though current object detection models based on deep learning have achieved
-excellent results on many conventional benchmark datasets, their performance
-will dramatically decline on real\-world images taken under extreme conditions.
-Existing methods either used image augmentation based on traditional image
-processing algorithms or applied customized and scene\-limited image adaptation
-technologies for robust modeling. This study thus proposes a stylization
-data\-driven neural\-image\-adaptive YOLO \(SDNIA\-YOLO\), which improves the model's
-robustness by enhancing image quality adaptively and learning valuable
-information related to extreme weather conditions from images synthesized by
-neural style transfer \(NST\). Experiments show that the developed SDNIA\-YOLOv3
-achieves significant mAP@.5 improvements of at least 15% on the real\-world
-foggy \(RTTS\) and lowlight \(ExDark\) test sets compared with the baseline model.
-Besides, the experiments also highlight the outstanding potential of
-stylization data in simulating extreme weather conditions. The developed
-SDNIA\-YOLO remains excellent characteristics of the native YOLO to a great
-extent, such as end\-to\-end one\-stage, data\-driven, and fast.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2406.12395v1)
 
 ---
 
