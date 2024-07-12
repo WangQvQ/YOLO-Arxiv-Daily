@@ -1,6 +1,73 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## PowerYOLO: Mixed Precision Model for Hardware Efficient Object Detection with Event Data
+
+**发布日期**：2024-07-11
+
+**作者**：Dominika Przewlocka\-Rus
+
+**摘要**：The performance of object detection systems in automotive solutions must be
+as high as possible, with minimal response time and, due to the often
+battery\-powered operation, low energy consumption. When designing such
+solutions, we therefore face challenges typical for embedded vision systems:
+the problem of fitting algorithms of high memory and computational complexity
+into small low\-power devices. In this paper we propose PowerYOLO \- a mixed
+precision solution, which targets three essential elements of such application.
+First, we propose a system based on a Dynamic Vision Sensor \(DVS\), a novel
+sensor, that offers low power requirements and operates well in conditions with
+variable illumination. It is these features that may make event cameras a
+preferential choice over frame cameras in some applications. Second, to ensure
+high accuracy and low memory and computational complexity, we propose to use
+4\-bit width Powers\-of\-Two \(PoT\) quantisation for convolution weights of the
+YOLO detector, with all other parameters quantised linearly. Finally, we
+embrace from PoT scheme and replace multiplication with bit\-shifting to
+increase the efficiency of hardware acceleration of such solution, with a
+special convolution\-batch normalisation fusion scheme. The use of specific
+sensor with PoT quantisation and special batch normalisation fusion leads to a
+unique system with almost 8x reduction in memory complexity and vast
+computational simplifications, with relation to a standard approach. This
+efficient system achieves high accuracy of mAP 0.301 on the GEN1 DVS dataset,
+marking the new state\-of\-the\-art for such compressed model.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2407.08272v1)
+
+---
+
+
+## Enrich the content of the image Using Context\-Aware Copy Paste
+
+**发布日期**：2024-07-11
+
+**作者**：Qiushi Guo
+
+**摘要**：Data augmentation remains a widely utilized technique in deep learning,
+particularly in tasks such as image classification, semantic segmentation, and
+object detection. Among them, Copy\-Paste is a simple yet effective method and
+gain great attention recently. However, existing Copy\-Paste often overlook
+contextual relevance between source and target images, resulting in
+inconsistencies in generated outputs. To address this challenge, we propose a
+context\-aware approach that integrates Bidirectional Latent Information
+Propagation \(BLIP\) for content extraction from source images. By matching
+extracted content information with category information, our method ensures
+cohesive integration of target objects using Segment Anything Model \(SAM\) and
+You Only Look Once \(YOLO\). This approach eliminates the need for manual
+annotation, offering an automated and user\-friendly solution. Experimental
+evaluations across diverse datasets demonstrate the effectiveness of our method
+in enhancing data diversity and generating high\-quality pseudo\-images across
+various computer vision tasks.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2407.08151v1)
+
+---
+
+
 ## Muzzle\-Based Cattle Identification System Using Artificial Intelligence \(AI\)
 
 **发布日期**：2024-07-08
@@ -251,82 +318,6 @@ version of StabilityAI's Stable Diffusion image generator.
 **代码链接**：摘要中未找到代码链接。
 
 **论文链接**：[阅读更多](http://arxiv.org/abs/2406.17547v1)
-
----
-
-
-## POPCat: Propagation of particles for complex annotation tasks
-
-**发布日期**：2024-06-24
-
-**作者**：Adam Srebrnjak Yang
-
-**摘要**：Novel dataset creation for all multi\-object tracking, crowd\-counting, and
-industrial\-based videos is arduous and time\-consuming when faced with a unique
-class that densely populates a video sequence. We propose a time efficient
-method called POPCat that exploits the multi\-target and temporal features of
-video data to produce a semi\-supervised pipeline for segmentation or box\-based
-video annotation. The method retains the accuracy level associated with human
-level annotation while generating a large volume of semi\-supervised annotations
-for greater generalization. The method capitalizes on temporal features through
-the use of a particle tracker to expand the domain of human\-provided target
-points. This is done through the use of a particle tracker to reassociate the
-initial points to a set of images that follow the labeled frame. A YOLO model
-is then trained with this generated data, and then rapidly infers on the target
-video. Evaluations are conducted on GMOT\-40, AnimalTrack, and Visdrone\-2019
-benchmarks. These multi\-target video tracking/detection sets contain multiple
-similar\-looking targets, camera movements, and other features that would
-commonly be seen in "wild" situations. We specifically choose these difficult
-datasets to demonstrate the efficacy of the pipeline and for comparison
-purposes. The method applied on GMOT\-40, AnimalTrack, and Visdrone shows a
-margin of improvement on recall/mAP50/mAP over the best results by a value of
-24.5%/9.6%/4.8%, \-/43.1%/27.8%, and 7.5%/9.4%/7.5% where metrics were
-collected.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2406.17183v1)
-
----
-
-
-## Review of Zero\-Shot and Few\-Shot AI Algorithms in The Medical Domain
-
-**发布日期**：2024-06-23
-
-**作者**：Maged Badawi
-
-**摘要**：In this paper, different techniques of few\-shot, zero\-shot, and regular
-object detection have been investigated. The need for few\-shot learning and
-zero\-shot learning techniques is crucial and arises from the limitations and
-challenges in traditional machine learning, deep learning, and computer vision
-methods where they require large amounts of data, plus the poor generalization
-of those traditional methods.
-  Those techniques can give us prominent results by using only a few training
-sets reducing the required amounts of data and improving the generalization.
-  This survey will highlight the recent papers of the last three years that
-introduce the usage of few\-shot learning and zero\-shot learning techniques in
-addressing the challenges mentioned earlier. In this paper we reviewed the
-Zero\-shot, few\-shot and regular object detection methods and categorized them
-in an understandable manner. Based on the comparison made within each category.
-It been found that the approaches are quite impressive.
-  This integrated review of diverse papers on few\-shot, zero\-shot, and regular
-object detection reveals a shared focus on advancing the field through novel
-frameworks and techniques. A noteworthy observation is the scarcity of detailed
-discussions regarding the difficulties encountered during the development
-phase. Contributions include the introduction of innovative models, such as
-ZSD\-YOLO and GTNet, often showcasing improvements with various metrics such as
-mean average precision \(mAP\),Recall@100 \(RE@100\), the area under the receiver
-operating characteristic curve \(AUROC\) and precision. These findings underscore
-a collective move towards leveraging vision\-language models for versatile
-applications, with potential areas for future research including a more
-thorough exploration of limitations and domain\-specific adaptations.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2406.16143v1)
 
 ---
 
