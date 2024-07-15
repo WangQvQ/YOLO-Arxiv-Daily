@@ -1,6 +1,44 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## DART: An Automated End\-to\-End Object Detection Pipeline with Data Diversification, Open\-Vocabulary Bounding Box Annotation, Pseudo\-Label Review, and Model Training
+
+**发布日期**：2024-07-12
+
+**作者**：Chen Xin
+
+**摘要**：Swift and accurate detection of specified objects is crucial for many
+industrial applications, such as safety monitoring on construction sites.
+However, traditional approaches rely heavily on arduous manual annotation and
+data collection, which struggle to adapt to ever\-changing environments and
+novel target objects. To address these limitations, this paper presents DART,
+an automated end\-to\-end pipeline designed to streamline the entire workflow of
+an object detection application from data collection to model deployment. DART
+eliminates the need for human labeling and extensive data collection while
+excelling in diverse scenarios. It employs a subject\-driven image generation
+module \(DreamBooth with SDXL\) for data diversification, followed by an
+annotation stage where open\-vocabulary object detection \(Grounding DINO\)
+generates bounding box annotations for both generated and original images.
+These pseudo\-labels are then reviewed by a large multimodal model \(GPT\-4o\) to
+guarantee credibility before serving as ground truth to train real\-time object
+detectors \(YOLO\). We apply DART to a self\-collected dataset of construction
+machines named Liebherr Product, which contains over 15K high\-quality images
+across 23 categories. The current implementation of DART significantly
+increases average precision \(AP\) from 0.064 to 0.832. Furthermore, we adopt a
+modular design for DART to ensure easy exchangeability and extensibility. This
+allows for a smooth transition to more advanced algorithms in the future,
+seamless integration of new object categories without manual labeling, and
+adaptability to customized environments without extra data collection. The code
+and dataset are released at https://github.com/chen\-xin\-94/DART.
+
+
+**代码链接**：https://github.com/chen-xin-94/DART.
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2407.09174v1)
+
+---
+
+
 ## PowerYOLO: Mixed Precision Model for Hardware Efficient Object Detection with Event Data
 
 **发布日期**：2024-07-11
@@ -290,34 +328,6 @@ feasibility and effectiveness of our approach.
 **代码链接**：摘要中未找到代码链接。
 
 **论文链接**：[阅读更多](http://arxiv.org/abs/2406.18908v1)
-
----
-
-
-## Detection of Synthetic Face Images: Accuracy, Robustness, Generalization
-
-**发布日期**：2024-06-25
-
-**作者**：Nela Petrzelkova
-
-**摘要**：An experimental study on detecting synthetic face images is presented. We
-collected a dataset, called FF5, of five fake face image generators, including
-recent diffusion models. We find that a simple model trained on a specific
-image generator can achieve near\-perfect accuracy in separating synthetic and
-real images. The model handles common image distortions \(reduced resolution,
-compression\) by using data augmentation. Moreover, partial manipulations, where
-synthetic images are blended into real ones by inpainting, are identified and
-the area of the manipulation is localized by a simple model of YOLO
-architecture. However, the model turned out to be vulnerable to adversarial
-attacks and does not generalize to unseen generators. Failure to generalize to
-detect images produced by a newer generator also occurs for recent
-state\-of\-the\-art methods, which we tested on Realistic Vision, a fine\-tuned
-version of StabilityAI's Stable Diffusion image generator.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2406.17547v1)
 
 ---
 
