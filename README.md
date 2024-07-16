@@ -1,6 +1,38 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Melon Fruit Detection and Quality Assessment Using Generative AI\-Based Image Data Augmentation
+
+**发布日期**：2024-07-15
+
+**作者**：Seungri Yoon
+
+**摘要**：Monitoring and managing the growth and quality of fruits are very important
+tasks. To effectively train deep learning models like YOLO for real\-time fruit
+detection, high\-quality image datasets are essential. However, such datasets
+are often lacking in agriculture. Generative AI models can help create
+high\-quality images. In this study, we used MidJourney and Firefly tools to
+generate images of melon greenhouses and post\-harvest fruits through
+text\-to\-image, pre\-harvest image\-to\-image, and post\-harvest image\-to\-image
+methods. We evaluated these AIgenerated images using PSNR and SSIM metrics and
+tested the detection performance of the YOLOv9 model. We also assessed the net
+quality of real and generated fruits. Our results showed that generative AI
+could produce images very similar to real ones, especially for post\-harvest
+fruits. The YOLOv9 model detected the generated images well, and the net
+quality was also measurable. This shows that generative AI can create realistic
+images useful for fruit detection and quality assessment, indicating its great
+potential in agriculture. This study highlights the potential of AI\-generated
+images for data augmentation in melon fruit detection and quality assessment
+and envisions a positive future for generative AI applications in agriculture.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2407.10413v1)
+
+---
+
+
 ## DART: An Automated End\-to\-End Object Detection Pipeline with Data Diversification, Open\-Vocabulary Bounding Box Annotation, Pseudo\-Label Review, and Model Training
 
 **发布日期**：2024-07-12
@@ -301,33 +333,6 @@ performance.
 **代码链接**：摘要中未找到代码链接。
 
 **论文链接**：[阅读更多](http://arxiv.org/abs/2407.00906v1)
-
----
-
-
-## A Universal Railway Obstacle Detection System based on Semi\-supervised Segmentation And Optical Flow
-
-**发布日期**：2024-06-27
-
-**作者**：Qiushi Guo
-
-**摘要**：Detecting obstacles in railway scenarios is both crucial and challenging due
-to the wide range of obstacle categories and varying ambient conditions such as
-weather and light. Given the impossibility of encompassing all obstacle
-categories during the training stage, we address this out\-of\-distribution \(OOD\)
-issue with a semi\-supervised segmentation approach guided by optical flow
-clues. We reformulate the task as a binary segmentation problem instead of the
-traditional object detection approach. To mitigate data shortages, we generate
-highly realistic synthetic images using Segment Anything \(SAM\) and YOLO,
-eliminating the need for manual annotation to produce abundant pixel\-level
-annotations. Additionally, we leverage optical flow as prior knowledge to train
-the model effectively. Several experiments are conducted, demonstrating the
-feasibility and effectiveness of our approach.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2406.18908v1)
 
 ---
 
