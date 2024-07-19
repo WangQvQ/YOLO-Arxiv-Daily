@@ -1,6 +1,80 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## CerberusDet: Unified Multi\-Task Object Detection
+
+**发布日期**：2024-07-17
+
+**作者**：Irina Tolstykh
+
+**摘要**：Object detection is a core task in computer vision. Over the years, the
+development of numerous models has significantly enhanced performance. However,
+these conventional models are usually limited by the data on which they were
+trained and by the category logic they define. With the recent rise of
+Language\-Visual Models, new methods have emerged that are not restricted to
+these fixed categories. Despite their flexibility, such Open Vocabulary
+detection models still fall short in accuracy compared to traditional models
+with fixed classes. At the same time, more accurate data\-specific models face
+challenges when there is a need to extend classes or merge different datasets
+for training. The latter often cannot be combined due to different logics or
+conflicting class definitions, making it difficult to improve a model without
+compromising its performance. In this paper, we introduce CerberusDet, a
+framework with a multi\-headed model designed for handling multiple object
+detection tasks. Proposed model is built on the YOLO architecture and
+efficiently shares visual features from both backbone and neck components,
+while maintaining separate task heads. This approach allows CerberusDet to
+perform very efficiently while still delivering optimal results. We evaluated
+the model on the PASCAL VOC dataset and additional categories from the
+Objects365 dataset to demonstrate its abilities. CerberusDet achieved results
+comparable to state\-of\-the\-art data\-specific models with 36% less inference
+time. The more tasks are trained together, the more efficient the proposed
+model becomes compared to running individual models sequentially. The training
+and inference code, as well as the model, are available as open\-source
+\(https://github.com/ai\-forever/CerberusDet\).
+
+
+**代码链接**：https://github.com/ai-forever/CerberusDet).
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2407.12632v1)
+
+---
+
+
+## Enhancing Wrist Abnormality Detection with YOLO: Analysis of State\-of\-the\-art Single\-stage Detection Models
+
+**发布日期**：2024-07-17
+
+**作者**：Ammar Ahmed
+
+**摘要**：Diagnosing and treating abnormalities in the wrist, specifically distal
+radius, and ulna fractures, is a crucial concern among children, adolescents,
+and young adults, with a higher incidence rate during puberty. However, the
+scarcity of radiologists and the lack of specialized training among medical
+professionals pose a significant risk to patient care. This problem is further
+exacerbated by the rising number of imaging studies and limited access to
+specialist reporting in certain regions. This highlights the need for
+innovative solutions to improve the diagnosis and treatment of wrist
+abnormalities. Automated wrist fracture detection using object detection has
+shown potential, but current studies mainly use two\-stage detection methods
+with limited evidence for single\-stage effectiveness. This study employs
+state\-of\-the\-art single\-stage deep neural network\-based detection models
+YOLOv5, YOLOv6, YOLOv7, and YOLOv8 to detect wrist abnormalities. Through
+extensive experimentation, we found that these YOLO models outperform the
+commonly used two\-stage detection algorithm, Faster R\-CNN, in bone fracture
+detection. Additionally, compound\-scaled variants of each YOLO model were
+compared, with YOLOv8x demonstrating a fracture detection mean average
+precision \(mAP\) of 0.95 and an overall mAP of 0.77 on the GRAZPEDWRI\-DX
+pediatric wrist dataset, highlighting the potential of single\-stage models for
+enhancing pediatric wrist imaging.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2407.12597v1)
+
+---
+
+
 ## Melon Fruit Detection and Quality Assessment Using Generative AI\-Based Image Data Augmentation
 
 **发布日期**：2024-07-15
@@ -272,67 +346,6 @@ https://github.com/yang\-0201/MAF\-YOLO.
 **代码链接**：https://github.com/yang-0201/MAF-YOLO.
 
 **论文链接**：[阅读更多](http://arxiv.org/abs/2407.04381v1)
-
----
-
-
-## YOLOv5, YOLOv8 and YOLOv10: The Go\-To Detectors for Real\-time Vision
-
-**发布日期**：2024-07-03
-
-**作者**：Muhammad Hussain
-
-**摘要**：This paper presents a comprehensive review of the evolution of the YOLO \(You
-Only Look Once\) object detection algorithm, focusing on YOLOv5, YOLOv8, and
-YOLOv10. We analyze the architectural advancements, performance improvements,
-and suitability for edge deployment across these versions. YOLOv5 introduced
-significant innovations such as the CSPDarknet backbone and Mosaic
-Augmentation, balancing speed and accuracy. YOLOv8 built upon this foundation
-with enhanced feature extraction and anchor\-free detection, improving
-versatility and performance. YOLOv10 represents a leap forward with NMS\-free
-training, spatial\-channel decoupled downsampling, and large\-kernel
-convolutions, achieving state\-of\-the\-art performance with reduced computational
-overhead. Our findings highlight the progressive enhancements in accuracy,
-efficiency, and real\-time performance, particularly emphasizing their
-applicability in resource\-constrained environments. This review provides
-insights into the trade\-offs between model complexity and detection accuracy,
-offering guidance for selecting the most appropriate YOLO version for specific
-edge computing applications.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2407.02988v1)
-
----
-
-
-## GSO\-YOLO: Global Stability Optimization YOLO for Construction Site Detection
-
-**发布日期**：2024-07-01
-
-**作者**：Yuming Zhang
-
-**摘要**：Safety issues at construction sites have long plagued the industry, posing
-risks to worker safety and causing economic damage due to potential hazards.
-With the advancement of artificial intelligence, particularly in the field of
-computer vision, the automation of safety monitoring on construction sites has
-emerged as a solution to this longstanding issue. Despite achieving impressive
-performance, advanced object detection methods like YOLOv8 still face
-challenges in handling the complex conditions found at construction sites. To
-solve these problems, this study presents the Global Stability Optimization
-YOLO \(GSO\-YOLO\) model to address challenges in complex construction sites. The
-model integrates the Global Optimization Module \(GOM\) and Steady Capture Module
-\(SCM\) to enhance global contextual information capture and detection stability.
-The innovative AIoU loss function, which combines CIoU and EIoU, improves
-detection accuracy and efficiency. Experiments on datasets like SODA, MOCS, and
-CIS show that GSO\-YOLO outperforms existing methods, achieving SOTA
-performance.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2407.00906v1)
 
 ---
 
