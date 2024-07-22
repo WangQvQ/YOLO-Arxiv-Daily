@@ -1,6 +1,39 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Enhancing Layout Hotspot Detection Efficiency with YOLOv8 and PCA\-Guided Augmentation
+
+**发布日期**：2024-07-19
+
+**作者**：Dongyang Wu
+
+**摘要**：In this paper, we present a YOLO\-based framework for layout hotspot
+detection, aiming to enhance the efficiency and performance of the design rule
+checking \(DRC\) process. Our approach leverages the YOLOv8 vision model to
+detect multiple hotspots within each layout image, even when dealing with large
+layout image sizes. Additionally, to enhance pattern\-matching effectiveness, we
+introduce a novel approach to augment the layout image using information
+extracted through Principal Component Analysis \(PCA\). The core of our proposed
+method is an algorithm that utilizes PCA to extract valuable auxiliary
+information from the layout image. This extracted information is then
+incorporated into the layout image as an additional color channel. This
+augmentation significantly improves the accuracy of multi\-hotspot detection
+while reducing the false alarm rate of the object detection algorithm. We
+evaluate the effectiveness of our framework using four datasets generated from
+layouts found in the ICCAD\-2019 benchmark dataset. The results demonstrate that
+our framework achieves a precision \(recall\) of approximately 83% \(86%\) while
+maintaining a false alarm rate of less than 7.4\\%. Also, the studies show that
+the proposed augmentation approach could improve the detection ability of
+never\-seen\-before \(NSB\) hotspots by about 10%.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2407.14498v1)
+
+---
+
+
 ## CerberusDet: Unified Multi\-Task Object Detection
 
 **发布日期**：2024-07-17
@@ -310,42 +343,6 @@ dataset is available at https://github.com/ahmadmughees/sh17dataset.
 **代码链接**：https://github.com/ahmadmughees/sh17dataset.
 
 **论文链接**：[阅读更多](http://arxiv.org/abs/2407.04590v1)
-
----
-
-
-## Multi\-Branch Auxiliary Fusion YOLO with Re\-parameterization Heterogeneous Convolutional for accurate object detection
-
-**发布日期**：2024-07-05
-
-**作者**：Zhiqiang Yang
-
-**摘要**：Due to the effective performance of multi\-scale feature fusion, Path
-Aggregation FPN \(PAFPN\) is widely employed in YOLO detectors. However, it
-cannot efficiently and adaptively integrate high\-level semantic information
-with low\-level spatial information simultaneously. We propose a new model named
-MAF\-YOLO in this paper, which is a novel object detection framework with a
-versatile neck named Multi\-Branch Auxiliary FPN \(MAFPN\). Within MAFPN, the
-Superficial Assisted Fusion \(SAF\) module is designed to combine the output of
-the backbone with the neck, preserving an optimal level of shallow information
-to facilitate subsequent learning. Meanwhile, the Advanced Assisted Fusion
-\(AAF\) module deeply embedded within the neck conveys a more diverse range of
-gradient information to the output layer.
-  Furthermore, our proposed Re\-parameterized Heterogeneous Efficient Layer
-Aggregation Network \(RepHELAN\) module ensures that both the overall model
-architecture and convolutional design embrace the utilization of heterogeneous
-large convolution kernels. Therefore, this guarantees the preservation of
-information related to small targets while simultaneously achieving the
-multi\-scale receptive field. Finally, taking the nano version of MAF\-YOLO for
-example, it can achieve 42.4% AP on COCO with only 3.76M learnable parameters
-and 10.51G FLOPs, and approximately outperforms YOLOv8n by about 5.1%. The
-source code of this work is available at:
-https://github.com/yang\-0201/MAF\-YOLO.
-
-
-**代码链接**：https://github.com/yang-0201/MAF-YOLO.
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2407.04381v1)
 
 ---
 
