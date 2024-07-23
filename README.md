@@ -1,6 +1,101 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## YOLOv10 for Automated Fracture Detection in Pediatric Wrist Trauma X\-rays
+
+**发布日期**：2024-07-22
+
+**作者**：Ammar Ahmed
+
+**摘要**：Wrist fractures are highly prevalent among children and can significantly
+impact their daily activities, such as attending school, participating in
+sports, and performing basic self\-care tasks. If not treated properly, these
+fractures can result in chronic pain, reduced wrist functionality, and other
+long\-term complications. Recently, advancements in object detection have shown
+promise in enhancing fracture detection, with systems achieving accuracy
+comparable to, or even surpassing, that of human radiologists. The YOLO series,
+in particular, has demonstrated notable success in this domain. This study is
+the first to provide a thorough evaluation of various YOLOv10 variants to
+assess their performance in detecting pediatric wrist fractures using the
+GRAZPEDWRI\-DX dataset. It investigates how changes in model complexity, scaling
+the architecture, and implementing a dual\-label assignment strategy can enhance
+detection performance. Experimental results indicate that our trained model
+achieved mean average precision \(mAP@50\-95\) of 51.9\\% surpassing the current
+YOLOv9 benchmark of 43.3\\% on this dataset. This represents an improvement of
+8.6\\%. The implementation code is publicly available at
+https://github.com/ammarlodhi255/YOLOv10\-Fracture\-Detection
+
+
+**代码链接**：https://github.com/ammarlodhi255/YOLOv10-Fracture-Detection
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2407.15689v1)
+
+---
+
+
+## Multiple Object Detection and Tracking in Panoramic Videos for Cycling Safety Analysis
+
+**发布日期**：2024-07-21
+
+**作者**：Jingwei Guo
+
+**摘要**：Panoramic cycling videos can record 360\{\\deg\} views around the cyclists.
+Thus, it is essential to conduct automatic road user analysis on them using
+computer vision models to provide data for studies on cycling safety. However,
+the features of panoramic data such as severe distortions, large number of
+small objects and boundary continuity have brought great challenges to the
+existing CV models, including poor performance and evaluation methods that are
+no longer applicable. In addition, due to the lack of data with annotations, it
+is not easy to re\-train the models.
+  In response to these problems, the project proposed and implemented a
+three\-step methodology: \(1\) improve the prediction performance of the
+pre\-trained object detection models on panoramic data by projecting the
+original image into 4 perspective sub\-images; \(2\) introduce supports for
+boundary continuity and category information into DeepSORT, a commonly used
+multiple object tracking model, and set an improved detection model as its
+detector; \(3\) using the tracking results, develop an application for detecting
+the overtaking behaviour of the surrounding vehicles.
+  Evaluated on the panoramic cycling dataset built by the project, the proposed
+methodology improves the average precision of YOLO v5m6 and Faster RCNN\-FPN
+under any input resolution setting. In addition, it raises MOTA and IDF1 of
+DeepSORT by 7.6\\% and 9.7\\% respectively. When detecting the overtakes in the
+test videos, it achieves the F\-score of 0.88.
+  The code is available on GitHub at github.com/cuppp1998/360\_object\_tracking
+to ensure the reproducibility and further improvements of results.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2407.15199v1)
+
+---
+
+
+## GreenStableYolo: Optimizing Inference Time and Image Quality of Text\-to\-Image Generation
+
+**发布日期**：2024-07-20
+
+**作者**：Jingzhi Gong
+
+**摘要**：Tuning the parameters and prompts for improving AI\-based text\-to\-image
+generation has remained a substantial yet unaddressed challenge. Hence we
+introduce GreenStableYolo, which improves the parameters and prompts for Stable
+Diffusion to both reduce GPU inference time and increase image generation
+quality using NSGA\-II and Yolo.
+  Our experiments show that despite a relatively slight trade\-off \(18%\) in
+image quality compared to StableYolo \(which only considers image quality\),
+GreenStableYolo achieves a substantial reduction in inference time \(266% less\)
+and a 526% higher hypervolume, thereby advancing the state\-of\-the\-art for
+text\-to\-image generation.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2407.14982v1)
+
+---
+
+
 ## Enhancing Layout Hotspot Detection Efficiency with YOLOv8 and PCA\-Guided Augmentation
 
 **发布日期**：2024-07-19
@@ -241,108 +336,6 @@ various computer vision tasks.
 **代码链接**：摘要中未找到代码链接。
 
 **论文链接**：[阅读更多](http://arxiv.org/abs/2407.08151v1)
-
----
-
-
-## Muzzle\-Based Cattle Identification System Using Artificial Intelligence \(AI\)
-
-**发布日期**：2024-07-08
-
-**作者**：Hasan Zohirul Islam
-
-**摘要**：Absence of tamper\-proof cattle identification technology was a significant
-problem preventing insurance companies from providing livestock insurance. This
-lack of technology had devastating financial consequences for marginal farmers
-as they did not have the opportunity to claim compensation for any unexpected
-events such as the accidental death of cattle in Bangladesh. Using machine
-learning and deep learning algorithms, we have solved the bottleneck of cattle
-identification by developing and introducing a muzzle\-based cattle
-identification system. The uniqueness of cattle muzzles has been scientifically
-established, which resembles human fingerprints. This is the fundamental
-premise that prompted us to develop a cattle identification system that
-extracts the uniqueness of cattle muzzles. For this purpose, we collected
-32,374 images from 826 cattle. Contrast\-limited adaptive histogram equalization
-\(CLAHE\) with sharpening filters was applied in the preprocessing steps to
-remove noise from images. We used the YOLO algorithm for cattle muzzle
-detection in the image and the FaceNet architecture to learn unified embeddings
-from muzzle images using squared $L\_2$ distances. Our system performs with an
-accuracy of $96.489\\%$, $F\_1$ score of $97.334\\%$, and a true positive rate
-\(tpr\) of $87.993\\%$ at a remarkably low false positive rate \(fpr\) of $0.098\\%$.
-This reliable and efficient system for identifying cattle can significantly
-advance livestock insurance and precision farming.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2407.06096v1)
-
----
-
-
-## Quantizing YOLOv7: A Comprehensive Study
-
-**发布日期**：2024-07-06
-
-**作者**：Mohammadamin Baghbanbashi
-
-**摘要**：YOLO is a deep neural network \(DNN\) model presented for robust real\-time
-object detection following the one\-stage inference approach. It outperforms
-other real\-time object detectors in terms of speed and accuracy by a wide
-margin. Nevertheless, since YOLO is developed upon a DNN backbone with numerous
-parameters, it will cause excessive memory load, thereby deploying it on
-memory\-constrained devices is a severe challenge in practice. To overcome this
-limitation, model compression techniques, such as quantizing parameters to
-lower\-precision values, can be adopted. As the most recent version of YOLO,
-YOLOv7 achieves such state\-of\-the\-art performance in speed and accuracy in the
-range of 5 FPS to 160 FPS that it surpasses all former versions of YOLO and
-other existing models in this regard. So far, the robustness of several
-quantization schemes has been evaluated on older versions of YOLO. These
-methods may not necessarily yield similar results for YOLOv7 as it utilizes a
-different architecture. In this paper, we conduct in\-depth research on the
-effectiveness of a variety of quantization schemes on the pre\-trained weights
-of the state\-of\-the\-art YOLOv7 model. Experimental results demonstrate that
-using 4\-bit quantization coupled with the combination of different
-granularities results in ~3.92x and ~3.86x memory\-saving for uniform and
-non\-uniform quantization, respectively, with only 2.5% and 1% accuracy loss
-compared to the full\-precision baseline model.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2407.04943v1)
-
----
-
-
-## SH17: A Dataset for Human Safety and Personal Protective Equipment Detection in Manufacturing Industry
-
-**发布日期**：2024-07-05
-
-**作者**：Hafiz Mughees Ahmad
-
-**摘要**：Workplace accidents continue to pose significant risks for human safety,
-particularly in industries such as construction and manufacturing, and the
-necessity for effective Personal Protective Equipment \(PPE\) compliance has
-become increasingly paramount. Our research focuses on the development of
-non\-invasive techniques based on the Object Detection \(OD\) and Convolutional
-Neural Network \(CNN\) to detect and verify the proper use of various types of
-PPE such as helmets, safety glasses, masks, and protective clothing. This study
-proposes the SH17 Dataset, consisting of 8,099 annotated images containing
-75,994 instances of 17 classes collected from diverse industrial environments,
-to train and validate the OD models. We have trained state\-of\-the\-art OD models
-for benchmarking, and initial results demonstrate promising accuracy levels
-with You Only Look Once \(YOLO\)v9\-e model variant exceeding 70.9% in PPE
-detection. The performance of the model validation on cross\-domain datasets
-suggests that integrating these technologies can significantly improve safety
-management systems, providing a scalable and efficient solution for industries
-striving to meet human safety regulations and protect their workforce. The
-dataset is available at https://github.com/ahmadmughees/sh17dataset.
-
-
-**代码链接**：https://github.com/ahmadmughees/sh17dataset.
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2407.04590v1)
 
 ---
 
