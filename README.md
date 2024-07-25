@@ -1,6 +1,35 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## RT\-DETRv2: Improved Baseline with Bag\-of\-Freebies for Real\-Time Detection Transformer
+
+**发布日期**：2024-07-24
+
+**作者**：Wenyu Lv
+
+**摘要**：In this report, we present RT\-DETRv2, an improved Real\-Time DEtection
+TRansformer \(RT\-DETR\). RT\-DETRv2 builds upon the previous state\-of\-the\-art
+real\-time detector, RT\-DETR, and opens up a set of bag\-of\-freebies for
+flexibility and practicality, as well as optimizing the training strategy to
+achieve enhanced performance. To improve the flexibility, we suggest setting a
+distinct number of sampling points for features at different scales in the
+deformable attention to achieve selective multi\-scale feature extraction by the
+decoder. To enhance practicality, we propose an optional discrete sampling
+operator to replace the grid\_sample operator that is specific to RT\-DETR
+compared to YOLOs. This removes the deployment constraints typically associated
+with DETRs. For the training strategy, we propose dynamic data augmentation and
+scale\-adaptive hyperparameters customization to improve performance without
+loss of speed. Source code and pre\-trained models will be available at
+https://github.com/lyuwenyu/RT\-DETR.
+
+
+**代码链接**：https://github.com/lyuwenyu/RT-DETR.
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2407.17140v1)
+
+---
+
+
 ## YOLOv10 for Automated Fracture Detection in Pediatric Wrist Trauma X\-rays
 
 **发布日期**：2024-07-22
@@ -306,36 +335,6 @@ marking the new state\-of\-the\-art for such compressed model.
 **代码链接**：摘要中未找到代码链接。
 
 **论文链接**：[阅读更多](http://arxiv.org/abs/2407.08272v1)
-
----
-
-
-## Enrich the content of the image Using Context\-Aware Copy Paste
-
-**发布日期**：2024-07-11
-
-**作者**：Qiushi Guo
-
-**摘要**：Data augmentation remains a widely utilized technique in deep learning,
-particularly in tasks such as image classification, semantic segmentation, and
-object detection. Among them, Copy\-Paste is a simple yet effective method and
-gain great attention recently. However, existing Copy\-Paste often overlook
-contextual relevance between source and target images, resulting in
-inconsistencies in generated outputs. To address this challenge, we propose a
-context\-aware approach that integrates Bidirectional Latent Information
-Propagation \(BLIP\) for content extraction from source images. By matching
-extracted content information with category information, our method ensures
-cohesive integration of target objects using Segment Anything Model \(SAM\) and
-You Only Look Once \(YOLO\). This approach eliminates the need for manual
-annotation, offering an automated and user\-friendly solution. Experimental
-evaluations across diverse datasets demonstrate the effectiveness of our method
-in enhancing data diversity and generating high\-quality pseudo\-images across
-various computer vision tasks.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2407.08151v1)
 
 ---
 
