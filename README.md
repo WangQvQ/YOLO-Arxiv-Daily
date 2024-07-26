@@ -1,6 +1,67 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Real Time American Sign Language Detection Using Yolo\-v9
+
+**发布日期**：2024-07-25
+
+**作者**：Amna Imran
+
+**摘要**：This paper focuses on real\-time American Sign Language Detection. YOLO is a
+convolutional neural network \(CNN\) based model, which was first released in
+2015. In recent years, it gained popularity for its real\-time detection
+capabilities. Our study specifically targets YOLO\-v9 model, released in 2024.
+As the model is newly introduced, not much work has been done on it, especially
+not in Sign Language Detection. Our paper provides deep insight on how YOLO\- v9
+works and better than previous model.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2407.17950v1)
+
+---
+
+
+## Hierarchical Object Detection and Recognition Framework for Practical Plant Disease Diagnosis
+
+**发布日期**：2024-07-25
+
+**作者**：Kohei Iwano
+
+**摘要**：Recently, object detection methods \(OD; e.g., YOLO\-based models\) have been
+widely utilized in plant disease diagnosis. These methods demonstrate
+robustness to distance variations and excel at detecting small lesions compared
+to classification methods \(CL; e.g., CNN models\). However, there are issues
+such as low diagnostic performance for hard\-to\-detect diseases and high
+labeling costs. Additionally, since healthy cases cannot be explicitly trained,
+there is a risk of false positives. We propose the Hierarchical object
+detection and recognition framework \(HODRF\), a sophisticated and highly
+integrated two\-stage system that combines the strengths of both OD and CL for
+plant disease diagnosis. In the first stage, HODRF uses OD to identify regions
+of interest \(ROIs\) without specifying the disease. In the second stage, CL
+diagnoses diseases surrounding the ROIs. HODRF offers several advantages: \(1\)
+Since OD detects only one type of ROI, HODRF can detect diseases with limited
+training images by leveraging its ability to identify other lesions. \(2\) While
+OD over\-detects healthy cases, HODRF significantly reduces these errors by
+using CL in the second stage. \(3\) CL's accuracy improves in HODRF as it
+identifies diagnostic targets given as ROIs, making it less vulnerable to size
+changes. \(4\) HODRF benefits from CL's lower annotation costs, allowing it to
+learn from a larger number of images. We implemented HODRF using YOLOv7 for OD
+and EfficientNetV2 for CL and evaluated its performance on a large\-scale
+dataset \(4 crops, 20 diseased and healthy classes, 281K images\). HODRF
+outperformed YOLOv7 alone by 5.8 to 21.5 points on healthy data and 0.6 to 7.5
+points on macro F1 scores, and it improved macro F1 by 1.1 to 7.2 points over
+EfficientNetV2.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2407.17906v1)
+
+---
+
+
 ## RT\-DETRv2: Improved Baseline with Bag\-of\-Freebies for Real\-Time Detection Transformer
 
 **发布日期**：2024-07-24
@@ -260,81 +321,6 @@ and envisions a positive future for generative AI applications in agriculture.
 **代码链接**：摘要中未找到代码链接。
 
 **论文链接**：[阅读更多](http://arxiv.org/abs/2407.10413v1)
-
----
-
-
-## DART: An Automated End\-to\-End Object Detection Pipeline with Data Diversification, Open\-Vocabulary Bounding Box Annotation, Pseudo\-Label Review, and Model Training
-
-**发布日期**：2024-07-12
-
-**作者**：Chen Xin
-
-**摘要**：Swift and accurate detection of specified objects is crucial for many
-industrial applications, such as safety monitoring on construction sites.
-However, traditional approaches rely heavily on arduous manual annotation and
-data collection, which struggle to adapt to ever\-changing environments and
-novel target objects. To address these limitations, this paper presents DART,
-an automated end\-to\-end pipeline designed to streamline the entire workflow of
-an object detection application from data collection to model deployment. DART
-eliminates the need for human labeling and extensive data collection while
-excelling in diverse scenarios. It employs a subject\-driven image generation
-module \(DreamBooth with SDXL\) for data diversification, followed by an
-annotation stage where open\-vocabulary object detection \(Grounding DINO\)
-generates bounding box annotations for both generated and original images.
-These pseudo\-labels are then reviewed by a large multimodal model \(GPT\-4o\) to
-guarantee credibility before serving as ground truth to train real\-time object
-detectors \(YOLO\). We apply DART to a self\-collected dataset of construction
-machines named Liebherr Product, which contains over 15K high\-quality images
-across 23 categories. The current implementation of DART significantly
-increases average precision \(AP\) from 0.064 to 0.832. Furthermore, we adopt a
-modular design for DART to ensure easy exchangeability and extensibility. This
-allows for a smooth transition to more advanced algorithms in the future,
-seamless integration of new object categories without manual labeling, and
-adaptability to customized environments without extra data collection. The code
-and dataset are released at https://github.com/chen\-xin\-94/DART.
-
-
-**代码链接**：https://github.com/chen-xin-94/DART.
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2407.09174v1)
-
----
-
-
-## PowerYOLO: Mixed Precision Model for Hardware Efficient Object Detection with Event Data
-
-**发布日期**：2024-07-11
-
-**作者**：Dominika Przewlocka\-Rus
-
-**摘要**：The performance of object detection systems in automotive solutions must be
-as high as possible, with minimal response time and, due to the often
-battery\-powered operation, low energy consumption. When designing such
-solutions, we therefore face challenges typical for embedded vision systems:
-the problem of fitting algorithms of high memory and computational complexity
-into small low\-power devices. In this paper we propose PowerYOLO \- a mixed
-precision solution, which targets three essential elements of such application.
-First, we propose a system based on a Dynamic Vision Sensor \(DVS\), a novel
-sensor, that offers low power requirements and operates well in conditions with
-variable illumination. It is these features that may make event cameras a
-preferential choice over frame cameras in some applications. Second, to ensure
-high accuracy and low memory and computational complexity, we propose to use
-4\-bit width Powers\-of\-Two \(PoT\) quantisation for convolution weights of the
-YOLO detector, with all other parameters quantised linearly. Finally, we
-embrace from PoT scheme and replace multiplication with bit\-shifting to
-increase the efficiency of hardware acceleration of such solution, with a
-special convolution\-batch normalisation fusion scheme. The use of specific
-sensor with PoT quantisation and special batch normalisation fusion leads to a
-unique system with almost 8x reduction in memory complexity and vast
-computational simplifications, with relation to a standard approach. This
-efficient system achieves high accuracy of mAP 0.301 on the GEN1 DVS dataset,
-marking the new state\-of\-the\-art for such compressed model.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2407.08272v1)
 
 ---
 
