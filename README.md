@@ -1,6 +1,105 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## A Comparative Analysis of YOLOv5, YOLOv8, and YOLOv10 in Kitchen Safety
+
+**发布日期**：2024-07-30
+
+**作者**：Athulya Sundaresan Geetha
+
+**摘要**：Knife safety in the kitchen is essential for preventing accidents or injuries
+with an emphasis on proper handling, maintenance, and storage methods. This
+research presents a comparative analysis of three YOLO models, YOLOv5, YOLOv8,
+and YOLOv10, to detect the hazards involved in handling knife, concentrating
+mainly on ensuring fingers are curled while holding items to be cut and that
+hands should only be in contact with knife handle avoiding the blade.
+Precision, recall, F\-score, and normalized confusion matrix are used to
+evaluate the performance of the models. The results indicate that YOLOv5
+performed better than the other two models in identifying the hazard of
+ensuring hands only touch the blade, while YOLOv8 excelled in detecting the
+hazard of curled fingers while holding items. YOLOv5 and YOLOv8 performed
+almost identically in recognizing classes such as hand, knife, and vegetable,
+whereas YOLOv5, YOLOv8, and YOLOv10 accurately identified the cutting board.
+This paper provides insights into the advantages and shortcomings of these
+models in real\-world settings. Moreover, by detailing the optimization of YOLO
+architectures for safe knife handling, this study promotes the development of
+increased accuracy and efficiency in safety surveillance systems.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2407.20872v1)
+
+---
+
+
+## Integer\-Valued Training and Spike\-Driven Inference Spiking Neural Network for High\-performance and Energy\-efficient Object Detection
+
+**发布日期**：2024-07-30
+
+**作者**：Xinhao Luo
+
+**摘要**：Brain\-inspired Spiking Neural Networks \(SNNs\) have bio\-plausibility and
+low\-power advantages over Artificial Neural Networks \(ANNs\). Applications of
+SNNs are currently limited to simple classification tasks because of their poor
+performance. In this work, we focus on bridging the performance gap between
+ANNs and SNNs on object detection. Our design revolves around network
+architecture and spiking neuron. First, the overly complex module design causes
+spike degradation when the YOLO series is converted to the corresponding
+spiking version. We design a SpikeYOLO architecture to solve this problem by
+simplifying the vanilla YOLO and incorporating meta SNN blocks. Second, object
+detection is more sensitive to quantization errors in the conversion of
+membrane potentials into binary spikes by spiking neurons. To address this
+challenge, we design a new spiking neuron that activates Integer values during
+training while maintaining spike\-driven by extending virtual timesteps during
+inference. The proposed method is validated on both static and neuromorphic
+object detection datasets. On the static COCO dataset, we obtain 66.2% mAP@50
+and 48.9% mAP@50:95, which is \+15.0% and \+18.7% higher than the prior
+state\-of\-the\-art SNN, respectively. On the neuromorphic Gen1 dataset, we
+achieve 67.2% mAP@50, which is \+2.5% greater than the ANN with equivalent
+architecture, and the energy efficiency is improved by 5.7. Code:
+https://github.com/BICLab/SpikeYOLO
+
+
+**代码链接**：https://github.com/BICLab/SpikeYOLO
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2407.20708v1)
+
+---
+
+
+## Uncertainty\-Rectified YOLO\-SAM for Weakly Supervised ICH Segmentation
+
+**发布日期**：2024-07-29
+
+**作者**：Pascal Spiegler
+
+**摘要**：Intracranial hemorrhage \(ICH\) is a life\-threatening condition that requires
+rapid and accurate diagnosis to improve treatment outcomes and patient survival
+rates. Recent advancements in supervised deep learning have greatly improved
+the analysis of medical images, but often rely on extensive datasets with
+high\-quality annotations, which are costly, time\-consuming, and require medical
+expertise to prepare. To mitigate the need for large amounts of expert\-prepared
+segmentation data, we have developed a novel weakly supervised ICH segmentation
+method that utilizes the YOLO object detection model and an
+uncertainty\-rectified Segment Anything Model \(SAM\). In addition, we have
+proposed a novel point prompt generator for this model to further improve
+segmentation results with YOLO\-predicted bounding box prompts. Our approach
+achieved a high accuracy of 0.933 and an AUC of 0.796 in ICH detection, along
+with a mean Dice score of 0.629 for ICH segmentation, outperforming existing
+weakly supervised and popular supervised \(UNet and Swin\-UNETR\) approaches.
+Overall, the proposed method provides a robust and accurate alternative to the
+more commonly used supervised techniques for ICH quantification without
+requiring refined segmentation ground truths during model training.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2407.20461v1)
+
+---
+
+
 ## Octave\-YOLO: Cross frequency detection network with octave convolution
 
 **发布日期**：2024-07-29
@@ -222,113 +321,6 @@ text\-to\-image generation.
 **代码链接**：摘要中未找到代码链接。
 
 **论文链接**：[阅读更多](http://arxiv.org/abs/2407.14982v1)
-
----
-
-
-## Enhancing Layout Hotspot Detection Efficiency with YOLOv8 and PCA\-Guided Augmentation
-
-**发布日期**：2024-07-19
-
-**作者**：Dongyang Wu
-
-**摘要**：In this paper, we present a YOLO\-based framework for layout hotspot
-detection, aiming to enhance the efficiency and performance of the design rule
-checking \(DRC\) process. Our approach leverages the YOLOv8 vision model to
-detect multiple hotspots within each layout image, even when dealing with large
-layout image sizes. Additionally, to enhance pattern\-matching effectiveness, we
-introduce a novel approach to augment the layout image using information
-extracted through Principal Component Analysis \(PCA\). The core of our proposed
-method is an algorithm that utilizes PCA to extract valuable auxiliary
-information from the layout image. This extracted information is then
-incorporated into the layout image as an additional color channel. This
-augmentation significantly improves the accuracy of multi\-hotspot detection
-while reducing the false alarm rate of the object detection algorithm. We
-evaluate the effectiveness of our framework using four datasets generated from
-layouts found in the ICCAD\-2019 benchmark dataset. The results demonstrate that
-our framework achieves a precision \(recall\) of approximately 83% \(86%\) while
-maintaining a false alarm rate of less than 7.4\\%. Also, the studies show that
-the proposed augmentation approach could improve the detection ability of
-never\-seen\-before \(NSB\) hotspots by about 10%.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2407.14498v1)
-
----
-
-
-## CerberusDet: Unified Multi\-Task Object Detection
-
-**发布日期**：2024-07-17
-
-**作者**：Irina Tolstykh
-
-**摘要**：Object detection is a core task in computer vision. Over the years, the
-development of numerous models has significantly enhanced performance. However,
-these conventional models are usually limited by the data on which they were
-trained and by the category logic they define. With the recent rise of
-Language\-Visual Models, new methods have emerged that are not restricted to
-these fixed categories. Despite their flexibility, such Open Vocabulary
-detection models still fall short in accuracy compared to traditional models
-with fixed classes. At the same time, more accurate data\-specific models face
-challenges when there is a need to extend classes or merge different datasets
-for training. The latter often cannot be combined due to different logics or
-conflicting class definitions, making it difficult to improve a model without
-compromising its performance. In this paper, we introduce CerberusDet, a
-framework with a multi\-headed model designed for handling multiple object
-detection tasks. Proposed model is built on the YOLO architecture and
-efficiently shares visual features from both backbone and neck components,
-while maintaining separate task heads. This approach allows CerberusDet to
-perform very efficiently while still delivering optimal results. We evaluated
-the model on the PASCAL VOC dataset and additional categories from the
-Objects365 dataset to demonstrate its abilities. CerberusDet achieved results
-comparable to state\-of\-the\-art data\-specific models with 36% less inference
-time. The more tasks are trained together, the more efficient the proposed
-model becomes compared to running individual models sequentially. The training
-and inference code, as well as the model, are available as open\-source
-\(https://github.com/ai\-forever/CerberusDet\).
-
-
-**代码链接**：https://github.com/ai-forever/CerberusDet).
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2407.12632v1)
-
----
-
-
-## Enhancing Wrist Abnormality Detection with YOLO: Analysis of State\-of\-the\-art Single\-stage Detection Models
-
-**发布日期**：2024-07-17
-
-**作者**：Ammar Ahmed
-
-**摘要**：Diagnosing and treating abnormalities in the wrist, specifically distal
-radius, and ulna fractures, is a crucial concern among children, adolescents,
-and young adults, with a higher incidence rate during puberty. However, the
-scarcity of radiologists and the lack of specialized training among medical
-professionals pose a significant risk to patient care. This problem is further
-exacerbated by the rising number of imaging studies and limited access to
-specialist reporting in certain regions. This highlights the need for
-innovative solutions to improve the diagnosis and treatment of wrist
-abnormalities. Automated wrist fracture detection using object detection has
-shown potential, but current studies mainly use two\-stage detection methods
-with limited evidence for single\-stage effectiveness. This study employs
-state\-of\-the\-art single\-stage deep neural network\-based detection models
-YOLOv5, YOLOv6, YOLOv7, and YOLOv8 to detect wrist abnormalities. Through
-extensive experimentation, we found that these YOLO models outperform the
-commonly used two\-stage detection algorithm, Faster R\-CNN, in bone fracture
-detection. Additionally, compound\-scaled variants of each YOLO model were
-compared, with YOLOv8x demonstrating a fracture detection mean average
-precision \(mAP\) of 0.95 and an overall mAP of 0.77 on the GRAZPEDWRI\-DX
-pediatric wrist dataset, highlighting the potential of single\-stage models for
-enhancing pediatric wrist imaging.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2407.12597v1)
 
 ---
 
