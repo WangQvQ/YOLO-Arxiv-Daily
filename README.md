@@ -1,6 +1,36 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Spatial Transformer Network YOLO Model for Agricultural Object Detection
+
+**发布日期**：2024-07-31
+
+**作者**：Yash Zambre
+
+**摘要**：Object detection plays a crucial role in the field of computer vision by
+autonomously identifying and locating objects of interest. The You Only Look
+Once \(YOLO\) model is an effective single\-shot detector. However, YOLO faces
+challenges in cluttered or partially occluded scenes and can struggle with
+small, low\-contrast objects. We propose a new method that integrates spatial
+transformer networks \(STNs\) into YOLO to improve performance. The proposed
+STN\-YOLO aims to enhance the model's effectiveness by focusing on important
+areas of the image and improving the spatial invariance of the model before the
+detection process. Our proposed method improved object detection performance
+both qualitatively and quantitatively. We explore the impact of different
+localization networks within the STN module as well as the robustness of the
+model across different spatial transformations. We apply the STN\-YOLO on
+benchmark datasets for Agricultural object detection as well as a new dataset
+from a state\-of\-the\-art plant phenotyping greenhouse facility. Our code and
+dataset are publicly available.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2407.21652v1)
+
+---
+
+
 ## A Comparative Analysis of YOLOv5, YOLOv8, and YOLOv10 in Kitchen Safety
 
 **发布日期**：2024-07-30
@@ -57,18 +87,18 @@ object detection datasets. On the static COCO dataset, we obtain 66.2% mAP@50
 and 48.9% mAP@50:95, which is \+15.0% and \+18.7% higher than the prior
 state\-of\-the\-art SNN, respectively. On the neuromorphic Gen1 dataset, we
 achieve 67.2% mAP@50, which is \+2.5% greater than the ANN with equivalent
-architecture, and the energy efficiency is improved by 5.7. Code:
+architecture, and the energy efficiency is improved by 5.7\*. Code:
 https://github.com/BICLab/SpikeYOLO
 
 
 **代码链接**：https://github.com/BICLab/SpikeYOLO
 
-**论文链接**：[阅读更多](http://arxiv.org/abs/2407.20708v1)
+**论文链接**：[阅读更多](http://arxiv.org/abs/2407.20708v2)
 
 ---
 
 
-## Uncertainty\-Rectified YOLO\-SAM for Weakly Supervised ICH Segmentation
+## Weakly Supervised Intracranial Hemorrhage Segmentation with YOLO and an Uncertainty Rectified Segment Anything Model
 
 **发布日期**：2024-07-29
 
@@ -95,7 +125,7 @@ requiring refined segmentation ground truths during model training.
 
 **代码链接**：摘要中未找到代码链接。
 
-**论文链接**：[阅读更多](http://arxiv.org/abs/2407.20461v1)
+**论文链接**：[阅读更多](http://arxiv.org/abs/2407.20461v2)
 
 ---
 
@@ -230,7 +260,7 @@ https://github.com/lyuwenyu/RT\-DETR.
 ---
 
 
-## YOLOv10 for Automated Fracture Detection in Pediatric Wrist Trauma X\-rays
+## Pediatric Wrist Fracture Detection in X\-rays via YOLOv10 Algorithm and Dual Label Assignment System
 
 **发布日期**：2024-07-22
 
@@ -257,7 +287,7 @@ https://github.com/ammarlodhi255/YOLOv10\-Fracture\-Detection
 
 **代码链接**：https://github.com/ammarlodhi255/YOLOv10-Fracture-Detection
 
-**论文链接**：[阅读更多](http://arxiv.org/abs/2407.15689v1)
+**论文链接**：[阅读更多](http://arxiv.org/abs/2407.15689v2)
 
 ---
 
@@ -296,31 +326,6 @@ to ensure the reproducibility and further improvements of results.
 **代码链接**：摘要中未找到代码链接。
 
 **论文链接**：[阅读更多](http://arxiv.org/abs/2407.15199v1)
-
----
-
-
-## GreenStableYolo: Optimizing Inference Time and Image Quality of Text\-to\-Image Generation
-
-**发布日期**：2024-07-20
-
-**作者**：Jingzhi Gong
-
-**摘要**：Tuning the parameters and prompts for improving AI\-based text\-to\-image
-generation has remained a substantial yet unaddressed challenge. Hence we
-introduce GreenStableYolo, which improves the parameters and prompts for Stable
-Diffusion to both reduce GPU inference time and increase image generation
-quality using NSGA\-II and Yolo.
-  Our experiments show that despite a relatively slight trade\-off \(18%\) in
-image quality compared to StableYolo \(which only considers image quality\),
-GreenStableYolo achieves a substantial reduction in inference time \(266% less\)
-and a 526% higher hypervolume, thereby advancing the state\-of\-the\-art for
-text\-to\-image generation.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2407.14982v1)
 
 ---
 
