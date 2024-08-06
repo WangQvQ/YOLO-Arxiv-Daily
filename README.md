@@ -1,6 +1,78 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## AssemAI: Interpretable Image\-Based Anomaly Detection for Manufacturing Pipelines
+
+**发布日期**：2024-08-05
+
+**作者**：Renjith Prasad
+
+**摘要**：Anomaly detection in manufacturing pipelines remains a critical challenge,
+intensified by the complexity and variability of industrial environments. This
+paper introduces AssemAI, an interpretable image\-based anomaly detection system
+tailored for smart manufacturing pipelines. Our primary contributions include
+the creation of a tailored image dataset and the development of a custom object
+detection model, YOLO\-FF, designed explicitly for anomaly detection in
+manufacturing assembly environments. Utilizing the preprocessed image dataset
+derived from an industry\-focused rocket assembly pipeline, we address the
+challenge of imbalanced image data and demonstrate the importance of
+image\-based methods in anomaly detection. The proposed approach leverages
+domain knowledge in data preparation, model development and reasoning. We
+compare our method against several baselines, including simple CNN and custom
+Visual Transformer \(ViT\) models, showcasing the effectiveness of our custom
+data preparation and pretrained CNN integration. Additionally, we incorporate
+explainability techniques at both user and model levels, utilizing ontology for
+user\-friendly explanations and SCORE\-CAM for in\-depth feature and model
+analysis. Finally, the model was also deployed in a real\-time setting. Our
+results include ablation studies on the baselines, providing a comprehensive
+evaluation of the proposed system. This work highlights the broader impact of
+advanced image\-based anomaly detection in enhancing the reliability and
+efficiency of smart manufacturing processes.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2408.02181v1)
+
+---
+
+
+## CAF\-YOLO: A Robust Framework for Multi\-Scale Lesion Detection in Biomedical Imagery
+
+**发布日期**：2024-08-04
+
+**作者**：Zilin Chen
+
+**摘要**：Object detection is of paramount importance in biomedical image analysis,
+particularly for lesion identification. While current methodologies are
+proficient in identifying and pinpointing lesions, they often lack the
+precision needed to detect minute biomedical entities \(e.g., abnormal cells,
+lung nodules smaller than 3 mm\), which are critical in blood and lung
+pathology. To address this challenge, we propose CAF\-YOLO, based on the YOLOv8
+architecture, a nimble yet robust method for medical object detection that
+leverages the strengths of convolutional neural networks \(CNNs\) and
+transformers. To overcome the limitation of convolutional kernels, which have a
+constrained capacity to interact with distant information, we introduce an
+attention and convolution fusion module \(ACFM\). This module enhances the
+modeling of both global and local features, enabling the capture of long\-term
+feature dependencies and spatial autocorrelation. Additionally, to improve the
+restricted single\-scale feature aggregation inherent in feed\-forward networks
+\(FFN\) within transformer architectures, we design a multi\-scale neural network
+\(MSNN\). This network improves multi\-scale information aggregation by extracting
+features across diverse scales. Experimental evaluations on widely used
+datasets, such as BCCD and LUNA16, validate the rationale and efficacy of
+CAF\-YOLO. This methodology excels in detecting and precisely locating diverse
+and intricate micro\-lesions within biomedical imagery. Our codes are available
+at https://github.com/xiaochen925/CAF\-YOLO.
+
+
+**代码链接**：https://github.com/xiaochen925/CAF-YOLO.
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2408.01897v1)
+
+---
+
+
 ## Spatial Transformer Network YOLO Model for Agricultural Object Detection
 
 **发布日期**：2024-07-31
@@ -93,7 +165,7 @@ https://github.com/BICLab/SpikeYOLO
 
 **代码链接**：https://github.com/BICLab/SpikeYOLO
 
-**论文链接**：[阅读更多](http://arxiv.org/abs/2407.20708v2)
+**论文链接**：[阅读更多](http://arxiv.org/abs/2407.20708v3)
 
 ---
 
@@ -256,76 +328,6 @@ https://github.com/lyuwenyu/RT\-DETR.
 **代码链接**：https://github.com/lyuwenyu/RT-DETR.
 
 **论文链接**：[阅读更多](http://arxiv.org/abs/2407.17140v1)
-
----
-
-
-## Pediatric Wrist Fracture Detection in X\-rays via YOLOv10 Algorithm and Dual Label Assignment System
-
-**发布日期**：2024-07-22
-
-**作者**：Ammar Ahmed
-
-**摘要**：Wrist fractures are highly prevalent among children and can significantly
-impact their daily activities, such as attending school, participating in
-sports, and performing basic self\-care tasks. If not treated properly, these
-fractures can result in chronic pain, reduced wrist functionality, and other
-long\-term complications. Recently, advancements in object detection have shown
-promise in enhancing fracture detection, with systems achieving accuracy
-comparable to, or even surpassing, that of human radiologists. The YOLO series,
-in particular, has demonstrated notable success in this domain. This study is
-the first to provide a thorough evaluation of various YOLOv10 variants to
-assess their performance in detecting pediatric wrist fractures using the
-GRAZPEDWRI\-DX dataset. It investigates how changes in model complexity, scaling
-the architecture, and implementing a dual\-label assignment strategy can enhance
-detection performance. Experimental results indicate that our trained model
-achieved mean average precision \(mAP@50\-95\) of 51.9\\% surpassing the current
-YOLOv9 benchmark of 43.3\\% on this dataset. This represents an improvement of
-8.6\\%. The implementation code is publicly available at
-https://github.com/ammarlodhi255/YOLOv10\-Fracture\-Detection
-
-
-**代码链接**：https://github.com/ammarlodhi255/YOLOv10-Fracture-Detection
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2407.15689v2)
-
----
-
-
-## Multiple Object Detection and Tracking in Panoramic Videos for Cycling Safety Analysis
-
-**发布日期**：2024-07-21
-
-**作者**：Jingwei Guo
-
-**摘要**：Panoramic cycling videos can record 360\{\\deg\} views around the cyclists.
-Thus, it is essential to conduct automatic road user analysis on them using
-computer vision models to provide data for studies on cycling safety. However,
-the features of panoramic data such as severe distortions, large number of
-small objects and boundary continuity have brought great challenges to the
-existing CV models, including poor performance and evaluation methods that are
-no longer applicable. In addition, due to the lack of data with annotations, it
-is not easy to re\-train the models.
-  In response to these problems, the project proposed and implemented a
-three\-step methodology: \(1\) improve the prediction performance of the
-pre\-trained object detection models on panoramic data by projecting the
-original image into 4 perspective sub\-images; \(2\) introduce supports for
-boundary continuity and category information into DeepSORT, a commonly used
-multiple object tracking model, and set an improved detection model as its
-detector; \(3\) using the tracking results, develop an application for detecting
-the overtaking behaviour of the surrounding vehicles.
-  Evaluated on the panoramic cycling dataset built by the project, the proposed
-methodology improves the average precision of YOLO v5m6 and Faster RCNN\-FPN
-under any input resolution setting. In addition, it raises MOTA and IDF1 of
-DeepSORT by 7.6\\% and 9.7\\% respectively. When detecting the overtakes in the
-test videos, it achieves the F\-score of 0.88.
-  The code is available on GitHub at github.com/cuppp1998/360\_object\_tracking
-to ensure the reproducibility and further improvements of results.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2407.15199v1)
 
 ---
 
