@@ -1,6 +1,70 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Monitoring of Hermit Crabs Using drone\-captured imagery and Deep Learning based Super\-Resolution Reconstruction and Improved YOLOv8
+
+**发布日期**：2024-08-07
+
+**作者**：Fan Zhao
+
+**摘要**：Hermit crabs play a crucial role in coastal ecosystems by dispersing seeds,
+cleaning up debris, and disturbing soil. They serve as vital indicators of
+marine environmental health, responding to climate change and pollution.
+Traditional survey methods, like quadrat sampling, are labor\-intensive,
+time\-consuming, and environmentally dependent. This study presents an
+innovative approach combining UAV\-based remote sensing with Super\-Resolution
+Reconstruction \(SRR\) and the CRAB\-YOLO detection network, a modification of
+YOLOv8s, to monitor hermit crabs. SRR enhances image quality by addressing
+issues such as motion blur and insufficient resolution, significantly improving
+detection accuracy over conventional low\-resolution fuzzy images. The CRAB\-YOLO
+network integrates three improvements for detection accuracy, hermit crab
+characteristics, and computational efficiency, achieving state\-of\-the\-art
+\(SOTA\) performance compared to other mainstream detection models. The RDN
+networks demonstrated the best image reconstruction performance, and CRAB\-YOLO
+achieved a mean average precision \(mAP\) of 69.5% on the SRR test set, a 40%
+improvement over the conventional Bicubic method with a magnification factor of
+4. These results indicate that the proposed method is effective in detecting
+hermit crabs, offering a cost\-effective and automated solution for extensive
+hermit crab monitoring, thereby aiding coastal benthos conservation.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2408.03559v1)
+
+---
+
+
+## GUI Element Detection Using SOTA YOLO Deep Learning Models
+
+**发布日期**：2024-08-07
+
+**作者**：Seyed Shayan Daneshvar
+
+**摘要**：Detection of Graphical User Interface \(GUI\) elements is a crucial task for
+automatic code generation from images and sketches, GUI testing, and GUI
+search. Recent studies have leveraged both old\-fashioned and modern computer
+vision \(CV\) techniques. Oldfashioned methods utilize classic image processing
+algorithms \(e.g. edge detection and contour detection\) and modern methods use
+mature deep learning solutions for general object detection tasks. GUI element
+detection, however, is a domain\-specific case of object detection, in which
+objects overlap more often, and are located very close to each other, plus the
+number of object classes is considerably lower, yet there are more objects in
+the images compared to natural images. Hence, the studies that have been
+carried out on comparing various object detection models, might not apply to
+GUI element detection. In this study, we evaluate the performance of the four
+most recent successful YOLO models for general object detection tasks on GUI
+element detection and investigate their accuracy performance in detecting
+various GUI elements.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2408.03507v1)
+
+---
+
+
 ## AssemAI: Interpretable Image\-Based Anomaly Detection for Manufacturing Pipelines
 
 **发布日期**：2024-08-05
@@ -260,74 +324,6 @@ works and better than previous model.
 **代码链接**：摘要中未找到代码链接。
 
 **论文链接**：[阅读更多](http://arxiv.org/abs/2407.17950v1)
-
----
-
-
-## Hierarchical Object Detection and Recognition Framework for Practical Plant Disease Diagnosis
-
-**发布日期**：2024-07-25
-
-**作者**：Kohei Iwano
-
-**摘要**：Recently, object detection methods \(OD; e.g., YOLO\-based models\) have been
-widely utilized in plant disease diagnosis. These methods demonstrate
-robustness to distance variations and excel at detecting small lesions compared
-to classification methods \(CL; e.g., CNN models\). However, there are issues
-such as low diagnostic performance for hard\-to\-detect diseases and high
-labeling costs. Additionally, since healthy cases cannot be explicitly trained,
-there is a risk of false positives. We propose the Hierarchical object
-detection and recognition framework \(HODRF\), a sophisticated and highly
-integrated two\-stage system that combines the strengths of both OD and CL for
-plant disease diagnosis. In the first stage, HODRF uses OD to identify regions
-of interest \(ROIs\) without specifying the disease. In the second stage, CL
-diagnoses diseases surrounding the ROIs. HODRF offers several advantages: \(1\)
-Since OD detects only one type of ROI, HODRF can detect diseases with limited
-training images by leveraging its ability to identify other lesions. \(2\) While
-OD over\-detects healthy cases, HODRF significantly reduces these errors by
-using CL in the second stage. \(3\) CL's accuracy improves in HODRF as it
-identifies diagnostic targets given as ROIs, making it less vulnerable to size
-changes. \(4\) HODRF benefits from CL's lower annotation costs, allowing it to
-learn from a larger number of images. We implemented HODRF using YOLOv7 for OD
-and EfficientNetV2 for CL and evaluated its performance on a large\-scale
-dataset \(4 crops, 20 diseased and healthy classes, 281K images\). HODRF
-outperformed YOLOv7 alone by 5.8 to 21.5 points on healthy data and 0.6 to 7.5
-points on macro F1 scores, and it improved macro F1 by 1.1 to 7.2 points over
-EfficientNetV2.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2407.17906v1)
-
----
-
-
-## RT\-DETRv2: Improved Baseline with Bag\-of\-Freebies for Real\-Time Detection Transformer
-
-**发布日期**：2024-07-24
-
-**作者**：Wenyu Lv
-
-**摘要**：In this report, we present RT\-DETRv2, an improved Real\-Time DEtection
-TRansformer \(RT\-DETR\). RT\-DETRv2 builds upon the previous state\-of\-the\-art
-real\-time detector, RT\-DETR, and opens up a set of bag\-of\-freebies for
-flexibility and practicality, as well as optimizing the training strategy to
-achieve enhanced performance. To improve the flexibility, we suggest setting a
-distinct number of sampling points for features at different scales in the
-deformable attention to achieve selective multi\-scale feature extraction by the
-decoder. To enhance practicality, we propose an optional discrete sampling
-operator to replace the grid\_sample operator that is specific to RT\-DETR
-compared to YOLOs. This removes the deployment constraints typically associated
-with DETRs. For the training strategy, we propose dynamic data augmentation and
-scale\-adaptive hyperparameters customization to improve performance without
-loss of speed. Source code and pre\-trained models will be available at
-https://github.com/lyuwenyu/RT\-DETR.
-
-
-**代码链接**：https://github.com/lyuwenyu/RT-DETR.
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2407.17140v1)
 
 ---
 
