@@ -1,6 +1,36 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Impact Analysis of Data Drift Towards The Development of Safety\-Critical Automotive System
+
+**发布日期**：2024-08-07
+
+**作者**：Md Shahi Amran Hossain
+
+**摘要**：A significant part of contemporary research in autonomous vehicles is
+dedicated to the development of safety critical systems where state\-of\-the\-art
+artificial intelligence \(AI\) algorithms, like computer vision \(CV\), can play a
+major role. Vision models have great potential for the real\-time detection of
+numerous traffic signs and obstacles, which is essential to avoid accidents and
+protect human lives. Despite vast potential, computer vision\-based systems have
+critical safety concerns too if the traffic condition drifts over time. This
+paper represents an analysis of how data drift can affect the performance of
+vision models in terms of traffic sign detection. The novelty in this research
+is provided through a YOLO\-based fusion model that is trained with drifted data
+from the CARLA simulator and delivers a robust and enhanced performance in
+object detection. The enhanced model showed an average precision of 97.5\\%
+compared to the 58.27\\% precision of the original model. A detailed performance
+review of the original and fusion models is depicted in the paper, which
+promises to have a significant impact on safety\-critical automotive systems.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2408.04476v1)
+
+---
+
+
 ## Monitoring of Hermit Crabs Using drone\-captured imagery and Deep Learning based Super\-Resolution Reconstruction and Improved YOLOv8
 
 **发布日期**：2024-08-07
@@ -302,28 +332,6 @@ dataset with approximately 40 percent fewer parameters and FLOPs.
 **代码链接**：摘要中未找到代码链接。
 
 **论文链接**：[阅读更多](http://arxiv.org/abs/2407.19746v1)
-
----
-
-
-## Real Time American Sign Language Detection Using Yolo\-v9
-
-**发布日期**：2024-07-25
-
-**作者**：Amna Imran
-
-**摘要**：This paper focuses on real\-time American Sign Language Detection. YOLO is a
-convolutional neural network \(CNN\) based model, which was first released in
-2015. In recent years, it gained popularity for its real\-time detection
-capabilities. Our study specifically targets YOLO\-v9 model, released in 2024.
-As the model is newly introduced, not much work has been done on it, especially
-not in Sign Language Detection. Our paper provides deep insight on how YOLO\- v9
-works and better than previous model.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2407.17950v1)
 
 ---
 
