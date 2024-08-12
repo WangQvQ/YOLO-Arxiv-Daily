@@ -1,6 +1,66 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Livestock Fish Larvae Counting using DETR and YOLO based Deep Networks
+
+**发布日期**：2024-08-09
+
+**作者**：Daniel Ortega de Carvalho
+
+**摘要**：Counting fish larvae is an important, yet demanding and time consuming, task
+in aquaculture. In order to address this problem, in this work, we evaluate
+four neural network architectures, including convolutional neural networks and
+transformers, in different sizes, in the task of fish larvae counting. For the
+evaluation, we present a new annotated image dataset with less data collection
+requirements than preceding works, with images of spotted sorubim and dourado
+larvae. By using image tiling techniques, we achieve a MAPE of 4.46% \($\\pm
+4.70$\) with an extra large real time detection transformer, and 4.71% \($\\pm
+4.98$\) with a medium\-sized YOLOv8.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2408.05032v1)
+
+---
+
+
+## Hyper\-YOLO: When Visual Object Detection Meets Hypergraph Computation
+
+**发布日期**：2024-08-09
+
+**作者**：Yifan Feng
+
+**摘要**：We introduce Hyper\-YOLO, a new object detection method that integrates
+hypergraph computations to capture the complex high\-order correlations among
+visual features. Traditional YOLO models, while powerful, have limitations in
+their neck designs that restrict the integration of cross\-level features and
+the exploitation of high\-order feature interrelationships. To address these
+challenges, we propose the Hypergraph Computation Empowered Semantic Collecting
+and Scattering \(HGC\-SCS\) framework, which transposes visual feature maps into a
+semantic space and constructs a hypergraph for high\-order message propagation.
+This enables the model to acquire both semantic and structural information,
+advancing beyond conventional feature\-focused learning. Hyper\-YOLO incorporates
+the proposed Mixed Aggregation Network \(MANet\) in its backbone for enhanced
+feature extraction and introduces the Hypergraph\-Based Cross\-Level and
+Cross\-Position Representation Network \(HyperC2Net\) in its neck. HyperC2Net
+operates across five scales and breaks free from traditional grid structures,
+allowing for sophisticated high\-order interactions across levels and positions.
+This synergy of components positions Hyper\-YOLO as a state\-of\-the\-art
+architecture in various scale models, as evidenced by its superior performance
+on the COCO dataset. Specifically, Hyper\-YOLO\-N significantly outperforms the
+advanced YOLOv8\-N and YOLOv9\-T with 12\\% $\\text\{AP\}^\{val\}$ and 9\\%
+$\\text\{AP\}^\{val\}$ improvements. The source codes are at
+ttps://github.com/iMoonLab/Hyper\-YOLO.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2408.04804v1)
+
+---
+
+
 ## Impact Analysis of Data Drift Towards The Development of Safety\-Critical Automotive System
 
 **发布日期**：2024-08-07
@@ -260,78 +320,6 @@ https://github.com/BICLab/SpikeYOLO
 **代码链接**：https://github.com/BICLab/SpikeYOLO
 
 **论文链接**：[阅读更多](http://arxiv.org/abs/2407.20708v3)
-
----
-
-
-## Weakly Supervised Intracranial Hemorrhage Segmentation with YOLO and an Uncertainty Rectified Segment Anything Model
-
-**发布日期**：2024-07-29
-
-**作者**：Pascal Spiegler
-
-**摘要**：Intracranial hemorrhage \(ICH\) is a life\-threatening condition that requires
-rapid and accurate diagnosis to improve treatment outcomes and patient survival
-rates. Recent advancements in supervised deep learning have greatly improved
-the analysis of medical images, but often rely on extensive datasets with
-high\-quality annotations, which are costly, time\-consuming, and require medical
-expertise to prepare. To mitigate the need for large amounts of expert\-prepared
-segmentation data, we have developed a novel weakly supervised ICH segmentation
-method that utilizes the YOLO object detection model and an
-uncertainty\-rectified Segment Anything Model \(SAM\). In addition, we have
-proposed a novel point prompt generator for this model to further improve
-segmentation results with YOLO\-predicted bounding box prompts. Our approach
-achieved a high accuracy of 0.933 and an AUC of 0.796 in ICH detection, along
-with a mean Dice score of 0.629 for ICH segmentation, outperforming existing
-weakly supervised and popular supervised \(UNet and Swin\-UNETR\) approaches.
-Overall, the proposed method provides a robust and accurate alternative to the
-more commonly used supervised techniques for ICH quantification without
-requiring refined segmentation ground truths during model training.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2407.20461v2)
-
----
-
-
-## Octave\-YOLO: Cross frequency detection network with octave convolution
-
-**发布日期**：2024-07-29
-
-**作者**：Sangjune Shin
-
-**摘要**：Despite the rapid advancement of object detection algorithms, processing
-high\-resolution images on embedded devices remains a significant challenge.
-Theoretically, the fully convolutional network architecture used in current
-real\-time object detectors can handle all input resolutions. However, the
-substantial computational demands required to process high\-resolution images
-render them impractical for real\-time applications. To address this issue,
-real\-time object detection models typically downsample the input image for
-inference, leading to a loss of detail and decreased accuracy. In response, we
-developed Octave\-YOLO, designed to process high\-resolution images in real\-time
-within the constraints of embedded systems. We achieved this through the
-introduction of the cross frequency partial network \(CFPNet\), which divides the
-input feature map into low\-resolution, low\-frequency, and high\-resolution,
-high\-frequency sections. This configuration enables complex operations such as
-convolution bottlenecks and self\-attention to be conducted exclusively on
-low\-resolution feature maps while simultaneously preserving the details in
-high\-resolution maps. Notably, this approach not only dramatically reduces the
-computational demands of convolution tasks but also allows for the integration
-of attention modules, which are typically challenging to implement in real\-time
-applications, with minimal additional cost. Additionally, we have incorporated
-depthwise separable convolution into the core building blocks and downsampling
-layers to further decrease latency. Experimental results have shown that
-Octave\-YOLO matches the performance of YOLOv8 while significantly reducing
-computational demands. For example, in 1080x1080 resolution, Octave\-YOLO\-N is
-1.56 times faster than YOLOv8, achieving nearly the same accuracy on the COCO
-dataset with approximately 40 percent fewer parameters and FLOPs.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2407.19746v1)
 
 ---
 
