@@ -1,6 +1,65 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Target Detection of Safety Protective Gear Using the Improved YOLOv5
+
+**发布日期**：2024-08-12
+
+**作者**：Hao Liu
+
+**摘要**：In high\-risk railway construction, personal protective equipment monitoring
+is critical but challenging due to small and frequently obstructed targets. We
+propose YOLO\-EA, an innovative model that enhances safety measure detection by
+integrating ECA into its backbone's convolutional layers, improving discernment
+of minuscule objects like hardhats. YOLO\-EA further refines target recognition
+under occlusion by replacing GIoU with EIoU loss. YOLO\-EA's effectiveness was
+empirically substantiated using a dataset derived from real\-world railway
+construction site surveillance footage. It outperforms YOLOv5, achieving 98.9%
+precision and 94.7% recall, up 2.5% and 0.5% respectively, while maintaining
+real\-time performance at 70.774 fps. This highly efficient and precise YOLO\-EA
+holds great promise for practical application in intricate construction
+scenarios, enforcing stringent safety compliance during complex railway
+construction projects.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2408.05964v1)
+
+---
+
+
+## Advancing Pavement Distress Detection in Developing Countries: A Novel Deep Learning Approach with Locally\-Collected Datasets
+
+**发布日期**：2024-08-10
+
+**作者**：Blessing Agyei Kyem
+
+**摘要**：Road infrastructure maintenance in developing countries faces unique
+challenges due to resource constraints and diverse environmental factors. This
+study addresses the critical need for efficient, accurate, and locally\-relevant
+pavement distress detection methods in these regions. We present a novel deep
+learning approach combining YOLO \(You Only Look Once\) object detection models
+with a Convolutional Block Attention Module \(CBAM\) to simultaneously detect and
+classify multiple pavement distress types. The model demonstrates robust
+performance in detecting and classifying potholes, longitudinal cracks,
+alligator cracks, and raveling, with confidence scores ranging from 0.46 to
+0.93. While some misclassifications occur in complex scenarios, these provide
+insights into unique challenges of pavement assessment in developing countries.
+Additionally, we developed a web\-based application for real\-time distress
+detection from images and videos. This research advances automated pavement
+distress detection and provides a tailored solution for developing countries,
+potentially improving road safety, optimizing maintenance strategies, and
+contributing to sustainable transportation infrastructure development.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2408.05649v1)
+
+---
+
+
 ## Livestock Fish Larvae Counting using DETR and YOLO based Deep Networks
 
 **发布日期**：2024-08-09
@@ -253,73 +312,6 @@ dataset are publicly available.
 **代码链接**：摘要中未找到代码链接。
 
 **论文链接**：[阅读更多](http://arxiv.org/abs/2407.21652v1)
-
----
-
-
-## A Comparative Analysis of YOLOv5, YOLOv8, and YOLOv10 in Kitchen Safety
-
-**发布日期**：2024-07-30
-
-**作者**：Athulya Sundaresan Geetha
-
-**摘要**：Knife safety in the kitchen is essential for preventing accidents or injuries
-with an emphasis on proper handling, maintenance, and storage methods. This
-research presents a comparative analysis of three YOLO models, YOLOv5, YOLOv8,
-and YOLOv10, to detect the hazards involved in handling knife, concentrating
-mainly on ensuring fingers are curled while holding items to be cut and that
-hands should only be in contact with knife handle avoiding the blade.
-Precision, recall, F\-score, and normalized confusion matrix are used to
-evaluate the performance of the models. The results indicate that YOLOv5
-performed better than the other two models in identifying the hazard of
-ensuring hands only touch the blade, while YOLOv8 excelled in detecting the
-hazard of curled fingers while holding items. YOLOv5 and YOLOv8 performed
-almost identically in recognizing classes such as hand, knife, and vegetable,
-whereas YOLOv5, YOLOv8, and YOLOv10 accurately identified the cutting board.
-This paper provides insights into the advantages and shortcomings of these
-models in real\-world settings. Moreover, by detailing the optimization of YOLO
-architectures for safe knife handling, this study promotes the development of
-increased accuracy and efficiency in safety surveillance systems.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2407.20872v1)
-
----
-
-
-## Integer\-Valued Training and Spike\-Driven Inference Spiking Neural Network for High\-performance and Energy\-efficient Object Detection
-
-**发布日期**：2024-07-30
-
-**作者**：Xinhao Luo
-
-**摘要**：Brain\-inspired Spiking Neural Networks \(SNNs\) have bio\-plausibility and
-low\-power advantages over Artificial Neural Networks \(ANNs\). Applications of
-SNNs are currently limited to simple classification tasks because of their poor
-performance. In this work, we focus on bridging the performance gap between
-ANNs and SNNs on object detection. Our design revolves around network
-architecture and spiking neuron. First, the overly complex module design causes
-spike degradation when the YOLO series is converted to the corresponding
-spiking version. We design a SpikeYOLO architecture to solve this problem by
-simplifying the vanilla YOLO and incorporating meta SNN blocks. Second, object
-detection is more sensitive to quantization errors in the conversion of
-membrane potentials into binary spikes by spiking neurons. To address this
-challenge, we design a new spiking neuron that activates Integer values during
-training while maintaining spike\-driven by extending virtual timesteps during
-inference. The proposed method is validated on both static and neuromorphic
-object detection datasets. On the static COCO dataset, we obtain 66.2% mAP@50
-and 48.9% mAP@50:95, which is \+15.0% and \+18.7% higher than the prior
-state\-of\-the\-art SNN, respectively. On the neuromorphic Gen1 dataset, we
-achieve 67.2% mAP@50, which is \+2.5% greater than the ANN with equivalent
-architecture, and the energy efficiency is improved by 5.7\*. Code:
-https://github.com/BICLab/SpikeYOLO
-
-
-**代码链接**：https://github.com/BICLab/SpikeYOLO
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2407.20708v3)
 
 ---
 
