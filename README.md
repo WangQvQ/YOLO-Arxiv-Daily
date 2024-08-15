@@ -1,6 +1,159 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Infra\-YOLO: Efficient Neural Network Structure with Model Compression for Real\-Time Infrared Small Object Detection
+
+**发布日期**：2024-08-14
+
+**作者**：Zhonglin Chen
+
+**摘要**：Although convolutional neural networks have made outstanding achievements in
+visible light target detection, there are still many challenges in infrared
+small object detection because of the low signal\-to\-noise ratio, incomplete
+object structure, and a lack of reliable infrared small object dataset. To
+resolve limitations of the infrared small object dataset, a new dataset named
+InfraTiny was constructed, and more than 85% bounding box is less than 32x32
+pixels \(3218 images and a total of 20,893 bounding boxes\). A multi\-scale
+attention mechanism module \(MSAM\) and a Feature Fusion Augmentation Pyramid
+Module \(FFAFPM\) were proposed and deployed onto embedded devices. The MSAM
+enables the network to obtain scale perception information by acquiring
+different receptive fields, while the background noise information is
+suppressed to enhance feature extraction ability. The proposed FFAFPM can
+enrich semantic information, and enhance the fusion of shallow feature and deep
+feature, thus false positive results have been significantly reduced. By
+integrating the proposed methods into the YOLO model, which is named
+Infra\-YOLO, infrared small object detection performance has been improved.
+Compared to yolov3, mAP@0.5 has been improved by 2.7%; and compared to yolov4,
+that by 2.5% on the InfraTiny dataset. The proposed Infra\-YOLO was also
+transferred onto the embedded device in the unmanned aerial vehicle \(UAV\) for
+real application scenarios, where the channel pruning method is adopted to
+reduce FLOPs and to achieve a tradeoff between speed and accuracy. Even if the
+parameters of Infra\-YOLO are reduced by 88% with the pruning method, a gain of
+0.7% is still achieved on mAP@0.5 compared to yolov3, and a gain of 0.5%
+compared to yolov4. Experimental results show that the proposed MSAM and FFAFPM
+method can improve infrared small object detection performance compared with
+the previous benchmark method.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2408.07455v1)
+
+---
+
+
+## Vision Language Model for Interpretable and Fine\-grained Detection of Safety Compliance in Diverse Workplaces
+
+**发布日期**：2024-08-13
+
+**作者**：Zhiling Chen
+
+**摘要**：Workplace accidents due to personal protective equipment \(PPE\) non\-compliance
+raise serious safety concerns and lead to legal liabilities, financial
+penalties, and reputational damage. While object detection models have shown
+the capability to address this issue by identifying safety items, most existing
+models, such as YOLO, Faster R\-CNN, and SSD, are limited in verifying the
+fine\-grained attributes of PPE across diverse workplace scenarios. Vision
+language models \(VLMs\) are gaining traction for detection tasks by leveraging
+the synergy between visual and textual information, offering a promising
+solution to traditional object detection limitations in PPE recognition.
+Nonetheless, VLMs face challenges in consistently verifying PPE attributes due
+to the complexity and variability of workplace environments, requiring them to
+interpret context\-specific language and visual cues simultaneously. We
+introduce Clip2Safety, an interpretable detection framework for diverse
+workplace safety compliance, which comprises four main modules: scene
+recognition, the visual prompt, safety items detection, and fine\-grained
+verification. The scene recognition identifies the current scenario to
+determine the necessary safety gear. The visual prompt formulates the specific
+visual prompts needed for the detection process. The safety items detection
+identifies whether the required safety gear is being worn according to the
+specified scenario. Lastly, the fine\-grained verification assesses whether the
+worn safety equipment meets the fine\-grained attribute requirements. We conduct
+real\-world case studies across six different scenarios. The results show that
+Clip2Safety not only demonstrates an accuracy improvement over state\-of\-the\-art
+question\-answering based VLMs but also achieves inference times two hundred
+times faster.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2408.07146v1)
+
+---
+
+
+## A lightweight YOLOv5\-FFM model for occlusion pedestrian detection
+
+**发布日期**：2024-08-13
+
+**作者**：Xiangjie Luo
+
+**摘要**：The development of autonomous driving technology must be inseparable from
+pedestrian detection. Because of the fast speed of the vehicle, the accuracy
+and real\-time performance of the pedestrian detection algorithm are very
+important. YOLO, as an efficient and simple one\-stage target detection method,
+is often used for pedestrian detection in various environments. However, this
+series of detectors face some challenges, such as excessive computation and
+undesirable detection rate when facing occluded pedestrians. In this paper, we
+propose an improved lightweight YOLOv5 model to deal with these problems. This
+model can achieve better pedestrian detection accuracy with fewer
+floating\-point operations \(FLOPs\), especially for occluded targets. In order to
+achieve the above goals, we made improvements based on the YOLOv5 model
+framework and introduced Ghost module and SE block. Furthermore, we designed a
+local feature fusion module \(FFM\) to deal with occlusion in pedestrian
+detection. To verify the validity of our method, two datasets, Citypersons and
+CUHK Occlusion, were selected for the experiment. The experimental results show
+that, compared with the original yolov5s model, the average precision \(AP\) of
+our method is significantly improved, while the number of parameters is reduced
+by 27.9% and FLOPs are reduced by 19.0%.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2408.06633v1)
+
+---
+
+
+## Optimal Preprocessing for Joint Detection and Classification of Wireless Communication Signals in Congested Spectrum Using Computer Vision Methods
+
+**发布日期**：2024-08-13
+
+**作者**：Xiwen Kang
+
+**摘要**：The joint detection and classification of RF signals has been a critical
+problem in the field of wideband RF spectrum sensing. Recent advancements in
+deep learning models have revolutionized this field, remarkably through the
+application of state\-of\-the\-art computer vision algorithms such as YOLO \(You
+Only Look Once\) and DETR \(Detection Transformer\) to the spectrogram images.
+This paper focuses on optimizing the preprocessing stage to enhance the
+performance of these computer vision models. Specifically, we investigated the
+generation of training spectrograms via the classical Short\-Time Fourier
+Transform \(STFT\) approach, examining four classical STFT parameters: FFT size,
+window type, window length, and overlapping ratio. Our study aims to maximize
+the mean average precision \(mAP\) scores of YOLOv10 models in detecting and
+classifying various digital modulation signals within a congested spectrum
+environment. Firstly, our results reveal that additional zero padding in FFT
+does not enhance detection and classification accuracy and introduces
+unnecessary computational cost. Secondly, our results indicated that there
+exists an optimal window size that balances the trade\-offs between and the time
+and frequency resolution, with performance losses of approximately 10% and 30%
+if the window size is four or eight times off from the optimal. Thirdly,
+regarding the choice of window functions, the Hamming window yields optimal
+performance, with non\-optimal windows resulting in up to a 10% accuracy loss.
+Finally, we found a 10% accuracy score performance gap between using 10% and
+90% overlap. These findings highlight the potential for significant performance
+improvements through optimized spectrogram parameters when applying computer
+vision models to the problem of wideband RF spectrum sensing.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2408.06545v1)
+
+---
+
+
 ## Target Detection of Safety Protective Gear Using the Improved YOLOv5
 
 **发布日期**：2024-08-12
@@ -180,138 +333,6 @@ hermit crab monitoring, thereby aiding coastal benthos conservation.
 **代码链接**：摘要中未找到代码链接。
 
 **论文链接**：[阅读更多](http://arxiv.org/abs/2408.03559v1)
-
----
-
-
-## GUI Element Detection Using SOTA YOLO Deep Learning Models
-
-**发布日期**：2024-08-07
-
-**作者**：Seyed Shayan Daneshvar
-
-**摘要**：Detection of Graphical User Interface \(GUI\) elements is a crucial task for
-automatic code generation from images and sketches, GUI testing, and GUI
-search. Recent studies have leveraged both old\-fashioned and modern computer
-vision \(CV\) techniques. Oldfashioned methods utilize classic image processing
-algorithms \(e.g. edge detection and contour detection\) and modern methods use
-mature deep learning solutions for general object detection tasks. GUI element
-detection, however, is a domain\-specific case of object detection, in which
-objects overlap more often, and are located very close to each other, plus the
-number of object classes is considerably lower, yet there are more objects in
-the images compared to natural images. Hence, the studies that have been
-carried out on comparing various object detection models, might not apply to
-GUI element detection. In this study, we evaluate the performance of the four
-most recent successful YOLO models for general object detection tasks on GUI
-element detection and investigate their accuracy performance in detecting
-various GUI elements.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2408.03507v1)
-
----
-
-
-## AssemAI: Interpretable Image\-Based Anomaly Detection for Manufacturing Pipelines
-
-**发布日期**：2024-08-05
-
-**作者**：Renjith Prasad
-
-**摘要**：Anomaly detection in manufacturing pipelines remains a critical challenge,
-intensified by the complexity and variability of industrial environments. This
-paper introduces AssemAI, an interpretable image\-based anomaly detection system
-tailored for smart manufacturing pipelines. Our primary contributions include
-the creation of a tailored image dataset and the development of a custom object
-detection model, YOLO\-FF, designed explicitly for anomaly detection in
-manufacturing assembly environments. Utilizing the preprocessed image dataset
-derived from an industry\-focused rocket assembly pipeline, we address the
-challenge of imbalanced image data and demonstrate the importance of
-image\-based methods in anomaly detection. The proposed approach leverages
-domain knowledge in data preparation, model development and reasoning. We
-compare our method against several baselines, including simple CNN and custom
-Visual Transformer \(ViT\) models, showcasing the effectiveness of our custom
-data preparation and pretrained CNN integration. Additionally, we incorporate
-explainability techniques at both user and model levels, utilizing ontology for
-user\-friendly explanations and SCORE\-CAM for in\-depth feature and model
-analysis. Finally, the model was also deployed in a real\-time setting. Our
-results include ablation studies on the baselines, providing a comprehensive
-evaluation of the proposed system. This work highlights the broader impact of
-advanced image\-based anomaly detection in enhancing the reliability and
-efficiency of smart manufacturing processes.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2408.02181v1)
-
----
-
-
-## CAF\-YOLO: A Robust Framework for Multi\-Scale Lesion Detection in Biomedical Imagery
-
-**发布日期**：2024-08-04
-
-**作者**：Zilin Chen
-
-**摘要**：Object detection is of paramount importance in biomedical image analysis,
-particularly for lesion identification. While current methodologies are
-proficient in identifying and pinpointing lesions, they often lack the
-precision needed to detect minute biomedical entities \(e.g., abnormal cells,
-lung nodules smaller than 3 mm\), which are critical in blood and lung
-pathology. To address this challenge, we propose CAF\-YOLO, based on the YOLOv8
-architecture, a nimble yet robust method for medical object detection that
-leverages the strengths of convolutional neural networks \(CNNs\) and
-transformers. To overcome the limitation of convolutional kernels, which have a
-constrained capacity to interact with distant information, we introduce an
-attention and convolution fusion module \(ACFM\). This module enhances the
-modeling of both global and local features, enabling the capture of long\-term
-feature dependencies and spatial autocorrelation. Additionally, to improve the
-restricted single\-scale feature aggregation inherent in feed\-forward networks
-\(FFN\) within transformer architectures, we design a multi\-scale neural network
-\(MSNN\). This network improves multi\-scale information aggregation by extracting
-features across diverse scales. Experimental evaluations on widely used
-datasets, such as BCCD and LUNA16, validate the rationale and efficacy of
-CAF\-YOLO. This methodology excels in detecting and precisely locating diverse
-and intricate micro\-lesions within biomedical imagery. Our codes are available
-at https://github.com/xiaochen925/CAF\-YOLO.
-
-
-**代码链接**：https://github.com/xiaochen925/CAF-YOLO.
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2408.01897v1)
-
----
-
-
-## Spatial Transformer Network YOLO Model for Agricultural Object Detection
-
-**发布日期**：2024-07-31
-
-**作者**：Yash Zambre
-
-**摘要**：Object detection plays a crucial role in the field of computer vision by
-autonomously identifying and locating objects of interest. The You Only Look
-Once \(YOLO\) model is an effective single\-shot detector. However, YOLO faces
-challenges in cluttered or partially occluded scenes and can struggle with
-small, low\-contrast objects. We propose a new method that integrates spatial
-transformer networks \(STNs\) into YOLO to improve performance. The proposed
-STN\-YOLO aims to enhance the model's effectiveness by focusing on important
-areas of the image and improving the spatial invariance of the model before the
-detection process. Our proposed method improved object detection performance
-both qualitatively and quantitatively. We explore the impact of different
-localization networks within the STN module as well as the robustness of the
-model across different spatial transformations. We apply the STN\-YOLO on
-benchmark datasets for Agricultural object detection as well as a new dataset
-from a state\-of\-the\-art plant phenotyping greenhouse facility. Our code and
-dataset are publicly available.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2407.21652v1)
 
 ---
 
