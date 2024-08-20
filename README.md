@@ -1,6 +1,31 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## YOLOv1 to YOLOv10: The fastest and most accurate real\-time object detection systems
+
+**发布日期**：2024-08-18
+
+**作者**：Chien\-Yao Wang
+
+**摘要**：This is a comprehensive review of the YOLO series of systems. Different from
+previous literature surveys, this review article re\-examines the
+characteristics of the YOLO series from the latest technical point of view. At
+the same time, we also analyzed how the YOLO series continued to influence and
+promote real\-time computer vision\-related research and led to the subsequent
+development of computer vision and language models.We take a closer look at how
+the methods proposed by the YOLO series in the past ten years have affected the
+development of subsequent technologies and show the applications of YOLO in
+various fields. We hope this article can play a good guiding role in subsequent
+real\-time computer vision development.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2408.09332v1)
+
+---
+
+
 ## Infra\-YOLO: Efficient Neural Network Structure with Model Compression for Real\-Time Infrared Small Object Detection
 
 **发布日期**：2024-08-14
@@ -299,40 +324,6 @@ promises to have a significant impact on safety\-critical automotive systems.
 **代码链接**：摘要中未找到代码链接。
 
 **论文链接**：[阅读更多](http://arxiv.org/abs/2408.04476v1)
-
----
-
-
-## Monitoring of Hermit Crabs Using drone\-captured imagery and Deep Learning based Super\-Resolution Reconstruction and Improved YOLOv8
-
-**发布日期**：2024-08-07
-
-**作者**：Fan Zhao
-
-**摘要**：Hermit crabs play a crucial role in coastal ecosystems by dispersing seeds,
-cleaning up debris, and disturbing soil. They serve as vital indicators of
-marine environmental health, responding to climate change and pollution.
-Traditional survey methods, like quadrat sampling, are labor\-intensive,
-time\-consuming, and environmentally dependent. This study presents an
-innovative approach combining UAV\-based remote sensing with Super\-Resolution
-Reconstruction \(SRR\) and the CRAB\-YOLO detection network, a modification of
-YOLOv8s, to monitor hermit crabs. SRR enhances image quality by addressing
-issues such as motion blur and insufficient resolution, significantly improving
-detection accuracy over conventional low\-resolution fuzzy images. The CRAB\-YOLO
-network integrates three improvements for detection accuracy, hermit crab
-characteristics, and computational efficiency, achieving state\-of\-the\-art
-\(SOTA\) performance compared to other mainstream detection models. The RDN
-networks demonstrated the best image reconstruction performance, and CRAB\-YOLO
-achieved a mean average precision \(mAP\) of 69.5% on the SRR test set, a 40%
-improvement over the conventional Bicubic method with a magnification factor of
-4. These results indicate that the proposed method is effective in detecting
-hermit crabs, offering a cost\-effective and automated solution for extensive
-hermit crab monitoring, thereby aiding coastal benthos conservation.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2408.03559v1)
 
 ---
 
