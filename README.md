@@ -1,6 +1,45 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Evaluating Image\-Based Face and Eye Tracking with Event Cameras
+
+**发布日期**：2024-08-19
+
+**作者**：Khadija Iddrisu
+
+**摘要**：Event Cameras, also known as Neuromorphic sensors, capture changes in local
+light intensity at the pixel level, producing asynchronously generated data
+termed \`\`events''. This distinct data format mitigates common issues observed
+in conventional cameras, like under\-sampling when capturing fast\-moving
+objects, thereby preserving critical information that might otherwise be lost.
+However, leveraging this data often necessitates the development of
+specialized, handcrafted event representations that can integrate seamlessly
+with conventional Convolutional Neural Networks \(CNNs\), considering the unique
+attributes of event data. In this study, We evaluate event\-based Face and Eye
+tracking. The core objective of our study is to showcase the viability of
+integrating conventional algorithms with event\-based data, transformed into a
+frame format while preserving the unique benefits of event cameras. To validate
+our approach, we constructed a frame\-based event dataset by simulating events
+between RGB frames derived from the publicly accessible Helen Dataset. We
+assess its utility for face and eye detection tasks through the application of
+GR\-YOLO \-\- a pioneering technique derived from YOLOv3. This evaluation includes
+a comparative analysis with results derived from training the dataset with
+YOLOv8. Subsequently, the trained models were tested on real event streams from
+various iterations of Prophesee's event cameras and further evaluated on the
+Faces in Event Stream \(FES\) benchmark dataset. The models trained on our
+dataset shows a good prediction performance across all the datasets obtained
+for validation with the best results of a mean Average precision score of 0.91.
+Additionally, The models trained demonstrated robust performance on real event
+camera data under varying light conditions.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2408.10395v1)
+
+---
+
+
 ## YOLOv1 to YOLOv10: The fastest and most accurate real\-time object detection systems
 
 **发布日期**：2024-08-18
@@ -294,36 +333,6 @@ ttps://github.com/iMoonLab/Hyper\-YOLO.
 **代码链接**：摘要中未找到代码链接。
 
 **论文链接**：[阅读更多](http://arxiv.org/abs/2408.04804v1)
-
----
-
-
-## Impact Analysis of Data Drift Towards The Development of Safety\-Critical Automotive System
-
-**发布日期**：2024-08-07
-
-**作者**：Md Shahi Amran Hossain
-
-**摘要**：A significant part of contemporary research in autonomous vehicles is
-dedicated to the development of safety critical systems where state\-of\-the\-art
-artificial intelligence \(AI\) algorithms, like computer vision \(CV\), can play a
-major role. Vision models have great potential for the real\-time detection of
-numerous traffic signs and obstacles, which is essential to avoid accidents and
-protect human lives. Despite vast potential, computer vision\-based systems have
-critical safety concerns too if the traffic condition drifts over time. This
-paper represents an analysis of how data drift can affect the performance of
-vision models in terms of traffic sign detection. The novelty in this research
-is provided through a YOLO\-based fusion model that is trained with drifted data
-from the CARLA simulator and delivers a robust and enhanced performance in
-object detection. The enhanced model showed an average precision of 97.5\\%
-compared to the 58.27\\% precision of the original model. A detailed performance
-review of the original and fusion models is depicted in the paper, which
-promises to have a significant impact on safety\-critical automotive systems.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2408.04476v1)
 
 ---
 
