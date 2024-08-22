@@ -1,6 +1,39 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## On the Potential of Open\-Vocabulary Models for Object Detection in Unusual Street Scenes
+
+**发布日期**：2024-08-20
+
+**作者**：Sadia Ilyas
+
+**摘要**：Out\-of\-distribution \(OOD\) object detection is a critical task focused on
+detecting objects that originate from a data distribution different from that
+of the training data. In this study, we investigate to what extent
+state\-of\-the\-art open\-vocabulary object detectors can detect unusual objects in
+street scenes, which are considered as OOD or rare scenarios with respect to
+common street scene datasets. Specifically, we evaluate their performance on
+the OoDIS Benchmark, which extends RoadAnomaly21 and RoadObstacle21 from
+SegmentMeIfYouCan, as well as LostAndFound, which was recently extended to
+object level annotations. The objective of our study is to uncover
+short\-comings of contemporary object detectors in challenging real\-world, and
+particularly in open\-world scenarios. Our experiments reveal that open
+vocabulary models are promising for OOD object detection scenarios, however far
+from perfect. Substantial improvements are required before they can be reliably
+deployed in real\-world applications. We benchmark four state\-of\-the\-art
+open\-vocabulary object detection models on three different datasets.
+Noteworthily, Grounding DINO achieves the best results on RoadObstacle21 and
+LostAndFound in our study with an AP of 48.3% and 25.4% respectively.
+YOLO\-World excels on RoadAnomaly21 with an AP of 21.2%.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2408.11221v1)
+
+---
+
+
 ## Evaluating Image\-Based Face and Eye Tracking with Event Cameras
 
 **发布日期**：2024-08-19
@@ -297,42 +330,6 @@ larvae. By using image tiling techniques, we achieve a MAPE of 4.46% \($\\pm
 **代码链接**：摘要中未找到代码链接。
 
 **论文链接**：[阅读更多](http://arxiv.org/abs/2408.05032v1)
-
----
-
-
-## Hyper\-YOLO: When Visual Object Detection Meets Hypergraph Computation
-
-**发布日期**：2024-08-09
-
-**作者**：Yifan Feng
-
-**摘要**：We introduce Hyper\-YOLO, a new object detection method that integrates
-hypergraph computations to capture the complex high\-order correlations among
-visual features. Traditional YOLO models, while powerful, have limitations in
-their neck designs that restrict the integration of cross\-level features and
-the exploitation of high\-order feature interrelationships. To address these
-challenges, we propose the Hypergraph Computation Empowered Semantic Collecting
-and Scattering \(HGC\-SCS\) framework, which transposes visual feature maps into a
-semantic space and constructs a hypergraph for high\-order message propagation.
-This enables the model to acquire both semantic and structural information,
-advancing beyond conventional feature\-focused learning. Hyper\-YOLO incorporates
-the proposed Mixed Aggregation Network \(MANet\) in its backbone for enhanced
-feature extraction and introduces the Hypergraph\-Based Cross\-Level and
-Cross\-Position Representation Network \(HyperC2Net\) in its neck. HyperC2Net
-operates across five scales and breaks free from traditional grid structures,
-allowing for sophisticated high\-order interactions across levels and positions.
-This synergy of components positions Hyper\-YOLO as a state\-of\-the\-art
-architecture in various scale models, as evidenced by its superior performance
-on the COCO dataset. Specifically, Hyper\-YOLO\-N significantly outperforms the
-advanced YOLOv8\-N and YOLOv9\-T with 12\\% $\\text\{AP\}^\{val\}$ and 9\\%
-$\\text\{AP\}^\{val\}$ improvements. The source codes are at
-ttps://github.com/iMoonLab/Hyper\-YOLO.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2408.04804v1)
 
 ---
 
