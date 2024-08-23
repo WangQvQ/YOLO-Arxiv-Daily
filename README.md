@@ -1,6 +1,77 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Enhanced Parking Perception by Multi\-Task Fisheye Cross\-view Transformers
+
+**发布日期**：2024-08-22
+
+**作者**：Antonyo Musabini
+
+**摘要**：Current parking area perception algorithms primarily focus on detecting
+vacant slots within a limited range, relying on error\-prone homographic
+projection for both labeling and inference. However, recent advancements in
+Advanced Driver Assistance System \(ADAS\) require interaction with end\-users
+through comprehensive and intelligent Human\-Machine Interfaces \(HMIs\). These
+interfaces should present a complete perception of the parking area going from
+distinguishing vacant slots' entry lines to the orientation of other parked
+vehicles. This paper introduces Multi\-Task Fisheye Cross View Transformers \(MT
+F\-CVT\), which leverages features from a four\-camera fisheye Surround\-view
+Camera System \(SVCS\) with multihead attentions to create a detailed Bird\-Eye
+View \(BEV\) grid feature map. Features are processed by both a segmentation
+decoder and a Polygon\-Yolo based object detection decoder for parking slots and
+vehicles. Trained on data labeled using LiDAR, MT F\-CVT positions objects
+within a 25m x 25m real open\-road scenes with an average error of only 20 cm.
+Our larger model achieves an F\-1 score of 0.89. Moreover the smaller model
+operates at 16 fps on an Nvidia Jetson Orin embedded board, with similar
+detection results to the larger one. MT F\-CVT demonstrates robust
+generalization capability across different vehicles and camera rig
+configurations. A demo video from an unseen vehicle and camera rig is available
+at: https://streamable.com/jjw54x.
+
+
+**代码链接**：https://streamable.com/jjw54x.
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2408.12575v1)
+
+---
+
+
+## OVA\-DETR: Open Vocabulary Aerial Object Detection Using Image\-Text Alignment and Fusion
+
+**发布日期**：2024-08-22
+
+**作者**：Guoting Wei
+
+**摘要**：Aerial object detection has been a hot topic for many years due to its wide
+application requirements. However, most existing approaches can only handle
+predefined categories, which limits their applicability for the open scenarios
+in real\-world. In this paper, we extend aerial object detection to open
+scenarios by exploiting the relationship between image and text, and propose
+OVA\-DETR, a high\-efficiency open\-vocabulary detector for aerial images.
+Specifically, based on the idea of image\-text alignment, we propose region\-text
+contrastive loss to replace the category regression loss in the traditional
+detection framework, which breaks the category limitation. Then, we propose
+Bidirectional Vision\-Language Fusion \(Bi\-VLF\), which includes a dual\-attention
+fusion encoder and a multi\-level text\-guided Fusion Decoder. The dual\-attention
+fusion encoder enhances the feature extraction process in the encoder part. The
+multi\-level text\-guided Fusion Decoder is designed to improve the detection
+ability for small objects, which frequently appear in aerial object detection
+scenarios. Experimental results on three widely used benchmark datasets show
+that our proposed method significantly improves the mAP and recall, while
+enjoying faster inference speed. For instance, in zero shot detection
+experiments on DIOR, the proposed OVA\-DETR outperforms DescReg and YOLO\-World
+by 37.4% and 33.1%, respectively, while achieving 87 FPS inference speed, which
+is 7.9x faster than DescReg and 3x faster than YOLO\-world. The code is
+available at https://github.com/GT\-Wei/OVA\-DETR.
+
+
+**代码链接**：https://github.com/GT-Wei/OVA-DETR.
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2408.12246v1)
+
+---
+
+
 ## On the Potential of Open\-Vocabulary Models for Object Detection in Unusual Street Scenes
 
 **发布日期**：2024-08-20
@@ -275,61 +346,6 @@ construction projects.
 **代码链接**：摘要中未找到代码链接。
 
 **论文链接**：[阅读更多](http://arxiv.org/abs/2408.05964v1)
-
----
-
-
-## Advancing Pavement Distress Detection in Developing Countries: A Novel Deep Learning Approach with Locally\-Collected Datasets
-
-**发布日期**：2024-08-10
-
-**作者**：Blessing Agyei Kyem
-
-**摘要**：Road infrastructure maintenance in developing countries faces unique
-challenges due to resource constraints and diverse environmental factors. This
-study addresses the critical need for efficient, accurate, and locally\-relevant
-pavement distress detection methods in these regions. We present a novel deep
-learning approach combining YOLO \(You Only Look Once\) object detection models
-with a Convolutional Block Attention Module \(CBAM\) to simultaneously detect and
-classify multiple pavement distress types. The model demonstrates robust
-performance in detecting and classifying potholes, longitudinal cracks,
-alligator cracks, and raveling, with confidence scores ranging from 0.46 to
-0.93. While some misclassifications occur in complex scenarios, these provide
-insights into unique challenges of pavement assessment in developing countries.
-Additionally, we developed a web\-based application for real\-time distress
-detection from images and videos. This research advances automated pavement
-distress detection and provides a tailored solution for developing countries,
-potentially improving road safety, optimizing maintenance strategies, and
-contributing to sustainable transportation infrastructure development.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2408.05649v1)
-
----
-
-
-## Livestock Fish Larvae Counting using DETR and YOLO based Deep Networks
-
-**发布日期**：2024-08-09
-
-**作者**：Daniel Ortega de Carvalho
-
-**摘要**：Counting fish larvae is an important, yet demanding and time consuming, task
-in aquaculture. In order to address this problem, in this work, we evaluate
-four neural network architectures, including convolutional neural networks and
-transformers, in different sizes, in the task of fish larvae counting. For the
-evaluation, we present a new annotated image dataset with less data collection
-requirements than preceding works, with images of spotted sorubim and dourado
-larvae. By using image tiling techniques, we achieve a MAPE of 4.46% \($\\pm
-4.70$\) with an extra large real time detection transformer, and 4.71% \($\\pm
-4.98$\) with a medium\-sized YOLOv8.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2408.05032v1)
 
 ---
 
