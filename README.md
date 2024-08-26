@@ -1,6 +1,41 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## VFM\-Det: Towards High\-Performance Vehicle Detection via Large Foundation Models
+
+**发布日期**：2024-08-23
+
+**作者**：Wentao Wu
+
+**摘要**：Existing vehicle detectors are usually obtained by training a typical
+detector \(e.g., YOLO, RCNN, DETR series\) on vehicle images based on a
+pre\-trained backbone \(e.g., ResNet, ViT\). Some researchers also exploit and
+enhance the detection performance using pre\-trained large foundation models.
+However, we think these detectors may only get sub\-optimal results because the
+large models they use are not specifically designed for vehicles. In addition,
+their results heavily rely on visual features, and seldom of they consider the
+alignment between the vehicle's semantic information and visual
+representations. In this work, we propose a new vehicle detection paradigm
+based on a pre\-trained foundation vehicle model \(VehicleMAE\) and a large
+language model \(T5\), termed VFM\-Det. It follows the region proposal\-based
+detection framework and the features of each proposal can be enhanced using
+VehicleMAE. More importantly, we propose a new VAtt2Vec module that predicts
+the vehicle semantic attributes of these proposals and transforms them into
+feature vectors to enhance the vision features via contrastive learning.
+Extensive experiments on three vehicle detection benchmark datasets thoroughly
+proved the effectiveness of our vehicle detector. Specifically, our model
+improves the baseline approach by $\+5.1\\%$, $\+6.2\\%$ on the $AP\_\{0.5\}$,
+$AP\_\{0.75\}$ metrics, respectively, on the Cityscapes dataset.The source code of
+this work will be released at https://github.com/Event\-AHU/VFM\-Det.
+
+
+**代码链接**：https://github.com/Event-AHU/VFM-Det.
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2408.13031v1)
+
+---
+
+
 ## Enhanced Parking Perception by Multi\-Task Fisheye Cross\-view Transformers
 
 **发布日期**：2024-08-22
@@ -318,34 +353,6 @@ vision models to the problem of wideband RF spectrum sensing.
 **代码链接**：摘要中未找到代码链接。
 
 **论文链接**：[阅读更多](http://arxiv.org/abs/2408.06545v1)
-
----
-
-
-## Target Detection of Safety Protective Gear Using the Improved YOLOv5
-
-**发布日期**：2024-08-12
-
-**作者**：Hao Liu
-
-**摘要**：In high\-risk railway construction, personal protective equipment monitoring
-is critical but challenging due to small and frequently obstructed targets. We
-propose YOLO\-EA, an innovative model that enhances safety measure detection by
-integrating ECA into its backbone's convolutional layers, improving discernment
-of minuscule objects like hardhats. YOLO\-EA further refines target recognition
-under occlusion by replacing GIoU with EIoU loss. YOLO\-EA's effectiveness was
-empirically substantiated using a dataset derived from real\-world railway
-construction site surveillance footage. It outperforms YOLOv5, achieving 98.9%
-precision and 94.7% recall, up 2.5% and 0.5% respectively, while maintaining
-real\-time performance at 70.774 fps. This highly efficient and precise YOLO\-EA
-holds great promise for practical application in intricate construction
-scenarios, enforcing stringent safety compliance during complex railway
-construction projects.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2408.05964v1)
 
 ---
 
