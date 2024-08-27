@@ -1,6 +1,74 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## LSM\-YOLO: A Compact and Effective ROI Detector for Medical Detection
+
+**发布日期**：2024-08-26
+
+**作者**：Zhongwen Yu
+
+**摘要**：In existing medical Region of Interest \(ROI\) detection, there lacks an
+algorithm that can simultaneously satisfy both real\-time performance and
+accuracy, not meeting the growing demand for automatic detection in medicine.
+Although the basic YOLO framework ensures real\-time detection due to its fast
+speed, it still faces challenges in maintaining precision concurrently. To
+alleviate the above problems, we propose a novel model named Lightweight Shunt
+Matching\-YOLO \(LSM\-YOLO\), with Lightweight Adaptive Extraction \(LAE\) and
+Multipath Shunt Feature Matching \(MSFM\). Firstly, by using LAE to refine
+feature extraction, the model can obtain more contextual information and
+high\-resolution details from multiscale feature maps, thereby extracting
+detailed features of ROI in medical images while reducing the influence of
+noise. Secondly, MSFM is utilized to further refine the fusion of high\-level
+semantic features and low\-level visual features, enabling better fusion between
+ROI features and neighboring features, thereby improving the detection rate for
+better diagnostic assistance. Experimental results demonstrate that LSM\-YOLO
+achieves 48.6% AP on a private dataset of pancreatic tumors, 65.1% AP on the
+BCCD blood cell detection public dataset, and 73.0% AP on the Br35h brain tumor
+detection public dataset. Our model achieves state\-of\-the\-art performance with
+minimal parameter cost on the above three datasets. The source codes are at:
+https://github.com/VincentYuuuuuu/LSM\-YOLO.
+
+
+**代码链接**：https://github.com/VincentYuuuuuu/LSM-YOLO.
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2408.14087v1)
+
+---
+
+
+## Enhancing Robustness of Human Detection Algorithms in Maritime SAR through Augmented Aerial Images to Simulate Weather Conditions
+
+**发布日期**：2024-08-25
+
+**作者**：Miguel Tjia
+
+**摘要**：7,651 cases of Search and Rescue Missions \(SAR\) were reported by the United
+States Coast Guard in 2024, with over 1322 SAR helicopters deployed in the 6
+first months alone. Through the utilizations of YOLO, we were able to run
+different weather conditions and lighting from our augmented dataset for
+training. YOLO then utilizes CNNs to apply a series of convolutions and pooling
+layers to the input image, where the convolution layers are able to extract the
+main features of the image. Through this, our YOLO model is able to learn to
+differentiate different objects which may considerably improve its accuracy,
+possibly enhancing the efficiency of SAR operations through enhanced detection
+accuracy. This paper aims to improve the model's accuracy of human detection in
+maritime SAR by evaluating a robust datasets containing various elevations and
+geological locations, as well as through data augmentation which simulates
+different weather and lighting. We observed that models trained on augmented
+datasets outperformed their non\-augmented counterparts in which the human
+recall scores ranged from 0.891 to 0.911 with an improvement rate of 3.4\\% on
+the YOLOv5l model. Results showed that these models demonstrate greater
+robustness to real\-world conditions in varying of weather, brightness, tint,
+and contrast.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2408.13766v1)
+
+---
+
+
 ## VFM\-Det: Towards High\-Performance Vehicle Detection via Large Foundation Models
 
 **发布日期**：2024-08-23
@@ -281,78 +349,6 @@ times faster.
 **代码链接**：摘要中未找到代码链接。
 
 **论文链接**：[阅读更多](http://arxiv.org/abs/2408.07146v1)
-
----
-
-
-## A lightweight YOLOv5\-FFM model for occlusion pedestrian detection
-
-**发布日期**：2024-08-13
-
-**作者**：Xiangjie Luo
-
-**摘要**：The development of autonomous driving technology must be inseparable from
-pedestrian detection. Because of the fast speed of the vehicle, the accuracy
-and real\-time performance of the pedestrian detection algorithm are very
-important. YOLO, as an efficient and simple one\-stage target detection method,
-is often used for pedestrian detection in various environments. However, this
-series of detectors face some challenges, such as excessive computation and
-undesirable detection rate when facing occluded pedestrians. In this paper, we
-propose an improved lightweight YOLOv5 model to deal with these problems. This
-model can achieve better pedestrian detection accuracy with fewer
-floating\-point operations \(FLOPs\), especially for occluded targets. In order to
-achieve the above goals, we made improvements based on the YOLOv5 model
-framework and introduced Ghost module and SE block. Furthermore, we designed a
-local feature fusion module \(FFM\) to deal with occlusion in pedestrian
-detection. To verify the validity of our method, two datasets, Citypersons and
-CUHK Occlusion, were selected for the experiment. The experimental results show
-that, compared with the original yolov5s model, the average precision \(AP\) of
-our method is significantly improved, while the number of parameters is reduced
-by 27.9% and FLOPs are reduced by 19.0%.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2408.06633v1)
-
----
-
-
-## Optimal Preprocessing for Joint Detection and Classification of Wireless Communication Signals in Congested Spectrum Using Computer Vision Methods
-
-**发布日期**：2024-08-13
-
-**作者**：Xiwen Kang
-
-**摘要**：The joint detection and classification of RF signals has been a critical
-problem in the field of wideband RF spectrum sensing. Recent advancements in
-deep learning models have revolutionized this field, remarkably through the
-application of state\-of\-the\-art computer vision algorithms such as YOLO \(You
-Only Look Once\) and DETR \(Detection Transformer\) to the spectrogram images.
-This paper focuses on optimizing the preprocessing stage to enhance the
-performance of these computer vision models. Specifically, we investigated the
-generation of training spectrograms via the classical Short\-Time Fourier
-Transform \(STFT\) approach, examining four classical STFT parameters: FFT size,
-window type, window length, and overlapping ratio. Our study aims to maximize
-the mean average precision \(mAP\) scores of YOLOv10 models in detecting and
-classifying various digital modulation signals within a congested spectrum
-environment. Firstly, our results reveal that additional zero padding in FFT
-does not enhance detection and classification accuracy and introduces
-unnecessary computational cost. Secondly, our results indicated that there
-exists an optimal window size that balances the trade\-offs between and the time
-and frequency resolution, with performance losses of approximately 10% and 30%
-if the window size is four or eight times off from the optimal. Thirdly,
-regarding the choice of window functions, the Hamming window yields optimal
-performance, with non\-optimal windows resulting in up to a 10% accuracy loss.
-Finally, we found a 10% accuracy score performance gap between using 10% and
-90% overlap. These findings highlight the potential for significant performance
-improvements through optimized spectrogram parameters when applying computer
-vision models to the problem of wideband RF spectrum sensing.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2408.06545v1)
 
 ---
 
