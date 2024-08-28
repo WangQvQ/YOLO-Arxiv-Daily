@@ -1,6 +1,74 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Intraoperative Glioma Segmentation with YOLO \+ SAM for Improved Accuracy in Tumor Resection
+
+**发布日期**：2024-08-27
+
+**作者**：Samir Kassam
+
+**摘要**：Gliomas, a common type of malignant brain tumor, present significant surgical
+challenges due to their similarity to healthy tissue. Preoperative Magnetic
+Resonance Imaging \(MRI\) images are often ineffective during surgery due to
+factors such as brain shift, which alters the position of brain structures and
+tumors. This makes real\-time intraoperative MRI \(ioMRI\) crucial, as it provides
+updated imaging that accounts for these shifts, ensuring more accurate tumor
+localization and safer resections. This paper presents a deep learning pipeline
+combining You Only Look Once Version 8 \(YOLOv8\) and Segment Anything Model
+Vision Transformer\-base \(SAM ViT\-b\) to enhance glioma detection and
+segmentation during ioMRI. Our model was trained using the Brain Tumor
+Segmentation 2021 \(BraTS 2021\) dataset, which includes standard magnetic
+resonance imaging \(MRI\) images, and noise\-augmented MRI images that simulate
+ioMRI images. Noised MRI images are harder for a deep learning pipeline to
+segment, but they are more representative of surgical conditions. Achieving a
+Dice Similarity Coefficient \(DICE\) score of 0.79, our model performs comparably
+to state\-of\-the\-art segmentation models tested on noiseless data. This
+performance demonstrates the model's potential to assist surgeons in maximizing
+tumor resection and improving surgical outcomes.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2408.14847v1)
+
+---
+
+
+## Multi\-faceted Sensory Substitution for Curb Alerting: A Pilot Investigation in Persons with Blindness and Low Vision
+
+**发布日期**：2024-08-26
+
+**作者**：Ligao Ruan
+
+**摘要**：Curbs \-\- the edge of a raised sidewalk at the point where it meets a street
+\-\- crucial in urban environments where they help delineate safe pedestrian
+zones, from dangerous vehicular lanes. However, curbs themselves are
+significant navigation hazards, particularly for people who are blind or have
+low vision \(pBLV\). The challenges faced by pBLV in detecting and properly
+orientating themselves for these abrupt elevation changes can lead to falls and
+serious injuries. Despite recent advancements in assistive technologies, the
+detection and early warning of curbs remains a largely unsolved challenge. This
+paper aims to tackle this gap by introducing a novel, multi\-faceted sensory
+substitution approach hosted on a smart wearable; the platform leverages an RGB
+camera and an embedded system to capture and segment curbs in real time and
+provide early warning and orientation information. The system utilizes YOLO
+\(You Only Look Once\) v8 segmentation model, trained on our custom curb dataset
+for the camera input. The output of the system consists of adaptive auditory
+beeps, abstract sonification, and speech, conveying information about the
+relative distance and orientation of curbs. Through human\-subjects
+experimentation, we demonstrate the effectiveness of the system as compared to
+the white cane. Results show that our system can provide advanced warning
+through a larger safety window than the cane, while offering nearly identical
+curb orientation information.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2408.14578v1)
+
+---
+
+
 ## LSM\-YOLO: A Compact and Effective ROI Detector for Medical Detection
 
 **发布日期**：2024-08-26
@@ -64,7 +132,7 @@ and contrast.
 
 **代码链接**：摘要中未找到代码链接。
 
-**论文链接**：[阅读更多](http://arxiv.org/abs/2408.13766v1)
+**论文链接**：[阅读更多](http://arxiv.org/abs/2408.13766v2)
 
 ---
 
@@ -268,87 +336,6 @@ real\-time computer vision development.
 **代码链接**：摘要中未找到代码链接。
 
 **论文链接**：[阅读更多](http://arxiv.org/abs/2408.09332v1)
-
----
-
-
-## Infra\-YOLO: Efficient Neural Network Structure with Model Compression for Real\-Time Infrared Small Object Detection
-
-**发布日期**：2024-08-14
-
-**作者**：Zhonglin Chen
-
-**摘要**：Although convolutional neural networks have made outstanding achievements in
-visible light target detection, there are still many challenges in infrared
-small object detection because of the low signal\-to\-noise ratio, incomplete
-object structure, and a lack of reliable infrared small object dataset. To
-resolve limitations of the infrared small object dataset, a new dataset named
-InfraTiny was constructed, and more than 85% bounding box is less than 32x32
-pixels \(3218 images and a total of 20,893 bounding boxes\). A multi\-scale
-attention mechanism module \(MSAM\) and a Feature Fusion Augmentation Pyramid
-Module \(FFAFPM\) were proposed and deployed onto embedded devices. The MSAM
-enables the network to obtain scale perception information by acquiring
-different receptive fields, while the background noise information is
-suppressed to enhance feature extraction ability. The proposed FFAFPM can
-enrich semantic information, and enhance the fusion of shallow feature and deep
-feature, thus false positive results have been significantly reduced. By
-integrating the proposed methods into the YOLO model, which is named
-Infra\-YOLO, infrared small object detection performance has been improved.
-Compared to yolov3, mAP@0.5 has been improved by 2.7%; and compared to yolov4,
-that by 2.5% on the InfraTiny dataset. The proposed Infra\-YOLO was also
-transferred onto the embedded device in the unmanned aerial vehicle \(UAV\) for
-real application scenarios, where the channel pruning method is adopted to
-reduce FLOPs and to achieve a tradeoff between speed and accuracy. Even if the
-parameters of Infra\-YOLO are reduced by 88% with the pruning method, a gain of
-0.7% is still achieved on mAP@0.5 compared to yolov3, and a gain of 0.5%
-compared to yolov4. Experimental results show that the proposed MSAM and FFAFPM
-method can improve infrared small object detection performance compared with
-the previous benchmark method.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2408.07455v1)
-
----
-
-
-## Vision Language Model for Interpretable and Fine\-grained Detection of Safety Compliance in Diverse Workplaces
-
-**发布日期**：2024-08-13
-
-**作者**：Zhiling Chen
-
-**摘要**：Workplace accidents due to personal protective equipment \(PPE\) non\-compliance
-raise serious safety concerns and lead to legal liabilities, financial
-penalties, and reputational damage. While object detection models have shown
-the capability to address this issue by identifying safety items, most existing
-models, such as YOLO, Faster R\-CNN, and SSD, are limited in verifying the
-fine\-grained attributes of PPE across diverse workplace scenarios. Vision
-language models \(VLMs\) are gaining traction for detection tasks by leveraging
-the synergy between visual and textual information, offering a promising
-solution to traditional object detection limitations in PPE recognition.
-Nonetheless, VLMs face challenges in consistently verifying PPE attributes due
-to the complexity and variability of workplace environments, requiring them to
-interpret context\-specific language and visual cues simultaneously. We
-introduce Clip2Safety, an interpretable detection framework for diverse
-workplace safety compliance, which comprises four main modules: scene
-recognition, the visual prompt, safety items detection, and fine\-grained
-verification. The scene recognition identifies the current scenario to
-determine the necessary safety gear. The visual prompt formulates the specific
-visual prompts needed for the detection process. The safety items detection
-identifies whether the required safety gear is being worn according to the
-specified scenario. Lastly, the fine\-grained verification assesses whether the
-worn safety equipment meets the fine\-grained attribute requirements. We conduct
-real\-world case studies across six different scenarios. The results show that
-Clip2Safety not only demonstrates an accuracy improvement over state\-of\-the\-art
-question\-answering based VLMs but also achieves inference times two hundred
-times faster.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2408.07146v1)
 
 ---
 
