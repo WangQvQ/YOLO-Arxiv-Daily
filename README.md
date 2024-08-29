@@ -1,6 +1,57 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## microYOLO: Towards Single\-Shot Object Detection on Microcontrollers
+
+**发布日期**：2024-08-28
+
+**作者**：Mark Deutel
+
+**摘要**：This work\-in\-progress paper presents results on the feasibility of
+single\-shot object detection on microcontrollers using YOLO. Single\-shot object
+detectors like YOLO are widely used, however due to their complexity mainly on
+larger GPU\-based platforms. We present microYOLO, which can be used on Cortex\-M
+based microcontrollers, such as the OpenMV H7 R2, achieving about 3.5 FPS when
+classifying 128x128 RGB images while using less than 800 KB Flash and less than
+350 KB RAM. Furthermore, we share experimental results for three different
+object detection tasks, analyzing the accuracy of microYOLO on them.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2408.15865v1)
+
+---
+
+
+## YOLO\-Stutter: End\-to\-end Region\-Wise Speech Dysfluency Detection
+
+**发布日期**：2024-08-27
+
+**作者**：Xuanru Zhou
+
+**摘要**：Dysfluent speech detection is the bottleneck for disordered speech analysis
+and spoken language learning. Current state\-of\-the\-art models are governed by
+rule\-based systems which lack efficiency and robustness, and are sensitive to
+template design. In this paper, we propose YOLO\-Stutter: a first end\-to\-end
+method that detects dysfluencies in a time\-accurate manner. YOLO\-Stutter takes
+imperfect speech\-text alignment as input, followed by a spatial feature
+aggregator, and a temporal dependency extractor to perform region\-wise boundary
+and class predictions. We also introduce two dysfluency corpus, VCTK\-Stutter
+and VCTK\-TTS, that simulate natural spoken dysfluencies including repetition,
+block, missing, replacement, and prolongation. Our end\-to\-end method achieves
+state\-of\-the\-art performance with a minimum number of trainable parameters for
+on both simulated data and real aphasia speech. Code and datasets are
+open\-sourced at https://github.com/rorizzz/YOLO\-Stutter
+
+
+**代码链接**：https://github.com/rorizzz/YOLO-Stutter
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2408.15297v1)
+
+---
+
+
 ## Intraoperative Glioma Segmentation with YOLO \+ SAM for Improved Accuracy in Tumor Resection
 
 **发布日期**：2024-08-27
@@ -64,7 +115,7 @@ curb orientation information.
 
 **代码链接**：摘要中未找到代码链接。
 
-**论文链接**：[阅读更多](http://arxiv.org/abs/2408.14578v1)
+**论文链接**：[阅读更多](http://arxiv.org/abs/2408.14578v2)
 
 ---
 
@@ -272,70 +323,6 @@ YOLO\-World excels on RoadAnomaly21 with an AP of 21.2%.
 **代码链接**：摘要中未找到代码链接。
 
 **论文链接**：[阅读更多](http://arxiv.org/abs/2408.11221v1)
-
----
-
-
-## Evaluating Image\-Based Face and Eye Tracking with Event Cameras
-
-**发布日期**：2024-08-19
-
-**作者**：Khadija Iddrisu
-
-**摘要**：Event Cameras, also known as Neuromorphic sensors, capture changes in local
-light intensity at the pixel level, producing asynchronously generated data
-termed \`\`events''. This distinct data format mitigates common issues observed
-in conventional cameras, like under\-sampling when capturing fast\-moving
-objects, thereby preserving critical information that might otherwise be lost.
-However, leveraging this data often necessitates the development of
-specialized, handcrafted event representations that can integrate seamlessly
-with conventional Convolutional Neural Networks \(CNNs\), considering the unique
-attributes of event data. In this study, We evaluate event\-based Face and Eye
-tracking. The core objective of our study is to showcase the viability of
-integrating conventional algorithms with event\-based data, transformed into a
-frame format while preserving the unique benefits of event cameras. To validate
-our approach, we constructed a frame\-based event dataset by simulating events
-between RGB frames derived from the publicly accessible Helen Dataset. We
-assess its utility for face and eye detection tasks through the application of
-GR\-YOLO \-\- a pioneering technique derived from YOLOv3. This evaluation includes
-a comparative analysis with results derived from training the dataset with
-YOLOv8. Subsequently, the trained models were tested on real event streams from
-various iterations of Prophesee's event cameras and further evaluated on the
-Faces in Event Stream \(FES\) benchmark dataset. The models trained on our
-dataset shows a good prediction performance across all the datasets obtained
-for validation with the best results of a mean Average precision score of 0.91.
-Additionally, The models trained demonstrated robust performance on real event
-camera data under varying light conditions.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2408.10395v1)
-
----
-
-
-## YOLOv1 to YOLOv10: The fastest and most accurate real\-time object detection systems
-
-**发布日期**：2024-08-18
-
-**作者**：Chien\-Yao Wang
-
-**摘要**：This is a comprehensive review of the YOLO series of systems. Different from
-previous literature surveys, this review article re\-examines the
-characteristics of the YOLO series from the latest technical point of view. At
-the same time, we also analyzed how the YOLO series continued to influence and
-promote real\-time computer vision\-related research and led to the subsequent
-development of computer vision and language models.We take a closer look at how
-the methods proposed by the YOLO series in the past ten years have affected the
-development of subsequent technologies and show the applications of YOLO in
-various fields. We hope this article can play a good guiding role in subsequent
-real\-time computer vision development.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2408.09332v1)
 
 ---
 
