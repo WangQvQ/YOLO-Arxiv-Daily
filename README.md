@@ -1,6 +1,45 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## FA\-YOLO: Research On Efficient Feature Selection YOLO Improved Algorithm Based On FMDS and AGMF Modules
+
+**发布日期**：2024-08-29
+
+**作者**：Yukang Huo
+
+**摘要**：Over the past few years, the YOLO series of models has emerged as one of the
+dominant methodologies in the realm of object detection. Many studies have
+advanced these baseline models by modifying their architectures, enhancing data
+quality, and developing new loss functions. However, current models still
+exhibit deficiencies in processing feature maps, such as overlooking the fusion
+of cross\-scale features and a static fusion approach that lacks the capability
+for dynamic feature adjustment. To address these issues, this paper introduces
+an efficient Fine\-grained Multi\-scale Dynamic Selection Module \(FMDS Module\),
+which applies a more effective dynamic feature selection and fusion method on
+fine\-grained multi\-scale feature maps, significantly enhancing the detection
+accuracy of small, medium, and large\-sized targets in complex environments.
+Furthermore, this paper proposes an Adaptive Gated Multi\-branch Focus Fusion
+Module \(AGMF Module\), which utilizes multiple parallel branches to perform
+complementary fusion of various features captured by the gated unit branch,
+FMDS Module branch, and TripletAttention branch. This approach further enhances
+the comprehensiveness, diversity, and integrity of feature fusion. This paper
+has integrated the FMDS Module, AGMF Module, into Yolov9 to develop a novel
+object detection model named FA\-YOLO. Extensive experimental results show that
+under identical experimental conditions, FA\-YOLO achieves an outstanding 66.1%
+mean Average Precision \(mAP\) on the PASCAL VOC 2007 dataset, representing 1.0%
+improvement over YOLOv9's 65.1%. Additionally, the detection accuracies of
+FA\-YOLO for small, medium, and large targets are 44.1%, 54.6%, and 70.8%,
+respectively, showing improvements of 2.0%, 3.1%, and 0.9% compared to YOLOv9's
+42.1%, 51.5%, and 69.9%.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2408.16313v1)
+
+---
+
+
 ## microYOLO: Towards Single\-Shot Object Detection on Microcontrollers
 
 **发布日期**：2024-08-28
@@ -290,39 +329,6 @@ available at https://github.com/GT\-Wei/OVA\-DETR.
 **代码链接**：https://github.com/GT-Wei/OVA-DETR.
 
 **论文链接**：[阅读更多](http://arxiv.org/abs/2408.12246v1)
-
----
-
-
-## On the Potential of Open\-Vocabulary Models for Object Detection in Unusual Street Scenes
-
-**发布日期**：2024-08-20
-
-**作者**：Sadia Ilyas
-
-**摘要**：Out\-of\-distribution \(OOD\) object detection is a critical task focused on
-detecting objects that originate from a data distribution different from that
-of the training data. In this study, we investigate to what extent
-state\-of\-the\-art open\-vocabulary object detectors can detect unusual objects in
-street scenes, which are considered as OOD or rare scenarios with respect to
-common street scene datasets. Specifically, we evaluate their performance on
-the OoDIS Benchmark, which extends RoadAnomaly21 and RoadObstacle21 from
-SegmentMeIfYouCan, as well as LostAndFound, which was recently extended to
-object level annotations. The objective of our study is to uncover
-short\-comings of contemporary object detectors in challenging real\-world, and
-particularly in open\-world scenarios. Our experiments reveal that open
-vocabulary models are promising for OOD object detection scenarios, however far
-from perfect. Substantial improvements are required before they can be reliably
-deployed in real\-world applications. We benchmark four state\-of\-the\-art
-open\-vocabulary object detection models on three different datasets.
-Noteworthily, Grounding DINO achieves the best results on RoadObstacle21 and
-LostAndFound in our study with an AP of 48.3% and 25.4% respectively.
-YOLO\-World excels on RoadAnomaly21 with an AP of 21.2%.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2408.11221v1)
 
 ---
 
