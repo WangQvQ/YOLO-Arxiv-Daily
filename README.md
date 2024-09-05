@@ -1,6 +1,111 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## YoloTag: Vision\-based Robust UAV Navigation with Fiducial Markers
+
+**发布日期**：2024-09-03
+
+**作者**：Sourav Raxit
+
+**摘要**：By harnessing fiducial markers as visual landmarks in the environment,
+Unmanned Aerial Vehicles \(UAVs\) can rapidly build precise maps and navigate
+spaces safely and efficiently, unlocking their potential for fluent
+collaboration and coexistence with humans. Existing fiducial marker methods
+rely on handcrafted feature extraction, which sacrifices accuracy. On the other
+hand, deep learning pipelines for marker detection fail to meet real\-time
+runtime constraints crucial for navigation applications. In this work, we
+propose YoloTag \\textemdash a real\-time fiducial marker\-based localization
+system. YoloTag uses a lightweight YOLO v8 object detector to accurately detect
+fiducial markers in images while meeting the runtime constraints needed for
+navigation. The detected markers are then used by an efficient
+perspective\-n\-point algorithm to estimate UAV states. However, this
+localization system introduces noise, causing instability in trajectory
+tracking. To suppress noise, we design a higher\-order Butterworth filter that
+effectively eliminates noise through frequency domain analysis. We evaluate our
+algorithm through real\-robot experiments in an indoor environment, comparing
+the trajectory tracking performance of our method against other approaches in
+terms of several distance metrics.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2409.02334v1)
+
+---
+
+
+## DS MYOLO: A Reliable Object Detector Based on SSMs for Driving Scenarios
+
+**发布日期**：2024-09-02
+
+**作者**：Yang Li
+
+**摘要**：Accurate real\-time object detection enhances the safety of advanced
+driver\-assistance systems, making it an essential component in driving
+scenarios. With the rapid development of deep learning technology, CNN\-based
+YOLO real\-time object detectors have gained significant attention. However, the
+local focus of CNNs results in performance bottlenecks. To further enhance
+detector performance, researchers have introduced Transformer\-based
+self\-attention mechanisms to leverage global receptive fields, but their
+quadratic complexity incurs substantial computational costs. Recently, Mamba,
+with its linear complexity, has made significant progress through global
+selective scanning. Inspired by Mamba's outstanding performance, we propose a
+novel object detector: DS MYOLO. This detector captures global feature
+information through a simplified selective scanning fusion block \(SimVSS Block\)
+and effectively integrates the network's deep features. Additionally, we
+introduce an efficient channel attention convolution \(ECAConv\) that enhances
+cross\-channel feature interaction while maintaining low computational
+complexity. Extensive experiments on the CCTSDB 2021 and VLD\-45 driving
+scenarios datasets demonstrate that DS MYOLO exhibits significant potential and
+competitive advantage among similarly scaled YOLO series real\-time object
+detectors.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2409.01093v1)
+
+---
+
+
+## A method for detecting dead fish on large water surfaces based on improved YOLOv10
+
+**发布日期**：2024-08-31
+
+**作者**：Qingbin Tian
+
+**摘要**：Dead fish frequently appear on the water surface due to various factors. If
+not promptly detected and removed, these dead fish can cause significant issues
+such as water quality deterioration, ecosystem damage, and disease
+transmission. Consequently, it is imperative to develop rapid and effective
+detection methods to mitigate these challenges. Conventional methods for
+detecting dead fish are often constrained by manpower and time limitations,
+struggling to effectively manage the intricacies of aquatic environments. This
+paper proposes an end\-to\-end detection model built upon an enhanced YOLOv10
+framework, designed specifically to swiftly and precisely detect deceased fish
+across extensive water surfaces.Key enhancements include: \(1\) Replacing
+YOLOv10's backbone network with FasterNet to reduce model complexity while
+maintaining high detection accuracy; \(2\) Improving feature fusion in the Neck
+section through enhanced connectivity methods and replacing the original C2f
+module with CSPStage modules; \(3\) Adding a compact target detection head to
+enhance the detection performance of smaller objects. Experimental results
+demonstrate significant improvements in P\(precision\), R\(recall\), and AP\(average
+precision\) compared to the baseline model YOLOv10n. Furthermore, our model
+outperforms other models in the YOLO series by significantly reducing model
+size and parameter count, while sustaining high inference speed and achieving
+optimal AP performance. The model facilitates rapid and accurate detection of
+dead fish in large\-scale aquaculture systems. Finally, through ablation
+experiments, we systematically analyze and assess the contribution of each
+model component to the overall system performance.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2409.00388v1)
+
+---
+
+
 ## FA\-YOLO: Research On Efficient Feature Selection YOLO Improved Algorithm Based On FMDS and AGMF Modules
 
 **发布日期**：2024-08-29
@@ -223,112 +328,6 @@ and contrast.
 **代码链接**：摘要中未找到代码链接。
 
 **论文链接**：[阅读更多](http://arxiv.org/abs/2408.13766v2)
-
----
-
-
-## VFM\-Det: Towards High\-Performance Vehicle Detection via Large Foundation Models
-
-**发布日期**：2024-08-23
-
-**作者**：Wentao Wu
-
-**摘要**：Existing vehicle detectors are usually obtained by training a typical
-detector \(e.g., YOLO, RCNN, DETR series\) on vehicle images based on a
-pre\-trained backbone \(e.g., ResNet, ViT\). Some researchers also exploit and
-enhance the detection performance using pre\-trained large foundation models.
-However, we think these detectors may only get sub\-optimal results because the
-large models they use are not specifically designed for vehicles. In addition,
-their results heavily rely on visual features, and seldom of they consider the
-alignment between the vehicle's semantic information and visual
-representations. In this work, we propose a new vehicle detection paradigm
-based on a pre\-trained foundation vehicle model \(VehicleMAE\) and a large
-language model \(T5\), termed VFM\-Det. It follows the region proposal\-based
-detection framework and the features of each proposal can be enhanced using
-VehicleMAE. More importantly, we propose a new VAtt2Vec module that predicts
-the vehicle semantic attributes of these proposals and transforms them into
-feature vectors to enhance the vision features via contrastive learning.
-Extensive experiments on three vehicle detection benchmark datasets thoroughly
-proved the effectiveness of our vehicle detector. Specifically, our model
-improves the baseline approach by $\+5.1\\%$, $\+6.2\\%$ on the $AP\_\{0.5\}$,
-$AP\_\{0.75\}$ metrics, respectively, on the Cityscapes dataset.The source code of
-this work will be released at https://github.com/Event\-AHU/VFM\-Det.
-
-
-**代码链接**：https://github.com/Event-AHU/VFM-Det.
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2408.13031v1)
-
----
-
-
-## Enhanced Parking Perception by Multi\-Task Fisheye Cross\-view Transformers
-
-**发布日期**：2024-08-22
-
-**作者**：Antonyo Musabini
-
-**摘要**：Current parking area perception algorithms primarily focus on detecting
-vacant slots within a limited range, relying on error\-prone homographic
-projection for both labeling and inference. However, recent advancements in
-Advanced Driver Assistance System \(ADAS\) require interaction with end\-users
-through comprehensive and intelligent Human\-Machine Interfaces \(HMIs\). These
-interfaces should present a complete perception of the parking area going from
-distinguishing vacant slots' entry lines to the orientation of other parked
-vehicles. This paper introduces Multi\-Task Fisheye Cross View Transformers \(MT
-F\-CVT\), which leverages features from a four\-camera fisheye Surround\-view
-Camera System \(SVCS\) with multihead attentions to create a detailed Bird\-Eye
-View \(BEV\) grid feature map. Features are processed by both a segmentation
-decoder and a Polygon\-Yolo based object detection decoder for parking slots and
-vehicles. Trained on data labeled using LiDAR, MT F\-CVT positions objects
-within a 25m x 25m real open\-road scenes with an average error of only 20 cm.
-Our larger model achieves an F\-1 score of 0.89. Moreover the smaller model
-operates at 16 fps on an Nvidia Jetson Orin embedded board, with similar
-detection results to the larger one. MT F\-CVT demonstrates robust
-generalization capability across different vehicles and camera rig
-configurations. A demo video from an unseen vehicle and camera rig is available
-at: https://streamable.com/jjw54x.
-
-
-**代码链接**：https://streamable.com/jjw54x.
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2408.12575v1)
-
----
-
-
-## OVA\-DETR: Open Vocabulary Aerial Object Detection Using Image\-Text Alignment and Fusion
-
-**发布日期**：2024-08-22
-
-**作者**：Guoting Wei
-
-**摘要**：Aerial object detection has been a hot topic for many years due to its wide
-application requirements. However, most existing approaches can only handle
-predefined categories, which limits their applicability for the open scenarios
-in real\-world. In this paper, we extend aerial object detection to open
-scenarios by exploiting the relationship between image and text, and propose
-OVA\-DETR, a high\-efficiency open\-vocabulary detector for aerial images.
-Specifically, based on the idea of image\-text alignment, we propose region\-text
-contrastive loss to replace the category regression loss in the traditional
-detection framework, which breaks the category limitation. Then, we propose
-Bidirectional Vision\-Language Fusion \(Bi\-VLF\), which includes a dual\-attention
-fusion encoder and a multi\-level text\-guided Fusion Decoder. The dual\-attention
-fusion encoder enhances the feature extraction process in the encoder part. The
-multi\-level text\-guided Fusion Decoder is designed to improve the detection
-ability for small objects, which frequently appear in aerial object detection
-scenarios. Experimental results on three widely used benchmark datasets show
-that our proposed method significantly improves the mAP and recall, while
-enjoying faster inference speed. For instance, in zero shot detection
-experiments on DIOR, the proposed OVA\-DETR outperforms DescReg and YOLO\-World
-by 37.4% and 33.1%, respectively, while achieving 87 FPS inference speed, which
-is 7.9x faster than DescReg and 3x faster than YOLO\-world. The code is
-available at https://github.com/GT\-Wei/OVA\-DETR.
-
-
-**代码链接**：https://github.com/GT-Wei/OVA-DETR.
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2408.12246v1)
 
 ---
 
