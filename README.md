@@ -1,6 +1,71 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## YOLO\-CL cluster detection in the Rubin/LSST DC2 simulation
+
+**发布日期**：2024-09-05
+
+**作者**：Kirill Grishin
+
+**摘要**：LSST will provide galaxy cluster catalogs up to z$\\sim$1 that can be used to
+constrain cosmological models once their selection function is well\-understood.
+We have applied the deep convolutional network YOLO for CLuster detection
+\(YOLO\-CL\) to LSST simulations from the Dark Energy Science Collaboration Data
+Challenge 2 \(DC2\), and characterized the LSST YOLO\-CL cluster selection
+function. We have trained and validated the network on images from a hybrid
+sample of \(1\) clusters observed in the Sloan Digital Sky Survey and detected
+with the red\-sequence Matched\-filter Probabilistic Percolation, and \(2\)
+simulated DC2 dark matter haloes with masses $M\_\{200c\} > 10^\{14\} M\_\{\\odot\}$. We
+quantify the completeness and purity of the YOLO\-CL cluster catalog with
+respect to DC2 haloes with $M\_\{200c\} > 10^\{14\} M\_\{\\odot\}$. The YOLO\-CL cluster
+catalog is 100% and 94% complete for halo mass $M\_\{200c\} > 10^\{14.6\} M\_\{\\odot\}$
+at $0.2<z<0.8$, and $M\_\{200c\} > 10^\{14\} M\_\{\\odot\}$ and redshift $z \\lesssim 1$,
+respectively, with only 6% false positive detections. All the false positive
+detections are dark matter haloes with $ 10^\{13.4\} M\_\{\\odot\} \\lesssim M\_\{200c\}
+\\lesssim 10^\{14\} M\_\{\\odot\}$. The YOLO\-CL selection function is almost flat with
+respect to the halo mass at $0.2 \\lesssim z \\lesssim 0.9$. The overall
+performance of YOLO\-CL is comparable or better than other cluster detection
+methods used for current and future optical and infrared surveys. YOLO\-CL shows
+better completeness for low mass clusters when compared to current detections
+in surveys using the Sunyaev Zel'dovich effect, and detects clusters at higher
+redshifts than X\-ray\-based catalogs. The strong advantage of YOLO\-CL over
+traditional galaxy cluster detection techniques is that it works directly on
+images and does not require photometric and photometric redshift catalogs, nor
+does it need to mask stellar sources and artifacts.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2409.03333v1)
+
+---
+
+
+## YOLO\-PPA based Efficient Traffic Sign Detection for Cruise Control in Autonomous Driving
+
+**发布日期**：2024-09-05
+
+**作者**：Jingyu Zhang
+
+**摘要**：It is very important to detect traffic signs efficiently and accurately in
+autonomous driving systems. However, the farther the distance, the smaller the
+traffic signs. Existing object detection algorithms can hardly detect these
+small scaled signs.In addition, the performance of embedded devices on vehicles
+limits the scale of detection models.To address these challenges, a YOLO PPA
+based traffic sign detection algorithm is proposed in this paper.The
+experimental results on the GTSDB dataset show that compared to the original
+YOLO, the proposed method improves inference efficiency by 11.2%. The mAP 50 is
+also improved by 93.2%, which demonstrates the effectiveness of the proposed
+YOLO PPA.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2409.03320v1)
+
+---
+
+
 ## YoloTag: Vision\-based Robust UAV Navigation with Fiducial Markers
 
 **发布日期**：2024-09-03
@@ -260,74 +325,6 @@ curb orientation information.
 **代码链接**：摘要中未找到代码链接。
 
 **论文链接**：[阅读更多](http://arxiv.org/abs/2408.14578v2)
-
----
-
-
-## LSM\-YOLO: A Compact and Effective ROI Detector for Medical Detection
-
-**发布日期**：2024-08-26
-
-**作者**：Zhongwen Yu
-
-**摘要**：In existing medical Region of Interest \(ROI\) detection, there lacks an
-algorithm that can simultaneously satisfy both real\-time performance and
-accuracy, not meeting the growing demand for automatic detection in medicine.
-Although the basic YOLO framework ensures real\-time detection due to its fast
-speed, it still faces challenges in maintaining precision concurrently. To
-alleviate the above problems, we propose a novel model named Lightweight Shunt
-Matching\-YOLO \(LSM\-YOLO\), with Lightweight Adaptive Extraction \(LAE\) and
-Multipath Shunt Feature Matching \(MSFM\). Firstly, by using LAE to refine
-feature extraction, the model can obtain more contextual information and
-high\-resolution details from multiscale feature maps, thereby extracting
-detailed features of ROI in medical images while reducing the influence of
-noise. Secondly, MSFM is utilized to further refine the fusion of high\-level
-semantic features and low\-level visual features, enabling better fusion between
-ROI features and neighboring features, thereby improving the detection rate for
-better diagnostic assistance. Experimental results demonstrate that LSM\-YOLO
-achieves 48.6% AP on a private dataset of pancreatic tumors, 65.1% AP on the
-BCCD blood cell detection public dataset, and 73.0% AP on the Br35h brain tumor
-detection public dataset. Our model achieves state\-of\-the\-art performance with
-minimal parameter cost on the above three datasets. The source codes are at:
-https://github.com/VincentYuuuuuu/LSM\-YOLO.
-
-
-**代码链接**：https://github.com/VincentYuuuuuu/LSM-YOLO.
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2408.14087v1)
-
----
-
-
-## Enhancing Robustness of Human Detection Algorithms in Maritime SAR through Augmented Aerial Images to Simulate Weather Conditions
-
-**发布日期**：2024-08-25
-
-**作者**：Miguel Tjia
-
-**摘要**：7,651 cases of Search and Rescue Missions \(SAR\) were reported by the United
-States Coast Guard in 2024, with over 1322 SAR helicopters deployed in the 6
-first months alone. Through the utilizations of YOLO, we were able to run
-different weather conditions and lighting from our augmented dataset for
-training. YOLO then utilizes CNNs to apply a series of convolutions and pooling
-layers to the input image, where the convolution layers are able to extract the
-main features of the image. Through this, our YOLO model is able to learn to
-differentiate different objects which may considerably improve its accuracy,
-possibly enhancing the efficiency of SAR operations through enhanced detection
-accuracy. This paper aims to improve the model's accuracy of human detection in
-maritime SAR by evaluating a robust datasets containing various elevations and
-geological locations, as well as through data augmentation which simulates
-different weather and lighting. We observed that models trained on augmented
-datasets outperformed their non\-augmented counterparts in which the human
-recall scores ranged from 0.891 to 0.911 with an improvement rate of 3.4\\% on
-the YOLOv5l model. Results showed that these models demonstrate greater
-robustness to real\-world conditions in varying of weather, brightness, tint,
-and contrast.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2408.13766v2)
 
 ---
 
