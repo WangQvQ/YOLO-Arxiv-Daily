@@ -1,6 +1,43 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## BFA\-YOLO: Balanced multiscale object detection network for multi\-view building facade attachments detection
+
+**发布日期**：2024-09-06
+
+**作者**：Yangguang Chen
+
+**摘要**：Detection of building facade attachments such as doors, windows, balconies,
+air conditioner units, billboards, and glass curtain walls plays a pivotal role
+in numerous applications. Building facade attachments detection aids in
+vbuilding information modeling \(BIM\) construction and meeting Level of Detail 3
+\(LOD3\) standards. Yet, it faces challenges like uneven object distribution,
+small object detection difficulty, and background interference. To counter
+these, we propose BFA\-YOLO, a model for detecting facade attachments in
+multi\-view images. BFA\-YOLO incorporates three novel innovations: the Feature
+Balanced Spindle Module \(FBSM\) for addressing uneven distribution, the Target
+Dynamic Alignment Task Detection Head \(TDATH\) aimed at improving small object
+detection, and the Position Memory Enhanced Self\-Attention Mechanism \(PMESA\) to
+combat background interference, with each component specifically designed to
+solve its corresponding challenge. Detection efficacy of deep network models
+deeply depends on the dataset's characteristics. Existing open source datasets
+related to building facades are limited by their single perspective, small
+image pool, and incomplete category coverage. We propose a novel method for
+building facade attachments detection dataset construction and construct the
+BFA\-3D dataset for facade attachments detection. The BFA\-3D dataset features
+multi\-view, accurate labels, diverse categories, and detailed classification.
+BFA\-YOLO surpasses YOLOv8 by 1.8% and 2.9% in mAP@0.5 on the multi\-view BFA\-3D
+and street\-view Facade\-WHU datasets, respectively. These results underscore
+BFA\-YOLO's superior performance in detecting facade attachments.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2409.04025v1)
+
+---
+
+
 ## YOLO\-CL cluster detection in the Rubin/LSST DC2 simulation
 
 **发布日期**：2024-09-05
@@ -290,41 +327,6 @@ tumor resection and improving surgical outcomes.
 **代码链接**：摘要中未找到代码链接。
 
 **论文链接**：[阅读更多](http://arxiv.org/abs/2408.14847v1)
-
----
-
-
-## Multi\-faceted Sensory Substitution for Curb Alerting: A Pilot Investigation in Persons with Blindness and Low Vision
-
-**发布日期**：2024-08-26
-
-**作者**：Ligao Ruan
-
-**摘要**：Curbs \-\- the edge of a raised sidewalk at the point where it meets a street
-\-\- crucial in urban environments where they help delineate safe pedestrian
-zones, from dangerous vehicular lanes. However, curbs themselves are
-significant navigation hazards, particularly for people who are blind or have
-low vision \(pBLV\). The challenges faced by pBLV in detecting and properly
-orientating themselves for these abrupt elevation changes can lead to falls and
-serious injuries. Despite recent advancements in assistive technologies, the
-detection and early warning of curbs remains a largely unsolved challenge. This
-paper aims to tackle this gap by introducing a novel, multi\-faceted sensory
-substitution approach hosted on a smart wearable; the platform leverages an RGB
-camera and an embedded system to capture and segment curbs in real time and
-provide early warning and orientation information. The system utilizes YOLO
-\(You Only Look Once\) v8 segmentation model, trained on our custom curb dataset
-for the camera input. The output of the system consists of adaptive auditory
-beeps, abstract sonification, and speech, conveying information about the
-relative distance and orientation of curbs. Through human\-subjects
-experimentation, we demonstrate the effectiveness of the system as compared to
-the white cane. Results show that our system can provide advanced warning
-through a larger safety window than the cane, while offering nearly identical
-curb orientation information.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2408.14578v2)
 
 ---
 
