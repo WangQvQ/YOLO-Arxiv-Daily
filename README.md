@@ -293,7 +293,7 @@ open\-sourced at https://github.com/rorizzz/YOLO\-Stutter
 
 **代码链接**：https://github.com/rorizzz/YOLO-Stutter
 
-**论文链接**：[阅读更多](http://arxiv.org/abs/2408.15297v1)
+**论文链接**：[阅读更多](http://arxiv.org/abs/2408.15297v2)
 
 ---
 
