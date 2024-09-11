@@ -1,6 +1,142 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Technical Report of Mobile Manipulator Robot for Industrial Environments
+
+**发布日期**：2024-09-10
+
+**作者**：Erfan Amoozad Khalili
+
+**摘要**：This paper presents the development of the Auriga @Work robot, designed by
+the Robotics and Intelligent Automation Lab at Shahid Beheshti University,
+Department of Electrical Engineering, for the RoboCup 2024 competition. The
+robot is tailored for industrial applications, focusing on enhancing efficiency
+in repetitive or hazardous environments. It is equipped with a 4\-wheel Mecanum
+drive system for omnidirectional mobility and a 5\-degree\-of\-freedom manipulator
+arm with a custom 3D\-printed gripper for object manipulation and navigation
+tasks. The robot's electronics are powered by custom\-designed boards utilizing
+ESP32 microcontrollers and an Nvidia Jetson Nano for real\-time control and
+decision\-making. The key software stack integrates Hector SLAM for mapping, the
+A\* algorithm for path planning, and YOLO for object detection, along with
+advanced sensor fusion for improved navigation and collision avoidance.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2409.06693v1)
+
+---
+
+
+## A Semantic Segmentation Approach on Sweet Orange Leaf Diseases Detection Utilizing YOLO
+
+**发布日期**：2024-09-10
+
+**作者**：Sabit Ahamed Preanto
+
+**摘要**：This research introduces an advanced method for diagnosing diseases in sweet
+orange leaves by utilising advanced artificial intelligence models like YOLOv8
+. Due to their significance as a vital agricultural product, sweet oranges
+encounter significant threats from a variety of diseases that harmfully affect
+both their yield and quality. Conventional methods for disease detection
+primarily depend on manual inspection which is ineffective and frequently leads
+to errors, resulting in delayed treatment and increased financial losses. In
+response to this challenge, the research utilized YOLOv8 , harnessing their
+proficiencies in detecting objects and analyzing images. YOLOv8 is recognized
+for its rapid and precise performance, while VIT is acknowledged for its
+detailed feature extraction abilities. Impressively, during both the training
+and validation stages, YOLOv8 exhibited a perfect accuracy of 80.4%, while VIT
+achieved an accuracy of 99.12%, showcasing their potential to transform disease
+detection in agriculture. The study comprehensively examined the practical
+challenges related to the implementation of AI technologies in agriculture,
+encompassing the computational demands and user accessibility, and offering
+viable solutions for broader usage. Moreover, it underscores the environmental
+considerations, particularly the potential for reduced pesticide usage, thereby
+promoting sustainable farming and environmental conservation. These findings
+provide encouraging insights into the application of AI in agriculture,
+suggesting a transition towards more effective, sustainable, and
+technologically advanced farming methods. This research not only highlights the
+efficacy of YOLOv8 within a specific agricultural domain but also lays the
+foundation for further studies that encompass a broader application in crop
+management and sustainable agricultural practices.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2409.06671v1)
+
+---
+
+
+## An Attribute\-Enriched Dataset and Auto\-Annotated Pipeline for Open Detection
+
+**发布日期**：2024-09-10
+
+**作者**：Pengfei Qi
+
+**摘要**：Detecting objects of interest through language often presents challenges,
+particularly with objects that are uncommon or complex to describe, due to
+perceptual discrepancies between automated models and human annotators. These
+challenges highlight the need for comprehensive datasets that go beyond
+standard object labels by incorporating detailed attribute descriptions. To
+address this need, we introduce the Objects365\-Attr dataset, an extension of
+the existing Objects365 dataset, distinguished by its attribute annotations.
+This dataset reduces inconsistencies in object detection by integrating a broad
+spectrum of attributes, including color, material, state, texture and tone. It
+contains an extensive collection of 5.6M object\-level attribute descriptions,
+meticulously annotated across 1.4M bounding boxes. Additionally, to validate
+the dataset's effectiveness, we conduct a rigorous evaluation of YOLO\-World at
+different scales, measuring their detection performance and demonstrating the
+dataset's contribution to advancing object detection.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2409.06300v1)
+
+---
+
+
+## ALSS\-YOLO: An Adaptive Lightweight Channel Split and Shuffling Network for TIR Wildlife Detection in UAV Imagery
+
+**发布日期**：2024-09-10
+
+**作者**：Ang He
+
+**摘要**：Unmanned aerial vehicles \(UAVs\) equipped with thermal infrared \(TIR\) cameras
+play a crucial role in combating nocturnal wildlife poaching. However, TIR
+images often face challenges such as jitter, and wildlife overlap,
+necessitating UAVs to possess the capability to identify blurred and
+overlapping small targets. Current traditional lightweight networks deployed on
+UAVs struggle to extract features from blurry small targets. To address this
+issue, we developed ALSS\-YOLO, an efficient and lightweight detector optimized
+for TIR aerial images. Firstly, we propose a novel Adaptive Lightweight Channel
+Split and Shuffling \(ALSS\) module. This module employs an adaptive channel
+split strategy to optimize feature extraction and integrates a channel
+shuffling mechanism to enhance information exchange between channels. This
+improves the extraction of blurry features, crucial for handling jitter\-induced
+blur and overlapping targets. Secondly, we developed a Lightweight Coordinate
+Attention \(LCA\) module that employs adaptive pooling and grouped convolution to
+integrate feature information across dimensions. This module ensures
+lightweight operation while maintaining high detection precision and robustness
+against jitter and target overlap. Additionally, we developed a single\-channel
+focus module to aggregate the width and height information of each channel into
+four\-dimensional channel fusion, which improves the feature representation
+efficiency of infrared images. Finally, we modify the localization loss
+function to emphasize the loss value associated with small objects to improve
+localization accuracy. Extensive experiments on the BIRDSAI and ISOD TIR UAV
+wildlife datasets show that ALSS\-YOLO achieves state\-of\-the\-art performance,
+Our code is openly available at
+https://github.com/helloworlder8/computer\_vision.
+
+
+**代码链接**：https://github.com/helloworlder8/computer_vision.
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2409.06259v1)
+
+---
+
+
 ## BFA\-YOLO: Balanced multiscale object detection network for multi\-view building facade attachments detection
 
 **发布日期**：2024-09-06
@@ -204,129 +340,6 @@ model component to the overall system performance.
 **代码链接**：摘要中未找到代码链接。
 
 **论文链接**：[阅读更多](http://arxiv.org/abs/2409.00388v1)
-
----
-
-
-## FA\-YOLO: Research On Efficient Feature Selection YOLO Improved Algorithm Based On FMDS and AGMF Modules
-
-**发布日期**：2024-08-29
-
-**作者**：Yukang Huo
-
-**摘要**：Over the past few years, the YOLO series of models has emerged as one of the
-dominant methodologies in the realm of object detection. Many studies have
-advanced these baseline models by modifying their architectures, enhancing data
-quality, and developing new loss functions. However, current models still
-exhibit deficiencies in processing feature maps, such as overlooking the fusion
-of cross\-scale features and a static fusion approach that lacks the capability
-for dynamic feature adjustment. To address these issues, this paper introduces
-an efficient Fine\-grained Multi\-scale Dynamic Selection Module \(FMDS Module\),
-which applies a more effective dynamic feature selection and fusion method on
-fine\-grained multi\-scale feature maps, significantly enhancing the detection
-accuracy of small, medium, and large\-sized targets in complex environments.
-Furthermore, this paper proposes an Adaptive Gated Multi\-branch Focus Fusion
-Module \(AGMF Module\), which utilizes multiple parallel branches to perform
-complementary fusion of various features captured by the gated unit branch,
-FMDS Module branch, and TripletAttention branch. This approach further enhances
-the comprehensiveness, diversity, and integrity of feature fusion. This paper
-has integrated the FMDS Module, AGMF Module, into Yolov9 to develop a novel
-object detection model named FA\-YOLO. Extensive experimental results show that
-under identical experimental conditions, FA\-YOLO achieves an outstanding 66.1%
-mean Average Precision \(mAP\) on the PASCAL VOC 2007 dataset, representing 1.0%
-improvement over YOLOv9's 65.1%. Additionally, the detection accuracies of
-FA\-YOLO for small, medium, and large targets are 44.1%, 54.6%, and 70.8%,
-respectively, showing improvements of 2.0%, 3.1%, and 0.9% compared to YOLOv9's
-42.1%, 51.5%, and 69.9%.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2408.16313v1)
-
----
-
-
-## microYOLO: Towards Single\-Shot Object Detection on Microcontrollers
-
-**发布日期**：2024-08-28
-
-**作者**：Mark Deutel
-
-**摘要**：This work\-in\-progress paper presents results on the feasibility of
-single\-shot object detection on microcontrollers using YOLO. Single\-shot object
-detectors like YOLO are widely used, however due to their complexity mainly on
-larger GPU\-based platforms. We present microYOLO, which can be used on Cortex\-M
-based microcontrollers, such as the OpenMV H7 R2, achieving about 3.5 FPS when
-classifying 128x128 RGB images while using less than 800 KB Flash and less than
-350 KB RAM. Furthermore, we share experimental results for three different
-object detection tasks, analyzing the accuracy of microYOLO on them.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2408.15865v1)
-
----
-
-
-## YOLO\-Stutter: End\-to\-end Region\-Wise Speech Dysfluency Detection
-
-**发布日期**：2024-08-27
-
-**作者**：Xuanru Zhou
-
-**摘要**：Dysfluent speech detection is the bottleneck for disordered speech analysis
-and spoken language learning. Current state\-of\-the\-art models are governed by
-rule\-based systems which lack efficiency and robustness, and are sensitive to
-template design. In this paper, we propose YOLO\-Stutter: a first end\-to\-end
-method that detects dysfluencies in a time\-accurate manner. YOLO\-Stutter takes
-imperfect speech\-text alignment as input, followed by a spatial feature
-aggregator, and a temporal dependency extractor to perform region\-wise boundary
-and class predictions. We also introduce two dysfluency corpus, VCTK\-Stutter
-and VCTK\-TTS, that simulate natural spoken dysfluencies including repetition,
-block, missing, replacement, and prolongation. Our end\-to\-end method achieves
-state\-of\-the\-art performance with a minimum number of trainable parameters for
-on both simulated data and real aphasia speech. Code and datasets are
-open\-sourced at https://github.com/rorizzz/YOLO\-Stutter
-
-
-**代码链接**：https://github.com/rorizzz/YOLO-Stutter
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2408.15297v2)
-
----
-
-
-## Intraoperative Glioma Segmentation with YOLO \+ SAM for Improved Accuracy in Tumor Resection
-
-**发布日期**：2024-08-27
-
-**作者**：Samir Kassam
-
-**摘要**：Gliomas, a common type of malignant brain tumor, present significant surgical
-challenges due to their similarity to healthy tissue. Preoperative Magnetic
-Resonance Imaging \(MRI\) images are often ineffective during surgery due to
-factors such as brain shift, which alters the position of brain structures and
-tumors. This makes real\-time intraoperative MRI \(ioMRI\) crucial, as it provides
-updated imaging that accounts for these shifts, ensuring more accurate tumor
-localization and safer resections. This paper presents a deep learning pipeline
-combining You Only Look Once Version 8 \(YOLOv8\) and Segment Anything Model
-Vision Transformer\-base \(SAM ViT\-b\) to enhance glioma detection and
-segmentation during ioMRI. Our model was trained using the Brain Tumor
-Segmentation 2021 \(BraTS 2021\) dataset, which includes standard magnetic
-resonance imaging \(MRI\) images, and noise\-augmented MRI images that simulate
-ioMRI images. Noised MRI images are harder for a deep learning pipeline to
-segment, but they are more representative of surgical conditions. Achieving a
-Dice Similarity Coefficient \(DICE\) score of 0.79, our model performs comparably
-to state\-of\-the\-art segmentation models tested on noiseless data. This
-performance demonstrates the model's potential to assist surgeons in maximizing
-tumor resection and improving surgical outcomes.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2408.14847v1)
 
 ---
 
