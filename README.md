@@ -132,7 +132,7 @@ https://github.com/helloworlder8/computer\_vision.
 
 **代码链接**：https://github.com/helloworlder8/computer_vision.
 
-**论文链接**：[阅读更多](http://arxiv.org/abs/2409.06259v1)
+**论文链接**：[阅读更多](http://arxiv.org/abs/2409.06259v2)
 
 ---
 
