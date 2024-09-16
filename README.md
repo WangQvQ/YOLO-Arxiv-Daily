@@ -1,6 +1,129 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Breaking reCAPTCHAv2
+
+**发布日期**：2024-09-13
+
+**作者**：Andreas Plesner
+
+**摘要**：Our work examines the efficacy of employing advanced machine learning methods
+to solve captchas from Google's reCAPTCHAv2 system. We evaluate the
+effectiveness of automated systems in solving captchas by utilizing advanced
+YOLO models for image segmentation and classification. Our main result is that
+we can solve 100% of the captchas, while previous work only solved 68\-71%.
+Furthermore, our findings suggest that there is no significant difference in
+the number of challenges humans and bots must solve to pass the captchas in
+reCAPTCHAv2. This implies that current AI technologies can exploit advanced
+image\-based captchas. We also look under the hood of reCAPTCHAv2, and find
+evidence that reCAPTCHAv2 is heavily based on cookie and browser history data
+when evaluating whether a user is human or not. The code is provided alongside
+this paper.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2409.08831v1)
+
+---
+
+
+## TapToTab : Video\-Based Guitar Tabs Generation using AI and Audio Analysis
+
+**发布日期**：2024-09-13
+
+**作者**：Ali Ghaleb
+
+**摘要**：The automation of guitar tablature generation from video inputs holds
+significant promise for enhancing music education, transcription accuracy, and
+performance analysis. Existing methods face challenges with consistency and
+completeness, particularly in detecting fretboards and accurately identifying
+notes. To address these issues, this paper introduces an advanced approach
+leveraging deep learning, specifically YOLO models for real\-time fretboard
+detection, and Fourier Transform\-based audio analysis for precise note
+identification. Experimental results demonstrate substantial improvements in
+detection accuracy and robustness compared to traditional techniques. This
+paper outlines the development, implementation, and evaluation of these
+methodologies, aiming to revolutionize guitar instruction by automating the
+creation of guitar tabs from video recordings.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2409.08618v1)
+
+---
+
+
+## Mamba\-YOLO\-World: Marrying YOLO\-World with Mamba for Open\-Vocabulary Detection
+
+**发布日期**：2024-09-13
+
+**作者**：Haoxuan Wang
+
+**摘要**：Open\-vocabulary detection \(OVD\) aims to detect objects beyond a predefined
+set of categories. As a pioneering model incorporating the YOLO series into
+OVD, YOLO\-World is well\-suited for scenarios prioritizing speed and
+efficiency.However, its performance is hindered by its neck feature fusion
+mechanism, which causes the quadratic complexity and the limited guided
+receptive fields.To address these limitations, we present Mamba\-YOLO\-World, a
+novel YOLO\-based OVD model employing the proposed MambaFusion Path Aggregation
+Network \(MambaFusion\-PAN\) as its neck architecture. Specifically, we introduce
+an innovative State Space Model\-based feature fusion mechanism consisting of a
+Parallel\-Guided Selective Scan algorithm and a Serial\-Guided Selective Scan
+algorithm with linear complexity and globally guided receptive fields. It
+leverages multi\-modal input sequences and mamba hidden states to guide the
+selective scanning process.Experiments demonstrate that our model outperforms
+the original YOLO\-World on the COCO and LVIS benchmarks in both zero\-shot and
+fine\-tuning settings while maintaining comparable parameters and FLOPs.
+Additionally, it surpasses existing state\-of\-the\-art OVD methods with fewer
+parameters and FLOPs.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2409.08513v1)
+
+---
+
+
+## RT\-DETRv3: Real\-time End\-to\-End Object Detection with Hierarchical Dense Positive Supervision
+
+**发布日期**：2024-09-13
+
+**作者**：Shuo Wang
+
+**摘要**：RT\-DETR is the first real\-time end\-to\-end transformer\-based object detector.
+Its efficiency comes from the framework design and the Hungarian matching.
+However, compared to dense supervision detectors like the YOLO series, the
+Hungarian matching provides much sparser supervision, leading to insufficient
+model training and difficult to achieve optimal results. To address these
+issues, we proposed a hierarchical dense positive supervision method based on
+RT\-DETR, named RT\-DETRv3. Firstly, we introduce a CNN\-based auxiliary branch
+that provides dense supervision that collaborates with the original decoder to
+enhance the encoder feature representation. Secondly, to address insufficient
+decoder training, we propose a novel learning strategy involving self\-attention
+perturbation. This strategy diversifies label assignment for positive samples
+across multiple query groups, thereby enriching positive supervisions.
+Additionally, we introduce a shared\-weight decoder branch for dense positive
+supervision to ensure more high\-quality queries matching each ground truth.
+Notably, all aforementioned modules are training\-only. We conduct extensive
+experiments to demonstrate the effectiveness of our approach on COCO val2017.
+RT\-DETRv3 significantly outperforms existing real\-time detectors, including the
+RT\-DETR series and the YOLO series. For example, RT\-DETRv3\-R18 achieves 48.1%
+AP \(\+1.6%/\+1.4%\) compared to RT\-DETR\-R18/RT\-DETRv2\-R18 while maintaining the
+same latency. Meanwhile, it requires only half of epochs to attain a comparable
+performance. Furthermore, RT\-DETRv3\-R101 can attain an impressive 54.6% AP
+outperforming YOLOv10\-X. Code will be released soon.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2409.08475v1)
+
+---
+
+
 ## Technical Report of Mobile Manipulator Robot for Industrial Environments
 
 **发布日期**：2024-09-10
@@ -210,136 +333,6 @@ does it need to mask stellar sources and artifacts.
 **代码链接**：摘要中未找到代码链接。
 
 **论文链接**：[阅读更多](http://arxiv.org/abs/2409.03333v1)
-
----
-
-
-## YOLO\-PPA based Efficient Traffic Sign Detection for Cruise Control in Autonomous Driving
-
-**发布日期**：2024-09-05
-
-**作者**：Jingyu Zhang
-
-**摘要**：It is very important to detect traffic signs efficiently and accurately in
-autonomous driving systems. However, the farther the distance, the smaller the
-traffic signs. Existing object detection algorithms can hardly detect these
-small scaled signs.In addition, the performance of embedded devices on vehicles
-limits the scale of detection models.To address these challenges, a YOLO PPA
-based traffic sign detection algorithm is proposed in this paper.The
-experimental results on the GTSDB dataset show that compared to the original
-YOLO, the proposed method improves inference efficiency by 11.2%. The mAP 50 is
-also improved by 93.2%, which demonstrates the effectiveness of the proposed
-YOLO PPA.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2409.03320v1)
-
----
-
-
-## YoloTag: Vision\-based Robust UAV Navigation with Fiducial Markers
-
-**发布日期**：2024-09-03
-
-**作者**：Sourav Raxit
-
-**摘要**：By harnessing fiducial markers as visual landmarks in the environment,
-Unmanned Aerial Vehicles \(UAVs\) can rapidly build precise maps and navigate
-spaces safely and efficiently, unlocking their potential for fluent
-collaboration and coexistence with humans. Existing fiducial marker methods
-rely on handcrafted feature extraction, which sacrifices accuracy. On the other
-hand, deep learning pipelines for marker detection fail to meet real\-time
-runtime constraints crucial for navigation applications. In this work, we
-propose YoloTag \\textemdash a real\-time fiducial marker\-based localization
-system. YoloTag uses a lightweight YOLO v8 object detector to accurately detect
-fiducial markers in images while meeting the runtime constraints needed for
-navigation. The detected markers are then used by an efficient
-perspective\-n\-point algorithm to estimate UAV states. However, this
-localization system introduces noise, causing instability in trajectory
-tracking. To suppress noise, we design a higher\-order Butterworth filter that
-effectively eliminates noise through frequency domain analysis. We evaluate our
-algorithm through real\-robot experiments in an indoor environment, comparing
-the trajectory tracking performance of our method against other approaches in
-terms of several distance metrics.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2409.02334v1)
-
----
-
-
-## DS MYOLO: A Reliable Object Detector Based on SSMs for Driving Scenarios
-
-**发布日期**：2024-09-02
-
-**作者**：Yang Li
-
-**摘要**：Accurate real\-time object detection enhances the safety of advanced
-driver\-assistance systems, making it an essential component in driving
-scenarios. With the rapid development of deep learning technology, CNN\-based
-YOLO real\-time object detectors have gained significant attention. However, the
-local focus of CNNs results in performance bottlenecks. To further enhance
-detector performance, researchers have introduced Transformer\-based
-self\-attention mechanisms to leverage global receptive fields, but their
-quadratic complexity incurs substantial computational costs. Recently, Mamba,
-with its linear complexity, has made significant progress through global
-selective scanning. Inspired by Mamba's outstanding performance, we propose a
-novel object detector: DS MYOLO. This detector captures global feature
-information through a simplified selective scanning fusion block \(SimVSS Block\)
-and effectively integrates the network's deep features. Additionally, we
-introduce an efficient channel attention convolution \(ECAConv\) that enhances
-cross\-channel feature interaction while maintaining low computational
-complexity. Extensive experiments on the CCTSDB 2021 and VLD\-45 driving
-scenarios datasets demonstrate that DS MYOLO exhibits significant potential and
-competitive advantage among similarly scaled YOLO series real\-time object
-detectors.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2409.01093v1)
-
----
-
-
-## A method for detecting dead fish on large water surfaces based on improved YOLOv10
-
-**发布日期**：2024-08-31
-
-**作者**：Qingbin Tian
-
-**摘要**：Dead fish frequently appear on the water surface due to various factors. If
-not promptly detected and removed, these dead fish can cause significant issues
-such as water quality deterioration, ecosystem damage, and disease
-transmission. Consequently, it is imperative to develop rapid and effective
-detection methods to mitigate these challenges. Conventional methods for
-detecting dead fish are often constrained by manpower and time limitations,
-struggling to effectively manage the intricacies of aquatic environments. This
-paper proposes an end\-to\-end detection model built upon an enhanced YOLOv10
-framework, designed specifically to swiftly and precisely detect deceased fish
-across extensive water surfaces.Key enhancements include: \(1\) Replacing
-YOLOv10's backbone network with FasterNet to reduce model complexity while
-maintaining high detection accuracy; \(2\) Improving feature fusion in the Neck
-section through enhanced connectivity methods and replacing the original C2f
-module with CSPStage modules; \(3\) Adding a compact target detection head to
-enhance the detection performance of smaller objects. Experimental results
-demonstrate significant improvements in P\(precision\), R\(recall\), and AP\(average
-precision\) compared to the baseline model YOLOv10n. Furthermore, our model
-outperforms other models in the YOLO series by significantly reducing model
-size and parameter count, while sustaining high inference speed and achieving
-optimal AP performance. The model facilitates rapid and accurate detection of
-dead fish in large\-scale aquaculture systems. Finally, through ablation
-experiments, we systematically analyze and assess the contribution of each
-model component to the overall system performance.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2409.00388v1)
 
 ---
 
