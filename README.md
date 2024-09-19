@@ -1,6 +1,40 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## RMP\-YOLO: A Robust Motion Predictor for Partially Observable Scenarios even if You Only Look Once
+
+**发布日期**：2024-09-18
+
+**作者**：Jiawei Sun
+
+**摘要**：We introduce RMP\-YOLO, a unified framework designed to provide robust motion
+predictions even with incomplete input data. Our key insight stems from the
+observation that complete and reliable historical trajectory data plays a
+pivotal role in ensuring accurate motion prediction. Therefore, we propose a
+new paradigm that prioritizes the reconstruction of intact historical
+trajectories before feeding them into the prediction modules. Our approach
+introduces a novel scene tokenization module to enhance the extraction and
+fusion of spatial and temporal features. Following this, our proposed recovery
+module reconstructs agents' incomplete historical trajectories by leveraging
+local map topology and interactions with nearby agents. The reconstructed,
+clean historical data is then integrated into the downstream prediction
+modules. Our framework is able to effectively handle missing data of varying
+lengths and remains robust against observation noise, while maintaining high
+prediction accuracy. Furthermore, our recovery module is compatible with
+existing prediction models, ensuring seamless integration. Extensive
+experiments validate the effectiveness of our approach, and deployment in
+real\-world autonomous vehicles confirms its practical utility. In the 2024
+Waymo Motion Prediction Competition, our method, RMP\-YOLO, achieves
+state\-of\-the\-art performance, securing third place.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2409.11696v1)
+
+---
+
+
 ## ASMA: An Adaptive Safety Margin Algorithm for Vision\-Language Drone Navigation via Scene\-Aware Control Barrier Functions
 
 **发布日期**：2024-09-16
@@ -254,7 +288,7 @@ parameters and FLOPs.
 
 **代码链接**：摘要中未找到代码链接。
 
-**论文链接**：[阅读更多](http://arxiv.org/abs/2409.08513v2)
+**论文链接**：[阅读更多](http://arxiv.org/abs/2409.08513v3)
 
 ---
 
@@ -292,33 +326,6 @@ outperforming YOLOv10\-X. Code will be released soon.
 **代码链接**：摘要中未找到代码链接。
 
 **论文链接**：[阅读更多](http://arxiv.org/abs/2409.08475v1)
-
----
-
-
-## Technical Report of Mobile Manipulator Robot for Industrial Environments
-
-**发布日期**：2024-09-10
-
-**作者**：Erfan Amoozad Khalili
-
-**摘要**：This paper presents the development of the Auriga @Work robot, designed by
-the Robotics and Intelligent Automation Lab at Shahid Beheshti University,
-Department of Electrical Engineering, for the RoboCup 2024 competition. The
-robot is tailored for industrial applications, focusing on enhancing efficiency
-in repetitive or hazardous environments. It is equipped with a 4\-wheel Mecanum
-drive system for omnidirectional mobility and a 5\-degree\-of\-freedom manipulator
-arm with a custom 3D\-printed gripper for object manipulation and navigation
-tasks. The robot's electronics are powered by custom\-designed boards utilizing
-ESP32 microcontrollers and an Nvidia Jetson Nano for real\-time control and
-decision\-making. The key software stack integrates Hector SLAM for mapping, the
-A\* algorithm for path planning, and YOLO for object detection, along with
-advanced sensor fusion for improved navigation and collision avoidance.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2409.06693v1)
 
 ---
 
