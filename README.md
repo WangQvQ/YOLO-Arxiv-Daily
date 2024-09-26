@@ -1,331 +1,322 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
-## RMP\-YOLO: A Robust Motion Predictor for Partially Observable Scenarios even if You Only Look Once
+## Classification of Gleason Grading in Prostate Cancer Histopathology Images Using Deep Learning Techniques: YOLO, Vision Transformers, and Vision Mamba
 
-**发布日期**：2024-09-18
+**发布日期**：2024-09-25
 
-**作者**：Jiawei Sun
+**作者**：Amin Malekmohammadi
 
-**摘要**：We introduce RMP\-YOLO, a unified framework designed to provide robust motion
-predictions even with incomplete input data. Our key insight stems from the
-observation that complete and reliable historical trajectory data plays a
-pivotal role in ensuring accurate motion prediction. Therefore, we propose a
-new paradigm that prioritizes the reconstruction of intact historical
-trajectories before feeding them into the prediction modules. Our approach
-introduces a novel scene tokenization module to enhance the extraction and
-fusion of spatial and temporal features. Following this, our proposed recovery
-module reconstructs agents' incomplete historical trajectories by leveraging
-local map topology and interactions with nearby agents. The reconstructed,
-clean historical data is then integrated into the downstream prediction
-modules. Our framework is able to effectively handle missing data of varying
-lengths and remains robust against observation noise, while maintaining high
-prediction accuracy. Furthermore, our recovery module is compatible with
-existing prediction models, ensuring seamless integration. Extensive
-experiments validate the effectiveness of our approach, and deployment in
-real\-world autonomous vehicles confirms its practical utility. In the 2024
-Waymo Motion Prediction Competition, our method, RMP\-YOLO, achieves
-state\-of\-the\-art performance, securing third place.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2409.11696v1)
-
----
-
-
-## ASMA: An Adaptive Safety Margin Algorithm for Vision\-Language Drone Navigation via Scene\-Aware Control Barrier Functions
-
-**发布日期**：2024-09-16
-
-**作者**：Sourav Sanyal
-
-**摘要**：In the rapidly evolving field of vision\-language navigation \(VLN\), ensuring
-robust safety mechanisms remains an open challenge. Control barrier functions
-\(CBFs\) are efficient tools which guarantee safety by solving an optimal control
-problem. In this work, we consider the case of a teleoperated drone in a VLN
-setting, and add safety features by formulating a novel scene\-aware CBF using
-ego\-centric observations obtained through an RGB\-D sensor. As a baseline, we
-implement a vision\-language understanding module which uses the contrastive
-language image pretraining \(CLIP\) model to query about a user\-specified \(in
-natural language\) landmark. Using the YOLO \(You Only Look Once\) object
-detector, the CLIP model is queried for verifying the cropped landmark,
-triggering downstream navigation. To improve navigation safety of the baseline,
-we propose ASMA \-\- an Adaptive Safety Margin Algorithm \-\- that crops the
-drone's depth map for tracking moving object\(s\) to perform scene\-aware CBF
-evaluation on\-the\-fly. By identifying potential risky observations from the
-scene, ASMA enables real\-time adaptation to unpredictable environmental
-conditions, ensuring optimal safety bounds on a VLN\-powered drone actions.
-Using the robot operating system \(ROS\) middleware on a parrot bebop2 quadrotor
-in the gazebo environment, ASMA offers 59.4% \- 61.8% increase in success rates
-with insignificant 5.4% \- 8.2% increases in trajectory lengths compared to the
-baseline CBF\-less VLN while recovering from unsafe situations.
+**摘要**：Prostate cancer ranks among the leading health issues impacting men, with the
+Gleason scoring system serving as the primary method for diagnosis and
+prognosis. This system relies on expert pathologists to evaluate samples of
+prostate tissue and assign a Gleason grade, a task that requires significant
+time and manual effort. To address this challenge, artificial intelligence \(AI\)
+solutions have been explored to automate the grading process. In light of these
+challenges, this study evaluates and compares the effectiveness of three deep
+learning methodologies, YOLO, Vision Transformers, and Vision Mamba, in
+accurately classifying Gleason grades from histopathology images. The goal is
+to enhance diagnostic precision and efficiency in prostate cancer management.
+This study utilized two publicly available datasets, Gleason2019 and SICAPv2,
+to train and test the performance of YOLO, Vision Transformers, and Vision
+Mamba models. Each model was assessed based on its ability to classify Gleason
+grades accurately, considering metrics such as false positive rate, false
+negative rate, precision, and recall. The study also examined the computational
+efficiency and applicability of each method in a clinical setting. Vision Mamba
+demonstrated superior performance across all metrics, achieving high precision
+and recall rates while minimizing false positives and negatives. YOLO showed
+promise in terms of speed and efficiency, particularly beneficial for real\-time
+analysis. Vision Transformers excelled in capturing long\-range dependencies
+within images, although they presented higher computational complexity compared
+to the other models. Vision Mamba emerges as the most effective model for
+Gleason grade classification in histopathology images, offering a balance
+between accuracy and computational efficiency.
 
 
 **代码链接**：摘要中未找到代码链接。
 
-**论文链接**：[阅读更多](http://arxiv.org/abs/2409.10283v1)
+**论文链接**：[阅读更多](http://arxiv.org/abs/2409.17122v1)
 
 ---
 
 
-## Self\-Updating Vehicle Monitoring Framework Employing Distributed Acoustic Sensing towards Real\-World Settings
+## Deep Learning and Machine Learning, Advancing Big Data Analytics and Management: Handy Appetizer
 
-**发布日期**：2024-09-16
+**发布日期**：2024-09-25
 
-**作者**：Xi Wang
+**作者**：Benji Peng
 
-**摘要**：The recent emergence of Distributed Acoustic Sensing \(DAS\) technology has
-facilitated the effective capture of traffic\-induced seismic data. The
-traffic\-induced seismic wave is a prominent contributor to urban vibrations and
-contain crucial information to advance urban exploration and governance.
-However, identifying vehicular movements within massive noisy data poses a
-significant challenge. In this study, we introduce a real\-time semi\-supervised
-vehicle monitoring framework tailored to urban settings. It requires only a
-small fraction of manual labels for initial training and exploits unlabeled
-data for model improvement. Additionally, the framework can autonomously adapt
-to newly collected unlabeled data. Before DAS data undergo object detection as
-two\-dimensional images to preserve spatial information, we leveraged
-comprehensive one\-dimensional signal preprocessing to mitigate noise.
-Furthermore, we propose a novel prior loss that incorporates the shapes of
-vehicular traces to track a single vehicle with varying speeds. To evaluate our
-model, we conducted experiments with seismic data from the Stanford 2 DAS
-Array. The results showed that our model outperformed the baseline model
-Efficient Teacher and its supervised counterpart, YOLO \(You Only Look Once\), in
-both accuracy and robustness. With only 35 labeled images, our model surpassed
-YOLO's mAP 0.5:0.95 criterion by 18% and showed a 7% increase over Efficient
-Teacher. We conducted comparative experiments with multiple update strategies
-for self\-updating and identified an optimal approach. This approach surpasses
-the performance of non\-overfitting training conducted with all data in a single
-pass.
+**摘要**：This book explores the role of Artificial Intelligence \(AI\), Machine Learning
+\(ML\), and Deep Learning \(DL\) in driving the progress of big data analytics and
+management. The book focuses on simplifying the complex mathematical concepts
+behind deep learning, offering intuitive visualizations and practical case
+studies to help readers understand how neural networks and technologies like
+Convolutional Neural Networks \(CNNs\) work. It introduces several classic models
+and technologies such as Transformers, GPT, ResNet, BERT, and YOLO,
+highlighting their applications in fields like natural language processing,
+image recognition, and autonomous driving. The book also emphasizes the
+importance of pre\-trained models and how they can enhance model performance and
+accuracy, with instructions on how to apply these models in various real\-world
+scenarios. Additionally, it provides an overview of key big data management
+technologies like SQL and NoSQL databases, as well as distributed computing
+frameworks such as Apache Hadoop and Spark, explaining their importance in
+managing and processing vast amounts of data. Ultimately, the book underscores
+the value of mastering deep learning and big data management skills as critical
+tools for the future workforce, making it an essential resource for both
+beginners and experienced professionals.
 
 
 **代码链接**：摘要中未找到代码链接。
 
-**论文链接**：[阅读更多](http://arxiv.org/abs/2409.10259v1)
+**论文链接**：[阅读更多](http://arxiv.org/abs/2409.17120v1)
 
 ---
 
 
-## Tracking Virtual Meetings in the Wild: Re\-identification in Multi\-Participant Virtual Meetings
+## Source\-Free Domain Adaptation for YOLO Object Detection
 
-**发布日期**：2024-09-15
+**发布日期**：2024-09-25
 
-**作者**：Oriel Perl
+**作者**：Simon Varailhon
 
-**摘要**：In recent years, workplaces and educational institutes have widely adopted
-virtual meeting platforms. This has led to a growing interest in analyzing and
-extracting insights from these meetings, which requires effective detection and
-tracking of unique individuals. In practice, there is no standardization in
-video meetings recording layout, and how they are captured across the different
-platforms and services. This, in turn, creates a challenge in acquiring this
-data stream and analyzing it in a uniform fashion. Our approach provides a
-solution to the most general form of video recording, usually consisting of a
-grid of participants \(\\cref\{fig:videomeeting\}\) from a single video source with
-no metadata on participant locations, while using the least amount of
-constraints and assumptions as to how the data was acquired. Conventional
-approaches often use YOLO models coupled with tracking algorithms, assuming
-linear motion trajectories akin to that observed in CCTV footage. However, such
-assumptions fall short in virtual meetings, where participant video feed window
-can abruptly change location across the grid. In an organic video meeting
-setting, participants frequently join and leave, leading to sudden, non\-linear
-movements on the video grid. This disrupts optical flow\-based tracking methods
-that depend on linear motion. Consequently, standard object detection and
-tracking methods might mistakenly assign multiple participants to the same
-tracker. In this paper, we introduce a novel approach to track and re\-identify
-participants in remote video meetings, by utilizing the spatio\-temporal priors
-arising from the data in our domain. This, in turn, increases tracking
-capabilities compared to the use of general object tracking. Our approach
-reduces the error rate by 95% on average compared to YOLO\-based tracking
-methods as a baseline.
+**摘要**：Source\-free domain adaptation \(SFDA\) is a challenging problem in object
+detection, where a pre\-trained source model is adapted to a new target domain
+without using any source domain data for privacy and efficiency reasons. Most
+state\-of\-the\-art SFDA methods for object detection have been proposed for
+Faster\-RCNN, a detector that is known to have high computational complexity.
+This paper focuses on domain adaptation techniques for real\-world vision
+systems, particularly for the YOLO family of single\-shot detectors known for
+their fast baselines and practical applications. Our proposed SFDA method \-
+Source\-Free YOLO \(SF\-YOLO\) \- relies on a teacher\-student framework in which the
+student receives images with a learned, target domain\-specific augmentation,
+allowing the model to be trained with only unlabeled target data and without
+requiring feature alignment. A challenge with self\-training using a
+mean\-teacher architecture in the absence of labels is the rapid decline of
+accuracy due to noisy or drifting pseudo\-labels. To address this issue, a
+teacher\-to\-student communication mechanism is introduced to help stabilize the
+training and reduce the reliance on annotated target data for model selection.
+Despite its simplicity, our approach is competitive with state\-of\-the\-art
+detectors on several challenging benchmark datasets, even sometimes
+outperforming methods that use source data for adaptation.
 
 
 **代码链接**：摘要中未找到代码链接。
 
-**论文链接**：[阅读更多](http://arxiv.org/abs/2409.09841v1)
+**论文链接**：[阅读更多](http://arxiv.org/abs/2409.16538v1)
 
 ---
 
 
-## Stutter\-Solver: End\-to\-end Multi\-lingual Dysfluency Detection
+## Segmentation Strategies in Deep Learning for Prostate Cancer Diagnosis: A Comparative Study of Mamba, SAM, and YOLO
 
-**发布日期**：2024-09-15
+**发布日期**：2024-09-24
 
-**作者**：Xuanru Zhou
+**作者**：Ali Badiezadeh
 
-**摘要**：Current de\-facto dysfluency modeling methods utilize template matching
-algorithms which are not generalizable to out\-of\-domain real\-world dysfluencies
-across languages, and are not scalable with increasing amounts of training
-data. To handle these problems, we propose Stutter\-Solver: an end\-to\-end
-framework that detects dysfluency with accurate type and time transcription,
-inspired by the YOLO object detection algorithm. Stutter\-Solver can handle
-co\-dysfluencies and is a natural multi\-lingual dysfluency detector. To leverage
-scalability and boost performance, we also introduce three novel dysfluency
-corpora: VCTK\-Pro, VCTK\-Art, and AISHELL3\-Pro, simulating natural spoken
-dysfluencies including repetition, block, missing, replacement, and
-prolongation through articulatory\-encodec and TTS\-based methods. Our approach
-achieves state\-of\-the\-art performance on all available dysfluency corpora. Code
-and datasets are open\-sourced at https://github.com/eureka235/Stutter\-Solver
-
-
-**代码链接**：https://github.com/eureka235/Stutter-Solver
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2409.09621v1)
-
----
+**摘要**：Accurate segmentation of prostate cancer histopathology images is crucial for
+diagnosis and treatment planning. This study presents a comparative analysis of
+three deep learning\-based methods, Mamba, SAM, and YOLO, for segmenting
+prostate cancer histopathology images. We evaluated the performance of these
+models on two comprehensive datasets, Gleason 2019 and SICAPv2, using Dice
+score, precision, and recall metrics. Our results show that the High\-order
+Vision Mamba UNet \(H\-vmunet\) model outperforms the other two models, achieving
+the highest scores across all metrics on both datasets. The H\-vmunet model's
+advanced architecture, which integrates high\-order visual state spaces and
+2D\-selective\-scan operations, enables efficient and sensitive lesion detection
+across different scales. Our study demonstrates the potential of the H\-vmunet
+model for clinical applications and highlights the importance of robust
+validation and comparison of deep learning\-based methods for medical image
+analysis. The findings of this study contribute to the development of accurate
+and reliable computer\-aided diagnosis systems for prostate cancer. The code is
+available at http://github.com/alibdz/prostate\-segmentation.
 
 
-## Self\-Prompting Polyp Segmentation in Colonoscopy using Hybrid Yolo\-SAM 2 Model
+**代码链接**：http://github.com/alibdz/prostate-segmentation.
 
-**发布日期**：2024-09-14
-
-**作者**：Mobina Mansoori
-
-**摘要**：Early diagnosis and treatment of polyps during colonoscopy are essential for
-reducing the incidence and mortality of Colorectal Cancer \(CRC\). However, the
-variability in polyp characteristics and the presence of artifacts in
-colonoscopy images and videos pose significant challenges for accurate and
-efficient polyp detection and segmentation. This paper presents a novel
-approach to polyp segmentation by integrating the Segment Anything Model \(SAM
-2\) with the YOLOv8 model. Our method leverages YOLOv8's bounding box
-predictions to autonomously generate input prompts for SAM 2, thereby reducing
-the need for manual annotations. We conducted exhaustive tests on five
-benchmark colonoscopy image datasets and two colonoscopy video datasets,
-demonstrating that our method exceeds state\-of\-the\-art models in both image and
-video segmentation tasks. Notably, our approach achieves high segmentation
-accuracy using only bounding box annotations, significantly reducing annotation
-time and effort. This advancement holds promise for enhancing the efficiency
-and scalability of polyp detection in clinical settings
-https://github.com/sajjad\-sh33/YOLO\_SAM2.
-
-
-**代码链接**：https://github.com/sajjad-sh33/YOLO_SAM2.
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2409.09484v1)
+**论文链接**：[阅读更多](http://arxiv.org/abs/2409.16205v1)
 
 ---
 
 
-## Breaking reCAPTCHAv2
+## A Computer Vision Approach for Autonomous Cars to Drive Safe at Construction Zone
 
-**发布日期**：2024-09-13
+**发布日期**：2024-09-24
 
-**作者**：Andreas Plesner
+**作者**：Abu Shad Ahammed
 
-**摘要**：Our work examines the efficacy of employing advanced machine learning methods
-to solve captchas from Google's reCAPTCHAv2 system. We evaluate the
-effectiveness of automated systems in solving captchas by utilizing advanced
-YOLO models for image segmentation and classification. Our main result is that
-we can solve 100% of the captchas, while previous work only solved 68\-71%.
-Furthermore, our findings suggest that there is no significant difference in
-the number of challenges humans and bots must solve to pass the captchas in
-reCAPTCHAv2. This implies that current AI technologies can exploit advanced
-image\-based captchas. We also look under the hood of reCAPTCHAv2, and find
-evidence that reCAPTCHAv2 is heavily based on cookie and browser history data
-when evaluating whether a user is human or not. The code is provided alongside
-this paper.
+**摘要**：To build a smarter and safer city, a secure, efficient, and sustainable
+transportation system is a key requirement. The autonomous driving system \(ADS\)
+plays an important role in the development of smart transportation and is
+considered one of the major challenges facing the automotive sector in recent
+decades. A car equipped with an autonomous driving system \(ADS\) comes with
+various cutting\-edge functionalities such as adaptive cruise control, collision
+alerts, automated parking, and more. A primary area of research within ADAS
+involves identifying road obstacles in construction zones regardless of the
+driving environment. This paper presents an innovative and highly accurate road
+obstacle detection model utilizing computer vision technology that can be
+activated in construction zones and functions under diverse drift conditions,
+ultimately contributing to build a safer road transportation system. The model
+developed with the YOLO framework achieved a mean average precision exceeding
+94\\% and demonstrated an inference time of 1.6 milliseconds on the validation
+dataset, underscoring the robustness of the methodology applied to mitigate
+hazards and risks for autonomous vehicles.
 
 
 **代码链接**：摘要中未找到代码链接。
 
-**论文链接**：[阅读更多](http://arxiv.org/abs/2409.08831v1)
+**论文链接**：[阅读更多](http://arxiv.org/abs/2409.15809v1)
 
 ---
 
 
-## TapToTab : Video\-Based Guitar Tabs Generation using AI and Audio Analysis
+## Real\-Time Pedestrian Detection on IoT Edge Devices: A Lightweight Deep Learning Approach
 
-**发布日期**：2024-09-13
+**发布日期**：2024-09-24
 
-**作者**：Ali Ghaleb
+**作者**：Muhammad Dany Alfikri
 
-**摘要**：The automation of guitar tablature generation from video inputs holds
-significant promise for enhancing music education, transcription accuracy, and
-performance analysis. Existing methods face challenges with consistency and
-completeness, particularly in detecting fretboards and accurately identifying
-notes. To address these issues, this paper introduces an advanced approach
-leveraging deep learning, specifically YOLO models for real\-time fretboard
-detection, and Fourier Transform\-based audio analysis for precise note
-identification. Experimental results demonstrate substantial improvements in
-detection accuracy and robustness compared to traditional techniques. This
-paper outlines the development, implementation, and evaluation of these
-methodologies, aiming to revolutionize guitar instruction by automating the
-creation of guitar tabs from video recordings.
+**摘要**：Artificial intelligence \(AI\) has become integral to our everyday lives.
+Computer vision has advanced to the point where it can play the safety critical
+role of detecting pedestrians at road intersections in intelligent
+transportation systems and alert vehicular traffic as to potential collisions.
+Centralized computing analyzes camera feeds and generates alerts for nearby
+vehicles. However, real\-time applications face challenges such as latency,
+limited data transfer speeds, and the risk of life loss. Edge servers offer a
+potential solution for real\-time applications, providing localized computing
+and storage resources and lower response times. Unfortunately, edge servers
+have limited processing power. Lightweight deep learning \(DL\) techniques enable
+edge servers to utilize compressed deep neural network \(DNN\) models.
+  The research explores implementing a lightweight DL model on Artificial
+Intelligence of Things \(AIoT\) edge devices. An optimized You Only Look Once
+\(YOLO\) based DL model is deployed for real\-time pedestrian detection, with
+detection events transmitted to the edge server using the Message Queuing
+Telemetry Transport \(MQTT\) protocol. The simulation results demonstrate that
+the optimized YOLO model can achieve real\-time pedestrian detection, with a
+fast inference speed of 147 milliseconds, a frame rate of 2.3 frames per
+second, and an accuracy of 78%, representing significant improvements over
+baseline models.
 
 
 **代码链接**：摘要中未找到代码链接。
 
-**论文链接**：[阅读更多](http://arxiv.org/abs/2409.08618v1)
+**论文链接**：[阅读更多](http://arxiv.org/abs/2409.15740v1)
 
 ---
 
 
-## Mamba\-YOLO\-World: Marrying YOLO\-World with Mamba for Open\-Vocabulary Detection
+## PDT: Uav Target Detection Dataset for Pests and Diseases Tree
 
-**发布日期**：2024-09-13
+**发布日期**：2024-09-24
 
-**作者**：Haoxuan Wang
+**作者**：Mingle Zhou
 
-**摘要**：Open\-vocabulary detection \(OVD\) aims to detect objects beyond a predefined
-set of categories. As a pioneering model incorporating the YOLO series into
-OVD, YOLO\-World is well\-suited for scenarios prioritizing speed and efficiency.
-However, its performance is hindered by its neck feature fusion mechanism,
-which causes the quadratic complexity and the limited guided receptive fields.
-To address these limitations, we present Mamba\-YOLO\-World, a novel YOLO\-based
-OVD model employing the proposed MambaFusion Path Aggregation Network
-\(MambaFusion\-PAN\) as its neck architecture. Specifically, we introduce an
-innovative State Space Model\-based feature fusion mechanism consisting of a
-Parallel\-Guided Selective Scan algorithm and a Serial\-Guided Selective Scan
-algorithm with linear complexity and globally guided receptive fields. It
-leverages multi\-modal input sequences and mamba hidden states to guide the
-selective scanning process. Experiments demonstrate that our model outperforms
-the original YOLO\-World on the COCO and LVIS benchmarks in both zero\-shot and
-fine\-tuning settings while maintaining comparable parameters and FLOPs.
-Additionally, it surpasses existing state\-of\-the\-art OVD methods with fewer
-parameters and FLOPs.
+**摘要**：UAVs emerge as the optimal carriers for visual weed iden?tification and
+integrated pest and disease management in crops. How?ever, the absence of
+specialized datasets impedes the advancement of model development in this
+domain. To address this, we have developed the Pests and Diseases Tree dataset
+\(PDT dataset\). PDT dataset repre?sents the first high\-precision UAV\-based
+dataset for targeted detection of tree pests and diseases, which is collected
+in real\-world operational environments and aims to fill the gap in available
+datasets for this field. Moreover, by aggregating public datasets and network
+data, we further introduced the Common Weed and Crop dataset \(CWC dataset\) to
+ad?dress the challenge of inadequate classification capabilities of test models
+within datasets for this field. Finally, we propose the YOLO\-Dense Pest
+\(YOLO\-DP\) model for high\-precision object detection of weed, pest, and disease
+crop images. We re\-evaluate the state\-of\-the\-art detection models with our
+proposed PDT dataset and CWC dataset, showing the completeness of the dataset
+and the effectiveness of the YOLO\-DP. The proposed PDT dataset, CWC dataset,
+and YOLO\-DP model are pre?sented at
+https://github.com/RuiXing123/PDT\_CWC\_YOLO\-DP.
 
 
-**代码链接**：摘要中未找到代码链接。
+**代码链接**：https://github.com/RuiXing123/PDT_CWC_YOLO-DP.
 
-**论文链接**：[阅读更多](http://arxiv.org/abs/2409.08513v3)
+**论文链接**：[阅读更多](http://arxiv.org/abs/2409.15679v1)
 
 ---
 
 
-## RT\-DETRv3: Real\-time End\-to\-End Object Detection with Hierarchical Dense Positive Supervision
+## Two Deep Learning Solutions for Automatic Blurring of Faces in Videos
 
-**发布日期**：2024-09-13
+**发布日期**：2024-09-23
 
-**作者**：Shuo Wang
+**作者**：Roman Plaud
 
-**摘要**：RT\-DETR is the first real\-time end\-to\-end transformer\-based object detector.
-Its efficiency comes from the framework design and the Hungarian matching.
-However, compared to dense supervision detectors like the YOLO series, the
-Hungarian matching provides much sparser supervision, leading to insufficient
-model training and difficult to achieve optimal results. To address these
-issues, we proposed a hierarchical dense positive supervision method based on
-RT\-DETR, named RT\-DETRv3. Firstly, we introduce a CNN\-based auxiliary branch
-that provides dense supervision that collaborates with the original decoder to
-enhance the encoder feature representation. Secondly, to address insufficient
-decoder training, we propose a novel learning strategy involving self\-attention
-perturbation. This strategy diversifies label assignment for positive samples
-across multiple query groups, thereby enriching positive supervisions.
-Additionally, we introduce a shared\-weight decoder branch for dense positive
-supervision to ensure more high\-quality queries matching each ground truth.
-Notably, all aforementioned modules are training\-only. We conduct extensive
-experiments to demonstrate the effectiveness of our approach on COCO val2017.
-RT\-DETRv3 significantly outperforms existing real\-time detectors, including the
-RT\-DETR series and the YOLO series. For example, RT\-DETRv3\-R18 achieves 48.1%
-AP \(\+1.6%/\+1.4%\) compared to RT\-DETR\-R18/RT\-DETRv2\-R18 while maintaining the
-same latency. Meanwhile, it requires only half of epochs to attain a comparable
-performance. Furthermore, RT\-DETRv3\-R101 can attain an impressive 54.6% AP
-outperforming YOLOv10\-X. Code will be released soon.
+**摘要**：The widespread use of cameras in everyday life situations generates a vast
+amount of data that may contain sensitive information about the people and
+vehicles moving in front of them \(location, license plates, physical
+characteristics, etc\). In particular, people's faces are recorded by
+surveillance cameras in public spaces. In order to ensure the privacy of
+individuals, face blurring techniques can be applied to the collected videos.
+In this paper we present two deep\-learning based options to tackle the problem.
+First, a direct approach, consisting of a classical object detector \(based on
+the YOLO architecture\) trained to detect faces, which are subsequently blurred.
+Second, an indirect approach, in which a Unet\-like segmentation network is
+trained to output a version of the input image in which all the faces have been
+blurred.
 
 
 **代码链接**：摘要中未找到代码链接。
 
-**论文链接**：[阅读更多](http://arxiv.org/abs/2409.08475v1)
+**论文链接**：[阅读更多](http://arxiv.org/abs/2409.14828v1)
+
+---
+
+
+## Real\-time Detection and Auto focusing of Beam Profiles from Silicon Photonics Gratings using YOLO model
+
+**发布日期**：2024-09-22
+
+**作者**：Yu Dian Lim
+
+**摘要**：When observing the chip\-to\-free\-space light beams from silicon photonics
+\(SiPh\) to free\-space, manual adjustment of camera lens is often required to
+obtain a focused image of the light beams. In this letter, we demonstrated an
+auto\-focusing system based on you\-only\-look\-once \(YOLO\) model. The trained YOLO
+model exhibits high classification accuracy of 99.7% and high confidence level
+>0.95 when detecting light beams from SiPh gratings. A video demonstration of
+real\-time light beam detection, real\-time computation of beam width, and auto
+focusing of light beams are also included.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2409.14413v1)
+
+---
+
+
+## Enhancing Fruit and Vegetable Detection in Unconstrained Environment with a Novel Dataset
+
+**发布日期**：2024-09-20
+
+**作者**：Sandeep Khanna
+
+**摘要**：Automating the detection of fruits and vegetables using computer vision is
+essential for modernizing agriculture, improving efficiency, ensuring food
+quality, and contributing to technologically advanced and sustainable farming
+practices. This paper presents an end\-to\-end pipeline for detecting and
+localizing fruits and vegetables in real\-world scenarios. To achieve this, we
+have curated a dataset named FRUVEG67 that includes images of 67 classes of
+fruits and vegetables captured in unconstrained scenarios, with only a few
+manually annotated samples per class. We have developed a semi\-supervised data
+annotation algorithm \(SSDA\) that generates bounding boxes for objects to label
+the remaining non\-annotated images. For detection, we introduce the Fruit and
+Vegetable Detection Network \(FVDNet\), an ensemble version of YOLOv7 featuring
+three distinct grid configurations. We employ an averaging approach for
+bounding\-box prediction and a voting mechanism for class prediction. We have
+integrated Jensen\-Shannon divergence \(JSD\) in conjunction with focal loss to
+better detect smaller objects. Our experimental results highlight the
+superiority of FVDNet compared to previous versions of YOLO, showcasing
+remarkable improvements in detection and localization performance. We achieved
+an impressive mean average precision \(mAP\) score of 0.78 across all classes.
+Furthermore, we evaluated the efficacy of FVDNet using open\-category
+refrigerator images, where it demonstrates promising results.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2409.13330v1)
 
 ---
 
