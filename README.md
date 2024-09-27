@@ -1,6 +1,37 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Drone Stereo Vision for Radiata Pine Branch Detection and Distance Measurement: Integrating SGBM and Segmentation Models
+
+**发布日期**：2024-09-26
+
+**作者**：Yida Lin
+
+**摘要**：Manual pruning of radiata pine trees presents significant safety risks due to
+their substantial height and the challenging terrains in which they thrive. To
+address these risks, this research proposes the development of a drone\-based
+pruning system equipped with specialized pruning tools and a stereo vision
+camera, enabling precise detection and trimming of branches. Deep learning
+algorithms, including YOLO and Mask R\-CNN, are employed to ensure accurate
+branch detection, while the Semi\-Global Matching algorithm is integrated to
+provide reliable distance estimation. The synergy between these techniques
+facilitates the precise identification of branch locations and enables
+efficient, targeted pruning. Experimental results demonstrate that the combined
+implementation of YOLO and SGBM enables the drone to accurately detect branches
+and measure their distances from the drone. This research not only improves the
+safety and efficiency of pruning operations but also makes a significant
+contribution to the advancement of drone technology in the automation of
+agricultural and forestry practices, laying a foundational framework for
+further innovations in environmental management.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2409.17526v1)
+
+---
+
+
 ## Classification of Gleason Grading in Prostate Cancer Histopathology Images Using Deep Learning Techniques: YOLO, Vision Transformers, and Vision Mamba
 
 **发布日期**：2024-09-25
@@ -282,41 +313,6 @@ focusing of light beams are also included.
 **代码链接**：摘要中未找到代码链接。
 
 **论文链接**：[阅读更多](http://arxiv.org/abs/2409.14413v1)
-
----
-
-
-## Enhancing Fruit and Vegetable Detection in Unconstrained Environment with a Novel Dataset
-
-**发布日期**：2024-09-20
-
-**作者**：Sandeep Khanna
-
-**摘要**：Automating the detection of fruits and vegetables using computer vision is
-essential for modernizing agriculture, improving efficiency, ensuring food
-quality, and contributing to technologically advanced and sustainable farming
-practices. This paper presents an end\-to\-end pipeline for detecting and
-localizing fruits and vegetables in real\-world scenarios. To achieve this, we
-have curated a dataset named FRUVEG67 that includes images of 67 classes of
-fruits and vegetables captured in unconstrained scenarios, with only a few
-manually annotated samples per class. We have developed a semi\-supervised data
-annotation algorithm \(SSDA\) that generates bounding boxes for objects to label
-the remaining non\-annotated images. For detection, we introduce the Fruit and
-Vegetable Detection Network \(FVDNet\), an ensemble version of YOLOv7 featuring
-three distinct grid configurations. We employ an averaging approach for
-bounding\-box prediction and a voting mechanism for class prediction. We have
-integrated Jensen\-Shannon divergence \(JSD\) in conjunction with focal loss to
-better detect smaller objects. Our experimental results highlight the
-superiority of FVDNet compared to previous versions of YOLO, showcasing
-remarkable improvements in detection and localization performance. We achieved
-an impressive mean average precision \(mAP\) score of 0.78 across all classes.
-Furthermore, we evaluated the efficacy of FVDNet using open\-category
-refrigerator images, where it demonstrates promising results.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2409.13330v1)
 
 ---
 
