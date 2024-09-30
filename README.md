@@ -1,6 +1,64 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## MCUBench: A Benchmark of Tiny Object Detectors on MCUs
+
+**发布日期**：2024-09-27
+
+**作者**：Sudhakar Sah
+
+**摘要**：We introduce MCUBench, a benchmark featuring over 100 YOLO\-based object
+detection models evaluated on the VOC dataset across seven different MCUs. This
+benchmark provides detailed data on average precision, latency, RAM, and Flash
+usage for various input resolutions and YOLO\-based one\-stage detectors. By
+conducting a controlled comparison with a fixed training pipeline, we collect
+comprehensive performance metrics. Our Pareto\-optimal analysis shows that
+integrating modern detection heads and training techniques allows various YOLO
+architectures, including legacy models like YOLOv3, to achieve a highly
+efficient tradeoff between mean Average Precision \(mAP\) and latency. MCUBench
+serves as a valuable tool for benchmarking the MCU performance of contemporary
+object detectors and aids in model selection based on specific constraints.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2409.18866v1)
+
+---
+
+
+## YOLOv8\-ResCBAM: YOLOv8 Based on An Effective Attention Module for Pediatric Wrist Fracture Detection
+
+**发布日期**：2024-09-27
+
+**作者**：Rui\-Yang Ju
+
+**摘要**：Wrist trauma and even fractures occur frequently in daily life, particularly
+among children who account for a significant proportion of fracture cases.
+Before performing surgery, surgeons often request patients to undergo X\-ray
+imaging first, and prepare for the surgery based on the analysis of the X\-ray
+images. With the development of neural networks, You Only Look Once \(YOLO\)
+series models have been widely used in fracture detection for Computer\-Assisted
+Diagnosis, where the YOLOv8 model has obtained the satisfactory results.
+Applying the attention modules to neural networks is one of the effective
+methods to improve the model performance. This paper proposes YOLOv8\-ResCBAM,
+which incorporates Convolutional Block Attention Module integrated with
+resblock \(ResCBAM\) into the original YOLOv8 network architecture. The
+experimental results on the GRAZPEDWRI\-DX dataset demonstrate that the mean
+Average Precision calculated at Intersection over Union threshold of 0.5 \(mAP
+50\) of the proposed model increased from 63.6% of the original YOLOv8 model to
+65.8%, which achieves the state\-of\-the\-art performance. The implementation code
+is available at
+https://github.com/RuiyangJu/Fracture\_Detection\_Improved\_YOLOv8.
+
+
+**代码链接**：https://github.com/RuiyangJu/Fracture_Detection_Improved_YOLOv8.
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2409.18826v1)
+
+---
+
+
 ## Drone Stereo Vision for Radiata Pine Branch Detection and Distance Measurement: Integrating SGBM and Segmentation Models
 
 **发布日期**：2024-09-26
@@ -263,56 +321,6 @@ https://github.com/RuiXing123/PDT\_CWC\_YOLO\-DP.
 **代码链接**：https://github.com/RuiXing123/PDT_CWC_YOLO-DP.
 
 **论文链接**：[阅读更多](http://arxiv.org/abs/2409.15679v1)
-
----
-
-
-## Two Deep Learning Solutions for Automatic Blurring of Faces in Videos
-
-**发布日期**：2024-09-23
-
-**作者**：Roman Plaud
-
-**摘要**：The widespread use of cameras in everyday life situations generates a vast
-amount of data that may contain sensitive information about the people and
-vehicles moving in front of them \(location, license plates, physical
-characteristics, etc\). In particular, people's faces are recorded by
-surveillance cameras in public spaces. In order to ensure the privacy of
-individuals, face blurring techniques can be applied to the collected videos.
-In this paper we present two deep\-learning based options to tackle the problem.
-First, a direct approach, consisting of a classical object detector \(based on
-the YOLO architecture\) trained to detect faces, which are subsequently blurred.
-Second, an indirect approach, in which a Unet\-like segmentation network is
-trained to output a version of the input image in which all the faces have been
-blurred.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2409.14828v1)
-
----
-
-
-## Real\-time Detection and Auto focusing of Beam Profiles from Silicon Photonics Gratings using YOLO model
-
-**发布日期**：2024-09-22
-
-**作者**：Yu Dian Lim
-
-**摘要**：When observing the chip\-to\-free\-space light beams from silicon photonics
-\(SiPh\) to free\-space, manual adjustment of camera lens is often required to
-obtain a focused image of the light beams. In this letter, we demonstrated an
-auto\-focusing system based on you\-only\-look\-once \(YOLO\) model. The trained YOLO
-model exhibits high classification accuracy of 99.7% and high confidence level
->0.95 when detecting light beams from SiPh gratings. A video demonstration of
-real\-time light beam detection, real\-time computation of beam width, and auto
-focusing of light beams are also included.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2409.14413v1)
 
 ---
 
