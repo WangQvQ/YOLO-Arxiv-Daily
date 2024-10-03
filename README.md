@@ -1,6 +1,99 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## SurgeoNet: Realtime 3D Pose Estimation of Articulated Surgical Instruments from Stereo Images using a Synthetically\-trained Network
+
+**发布日期**：2024-10-02
+
+**作者**：Ahmed Tawfik Aboukhadra
+
+**摘要**：Surgery monitoring in Mixed Reality \(MR\) environments has recently received
+substantial focus due to its importance in image\-based decisions, skill
+assessment, and robot\-assisted surgery. Tracking hands and articulated surgical
+instruments is crucial for the success of these applications. Due to the lack
+of annotated datasets and the complexity of the task, only a few works have
+addressed this problem. In this work, we present SurgeoNet, a real\-time neural
+network pipeline to accurately detect and track surgical instruments from a
+stereo VR view. Our multi\-stage approach is inspired by state\-of\-the\-art
+neural\-network architectural design, like YOLO and Transformers. We demonstrate
+the generalization capabilities of SurgeoNet in challenging real\-world
+scenarios, achieved solely through training on synthetic data. The approach can
+be easily extended to any new set of articulated surgical instruments.
+SurgeoNet's code and data are publicly available.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2410.01293v1)
+
+---
+
+
+## Optimizing Drug Delivery in Smart Pharmacies: A Novel Framework of Multi\-Stage Grasping Network Combined with Adaptive Robotics Mechanism
+
+**发布日期**：2024-10-01
+
+**作者**：Rui Tang
+
+**摘要**：Robots\-based smart pharmacies are essential for modern healthcare systems,
+enabling efficient drug delivery. However, a critical challenge exists in the
+robotic handling of drugs with varying shapes and overlapping positions, which
+previous studies have not adequately addressed. To enhance the robotic arm's
+ability to grasp chaotic, overlapping, and variously shaped drugs, this paper
+proposed a novel framework combining a multi\-stage grasping network with an
+adaptive robotics mechanism. The framework first preprocessed images using an
+improved Super\-Resolution Convolutional Neural Network \(SRCNN\) algorithm, and
+then employed the proposed YOLOv5\+E\-A\-SPPFCSPC\+BIFPNC \(YOLO\-EASB\) instance
+segmentation algorithm for precise drug segmentation. The most suitable drugs
+for grasping can be determined by assessing the completeness of the
+segmentation masks. Then, these segmented drugs were processed by our improved
+Adaptive Feature Fusion and Grasp\-Aware Network \(IAFFGA\-Net\) with the optimized
+loss function, which ensures accurate picking actions even in complex
+environments. To control the robot grasping, a time\-optimal robotic arm
+trajectory planning algorithm that combines an improved ant colony algorithm
+with 3\-5\-3 interpolation was developed, further improving efficiency while
+ensuring smooth trajectories. Finally, this system was implemented and
+validated within an adaptive collaborative robot setup, which dynamically
+adjusts to different production environments and task requirements.
+Experimental results demonstrate the superiority of our multi\-stage grasping
+network in optimizing smart pharmacy operations, while also showcasing its
+remarkable adaptability and effectiveness in practical applications.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2410.00753v1)
+
+---
+
+
+## Drone Stereo Vision for Radiata Pine Branch Detection and Distance Measurement: Utilizing Deep Learning and YOLO Integration
+
+**发布日期**：2024-10-01
+
+**作者**：Yida Lin
+
+**摘要**：This research focuses on the development of a drone equipped with pruning
+tools and a stereo vision camera to accurately detect and measure the spatial
+positions of tree branches. YOLO is employed for branch segmentation, while two
+depth estimation approaches, monocular and stereo, are investigated. In
+comparison to SGBM, deep learning techniques produce more refined and accurate
+depth maps. In the absence of ground\-truth data, a fine\-tuning process using
+deep neural networks is applied to approximate optimal depth values. This
+methodology facilitates precise branch detection and distance measurement,
+addressing critical challenges in the automation of pruning operations. The
+results demonstrate notable advancements in both accuracy and efficiency,
+underscoring the potential of deep learning to drive innovation and enhance
+automation in the agricultural sector.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2410.00503v1)
+
+---
+
+
 ## MCUBench: A Benchmark of Tiny Object Detectors on MCUs
 
 **发布日期**：2024-09-27
@@ -223,104 +316,6 @@ available at http://github.com/alibdz/prostate\-segmentation.
 **代码链接**：http://github.com/alibdz/prostate-segmentation.
 
 **论文链接**：[阅读更多](http://arxiv.org/abs/2409.16205v1)
-
----
-
-
-## A Computer Vision Approach for Autonomous Cars to Drive Safe at Construction Zone
-
-**发布日期**：2024-09-24
-
-**作者**：Abu Shad Ahammed
-
-**摘要**：To build a smarter and safer city, a secure, efficient, and sustainable
-transportation system is a key requirement. The autonomous driving system \(ADS\)
-plays an important role in the development of smart transportation and is
-considered one of the major challenges facing the automotive sector in recent
-decades. A car equipped with an autonomous driving system \(ADS\) comes with
-various cutting\-edge functionalities such as adaptive cruise control, collision
-alerts, automated parking, and more. A primary area of research within ADAS
-involves identifying road obstacles in construction zones regardless of the
-driving environment. This paper presents an innovative and highly accurate road
-obstacle detection model utilizing computer vision technology that can be
-activated in construction zones and functions under diverse drift conditions,
-ultimately contributing to build a safer road transportation system. The model
-developed with the YOLO framework achieved a mean average precision exceeding
-94\\% and demonstrated an inference time of 1.6 milliseconds on the validation
-dataset, underscoring the robustness of the methodology applied to mitigate
-hazards and risks for autonomous vehicles.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2409.15809v1)
-
----
-
-
-## Real\-Time Pedestrian Detection on IoT Edge Devices: A Lightweight Deep Learning Approach
-
-**发布日期**：2024-09-24
-
-**作者**：Muhammad Dany Alfikri
-
-**摘要**：Artificial intelligence \(AI\) has become integral to our everyday lives.
-Computer vision has advanced to the point where it can play the safety critical
-role of detecting pedestrians at road intersections in intelligent
-transportation systems and alert vehicular traffic as to potential collisions.
-Centralized computing analyzes camera feeds and generates alerts for nearby
-vehicles. However, real\-time applications face challenges such as latency,
-limited data transfer speeds, and the risk of life loss. Edge servers offer a
-potential solution for real\-time applications, providing localized computing
-and storage resources and lower response times. Unfortunately, edge servers
-have limited processing power. Lightweight deep learning \(DL\) techniques enable
-edge servers to utilize compressed deep neural network \(DNN\) models.
-  The research explores implementing a lightweight DL model on Artificial
-Intelligence of Things \(AIoT\) edge devices. An optimized You Only Look Once
-\(YOLO\) based DL model is deployed for real\-time pedestrian detection, with
-detection events transmitted to the edge server using the Message Queuing
-Telemetry Transport \(MQTT\) protocol. The simulation results demonstrate that
-the optimized YOLO model can achieve real\-time pedestrian detection, with a
-fast inference speed of 147 milliseconds, a frame rate of 2.3 frames per
-second, and an accuracy of 78%, representing significant improvements over
-baseline models.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2409.15740v1)
-
----
-
-
-## PDT: Uav Target Detection Dataset for Pests and Diseases Tree
-
-**发布日期**：2024-09-24
-
-**作者**：Mingle Zhou
-
-**摘要**：UAVs emerge as the optimal carriers for visual weed iden?tification and
-integrated pest and disease management in crops. How?ever, the absence of
-specialized datasets impedes the advancement of model development in this
-domain. To address this, we have developed the Pests and Diseases Tree dataset
-\(PDT dataset\). PDT dataset repre?sents the first high\-precision UAV\-based
-dataset for targeted detection of tree pests and diseases, which is collected
-in real\-world operational environments and aims to fill the gap in available
-datasets for this field. Moreover, by aggregating public datasets and network
-data, we further introduced the Common Weed and Crop dataset \(CWC dataset\) to
-ad?dress the challenge of inadequate classification capabilities of test models
-within datasets for this field. Finally, we propose the YOLO\-Dense Pest
-\(YOLO\-DP\) model for high\-precision object detection of weed, pest, and disease
-crop images. We re\-evaluate the state\-of\-the\-art detection models with our
-proposed PDT dataset and CWC dataset, showing the completeness of the dataset
-and the effectiveness of the YOLO\-DP. The proposed PDT dataset, CWC dataset,
-and YOLO\-DP model are pre?sented at
-https://github.com/RuiXing123/PDT\_CWC\_YOLO\-DP.
-
-
-**代码链接**：https://github.com/RuiXing123/PDT_CWC_YOLO-DP.
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2409.15679v1)
 
 ---
 
