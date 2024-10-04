@@ -217,7 +217,7 @@ between accuracy and computational efficiency.
 
 **代码链接**：摘要中未找到代码链接。
 
-**论文链接**：[阅读更多](http://arxiv.org/abs/2409.17122v1)
+**论文链接**：[阅读更多](http://arxiv.org/abs/2409.17122v2)
 
 ---
 
@@ -315,7 +315,7 @@ available at http://github.com/alibdz/prostate\-segmentation.
 
 **代码链接**：http://github.com/alibdz/prostate-segmentation.
 
-**论文链接**：[阅读更多](http://arxiv.org/abs/2409.16205v1)
+**论文链接**：[阅读更多](http://arxiv.org/abs/2409.16205v2)
 
 ---
 
