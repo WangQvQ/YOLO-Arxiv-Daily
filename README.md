@@ -1,6 +1,70 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Human\-in\-the\-loop Reasoning For Traffic Sign Detection: Collaborative Approach Yolo With Video\-llava
+
+**发布日期**：2024-10-07
+
+**作者**：Mehdi Azarafza
+
+**摘要**：Traffic Sign Recognition \(TSR\) detection is a crucial component of autonomous
+vehicles. While You Only Look Once \(YOLO\) is a popular real\-time object
+detection algorithm, factors like training data quality and adverse weather
+conditions \(e.g., heavy rain\) can lead to detection failures. These failures
+can be particularly dangerous when visual similarities between objects exist,
+such as mistaking a 30 km/h sign for a higher speed limit sign. This paper
+proposes a method that combines video analysis and reasoning, prompting with a
+human\-in\-the\-loop guide large vision model to improve YOLOs accuracy in
+detecting road speed limit signs, especially in semi\-real\-world conditions. It
+is hypothesized that the guided prompting and reasoning abilities of
+Video\-LLava can enhance YOLOs traffic sign detection capabilities. This
+hypothesis is supported by an evaluation based on human\-annotated accuracy
+metrics within a dataset of recorded videos from the CARLA car simulator. The
+results demonstrate that a collaborative approach combining YOLO with
+Video\-LLava and reasoning can effectively address challenging situations such
+as heavy rain and overcast conditions that hinder YOLOs detection capabilities.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2410.05096v1)
+
+---
+
+
+## YOLO\-MARL: You Only LLM Once for Multi\-agent Reinforcement Learning
+
+**发布日期**：2024-10-05
+
+**作者**：Yuan Zhuang
+
+**摘要**：Advancements in deep multi\-agent reinforcement learning \(MARL\) have
+positioned it as a promising approach for decision\-making in cooperative games.
+However, it still remains challenging for MARL agents to learn cooperative
+strategies for some game environments. Recently, large language models \(LLMs\)
+have demonstrated emergent reasoning capabilities, making them promising
+candidates for enhancing coordination among the agents. However, due to the
+model size of LLMs, it can be expensive to frequently infer LLMs for actions
+that agents can take. In this work, we propose You Only LLM Once for MARL
+\(YOLO\-MARL\), a novel framework that leverages the high\-level task planning
+capabilities of LLMs to improve the policy learning process of multi\-agents in
+cooperative games. Notably, for each game environment, YOLO\-MARL only requires
+one time interaction with LLMs in the proposed strategy generation, state
+interpretation and planning function generation modules, before the MARL policy
+training process. This avoids the ongoing costs and computational time
+associated with frequent LLMs API calls during training. Moreover, the trained
+decentralized normal\-sized neural network\-based policies operate independently
+of the LLM. We evaluate our method across three different environments and
+demonstrate that YOLO\-MARL outperforms traditional MARL algorithms.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2410.03997v1)
+
+---
+
+
 ## SurgeoNet: Realtime 3D Pose Estimation of Articulated Surgical Instruments from Stereo Images using a Synthetically\-trained Network
 
 **发布日期**：2024-10-02
@@ -89,7 +153,7 @@ automation in the agricultural sector.
 
 **代码链接**：摘要中未找到代码链接。
 
-**论文链接**：[阅读更多](http://arxiv.org/abs/2410.00503v1)
+**论文链接**：[阅读更多](http://arxiv.org/abs/2410.00503v2)
 
 ---
 
@@ -251,71 +315,6 @@ beginners and experienced professionals.
 **代码链接**：摘要中未找到代码链接。
 
 **论文链接**：[阅读更多](http://arxiv.org/abs/2409.17120v1)
-
----
-
-
-## Source\-Free Domain Adaptation for YOLO Object Detection
-
-**发布日期**：2024-09-25
-
-**作者**：Simon Varailhon
-
-**摘要**：Source\-free domain adaptation \(SFDA\) is a challenging problem in object
-detection, where a pre\-trained source model is adapted to a new target domain
-without using any source domain data for privacy and efficiency reasons. Most
-state\-of\-the\-art SFDA methods for object detection have been proposed for
-Faster\-RCNN, a detector that is known to have high computational complexity.
-This paper focuses on domain adaptation techniques for real\-world vision
-systems, particularly for the YOLO family of single\-shot detectors known for
-their fast baselines and practical applications. Our proposed SFDA method \-
-Source\-Free YOLO \(SF\-YOLO\) \- relies on a teacher\-student framework in which the
-student receives images with a learned, target domain\-specific augmentation,
-allowing the model to be trained with only unlabeled target data and without
-requiring feature alignment. A challenge with self\-training using a
-mean\-teacher architecture in the absence of labels is the rapid decline of
-accuracy due to noisy or drifting pseudo\-labels. To address this issue, a
-teacher\-to\-student communication mechanism is introduced to help stabilize the
-training and reduce the reliance on annotated target data for model selection.
-Despite its simplicity, our approach is competitive with state\-of\-the\-art
-detectors on several challenging benchmark datasets, even sometimes
-outperforming methods that use source data for adaptation.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2409.16538v1)
-
----
-
-
-## Segmentation Strategies in Deep Learning for Prostate Cancer Diagnosis: A Comparative Study of Mamba, SAM, and YOLO
-
-**发布日期**：2024-09-24
-
-**作者**：Ali Badiezadeh
-
-**摘要**：Accurate segmentation of prostate cancer histopathology images is crucial for
-diagnosis and treatment planning. This study presents a comparative analysis of
-three deep learning\-based methods, Mamba, SAM, and YOLO, for segmenting
-prostate cancer histopathology images. We evaluated the performance of these
-models on two comprehensive datasets, Gleason 2019 and SICAPv2, using Dice
-score, precision, and recall metrics. Our results show that the High\-order
-Vision Mamba UNet \(H\-vmunet\) model outperforms the other two models, achieving
-the highest scores across all metrics on both datasets. The H\-vmunet model's
-advanced architecture, which integrates high\-order visual state spaces and
-2D\-selective\-scan operations, enables efficient and sensitive lesion detection
-across different scales. Our study demonstrates the potential of the H\-vmunet
-model for clinical applications and highlights the importance of robust
-validation and comparison of deep learning\-based methods for medical image
-analysis. The findings of this study contribute to the development of accurate
-and reliable computer\-aided diagnosis systems for prostate cancer. The code is
-available at http://github.com/alibdz/prostate\-segmentation.
-
-
-**代码链接**：http://github.com/alibdz/prostate-segmentation.
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2409.16205v2)
 
 ---
 
