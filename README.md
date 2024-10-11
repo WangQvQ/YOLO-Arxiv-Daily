@@ -1,6 +1,76 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Robust infrared small target detection using self\-supervised and a contrario paradigms
+
+**发布日期**：2024-10-09
+
+**作者**：Alina Ciocarlan
+
+**摘要**：Detecting small targets in infrared images poses significant challenges in
+defense applications due to the presence of complex backgrounds and the small
+size of the targets. Traditional object detection methods often struggle to
+balance high detection rates with low false alarm rates, especially when
+dealing with small objects. In this paper, we introduce a novel approach that
+combines a contrario paradigm with Self\-Supervised Learning \(SSL\) to improve
+Infrared Small Target Detection \(IRSTD\). On the one hand, the integration of an
+a contrario criterion into a YOLO detection head enhances feature map responses
+for small and unexpected objects while effectively controlling false alarms. On
+the other hand, we explore SSL techniques to overcome the challenges of limited
+annotated data, common in IRSTD tasks. Specifically, we benchmark several
+representative SSL strategies for their effectiveness in improving small object
+detection performance. Our findings show that instance discrimination methods
+outperform masked image modeling strategies when applied to YOLO\-based small
+object detection. Moreover, the combination of the a contrario and SSL
+paradigms leads to significant performance improvements, narrowing the gap with
+state\-of\-the\-art segmentation methods and even outperforming them in frugal
+settings. This two\-pronged approach offers a robust solution for improving
+IRSTD performance, particularly under challenging conditions.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2410.07437v1)
+
+---
+
+
+## Iterative Optimization Annotation Pipeline and ALSS\-YOLO\-Seg for Efficient Banana Plantation Segmentation in UAV Imagery
+
+**发布日期**：2024-10-09
+
+**作者**：Ang He
+
+**摘要**：Precise segmentation of Unmanned Aerial Vehicle \(UAV\)\-captured images plays a
+vital role in tasks such as crop yield estimation and plant health assessment
+in banana plantations. By identifying and classifying planted areas, crop area
+can be calculated, which is indispensable for accurate yield predictions.
+However, segmenting banana plantation scenes requires a substantial amount of
+annotated data, and manual labeling of these images is both time\-consuming and
+labor\-intensive, limiting the development of large\-scale datasets. Furthermore,
+challenges such as changing target sizes, complex ground backgrounds, limited
+computational resources, and correct identification of crop categories make
+segmentation even more difficult. To address these issues, we proposed a
+comprehensive solution. Firstly, we designed an iterative optimization
+annotation pipeline leveraging SAM2's zero\-shot capabilities to generate
+high\-quality segmentation annotations, thereby reducing the cost and time
+associated with data annotation significantly. Secondly, we developed
+ALSS\-YOLO\-Seg, an efficient lightweight segmentation model optimized for UAV
+imagery. The model's backbone includes an Adaptive Lightweight Channel
+Splitting and Shuffling \(ALSS\) module to improve information exchange between
+channels and optimize feature extraction, aiding accurate crop identification.
+Additionally, a Multi\-Scale Channel Attention \(MSCA\) module combines
+multi\-scale feature extraction with channel attention to tackle challenges of
+varying target sizes and complex ground backgrounds.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2410.07955v1)
+
+---
+
+
 ## Human\-in\-the\-loop Reasoning For Traffic Sign Detection: Collaborative Approach Yolo With Video\-llava
 
 **发布日期**：2024-10-07
@@ -243,78 +313,6 @@ further innovations in environmental management.
 **代码链接**：摘要中未找到代码链接。
 
 **论文链接**：[阅读更多](http://arxiv.org/abs/2409.17526v1)
-
----
-
-
-## Classification of Gleason Grading in Prostate Cancer Histopathology Images Using Deep Learning Techniques: YOLO, Vision Transformers, and Vision Mamba
-
-**发布日期**：2024-09-25
-
-**作者**：Amin Malekmohammadi
-
-**摘要**：Prostate cancer ranks among the leading health issues impacting men, with the
-Gleason scoring system serving as the primary method for diagnosis and
-prognosis. This system relies on expert pathologists to evaluate samples of
-prostate tissue and assign a Gleason grade, a task that requires significant
-time and manual effort. To address this challenge, artificial intelligence \(AI\)
-solutions have been explored to automate the grading process. In light of these
-challenges, this study evaluates and compares the effectiveness of three deep
-learning methodologies, YOLO, Vision Transformers, and Vision Mamba, in
-accurately classifying Gleason grades from histopathology images. The goal is
-to enhance diagnostic precision and efficiency in prostate cancer management.
-This study utilized two publicly available datasets, Gleason2019 and SICAPv2,
-to train and test the performance of YOLO, Vision Transformers, and Vision
-Mamba models. Each model was assessed based on its ability to classify Gleason
-grades accurately, considering metrics such as false positive rate, false
-negative rate, precision, and recall. The study also examined the computational
-efficiency and applicability of each method in a clinical setting. Vision Mamba
-demonstrated superior performance across all metrics, achieving high precision
-and recall rates while minimizing false positives and negatives. YOLO showed
-promise in terms of speed and efficiency, particularly beneficial for real\-time
-analysis. Vision Transformers excelled in capturing long\-range dependencies
-within images, although they presented higher computational complexity compared
-to the other models. Vision Mamba emerges as the most effective model for
-Gleason grade classification in histopathology images, offering a balance
-between accuracy and computational efficiency.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2409.17122v2)
-
----
-
-
-## Deep Learning and Machine Learning, Advancing Big Data Analytics and Management: Handy Appetizer
-
-**发布日期**：2024-09-25
-
-**作者**：Benji Peng
-
-**摘要**：This book explores the role of Artificial Intelligence \(AI\), Machine Learning
-\(ML\), and Deep Learning \(DL\) in driving the progress of big data analytics and
-management. The book focuses on simplifying the complex mathematical concepts
-behind deep learning, offering intuitive visualizations and practical case
-studies to help readers understand how neural networks and technologies like
-Convolutional Neural Networks \(CNNs\) work. It introduces several classic models
-and technologies such as Transformers, GPT, ResNet, BERT, and YOLO,
-highlighting their applications in fields like natural language processing,
-image recognition, and autonomous driving. The book also emphasizes the
-importance of pre\-trained models and how they can enhance model performance and
-accuracy, with instructions on how to apply these models in various real\-world
-scenarios. Additionally, it provides an overview of key big data management
-technologies like SQL and NoSQL databases, as well as distributed computing
-frameworks such as Apache Hadoop and Spark, explaining their importance in
-managing and processing vast amounts of data. Ultimately, the book underscores
-the value of mastering deep learning and big data management skills as critical
-tools for the future workforce, making it an essential resource for both
-beginners and experienced professionals.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2409.17120v1)
 
 ---
 
