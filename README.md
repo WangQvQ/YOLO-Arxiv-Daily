@@ -1,6 +1,42 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Optimizing YOLO Architectures for Optimal Road Damage Detection and Classification: A Comparative Study from YOLOv7 to YOLOv10
+
+**发布日期**：2024-10-10
+
+**作者**：Vung Pham
+
+**摘要**：Maintaining roadway infrastructure is essential for ensuring a safe,
+efficient, and sustainable transportation system. However, manual data
+collection for detecting road damage is time\-consuming, labor\-intensive, and
+poses safety risks. Recent advancements in artificial intelligence,
+particularly deep learning, offer a promising solution for automating this
+process using road images. This paper presents a comprehensive workflow for
+road damage detection using deep learning models, focusing on optimizations for
+inference speed while preserving detection accuracy. Specifically, to
+accommodate hardware limitations, large images are cropped, and lightweight
+models are utilized. Additionally, an external pothole dataset is incorporated
+to enhance the detection of this underrepresented damage class. The proposed
+approach employs multiple model architectures, including a custom YOLOv7 model
+with Coordinate Attention layers and a Tiny YOLOv7 model, which are trained and
+combined to maximize detection performance. The models are further
+reparameterized to optimize inference efficiency. Experimental results
+demonstrate that the ensemble of the custom YOLOv7 model with three Coordinate
+Attention layers and the default Tiny YOLOv7 model achieves an F1 score of
+0.7027 with an inference speed of 0.0547 seconds per image. The complete
+pipeline, including data preprocessing, model training, and inference scripts,
+is publicly available on the project's GitHub repository, enabling
+reproducibility and facilitating further research.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2410.08409v1)
+
+---
+
+
 ## Robust infrared small target detection using self\-supervised and a contrario paradigms
 
 **发布日期**：2024-10-09
@@ -282,37 +318,6 @@ https://github.com/RuiyangJu/Fracture\_Detection\_Improved\_YOLOv8.
 **代码链接**：https://github.com/RuiyangJu/Fracture_Detection_Improved_YOLOv8.
 
 **论文链接**：[阅读更多](http://arxiv.org/abs/2409.18826v1)
-
----
-
-
-## Drone Stereo Vision for Radiata Pine Branch Detection and Distance Measurement: Integrating SGBM and Segmentation Models
-
-**发布日期**：2024-09-26
-
-**作者**：Yida Lin
-
-**摘要**：Manual pruning of radiata pine trees presents significant safety risks due to
-their substantial height and the challenging terrains in which they thrive. To
-address these risks, this research proposes the development of a drone\-based
-pruning system equipped with specialized pruning tools and a stereo vision
-camera, enabling precise detection and trimming of branches. Deep learning
-algorithms, including YOLO and Mask R\-CNN, are employed to ensure accurate
-branch detection, while the Semi\-Global Matching algorithm is integrated to
-provide reliable distance estimation. The synergy between these techniques
-facilitates the precise identification of branch locations and enables
-efficient, targeted pruning. Experimental results demonstrate that the combined
-implementation of YOLO and SGBM enables the drone to accurately detect branches
-and measure their distances from the drone. This research not only improves the
-safety and efficiency of pruning operations but also makes a significant
-contribution to the advancement of drone technology in the automation of
-agricultural and forestry practices, laying a foundational framework for
-further innovations in environmental management.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2409.17526v1)
 
 ---
 
