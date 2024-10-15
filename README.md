@@ -1,6 +1,152 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Early Diagnoses of Acute Lymphoblastic Leukemia Using YOLOv8 and YOLOv11 Deep Learning Models
+
+**发布日期**：2024-10-14
+
+**作者**：Alaa Awad
+
+**摘要**：Thousands of individuals succumb annually to leukemia alone. This study
+explores the application of image processing and deep learning techniques for
+detecting Acute Lymphoblastic Leukemia \(ALL\), a severe form of blood cancer
+responsible for numerous annual fatalities. As artificial intelligence
+technologies advance, the research investigates the reliability of these
+methods in real\-world scenarios. The study focuses on recent developments in
+ALL detection, particularly using the latest YOLO series models, to distinguish
+between malignant and benign white blood cells and to identify different stages
+of ALL, including early stages. Additionally, the models are capable of
+detecting hematogones, which are often misclassified as ALL. By utilizing
+advanced deep learning models like YOLOv8 and YOLOv11, the study achieves high
+accuracy rates reaching 98.8%, demonstrating the effectiveness of these
+algorithms across multiple datasets and various real\-world situations.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2410.10701v1)
+
+---
+
+
+## Words to Wheels: Vision\-Based Autonomous Driving Understanding Human Language Instructions Using Foundation Models
+
+**发布日期**：2024-10-14
+
+**作者**：Chanhoe Ryu
+
+**摘要**：This paper introduces an innovative application of foundation models,
+enabling Unmanned Ground Vehicles \(UGVs\) equipped with an RGB\-D camera to
+navigate to designated destinations based on human language instructions.
+Unlike learning\-based methods, this approach does not require prior training
+but instead leverages existing foundation models, thus facilitating
+generalization to novel environments. Upon receiving human language
+instructions, these are transformed into a 'cognitive route description' using
+a large language model \(LLM\)\-a detailed navigation route expressed in human
+language. The vehicle then decomposes this description into landmarks and
+navigation maneuvers. The vehicle also determines elevation costs and
+identifies navigability levels of different regions through a terrain
+segmentation model, GANav, trained on open datasets. Semantic elevation costs,
+which take both elevation and navigability levels into account, are estimated
+and provided to the Model Predictive Path Integral \(MPPI\) planner, responsible
+for local path planning. Concurrently, the vehicle searches for target
+landmarks using foundation models, including YOLO\-World and EfficientViT\-SAM.
+Ultimately, the vehicle executes the navigation commands to reach the
+designated destination, the final landmark. Our experiments demonstrate that
+this application successfully guides UGVs to their destinations following human
+language instructions in novel environments, such as unfamiliar terrain or
+urban settings.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2410.10577v1)
+
+---
+
+
+## Innovative Deep Learning Techniques for Obstacle Recognition: A Comparative Study of Modern Detection Algorithms
+
+**发布日期**：2024-10-14
+
+**作者**：Santiago Pérez
+
+**摘要**：This study explores a comprehensive approach to obstacle detection using
+advanced YOLO models, specifically YOLOv8, YOLOv7, YOLOv6, and YOLOv5.
+Leveraging deep learning techniques, the research focuses on the performance
+comparison of these models in real\-time detection scenarios. The findings
+demonstrate that YOLOv8 achieves the highest accuracy with improved
+precision\-recall metrics. Detailed training processes, algorithmic principles,
+and a range of experimental results are presented to validate the model's
+effectiveness.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2410.10096v1)
+
+---
+
+
+## Optimizing Waste Management with Advanced Object Detection for Garbage Classification
+
+**发布日期**：2024-10-13
+
+**作者**：Everest Z. Kuang
+
+**摘要**：Garbage production and littering are persistent global issues that pose
+significant environmental challenges. Despite large\-scale efforts to manage
+waste through collection and sorting, existing approaches remain inefficient,
+leading to inadequate recycling and disposal. Therefore, developing advanced
+AI\-based systems is less labor intensive approach for addressing the growing
+waste problem more effectively. These models can be applied to sorting systems
+or possibly waste collection robots that may produced in the future. AI models
+have grown significantly at identifying objects through object detection.This
+paper reviews the implementation of AI models for classifying trash through
+object detection, specifically focusing on the use of YOLO V5 for training and
+testing. The study demonstrates how YOLO V5 can effectively identify various
+types of waste, including \\textit\{plastic\}, \\textit\{paper\}, \\textit\{glass\},
+\\textit\{metal\}, \\textit\{cardboard\}, and \\textit\{biodegradables\}\}.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2410.09975v1)
+
+---
+
+
+## Token Pruning using a Lightweight Background Aware Vision Transformer
+
+**发布日期**：2024-10-12
+
+**作者**：Sudhakar Sah
+
+**摘要**：High runtime memory and high latency puts significant constraint on Vision
+Transformer training and inference, especially on edge devices. Token pruning
+reduces the number of input tokens to the ViT based on importance criteria of
+each token. We present a Background Aware Vision Transformer \(BAViT\) model, a
+pre\-processing block to object detection models like DETR/YOLOS aimed to reduce
+runtime memory and increase throughput by using a novel approach to identify
+background tokens in the image. The background tokens can be pruned completely
+or partially before feeding to a ViT based object detector. We use the semantic
+information provided by segmentation map and/or bounding box annotation to
+train a few layers of ViT to classify tokens to either foreground or
+background. Using 2 layers and 10 layers of BAViT, background and foreground
+tokens can be separated with 75% and 88% accuracy on VOC dataset and 71% and
+80% accuracy on COCO dataset respectively. We show a 2 layer BAViT\-small model
+as pre\-processor to YOLOS can increase the throughput by 30% \- 40% with a mAP
+drop of 3% without any sparse fine\-tuning and 2% with sparse fine\-tuning. Our
+approach is specifically targeted for Edge AI use cases.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2410.09324v1)
+
+---
+
+
 ## Optimizing YOLO Architectures for Optimal Road Damage Detection and Classification: A Comparative Study from YOLOv7 to YOLOv10
 
 **发布日期**：2024-10-10
@@ -167,157 +313,6 @@ demonstrate that YOLO\-MARL outperforms traditional MARL algorithms.
 **代码链接**：摘要中未找到代码链接。
 
 **论文链接**：[阅读更多](http://arxiv.org/abs/2410.03997v1)
-
----
-
-
-## SurgeoNet: Realtime 3D Pose Estimation of Articulated Surgical Instruments from Stereo Images using a Synthetically\-trained Network
-
-**发布日期**：2024-10-02
-
-**作者**：Ahmed Tawfik Aboukhadra
-
-**摘要**：Surgery monitoring in Mixed Reality \(MR\) environments has recently received
-substantial focus due to its importance in image\-based decisions, skill
-assessment, and robot\-assisted surgery. Tracking hands and articulated surgical
-instruments is crucial for the success of these applications. Due to the lack
-of annotated datasets and the complexity of the task, only a few works have
-addressed this problem. In this work, we present SurgeoNet, a real\-time neural
-network pipeline to accurately detect and track surgical instruments from a
-stereo VR view. Our multi\-stage approach is inspired by state\-of\-the\-art
-neural\-network architectural design, like YOLO and Transformers. We demonstrate
-the generalization capabilities of SurgeoNet in challenging real\-world
-scenarios, achieved solely through training on synthetic data. The approach can
-be easily extended to any new set of articulated surgical instruments.
-SurgeoNet's code and data are publicly available.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2410.01293v1)
-
----
-
-
-## Optimizing Drug Delivery in Smart Pharmacies: A Novel Framework of Multi\-Stage Grasping Network Combined with Adaptive Robotics Mechanism
-
-**发布日期**：2024-10-01
-
-**作者**：Rui Tang
-
-**摘要**：Robots\-based smart pharmacies are essential for modern healthcare systems,
-enabling efficient drug delivery. However, a critical challenge exists in the
-robotic handling of drugs with varying shapes and overlapping positions, which
-previous studies have not adequately addressed. To enhance the robotic arm's
-ability to grasp chaotic, overlapping, and variously shaped drugs, this paper
-proposed a novel framework combining a multi\-stage grasping network with an
-adaptive robotics mechanism. The framework first preprocessed images using an
-improved Super\-Resolution Convolutional Neural Network \(SRCNN\) algorithm, and
-then employed the proposed YOLOv5\+E\-A\-SPPFCSPC\+BIFPNC \(YOLO\-EASB\) instance
-segmentation algorithm for precise drug segmentation. The most suitable drugs
-for grasping can be determined by assessing the completeness of the
-segmentation masks. Then, these segmented drugs were processed by our improved
-Adaptive Feature Fusion and Grasp\-Aware Network \(IAFFGA\-Net\) with the optimized
-loss function, which ensures accurate picking actions even in complex
-environments. To control the robot grasping, a time\-optimal robotic arm
-trajectory planning algorithm that combines an improved ant colony algorithm
-with 3\-5\-3 interpolation was developed, further improving efficiency while
-ensuring smooth trajectories. Finally, this system was implemented and
-validated within an adaptive collaborative robot setup, which dynamically
-adjusts to different production environments and task requirements.
-Experimental results demonstrate the superiority of our multi\-stage grasping
-network in optimizing smart pharmacy operations, while also showcasing its
-remarkable adaptability and effectiveness in practical applications.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2410.00753v1)
-
----
-
-
-## Drone Stereo Vision for Radiata Pine Branch Detection and Distance Measurement: Utilizing Deep Learning and YOLO Integration
-
-**发布日期**：2024-10-01
-
-**作者**：Yida Lin
-
-**摘要**：This research focuses on the development of a drone equipped with pruning
-tools and a stereo vision camera to accurately detect and measure the spatial
-positions of tree branches. YOLO is employed for branch segmentation, while two
-depth estimation approaches, monocular and stereo, are investigated. In
-comparison to SGBM, deep learning techniques produce more refined and accurate
-depth maps. In the absence of ground\-truth data, a fine\-tuning process using
-deep neural networks is applied to approximate optimal depth values. This
-methodology facilitates precise branch detection and distance measurement,
-addressing critical challenges in the automation of pruning operations. The
-results demonstrate notable advancements in both accuracy and efficiency,
-underscoring the potential of deep learning to drive innovation and enhance
-automation in the agricultural sector.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2410.00503v2)
-
----
-
-
-## MCUBench: A Benchmark of Tiny Object Detectors on MCUs
-
-**发布日期**：2024-09-27
-
-**作者**：Sudhakar Sah
-
-**摘要**：We introduce MCUBench, a benchmark featuring over 100 YOLO\-based object
-detection models evaluated on the VOC dataset across seven different MCUs. This
-benchmark provides detailed data on average precision, latency, RAM, and Flash
-usage for various input resolutions and YOLO\-based one\-stage detectors. By
-conducting a controlled comparison with a fixed training pipeline, we collect
-comprehensive performance metrics. Our Pareto\-optimal analysis shows that
-integrating modern detection heads and training techniques allows various YOLO
-architectures, including legacy models like YOLOv3, to achieve a highly
-efficient tradeoff between mean Average Precision \(mAP\) and latency. MCUBench
-serves as a valuable tool for benchmarking the MCU performance of contemporary
-object detectors and aids in model selection based on specific constraints.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2409.18866v1)
-
----
-
-
-## YOLOv8\-ResCBAM: YOLOv8 Based on An Effective Attention Module for Pediatric Wrist Fracture Detection
-
-**发布日期**：2024-09-27
-
-**作者**：Rui\-Yang Ju
-
-**摘要**：Wrist trauma and even fractures occur frequently in daily life, particularly
-among children who account for a significant proportion of fracture cases.
-Before performing surgery, surgeons often request patients to undergo X\-ray
-imaging first, and prepare for the surgery based on the analysis of the X\-ray
-images. With the development of neural networks, You Only Look Once \(YOLO\)
-series models have been widely used in fracture detection for Computer\-Assisted
-Diagnosis, where the YOLOv8 model has obtained the satisfactory results.
-Applying the attention modules to neural networks is one of the effective
-methods to improve the model performance. This paper proposes YOLOv8\-ResCBAM,
-which incorporates Convolutional Block Attention Module integrated with
-resblock \(ResCBAM\) into the original YOLOv8 network architecture. The
-experimental results on the GRAZPEDWRI\-DX dataset demonstrate that the mean
-Average Precision calculated at Intersection over Union threshold of 0.5 \(mAP
-50\) of the proposed model increased from 63.6% of the original YOLOv8 model to
-65.8%, which achieves the state\-of\-the\-art performance. The implementation code
-is available at
-https://github.com/RuiyangJu/Fracture\_Detection\_Improved\_YOLOv8.
-
-
-**代码链接**：https://github.com/RuiyangJu/Fracture_Detection_Improved_YOLOv8.
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2409.18826v1)
 
 ---
 
