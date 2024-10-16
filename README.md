@@ -1,6 +1,40 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## YOLO\-ELA: Efficient Local Attention Modeling for High\-Performance Real\-Time Insulator Defect Detection
+
+**发布日期**：2024-10-15
+
+**作者**：Olalekan Akindele
+
+**摘要**：Existing detection methods for insulator defect identification from unmanned
+aerial vehicles \(UAV\) struggle with complex background scenes and small
+objects, leading to suboptimal accuracy and a high number of false positives
+detection. Using the concept of local attention modeling, this paper proposes a
+new attention\-based foundation architecture, YOLO\-ELA, to address this issue.
+The Efficient Local Attention \(ELA\) blocks were added into the neck part of the
+one\-stage YOLOv8 architecture to shift the model's attention from background
+features towards features of insulators with defects. The SCYLLA
+Intersection\-Over\-Union \(SIoU\) criterion function was used to reduce detection
+loss, accelerate model convergence, and increase the model's sensitivity
+towards small insulator defects, yielding higher true positive outcomes. Due to
+a limited dataset, data augmentation techniques were utilized to increase the
+diversity of the dataset. In addition, we leveraged the transfer learning
+strategy to improve the model's performance. Experimental results on
+high\-resolution UAV images show that our method achieved a state\-of\-the\-art
+performance of 96.9% mAP0.5 and a real\-time detection speed of 74.63 frames per
+second, outperforming the baseline model. This further demonstrates the
+effectiveness of attention\-based convolutional neural networks \(CNN\) in object
+detection tasks.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2410.11727v1)
+
+---
+
+
 ## Early Diagnoses of Acute Lymphoblastic Leukemia Using YOLOv8 and YOLOv11 Deep Learning Models
 
 **发布日期**：2024-10-14
@@ -25,6 +59,42 @@ algorithms across multiple datasets and various real\-world situations.
 **代码链接**：摘要中未找到代码链接。
 
 **论文链接**：[阅读更多](http://arxiv.org/abs/2410.10701v1)
+
+---
+
+
+## ASTM :Autonomous Smart Traffic Management System Using Artificial Intelligence CNN and LSTM
+
+**发布日期**：2024-10-14
+
+**作者**：Christofel Rio Goenawan
+
+**摘要**：In the modern world, the development of Artificial Intelligence \(AI\) has
+contributed to improvements in various areas, including automation, computer
+vision, fraud detection, and more. AI can be leveraged to enhance the
+efficiency of Autonomous Smart Traffic Management \(ASTM\) systems and reduce
+traffic congestion rates. This paper presents an Autonomous Smart Traffic
+Management \(STM\) system that uses AI to improve traffic flow rates. The system
+employs the YOLO V5 Convolutional Neural Network to detect vehicles in traffic
+management images. Additionally, it predicts the number of vehicles for the
+next 12 hours using a Recurrent Neural Network with Long Short\-Term Memory
+\(RNN\-LSTM\). The Smart Traffic Management Cycle Length Analysis manages the
+traffic cycle length based on these vehicle predictions, aided by AI. From the
+results of the RNN\-LSTM model for predicting vehicle numbers over the next 12
+hours, we observe that the model predicts traffic with a Mean Squared Error
+\(MSE\) of 4.521 vehicles and a Root Mean Squared Error \(RMSE\) of 2.232 vehicles.
+After simulating the STM system in the CARLA simulation environment, we found
+that the Traffic Management Congestion Flow Rate with ASTM \(21 vehicles per
+minute\) is 50\\% higher than the rate without STM \(around 15 vehicles per
+minute\). Additionally, the Traffic Management Vehicle Pass Delay with STM \(5
+seconds per vehicle\) is 70\\% lower than without STM \(around 12 seconds per
+vehicle\). These results demonstrate that the STM system using AI can increase
+traffic flow by 50\\% and reduce vehicle pass delays by 70\\%.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2410.10929v1)
 
 ---
 
@@ -101,17 +171,17 @@ leading to inadequate recycling and disposal. Therefore, developing advanced
 AI\-based systems is less labor intensive approach for addressing the growing
 waste problem more effectively. These models can be applied to sorting systems
 or possibly waste collection robots that may produced in the future. AI models
-have grown significantly at identifying objects through object detection.This
+have grown significantly at identifying objects through object detection. This
 paper reviews the implementation of AI models for classifying trash through
-object detection, specifically focusing on the use of YOLO V5 for training and
+object detection, specifically focusing on using YOLO V5 for training and
 testing. The study demonstrates how YOLO V5 can effectively identify various
-types of waste, including \\textit\{plastic\}, \\textit\{paper\}, \\textit\{glass\},
-\\textit\{metal\}, \\textit\{cardboard\}, and \\textit\{biodegradables\}\}.
+types of waste, including plastic, paper, glass, metal, cardboard, and
+biodegradables.
 
 
 **代码链接**：摘要中未找到代码链接。
 
-**论文链接**：[阅读更多](http://arxiv.org/abs/2410.09975v1)
+**论文链接**：[阅读更多](http://arxiv.org/abs/2410.09975v2)
 
 ---
 
@@ -143,6 +213,34 @@ approach is specifically targeted for Edge AI use cases.
 **代码链接**：摘要中未找到代码链接。
 
 **论文链接**：[阅读更多](http://arxiv.org/abs/2410.09324v1)
+
+---
+
+
+## ActNAS : Generating Efficient YOLO Models using Activation NAS
+
+**发布日期**：2024-10-11
+
+**作者**：Sudhakar Sah
+
+**摘要**：Activation functions introduce non\-linearity into Neural Networks, enabling
+them to learn complex patterns. Different activation functions vary in speed
+and accuracy, ranging from faster but less accurate options like ReLU to slower
+but more accurate functions like SiLU or SELU. Typically, same activation
+function is used throughout an entire model architecture. In this paper, we
+conduct a comprehensive study on the effects of using mixed activation
+functions in YOLO\-based models, evaluating their impact on latency, memory
+usage, and accuracy across CPU, NPU, and GPU edge devices. We also propose a
+novel approach that leverages Neural Architecture Search \(NAS\) to design YOLO
+models with optimized mixed activation functions.The best model generated
+through this method demonstrates a slight improvement in mean Average Precision
+\(mAP\) compared to baseline model \(SiLU\), while it is 22.28% faster and consumes
+64.15% less memory on the reference NPU device.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2410.10887v1)
 
 ---
 
@@ -213,106 +311,6 @@ IRSTD performance, particularly under challenging conditions.
 **代码链接**：摘要中未找到代码链接。
 
 **论文链接**：[阅读更多](http://arxiv.org/abs/2410.07437v1)
-
----
-
-
-## Iterative Optimization Annotation Pipeline and ALSS\-YOLO\-Seg for Efficient Banana Plantation Segmentation in UAV Imagery
-
-**发布日期**：2024-10-09
-
-**作者**：Ang He
-
-**摘要**：Precise segmentation of Unmanned Aerial Vehicle \(UAV\)\-captured images plays a
-vital role in tasks such as crop yield estimation and plant health assessment
-in banana plantations. By identifying and classifying planted areas, crop area
-can be calculated, which is indispensable for accurate yield predictions.
-However, segmenting banana plantation scenes requires a substantial amount of
-annotated data, and manual labeling of these images is both time\-consuming and
-labor\-intensive, limiting the development of large\-scale datasets. Furthermore,
-challenges such as changing target sizes, complex ground backgrounds, limited
-computational resources, and correct identification of crop categories make
-segmentation even more difficult. To address these issues, we proposed a
-comprehensive solution. Firstly, we designed an iterative optimization
-annotation pipeline leveraging SAM2's zero\-shot capabilities to generate
-high\-quality segmentation annotations, thereby reducing the cost and time
-associated with data annotation significantly. Secondly, we developed
-ALSS\-YOLO\-Seg, an efficient lightweight segmentation model optimized for UAV
-imagery. The model's backbone includes an Adaptive Lightweight Channel
-Splitting and Shuffling \(ALSS\) module to improve information exchange between
-channels and optimize feature extraction, aiding accurate crop identification.
-Additionally, a Multi\-Scale Channel Attention \(MSCA\) module combines
-multi\-scale feature extraction with channel attention to tackle challenges of
-varying target sizes and complex ground backgrounds.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2410.07955v1)
-
----
-
-
-## Human\-in\-the\-loop Reasoning For Traffic Sign Detection: Collaborative Approach Yolo With Video\-llava
-
-**发布日期**：2024-10-07
-
-**作者**：Mehdi Azarafza
-
-**摘要**：Traffic Sign Recognition \(TSR\) detection is a crucial component of autonomous
-vehicles. While You Only Look Once \(YOLO\) is a popular real\-time object
-detection algorithm, factors like training data quality and adverse weather
-conditions \(e.g., heavy rain\) can lead to detection failures. These failures
-can be particularly dangerous when visual similarities between objects exist,
-such as mistaking a 30 km/h sign for a higher speed limit sign. This paper
-proposes a method that combines video analysis and reasoning, prompting with a
-human\-in\-the\-loop guide large vision model to improve YOLOs accuracy in
-detecting road speed limit signs, especially in semi\-real\-world conditions. It
-is hypothesized that the guided prompting and reasoning abilities of
-Video\-LLava can enhance YOLOs traffic sign detection capabilities. This
-hypothesis is supported by an evaluation based on human\-annotated accuracy
-metrics within a dataset of recorded videos from the CARLA car simulator. The
-results demonstrate that a collaborative approach combining YOLO with
-Video\-LLava and reasoning can effectively address challenging situations such
-as heavy rain and overcast conditions that hinder YOLOs detection capabilities.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2410.05096v1)
-
----
-
-
-## YOLO\-MARL: You Only LLM Once for Multi\-agent Reinforcement Learning
-
-**发布日期**：2024-10-05
-
-**作者**：Yuan Zhuang
-
-**摘要**：Advancements in deep multi\-agent reinforcement learning \(MARL\) have
-positioned it as a promising approach for decision\-making in cooperative games.
-However, it still remains challenging for MARL agents to learn cooperative
-strategies for some game environments. Recently, large language models \(LLMs\)
-have demonstrated emergent reasoning capabilities, making them promising
-candidates for enhancing coordination among the agents. However, due to the
-model size of LLMs, it can be expensive to frequently infer LLMs for actions
-that agents can take. In this work, we propose You Only LLM Once for MARL
-\(YOLO\-MARL\), a novel framework that leverages the high\-level task planning
-capabilities of LLMs to improve the policy learning process of multi\-agents in
-cooperative games. Notably, for each game environment, YOLO\-MARL only requires
-one time interaction with LLMs in the proposed strategy generation, state
-interpretation and planning function generation modules, before the MARL policy
-training process. This avoids the ongoing costs and computational time
-associated with frequent LLMs API calls during training. Moreover, the trained
-decentralized normal\-sized neural network\-based policies operate independently
-of the LLM. We evaluate our method across three different environments and
-demonstrate that YOLO\-MARL outperforms traditional MARL algorithms.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2410.03997v1)
 
 ---
 
