@@ -1,6 +1,77 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## DocLayout\-YOLO: Enhancing Document Layout Analysis through Diverse Synthetic Data and Global\-to\-Local Adaptive Perception
+
+**发布日期**：2024-10-16
+
+**作者**：Zhiyuan Zhao
+
+**摘要**：Document Layout Analysis is crucial for real\-world document understanding
+systems, but it encounters a challenging trade\-off between speed and accuracy:
+multimodal methods leveraging both text and visual features achieve higher
+accuracy but suffer from significant latency, whereas unimodal methods relying
+solely on visual features offer faster processing speeds at the expense of
+accuracy. To address this dilemma, we introduce DocLayout\-YOLO, a novel
+approach that enhances accuracy while maintaining speed advantages through
+document\-specific optimizations in both pre\-training and model design. For
+robust document pre\-training, we introduce the Mesh\-candidate BestFit
+algorithm, which frames document synthesis as a two\-dimensional bin packing
+problem, generating the large\-scale, diverse DocSynth\-300K dataset.
+Pre\-training on the resulting DocSynth\-300K dataset significantly improves
+fine\-tuning performance across various document types. In terms of model
+optimization, we propose a Global\-to\-Local Controllable Receptive Module that
+is capable of better handling multi\-scale variations of document elements.
+Furthermore, to validate performance across different document types, we
+introduce a complex and challenging benchmark named DocStructBench. Extensive
+experiments on downstream datasets demonstrate that DocLayout\-YOLO excels in
+both speed and accuracy. Code, data, and models are available at
+https://github.com/opendatalab/DocLayout\-YOLO.
+
+
+**代码链接**：https://github.com/opendatalab/DocLayout-YOLO.
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2410.12628v1)
+
+---
+
+
+## Development of Image Collection Method Using YOLO and Siamese Network
+
+**发布日期**：2024-10-16
+
+**作者**：Chan Young Shin
+
+**摘要**：As we enter the era of big data, collecting high\-quality data is very
+important. However, collecting data by humans is not only very time\-consuming
+but also expensive. Therefore, many scientists have devised various methods to
+collect data using computers. Among them, there is a method called web
+crawling, but the authors found that the crawling method has a problem in that
+unintended data is collected along with the user. The authors found that this
+can be filtered using the object recognition model YOLOv10. However, there are
+cases where data that is not properly filtered remains. Here, image
+reclassification was performed by additionally utilizing the distance output
+from the Siamese network, and higher performance was recorded than other
+classification models. \(average \\\_f1 score YOLO\+MobileNet
+0.678\->YOLO\+SiameseNet 0.772\)\) The user can specify a distance threshold to
+adjust the balance between data deficiency and noise\-robustness. The authors
+also found that the Siamese network can achieve higher performance with fewer
+resources because the cropped images are used for object recognition when
+processing images in the Siamese network. \(Class 20 mean\-based f1 score,
+non\-crop\+Siamese\(MobileNetV3\-Small\) 80.94 \-> crop
+preprocessing\+Siamese\(MobileNetV3\-Small\) 82.31\) In this way, the image
+retrieval system that utilizes two consecutive models to reduce errors can save
+users' time and effort, and build better quality data faster and with fewer
+resources than before.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2410.12561v1)
+
+---
+
+
 ## YOLO\-ELA: Efficient Local Attention Modeling for High\-Performance Real\-Time Insulator Defect Detection
 
 **发布日期**：2024-10-15
@@ -241,76 +312,6 @@ through this method demonstrates a slight improvement in mean Average Precision
 **代码链接**：摘要中未找到代码链接。
 
 **论文链接**：[阅读更多](http://arxiv.org/abs/2410.10887v1)
-
----
-
-
-## Optimizing YOLO Architectures for Optimal Road Damage Detection and Classification: A Comparative Study from YOLOv7 to YOLOv10
-
-**发布日期**：2024-10-10
-
-**作者**：Vung Pham
-
-**摘要**：Maintaining roadway infrastructure is essential for ensuring a safe,
-efficient, and sustainable transportation system. However, manual data
-collection for detecting road damage is time\-consuming, labor\-intensive, and
-poses safety risks. Recent advancements in artificial intelligence,
-particularly deep learning, offer a promising solution for automating this
-process using road images. This paper presents a comprehensive workflow for
-road damage detection using deep learning models, focusing on optimizations for
-inference speed while preserving detection accuracy. Specifically, to
-accommodate hardware limitations, large images are cropped, and lightweight
-models are utilized. Additionally, an external pothole dataset is incorporated
-to enhance the detection of this underrepresented damage class. The proposed
-approach employs multiple model architectures, including a custom YOLOv7 model
-with Coordinate Attention layers and a Tiny YOLOv7 model, which are trained and
-combined to maximize detection performance. The models are further
-reparameterized to optimize inference efficiency. Experimental results
-demonstrate that the ensemble of the custom YOLOv7 model with three Coordinate
-Attention layers and the default Tiny YOLOv7 model achieves an F1 score of
-0.7027 with an inference speed of 0.0547 seconds per image. The complete
-pipeline, including data preprocessing, model training, and inference scripts,
-is publicly available on the project's GitHub repository, enabling
-reproducibility and facilitating further research.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2410.08409v1)
-
----
-
-
-## Robust infrared small target detection using self\-supervised and a contrario paradigms
-
-**发布日期**：2024-10-09
-
-**作者**：Alina Ciocarlan
-
-**摘要**：Detecting small targets in infrared images poses significant challenges in
-defense applications due to the presence of complex backgrounds and the small
-size of the targets. Traditional object detection methods often struggle to
-balance high detection rates with low false alarm rates, especially when
-dealing with small objects. In this paper, we introduce a novel approach that
-combines a contrario paradigm with Self\-Supervised Learning \(SSL\) to improve
-Infrared Small Target Detection \(IRSTD\). On the one hand, the integration of an
-a contrario criterion into a YOLO detection head enhances feature map responses
-for small and unexpected objects while effectively controlling false alarms. On
-the other hand, we explore SSL techniques to overcome the challenges of limited
-annotated data, common in IRSTD tasks. Specifically, we benchmark several
-representative SSL strategies for their effectiveness in improving small object
-detection performance. Our findings show that instance discrimination methods
-outperform masked image modeling strategies when applied to YOLO\-based small
-object detection. Moreover, the combination of the a contrario and SSL
-paradigms leads to significant performance improvements, narrowing the gap with
-state\-of\-the\-art segmentation methods and even outperforming them in frugal
-settings. This two\-pronged approach offers a robust solution for improving
-IRSTD performance, particularly under challenging conditions.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2410.07437v1)
 
 ---
 
