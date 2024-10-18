@@ -1,6 +1,33 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Spatiotemporal Object Detection for Improved Aerial Vehicle Detection in Traffic Monitoring
+
+**发布日期**：2024-10-17
+
+**作者**：Kristina Telegraph
+
+**摘要**：This work presents advancements in multi\-class vehicle detection using UAV
+cameras through the development of spatiotemporal object detection models. The
+study introduces a Spatio\-Temporal Vehicle Detection Dataset \(STVD\) containing
+6, 600 annotated sequential frame images captured by UAVs, enabling
+comprehensive training and evaluation of algorithms for holistic spatiotemporal
+perception. A YOLO\-based object detection algorithm is enhanced to incorporate
+temporal dynamics, resulting in improved performance over single frame models.
+The integration of attention mechanisms into spatiotemporal models is shown to
+further enhance performance. Experimental validation demonstrates significant
+progress, with the best spatiotemporal model exhibiting a 16.22% improvement
+over single frame models, while it is demonstrated that attention mechanisms
+hold the potential for additional performance gains.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2410.13616v1)
+
+---
+
+
 ## DocLayout\-YOLO: Enhancing Document Layout Analysis through Diverse Synthetic Data and Global\-to\-Local Adaptive Perception
 
 **发布日期**：2024-10-16
@@ -165,7 +192,7 @@ traffic flow by 50\\% and reduce vehicle pass delays by 70\\%.
 
 **代码链接**：摘要中未找到代码链接。
 
-**论文链接**：[阅读更多](http://arxiv.org/abs/2410.10929v1)
+**论文链接**：[阅读更多](http://arxiv.org/abs/2410.10929v2)
 
 ---
 
@@ -284,34 +311,6 @@ approach is specifically targeted for Edge AI use cases.
 **代码链接**：摘要中未找到代码链接。
 
 **论文链接**：[阅读更多](http://arxiv.org/abs/2410.09324v1)
-
----
-
-
-## ActNAS : Generating Efficient YOLO Models using Activation NAS
-
-**发布日期**：2024-10-11
-
-**作者**：Sudhakar Sah
-
-**摘要**：Activation functions introduce non\-linearity into Neural Networks, enabling
-them to learn complex patterns. Different activation functions vary in speed
-and accuracy, ranging from faster but less accurate options like ReLU to slower
-but more accurate functions like SiLU or SELU. Typically, same activation
-function is used throughout an entire model architecture. In this paper, we
-conduct a comprehensive study on the effects of using mixed activation
-functions in YOLO\-based models, evaluating their impact on latency, memory
-usage, and accuracy across CPU, NPU, and GPU edge devices. We also propose a
-novel approach that leverages Neural Architecture Search \(NAS\) to design YOLO
-models with optimized mixed activation functions.The best model generated
-through this method demonstrates a slight improvement in mean Average Precision
-\(mAP\) compared to baseline model \(SiLU\), while it is 22.28% faster and consumes
-64.15% less memory on the reference NPU device.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2410.10887v1)
 
 ---
 
