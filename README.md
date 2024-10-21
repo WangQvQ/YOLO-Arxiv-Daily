@@ -1,6 +1,40 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## You Only Look Twice\! for Failure Causes Identification of Drill Bits
+
+**发布日期**：2024-10-18
+
+**作者**：Asma Yamani
+
+**摘要**：Efficient identification of the root causes of drill bit failure is crucial
+due to potential impacts such as operational losses, safety threats, and
+delays. Early recognition of these failures enables proactive maintenance,
+reducing risks and financial losses associated with unforeseen breakdowns and
+prolonged downtime. Thus, our study investigates various causes of drill bit
+failure using images of different blades. The process involves annotating
+cutters with their respective locations and damage types, followed by the
+development of two YOLO Location and Damage Cutter Detection models, as well as
+multi\-class multi\-label Decision Tree and Random Forests models to identify the
+causes of failure by assessing the cutters' location and damage type.
+Additionally, RRFCI is proposed for the classification of failure causes.
+Notably, the cutter location detection model achieved a high score of 0.97 mPA,
+and the cutter damage detection model yielded a 0.49 mPA. The rule\-based
+approach over\-performed both DT and RF in failure cause identification,
+achieving a macro\-average F1\-score of 0.94 across all damage causes. The
+integration of the complete automated pipeline successfully identified 100\\% of
+the 24 failure causes when tested on independent sets of ten drill bits,
+showcasing its potential to efficiently assist experts in identifying the root
+causes of drill bit damages.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2410.14282v1)
+
+---
+
+
 ## Spatiotemporal Object Detection for Improved Aerial Vehicle Detection in Traffic Monitoring
 
 **发布日期**：2024-10-17
@@ -280,37 +314,6 @@ biodegradables.
 **代码链接**：摘要中未找到代码链接。
 
 **论文链接**：[阅读更多](http://arxiv.org/abs/2410.09975v2)
-
----
-
-
-## Token Pruning using a Lightweight Background Aware Vision Transformer
-
-**发布日期**：2024-10-12
-
-**作者**：Sudhakar Sah
-
-**摘要**：High runtime memory and high latency puts significant constraint on Vision
-Transformer training and inference, especially on edge devices. Token pruning
-reduces the number of input tokens to the ViT based on importance criteria of
-each token. We present a Background Aware Vision Transformer \(BAViT\) model, a
-pre\-processing block to object detection models like DETR/YOLOS aimed to reduce
-runtime memory and increase throughput by using a novel approach to identify
-background tokens in the image. The background tokens can be pruned completely
-or partially before feeding to a ViT based object detector. We use the semantic
-information provided by segmentation map and/or bounding box annotation to
-train a few layers of ViT to classify tokens to either foreground or
-background. Using 2 layers and 10 layers of BAViT, background and foreground
-tokens can be separated with 75% and 88% accuracy on VOC dataset and 71% and
-80% accuracy on COCO dataset respectively. We show a 2 layer BAViT\-small model
-as pre\-processor to YOLOS can increase the throughput by 30% \- 40% with a mAP
-drop of 3% without any sparse fine\-tuning and 2% with sparse fine\-tuning. Our
-approach is specifically targeted for Edge AI use cases.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2410.09324v1)
 
 ---
 
