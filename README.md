@@ -1,6 +1,156 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Few\-shot target\-driven instance detection based on open\-vocabulary object detection models
+
+**发布日期**：2024-10-21
+
+**作者**：Ben Crulis
+
+**摘要**：Current large open vision models could be useful for one and few\-shot object
+recognition. Nevertheless, gradient\-based re\-training solutions are costly. On
+the other hand, open\-vocabulary object detection models bring closer visual and
+textual concepts in the same latent space, allowing zero\-shot detection via
+prompting at small computational cost. We propose a lightweight method to turn
+the latter into a one\-shot or few\-shot object recognition models without
+requiring textual descriptions. Our experiments on the TEgO dataset using the
+YOLO\-World model as a base show that performance increases with the model size,
+the number of examples and the use of image augmentation.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2410.16028v1)
+
+---
+
+
+## How Important are Data Augmentations to Close the Domain Gap for Object Detection in Orbit?
+
+**发布日期**：2024-10-21
+
+**作者**：Maximilian Ulmer
+
+**摘要**：We investigate the efficacy of data augmentations to close the domain gap in
+spaceborne computer vision, crucial for autonomous operations like on\-orbit
+servicing. As the use of computer vision in space increases, challenges such as
+hostile illumination and low signal\-to\-noise ratios significantly hinder
+performance. While learning\-based algorithms show promising results, their
+adoption is limited by the need for extensive annotated training data and the
+domain gap that arises from differences between synthesized and real\-world
+imagery. This study explores domain generalization in terms of data
+augmentations \-\- classical color and geometric transformations, corruptions,
+and noise \-\- to enhance model performance across the domain gap. To this end,
+we conduct an large scale experiment using a hyperparameter optimization
+pipeline that samples hundreds of different configurations and searches for the
+best set to bridge the domain gap. As a reference task, we use 2D object
+detection and evaluate on the SPEED\+ dataset that contains real
+hardware\-in\-the\-loop satellite images in its test set. Moreover, we evaluate
+four popular object detectors, including Mask R\-CNN, Faster R\-CNN, YOLO\-v7, and
+the open set detector GroundingDINO, and highlight their trade\-offs between
+performance, inference speed, and training time. Our results underscore the
+vital role of data augmentations in bridging the domain gap, improving model
+performance, robustness, and reliability for critical space applications. As a
+result, we propose two novel data augmentations specifically developed to
+emulate the visual effects observed in orbital imagery. We conclude by
+recommending the most effective augmentations for advancing computer vision in
+challenging orbital environments. Code for training detectors and
+hyperparameter search will be made publicly available.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2410.15766v1)
+
+---
+
+
+## Deep Learning and Machine Learning \-\- Object Detection and Semantic Segmentation: From Theory to Applications
+
+**发布日期**：2024-10-21
+
+**作者**：Jintao Ren
+
+**摘要**：This book offers an in\-depth exploration of object detection and semantic
+segmentation, combining theoretical foundations with practical applications. It
+covers state\-of\-the\-art advancements in machine learning and deep learning,
+with a focus on convolutional neural networks \(CNNs\), YOLO architectures, and
+transformer\-based approaches like DETR. The book also delves into the
+integration of artificial intelligence \(AI\) techniques and large language
+models for enhanced object detection in complex environments. A thorough
+discussion of big data analysis is presented, highlighting the importance of
+data processing, model optimization, and performance evaluation metrics. By
+bridging the gap between traditional methods and modern deep learning
+frameworks, this book serves as a comprehensive guide for researchers, data
+scientists, and engineers aiming to leverage AI\-driven methodologies in
+large\-scale object detection tasks.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2410.15584v1)
+
+---
+
+
+## YOLO\-RD: Introducing Relevant and Compact Explicit Knowledge to YOLO by Retriever\-Dictionary
+
+**发布日期**：2024-10-20
+
+**作者**：Hao\-Tang Tsui
+
+**摘要**：Identifying and localizing objects within images is a fundamental challenge,
+and numerous efforts have been made to enhance model accuracy by experimenting
+with diverse architectures and refining training strategies. Nevertheless, a
+prevalent limitation in existing models is overemphasizing the current input
+while ignoring the information from the entire dataset. We introduce an
+innovative \{\\em \\textbf\{R\}etriever\}\-\{\\em\\textbf\{D\}ictionary\} \(RD\) module to
+address this issue. This architecture enables YOLO\-based models to efficiently
+retrieve features from a Dictionary that contains the insight of the dataset,
+which is built by the knowledge from Visual Models \(VM\), Large Language Models
+\(LLM\), or Visual Language Models \(VLM\). The flexible RD enables the model to
+incorporate such explicit knowledge that enhances the ability to benefit
+multiple tasks, specifically, segmentation, detection, and classification, from
+pixel to image level. The experiments show that using the RD significantly
+improves model performance, achieving more than a 3\\% increase in mean Average
+Precision for object detection with less than a 1\\% increase in model
+parameters. Beyond 1\-stage object detection models, the RD module improves the
+effectiveness of 2\-stage models and DETR\-based architectures, such as Faster
+R\-CNN and Deformable DETR
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2410.15346v1)
+
+---
+
+
+## Cutting\-Edge Detection of Fatigue in Drivers: A Comparative Study of Object Detection Models
+
+**发布日期**：2024-10-19
+
+**作者**：Amelia Jones
+
+**摘要**：This research delves into the development of a fatigue detection system based
+on modern object detection algorithms, particularly YOLO \(You Only Look Once\)
+models, including YOLOv5, YOLOv6, YOLOv7, and YOLOv8. By comparing the
+performance of these models, we evaluate their effectiveness in real\-time
+detection of fatigue\-related behavior in drivers. The study addresses
+challenges like environmental variability and detection accuracy and suggests a
+roadmap for enhancing real\-time detection. Experimental results demonstrate
+that YOLOv8 offers superior performance, balancing accuracy with speed. Data
+augmentation techniques and model optimization have been key in enhancing
+system adaptability to various driving conditions.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2410.15030v1)
+
+---
+
+
 ## You Only Look Twice\! for Failure Causes Identification of Drill Bits
 
 **发布日期**：2024-10-18
@@ -163,157 +313,6 @@ detection tasks.
 **代码链接**：摘要中未找到代码链接。
 
 **论文链接**：[阅读更多](http://arxiv.org/abs/2410.11727v1)
-
----
-
-
-## Early Diagnoses of Acute Lymphoblastic Leukemia Using YOLOv8 and YOLOv11 Deep Learning Models
-
-**发布日期**：2024-10-14
-
-**作者**：Alaa Awad
-
-**摘要**：Thousands of individuals succumb annually to leukemia alone. This study
-explores the application of image processing and deep learning techniques for
-detecting Acute Lymphoblastic Leukemia \(ALL\), a severe form of blood cancer
-responsible for numerous annual fatalities. As artificial intelligence
-technologies advance, the research investigates the reliability of these
-methods in real\-world scenarios. The study focuses on recent developments in
-ALL detection, particularly using the latest YOLO series models, to distinguish
-between malignant and benign white blood cells and to identify different stages
-of ALL, including early stages. Additionally, the models are capable of
-detecting hematogones, which are often misclassified as ALL. By utilizing
-advanced deep learning models like YOLOv8 and YOLOv11, the study achieves high
-accuracy rates reaching 98.8%, demonstrating the effectiveness of these
-algorithms across multiple datasets and various real\-world situations.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2410.10701v1)
-
----
-
-
-## ASTM :Autonomous Smart Traffic Management System Using Artificial Intelligence CNN and LSTM
-
-**发布日期**：2024-10-14
-
-**作者**：Christofel Rio Goenawan
-
-**摘要**：In the modern world, the development of Artificial Intelligence \(AI\) has
-contributed to improvements in various areas, including automation, computer
-vision, fraud detection, and more. AI can be leveraged to enhance the
-efficiency of Autonomous Smart Traffic Management \(ASTM\) systems and reduce
-traffic congestion rates. This paper presents an Autonomous Smart Traffic
-Management \(STM\) system that uses AI to improve traffic flow rates. The system
-employs the YOLO V5 Convolutional Neural Network to detect vehicles in traffic
-management images. Additionally, it predicts the number of vehicles for the
-next 12 hours using a Recurrent Neural Network with Long Short\-Term Memory
-\(RNN\-LSTM\). The Smart Traffic Management Cycle Length Analysis manages the
-traffic cycle length based on these vehicle predictions, aided by AI. From the
-results of the RNN\-LSTM model for predicting vehicle numbers over the next 12
-hours, we observe that the model predicts traffic with a Mean Squared Error
-\(MSE\) of 4.521 vehicles and a Root Mean Squared Error \(RMSE\) of 2.232 vehicles.
-After simulating the STM system in the CARLA simulation environment, we found
-that the Traffic Management Congestion Flow Rate with ASTM \(21 vehicles per
-minute\) is 50\\% higher than the rate without STM \(around 15 vehicles per
-minute\). Additionally, the Traffic Management Vehicle Pass Delay with STM \(5
-seconds per vehicle\) is 70\\% lower than without STM \(around 12 seconds per
-vehicle\). These results demonstrate that the STM system using AI can increase
-traffic flow by 50\\% and reduce vehicle pass delays by 70\\%.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2410.10929v2)
-
----
-
-
-## Words to Wheels: Vision\-Based Autonomous Driving Understanding Human Language Instructions Using Foundation Models
-
-**发布日期**：2024-10-14
-
-**作者**：Chanhoe Ryu
-
-**摘要**：This paper introduces an innovative application of foundation models,
-enabling Unmanned Ground Vehicles \(UGVs\) equipped with an RGB\-D camera to
-navigate to designated destinations based on human language instructions.
-Unlike learning\-based methods, this approach does not require prior training
-but instead leverages existing foundation models, thus facilitating
-generalization to novel environments. Upon receiving human language
-instructions, these are transformed into a 'cognitive route description' using
-a large language model \(LLM\)\-a detailed navigation route expressed in human
-language. The vehicle then decomposes this description into landmarks and
-navigation maneuvers. The vehicle also determines elevation costs and
-identifies navigability levels of different regions through a terrain
-segmentation model, GANav, trained on open datasets. Semantic elevation costs,
-which take both elevation and navigability levels into account, are estimated
-and provided to the Model Predictive Path Integral \(MPPI\) planner, responsible
-for local path planning. Concurrently, the vehicle searches for target
-landmarks using foundation models, including YOLO\-World and EfficientViT\-SAM.
-Ultimately, the vehicle executes the navigation commands to reach the
-designated destination, the final landmark. Our experiments demonstrate that
-this application successfully guides UGVs to their destinations following human
-language instructions in novel environments, such as unfamiliar terrain or
-urban settings.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2410.10577v1)
-
----
-
-
-## Innovative Deep Learning Techniques for Obstacle Recognition: A Comparative Study of Modern Detection Algorithms
-
-**发布日期**：2024-10-14
-
-**作者**：Santiago Pérez
-
-**摘要**：This study explores a comprehensive approach to obstacle detection using
-advanced YOLO models, specifically YOLOv8, YOLOv7, YOLOv6, and YOLOv5.
-Leveraging deep learning techniques, the research focuses on the performance
-comparison of these models in real\-time detection scenarios. The findings
-demonstrate that YOLOv8 achieves the highest accuracy with improved
-precision\-recall metrics. Detailed training processes, algorithmic principles,
-and a range of experimental results are presented to validate the model's
-effectiveness.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2410.10096v1)
-
----
-
-
-## Optimizing Waste Management with Advanced Object Detection for Garbage Classification
-
-**发布日期**：2024-10-13
-
-**作者**：Everest Z. Kuang
-
-**摘要**：Garbage production and littering are persistent global issues that pose
-significant environmental challenges. Despite large\-scale efforts to manage
-waste through collection and sorting, existing approaches remain inefficient,
-leading to inadequate recycling and disposal. Therefore, developing advanced
-AI\-based systems is less labor intensive approach for addressing the growing
-waste problem more effectively. These models can be applied to sorting systems
-or possibly waste collection robots that may produced in the future. AI models
-have grown significantly at identifying objects through object detection. This
-paper reviews the implementation of AI models for classifying trash through
-object detection, specifically focusing on using YOLO V5 for training and
-testing. The study demonstrates how YOLO V5 can effectively identify various
-types of waste, including plastic, paper, glass, metal, cardboard, and
-biodegradables.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2410.09975v2)
 
 ---
 
