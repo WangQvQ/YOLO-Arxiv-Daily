@@ -1,6 +1,105 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## YOLO\-TS: Real\-Time Traffic Sign Detection with Enhanced Accuracy Using Optimized Receptive Fields and Anchor\-Free Fusion
+
+**发布日期**：2024-10-22
+
+**作者**：Junzhou Chen
+
+**摘要**：Ensuring safety in both autonomous driving and advanced driver\-assistance
+systems \(ADAS\) depends critically on the efficient deployment of traffic sign
+recognition technology. While current methods show effectiveness, they often
+compromise between speed and accuracy. To address this issue, we present a
+novel real\-time and efficient road sign detection network, YOLO\-TS. This
+network significantly improves performance by optimizing the receptive fields
+of multi\-scale feature maps to align more closely with the size distribution of
+traffic signs in various datasets. Moreover, our innovative feature\-fusion
+strategy, leveraging the flexibility of Anchor\-Free methods, allows for
+multi\-scale object detection on a high\-resolution feature map abundant in
+contextual information, achieving remarkable enhancements in both accuracy and
+speed. To mitigate the adverse effects of the grid pattern caused by dilated
+convolutions on the detection of smaller objects, we have devised a unique
+module that not only mitigates this grid effect but also widens the receptive
+field to encompass an extensive range of spatial contextual information, thus
+boosting the efficiency of information usage. Evaluation on challenging public
+datasets, TT100K and CCTSDB2021, demonstrates that YOLO\-TS surpasses existing
+state\-of\-the\-art methods in terms of both accuracy and speed. The code for our
+method will be available.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2410.17144v1)
+
+---
+
+
+## Multi Kernel Estimation based Object Segmentation
+
+**发布日期**：2024-10-22
+
+**作者**：Haim Goldfisher
+
+**摘要**：This paper presents a novel approach for multi\-kernel estimation by enhancing
+the KernelGAN algorithm, which traditionally estimates a single kernel for the
+entire image. We introduce Multi\-KernelGAN, which extends KernelGAN's
+capabilities by estimating two distinct kernels based on object segmentation
+masks. Our approach is validated through three distinct methods: texture\-based
+patch Fast Fourier Transform \(FFT\) calculation, detail\-based segmentation, and
+deep learning\-based object segmentation using YOLOv8 and the Segment Anything
+Model \(SAM\). Among these methods, the combination of YOLO and SAM yields the
+best results for kernel estimation. Experimental results demonstrate that our
+multi\-kernel estimation technique outperforms conventional single\-kernel
+methods in super\-resolution tasks.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2410.17064v1)
+
+---
+
+
+## DSORT\-MCU: Detecting Small Objects in Real\-Time on Microcontroller Units
+
+**发布日期**：2024-10-22
+
+**作者**：Liam Boyle
+
+**摘要**：Advances in lightweight neural networks have revolutionized computer vision
+in a broad range of IoT applications, encompassing remote monitoring and
+process automation. However, the detection of small objects, which is crucial
+for many of these applications, remains an underexplored area in current
+computer vision research, particularly for low\-power embedded devices that host
+resource\-constrained processors. To address said gap, this paper proposes an
+adaptive tiling method for lightweight and energy\-efficient object detection
+networks, including YOLO\-based models and the popular FOMO network. The
+proposed tiling enables object detection on low\-power MCUs with no compromise
+on accuracy compared to large\-scale detection models. The benefit of the
+proposed method is demonstrated by applying it to FOMO and TinyissimoYOLO
+networks on a novel RISC\-V\-based MCU with built\-in ML accelerators. Extensive
+experimental results show that the proposed tiling method boosts the F1\-score
+by up to 225% for both FOMO and TinyissimoYOLO networks while reducing the
+average object count error by up to 76% with FOMO and up to 89% for
+TinyissimoYOLO. Furthermore, the findings of this work indicate that using a
+soft F1 loss over the popular binary cross\-entropy loss can serve as an
+implicit non\-maximum suppression for the FOMO network. To evaluate the
+real\-world performance, the networks are deployed on the RISC\-V based GAP9
+microcontroller from GreenWaves Technologies, showcasing the proposed method's
+ability to strike a balance between detection performance \($58% \- 95%$ F1
+score\), low latency \(0.6 ms/Inference \- 16.2 ms/Inference\}\), and energy
+efficiency \(31 uJ/Inference\} \- 1.27 mJ/Inference\) while performing multiple
+predictions using high\-resolution images on a MCU.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2410.16769v1)
+
+---
+
+
 ## Few\-shot target\-driven instance detection based on open\-vocabulary object detection models
 
 **发布日期**：2024-10-21
@@ -208,111 +307,6 @@ hold the potential for additional performance gains.
 **代码链接**：摘要中未找到代码链接。
 
 **论文链接**：[阅读更多](http://arxiv.org/abs/2410.13616v1)
-
----
-
-
-## DocLayout\-YOLO: Enhancing Document Layout Analysis through Diverse Synthetic Data and Global\-to\-Local Adaptive Perception
-
-**发布日期**：2024-10-16
-
-**作者**：Zhiyuan Zhao
-
-**摘要**：Document Layout Analysis is crucial for real\-world document understanding
-systems, but it encounters a challenging trade\-off between speed and accuracy:
-multimodal methods leveraging both text and visual features achieve higher
-accuracy but suffer from significant latency, whereas unimodal methods relying
-solely on visual features offer faster processing speeds at the expense of
-accuracy. To address this dilemma, we introduce DocLayout\-YOLO, a novel
-approach that enhances accuracy while maintaining speed advantages through
-document\-specific optimizations in both pre\-training and model design. For
-robust document pre\-training, we introduce the Mesh\-candidate BestFit
-algorithm, which frames document synthesis as a two\-dimensional bin packing
-problem, generating the large\-scale, diverse DocSynth\-300K dataset.
-Pre\-training on the resulting DocSynth\-300K dataset significantly improves
-fine\-tuning performance across various document types. In terms of model
-optimization, we propose a Global\-to\-Local Controllable Receptive Module that
-is capable of better handling multi\-scale variations of document elements.
-Furthermore, to validate performance across different document types, we
-introduce a complex and challenging benchmark named DocStructBench. Extensive
-experiments on downstream datasets demonstrate that DocLayout\-YOLO excels in
-both speed and accuracy. Code, data, and models are available at
-https://github.com/opendatalab/DocLayout\-YOLO.
-
-
-**代码链接**：https://github.com/opendatalab/DocLayout-YOLO.
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2410.12628v1)
-
----
-
-
-## Development of Image Collection Method Using YOLO and Siamese Network
-
-**发布日期**：2024-10-16
-
-**作者**：Chan Young Shin
-
-**摘要**：As we enter the era of big data, collecting high\-quality data is very
-important. However, collecting data by humans is not only very time\-consuming
-but also expensive. Therefore, many scientists have devised various methods to
-collect data using computers. Among them, there is a method called web
-crawling, but the authors found that the crawling method has a problem in that
-unintended data is collected along with the user. The authors found that this
-can be filtered using the object recognition model YOLOv10. However, there are
-cases where data that is not properly filtered remains. Here, image
-reclassification was performed by additionally utilizing the distance output
-from the Siamese network, and higher performance was recorded than other
-classification models. \(average \\\_f1 score YOLO\+MobileNet
-0.678\->YOLO\+SiameseNet 0.772\)\) The user can specify a distance threshold to
-adjust the balance between data deficiency and noise\-robustness. The authors
-also found that the Siamese network can achieve higher performance with fewer
-resources because the cropped images are used for object recognition when
-processing images in the Siamese network. \(Class 20 mean\-based f1 score,
-non\-crop\+Siamese\(MobileNetV3\-Small\) 80.94 \-> crop
-preprocessing\+Siamese\(MobileNetV3\-Small\) 82.31\) In this way, the image
-retrieval system that utilizes two consecutive models to reduce errors can save
-users' time and effort, and build better quality data faster and with fewer
-resources than before.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2410.12561v1)
-
----
-
-
-## YOLO\-ELA: Efficient Local Attention Modeling for High\-Performance Real\-Time Insulator Defect Detection
-
-**发布日期**：2024-10-15
-
-**作者**：Olalekan Akindele
-
-**摘要**：Existing detection methods for insulator defect identification from unmanned
-aerial vehicles \(UAV\) struggle with complex background scenes and small
-objects, leading to suboptimal accuracy and a high number of false positives
-detection. Using the concept of local attention modeling, this paper proposes a
-new attention\-based foundation architecture, YOLO\-ELA, to address this issue.
-The Efficient Local Attention \(ELA\) blocks were added into the neck part of the
-one\-stage YOLOv8 architecture to shift the model's attention from background
-features towards features of insulators with defects. The SCYLLA
-Intersection\-Over\-Union \(SIoU\) criterion function was used to reduce detection
-loss, accelerate model convergence, and increase the model's sensitivity
-towards small insulator defects, yielding higher true positive outcomes. Due to
-a limited dataset, data augmentation techniques were utilized to increase the
-diversity of the dataset. In addition, we leveraged the transfer learning
-strategy to improve the model's performance. Experimental results on
-high\-resolution UAV images show that our method achieved a state\-of\-the\-art
-performance of 96.9% mAP0.5 and a real\-time detection speed of 74.63 frames per
-second, outperforming the baseline model. This further demonstrates the
-effectiveness of attention\-based convolutional neural networks \(CNN\) in object
-detection tasks.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2410.11727v1)
 
 ---
 
