@@ -1,6 +1,75 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## YOLO\-Vehicle\-Pro: A Cloud\-Edge Collaborative Framework for Object Detection in Autonomous Driving under Adverse Weather Conditions
+
+**发布日期**：2024-10-23
+
+**作者**：Xiguang Li
+
+**摘要**：With the rapid advancement of autonomous driving technology, efficient and
+accurate object detection capabilities have become crucial factors in ensuring
+the safety and reliability of autonomous driving systems. However, in
+low\-visibility environments such as hazy conditions, the performance of
+traditional object detection algorithms often degrades significantly, failing
+to meet the demands of autonomous driving. To address this challenge, this
+paper proposes two innovative deep learning models: YOLO\-Vehicle and
+YOLO\-Vehicle\-Pro. YOLO\-Vehicle is an object detection model tailored
+specifically for autonomous driving scenarios, employing multimodal fusion
+techniques to combine image and textual information for object detection.
+YOLO\-Vehicle\-Pro builds upon this foundation by introducing an improved image
+dehazing algorithm, enhancing detection performance in low\-visibility
+environments. In addition to model innovation, this paper also designs and
+implements a cloud\-edge collaborative object detection system, deploying models
+on edge devices and offloading partial computational tasks to the cloud in
+complex situations. Experimental results demonstrate that on the KITTI dataset,
+the YOLO\-Vehicle\-v1s model achieved 92.1% accuracy while maintaining a
+detection speed of 226 FPS and an inference time of 12ms, meeting the real\-time
+requirements of autonomous driving. When processing hazy images, the
+YOLO\-Vehicle\-Pro model achieved a high accuracy of 82.3% mAP@50 on the Foggy
+Cityscapes dataset while maintaining a detection speed of 43 FPS.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2410.17734v1)
+
+---
+
+
+## YOLOv11: An Overview of the Key Architectural Enhancements
+
+**发布日期**：2024-10-23
+
+**作者**：Rahima Khanam
+
+**摘要**：This study presents an architectural analysis of YOLOv11, the latest
+iteration in the YOLO \(You Only Look Once\) series of object detection models.
+We examine the models architectural innovations, including the introduction of
+the C3k2 \(Cross Stage Partial with kernel size 2\) block, SPPF \(Spatial Pyramid
+Pooling \- Fast\), and C2PSA \(Convolutional block with Parallel Spatial
+Attention\) components, which contribute in improving the models performance in
+several ways such as enhanced feature extraction. The paper explores YOLOv11's
+expanded capabilities across various computer vision tasks, including object
+detection, instance segmentation, pose estimation, and oriented object
+detection \(OBB\). We review the model's performance improvements in terms of
+mean Average Precision \(mAP\) and computational efficiency compared to its
+predecessors, with a focus on the trade\-off between parameter count and
+accuracy. Additionally, the study discusses YOLOv11's versatility across
+different model sizes, from nano to extra\-large, catering to diverse
+application needs from edge devices to high\-performance computing environments.
+Our research provides insights into YOLOv11's position within the broader
+landscape of object detection and its potential impact on real\-time computer
+vision applications.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2410.17725v1)
+
+---
+
+
 ## YOLO\-TS: Real\-Time Traffic Sign Detection with Enhanced Accuracy Using Optimized Receptive Fields and Anchor\-Free Fusion
 
 **发布日期**：2024-10-22
@@ -246,67 +315,6 @@ system adaptability to various driving conditions.
 **代码链接**：摘要中未找到代码链接。
 
 **论文链接**：[阅读更多](http://arxiv.org/abs/2410.15030v1)
-
----
-
-
-## You Only Look Twice\! for Failure Causes Identification of Drill Bits
-
-**发布日期**：2024-10-18
-
-**作者**：Asma Yamani
-
-**摘要**：Efficient identification of the root causes of drill bit failure is crucial
-due to potential impacts such as operational losses, safety threats, and
-delays. Early recognition of these failures enables proactive maintenance,
-reducing risks and financial losses associated with unforeseen breakdowns and
-prolonged downtime. Thus, our study investigates various causes of drill bit
-failure using images of different blades. The process involves annotating
-cutters with their respective locations and damage types, followed by the
-development of two YOLO Location and Damage Cutter Detection models, as well as
-multi\-class multi\-label Decision Tree and Random Forests models to identify the
-causes of failure by assessing the cutters' location and damage type.
-Additionally, RRFCI is proposed for the classification of failure causes.
-Notably, the cutter location detection model achieved a high score of 0.97 mPA,
-and the cutter damage detection model yielded a 0.49 mPA. The rule\-based
-approach over\-performed both DT and RF in failure cause identification,
-achieving a macro\-average F1\-score of 0.94 across all damage causes. The
-integration of the complete automated pipeline successfully identified 100\\% of
-the 24 failure causes when tested on independent sets of ten drill bits,
-showcasing its potential to efficiently assist experts in identifying the root
-causes of drill bit damages.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2410.14282v1)
-
----
-
-
-## Spatiotemporal Object Detection for Improved Aerial Vehicle Detection in Traffic Monitoring
-
-**发布日期**：2024-10-17
-
-**作者**：Kristina Telegraph
-
-**摘要**：This work presents advancements in multi\-class vehicle detection using UAV
-cameras through the development of spatiotemporal object detection models. The
-study introduces a Spatio\-Temporal Vehicle Detection Dataset \(STVD\) containing
-6, 600 annotated sequential frame images captured by UAVs, enabling
-comprehensive training and evaluation of algorithms for holistic spatiotemporal
-perception. A YOLO\-based object detection algorithm is enhanced to incorporate
-temporal dynamics, resulting in improved performance over single frame models.
-The integration of attention mechanisms into spatiotemporal models is shown to
-further enhance performance. Experimental validation demonstrates significant
-progress, with the best spatiotemporal model exhibiting a 16.22% improvement
-over single frame models, while it is demonstrated that attention mechanisms
-hold the potential for additional performance gains.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2410.13616v1)
 
 ---
 
