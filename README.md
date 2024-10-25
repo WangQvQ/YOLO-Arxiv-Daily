@@ -1,6 +1,40 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Complexity Matters: Effective Dimensionality as a Measure for Adversarial Robustness
+
+**发布日期**：2024-10-24
+
+**作者**：David Khachaturov
+
+**摘要**：Quantifying robustness in a single measure for the purposes of model
+selection, development of adversarial training methods, and anticipating trends
+has so far been elusive. The simplest metric to consider is the number of
+trainable parameters in a model but this has previously been shown to be
+insufficient at explaining robustness properties. A variety of other metrics,
+such as ones based on boundary thickness and gradient flatness have been
+proposed but have been shown to be inadequate proxies for robustness.
+  In this work, we investigate the relationship between a model's effective
+dimensionality, which can be thought of as model complexity, and its robustness
+properties. We run experiments on commercial\-scale models that are often used
+in real\-world environments such as YOLO and ResNet. We reveal a near\-linear
+inverse relationship between effective dimensionality and adversarial
+robustness, that is models with a lower dimensionality exhibit better
+robustness. We investigate the effect of a variety of adversarial training
+methods on effective dimensionality and find the same inverse linear
+relationship present, suggesting that effective dimensionality can serve as a
+useful criterion for model selection and robustness evaluation, providing a
+more nuanced and effective metric than parameter count or previously\-tested
+measures.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2410.18556v1)
+
+---
+
+
 ## YOLO\-Vehicle\-Pro: A Cloud\-Edge Collaborative Framework for Object Detection in Autonomous Driving under Adverse Weather Conditions
 
 **发布日期**：2024-10-23
@@ -290,31 +324,6 @@ R\-CNN and Deformable DETR
 **代码链接**：摘要中未找到代码链接。
 
 **论文链接**：[阅读更多](http://arxiv.org/abs/2410.15346v1)
-
----
-
-
-## Cutting\-Edge Detection of Fatigue in Drivers: A Comparative Study of Object Detection Models
-
-**发布日期**：2024-10-19
-
-**作者**：Amelia Jones
-
-**摘要**：This research delves into the development of a fatigue detection system based
-on modern object detection algorithms, particularly YOLO \(You Only Look Once\)
-models, including YOLOv5, YOLOv6, YOLOv7, and YOLOv8. By comparing the
-performance of these models, we evaluate their effectiveness in real\-time
-detection of fatigue\-related behavior in drivers. The study addresses
-challenges like environmental variability and detection accuracy and suggests a
-roadmap for enhancing real\-time detection. Experimental results demonstrate
-that YOLOv8 offers superior performance, balancing accuracy with speed. Data
-augmentation techniques and model optimization have been key in enhancing
-system adaptability to various driving conditions.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2410.15030v1)
 
 ---
 
