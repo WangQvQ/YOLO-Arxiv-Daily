@@ -1,6 +1,41 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## DECADE: Towards Designing Efficient\-yet\-Accurate Distance Estimation Modules for Collision Avoidance in Mobile Advanced Driver Assistance Systems
+
+**发布日期**：2024-10-25
+
+**作者**：Muhammad Zaeem Shahzad
+
+**摘要**：The proliferation of smartphones and other mobile devices provides a unique
+opportunity to make Advanced Driver Assistance Systems \(ADAS\) accessible to
+everyone in the form of an application empowered by low\-cost Machine/Deep
+Learning \(ML/DL\) models to enhance road safety. For the critical feature of
+Collision Avoidance in Mobile ADAS, lightweight Deep Neural Networks \(DNN\) for
+object detection exist, but conventional pixel\-wise depth/distance estimation
+DNNs are vastly more computationally expensive making them unsuitable for a
+real\-time application on resource\-constrained devices. In this paper, we
+present a distance estimation model, DECADE, that processes each detector
+output instead of constructing pixel\-wise depth/disparity maps. In it, we
+propose a pose estimation DNN to estimate allocentric orientation of detections
+to supplement the distance estimation DNN in its prediction of distance using
+bounding box features. We demonstrate that these modules can be attached to any
+detector to extend object detection with fast distance estimation. Evaluation
+of the proposed modules with attachment to and fine\-tuning on the outputs of
+the YOLO object detector on the KITTI 3D Object Detection dataset achieves
+state\-of\-the\-art performance with 1.38 meters in Mean Absolute Error and 7.3%
+in Mean Relative Error in the distance range of 0\-150 meters. Our extensive
+evaluation scheme not only evaluates class\-wise performance, but also evaluates
+range\-wise accuracy especially in the critical range of 0\-70m.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2410.19336v1)
+
+---
+
+
 ## Complexity Matters: Effective Dimensionality as a Measure for Adversarial Robustness
 
 **发布日期**：2024-10-24
@@ -291,39 +326,6 @@ large\-scale object detection tasks.
 **代码链接**：摘要中未找到代码链接。
 
 **论文链接**：[阅读更多](http://arxiv.org/abs/2410.15584v1)
-
----
-
-
-## YOLO\-RD: Introducing Relevant and Compact Explicit Knowledge to YOLO by Retriever\-Dictionary
-
-**发布日期**：2024-10-20
-
-**作者**：Hao\-Tang Tsui
-
-**摘要**：Identifying and localizing objects within images is a fundamental challenge,
-and numerous efforts have been made to enhance model accuracy by experimenting
-with diverse architectures and refining training strategies. Nevertheless, a
-prevalent limitation in existing models is overemphasizing the current input
-while ignoring the information from the entire dataset. We introduce an
-innovative \{\\em \\textbf\{R\}etriever\}\-\{\\em\\textbf\{D\}ictionary\} \(RD\) module to
-address this issue. This architecture enables YOLO\-based models to efficiently
-retrieve features from a Dictionary that contains the insight of the dataset,
-which is built by the knowledge from Visual Models \(VM\), Large Language Models
-\(LLM\), or Visual Language Models \(VLM\). The flexible RD enables the model to
-incorporate such explicit knowledge that enhances the ability to benefit
-multiple tasks, specifically, segmentation, detection, and classification, from
-pixel to image level. The experiments show that using the RD significantly
-improves model performance, achieving more than a 3\\% increase in mean Average
-Precision for object detection with less than a 1\\% increase in model
-parameters. Beyond 1\-stage object detection models, the RD module improves the
-effectiveness of 2\-stage models and DETR\-based architectures, such as Faster
-R\-CNN and Deformable DETR
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2410.15346v1)
 
 ---
 
