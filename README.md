@@ -1,6 +1,28 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## CIB\-SE\-YOLOv8: Optimized YOLOv8 for Real\-Time Safety Equipment Detection on Construction Sites
+
+**发布日期**：2024-10-28
+
+**作者**：Xiaoyi Liu
+
+**摘要**：Ensuring safety on construction sites is critical, with helmets playing a key
+role in reducing injuries. Traditional safety checks are labor\-intensive and
+often insufficient. This study presents a computer vision\-based solution using
+YOLO for real\-time helmet detection, leveraging the SHEL5K dataset. Our
+proposed CIB\-SE\-YOLOv8 model incorporates SE attention mechanisms and modified
+C2f blocks, enhancing detection accuracy and efficiency. This model offers a
+more effective solution for promoting safety compliance on construction sites.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2410.20699v1)
+
+---
+
+
 ## DECADE: Towards Designing Efficient\-yet\-Accurate Distance Estimation Modules for Collision Avoidance in Mobile Advanced Driver Assistance Systems
 
 **发布日期**：2024-10-25
@@ -66,6 +88,73 @@ measures.
 **代码链接**：摘要中未找到代码链接。
 
 **论文链接**：[阅读更多](http://arxiv.org/abs/2410.18556v1)
+
+---
+
+
+## Comparing YOLO11 and YOLOv8 for instance segmentation of occluded and non\-occluded immature green fruits in complex orchard environment
+
+**发布日期**：2024-10-24
+
+**作者**：Ranjan Sapkota
+
+**摘要**：This study conducted a comprehensive performance evaluation on YOLO11 and
+YOLOv8, the latest in the "You Only Look Once" \(YOLO\) series, focusing on their
+instance segmentation capabilities for immature green apples in orchard
+environments. YOLO11n\-seg achieved the highest mask precision across all
+categories with a notable score of 0.831, highlighting its effectiveness in
+fruit detection. YOLO11m\-seg and YOLO11l\-seg excelled in non\-occluded and
+occluded fruitlet segmentation with scores of 0.851 and 0.829, respectively.
+Additionally, YOLO11x\-seg led in mask recall for all categories, achieving a
+score of 0.815, with YOLO11m\-seg performing best for non\-occluded immature
+green fruitlets at 0.858 and YOLOv8x\-seg leading the occluded category with
+0.800. In terms of mean average precision at a 50\\% intersection over union
+\(mAP@50\), YOLO11m\-seg consistently outperformed, registering the highest scores
+for both box and mask segmentation, at 0.876 and 0.860 for the "All" class and
+0.908 and 0.909 for non\-occluded immature fruitlets, respectively. YOLO11l\-seg
+and YOLOv8l\-seg shared the top box mAP@50 for occluded immature fruitlets at
+0.847, while YOLO11m\-seg achieved the highest mask mAP@50 of 0.810. Despite the
+advancements in YOLO11, YOLOv8n surpassed its counterparts in image processing
+speed, with an impressive inference speed of 3.3 milliseconds, compared to the
+fastest YOLO11 series model at 4.8 milliseconds, underscoring its suitability
+for real\-time agricultural applications related to complex green fruit
+environments.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2410.19869v1)
+
+---
+
+
+## Breaking the Illusion: Real\-world Challenges for Adversarial Patches in Object Detection
+
+**发布日期**：2024-10-23
+
+**作者**：Jakob Shack
+
+**摘要**：Adversarial attacks pose a significant threat to the robustness and
+reliability of machine learning systems, particularly in computer vision
+applications. This study investigates the performance of adversarial patches
+for the YOLO object detection network in the physical world. Two attacks were
+tested: a patch designed to be placed anywhere within the scene \- global patch,
+and another patch intended to partially overlap with specific object targeted
+for removal from detection \- local patch. Various factors such as patch size,
+position, rotation, brightness, and hue were analyzed to understand their
+impact on the effectiveness of the adversarial patches. The results reveal a
+notable dependency on these parameters, highlighting the challenges in
+maintaining attack efficacy in real\-world conditions. Learning to align
+digitally applied transformation parameters with those measured in the real
+world still results in up to a 64\\% discrepancy in patch performance. These
+findings underscore the importance of understanding environmental influences on
+adversarial attacks, which can inform the development of more robust defenses
+for practical machine learning applications.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2410.19863v1)
 
 ---
 
@@ -234,98 +323,6 @@ predictions using high\-resolution images on a MCU.
 **代码链接**：摘要中未找到代码链接。
 
 **论文链接**：[阅读更多](http://arxiv.org/abs/2410.16769v1)
-
----
-
-
-## Few\-shot target\-driven instance detection based on open\-vocabulary object detection models
-
-**发布日期**：2024-10-21
-
-**作者**：Ben Crulis
-
-**摘要**：Current large open vision models could be useful for one and few\-shot object
-recognition. Nevertheless, gradient\-based re\-training solutions are costly. On
-the other hand, open\-vocabulary object detection models bring closer visual and
-textual concepts in the same latent space, allowing zero\-shot detection via
-prompting at small computational cost. We propose a lightweight method to turn
-the latter into a one\-shot or few\-shot object recognition models without
-requiring textual descriptions. Our experiments on the TEgO dataset using the
-YOLO\-World model as a base show that performance increases with the model size,
-the number of examples and the use of image augmentation.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2410.16028v1)
-
----
-
-
-## How Important are Data Augmentations to Close the Domain Gap for Object Detection in Orbit?
-
-**发布日期**：2024-10-21
-
-**作者**：Maximilian Ulmer
-
-**摘要**：We investigate the efficacy of data augmentations to close the domain gap in
-spaceborne computer vision, crucial for autonomous operations like on\-orbit
-servicing. As the use of computer vision in space increases, challenges such as
-hostile illumination and low signal\-to\-noise ratios significantly hinder
-performance. While learning\-based algorithms show promising results, their
-adoption is limited by the need for extensive annotated training data and the
-domain gap that arises from differences between synthesized and real\-world
-imagery. This study explores domain generalization in terms of data
-augmentations \-\- classical color and geometric transformations, corruptions,
-and noise \-\- to enhance model performance across the domain gap. To this end,
-we conduct an large scale experiment using a hyperparameter optimization
-pipeline that samples hundreds of different configurations and searches for the
-best set to bridge the domain gap. As a reference task, we use 2D object
-detection and evaluate on the SPEED\+ dataset that contains real
-hardware\-in\-the\-loop satellite images in its test set. Moreover, we evaluate
-four popular object detectors, including Mask R\-CNN, Faster R\-CNN, YOLO\-v7, and
-the open set detector GroundingDINO, and highlight their trade\-offs between
-performance, inference speed, and training time. Our results underscore the
-vital role of data augmentations in bridging the domain gap, improving model
-performance, robustness, and reliability for critical space applications. As a
-result, we propose two novel data augmentations specifically developed to
-emulate the visual effects observed in orbital imagery. We conclude by
-recommending the most effective augmentations for advancing computer vision in
-challenging orbital environments. Code for training detectors and
-hyperparameter search will be made publicly available.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2410.15766v1)
-
----
-
-
-## Deep Learning and Machine Learning \-\- Object Detection and Semantic Segmentation: From Theory to Applications
-
-**发布日期**：2024-10-21
-
-**作者**：Jintao Ren
-
-**摘要**：This book offers an in\-depth exploration of object detection and semantic
-segmentation, combining theoretical foundations with practical applications. It
-covers state\-of\-the\-art advancements in machine learning and deep learning,
-with a focus on convolutional neural networks \(CNNs\), YOLO architectures, and
-transformer\-based approaches like DETR. The book also delves into the
-integration of artificial intelligence \(AI\) techniques and large language
-models for enhanced object detection in complex environments. A thorough
-discussion of big data analysis is presented, highlighting the importance of
-data processing, model optimization, and performance evaluation metrics. By
-bridging the gap between traditional methods and modern deep learning
-frameworks, this book serves as a comprehensive guide for researchers, data
-scientists, and engineers aiming to leverage AI\-driven methodologies in
-large\-scale object detection tasks.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2410.15584v1)
 
 ---
 
