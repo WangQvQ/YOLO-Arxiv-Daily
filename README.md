@@ -1,6 +1,109 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## From Explicit Rules to Implicit Reasoning in an Interpretable Violence Monitoring System
+
+**发布日期**：2024-10-29
+
+**作者**：Wen\-Dong Jiang
+
+**摘要**：Recently, research based on pre\-trained models has demonstrated outstanding
+performance in violence surveillance tasks. However, these black\-box systems
+face challenges regarding explainability during training and inference
+processes. An important question is how to incorporate explicit knowledge into
+these implicit models, thereby designing expert\-driven and interpretable
+violence surveillance systems. This paper proposes a new paradigm for weakly
+supervised violence monitoring \(WSVM\) called Rule base Violence monitoring
+\(RuleVM\). The proposed RuleVM uses a dual\-branch structure for different
+designs for images and text. One of the branches is called the implicit branch,
+which uses only visual features for coarse\-grained binary classification. In
+this branch, image feature extraction is divided into two channels: one
+responsible for extracting scene frames and the other focusing on extracting
+actions. The other branch is called the explicit branch, which utilizes
+language\-image alignment to perform fine\-grained classification. For the
+language channel design in the explicit branch, the proposed RuleCLIP uses the
+state\-of\-the\-art YOLO\-World model to detect objects and actions in video
+frames, and association rules are identified through data mining methods as
+descriptions of the video. Leveraging the dual?branch architecture, RuleVM
+achieves interpretable coarse?grained and fine\-grained violence surveillance.
+Extensive experiments were conducted on two commonly used benchmarks, and the
+results show that RuleCLIP achieved the best performance in both coarse\-grained
+and fine\-grained detection, significantly outperforming existing
+state\-of\-the\-art methods. Moreover, interpretability experiments uncovered some
+interesting rules, such as the observation that as the number of people
+increases, the risk level of violent behavior also rises.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2410.21991v1)
+
+---
+
+
+## PK\-YOLO: Pretrained Knowledge Guided YOLO for Brain Tumor Detection in Multiplanar MRI Slices
+
+**发布日期**：2024-10-29
+
+**作者**：Ming Kang
+
+**摘要**：Brain tumor detection in multiplane Magnetic Resonance Imaging \(MRI\) slices
+is a challenging task due to the various appearances and relationships in the
+structure of the multiplane images. In this paper, we propose a new You Only
+Look Once \(YOLO\)\-based detection model that incorporates Pretrained Knowledge
+\(PK\), called PK\-YOLO, to improve the performance for brain tumor detection in
+multiplane MRI slices. To our best knowledge, PK\-YOLO is the first pretrained
+knowledge guided YOLO\-based object detector. The main components of the new
+method are a pretrained pure lightweight convolutional neural network\-based
+backbone via sparse masked modeling, a YOLO architecture with the pretrained
+backbone, and a regression loss function for improving small object detection.
+The pretrained backbone allows for feature transferability of object queries on
+individual plane MRI slices into the model encoders, and the learned domain
+knowledge base can improve in\-domain detection. The improved loss function can
+further boost detection performance on small\-size brain tumors in multiplanar
+two\-dimensional MRI slices. Experimental results show that the proposed PK\-YOLO
+achieves competitive performance on the multiplanar MRI brain tumor detection
+datasets compared to state\-of\-the\-art YOLO\-like and DETR\-like object detectors.
+The code is available at https://github.com/mkang315/PK\-YOLO.
+
+
+**代码链接**：https://github.com/mkang315/PK-YOLO.
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2410.21822v1)
+
+---
+
+
+## TACO: Adversarial Camouflage Optimization on Trucks to Fool Object Detectors
+
+**发布日期**：2024-10-28
+
+**作者**：Adonisz Dimitriu
+
+**摘要**：Adversarial attacks threaten the reliability of machine learning models in
+critical applications like autonomous vehicles and defense systems. As object
+detectors become more robust with models like YOLOv8, developing effective
+adversarial methodologies is increasingly challenging. We present Truck
+Adversarial Camouflage Optimization \(TACO\), a novel framework that generates
+adversarial camouflage patterns on 3D vehicle models to deceive
+state\-of\-the\-art object detectors. Adopting Unreal Engine 5, TACO integrates
+differentiable rendering with a Photorealistic Rendering Network to optimize
+adversarial textures targeted at YOLOv8. To ensure the generated textures are
+both effective in deceiving detectors and visually plausible, we introduce the
+Convolutional Smooth Loss function, a generalized smooth loss function.
+Experimental evaluations demonstrate that TACO significantly degrades YOLOv8's
+detection performance, achieving an AP@0.5 of 0.0099 on unseen test data.
+Furthermore, these adversarial patterns exhibit strong transferability to other
+object detection models such as Faster R\-CNN and earlier YOLO versions.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2410.21443v1)
+
+---
+
+
 ## CIB\-SE\-YOLOv8: Optimized YOLOv8 for Real\-Time Safety Equipment Detection on Construction Sites
 
 **发布日期**：2024-10-28
@@ -224,105 +327,6 @@ vision applications.
 **代码链接**：摘要中未找到代码链接。
 
 **论文链接**：[阅读更多](http://arxiv.org/abs/2410.17725v1)
-
----
-
-
-## YOLO\-TS: Real\-Time Traffic Sign Detection with Enhanced Accuracy Using Optimized Receptive Fields and Anchor\-Free Fusion
-
-**发布日期**：2024-10-22
-
-**作者**：Junzhou Chen
-
-**摘要**：Ensuring safety in both autonomous driving and advanced driver\-assistance
-systems \(ADAS\) depends critically on the efficient deployment of traffic sign
-recognition technology. While current methods show effectiveness, they often
-compromise between speed and accuracy. To address this issue, we present a
-novel real\-time and efficient road sign detection network, YOLO\-TS. This
-network significantly improves performance by optimizing the receptive fields
-of multi\-scale feature maps to align more closely with the size distribution of
-traffic signs in various datasets. Moreover, our innovative feature\-fusion
-strategy, leveraging the flexibility of Anchor\-Free methods, allows for
-multi\-scale object detection on a high\-resolution feature map abundant in
-contextual information, achieving remarkable enhancements in both accuracy and
-speed. To mitigate the adverse effects of the grid pattern caused by dilated
-convolutions on the detection of smaller objects, we have devised a unique
-module that not only mitigates this grid effect but also widens the receptive
-field to encompass an extensive range of spatial contextual information, thus
-boosting the efficiency of information usage. Evaluation on challenging public
-datasets, TT100K and CCTSDB2021, demonstrates that YOLO\-TS surpasses existing
-state\-of\-the\-art methods in terms of both accuracy and speed. The code for our
-method will be available.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2410.17144v1)
-
----
-
-
-## Multi Kernel Estimation based Object Segmentation
-
-**发布日期**：2024-10-22
-
-**作者**：Haim Goldfisher
-
-**摘要**：This paper presents a novel approach for multi\-kernel estimation by enhancing
-the KernelGAN algorithm, which traditionally estimates a single kernel for the
-entire image. We introduce Multi\-KernelGAN, which extends KernelGAN's
-capabilities by estimating two distinct kernels based on object segmentation
-masks. Our approach is validated through three distinct methods: texture\-based
-patch Fast Fourier Transform \(FFT\) calculation, detail\-based segmentation, and
-deep learning\-based object segmentation using YOLOv8 and the Segment Anything
-Model \(SAM\). Among these methods, the combination of YOLO and SAM yields the
-best results for kernel estimation. Experimental results demonstrate that our
-multi\-kernel estimation technique outperforms conventional single\-kernel
-methods in super\-resolution tasks.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2410.17064v1)
-
----
-
-
-## DSORT\-MCU: Detecting Small Objects in Real\-Time on Microcontroller Units
-
-**发布日期**：2024-10-22
-
-**作者**：Liam Boyle
-
-**摘要**：Advances in lightweight neural networks have revolutionized computer vision
-in a broad range of IoT applications, encompassing remote monitoring and
-process automation. However, the detection of small objects, which is crucial
-for many of these applications, remains an underexplored area in current
-computer vision research, particularly for low\-power embedded devices that host
-resource\-constrained processors. To address said gap, this paper proposes an
-adaptive tiling method for lightweight and energy\-efficient object detection
-networks, including YOLO\-based models and the popular FOMO network. The
-proposed tiling enables object detection on low\-power MCUs with no compromise
-on accuracy compared to large\-scale detection models. The benefit of the
-proposed method is demonstrated by applying it to FOMO and TinyissimoYOLO
-networks on a novel RISC\-V\-based MCU with built\-in ML accelerators. Extensive
-experimental results show that the proposed tiling method boosts the F1\-score
-by up to 225% for both FOMO and TinyissimoYOLO networks while reducing the
-average object count error by up to 76% with FOMO and up to 89% for
-TinyissimoYOLO. Furthermore, the findings of this work indicate that using a
-soft F1 loss over the popular binary cross\-entropy loss can serve as an
-implicit non\-maximum suppression for the FOMO network. To evaluate the
-real\-world performance, the networks are deployed on the RISC\-V based GAP9
-microcontroller from GreenWaves Technologies, showcasing the proposed method's
-ability to strike a balance between detection performance \($58% \- 95%$ F1
-score\), low latency \(0.6 ms/Inference \- 16.2 ms/Inference\}\), and energy
-efficiency \(31 uJ/Inference\} \- 1.27 mJ/Inference\) while performing multiple
-predictions using high\-resolution images on a MCU.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2410.16769v1)
 
 ---
 
