@@ -1,6 +1,39 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## YOLOv11 for Vehicle Detection: Advancements, Performance, and Applications in Intelligent Transportation Systems
+
+**发布日期**：2024-10-30
+
+**作者**：Mujadded Al Rabbani Alif
+
+**摘要**：Accurate vehicle detection is essential for the development of intelligent
+transportation systems, autonomous driving, and traffic monitoring. This paper
+presents a detailed analysis of YOLO11, the latest advancement in the YOLO
+series of deep learning models, focusing exclusively on vehicle detection
+tasks. Building upon the success of its predecessors, YOLO11 introduces
+architectural improvements designed to enhance detection speed, accuracy, and
+robustness in complex environments. Using a comprehensive dataset comprising
+multiple vehicle types\-cars, trucks, buses, motorcycles, and bicycles we
+evaluate YOLO11's performance using metrics such as precision, recall, F1
+score, and mean average precision \(mAP\). Our findings demonstrate that YOLO11
+surpasses previous versions \(YOLOv8 and YOLOv10\) in detecting smaller and more
+occluded vehicles while maintaining a competitive inference time, making it
+well\-suited for real\-time applications. Comparative analysis shows significant
+improvements in the detection of complex vehicle geometries, further
+contributing to the development of efficient and scalable vehicle detection
+systems. This research highlights YOLO11's potential to enhance autonomous
+vehicle performance and traffic monitoring systems, offering insights for
+future developments in the field.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2410.22898v1)
+
+---
+
+
 ## From Explicit Rules to Implicit Reasoning in an Interpretable Violence Monitoring System
 
 **发布日期**：2024-10-29
@@ -24,8 +57,8 @@ language\-image alignment to perform fine\-grained classification. For the
 language channel design in the explicit branch, the proposed RuleCLIP uses the
 state\-of\-the\-art YOLO\-World model to detect objects and actions in video
 frames, and association rules are identified through data mining methods as
-descriptions of the video. Leveraging the dual?branch architecture, RuleVM
-achieves interpretable coarse?grained and fine\-grained violence surveillance.
+descriptions of the video. Leveraging the dual\-branch architecture, RuleVM
+achieves interpretable coarse\-grained and fine\-grained violence surveillance.
 Extensive experiments were conducted on two commonly used benchmarks, and the
 results show that RuleCLIP achieved the best performance in both coarse\-grained
 and fine\-grained detection, significantly outperforming existing
@@ -294,39 +327,6 @@ Cityscapes dataset while maintaining a detection speed of 43 FPS.
 **代码链接**：摘要中未找到代码链接。
 
 **论文链接**：[阅读更多](http://arxiv.org/abs/2410.17734v1)
-
----
-
-
-## YOLOv11: An Overview of the Key Architectural Enhancements
-
-**发布日期**：2024-10-23
-
-**作者**：Rahima Khanam
-
-**摘要**：This study presents an architectural analysis of YOLOv11, the latest
-iteration in the YOLO \(You Only Look Once\) series of object detection models.
-We examine the models architectural innovations, including the introduction of
-the C3k2 \(Cross Stage Partial with kernel size 2\) block, SPPF \(Spatial Pyramid
-Pooling \- Fast\), and C2PSA \(Convolutional block with Parallel Spatial
-Attention\) components, which contribute in improving the models performance in
-several ways such as enhanced feature extraction. The paper explores YOLOv11's
-expanded capabilities across various computer vision tasks, including object
-detection, instance segmentation, pose estimation, and oriented object
-detection \(OBB\). We review the model's performance improvements in terms of
-mean Average Precision \(mAP\) and computational efficiency compared to its
-predecessors, with a focus on the trade\-off between parameter count and
-accuracy. Additionally, the study discusses YOLOv11's versatility across
-different model sizes, from nano to extra\-large, catering to diverse
-application needs from edge devices to high\-performance computing environments.
-Our research provides insights into YOLOv11's position within the broader
-landscape of object detection and its potential impact on real\-time computer
-vision applications.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2410.17725v1)
 
 ---
 
