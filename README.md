@@ -69,7 +69,7 @@ increases, the risk level of violent behavior also rises.
 
 **代码链接**：摘要中未找到代码链接。
 
-**论文链接**：[阅读更多](http://arxiv.org/abs/2410.21991v1)
+**论文链接**：[阅读更多](http://arxiv.org/abs/2410.21991v2)
 
 ---
 
