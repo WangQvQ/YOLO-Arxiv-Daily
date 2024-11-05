@@ -1,6 +1,222 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## A Visual Question Answering Method for SAR Ship: Breaking the Requirement for Multimodal Dataset Construction and Model Fine\-Tuning
+
+**发布日期**：2024-11-03
+
+**作者**：Fei Wang
+
+**摘要**：Current visual question answering \(VQA\) tasks often require constructing
+multimodal datasets and fine\-tuning visual language models, which demands
+significant time and resources. This has greatly hindered the application of
+VQA to downstream tasks, such as ship information analysis based on Synthetic
+Aperture Radar \(SAR\) imagery. To address this challenge, this letter proposes a
+novel VQA approach that integrates object detection networks with visual
+language models, specifically designed for analyzing ships in SAR images. This
+integration aims to enhance the capabilities of VQA systems, focusing on
+aspects such as ship location, density, and size analysis, as well as risk
+behavior detection. Initially, we conducted baseline experiments using YOLO
+networks on two representative SAR ship detection datasets, SSDD and HRSID, to
+assess each model's performance in terms of detection accuracy. Based on these
+results, we selected the optimal model, YOLOv8n, as the most suitable detection
+network for this task. Subsequently, leveraging the vision\-language model
+Qwen2\-VL, we designed and implemented a VQA task specifically for SAR scenes.
+This task employs the ship location and size information output by the
+detection network to generate multi\-turn dialogues and scene descriptions for
+SAR imagery. Experimental results indicate that this method not only enables
+fundamental SAR scene question\-answering without the need for additional
+datasets or fine\-tuning but also dynamically adapts to complex, multi\-turn
+dialogue requirements, demonstrating robust semantic understanding and
+adaptability.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2411.01445v1)
+
+---
+
+
+## Autobiasing Event Cameras
+
+**发布日期**：2024-11-01
+
+**作者**：Mehdi Sefidgar Dilmaghani
+
+**摘要**：This paper presents an autonomous method to address challenges arising from
+severe lighting conditions in machine vision applications that use event
+cameras. To manage these conditions, the research explores the built in
+potential of these cameras to adjust pixel functionality, named bias settings.
+As cars are driven at various times and locations, shifts in lighting
+conditions are unavoidable. Consequently, this paper utilizes the neuromorphic
+YOLO\-based face tracking module of a driver monitoring system as the
+event\-based application to study. The proposed method uses numerical metrics to
+continuously monitor the performance of the event\-based application in
+real\-time. When the application malfunctions, the system detects this through a
+drop in the metrics and automatically adjusts the event cameras bias values.
+The Nelder\-Mead simplex algorithm is employed to optimize this adjustment, with
+finetuning continuing until performance returns to a satisfactory level. The
+advantage of bias optimization lies in its ability to handle conditions such as
+flickering or darkness without requiring additional hardware or software. To
+demonstrate the capabilities of the proposed system, it was tested under
+conditions where detecting human faces with default bias values was impossible.
+These severe conditions were simulated using dim ambient light and various
+flickering frequencies. Following the automatic and dynamic process of bias
+modification, the metrics for face detection significantly improved under all
+conditions. Autobiasing resulted in an increase in the YOLO confidence
+indicators by more than 33 percent for object detection and 37 percent for face
+detection highlighting the effectiveness of the proposed method.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2411.00729v1)
+
+---
+
+
+## Generative AI\-based Pipeline Architecture for Increasing Training Efficiency in Intelligent Weed Control Systems
+
+**发布日期**：2024-11-01
+
+**作者**：Sourav Modak
+
+**摘要**：In automated crop protection tasks such as weed control, disease diagnosis,
+and pest monitoring, deep learning has demonstrated significant potential.
+However, these advanced models rely heavily on high\-quality, diverse datasets,
+often limited and costly in agricultural settings. Traditional data
+augmentation can increase dataset volume but usually lacks the real\-world
+variability needed for robust training. This study presents a new approach for
+generating synthetic images to improve deep learning\-based object detection
+models for intelligent weed control. Our GenAI\-based image generation pipeline
+integrates the Segment Anything Model \(SAM\) for zero\-shot domain adaptation
+with a text\-to\-image Stable Diffusion Model, enabling the creation of synthetic
+images that capture diverse real\-world conditions. We evaluate these synthetic
+datasets using lightweight YOLO models, measuring data efficiency with mAP50
+and mAP50\-95 scores across varying proportions of real and synthetic data.
+Notably, YOLO models trained on datasets with 10% synthetic and 90% real images
+generally demonstrate superior mAP50 and mAP50\-95 scores compared to those
+trained solely on real images. This approach not only reduces dependence on
+extensive real\-world datasets but also enhances predictive performance. The
+integration of this approach opens opportunities for achieving continual
+self\-improvement of perception modules in intelligent technical systems.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2411.00548v1)
+
+---
+
+
+## LAM\-YOLO: Drones\-based Small Object Detection on Lighting\-Occlusion Attention Mechanism YOLO
+
+**发布日期**：2024-11-01
+
+**作者**：Yuchen Zheng
+
+**摘要**：Drone\-based target detection presents inherent challenges, such as the high
+density and overlap of targets in drone\-based images, as well as the blurriness
+of targets under varying lighting conditions, which complicates identification.
+Traditional methods often struggle to recognize numerous densely packed small
+targets under complex background. To address these challenges, we propose
+LAM\-YOLO, an object detection model specifically designed for drone\-based.
+First, we introduce a light\-occlusion attention mechanism to enhance the
+visibility of small targets under different lighting conditions. Meanwhile, we
+incroporate incorporate Involution modules to improve interaction among feature
+layers. Second, we utilize an improved SIB\-IoU as the regression loss function
+to accelerate model convergence and enhance localization accuracy. Finally, we
+implement a novel detection strategy that introduces two auxiliary detection
+heads for identifying smaller\-scale targets.Our quantitative results
+demonstrate that LAM\-YOLO outperforms methods such as Faster R\-CNN, YOLOv9, and
+YOLOv10 in terms of mAP@0.5 and mAP@0.5:0.95 on the VisDrone2019 public
+dataset. Compared to the original YOLOv8, the average precision increases by
+7.1\\%. Additionally, the proposed SIB\-IoU loss function shows improved faster
+convergence speed during training and improved average precision over the
+traditional loss function.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2411.00485v1)
+
+---
+
+
+## Evaluating the Evolution of YOLO \(You Only Look Once\) Models: A Comprehensive Benchmark Study of YOLO11 and Its Predecessors
+
+**发布日期**：2024-10-31
+
+**作者**：Nidhal Jegham
+
+**摘要**：This study presents a comprehensive benchmark analysis of various YOLO \(You
+Only Look Once\) algorithms, from YOLOv3 to the newest addition. It represents
+the first research to comprehensively evaluate the performance of YOLO11, the
+latest addition to the YOLO family. It evaluates their performance on three
+diverse datasets: Traffic Signs \(with varying object sizes\), African Wildlife
+\(with diverse aspect ratios and at least one instance of the object per image\),
+and Ships and Vessels \(with small\-sized objects of a single class\), ensuring a
+comprehensive assessment across datasets with distinct challenges. To ensure a
+robust evaluation, we employ a comprehensive set of metrics, including
+Precision, Recall, Mean Average Precision \(mAP\), Processing Time, GFLOPs count,
+and Model Size. Our analysis highlights the distinctive strengths and
+limitations of each YOLO version. For example: YOLOv9 demonstrates substantial
+accuracy but struggles with detecting small objects and efficiency whereas
+YOLOv10 exhibits relatively lower accuracy due to architectural choices that
+affect its performance in overlapping object detection but excels in speed and
+efficiency. Additionally, the YOLO11 family consistently shows superior
+performance in terms of accuracy, speed, computational efficiency, and model
+size. YOLO11m achieved a remarkable balance of accuracy and efficiency, scoring
+mAP50\-95 scores of 0.795, 0.81, and 0.325 on the Traffic Signs, African
+Wildlife, and Ships datasets, respectively, while maintaining an average
+inference time of 2.4ms, a model size of 38.8Mb, and around 67.6 GFLOPs on
+average. These results provide critical insights for both industry and
+academia, facilitating the selection of the most suitable YOLO algorithm for
+diverse applications and guiding future enhancements.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2411.00201v1)
+
+---
+
+
+## Whole\-Herd Elephant Pose Estimation from Drone Data for Collective Behavior Analysis
+
+**发布日期**：2024-10-31
+
+**作者**：Brody McNutt
+
+**摘要**：This research represents a pioneering application of automated pose
+estimation from drone data to study elephant behavior in the wild, utilizing
+video footage captured from Samburu National Reserve, Kenya. The study
+evaluates two pose estimation workflows: DeepLabCut, known for its application
+in laboratory settings and emerging wildlife fieldwork, and YOLO\-NAS\-Pose, a
+newly released pose estimation model not previously applied to wildlife
+behavioral studies. These models are trained to analyze elephant herd behavior,
+focusing on low\-resolution \($\\sim$50 pixels\) subjects to detect key points such
+as the head, spine, and ears of multiple elephants within a frame. Both
+workflows demonstrated acceptable quality of pose estimation on the test set,
+facilitating the automated detection of basic behaviors crucial for studying
+elephant herd dynamics. For the metrics selected for pose estimation evaluation
+on the test set \-\- root mean square error \(RMSE\), percentage of correct
+keypoints \(PCK\), and object keypoint similarity \(OKS\) \-\- the YOLO\-NAS\-Pose
+workflow outperformed DeepLabCut. Additionally, YOLO\-NAS\-Pose exceeded
+DeepLabCut in object detection evaluation. This approach introduces a novel
+method for wildlife behavioral research, including the burgeoning field of
+wildlife drone monitoring, with significant implications for wildlife
+conservation.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2411.00196v1)
+
+---
+
+
 ## YOLOv11 for Vehicle Detection: Advancements, Performance, and Applications in Intelligent Transportation Systems
 
 **发布日期**：2024-10-30
@@ -69,7 +285,7 @@ increases, the risk level of violent behavior also rises.
 
 **代码链接**：摘要中未找到代码链接。
 
-**论文链接**：[阅读更多](http://arxiv.org/abs/2410.21991v2)
+**论文链接**：[阅读更多](http://arxiv.org/abs/2410.21991v3)
 
 ---
 
@@ -133,200 +349,6 @@ object detection models such as Faster R\-CNN and earlier YOLO versions.
 **代码链接**：摘要中未找到代码链接。
 
 **论文链接**：[阅读更多](http://arxiv.org/abs/2410.21443v1)
-
----
-
-
-## CIB\-SE\-YOLOv8: Optimized YOLOv8 for Real\-Time Safety Equipment Detection on Construction Sites
-
-**发布日期**：2024-10-28
-
-**作者**：Xiaoyi Liu
-
-**摘要**：Ensuring safety on construction sites is critical, with helmets playing a key
-role in reducing injuries. Traditional safety checks are labor\-intensive and
-often insufficient. This study presents a computer vision\-based solution using
-YOLO for real\-time helmet detection, leveraging the SHEL5K dataset. Our
-proposed CIB\-SE\-YOLOv8 model incorporates SE attention mechanisms and modified
-C2f blocks, enhancing detection accuracy and efficiency. This model offers a
-more effective solution for promoting safety compliance on construction sites.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2410.20699v1)
-
----
-
-
-## DECADE: Towards Designing Efficient\-yet\-Accurate Distance Estimation Modules for Collision Avoidance in Mobile Advanced Driver Assistance Systems
-
-**发布日期**：2024-10-25
-
-**作者**：Muhammad Zaeem Shahzad
-
-**摘要**：The proliferation of smartphones and other mobile devices provides a unique
-opportunity to make Advanced Driver Assistance Systems \(ADAS\) accessible to
-everyone in the form of an application empowered by low\-cost Machine/Deep
-Learning \(ML/DL\) models to enhance road safety. For the critical feature of
-Collision Avoidance in Mobile ADAS, lightweight Deep Neural Networks \(DNN\) for
-object detection exist, but conventional pixel\-wise depth/distance estimation
-DNNs are vastly more computationally expensive making them unsuitable for a
-real\-time application on resource\-constrained devices. In this paper, we
-present a distance estimation model, DECADE, that processes each detector
-output instead of constructing pixel\-wise depth/disparity maps. In it, we
-propose a pose estimation DNN to estimate allocentric orientation of detections
-to supplement the distance estimation DNN in its prediction of distance using
-bounding box features. We demonstrate that these modules can be attached to any
-detector to extend object detection with fast distance estimation. Evaluation
-of the proposed modules with attachment to and fine\-tuning on the outputs of
-the YOLO object detector on the KITTI 3D Object Detection dataset achieves
-state\-of\-the\-art performance with 1.38 meters in Mean Absolute Error and 7.3%
-in Mean Relative Error in the distance range of 0\-150 meters. Our extensive
-evaluation scheme not only evaluates class\-wise performance, but also evaluates
-range\-wise accuracy especially in the critical range of 0\-70m.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2410.19336v1)
-
----
-
-
-## Complexity Matters: Effective Dimensionality as a Measure for Adversarial Robustness
-
-**发布日期**：2024-10-24
-
-**作者**：David Khachaturov
-
-**摘要**：Quantifying robustness in a single measure for the purposes of model
-selection, development of adversarial training methods, and anticipating trends
-has so far been elusive. The simplest metric to consider is the number of
-trainable parameters in a model but this has previously been shown to be
-insufficient at explaining robustness properties. A variety of other metrics,
-such as ones based on boundary thickness and gradient flatness have been
-proposed but have been shown to be inadequate proxies for robustness.
-  In this work, we investigate the relationship between a model's effective
-dimensionality, which can be thought of as model complexity, and its robustness
-properties. We run experiments on commercial\-scale models that are often used
-in real\-world environments such as YOLO and ResNet. We reveal a near\-linear
-inverse relationship between effective dimensionality and adversarial
-robustness, that is models with a lower dimensionality exhibit better
-robustness. We investigate the effect of a variety of adversarial training
-methods on effective dimensionality and find the same inverse linear
-relationship present, suggesting that effective dimensionality can serve as a
-useful criterion for model selection and robustness evaluation, providing a
-more nuanced and effective metric than parameter count or previously\-tested
-measures.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2410.18556v1)
-
----
-
-
-## Comparing YOLO11 and YOLOv8 for instance segmentation of occluded and non\-occluded immature green fruits in complex orchard environment
-
-**发布日期**：2024-10-24
-
-**作者**：Ranjan Sapkota
-
-**摘要**：This study conducted a comprehensive performance evaluation on YOLO11 and
-YOLOv8, the latest in the "You Only Look Once" \(YOLO\) series, focusing on their
-instance segmentation capabilities for immature green apples in orchard
-environments. YOLO11n\-seg achieved the highest mask precision across all
-categories with a notable score of 0.831, highlighting its effectiveness in
-fruit detection. YOLO11m\-seg and YOLO11l\-seg excelled in non\-occluded and
-occluded fruitlet segmentation with scores of 0.851 and 0.829, respectively.
-Additionally, YOLO11x\-seg led in mask recall for all categories, achieving a
-score of 0.815, with YOLO11m\-seg performing best for non\-occluded immature
-green fruitlets at 0.858 and YOLOv8x\-seg leading the occluded category with
-0.800. In terms of mean average precision at a 50\\% intersection over union
-\(mAP@50\), YOLO11m\-seg consistently outperformed, registering the highest scores
-for both box and mask segmentation, at 0.876 and 0.860 for the "All" class and
-0.908 and 0.909 for non\-occluded immature fruitlets, respectively. YOLO11l\-seg
-and YOLOv8l\-seg shared the top box mAP@50 for occluded immature fruitlets at
-0.847, while YOLO11m\-seg achieved the highest mask mAP@50 of 0.810. Despite the
-advancements in YOLO11, YOLOv8n surpassed its counterparts in image processing
-speed, with an impressive inference speed of 3.3 milliseconds, compared to the
-fastest YOLO11 series model at 4.8 milliseconds, underscoring its suitability
-for real\-time agricultural applications related to complex green fruit
-environments.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2410.19869v2)
-
----
-
-
-## Breaking the Illusion: Real\-world Challenges for Adversarial Patches in Object Detection
-
-**发布日期**：2024-10-23
-
-**作者**：Jakob Shack
-
-**摘要**：Adversarial attacks pose a significant threat to the robustness and
-reliability of machine learning systems, particularly in computer vision
-applications. This study investigates the performance of adversarial patches
-for the YOLO object detection network in the physical world. Two attacks were
-tested: a patch designed to be placed anywhere within the scene \- global patch,
-and another patch intended to partially overlap with specific object targeted
-for removal from detection \- local patch. Various factors such as patch size,
-position, rotation, brightness, and hue were analyzed to understand their
-impact on the effectiveness of the adversarial patches. The results reveal a
-notable dependency on these parameters, highlighting the challenges in
-maintaining attack efficacy in real\-world conditions. Learning to align
-digitally applied transformation parameters with those measured in the real
-world still results in up to a 64\\% discrepancy in patch performance. These
-findings underscore the importance of understanding environmental influences on
-adversarial attacks, which can inform the development of more robust defenses
-for practical machine learning applications.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2410.19863v1)
-
----
-
-
-## YOLO\-Vehicle\-Pro: A Cloud\-Edge Collaborative Framework for Object Detection in Autonomous Driving under Adverse Weather Conditions
-
-**发布日期**：2024-10-23
-
-**作者**：Xiguang Li
-
-**摘要**：With the rapid advancement of autonomous driving technology, efficient and
-accurate object detection capabilities have become crucial factors in ensuring
-the safety and reliability of autonomous driving systems. However, in
-low\-visibility environments such as hazy conditions, the performance of
-traditional object detection algorithms often degrades significantly, failing
-to meet the demands of autonomous driving. To address this challenge, this
-paper proposes two innovative deep learning models: YOLO\-Vehicle and
-YOLO\-Vehicle\-Pro. YOLO\-Vehicle is an object detection model tailored
-specifically for autonomous driving scenarios, employing multimodal fusion
-techniques to combine image and textual information for object detection.
-YOLO\-Vehicle\-Pro builds upon this foundation by introducing an improved image
-dehazing algorithm, enhancing detection performance in low\-visibility
-environments. In addition to model innovation, this paper also designs and
-implements a cloud\-edge collaborative object detection system, deploying models
-on edge devices and offloading partial computational tasks to the cloud in
-complex situations. Experimental results demonstrate that on the KITTI dataset,
-the YOLO\-Vehicle\-v1s model achieved 92.1% accuracy while maintaining a
-detection speed of 226 FPS and an inference time of 12ms, meeting the real\-time
-requirements of autonomous driving. When processing hazy images, the
-YOLO\-Vehicle\-Pro model achieved a high accuracy of 82.3% mAP@50 on the Foggy
-Cityscapes dataset while maintaining a detection speed of 43 FPS.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2410.17734v1)
 
 ---
 
