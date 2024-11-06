@@ -1,6 +1,110 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Self\-supervised cross\-modality learning for uncertainty\-aware object detection and recognition in applications which lack pre\-labelled training data
+
+**发布日期**：2024-11-05
+
+**作者**：Irum Mehboob
+
+**摘要**：This paper shows how an uncertainty\-aware, deep neural network can be trained
+to detect, recognise and localise objects in 2D RGB images, in applications
+lacking annotated train\-ng datasets. We propose a self\-supervising
+teacher\-student pipeline, in which a relatively simple teacher classifier,
+trained with only a few labelled 2D thumbnails, automatically processes a
+larger body of unlabelled RGB\-D data to teach a student network based on a
+modified YOLOv3 architecture. Firstly, 3D object detection with back projection
+is used to automatically extract and teach 2D detection and localisation
+information to the student network. Secondly, a weakly supervised 2D thumbnail
+classifier, with minimal training on a small number of hand\-labelled images, is
+used to teach object category recognition. Thirdly, we use a Gaussian Process
+GP to encode and teach a robust uncertainty estimation functionality, so that
+the student can output confidence scores with each categorization. The
+resulting student significantly outperforms the same YOLO architecture trained
+directly on the same amount of labelled data. Our GP\-based approach yields
+robust and meaningful uncertainty estimations for complex industrial object
+classifications. The end\-to\-end network is also capable of real\-time
+processing, needed for robotics applications. Our method can be applied to many
+important industrial tasks, where labelled datasets are typically unavailable.
+In this paper, we demonstrate an example of detection, localisation, and object
+category recognition of nuclear mixed\-waste materials in highly cluttered and
+unstructured scenes. This is critical for robotic sorting and handling of
+legacy nuclear waste, which poses complex environmental remediation challenges
+in many nuclearised nations.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2411.03082v1)
+
+---
+
+
+## ERUP\-YOLO: Enhancing Object Detection Robustness for Adverse Weather Condition by Unified Image\-Adaptive Processing
+
+**发布日期**：2024-11-05
+
+**作者**：Yuka Ogino
+
+**摘要**：We propose an image\-adaptive object detection method for adverse weather
+conditions such as fog and low\-light. Our framework employs differentiable
+preprocessing filters to perform image enhancement suitable for later\-stage
+object detections. Our framework introduces two differentiable filters: a
+B\\'ezier curve\-based pixel\-wise \(BPW\) filter and a kernel\-based local \(KBL\)
+filter. These filters unify the functions of classical image processing filters
+and improve performance of object detection. We also propose a domain\-agnostic
+data augmentation strategy using the BPW filter. Our method does not require
+data\-specific customization of the filter combinations, parameter ranges, and
+data augmentation. We evaluate our proposed approach, called Enhanced
+Robustness by Unified Image Processing \(ERUP\)\-YOLO, by applying it to the
+YOLOv3 detector. Experiments on adverse weather datasets demonstrate that our
+proposed filters match or exceed the expressiveness of conventional methods and
+our ERUP\-YOLO achieved superior performance in a wide range of adverse weather
+conditions, including fog and low\-light conditions.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2411.02799v1)
+
+---
+
+
+## One\-Stage\-TFS: Thai One\-Stage Fingerspelling Dataset for Fingerspelling Recognition Frameworks
+
+**发布日期**：2024-11-05
+
+**作者**：Siriwiwat Lata
+
+**摘要**：The Thai One\-Stage Fingerspelling \(One\-Stage\-TFS\) dataset is a comprehensive
+resource designed to advance research in hand gesture recognition, explicitly
+focusing on the recognition of Thai sign language. This dataset comprises 7,200
+images capturing 15 one\-stage consonant gestures performed by undergraduate
+students from Rajabhat Maha Sarakham University, Thailand. The contributors
+include both expert students from the Special Education Department with
+proficiency in Thai sign language and students from other departments without
+prior sign language experience. Images were collected between July and December
+2021 using a DSLR camera, with contributors demonstrating hand gestures against
+both simple and complex backgrounds. The One\-Stage\-TFS dataset presents
+challenges in detecting and recognizing hand gestures, offering opportunities
+to develop novel end\-to\-end recognition frameworks. Researchers can utilize
+this dataset to explore deep learning methods, such as YOLO, EfficientDet,
+RetinaNet, and Detectron, for hand detection, followed by feature extraction
+and recognition using techniques like convolutional neural networks,
+transformers, and adaptive feature fusion networks. The dataset is accessible
+via the Mendeley Data repository and supports a wide range of applications in
+computer science, including deep learning, computer vision, and pattern
+recognition, thereby encouraging further innovation and exploration in these
+fields.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2411.02768v1)
+
+---
+
+
 ## A Visual Question Answering Method for SAR Ship: Breaking the Requirement for Multimodal Dataset Construction and Model Fine\-Tuning
 
 **发布日期**：2024-11-03
@@ -246,109 +350,6 @@ future developments in the field.
 **代码链接**：摘要中未找到代码链接。
 
 **论文链接**：[阅读更多](http://arxiv.org/abs/2410.22898v1)
-
----
-
-
-## From Explicit Rules to Implicit Reasoning in an Interpretable Violence Monitoring System
-
-**发布日期**：2024-10-29
-
-**作者**：Wen\-Dong Jiang
-
-**摘要**：Recently, research based on pre\-trained models has demonstrated outstanding
-performance in violence surveillance tasks. However, these black\-box systems
-face challenges regarding explainability during training and inference
-processes. An important question is how to incorporate explicit knowledge into
-these implicit models, thereby designing expert\-driven and interpretable
-violence surveillance systems. This paper proposes a new paradigm for weakly
-supervised violence monitoring \(WSVM\) called Rule base Violence monitoring
-\(RuleVM\). The proposed RuleVM uses a dual\-branch structure for different
-designs for images and text. One of the branches is called the implicit branch,
-which uses only visual features for coarse\-grained binary classification. In
-this branch, image feature extraction is divided into two channels: one
-responsible for extracting scene frames and the other focusing on extracting
-actions. The other branch is called the explicit branch, which utilizes
-language\-image alignment to perform fine\-grained classification. For the
-language channel design in the explicit branch, the proposed RuleCLIP uses the
-state\-of\-the\-art YOLO\-World model to detect objects and actions in video
-frames, and association rules are identified through data mining methods as
-descriptions of the video. Leveraging the dual\-branch architecture, RuleVM
-achieves interpretable coarse\-grained and fine\-grained violence surveillance.
-Extensive experiments were conducted on two commonly used benchmarks, and the
-results show that RuleCLIP achieved the best performance in both coarse\-grained
-and fine\-grained detection, significantly outperforming existing
-state\-of\-the\-art methods. Moreover, interpretability experiments uncovered some
-interesting rules, such as the observation that as the number of people
-increases, the risk level of violent behavior also rises.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2410.21991v3)
-
----
-
-
-## PK\-YOLO: Pretrained Knowledge Guided YOLO for Brain Tumor Detection in Multiplanar MRI Slices
-
-**发布日期**：2024-10-29
-
-**作者**：Ming Kang
-
-**摘要**：Brain tumor detection in multiplane Magnetic Resonance Imaging \(MRI\) slices
-is a challenging task due to the various appearances and relationships in the
-structure of the multiplane images. In this paper, we propose a new You Only
-Look Once \(YOLO\)\-based detection model that incorporates Pretrained Knowledge
-\(PK\), called PK\-YOLO, to improve the performance for brain tumor detection in
-multiplane MRI slices. To our best knowledge, PK\-YOLO is the first pretrained
-knowledge guided YOLO\-based object detector. The main components of the new
-method are a pretrained pure lightweight convolutional neural network\-based
-backbone via sparse masked modeling, a YOLO architecture with the pretrained
-backbone, and a regression loss function for improving small object detection.
-The pretrained backbone allows for feature transferability of object queries on
-individual plane MRI slices into the model encoders, and the learned domain
-knowledge base can improve in\-domain detection. The improved loss function can
-further boost detection performance on small\-size brain tumors in multiplanar
-two\-dimensional MRI slices. Experimental results show that the proposed PK\-YOLO
-achieves competitive performance on the multiplanar MRI brain tumor detection
-datasets compared to state\-of\-the\-art YOLO\-like and DETR\-like object detectors.
-The code is available at https://github.com/mkang315/PK\-YOLO.
-
-
-**代码链接**：https://github.com/mkang315/PK-YOLO.
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2410.21822v1)
-
----
-
-
-## TACO: Adversarial Camouflage Optimization on Trucks to Fool Object Detectors
-
-**发布日期**：2024-10-28
-
-**作者**：Adonisz Dimitriu
-
-**摘要**：Adversarial attacks threaten the reliability of machine learning models in
-critical applications like autonomous vehicles and defense systems. As object
-detectors become more robust with models like YOLOv8, developing effective
-adversarial methodologies is increasingly challenging. We present Truck
-Adversarial Camouflage Optimization \(TACO\), a novel framework that generates
-adversarial camouflage patterns on 3D vehicle models to deceive
-state\-of\-the\-art object detectors. Adopting Unreal Engine 5, TACO integrates
-differentiable rendering with a Photorealistic Rendering Network to optimize
-adversarial textures targeted at YOLOv8. To ensure the generated textures are
-both effective in deceiving detectors and visually plausible, we introduce the
-Convolutional Smooth Loss function, a generalized smooth loss function.
-Experimental evaluations demonstrate that TACO significantly degrades YOLOv8's
-detection performance, achieving an AP@0.5 of 0.0099 on unseen test data.
-Furthermore, these adversarial patterns exhibit strong transferability to other
-object detection models such as Faster R\-CNN and earlier YOLO versions.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2410.21443v1)
 
 ---
 
