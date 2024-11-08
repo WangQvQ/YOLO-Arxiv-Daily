@@ -1,6 +1,36 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Deep Learning Models for UAV\-Assisted Bridge Inspection: A YOLO Benchmark Analysis
+
+**发布日期**：2024-11-07
+
+**作者**：Trong\-Nhan Phan
+
+**摘要**：Visual inspections of bridges are critical to ensure their safety and
+identify potential failures early. This inspection process can be rapidly and
+accurately automated by using unmanned aerial vehicles \(UAVs\) integrated with
+deep learning models. However, choosing an appropriate model that is
+lightweight enough to integrate into the UAV and fulfills the strict
+requirements for inference time and accuracy is challenging. Therefore, our
+work contributes to the advancement of this model selection process by
+conducting a benchmark of 23 models belonging to the four newest YOLO variants
+\(YOLOv5, YOLOv6, YOLOv7, YOLOv8\) on COCO\-Bridge\-2021\+, a dataset for bridge
+details detection. Through comprehensive benchmarking, we identify YOLOv8n,
+YOLOv7tiny, YOLOv6m, and YOLOv6m6 as the models offering an optimal balance
+between accuracy and processing speed, with mAP@50 scores of 0.803, 0.837,
+0.853, and 0.872, and inference times of 5.3ms, 7.5ms, 14.06ms, and 39.33ms,
+respectively. Our findings accelerate the model selection process for UAVs,
+enabling more efficient and reliable bridge inspections.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2411.04475v1)
+
+---
+
+
 ## Self\-supervised cross\-modality learning for uncertainty\-aware object detection and recognition in applications which lack pre\-labelled training data
 
 **发布日期**：2024-11-05
@@ -317,39 +347,6 @@ conservation.
 **代码链接**：摘要中未找到代码链接。
 
 **论文链接**：[阅读更多](http://arxiv.org/abs/2411.00196v1)
-
----
-
-
-## YOLOv11 for Vehicle Detection: Advancements, Performance, and Applications in Intelligent Transportation Systems
-
-**发布日期**：2024-10-30
-
-**作者**：Mujadded Al Rabbani Alif
-
-**摘要**：Accurate vehicle detection is essential for the development of intelligent
-transportation systems, autonomous driving, and traffic monitoring. This paper
-presents a detailed analysis of YOLO11, the latest advancement in the YOLO
-series of deep learning models, focusing exclusively on vehicle detection
-tasks. Building upon the success of its predecessors, YOLO11 introduces
-architectural improvements designed to enhance detection speed, accuracy, and
-robustness in complex environments. Using a comprehensive dataset comprising
-multiple vehicle types\-cars, trucks, buses, motorcycles, and bicycles we
-evaluate YOLO11's performance using metrics such as precision, recall, F1
-score, and mean average precision \(mAP\). Our findings demonstrate that YOLO11
-surpasses previous versions \(YOLOv8 and YOLOv10\) in detecting smaller and more
-occluded vehicles while maintaining a competitive inference time, making it
-well\-suited for real\-time applications. Comparative analysis shows significant
-improvements in the detection of complex vehicle geometries, further
-contributing to the development of efficient and scalable vehicle detection
-systems. This research highlights YOLO11's potential to enhance autonomous
-vehicle performance and traffic monitoring systems, offering insights for
-future developments in the field.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2410.22898v1)
 
 ---
 
