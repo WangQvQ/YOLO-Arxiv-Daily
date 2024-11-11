@@ -1,6 +1,36 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## SynDroneVision: A Synthetic Dataset for Image\-Based Drone Detection
+
+**发布日期**：2024-11-08
+
+**作者**：Tamara R. Lenhard
+
+**摘要**：Developing robust drone detection systems is often constrained by the limited
+availability of large\-scale annotated training data and the high costs
+associated with real\-world data collection. However, leveraging synthetic data
+generated via game engine\-based simulations provides a promising and
+cost\-effective solution to overcome this issue. Therefore, we present
+SynDroneVision, a synthetic dataset specifically designed for RGB\-based drone
+detection in surveillance applications. Featuring diverse backgrounds, lighting
+conditions, and drone models, SynDroneVision offers a comprehensive training
+foundation for deep learning algorithms. To evaluate the dataset's
+effectiveness, we perform a comparative analysis across a selection of recent
+YOLO detection models. Our findings demonstrate that SynDroneVision is a
+valuable resource for real\-world data enrichment, achieving notable
+enhancements in model performance and robustness, while significantly reducing
+the time and costs of real\-world data acquisition. SynDroneVision will be
+publicly released upon paper acceptance.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2411.05633v1)
+
+---
+
+
 ## Deep Learning Models for UAV\-Assisted Bridge Inspection: A YOLO Benchmark Analysis
 
 **发布日期**：2024-11-07
@@ -313,40 +343,6 @@ diverse applications and guiding future enhancements.
 **代码链接**：摘要中未找到代码链接。
 
 **论文链接**：[阅读更多](http://arxiv.org/abs/2411.00201v1)
-
----
-
-
-## Whole\-Herd Elephant Pose Estimation from Drone Data for Collective Behavior Analysis
-
-**发布日期**：2024-10-31
-
-**作者**：Brody McNutt
-
-**摘要**：This research represents a pioneering application of automated pose
-estimation from drone data to study elephant behavior in the wild, utilizing
-video footage captured from Samburu National Reserve, Kenya. The study
-evaluates two pose estimation workflows: DeepLabCut, known for its application
-in laboratory settings and emerging wildlife fieldwork, and YOLO\-NAS\-Pose, a
-newly released pose estimation model not previously applied to wildlife
-behavioral studies. These models are trained to analyze elephant herd behavior,
-focusing on low\-resolution \($\\sim$50 pixels\) subjects to detect key points such
-as the head, spine, and ears of multiple elephants within a frame. Both
-workflows demonstrated acceptable quality of pose estimation on the test set,
-facilitating the automated detection of basic behaviors crucial for studying
-elephant herd dynamics. For the metrics selected for pose estimation evaluation
-on the test set \-\- root mean square error \(RMSE\), percentage of correct
-keypoints \(PCK\), and object keypoint similarity \(OKS\) \-\- the YOLO\-NAS\-Pose
-workflow outperformed DeepLabCut. Additionally, YOLO\-NAS\-Pose exceeded
-DeepLabCut in object detection evaluation. This approach introduces a novel
-method for wildlife behavioral research, including the burgeoning field of
-wildlife drone monitoring, with significant implications for wildlife
-conservation.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2411.00196v1)
 
 ---
 
