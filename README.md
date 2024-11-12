@@ -1,6 +1,35 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Integrating Object Detection Modality into Visual Language Model for Enhanced Autonomous Driving Agent
+
+**发布日期**：2024-11-08
+
+**作者**：Linfeng He
+
+**摘要**：In this paper, we propose a novel framework for enhancing visual
+comprehension in autonomous driving systems by integrating visual language
+models \(VLMs\) with additional visual perception module specialised in object
+detection. We extend the Llama\-Adapter architecture by incorporating a
+YOLOS\-based detection network alongside the CLIP perception network, addressing
+limitations in object detection and localisation. Our approach introduces
+camera ID\-separators to improve multi\-view processing, crucial for
+comprehensive environmental awareness. Experiments on the DriveLM visual
+question answering challenge demonstrate significant improvements over baseline
+models, with enhanced performance in ChatGPT scores, BLEU scores, and CIDEr
+metrics, indicating closeness of model answer to ground truth. Our method
+represents a promising step towards more capable and interpretable autonomous
+driving systems. Possible safety enhancement enabled by detection modality is
+also discussed.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2411.05898v1)
+
+---
+
+
 ## SynDroneVision: A Synthetic Dataset for Image\-Based Drone Detection
 
 **发布日期**：2024-11-08
@@ -304,45 +333,6 @@ traditional loss function.
 **代码链接**：摘要中未找到代码链接。
 
 **论文链接**：[阅读更多](http://arxiv.org/abs/2411.00485v1)
-
----
-
-
-## Evaluating the Evolution of YOLO \(You Only Look Once\) Models: A Comprehensive Benchmark Study of YOLO11 and Its Predecessors
-
-**发布日期**：2024-10-31
-
-**作者**：Nidhal Jegham
-
-**摘要**：This study presents a comprehensive benchmark analysis of various YOLO \(You
-Only Look Once\) algorithms, from YOLOv3 to the newest addition. It represents
-the first research to comprehensively evaluate the performance of YOLO11, the
-latest addition to the YOLO family. It evaluates their performance on three
-diverse datasets: Traffic Signs \(with varying object sizes\), African Wildlife
-\(with diverse aspect ratios and at least one instance of the object per image\),
-and Ships and Vessels \(with small\-sized objects of a single class\), ensuring a
-comprehensive assessment across datasets with distinct challenges. To ensure a
-robust evaluation, we employ a comprehensive set of metrics, including
-Precision, Recall, Mean Average Precision \(mAP\), Processing Time, GFLOPs count,
-and Model Size. Our analysis highlights the distinctive strengths and
-limitations of each YOLO version. For example: YOLOv9 demonstrates substantial
-accuracy but struggles with detecting small objects and efficiency whereas
-YOLOv10 exhibits relatively lower accuracy due to architectural choices that
-affect its performance in overlapping object detection but excels in speed and
-efficiency. Additionally, the YOLO11 family consistently shows superior
-performance in terms of accuracy, speed, computational efficiency, and model
-size. YOLO11m achieved a remarkable balance of accuracy and efficiency, scoring
-mAP50\-95 scores of 0.795, 0.81, and 0.325 on the Traffic Signs, African
-Wildlife, and Ships datasets, respectively, while maintaining an average
-inference time of 2.4ms, a model size of 38.8Mb, and around 67.6 GFLOPs on
-average. These results provide critical insights for both industry and
-academia, facilitating the selection of the most suitable YOLO algorithm for
-diverse applications and guiding future enhancements.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2411.00201v1)
 
 ---
 
