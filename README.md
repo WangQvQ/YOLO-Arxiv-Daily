@@ -1,6 +1,35 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Diachronic Document Dataset for Semantic Layout Analysis
+
+**发布日期**：2024-11-15
+
+**作者**：Thibault Clérice
+
+**摘要**：We present a novel, open\-access dataset designed for semantic layout
+analysis, built to support document recreation workflows through mapping with
+the Text Encoding Initiative \(TEI\) standard. This dataset includes 7,254
+annotated pages spanning a large temporal range \(1600\-2024\) of digitised and
+born\-digital materials across diverse document types \(magazines, papers from
+sciences and humanities, PhD theses, monographs, plays, administrative reports,
+etc.\) sorted into modular subsets. By incorporating content from different
+periods and genres, it addresses varying layout complexities and historical
+changes in document structure. The modular design allows domain\-specific
+configurations. We evaluate object detection models on this dataset, examining
+the impact of input size and subset\-based training. Results show that a
+1280\-pixel input size for YOLO is optimal and that training on subsets
+generally benefits from incorporating them into a generic model rather than
+fine\-tuning pre\-trained weights.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2411.10068v1)
+
+---
+
+
 ## Integrating Object Detection Modality into Visual Language Model for Enhanced Autonomous Driving Agent
 
 **发布日期**：2024-11-08
@@ -299,40 +328,6 @@ self\-improvement of perception modules in intelligent technical systems.
 **代码链接**：摘要中未找到代码链接。
 
 **论文链接**：[阅读更多](http://arxiv.org/abs/2411.00548v1)
-
----
-
-
-## LAM\-YOLO: Drones\-based Small Object Detection on Lighting\-Occlusion Attention Mechanism YOLO
-
-**发布日期**：2024-11-01
-
-**作者**：Yuchen Zheng
-
-**摘要**：Drone\-based target detection presents inherent challenges, such as the high
-density and overlap of targets in drone\-based images, as well as the blurriness
-of targets under varying lighting conditions, which complicates identification.
-Traditional methods often struggle to recognize numerous densely packed small
-targets under complex background. To address these challenges, we propose
-LAM\-YOLO, an object detection model specifically designed for drone\-based.
-First, we introduce a light\-occlusion attention mechanism to enhance the
-visibility of small targets under different lighting conditions. Meanwhile, we
-incroporate incorporate Involution modules to improve interaction among feature
-layers. Second, we utilize an improved SIB\-IoU as the regression loss function
-to accelerate model convergence and enhance localization accuracy. Finally, we
-implement a novel detection strategy that introduces two auxiliary detection
-heads for identifying smaller\-scale targets.Our quantitative results
-demonstrate that LAM\-YOLO outperforms methods such as Faster R\-CNN, YOLOv9, and
-YOLOv10 in terms of mAP@0.5 and mAP@0.5:0.95 on the VisDrone2019 public
-dataset. Compared to the original YOLOv8, the average precision increases by
-7.1\\%. Additionally, the proposed SIB\-IoU loss function shows improved faster
-convergence speed during training and improved average precision over the
-traditional loss function.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2411.00485v1)
 
 ---
 
