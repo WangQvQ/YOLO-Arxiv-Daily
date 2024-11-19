@@ -1,6 +1,105 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## WoodYOLO: A Novel Object Detector for Wood Species Detection in Microscopic Images
+
+**发布日期**：2024-11-18
+
+**作者**：Lars Nieradzik
+
+**摘要**：Wood species identification plays a crucial role in various industries, from
+ensuring the legality of timber products to advancing ecological conservation
+efforts. This paper introduces WoodYOLO, a novel object detection algorithm
+specifically designed for microscopic wood fiber analysis. Our approach adapts
+the YOLO architecture to address the challenges posed by large, high\-resolution
+microscopy images and the need for high recall in localization of the cell type
+of interest \(vessel elements\). Our results show that WoodYOLO significantly
+outperforms state\-of\-the\-art models, achieving performance gains of 12.9% and
+6.5% in F2 score over YOLOv10 and YOLOv7, respectively. This improvement in
+automated wood cell type localization capabilities contributes to enhancing
+regulatory compliance, supporting sustainable forestry practices, and promoting
+biodiversity conservation efforts globally.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2411.11738v1)
+
+---
+
+
+## SL\-YOLO: A Stronger and Lighter Drone Target Detection Model
+
+**发布日期**：2024-11-18
+
+**作者**：Defan Chen
+
+**摘要**：Detecting small objects in complex scenes, such as those captured by drones,
+is a daunting challenge due to the difficulty in capturing the complex features
+of small targets. While the YOLO family has achieved great success in large
+target detection, its performance is less than satisfactory when faced with
+small targets. Because of this, this paper proposes a revolutionary model
+SL\-YOLO \(Stronger and Lighter YOLO\) that aims to break the bottleneck of small
+target detection. We propose the Hierarchical Extended Path Aggregation Network
+\(HEPAN\), a pioneering cross\-scale feature fusion method that can ensure
+unparalleled detection accuracy even in the most challenging environments. At
+the same time, without sacrificing detection capabilities, we design the C2fDCB
+lightweight module and add the SCDown downsampling module to greatly reduce the
+model's parameters and computational complexity. Our experimental results on
+the VisDrone2019 dataset reveal a significant improvement in performance, with
+mAP@0.5 jumping from 43.0% to 46.9% and mAP@0.5:0.95 increasing from 26.0% to
+28.9%. At the same time, the model parameters are reduced from 11.1M to 9.6M,
+and the FPS can reach 132, making it an ideal solution for real\-time small
+object detection in resource\-constrained environments.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2411.11477v1)
+
+---
+
+
+## Zero\-Shot Automatic Annotation and Instance Segmentation using LLM\-Generated Datasets: Eliminating Field Imaging and Manual Annotation for Deep Learning Model Development
+
+**发布日期**：2024-11-18
+
+**作者**：Ranjan Sapkota
+
+**摘要**：Currently, deep learning\-based instance segmentation for various applications
+\(e.g., Agriculture\) is predominantly performed using a labor\-intensive process
+involving extensive field data collection using sophisticated sensors, followed
+by careful manual annotation of images, presenting significant logistical and
+financial challenges to researchers and organizations. The process also slows
+down the model development and training process. In this study, we presented a
+novel method for deep learning\-based instance segmentation of apples in
+commercial orchards that eliminates the need for labor\-intensive field data
+collection and manual annotation. Utilizing a Large Language Model \(LLM\), we
+synthetically generated orchard images and automatically annotated them using
+the Segment Anything Model \(SAM\) integrated with a YOLO11 base model. This
+method significantly reduces reliance on physical sensors and manual data
+processing, presenting a major advancement in "Agricultural AI". The synthetic,
+auto\-annotated dataset was used to train the YOLO11 model for Apple instance
+segmentation, which was then validated on real orchard images. The results
+showed that the automatically generated annotations achieved a Dice Coefficient
+of 0.9513 and an IoU of 0.9303, validating the accuracy and overlap of the mask
+annotations. All YOLO11 configurations, trained solely on these synthetic
+datasets with automated annotations, accurately recognized and delineated
+apples, highlighting the method's efficacy. Specifically, the YOLO11m\-seg
+configuration achieved a mask precision of 0.902 and a mask mAP@50 of 0.833 on
+test images collected from a commercial orchard. Additionally, the YOLO11l\-seg
+configuration outperformed other models in validation on 40 LLM\-generated
+images, achieving the highest mask precision and mAP@50 metrics.
+  Keywords: YOLO, SAM, SAMv2, YOLO11, YOLOv11, Segment Anything, YOLO\-SAM
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2411.11285v1)
+
+---
+
+
 ## Diachronic Document Dataset for Semantic Layout Analysis
 
 **发布日期**：2024-11-15
@@ -219,115 +318,6 @@ fields.
 **代码链接**：摘要中未找到代码链接。
 
 **论文链接**：[阅读更多](http://arxiv.org/abs/2411.02768v1)
-
----
-
-
-## A Visual Question Answering Method for SAR Ship: Breaking the Requirement for Multimodal Dataset Construction and Model Fine\-Tuning
-
-**发布日期**：2024-11-03
-
-**作者**：Fei Wang
-
-**摘要**：Current visual question answering \(VQA\) tasks often require constructing
-multimodal datasets and fine\-tuning visual language models, which demands
-significant time and resources. This has greatly hindered the application of
-VQA to downstream tasks, such as ship information analysis based on Synthetic
-Aperture Radar \(SAR\) imagery. To address this challenge, this letter proposes a
-novel VQA approach that integrates object detection networks with visual
-language models, specifically designed for analyzing ships in SAR images. This
-integration aims to enhance the capabilities of VQA systems, focusing on
-aspects such as ship location, density, and size analysis, as well as risk
-behavior detection. Initially, we conducted baseline experiments using YOLO
-networks on two representative SAR ship detection datasets, SSDD and HRSID, to
-assess each model's performance in terms of detection accuracy. Based on these
-results, we selected the optimal model, YOLOv8n, as the most suitable detection
-network for this task. Subsequently, leveraging the vision\-language model
-Qwen2\-VL, we designed and implemented a VQA task specifically for SAR scenes.
-This task employs the ship location and size information output by the
-detection network to generate multi\-turn dialogues and scene descriptions for
-SAR imagery. Experimental results indicate that this method not only enables
-fundamental SAR scene question\-answering without the need for additional
-datasets or fine\-tuning but also dynamically adapts to complex, multi\-turn
-dialogue requirements, demonstrating robust semantic understanding and
-adaptability.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2411.01445v1)
-
----
-
-
-## Autobiasing Event Cameras
-
-**发布日期**：2024-11-01
-
-**作者**：Mehdi Sefidgar Dilmaghani
-
-**摘要**：This paper presents an autonomous method to address challenges arising from
-severe lighting conditions in machine vision applications that use event
-cameras. To manage these conditions, the research explores the built in
-potential of these cameras to adjust pixel functionality, named bias settings.
-As cars are driven at various times and locations, shifts in lighting
-conditions are unavoidable. Consequently, this paper utilizes the neuromorphic
-YOLO\-based face tracking module of a driver monitoring system as the
-event\-based application to study. The proposed method uses numerical metrics to
-continuously monitor the performance of the event\-based application in
-real\-time. When the application malfunctions, the system detects this through a
-drop in the metrics and automatically adjusts the event cameras bias values.
-The Nelder\-Mead simplex algorithm is employed to optimize this adjustment, with
-finetuning continuing until performance returns to a satisfactory level. The
-advantage of bias optimization lies in its ability to handle conditions such as
-flickering or darkness without requiring additional hardware or software. To
-demonstrate the capabilities of the proposed system, it was tested under
-conditions where detecting human faces with default bias values was impossible.
-These severe conditions were simulated using dim ambient light and various
-flickering frequencies. Following the automatic and dynamic process of bias
-modification, the metrics for face detection significantly improved under all
-conditions. Autobiasing resulted in an increase in the YOLO confidence
-indicators by more than 33 percent for object detection and 37 percent for face
-detection highlighting the effectiveness of the proposed method.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2411.00729v1)
-
----
-
-
-## Generative AI\-based Pipeline Architecture for Increasing Training Efficiency in Intelligent Weed Control Systems
-
-**发布日期**：2024-11-01
-
-**作者**：Sourav Modak
-
-**摘要**：In automated crop protection tasks such as weed control, disease diagnosis,
-and pest monitoring, deep learning has demonstrated significant potential.
-However, these advanced models rely heavily on high\-quality, diverse datasets,
-often limited and costly in agricultural settings. Traditional data
-augmentation can increase dataset volume but usually lacks the real\-world
-variability needed for robust training. This study presents a new approach for
-generating synthetic images to improve deep learning\-based object detection
-models for intelligent weed control. Our GenAI\-based image generation pipeline
-integrates the Segment Anything Model \(SAM\) for zero\-shot domain adaptation
-with a text\-to\-image Stable Diffusion Model, enabling the creation of synthetic
-images that capture diverse real\-world conditions. We evaluate these synthetic
-datasets using lightweight YOLO models, measuring data efficiency with mAP50
-and mAP50\-95 scores across varying proportions of real and synthetic data.
-Notably, YOLO models trained on datasets with 10% synthetic and 90% real images
-generally demonstrate superior mAP50 and mAP50\-95 scores compared to those
-trained solely on real images. This approach not only reduces dependence on
-extensive real\-world datasets but also enhances predictive performance. The
-integration of this approach opens opportunities for achieving continual
-self\-improvement of perception modules in intelligent technical systems.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2411.00548v1)
 
 ---
 
