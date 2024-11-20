@@ -282,7 +282,7 @@ conditions, including fog and low\-light conditions.
 
 **代码链接**：摘要中未找到代码链接。
 
-**论文链接**：[阅读更多](http://arxiv.org/abs/2411.02799v1)
+**论文链接**：[阅读更多](http://arxiv.org/abs/2411.02799v2)
 
 ---
 
