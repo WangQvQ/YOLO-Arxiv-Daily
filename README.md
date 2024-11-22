@@ -1,6 +1,142 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Towards Context\-Rich Automated Biodiversity Assessments: Deriving AI\-Powered Insights from Camera Trap Data
+
+**发布日期**：2024-11-21
+
+**作者**：Paul Fergus
+
+**摘要**：Camera traps offer enormous new opportunities in ecological studies, but
+current automated image analysis methods often lack the contextual richness
+needed to support impactful conservation outcomes. Here we present an
+integrated approach that combines deep learning\-based vision and language
+models to improve ecological reporting using data from camera traps. We
+introduce a two\-stage system: YOLOv10\-X to localise and classify species
+\(mammals and birds\) within images, and a Phi\-3.5\-vision\-instruct model to read
+YOLOv10\-X binding box labels to identify species, overcoming its limitation
+with hard to classify objects in images. Additionally, Phi\-3.5 detects broader
+variables, such as vegetation type, and time of day, providing rich ecological
+and environmental context to YOLO's species detection output. When combined,
+this output is processed by the model's natural language system to answer
+complex queries, and retrieval\-augmented generation \(RAG\) is employed to enrich
+responses with external information, like species weight and IUCN status
+\(information that cannot be obtained through direct visual analysis\). This
+information is used to automatically generate structured reports, providing
+biodiversity stakeholders with deeper insights into, for example, species
+abundance, distribution, animal behaviour, and habitat selection. Our approach
+delivers contextually rich narratives that aid in wildlife management
+decisions. By providing contextually rich insights, our approach not only
+reduces manual effort but also supports timely decision\-making in conservation,
+potentially shifting efforts from reactive to proactive management.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2411.14219v1)
+
+---
+
+
+## WARLearn: Weather\-Adaptive Representation Learning
+
+**发布日期**：2024-11-21
+
+**作者**：Shubham Agarwal
+
+**摘要**：This paper introduces WARLearn, a novel framework designed for adaptive
+representation learning in challenging and adversarial weather conditions.
+Leveraging the in\-variance principal used in Barlow Twins, we demonstrate the
+capability to port the existing models initially trained on clear weather data
+to effectively handle adverse weather conditions. With minimal additional
+training, our method exhibits remarkable performance gains in scenarios
+characterized by fog and low\-light conditions. This adaptive framework extends
+its applicability beyond adverse weather settings, offering a versatile
+solution for domains exhibiting variations in data distributions. Furthermore,
+WARLearn is invaluable in scenarios where data distributions undergo
+significant shifts over time, enabling models to remain updated and accurate.
+Our experimental findings reveal a remarkable performance, with a mean average
+precision \(mAP\) of 52.6% on unseen real\-world foggy dataset \(RTTS\). Similarly,
+in low light conditions, our framework achieves a mAP of 55.7% on unseen
+real\-world low light dataset \(ExDark\). Notably, WARLearn surpasses the
+performance of state\-of\-the\-art frameworks including FeatEnHancer, Image
+Adaptive YOLO, DENet, C2PNet, PairLIE and ZeroDCE, by a substantial margin in
+adverse weather, improving the baseline performance in both foggy and low light
+conditions. The WARLearn code is available at
+https://github.com/ShubhamAgarwal12/WARLearn
+
+
+**代码链接**：https://github.com/ShubhamAgarwal12/WARLearn
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2411.14095v1)
+
+---
+
+
+## Mirror Target YOLO: An Improved YOLOv8 Method with Indirect Vision for Heritage Buildings Fire Detection
+
+**发布日期**：2024-11-21
+
+**作者**：Jian Liang
+
+**摘要**：Fires can cause severe damage to heritage buildings, making timely fire
+detection essential. Traditional dense cabling and drilling can harm these
+structures, so reducing the number of cameras to minimize such impact is
+challenging. Additionally, avoiding false alarms due to noise sensitivity and
+preserving the expertise of managers in fire\-prone areas is crucial. To address
+these needs, we propose a fire detection method based on indirect vision,
+called Mirror Target YOLO \(MITA\-YOLO\). MITA\-YOLO integrates indirect vision
+deployment and an enhanced detection module. It uses mirror angles to achieve
+indirect views, solving issues with limited visibility in irregular spaces and
+aligning each indirect view with the target monitoring area. The Target\-Mask
+module is designed to automatically identify and isolate the indirect vision
+areas in each image, filtering out non\-target areas. This enables the model to
+inherit managers' expertise in assessing fire\-risk zones, improving focus and
+resistance to interference in fire detection.In our experiments, we created an
+800\-image fire dataset with indirect vision. Results show that MITA\-YOLO
+significantly reduces camera requirements while achieving superior detection
+performance compared to other mainstream models.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2411.13997v1)
+
+---
+
+
+## Enhancing Bidirectional Sign Language Communication: Integrating YOLOv8 and NLP for Real\-Time Gesture Recognition & Translation
+
+**发布日期**：2024-11-18
+
+**作者**：Hasnat Jamil Bhuiyan
+
+**摘要**：The primary concern of this research is to take American Sign Language \(ASL\)
+data through real time camera footage and be able to convert the data and
+information into text. Adding to that, we are also putting focus on creating a
+framework that can also convert text into sign language in real time which can
+help us break the language barrier for the people who are in need. In this
+work, for recognising American Sign Language \(ASL\), we have used the You Only
+Look Once\(YOLO\) model and Convolutional Neural Network \(CNN\) model. YOLO model
+is run in real time and automatically extracts discriminative spatial\-temporal
+characteristics from the raw video stream without the need for any prior
+knowledge, eliminating design flaws. The CNN model here is also run in real
+time for sign language detection. We have introduced a novel method for
+converting text based input to sign language by making a framework that will
+take a sentence as input, identify keywords from that sentence and then show a
+video where sign language is performed with respect to the sentence given as
+input in real time. To the best of our knowledge, this is a rare study to
+demonstrate bidirectional sign language communication in real time in the
+American Sign Language \(ASL\).
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2411.13597v1)
+
+---
+
+
 ## WoodYOLO: A Novel Object Detector for Wood Species Detection in Microscopic Images
 
 **发布日期**：2024-11-18
@@ -184,140 +320,6 @@ publicly released upon paper acceptance.
 **代码链接**：摘要中未找到代码链接。
 
 **论文链接**：[阅读更多](http://arxiv.org/abs/2411.05633v1)
-
----
-
-
-## Deep Learning Models for UAV\-Assisted Bridge Inspection: A YOLO Benchmark Analysis
-
-**发布日期**：2024-11-07
-
-**作者**：Trong\-Nhan Phan
-
-**摘要**：Visual inspections of bridges are critical to ensure their safety and
-identify potential failures early. This inspection process can be rapidly and
-accurately automated by using unmanned aerial vehicles \(UAVs\) integrated with
-deep learning models. However, choosing an appropriate model that is
-lightweight enough to integrate into the UAV and fulfills the strict
-requirements for inference time and accuracy is challenging. Therefore, our
-work contributes to the advancement of this model selection process by
-conducting a benchmark of 23 models belonging to the four newest YOLO variants
-\(YOLOv5, YOLOv6, YOLOv7, YOLOv8\) on COCO\-Bridge\-2021\+, a dataset for bridge
-details detection. Through comprehensive benchmarking, we identify YOLOv8n,
-YOLOv7tiny, YOLOv6m, and YOLOv6m6 as the models offering an optimal balance
-between accuracy and processing speed, with mAP@50 scores of 0.803, 0.837,
-0.853, and 0.872, and inference times of 5.3ms, 7.5ms, 14.06ms, and 39.33ms,
-respectively. Our findings accelerate the model selection process for UAVs,
-enabling more efficient and reliable bridge inspections.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2411.04475v1)
-
----
-
-
-## Self\-supervised cross\-modality learning for uncertainty\-aware object detection and recognition in applications which lack pre\-labelled training data
-
-**发布日期**：2024-11-05
-
-**作者**：Irum Mehboob
-
-**摘要**：This paper shows how an uncertainty\-aware, deep neural network can be trained
-to detect, recognise and localise objects in 2D RGB images, in applications
-lacking annotated train\-ng datasets. We propose a self\-supervising
-teacher\-student pipeline, in which a relatively simple teacher classifier,
-trained with only a few labelled 2D thumbnails, automatically processes a
-larger body of unlabelled RGB\-D data to teach a student network based on a
-modified YOLOv3 architecture. Firstly, 3D object detection with back projection
-is used to automatically extract and teach 2D detection and localisation
-information to the student network. Secondly, a weakly supervised 2D thumbnail
-classifier, with minimal training on a small number of hand\-labelled images, is
-used to teach object category recognition. Thirdly, we use a Gaussian Process
-GP to encode and teach a robust uncertainty estimation functionality, so that
-the student can output confidence scores with each categorization. The
-resulting student significantly outperforms the same YOLO architecture trained
-directly on the same amount of labelled data. Our GP\-based approach yields
-robust and meaningful uncertainty estimations for complex industrial object
-classifications. The end\-to\-end network is also capable of real\-time
-processing, needed for robotics applications. Our method can be applied to many
-important industrial tasks, where labelled datasets are typically unavailable.
-In this paper, we demonstrate an example of detection, localisation, and object
-category recognition of nuclear mixed\-waste materials in highly cluttered and
-unstructured scenes. This is critical for robotic sorting and handling of
-legacy nuclear waste, which poses complex environmental remediation challenges
-in many nuclearised nations.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2411.03082v1)
-
----
-
-
-## ERUP\-YOLO: Enhancing Object Detection Robustness for Adverse Weather Condition by Unified Image\-Adaptive Processing
-
-**发布日期**：2024-11-05
-
-**作者**：Yuka Ogino
-
-**摘要**：We propose an image\-adaptive object detection method for adverse weather
-conditions such as fog and low\-light. Our framework employs differentiable
-preprocessing filters to perform image enhancement suitable for later\-stage
-object detections. Our framework introduces two differentiable filters: a
-B\\'ezier curve\-based pixel\-wise \(BPW\) filter and a kernel\-based local \(KBL\)
-filter. These filters unify the functions of classical image processing filters
-and improve performance of object detection. We also propose a domain\-agnostic
-data augmentation strategy using the BPW filter. Our method does not require
-data\-specific customization of the filter combinations, parameter ranges, and
-data augmentation. We evaluate our proposed approach, called Enhanced
-Robustness by Unified Image Processing \(ERUP\)\-YOLO, by applying it to the
-YOLOv3 detector. Experiments on adverse weather datasets demonstrate that our
-proposed filters match or exceed the expressiveness of conventional methods and
-our ERUP\-YOLO achieved superior performance in a wide range of adverse weather
-conditions, including fog and low\-light conditions.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2411.02799v2)
-
----
-
-
-## One\-Stage\-TFS: Thai One\-Stage Fingerspelling Dataset for Fingerspelling Recognition Frameworks
-
-**发布日期**：2024-11-05
-
-**作者**：Siriwiwat Lata
-
-**摘要**：The Thai One\-Stage Fingerspelling \(One\-Stage\-TFS\) dataset is a comprehensive
-resource designed to advance research in hand gesture recognition, explicitly
-focusing on the recognition of Thai sign language. This dataset comprises 7,200
-images capturing 15 one\-stage consonant gestures performed by undergraduate
-students from Rajabhat Maha Sarakham University, Thailand. The contributors
-include both expert students from the Special Education Department with
-proficiency in Thai sign language and students from other departments without
-prior sign language experience. Images were collected between July and December
-2021 using a DSLR camera, with contributors demonstrating hand gestures against
-both simple and complex backgrounds. The One\-Stage\-TFS dataset presents
-challenges in detecting and recognizing hand gestures, offering opportunities
-to develop novel end\-to\-end recognition frameworks. Researchers can utilize
-this dataset to explore deep learning methods, such as YOLO, EfficientDet,
-RetinaNet, and Detectron, for hand detection, followed by feature extraction
-and recognition using techniques like convolutional neural networks,
-transformers, and adaptive feature fusion networks. The dataset is accessible
-via the Mendeley Data repository and supports a wide range of applications in
-computer science, including deep learning, computer vision, and pattern
-recognition, thereby encouraging further innovation and exploration in these
-fields.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2411.02768v1)
 
 ---
 
