@@ -1,6 +1,42 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Unveiling the Hidden: A Comprehensive Evaluation of Underwater Image Enhancement and Its Impact on Object Detection
+
+**发布日期**：2024-11-21
+
+**作者**：Ali Awad
+
+**摘要**：Underwater imagery often suffers from severe degradation that results in low
+visual quality and object detection performance. This work aims to evaluate
+state\-of\-the\-art image enhancement models, investigate their impact on
+underwater object detection, and explore their potential to improve detection
+performance. To this end, we selected representative underwater image
+enhancement models covering major enhancement categories and applied them
+separately to two recent datasets: 1\) the Real\-World Underwater Object
+Detection Dataset \(RUOD\), and 2\) the Challenging Underwater Plant Detection
+Dataset \(CUPDD\). Following this, we conducted qualitative and quantitative
+analyses on the enhanced images and developed a quality index \(Q\-index\) to
+compare the quality distribution of the original and enhanced images.
+Subsequently, we compared the performance of several YOLO\-NAS detection models
+that are separately trained and tested on the original and enhanced image sets.
+Then, we performed a correlation study to examine the relationship between
+enhancement metrics and detection performance. We also analyzed the inference
+results from the trained detectors presenting cases where enhancement increased
+the detection performance as well as cases where enhancement revealed missed
+objects by human annotators. This study suggests that although enhancement
+generally deteriorates the detection performance, it can still be harnessed in
+some cases for increased detection performance and more accurate human
+annotation.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2411.14626v1)
+
+---
+
+
 ## Towards Context\-Rich Automated Biodiversity Assessments: Deriving AI\-Powered Insights from Camera Trap Data
 
 **发布日期**：2024-11-21
@@ -290,36 +326,6 @@ also discussed.
 **代码链接**：摘要中未找到代码链接。
 
 **论文链接**：[阅读更多](http://arxiv.org/abs/2411.05898v1)
-
----
-
-
-## SynDroneVision: A Synthetic Dataset for Image\-Based Drone Detection
-
-**发布日期**：2024-11-08
-
-**作者**：Tamara R. Lenhard
-
-**摘要**：Developing robust drone detection systems is often constrained by the limited
-availability of large\-scale annotated training data and the high costs
-associated with real\-world data collection. However, leveraging synthetic data
-generated via game engine\-based simulations provides a promising and
-cost\-effective solution to overcome this issue. Therefore, we present
-SynDroneVision, a synthetic dataset specifically designed for RGB\-based drone
-detection in surveillance applications. Featuring diverse backgrounds, lighting
-conditions, and drone models, SynDroneVision offers a comprehensive training
-foundation for deep learning algorithms. To evaluate the dataset's
-effectiveness, we perform a comparative analysis across a selection of recent
-YOLO detection models. Our findings demonstrate that SynDroneVision is a
-valuable resource for real\-world data enrichment, achieving notable
-enhancements in model performance and robustness, while significantly reducing
-the time and costs of real\-world data acquisition. SynDroneVision will be
-publicly released upon paper acceptance.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2411.05633v1)
 
 ---
 
