@@ -1,6 +1,111 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Learn from Foundation Model: Fruit Detection Model without Manual Annotation
+
+**发布日期**：2024-11-25
+
+**作者**：Yanan Wang
+
+**摘要**：Recent breakthroughs in large foundation models have enabled the possibility
+of transferring knowledge pre\-trained on vast datasets to domains with limited
+data availability. Agriculture is one of the domains that lacks sufficient
+data. This study proposes a framework to train effective, domain\-specific,
+small models from foundation models without manual annotation. Our approach
+begins with SDM \(Segmentation\-Description\-Matching\), a stage that leverages two
+foundation models: SAM2 \(Segment Anything in Images and Videos\) for
+segmentation and OpenCLIP \(Open Contrastive Language\-Image Pretraining\) for
+zero\-shot open\-vocabulary classification. In the second stage, a novel
+knowledge distillation mechanism is utilized to distill compact,
+edge\-deployable models from SDM, enhancing both inference speed and perception
+accuracy. The complete method, termed SDM\-D
+\(Segmentation\-Description\-Matching\-Distilling\), demonstrates strong performance
+across various fruit detection tasks object detection, semantic segmentation,
+and instance segmentation\) without manual annotation. It nearly matches the
+performance of models trained with abundant labels. Notably, SDM\-D outperforms
+open\-set detection methods such as Grounding SAM and YOLO\-World on all tested
+fruit detection datasets. Additionally, we introduce MegaFruits, a
+comprehensive fruit segmentation dataset encompassing over 25,000 images, and
+all code and datasets are made publicly available at
+https://github.com/AgRoboticsResearch/SDM\-D.git.
+
+
+**代码链接**：https://github.com/AgRoboticsResearch/SDM-D.git.
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2411.16196v1)
+
+---
+
+
+## You only thermoelastically deform once: Point Absorber Detection in LIGO Test Masses with YOLO
+
+**发布日期**：2024-11-25
+
+**作者**：Simon R. Goode
+
+**摘要**：Current and future gravitational\-wave observatories rely on large\-scale,
+precision interferometers to detect the gravitational\-wave signals. However,
+microscopic imperfections on the test masses, known as point absorbers, cause
+problematic heating of the optic via absorption of the high\-power laser beam,
+which results in diminished sensitivity, lock loss, or even permanent damage.
+Consistent monitoring of the test masses is crucial for detecting,
+characterizing, and ultimately removing point absorbers. We present a
+machine\-learning algorithm for detecting point absorbers based on the
+object\-detection algorithm You Only Look Once \(YOLO\). The algorithm can perform
+this task in situ while the detector is in operation. We validate our algorithm
+by comparing it with past reports of point absorbers identified by humans at
+LIGO. The algorithm confidently identifies the same point absorbers as humans
+with minimal false positives. It also identifies some point absorbers
+previously not identified by humans, which we confirm with human follow\-up. We
+highlight the potential of machine learning in commissioning efforts.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2411.16104v1)
+
+---
+
+
+## Enhancing Object Detection Accuracy in Autonomous Vehicles Using Synthetic Data
+
+**发布日期**：2024-11-23
+
+**作者**：Sergei Voronin
+
+**摘要**：The rapid progress in machine learning models has significantly boosted the
+potential for real\-world applications such as autonomous vehicles, disease
+diagnoses, and recognition of emergencies. The performance of many machine
+learning models depends on the nature and size of the training data sets. These
+models often face challenges due to the scarcity, noise, and imbalance in
+real\-world data, limiting their performance. Nonetheless, high\-quality,
+diverse, relevant and representative training data is essential to build
+accurate and reliable machine learning models that adapt well to real\-world
+scenarios.
+  It is hypothesised that well\-designed synthetic data can improve the
+performance of a machine learning algorithm. This work aims to create a
+synthetic dataset and evaluate its effectiveness to improve the prediction
+accuracy of object detection systems. This work considers autonomous vehicle
+scenarios as an illustrative example to show the efficacy of synthetic data.
+The effectiveness of these synthetic datasets in improving the performance of
+state\-of\-the\-art object detection models is explored. The findings demonstrate
+that incorporating synthetic data improves model performance across all
+performance matrices.
+  Two deep learning systems, System\-1 \(trained on real\-world data\) and System\-2
+\(trained on a combination of real and synthetic data\), are evaluated using the
+state\-of\-the\-art YOLO model across multiple metrics, including accuracy,
+precision, recall, and mean average precision. Experimental results revealed
+that System\-2 outperformed System\-1, showing a 3% improvement in accuracy,
+along with superior performance in all other metrics.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2411.15602v1)
+
+---
+
+
 ## Unveiling the Hidden: A Comprehensive Evaluation of Underwater Image Enhancement and Its Impact on Object Detection
 
 **发布日期**：2024-11-21
@@ -228,104 +333,6 @@ object detection in resource\-constrained environments.
 **代码链接**：摘要中未找到代码链接。
 
 **论文链接**：[阅读更多](http://arxiv.org/abs/2411.11477v1)
-
----
-
-
-## Zero\-Shot Automatic Annotation and Instance Segmentation using LLM\-Generated Datasets: Eliminating Field Imaging and Manual Annotation for Deep Learning Model Development
-
-**发布日期**：2024-11-18
-
-**作者**：Ranjan Sapkota
-
-**摘要**：Currently, deep learning\-based instance segmentation for various applications
-\(e.g., Agriculture\) is predominantly performed using a labor\-intensive process
-involving extensive field data collection using sophisticated sensors, followed
-by careful manual annotation of images, presenting significant logistical and
-financial challenges to researchers and organizations. The process also slows
-down the model development and training process. In this study, we presented a
-novel method for deep learning\-based instance segmentation of apples in
-commercial orchards that eliminates the need for labor\-intensive field data
-collection and manual annotation. Utilizing a Large Language Model \(LLM\), we
-synthetically generated orchard images and automatically annotated them using
-the Segment Anything Model \(SAM\) integrated with a YOLO11 base model. This
-method significantly reduces reliance on physical sensors and manual data
-processing, presenting a major advancement in "Agricultural AI". The synthetic,
-auto\-annotated dataset was used to train the YOLO11 model for Apple instance
-segmentation, which was then validated on real orchard images. The results
-showed that the automatically generated annotations achieved a Dice Coefficient
-of 0.9513 and an IoU of 0.9303, validating the accuracy and overlap of the mask
-annotations. All YOLO11 configurations, trained solely on these synthetic
-datasets with automated annotations, accurately recognized and delineated
-apples, highlighting the method's efficacy. Specifically, the YOLO11m\-seg
-configuration achieved a mask precision of 0.902 and a mask mAP@50 of 0.833 on
-test images collected from a commercial orchard. Additionally, the YOLO11l\-seg
-configuration outperformed other models in validation on 40 LLM\-generated
-images, achieving the highest mask precision and mAP@50 metrics.
-  Keywords: YOLO, SAM, SAMv2, YOLO11, YOLOv11, Segment Anything, YOLO\-SAM
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2411.11285v1)
-
----
-
-
-## Diachronic Document Dataset for Semantic Layout Analysis
-
-**发布日期**：2024-11-15
-
-**作者**：Thibault Clérice
-
-**摘要**：We present a novel, open\-access dataset designed for semantic layout
-analysis, built to support document recreation workflows through mapping with
-the Text Encoding Initiative \(TEI\) standard. This dataset includes 7,254
-annotated pages spanning a large temporal range \(1600\-2024\) of digitised and
-born\-digital materials across diverse document types \(magazines, papers from
-sciences and humanities, PhD theses, monographs, plays, administrative reports,
-etc.\) sorted into modular subsets. By incorporating content from different
-periods and genres, it addresses varying layout complexities and historical
-changes in document structure. The modular design allows domain\-specific
-configurations. We evaluate object detection models on this dataset, examining
-the impact of input size and subset\-based training. Results show that a
-1280\-pixel input size for YOLO is optimal and that training on subsets
-generally benefits from incorporating them into a generic model rather than
-fine\-tuning pre\-trained weights.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2411.10068v1)
-
----
-
-
-## Integrating Object Detection Modality into Visual Language Model for Enhanced Autonomous Driving Agent
-
-**发布日期**：2024-11-08
-
-**作者**：Linfeng He
-
-**摘要**：In this paper, we propose a novel framework for enhancing visual
-comprehension in autonomous driving systems by integrating visual language
-models \(VLMs\) with additional visual perception module specialised in object
-detection. We extend the Llama\-Adapter architecture by incorporating a
-YOLOS\-based detection network alongside the CLIP perception network, addressing
-limitations in object detection and localisation. Our approach introduces
-camera ID\-separators to improve multi\-view processing, crucial for
-comprehensive environmental awareness. Experiments on the DriveLM visual
-question answering challenge demonstrate significant improvements over baseline
-models, with enhanced performance in ChatGPT scores, BLEU scores, and CIDEr
-metrics, indicating closeness of model answer to ground truth. Our method
-represents a promising step towards more capable and interpretable autonomous
-driving systems. Possible safety enhancement enabled by detection modality is
-also discussed.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2411.05898v1)
 
 ---
 
