@@ -1,6 +1,42 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## DGNN\-YOLO: Dynamic Graph Neural Networks with YOLO11 for Small Object Detection and Tracking in Traffic Surveillance
+
+**发布日期**：2024-11-26
+
+**作者**：Shahriar Soudeep
+
+**摘要**：Accurate detection and tracking of small objects such as pedestrians,
+cyclists, and motorbikes are critical for traffic surveillance systems, which
+are crucial in improving road safety and decision\-making in intelligent
+transportation systems. However, traditional methods struggle with challenges
+such as occlusion, low resolution, and dynamic traffic conditions,
+necessitating innovative approaches to address these limitations. This paper
+introduces DGNN\-YOLO, a novel framework integrating dynamic graph neural
+networks \(DGNN\) with YOLO11 to enhance small object detection and tracking in
+traffic surveillance systems. The framework leverages YOLO11's advanced spatial
+feature extraction capabilities for precise object detection and incorporates
+DGNN to model spatial\-temporal relationships for robust real\-time tracking
+dynamically. By constructing and updating graph structures, DGNN\-YOLO
+effectively represents objects as nodes and their interactions as edges,
+ensuring adaptive and accurate tracking in complex and dynamic environments.
+Extensive experiments demonstrate that DGNN\-YOLO consistently outperforms
+state\-of\-the\-art methods in detecting and tracking small objects under diverse
+traffic conditions, achieving the highest precision \(0.8382\), recall \(0.6875\),
+and mAP@0.5:0.95 \(0.6476\), showcasing its robustness and scalability,
+particularly in challenging scenarios involving small and occluded objects.
+This work provides a scalable, real\-time traffic surveillance and analysis
+solution, significantly contributing to intelligent transportation systems.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2411.17251v1)
+
+---
+
+
 ## Learn from Foundation Model: Fruit Detection Model without Manual Annotation
 
 **发布日期**：2024-11-25
@@ -106,7 +142,7 @@ along with superior performance in all other metrics.
 ---
 
 
-## Unveiling the Hidden: A Comprehensive Evaluation of Underwater Image Enhancement and Its Impact on Object Detection
+## Evaluating the Impact of Underwater Image Enhancement on Object Detection Performance: A Comprehensive Study
 
 **发布日期**：2024-11-21
 
@@ -137,7 +173,7 @@ annotation.
 
 **代码链接**：摘要中未找到代码链接。
 
-**论文链接**：[阅读更多](http://arxiv.org/abs/2411.14626v1)
+**论文链接**：[阅读更多](http://arxiv.org/abs/2411.14626v2)
 
 ---
 
@@ -301,38 +337,6 @@ biodiversity conservation efforts globally.
 **代码链接**：摘要中未找到代码链接。
 
 **论文链接**：[阅读更多](http://arxiv.org/abs/2411.11738v1)
-
----
-
-
-## SL\-YOLO: A Stronger and Lighter Drone Target Detection Model
-
-**发布日期**：2024-11-18
-
-**作者**：Defan Chen
-
-**摘要**：Detecting small objects in complex scenes, such as those captured by drones,
-is a daunting challenge due to the difficulty in capturing the complex features
-of small targets. While the YOLO family has achieved great success in large
-target detection, its performance is less than satisfactory when faced with
-small targets. Because of this, this paper proposes a revolutionary model
-SL\-YOLO \(Stronger and Lighter YOLO\) that aims to break the bottleneck of small
-target detection. We propose the Hierarchical Extended Path Aggregation Network
-\(HEPAN\), a pioneering cross\-scale feature fusion method that can ensure
-unparalleled detection accuracy even in the most challenging environments. At
-the same time, without sacrificing detection capabilities, we design the C2fDCB
-lightweight module and add the SCDown downsampling module to greatly reduce the
-model's parameters and computational complexity. Our experimental results on
-the VisDrone2019 dataset reveal a significant improvement in performance, with
-mAP@0.5 jumping from 43.0% to 46.9% and mAP@0.5:0.95 increasing from 26.0% to
-28.9%. At the same time, the model parameters are reduced from 11.1M to 9.6M,
-and the FPS can reach 132, making it an ideal solution for real\-time small
-object detection in resource\-constrained environments.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2411.11477v1)
 
 ---
 
