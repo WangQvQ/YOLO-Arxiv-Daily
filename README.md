@@ -1,6 +1,78 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Enhancing weed detection performance by means of GenAI\-based image augmentation
+
+**发布日期**：2024-11-27
+
+**作者**：Sourav Modak
+
+**摘要**：Precise weed management is essential for sustaining crop productivity and
+ecological balance. Traditional herbicide applications face economic and
+environmental challenges, emphasizing the need for intelligent weed control
+systems powered by deep learning. These systems require vast amounts of
+high\-quality training data. The reality of scarcity of well\-annotated training
+data, however, is often addressed through generating more data using data
+augmentation. Nevertheless, conventional augmentation techniques such as random
+flipping, color changes, and blurring lack sufficient fidelity and diversity.
+This paper investigates a generative AI\-based augmentation technique that uses
+the Stable Diffusion model to produce diverse synthetic images that improve the
+quantity and quality of training datasets for weed detection models. Moreover,
+this paper explores the impact of these synthetic images on the performance of
+real\-time detection systems, thus focusing on compact CNN\-based models such as
+YOLO nano for edge devices. The experimental results show substantial
+improvements in mean Average Precision \(mAP50 and mAP50\-95\) scores for YOLO
+models trained with generative AI\-augmented datasets, demonstrating the
+promising potential of synthetic data to enhance model robustness and accuracy.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2411.18513v1)
+
+---
+
+
+## AI\-Driven Smartphone Solution for Digitizing Rapid Diagnostic Test Kits and Enhancing Accessibility for the Visually Impaired
+
+**发布日期**：2024-11-27
+
+**作者**：R. B. Dastagir
+
+**摘要**：Rapid diagnostic tests are crucial for timely disease detection and
+management, yet accurate interpretation of test results remains challenging. In
+this study, we propose a novel approach to enhance the accuracy and reliability
+of rapid diagnostic test result interpretation by integrating artificial
+intelligence \(AI\) algorithms, including convolutional neural networks \(CNN\),
+within a smartphone\-based application. The app enables users to take pictures
+of their test kits, which YOLOv8 then processes to precisely crop and extract
+the membrane region, even if the test kit is not centered in the frame or is
+positioned at the very edge of the image. This capability offers greater
+accessibility, allowing even visually impaired individuals to capture test
+images without needing perfect alignment, thus promoting user independence and
+inclusivity. The extracted image is analyzed by an additional CNN classifier
+that determines if the results are positive, negative, or invalid, providing
+users with the results and a confidence level. Through validation experiments
+with commonly used rapid test kits across various diagnostic applications, our
+results demonstrate that the synergistic integration of AI significantly
+improves sensitivity and specificity in test result interpretation. This
+improvement can be attributed to the extraction of the membrane zones from the
+test kit images using the state\-of\-the\-art YOLO algorithm. Additionally, we
+performed SHapley Additive exPlanations \(SHAP\) analysis to investigate the
+factors influencing the model's decisions, identifying reasons behind both
+correct and incorrect classifications. By facilitating the differentiation of
+genuine test lines from background noise and providing valuable insights into
+test line intensity and uniformity, our approach offers a robust solution to
+challenges in rapid test interpretation.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2411.18007v1)
+
+---
+
+
 ## DGNN\-YOLO: Dynamic Graph Neural Networks with YOLO11 for Small Object Detection and Tracking in Traffic Surveillance
 
 **发布日期**：2024-11-26
@@ -278,65 +350,6 @@ performance compared to other mainstream models.
 **代码链接**：摘要中未找到代码链接。
 
 **论文链接**：[阅读更多](http://arxiv.org/abs/2411.13997v1)
-
----
-
-
-## Enhancing Bidirectional Sign Language Communication: Integrating YOLOv8 and NLP for Real\-Time Gesture Recognition & Translation
-
-**发布日期**：2024-11-18
-
-**作者**：Hasnat Jamil Bhuiyan
-
-**摘要**：The primary concern of this research is to take American Sign Language \(ASL\)
-data through real time camera footage and be able to convert the data and
-information into text. Adding to that, we are also putting focus on creating a
-framework that can also convert text into sign language in real time which can
-help us break the language barrier for the people who are in need. In this
-work, for recognising American Sign Language \(ASL\), we have used the You Only
-Look Once\(YOLO\) model and Convolutional Neural Network \(CNN\) model. YOLO model
-is run in real time and automatically extracts discriminative spatial\-temporal
-characteristics from the raw video stream without the need for any prior
-knowledge, eliminating design flaws. The CNN model here is also run in real
-time for sign language detection. We have introduced a novel method for
-converting text based input to sign language by making a framework that will
-take a sentence as input, identify keywords from that sentence and then show a
-video where sign language is performed with respect to the sentence given as
-input in real time. To the best of our knowledge, this is a rare study to
-demonstrate bidirectional sign language communication in real time in the
-American Sign Language \(ASL\).
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2411.13597v1)
-
----
-
-
-## WoodYOLO: A Novel Object Detector for Wood Species Detection in Microscopic Images
-
-**发布日期**：2024-11-18
-
-**作者**：Lars Nieradzik
-
-**摘要**：Wood species identification plays a crucial role in various industries, from
-ensuring the legality of timber products to advancing ecological conservation
-efforts. This paper introduces WoodYOLO, a novel object detection algorithm
-specifically designed for microscopic wood fiber analysis. Our approach adapts
-the YOLO architecture to address the challenges posed by large, high\-resolution
-microscopy images and the need for high recall in localization of the cell type
-of interest \(vessel elements\). Our results show that WoodYOLO significantly
-outperforms state\-of\-the\-art models, achieving performance gains of 12.9% and
-6.5% in F2 score over YOLOv10 and YOLOv7, respectively. This improvement in
-automated wood cell type localization capabilities contributes to enhancing
-regulatory compliance, supporting sustainable forestry practices, and promoting
-biodiversity conservation efforts globally.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2411.11738v1)
 
 ---
 
