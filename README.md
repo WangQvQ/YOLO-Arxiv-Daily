@@ -1,6 +1,77 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Real\-Time Anomaly Detection in Video Streams
+
+**发布日期**：2024-11-29
+
+**作者**：Fabien Poirier
+
+**摘要**：This thesis is part of a CIFRE agreement between the company Othello and the
+LIASD laboratory. The objective is to develop an artificial intelligence system
+that can detect real\-time dangers in a video stream. To achieve this, a novel
+approach combining temporal and spatial analysis has been proposed. Several
+avenues have been explored to improve anomaly detection by integrating object
+detection, human pose detection, and motion analysis. For result
+interpretability, techniques commonly used for image analysis, such as
+activation and saliency maps, have been extended to videos, and an original
+method has been proposed. The proposed architecture performs binary or
+multiclass classification depending on whether an alert or the cause needs to
+be identified. Numerous neural networkmodels have been tested, and three of
+them have been selected. You Only Looks Once \(YOLO\) has been used for spatial
+analysis, a Convolutional Recurrent Neuronal Network \(CRNN\) composed of VGG19
+and a Gated Recurrent Unit \(GRU\) for temporal analysis, and a multi\-layer
+perceptron for classification. These models handle different types of data and
+can be combined in parallel or in series. Although the parallel mode is faster,
+the serial mode is generally more reliable. For training these models,
+supervised learning was chosen, and two proprietary datasets were created. The
+first dataset focuses on objects that may play a potential role in anomalies,
+while the second consists of videos containing anomalies or non\-anomalies. This
+approach allows for the processing of both continuous video streams and finite
+videos, providing greater flexibility in detection.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2411.19731v1)
+
+---
+
+
+## Data Augmentation with Diffusion Models for Colon Polyp Localization on the Low Data Regime: How much real data is enough?
+
+**发布日期**：2024-11-28
+
+**作者**：Adrian Tormos
+
+**摘要**：The scarcity of data in medical domains hinders the performance of Deep
+Learning models. Data augmentation techniques can alleviate that problem, but
+they usually rely on functional transformations of the data that do not
+guarantee to preserve the original tasks. To approximate the distribution of
+the data using generative models is a way of reducing that problem and also to
+obtain new samples that resemble the original data. Denoising Diffusion models
+is a promising Deep Learning technique that can learn good approximations of
+different kinds of data like images, time series or tabular data.
+  Automatic colonoscopy analysis and specifically Polyp localization in
+colonoscopy videos is a task that can assist clinical diagnosis and treatment.
+The annotation of video frames for training a deep learning model is a time
+consuming task and usually only small datasets can be obtained. The fine tuning
+of application models using a large dataset of generated data could be an
+alternative to improve their performance. We conduct a set of experiments
+training different diffusion models that can generate jointly colonoscopy
+images with localization annotations using a combination of existing open
+datasets. The generated data is used on various transfer learning experiments
+in the task of polyp localization with a model based on YOLO v9 on the low data
+regime.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2411.18926v1)
+
+---
+
+
 ## Enhancing weed detection performance by means of GenAI\-based image augmentation
 
 **发布日期**：2024-11-27
@@ -28,7 +99,7 @@ promising potential of synthetic data to enhance model robustness and accuracy.
 
 **代码链接**：摘要中未找到代码链接。
 
-**论文链接**：[阅读更多](http://arxiv.org/abs/2411.18513v1)
+**论文链接**：[阅读更多](http://arxiv.org/abs/2411.18513v2)
 
 ---
 
@@ -283,73 +354,6 @@ potentially shifting efforts from reactive to proactive management.
 **代码链接**：摘要中未找到代码链接。
 
 **论文链接**：[阅读更多](http://arxiv.org/abs/2411.14219v1)
-
----
-
-
-## WARLearn: Weather\-Adaptive Representation Learning
-
-**发布日期**：2024-11-21
-
-**作者**：Shubham Agarwal
-
-**摘要**：This paper introduces WARLearn, a novel framework designed for adaptive
-representation learning in challenging and adversarial weather conditions.
-Leveraging the in\-variance principal used in Barlow Twins, we demonstrate the
-capability to port the existing models initially trained on clear weather data
-to effectively handle adverse weather conditions. With minimal additional
-training, our method exhibits remarkable performance gains in scenarios
-characterized by fog and low\-light conditions. This adaptive framework extends
-its applicability beyond adverse weather settings, offering a versatile
-solution for domains exhibiting variations in data distributions. Furthermore,
-WARLearn is invaluable in scenarios where data distributions undergo
-significant shifts over time, enabling models to remain updated and accurate.
-Our experimental findings reveal a remarkable performance, with a mean average
-precision \(mAP\) of 52.6% on unseen real\-world foggy dataset \(RTTS\). Similarly,
-in low light conditions, our framework achieves a mAP of 55.7% on unseen
-real\-world low light dataset \(ExDark\). Notably, WARLearn surpasses the
-performance of state\-of\-the\-art frameworks including FeatEnHancer, Image
-Adaptive YOLO, DENet, C2PNet, PairLIE and ZeroDCE, by a substantial margin in
-adverse weather, improving the baseline performance in both foggy and low light
-conditions. The WARLearn code is available at
-https://github.com/ShubhamAgarwal12/WARLearn
-
-
-**代码链接**：https://github.com/ShubhamAgarwal12/WARLearn
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2411.14095v1)
-
----
-
-
-## Mirror Target YOLO: An Improved YOLOv8 Method with Indirect Vision for Heritage Buildings Fire Detection
-
-**发布日期**：2024-11-21
-
-**作者**：Jian Liang
-
-**摘要**：Fires can cause severe damage to heritage buildings, making timely fire
-detection essential. Traditional dense cabling and drilling can harm these
-structures, so reducing the number of cameras to minimize such impact is
-challenging. Additionally, avoiding false alarms due to noise sensitivity and
-preserving the expertise of managers in fire\-prone areas is crucial. To address
-these needs, we propose a fire detection method based on indirect vision,
-called Mirror Target YOLO \(MITA\-YOLO\). MITA\-YOLO integrates indirect vision
-deployment and an enhanced detection module. It uses mirror angles to achieve
-indirect views, solving issues with limited visibility in irregular spaces and
-aligning each indirect view with the target monitoring area. The Target\-Mask
-module is designed to automatically identify and isolate the indirect vision
-areas in each image, filtering out non\-target areas. This enables the model to
-inherit managers' expertise in assessing fire\-risk zones, improving focus and
-resistance to interference in fire detection.In our experiments, we created an
-800\-image fire dataset with indirect vision. Results show that MITA\-YOLO
-significantly reduces camera requirements while achieving superior detection
-performance compared to other mainstream models.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2411.13997v1)
 
 ---
 
