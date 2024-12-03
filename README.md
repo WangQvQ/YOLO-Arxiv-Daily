@@ -175,7 +175,7 @@ solution, significantly contributing to intelligent transportation systems.
 
 **代码链接**：摘要中未找到代码链接。
 
-**论文链接**：[阅读更多](http://arxiv.org/abs/2411.17251v1)
+**论文链接**：[阅读更多](http://arxiv.org/abs/2411.17251v2)
 
 ---
 
