@@ -1,6 +1,144 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Smart Parking with Pixel\-Wise ROI Selection for Vehicle Detection Using YOLOv8, YOLOv9, YOLOv10, and YOLOv11
+
+**发布日期**：2024-12-02
+
+**作者**：Gustavo P. C. P. da Luz
+
+**摘要**：The increasing urbanization and the growing number of vehicles in cities have
+underscored the need for efficient parking management systems. Traditional
+smart parking solutions often rely on sensors or cameras for occupancy
+detection, each with its limitations. Recent advancements in deep learning have
+introduced new YOLO models \(YOLOv8, YOLOv9, YOLOv10, and YOLOv11\), but these
+models have not been extensively evaluated in the context of smart parking
+systems, particularly when combined with Region of Interest \(ROI\) selection for
+object detection. Existing methods still rely on fixed polygonal ROI selections
+or simple pixel\-based modifications, which limit flexibility and precision.
+This work introduces a novel approach that integrates Internet of Things, Edge
+Computing, and Deep Learning concepts, by using the latest YOLO models for
+vehicle detection. By exploring both edge and cloud computing, it was found
+that inference times on edge devices ranged from 1 to 92 seconds, depending on
+the hardware and model version. Additionally, a new pixel\-wise post\-processing
+ROI selection method is proposed for accurately identifying regions of interest
+to count vehicles in parking lot images. The proposed system achieved 99.68%
+balanced accuracy on a custom dataset of 3,484 images, offering a
+cost\-effective smart parking solution that ensures precise vehicle detection
+while preserving data privacy
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2412.01983v1)
+
+---
+
+
+## Research on Cervical Cancer p16/Ki\-67 Immunohistochemical Dual\-Staining Image Recognition Algorithm Based on YOLO
+
+**发布日期**：2024-12-02
+
+**作者**：Xiao\-Jun Wu
+
+**摘要**：The p16/Ki\-67 dual staining method is a new approach for cervical cancer
+screening with high sensitivity and specificity. However, there are issues of
+mis\-detection and inaccurate recognition when the YOLOv5s algorithm is directly
+applied to dual\-stained cell images. This paper Proposes a novel cervical
+cancer dual\-stained image recognition \(DSIR\-YOLO\) model based on an YOLOv5. By
+fusing the Swin\-Transformer module, GAM attention mechanism, multi\-scale
+feature fusion, and EIoU loss function, the detection performance is
+significantly improved, with mAP@0.5 and mAP@0.5:0.95 reaching 92.6% and 70.5%,
+respectively. Compared with YOLOv5s in five\-fold cross\-validation, the
+accuracy, recall, mAP@0.5, and mAP@0.5:0.95 of the improved algorithm are
+increased by 2.3%, 4.1%, 4.3%, and 8.0%, respectively, with smaller variances
+and higher stability. Compared with other detection algorithms, DSIR\-YOLO in
+this paper sacrifices some performance requirements to improve the network
+recognition effect. In addition, the influence of dataset quality on the
+detection results is studied. By controlling the sealing property of pixels,
+scale difference, unlabelled cells, and diagonal annotation, the model
+detection accuracy, recall, mAP@0.5, and mAP@0.5:0.95 are improved by 13.3%,
+15.3%, 18.3%, and 30.5%, respectively.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2412.01372v1)
+
+---
+
+
+## Thermal Vision: Pioneering Non\-Invasive Temperature Tracking in Congested Spaces
+
+**发布日期**：2024-12-01
+
+**作者**：Arijit Samal
+
+**摘要**：Non\-invasive temperature monitoring of individuals plays a crucial role in
+identifying and isolating symptomatic individuals. Temperature monitoring
+becomes particularly vital in settings characterized by close human proximity,
+often referred to as dense settings. However, existing research on non\-invasive
+temperature estimation using thermal cameras has predominantly focused on
+sparse settings. Unfortunately, the risk of disease transmission is
+significantly higher in dense settings like movie theaters or classrooms.
+Consequently, there is an urgent need to develop robust temperature estimation
+methods tailored explicitly for dense settings.
+  Our study proposes a non\-invasive temperature estimation system that combines
+a thermal camera with an edge device. Our system employs YOLO models for face
+detection and utilizes a regression framework for temperature estimation. We
+evaluated the system on a diverse dataset collected in dense and sparse
+settings. Our proposed face detection model achieves an impressive mAP score of
+over 84 in both in\-dataset and cross\-dataset evaluations. Furthermore, the
+regression framework demonstrates remarkable performance with a mean square
+error of 0.18$^\{\\circ\}$C and an impressive $R^2$ score of 0.96. Our
+experiments' results highlight the developed system's effectiveness,
+positioning it as a promising solution for continuous temperature monitoring in
+real\-world applications. With this paper, we release our dataset and
+programming code publicly.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2412.00863v1)
+
+---
+
+
+## Visual Modality Prompt for Adapting Vision\-Language Object Detectors
+
+**发布日期**：2024-12-01
+
+**作者**：Heitor R. Medeiros
+
+**摘要**：The zero\-shot performance of object detectors degrades when tested on
+different modalities, such as infrared and depth. While recent work has
+explored image translation techniques to adapt detectors to new modalities,
+these methods are limited to a single modality and apply only to traditional
+detectors. Recently, vision\-language detectors, such as YOLO\-World and
+Grounding DINO, have shown promising zero\-shot capabilities, however, they have
+not yet been adapted for other visual modalities. Traditional fine\-tuning
+approaches tend to compromise the zero\-shot capabilities of the detectors. The
+visual prompt strategies commonly used for classification with vision\-language
+models apply the same linear prompt translation to each image making them less
+effective. To address these limitations, we propose ModPrompt, a visual prompt
+strategy to adapt vision\-language detectors to new modalities without degrading
+zero\-shot performance. In particular, an encoder\-decoder visual prompt strategy
+is proposed, further enhanced by the integration of inference\-friendly task
+residuals, facilitating more robust adaptation. Empirically, we benchmark our
+method for modality adaptation on two vision\-language detectors, YOLO\-World and
+Grounding DINO, and on challenging infrared \(LLVIP, FLIR\) and depth \(NYUv2\)
+data, achieving performance comparable to full fine\-tuning while preserving the
+model's zero\-shot capability. Our code is available at:
+https://github.com/heitorrapela/ModPrompt
+
+
+**代码链接**：https://github.com/heitorrapela/ModPrompt
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2412.00622v1)
+
+---
+
+
 ## Real\-Time Anomaly Detection in Video Streams
 
 **发布日期**：2024-11-29
@@ -212,148 +350,6 @@ https://github.com/AgRoboticsResearch/SDM\-D.git.
 **代码链接**：https://github.com/AgRoboticsResearch/SDM-D.git.
 
 **论文链接**：[阅读更多](http://arxiv.org/abs/2411.16196v1)
-
----
-
-
-## You only thermoelastically deform once: Point Absorber Detection in LIGO Test Masses with YOLO
-
-**发布日期**：2024-11-25
-
-**作者**：Simon R. Goode
-
-**摘要**：Current and future gravitational\-wave observatories rely on large\-scale,
-precision interferometers to detect the gravitational\-wave signals. However,
-microscopic imperfections on the test masses, known as point absorbers, cause
-problematic heating of the optic via absorption of the high\-power laser beam,
-which results in diminished sensitivity, lock loss, or even permanent damage.
-Consistent monitoring of the test masses is crucial for detecting,
-characterizing, and ultimately removing point absorbers. We present a
-machine\-learning algorithm for detecting point absorbers based on the
-object\-detection algorithm You Only Look Once \(YOLO\). The algorithm can perform
-this task in situ while the detector is in operation. We validate our algorithm
-by comparing it with past reports of point absorbers identified by humans at
-LIGO. The algorithm confidently identifies the same point absorbers as humans
-with minimal false positives. It also identifies some point absorbers
-previously not identified by humans, which we confirm with human follow\-up. We
-highlight the potential of machine learning in commissioning efforts.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2411.16104v1)
-
----
-
-
-## Enhancing Object Detection Accuracy in Autonomous Vehicles Using Synthetic Data
-
-**发布日期**：2024-11-23
-
-**作者**：Sergei Voronin
-
-**摘要**：The rapid progress in machine learning models has significantly boosted the
-potential for real\-world applications such as autonomous vehicles, disease
-diagnoses, and recognition of emergencies. The performance of many machine
-learning models depends on the nature and size of the training data sets. These
-models often face challenges due to the scarcity, noise, and imbalance in
-real\-world data, limiting their performance. Nonetheless, high\-quality,
-diverse, relevant and representative training data is essential to build
-accurate and reliable machine learning models that adapt well to real\-world
-scenarios.
-  It is hypothesised that well\-designed synthetic data can improve the
-performance of a machine learning algorithm. This work aims to create a
-synthetic dataset and evaluate its effectiveness to improve the prediction
-accuracy of object detection systems. This work considers autonomous vehicle
-scenarios as an illustrative example to show the efficacy of synthetic data.
-The effectiveness of these synthetic datasets in improving the performance of
-state\-of\-the\-art object detection models is explored. The findings demonstrate
-that incorporating synthetic data improves model performance across all
-performance matrices.
-  Two deep learning systems, System\-1 \(trained on real\-world data\) and System\-2
-\(trained on a combination of real and synthetic data\), are evaluated using the
-state\-of\-the\-art YOLO model across multiple metrics, including accuracy,
-precision, recall, and mean average precision. Experimental results revealed
-that System\-2 outperformed System\-1, showing a 3% improvement in accuracy,
-along with superior performance in all other metrics.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2411.15602v1)
-
----
-
-
-## Evaluating the Impact of Underwater Image Enhancement on Object Detection Performance: A Comprehensive Study
-
-**发布日期**：2024-11-21
-
-**作者**：Ali Awad
-
-**摘要**：Underwater imagery often suffers from severe degradation that results in low
-visual quality and object detection performance. This work aims to evaluate
-state\-of\-the\-art image enhancement models, investigate their impact on
-underwater object detection, and explore their potential to improve detection
-performance. To this end, we selected representative underwater image
-enhancement models covering major enhancement categories and applied them
-separately to two recent datasets: 1\) the Real\-World Underwater Object
-Detection Dataset \(RUOD\), and 2\) the Challenging Underwater Plant Detection
-Dataset \(CUPDD\). Following this, we conducted qualitative and quantitative
-analyses on the enhanced images and developed a quality index \(Q\-index\) to
-compare the quality distribution of the original and enhanced images.
-Subsequently, we compared the performance of several YOLO\-NAS detection models
-that are separately trained and tested on the original and enhanced image sets.
-Then, we performed a correlation study to examine the relationship between
-enhancement metrics and detection performance. We also analyzed the inference
-results from the trained detectors presenting cases where enhancement increased
-the detection performance as well as cases where enhancement revealed missed
-objects by human annotators. This study suggests that although enhancement
-generally deteriorates the detection performance, it can still be harnessed in
-some cases for increased detection performance and more accurate human
-annotation.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2411.14626v2)
-
----
-
-
-## Towards Context\-Rich Automated Biodiversity Assessments: Deriving AI\-Powered Insights from Camera Trap Data
-
-**发布日期**：2024-11-21
-
-**作者**：Paul Fergus
-
-**摘要**：Camera traps offer enormous new opportunities in ecological studies, but
-current automated image analysis methods often lack the contextual richness
-needed to support impactful conservation outcomes. Here we present an
-integrated approach that combines deep learning\-based vision and language
-models to improve ecological reporting using data from camera traps. We
-introduce a two\-stage system: YOLOv10\-X to localise and classify species
-\(mammals and birds\) within images, and a Phi\-3.5\-vision\-instruct model to read
-YOLOv10\-X binding box labels to identify species, overcoming its limitation
-with hard to classify objects in images. Additionally, Phi\-3.5 detects broader
-variables, such as vegetation type, and time of day, providing rich ecological
-and environmental context to YOLO's species detection output. When combined,
-this output is processed by the model's natural language system to answer
-complex queries, and retrieval\-augmented generation \(RAG\) is employed to enrich
-responses with external information, like species weight and IUCN status
-\(information that cannot be obtained through direct visual analysis\). This
-information is used to automatically generate structured reports, providing
-biodiversity stakeholders with deeper insights into, for example, species
-abundance, distribution, animal behaviour, and habitat selection. Our approach
-delivers contextually rich narratives that aid in wildlife management
-decisions. By providing contextually rich insights, our approach not only
-reduces manual effort but also supports timely decision\-making in conservation,
-potentially shifting efforts from reactive to proactive management.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2411.14219v1)
 
 ---
 
