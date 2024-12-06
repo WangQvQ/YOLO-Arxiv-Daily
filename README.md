@@ -1,6 +1,152 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## YOLO\-CCA: A Context\-Based Approach for Traffic Sign Detection
+
+**发布日期**：2024-12-05
+
+**作者**：Linfeng Jiang
+
+**摘要**：Traffic sign detection is crucial for improving road safety and advancing
+autonomous driving technologies. Due to the complexity of driving environments,
+traffic sign detection frequently encounters a range of challenges, including
+low resolution, limited feature information, and small object sizes. These
+challenges significantly hinder the effective extraction of features from
+traffic signs, resulting in false positives and false negatives in object
+detection. To address these challenges, it is essential to explore more
+efficient and accurate approaches for traffic sign detection. This paper
+proposes a context\-based algorithm for traffic sign detection, which utilizes
+YOLOv7 as the baseline model. Firstly, we propose an adaptive local context
+feature enhancement \(LCFE\) module using multi\-scale dilation convolution to
+capture potential relationships between the object and surrounding areas. This
+module supplements the network with additional local context information.
+Secondly, we propose a global context feature collection \(GCFC\) module to
+extract key location features from the entire image scene as global context
+information. Finally, we build a Transformer\-based context collection
+augmentation \(CCA\) module to process the collected local context and global
+context, which achieves superior multi\-level feature fusion results for YOLOv7
+without bringing in additional complexity. Extensive experimental studies
+performed on the Tsinghua\-Tencent 100K dataset show that the mAP of our method
+is 92.1\\%. Compared with YOLOv7, our approach improves 3.9\\% in mAP, while the
+amount of parameters is reduced by 2.7M. On the CCTSDB2021 dataset the mAP is
+improved by 0.9\\%. These results show that our approach achieves higher
+detection accuracy with fewer parameters. The source code is available at
+\\url\{https://github.com/zippiest/yolo\-cca\}.
+
+
+**代码链接**：https://github.com/zippiest/yolo-cca}.
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2412.04289v1)
+
+---
+
+
+## Machine learning enhanced multi\-particle tracking in solid fuel combustion
+
+**发布日期**：2024-12-05
+
+**作者**：Haowen Chen
+
+**摘要**：Particle velocimetry is essential in solid fuel combustion studies, however,
+the accurate detection and tracking of particles in high Particle Number
+Density \(PND\) combustion scenario remain challenging. The current study
+advances the machine\-learning approaches for precise velocity measurements of
+solid particles. For this, laser imaging experiments were performed for
+high\-volatile bituminous coal particles burning in a laminar flow reactor.
+Particle positions were imaged using time\-resolved Mie scattering. Various
+detection methods, including conventional blob detection and Machine Learning
+\(ML\) based You Only Look Once \(YOLO\) and Realtime Detection Transformer
+\(RT\-DETR\) were employed and bench marked.~Particle tracking was performed using
+the Simple Online Realtime Tracking \(SORT\) algorithm. The results demonstrated
+the capability of machine learning models trained on low\-PND data for
+prediction of high\-PND data. Slicing Aided Hyper Inference \(SAHI\) algorithm is
+important for the better performance of the used models. By evaluating the
+velocity statistics, it is found that the mean particle velocity decreases with
+increasing PND, primarily due to stronger particle interactions. The particle
+dynamics are closely related to the position of combustion zone observed in the
+previous study. Thus, PND is considered as the dominant factor for the particle
+group combustion behavior of high\-volatile solid fuels.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2412.04091v1)
+
+---
+
+
+## HyperDefect\-YOLO: Enhance YOLO with HyperGraph Computation for Industrial Defect Detection
+
+**发布日期**：2024-12-05
+
+**作者**：Zuo Zuo
+
+**摘要**：In the manufacturing industry, defect detection is an essential but
+challenging task aiming to detect defects generated in the process of
+production. Though traditional YOLO models presents a good performance in
+defect detection, they still have limitations in capturing high\-order feature
+interrelationships, which hurdles defect detection in the complex scenarios and
+across the scales. To this end, we introduce hypergraph computation into YOLO
+framework, dubbed HyperDefect\-YOLO \(HD\-YOLO\), to improve representative ability
+and semantic exploitation. HD\-YOLO consists of Defect Aware Module \(DAM\) and
+Mixed Graph Network \(MGNet\) in the backbone, which specialize for perception
+and extraction of defect features. To effectively aggregate multi\-scale
+features, we propose HyperGraph Aggregation Network \(HGANet\) which combines
+hypergraph and attention mechanism to aggregate multi\-scale features.
+Cross\-Scale Fusion \(CSF\) is proposed to adaptively fuse and handle features
+instead of simple concatenation and convolution. Finally, we propose Semantic
+Aware Module \(SAM\) in the neck to enhance semantic exploitation for accurately
+localizing defects with different sizes in the disturbed background. HD\-YOLO
+undergoes rigorous evaluation on public HRIPCB and NEU\-DET datasets with
+significant improvements compared to state\-of\-the\-art methods. We also evaluate
+HD\-YOLO on self\-built MINILED dataset collected in real industrial scenarios to
+demonstrate the effectiveness of the proposed method. The source codes are at
+https://github.com/Jay\-zzcoder/HD\-YOLO.
+
+
+**代码链接**：https://github.com/Jay-zzcoder/HD-YOLO.
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2412.03969v1)
+
+---
+
+
+## Traffic Co\-Simulation Framework Empowered by Infrastructure Camera Sensing and Reinforcement Learning
+
+**发布日期**：2024-12-05
+
+**作者**：Talha Azfar
+
+**摘要**：Traffic simulations are commonly used to optimize traffic flow, with
+reinforcement learning \(RL\) showing promising potential for automated traffic
+signal control. Multi\-agent reinforcement learning \(MARL\) is particularly
+effective for learning control strategies for traffic lights in a network using
+iterative simulations. However, existing methods often assume perfect vehicle
+detection, which overlooks real\-world limitations related to infrastructure
+availability and sensor reliability. This study proposes a co\-simulation
+framework integrating CARLA and SUMO, which combines high\-fidelity 3D modeling
+with large\-scale traffic flow simulation. Cameras mounted on traffic light
+poles within the CARLA environment use a YOLO\-based computer vision system to
+detect and count vehicles, providing real\-time traffic data as input for
+adaptive signal control in SUMO. MARL agents, trained with four different
+reward structures, leverage this visual feedback to optimize signal timings and
+improve network\-wide traffic flow. Experiments in the test\-bed demonstrate the
+effectiveness of the proposed MARL approach in enhancing traffic conditions
+using real\-time camera\-based detection. The framework also evaluates the
+robustness of MARL under faulty or sparse sensing and compares the performance
+of YOLOv5 and YOLOv8 for vehicle detection. Results show that while better
+accuracy improves performance, MARL agents can still achieve significant
+improvements with imperfect detection, demonstrating adaptability for
+real\-world scenarios.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2412.03925v1)
+
+---
+
+
 ## Smart Parking with Pixel\-Wise ROI Selection for Vehicle Detection Using YOLOv8, YOLOv9, YOLOv10, and YOLOv11
 
 **发布日期**：2024-12-02
@@ -206,150 +352,6 @@ regime.
 **代码链接**：摘要中未找到代码链接。
 
 **论文链接**：[阅读更多](http://arxiv.org/abs/2411.18926v1)
-
----
-
-
-## Enhancing weed detection performance by means of GenAI\-based image augmentation
-
-**发布日期**：2024-11-27
-
-**作者**：Sourav Modak
-
-**摘要**：Precise weed management is essential for sustaining crop productivity and
-ecological balance. Traditional herbicide applications face economic and
-environmental challenges, emphasizing the need for intelligent weed control
-systems powered by deep learning. These systems require vast amounts of
-high\-quality training data. The reality of scarcity of well\-annotated training
-data, however, is often addressed through generating more data using data
-augmentation. Nevertheless, conventional augmentation techniques such as random
-flipping, color changes, and blurring lack sufficient fidelity and diversity.
-This paper investigates a generative AI\-based augmentation technique that uses
-the Stable Diffusion model to produce diverse synthetic images that improve the
-quantity and quality of training datasets for weed detection models. Moreover,
-this paper explores the impact of these synthetic images on the performance of
-real\-time detection systems, thus focusing on compact CNN\-based models such as
-YOLO nano for edge devices. The experimental results show substantial
-improvements in mean Average Precision \(mAP50 and mAP50\-95\) scores for YOLO
-models trained with generative AI\-augmented datasets, demonstrating the
-promising potential of synthetic data to enhance model robustness and accuracy.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2411.18513v2)
-
----
-
-
-## AI\-Driven Smartphone Solution for Digitizing Rapid Diagnostic Test Kits and Enhancing Accessibility for the Visually Impaired
-
-**发布日期**：2024-11-27
-
-**作者**：R. B. Dastagir
-
-**摘要**：Rapid diagnostic tests are crucial for timely disease detection and
-management, yet accurate interpretation of test results remains challenging. In
-this study, we propose a novel approach to enhance the accuracy and reliability
-of rapid diagnostic test result interpretation by integrating artificial
-intelligence \(AI\) algorithms, including convolutional neural networks \(CNN\),
-within a smartphone\-based application. The app enables users to take pictures
-of their test kits, which YOLOv8 then processes to precisely crop and extract
-the membrane region, even if the test kit is not centered in the frame or is
-positioned at the very edge of the image. This capability offers greater
-accessibility, allowing even visually impaired individuals to capture test
-images without needing perfect alignment, thus promoting user independence and
-inclusivity. The extracted image is analyzed by an additional CNN classifier
-that determines if the results are positive, negative, or invalid, providing
-users with the results and a confidence level. Through validation experiments
-with commonly used rapid test kits across various diagnostic applications, our
-results demonstrate that the synergistic integration of AI significantly
-improves sensitivity and specificity in test result interpretation. This
-improvement can be attributed to the extraction of the membrane zones from the
-test kit images using the state\-of\-the\-art YOLO algorithm. Additionally, we
-performed SHapley Additive exPlanations \(SHAP\) analysis to investigate the
-factors influencing the model's decisions, identifying reasons behind both
-correct and incorrect classifications. By facilitating the differentiation of
-genuine test lines from background noise and providing valuable insights into
-test line intensity and uniformity, our approach offers a robust solution to
-challenges in rapid test interpretation.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2411.18007v1)
-
----
-
-
-## DGNN\-YOLO: Dynamic Graph Neural Networks with YOLO11 for Small Object Detection and Tracking in Traffic Surveillance
-
-**发布日期**：2024-11-26
-
-**作者**：Shahriar Soudeep
-
-**摘要**：Accurate detection and tracking of small objects such as pedestrians,
-cyclists, and motorbikes are critical for traffic surveillance systems, which
-are crucial in improving road safety and decision\-making in intelligent
-transportation systems. However, traditional methods struggle with challenges
-such as occlusion, low resolution, and dynamic traffic conditions,
-necessitating innovative approaches to address these limitations. This paper
-introduces DGNN\-YOLO, a novel framework integrating dynamic graph neural
-networks \(DGNN\) with YOLO11 to enhance small object detection and tracking in
-traffic surveillance systems. The framework leverages YOLO11's advanced spatial
-feature extraction capabilities for precise object detection and incorporates
-DGNN to model spatial\-temporal relationships for robust real\-time tracking
-dynamically. By constructing and updating graph structures, DGNN\-YOLO
-effectively represents objects as nodes and their interactions as edges,
-ensuring adaptive and accurate tracking in complex and dynamic environments.
-Extensive experiments demonstrate that DGNN\-YOLO consistently outperforms
-state\-of\-the\-art methods in detecting and tracking small objects under diverse
-traffic conditions, achieving the highest precision \(0.8382\), recall \(0.6875\),
-and mAP@0.5:0.95 \(0.6476\), showcasing its robustness and scalability,
-particularly in challenging scenarios involving small and occluded objects.
-This work provides a scalable, real\-time traffic surveillance and analysis
-solution, significantly contributing to intelligent transportation systems.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2411.17251v2)
-
----
-
-
-## Learn from Foundation Model: Fruit Detection Model without Manual Annotation
-
-**发布日期**：2024-11-25
-
-**作者**：Yanan Wang
-
-**摘要**：Recent breakthroughs in large foundation models have enabled the possibility
-of transferring knowledge pre\-trained on vast datasets to domains with limited
-data availability. Agriculture is one of the domains that lacks sufficient
-data. This study proposes a framework to train effective, domain\-specific,
-small models from foundation models without manual annotation. Our approach
-begins with SDM \(Segmentation\-Description\-Matching\), a stage that leverages two
-foundation models: SAM2 \(Segment Anything in Images and Videos\) for
-segmentation and OpenCLIP \(Open Contrastive Language\-Image Pretraining\) for
-zero\-shot open\-vocabulary classification. In the second stage, a novel
-knowledge distillation mechanism is utilized to distill compact,
-edge\-deployable models from SDM, enhancing both inference speed and perception
-accuracy. The complete method, termed SDM\-D
-\(Segmentation\-Description\-Matching\-Distilling\), demonstrates strong performance
-across various fruit detection tasks object detection, semantic segmentation,
-and instance segmentation\) without manual annotation. It nearly matches the
-performance of models trained with abundant labels. Notably, SDM\-D outperforms
-open\-set detection methods such as Grounding SAM and YOLO\-World on all tested
-fruit detection datasets. Additionally, we introduce MegaFruits, a
-comprehensive fruit segmentation dataset encompassing over 25,000 images, and
-all code and datasets are made publicly available at
-https://github.com/AgRoboticsResearch/SDM\-D.git.
-
-
-**代码链接**：https://github.com/AgRoboticsResearch/SDM-D.git.
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2411.16196v1)
 
 ---
 
