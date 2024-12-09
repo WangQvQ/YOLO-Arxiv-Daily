@@ -1,6 +1,45 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## DEYOLO: Dual\-Feature\-Enhancement YOLO for Cross\-Modality Object Detection
+
+**发布日期**：2024-12-06
+
+**作者**：Yishuo Chen
+
+**摘要**：Object detection in poor\-illumination environments is a challenging task as
+objects are usually not clearly visible in RGB images. As infrared images
+provide additional clear edge information that complements RGB images, fusing
+RGB and infrared images has potential to enhance the detection ability in
+poor\-illumination environments. However, existing works involving both visible
+and infrared images only focus on image fusion, instead of object detection.
+Moreover, they directly fuse the two kinds of image modalities, which ignores
+the mutual interference between them. To fuse the two modalities to maximize
+the advantages of cross\-modality, we design a dual\-enhancement\-based
+cross\-modality object detection network DEYOLO, in which semantic\-spatial cross
+modality and novel bi\-directional decoupled focus modules are designed to
+achieve the detection\-centered mutual enhancement of RGB\-infrared \(RGB\-IR\).
+Specifically, a dual semantic enhancing channel weight assignment module \(DECA\)
+and a dual spatial enhancing pixel weight assignment module \(DEPA\) are firstly
+proposed to aggregate cross\-modality information in the feature space to
+improve the feature representation ability, such that feature fusion can aim at
+the object detection task. Meanwhile, a dual\-enhancement mechanism, including
+enhancements for two\-modality fusion and single modality, is designed in both
+DECAand DEPAto reduce interference between the two kinds of image modalities.
+Then, a novel bi\-directional decoupled focus is developed to enlarge the
+receptive field of the backbone network in different directions, which improves
+the representation quality of DEYOLO. Extensive experiments on M3FD and LLVIP
+show that our approach outperforms SOTA object detection algorithms by a clear
+margin. Our code is available at https://github.com/chips96/DEYOLO.
+
+
+**代码链接**：https://github.com/chips96/DEYOLO.
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2412.04931v1)
+
+---
+
+
 ## YOLO\-CCA: A Context\-Based Approach for Traffic Sign Detection
 
 **发布日期**：2024-12-05
@@ -318,40 +357,6 @@ videos, providing greater flexibility in detection.
 **代码链接**：摘要中未找到代码链接。
 
 **论文链接**：[阅读更多](http://arxiv.org/abs/2411.19731v1)
-
----
-
-
-## Data Augmentation with Diffusion Models for Colon Polyp Localization on the Low Data Regime: How much real data is enough?
-
-**发布日期**：2024-11-28
-
-**作者**：Adrian Tormos
-
-**摘要**：The scarcity of data in medical domains hinders the performance of Deep
-Learning models. Data augmentation techniques can alleviate that problem, but
-they usually rely on functional transformations of the data that do not
-guarantee to preserve the original tasks. To approximate the distribution of
-the data using generative models is a way of reducing that problem and also to
-obtain new samples that resemble the original data. Denoising Diffusion models
-is a promising Deep Learning technique that can learn good approximations of
-different kinds of data like images, time series or tabular data.
-  Automatic colonoscopy analysis and specifically Polyp localization in
-colonoscopy videos is a task that can assist clinical diagnosis and treatment.
-The annotation of video frames for training a deep learning model is a time
-consuming task and usually only small datasets can be obtained. The fine tuning
-of application models using a large dataset of generated data could be an
-alternative to improve their performance. We conduct a set of experiments
-training different diffusion models that can generate jointly colonoscopy
-images with localization annotations using a combination of existing open
-datasets. The generated data is used on various transfer learning experiments
-in the task of polyp localization with a model based on YOLO v9 on the low data
-regime.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2411.18926v1)
 
 ---
 
