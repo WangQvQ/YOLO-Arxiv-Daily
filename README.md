@@ -150,6 +150,45 @@ https://github.com/Jay\-zzcoder/HD\-YOLO.
 ---
 
 
+## Deep Learning and Hybrid Approaches for Dynamic Scene Analysis, Object Detection and Motion Tracking
+
+**发布日期**：2024-12-05
+
+**作者**：Shahran Rahman Alve
+
+**摘要**：This project aims to develop a robust video surveillance system, which can
+segment videos into smaller clips based on the detection of activities. It uses
+CCTV footage, for example, to record only major events\-like the appearance of a
+person or a thief\-so that storage is optimized and digital searches are easier.
+It utilizes the latest techniques in object detection and tracking, including
+Convolutional Neural Networks \(CNNs\) like YOLO, SSD, and Faster R\-CNN, as well
+as Recurrent Neural Networks \(RNNs\) and Long Short\-Term Memory networks
+\(LSTMs\), to achieve high accuracy in detection and capture temporal
+dependencies. The approach incorporates adaptive background modeling through
+Gaussian Mixture Models \(GMM\) and optical flow methods like Lucas\-Kanade to
+detect motions. Multi\-scale and contextual analysis are used to improve
+detection across different object sizes and environments. A hybrid motion
+segmentation strategy combines statistical and deep learning models to manage
+complex movements, while optimizations for real\-time processing ensure
+efficient computation. Tracking methods, such as Kalman Filters and Siamese
+networks, are employed to maintain smooth tracking even in cases of occlusion.
+Detection is improved on various\-sized objects for multiple scenarios by
+multi\-scale and contextual analysis. Results demonstrate high precision and
+recall in detecting and tracking objects, with significant improvements in
+processing times and accuracy due to real\-time optimizations and
+illumination\-invariant features. The impact of this research lies in its
+potential to transform video surveillance, reducing storage requirements and
+enhancing security through reliable and efficient object detection and
+tracking.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2412.05331v1)
+
+---
+
+
 ## Traffic Co\-Simulation Framework Empowered by Infrastructure Camera Sensing and Reinforcement Learning
 
 **发布日期**：2024-12-05
@@ -215,7 +254,7 @@ while preserving data privacy
 
 **代码链接**：摘要中未找到代码链接。
 
-**论文链接**：[阅读更多](http://arxiv.org/abs/2412.01983v1)
+**论文链接**：[阅读更多](http://arxiv.org/abs/2412.01983v2)
 
 ---
 
@@ -320,43 +359,6 @@ https://github.com/heitorrapela/ModPrompt
 **代码链接**：https://github.com/heitorrapela/ModPrompt
 
 **论文链接**：[阅读更多](http://arxiv.org/abs/2412.00622v1)
-
----
-
-
-## Real\-Time Anomaly Detection in Video Streams
-
-**发布日期**：2024-11-29
-
-**作者**：Fabien Poirier
-
-**摘要**：This thesis is part of a CIFRE agreement between the company Othello and the
-LIASD laboratory. The objective is to develop an artificial intelligence system
-that can detect real\-time dangers in a video stream. To achieve this, a novel
-approach combining temporal and spatial analysis has been proposed. Several
-avenues have been explored to improve anomaly detection by integrating object
-detection, human pose detection, and motion analysis. For result
-interpretability, techniques commonly used for image analysis, such as
-activation and saliency maps, have been extended to videos, and an original
-method has been proposed. The proposed architecture performs binary or
-multiclass classification depending on whether an alert or the cause needs to
-be identified. Numerous neural networkmodels have been tested, and three of
-them have been selected. You Only Looks Once \(YOLO\) has been used for spatial
-analysis, a Convolutional Recurrent Neuronal Network \(CRNN\) composed of VGG19
-and a Gated Recurrent Unit \(GRU\) for temporal analysis, and a multi\-layer
-perceptron for classification. These models handle different types of data and
-can be combined in parallel or in series. Although the parallel mode is faster,
-the serial mode is generally more reliable. For training these models,
-supervised learning was chosen, and two proprietary datasets were created. The
-first dataset focuses on objects that may play a potential role in anomalies,
-while the second consists of videos containing anomalies or non\-anomalies. This
-approach allows for the processing of both continuous video streams and finite
-videos, providing greater flexibility in detection.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2411.19731v1)
 
 ---
 
