@@ -1,6 +1,37 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## 3A\-YOLO: New Real\-Time Object Detectors with Triple Discriminative Awareness and Coordinated Representations
+
+**发布日期**：2024-12-10
+
+**作者**：Xuecheng Wu
+
+**摘要**：Recent research on real\-time object detectors \(e.g., YOLO series\) has
+demonstrated the effectiveness of attention mechanisms for elevating model
+performance. Nevertheless, existing methods neglect to unifiedly deploy
+hierarchical attention mechanisms to construct a more discriminative YOLO head
+which is enriched with more useful intermediate features. To tackle this gap,
+this work aims to leverage multiple attention mechanisms to hierarchically
+enhance the triple discriminative awareness of the YOLO detection head and
+complementarily learn the coordinated intermediate representations, resulting
+in a new series detectors denoted 3A\-YOLO. Specifically, we first propose a new
+head denoted TDA\-YOLO Module, which unifiedly enhance the representations
+learning of scale\-awareness, spatial\-awareness, and task\-awareness. Secondly,
+we steer the intermediate features to coordinately learn the inter\-channel
+relationships and precise positional information. Finally, we perform neck
+network improvements followed by introducing various tricks to boost the
+adaptability of 3A\-YOLO. Extensive experiments across COCO and VOC benchmarks
+indicate the effectiveness of our detectors.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2412.07168v1)
+
+---
+
+
 ## DEYOLO: Dual\-Feature\-Enhancement YOLO for Cross\-Modality Object Detection
 
 **发布日期**：2024-12-06
@@ -324,41 +355,6 @@ programming code publicly.
 **代码链接**：摘要中未找到代码链接。
 
 **论文链接**：[阅读更多](http://arxiv.org/abs/2412.00863v1)
-
----
-
-
-## Visual Modality Prompt for Adapting Vision\-Language Object Detectors
-
-**发布日期**：2024-12-01
-
-**作者**：Heitor R. Medeiros
-
-**摘要**：The zero\-shot performance of object detectors degrades when tested on
-different modalities, such as infrared and depth. While recent work has
-explored image translation techniques to adapt detectors to new modalities,
-these methods are limited to a single modality and apply only to traditional
-detectors. Recently, vision\-language detectors, such as YOLO\-World and
-Grounding DINO, have shown promising zero\-shot capabilities, however, they have
-not yet been adapted for other visual modalities. Traditional fine\-tuning
-approaches tend to compromise the zero\-shot capabilities of the detectors. The
-visual prompt strategies commonly used for classification with vision\-language
-models apply the same linear prompt translation to each image making them less
-effective. To address these limitations, we propose ModPrompt, a visual prompt
-strategy to adapt vision\-language detectors to new modalities without degrading
-zero\-shot performance. In particular, an encoder\-decoder visual prompt strategy
-is proposed, further enhanced by the integration of inference\-friendly task
-residuals, facilitating more robust adaptation. Empirically, we benchmark our
-method for modality adaptation on two vision\-language detectors, YOLO\-World and
-Grounding DINO, and on challenging infrared \(LLVIP, FLIR\) and depth \(NYUv2\)
-data, achieving performance comparable to full fine\-tuning while preserving the
-model's zero\-shot capability. Our code is available at:
-https://github.com/heitorrapela/ModPrompt
-
-
-**代码链接**：https://github.com/heitorrapela/ModPrompt
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2412.00622v1)
 
 ---
 
