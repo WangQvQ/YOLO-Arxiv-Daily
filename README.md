@@ -1,6 +1,87 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## SPACE\-SUIT: An Artificial Intelligence based chromospheric feature extractor and classifier for SUIT
+
+**发布日期**：2024-12-11
+
+**作者**：Pranava Seth
+
+**摘要**：The Solar Ultraviolet Imaging Telescope\(SUIT\) onboard Aditya\-L1 is an imager
+that observes the solar photosphere and chromosphere through observations in
+the wavelength range of 200\-400 nm. A comprehensive understanding of the plasma
+and thermodynamic properties of chromospheric and photospheric morphological
+structures requires a large sample statistical study, necessitating the
+development of automatic feature detection methods. To this end, we develop the
+feature detection algorithm SPACE\-SUIT: Solar Phenomena Analysis and
+Classification using Enhanced vision techniques for SUIT, to detect and
+classify the solar chromospheric features to be observed from SUIT's Mg II k
+filter. Specifically, we target plage regions, sunspots, filaments, and
+off\-limb structures. SPACE uses You Only Look Once\(YOLO\), a neural
+network\-based model to identify regions of interest. We train and validate
+SPACE using mock\-SUIT images developed from Interface Region Imaging
+Spectrometer\(IRIS\) full\-disk mosaic images in Mg II k line, while we also
+perform detection on Level\-1 SUIT data. SPACE achieves an approximate precision
+of 0.788, recall 0.863 and MAP of 0.874 on the validation mock SUIT FITS
+dataset. Given the manual labeling of our dataset, we perform "self\-validation"
+by applying statistical measures and Tamura features on the ground truth and
+predicted bounding boxes. We find the distributions of entropy, contrast,
+dissimilarity, and energy to show differences in the features. These
+differences are qualitatively captured by the detected regions predicted by
+SPACE and validated with the observed SUIT images, even in the absence of
+labeled ground truth. This work not only develops a chromospheric feature
+extractor but also demonstrates the effectiveness of statistical metrics and
+Tamura features for distinguishing chromospheric features, offering independent
+validation for future detection schemes.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2412.08589v1)
+
+---
+
+
+## DynamicPAE: Generating Scene\-Aware Physical Adversarial Examples in Real\-Time
+
+**发布日期**：2024-12-11
+
+**作者**：Jin Hu
+
+**摘要**：Physical adversarial examples \(PAEs\) are regarded as "whistle\-blowers" of
+real\-world risks in deep\-learning applications. However, current PAE generation
+studies show limited adaptive attacking ability to diverse and varying scenes.
+The key challenges in generating dynamic PAEs are exploring their patterns
+under noisy gradient feedback and adapting the attack to agnostic scenario
+natures. To address the problems, we present DynamicPAE, the first generative
+framework that enables scene\-aware real\-time physical attacks beyond static
+attacks. Specifically, to train the dynamic PAE generator under noisy gradient
+feedback, we introduce the residual\-driven sample trajectory guidance
+technique, which redefines the training task to break the limited feedback
+information restriction that leads to the degeneracy problem. Intuitively, it
+allows the gradient feedback to be passed to the generator through a low\-noise
+auxiliary task, thereby guiding the optimization away from degenerate solutions
+and facilitating a more comprehensive and stable exploration of feasible PAEs.
+To adapt the generator to agnostic scenario natures, we introduce the
+context\-aligned scene expectation simulation process, consisting of the
+conditional\-uncertainty\-aligned data module and the skewness\-aligned objective
+re\-weighting module. The former enhances robustness in the context of
+incomplete observation by employing a conditional probabilistic model for
+domain randomization, while the latter facilitates consistent stealth control
+across different attack targets by automatically reweighting losses based on
+the skewness indicator. Extensive digital and physical evaluations demonstrate
+the superior attack performance of DynamicPAE, attaining a 1.95 $\\times$ boost
+\(65.55% average AP drop under attack\) on representative object detectors \(e.g.,
+Yolo\-v8\) over state\-of\-the\-art static PAE generating methods.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2412.08053v1)
+
+---
+
+
 ## 3A\-YOLO: New Real\-Time Object Detectors with Triple Discriminative Awareness and Coordinated Representations
 
 **发布日期**：2024-12-10
@@ -286,75 +367,6 @@ while preserving data privacy
 **代码链接**：摘要中未找到代码链接。
 
 **论文链接**：[阅读更多](http://arxiv.org/abs/2412.01983v2)
-
----
-
-
-## Research on Cervical Cancer p16/Ki\-67 Immunohistochemical Dual\-Staining Image Recognition Algorithm Based on YOLO
-
-**发布日期**：2024-12-02
-
-**作者**：Xiao\-Jun Wu
-
-**摘要**：The p16/Ki\-67 dual staining method is a new approach for cervical cancer
-screening with high sensitivity and specificity. However, there are issues of
-mis\-detection and inaccurate recognition when the YOLOv5s algorithm is directly
-applied to dual\-stained cell images. This paper Proposes a novel cervical
-cancer dual\-stained image recognition \(DSIR\-YOLO\) model based on an YOLOv5. By
-fusing the Swin\-Transformer module, GAM attention mechanism, multi\-scale
-feature fusion, and EIoU loss function, the detection performance is
-significantly improved, with mAP@0.5 and mAP@0.5:0.95 reaching 92.6% and 70.5%,
-respectively. Compared with YOLOv5s in five\-fold cross\-validation, the
-accuracy, recall, mAP@0.5, and mAP@0.5:0.95 of the improved algorithm are
-increased by 2.3%, 4.1%, 4.3%, and 8.0%, respectively, with smaller variances
-and higher stability. Compared with other detection algorithms, DSIR\-YOLO in
-this paper sacrifices some performance requirements to improve the network
-recognition effect. In addition, the influence of dataset quality on the
-detection results is studied. By controlling the sealing property of pixels,
-scale difference, unlabelled cells, and diagonal annotation, the model
-detection accuracy, recall, mAP@0.5, and mAP@0.5:0.95 are improved by 13.3%,
-15.3%, 18.3%, and 30.5%, respectively.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2412.01372v1)
-
----
-
-
-## Thermal Vision: Pioneering Non\-Invasive Temperature Tracking in Congested Spaces
-
-**发布日期**：2024-12-01
-
-**作者**：Arijit Samal
-
-**摘要**：Non\-invasive temperature monitoring of individuals plays a crucial role in
-identifying and isolating symptomatic individuals. Temperature monitoring
-becomes particularly vital in settings characterized by close human proximity,
-often referred to as dense settings. However, existing research on non\-invasive
-temperature estimation using thermal cameras has predominantly focused on
-sparse settings. Unfortunately, the risk of disease transmission is
-significantly higher in dense settings like movie theaters or classrooms.
-Consequently, there is an urgent need to develop robust temperature estimation
-methods tailored explicitly for dense settings.
-  Our study proposes a non\-invasive temperature estimation system that combines
-a thermal camera with an edge device. Our system employs YOLO models for face
-detection and utilizes a regression framework for temperature estimation. We
-evaluated the system on a diverse dataset collected in dense and sparse
-settings. Our proposed face detection model achieves an impressive mAP score of
-over 84 in both in\-dataset and cross\-dataset evaluations. Furthermore, the
-regression framework demonstrates remarkable performance with a mean square
-error of 0.18$^\{\\circ\}$C and an impressive $R^2$ score of 0.96. Our
-experiments' results highlight the developed system's effectiveness,
-positioning it as a promising solution for continuous temperature monitoring in
-real\-world applications. With this paper, we release our dataset and
-programming code publicly.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2412.00863v1)
 
 ---
 
