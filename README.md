@@ -1,6 +1,66 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Training a Distributed Acoustic Sensing Traffic Monitoring Network With Video Inputs
+
+**发布日期**：2024-12-17
+
+**作者**：Khen Cohen
+
+**摘要**：Distributed Acoustic Sensing \(DAS\) has emerged as a promising tool for
+real\-time traffic monitoring in densely populated areas. In this paper, we
+present a novel concept that integrates DAS data with co\-located visual
+information. We use YOLO\-derived vehicle location and classification from
+camera inputs as labeled data to train a detection and classification neural
+network utilizing DAS data only. Our model achieves a performance exceeding 94%
+for detection and classification, and about 1.2% false alarm rate. We
+illustrate the model's application in monitoring traffic over a week, yielding
+statistical insights that could benefit future smart city developments. Our
+approach highlights the potential of combining fiber\-optic sensors with visual
+information, focusing on practicality and scalability, protecting privacy, and
+minimizing infrastructure costs. To encourage future research, we share our
+dataset.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2412.12743v1)
+
+---
+
+
+## Domain Generalization in Autonomous Driving: Evaluating YOLOv8s, RT\-DETR, and YOLO\-NAS with the ROAD\-Almaty Dataset
+
+**发布日期**：2024-12-16
+
+**作者**：Madiyar Alimov
+
+**摘要**：This study investigates the domain generalization capabilities of three
+state\-of\-the\-art object detection models \- YOLOv8s, RT\-DETR, and YOLO\-NAS \-
+within the unique driving environment of Kazakhstan. Utilizing the newly
+constructed ROAD\-Almaty dataset, which encompasses diverse weather, lighting,
+and traffic conditions, we evaluated the models' performance without any
+retraining. Quantitative analysis revealed that RT\-DETR achieved an average
+F1\-score of 0.672 at IoU=0.5, outperforming YOLOv8s \(0.458\) and YOLO\-NAS
+\(0.526\) by approximately 46% and 27%, respectively. Additionally, all models
+exhibited significant performance declines at higher IoU thresholds \(e.g., a
+drop of approximately 20% when increasing IoU from 0.5 to 0.75\) and under
+challenging environmental conditions, such as heavy snowfall and low\-light
+scenarios. These findings underscore the necessity for geographically diverse
+training datasets and the implementation of specialized domain adaptation
+techniques to enhance the reliability of autonomous vehicle detection systems
+globally. This research contributes to the understanding of domain
+generalization challenges in autonomous driving, particularly in
+underrepresented regions.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2412.12349v1)
+
+---
+
+
 ## Coconut Palm Tree Counting on Drone Images with Deep Object Detection and Synthetic Training Data
 
 **发布日期**：2024-12-16
@@ -279,80 +339,6 @@ margin. Our code is available at https://github.com/chips96/DEYOLO.
 **代码链接**：https://github.com/chips96/DEYOLO.
 
 **论文链接**：[阅读更多](http://arxiv.org/abs/2412.04931v1)
-
----
-
-
-## YOLO\-CCA: A Context\-Based Approach for Traffic Sign Detection
-
-**发布日期**：2024-12-05
-
-**作者**：Linfeng Jiang
-
-**摘要**：Traffic sign detection is crucial for improving road safety and advancing
-autonomous driving technologies. Due to the complexity of driving environments,
-traffic sign detection frequently encounters a range of challenges, including
-low resolution, limited feature information, and small object sizes. These
-challenges significantly hinder the effective extraction of features from
-traffic signs, resulting in false positives and false negatives in object
-detection. To address these challenges, it is essential to explore more
-efficient and accurate approaches for traffic sign detection. This paper
-proposes a context\-based algorithm for traffic sign detection, which utilizes
-YOLOv7 as the baseline model. Firstly, we propose an adaptive local context
-feature enhancement \(LCFE\) module using multi\-scale dilation convolution to
-capture potential relationships between the object and surrounding areas. This
-module supplements the network with additional local context information.
-Secondly, we propose a global context feature collection \(GCFC\) module to
-extract key location features from the entire image scene as global context
-information. Finally, we build a Transformer\-based context collection
-augmentation \(CCA\) module to process the collected local context and global
-context, which achieves superior multi\-level feature fusion results for YOLOv7
-without bringing in additional complexity. Extensive experimental studies
-performed on the Tsinghua\-Tencent 100K dataset show that the mAP of our method
-is 92.1\\%. Compared with YOLOv7, our approach improves 3.9\\% in mAP, while the
-amount of parameters is reduced by 2.7M. On the CCTSDB2021 dataset the mAP is
-improved by 0.9\\%. These results show that our approach achieves higher
-detection accuracy with fewer parameters. The source code is available at
-\\url\{https://github.com/zippiest/yolo\-cca\}.
-
-
-**代码链接**：https://github.com/zippiest/yolo-cca}.
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2412.04289v1)
-
----
-
-
-## Machine learning enhanced multi\-particle tracking in solid fuel combustion
-
-**发布日期**：2024-12-05
-
-**作者**：Haowen Chen
-
-**摘要**：Particle velocimetry is essential in solid fuel combustion studies, however,
-the accurate detection and tracking of particles in high Particle Number
-Density \(PND\) combustion scenario remain challenging. The current study
-advances the machine\-learning approaches for precise velocity measurements of
-solid particles. For this, laser imaging experiments were performed for
-high\-volatile bituminous coal particles burning in a laminar flow reactor.
-Particle positions were imaged using time\-resolved Mie scattering. Various
-detection methods, including conventional blob detection and Machine Learning
-\(ML\) based You Only Look Once \(YOLO\) and Realtime Detection Transformer
-\(RT\-DETR\) were employed and bench marked.~Particle tracking was performed using
-the Simple Online Realtime Tracking \(SORT\) algorithm. The results demonstrated
-the capability of machine learning models trained on low\-PND data for
-prediction of high\-PND data. Slicing Aided Hyper Inference \(SAHI\) algorithm is
-important for the better performance of the used models. By evaluating the
-velocity statistics, it is found that the mean particle velocity decreases with
-increasing PND, primarily due to stronger particle interactions. The particle
-dynamics are closely related to the position of combustion zone observed in the
-previous study. Thus, PND is considered as the dominant factor for the particle
-group combustion behavior of high\-volatile solid fuels.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2412.04091v1)
 
 ---
 
