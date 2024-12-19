@@ -1,6 +1,40 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Physics\-Based Adversarial Attack on Near\-Infrared Human Detector for Nighttime Surveillance Camera Systems
+
+**发布日期**：2024-12-18
+
+**作者**：Muyao Niu
+
+**摘要**：Many surveillance cameras switch between daytime and nighttime modes based on
+illuminance levels. During the day, the camera records ordinary RGB images
+through an enabled IR\-cut filter. At night, the filter is disabled to capture
+near\-infrared \(NIR\) light emitted from NIR LEDs typically mounted around the
+lens. While RGB\-based AI algorithm vulnerabilities have been widely reported,
+the vulnerabilities of NIR\-based AI have rarely been investigated. In this
+paper, we identify fundamental vulnerabilities in NIR\-based image understanding
+caused by color and texture loss due to the intrinsic characteristics of
+clothes' reflectance and cameras' spectral sensitivity in the NIR range. We
+further show that the nearly co\-located configuration of illuminants and
+cameras in existing surveillance systems facilitates concealing and fully
+passive attacks in the physical world. Specifically, we demonstrate how
+retro\-reflective and insulation plastic tapes can manipulate the intensity
+distribution of NIR images. We showcase an attack on the YOLO\-based human
+detector using binary patterns designed in the digital space \(via black\-box
+query and searching\) and then physically realized using tapes pasted onto
+clothes. Our attack highlights significant reliability concerns for nighttime
+surveillance systems, which are intended to enhance security. Codes Available:
+https://github.com/MyNiuuu/AdvNIR
+
+
+**代码链接**：https://github.com/MyNiuuu/AdvNIR
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2412.13709v1)
+
+---
+
+
 ## Training a Distributed Acoustic Sensing Traffic Monitoring Network With Video Inputs
 
 **发布日期**：2024-12-17
@@ -300,45 +334,6 @@ indicate the effectiveness of our detectors.
 **代码链接**：摘要中未找到代码链接。
 
 **论文链接**：[阅读更多](http://arxiv.org/abs/2412.07168v1)
-
----
-
-
-## DEYOLO: Dual\-Feature\-Enhancement YOLO for Cross\-Modality Object Detection
-
-**发布日期**：2024-12-06
-
-**作者**：Yishuo Chen
-
-**摘要**：Object detection in poor\-illumination environments is a challenging task as
-objects are usually not clearly visible in RGB images. As infrared images
-provide additional clear edge information that complements RGB images, fusing
-RGB and infrared images has potential to enhance the detection ability in
-poor\-illumination environments. However, existing works involving both visible
-and infrared images only focus on image fusion, instead of object detection.
-Moreover, they directly fuse the two kinds of image modalities, which ignores
-the mutual interference between them. To fuse the two modalities to maximize
-the advantages of cross\-modality, we design a dual\-enhancement\-based
-cross\-modality object detection network DEYOLO, in which semantic\-spatial cross
-modality and novel bi\-directional decoupled focus modules are designed to
-achieve the detection\-centered mutual enhancement of RGB\-infrared \(RGB\-IR\).
-Specifically, a dual semantic enhancing channel weight assignment module \(DECA\)
-and a dual spatial enhancing pixel weight assignment module \(DEPA\) are firstly
-proposed to aggregate cross\-modality information in the feature space to
-improve the feature representation ability, such that feature fusion can aim at
-the object detection task. Meanwhile, a dual\-enhancement mechanism, including
-enhancements for two\-modality fusion and single modality, is designed in both
-DECAand DEPAto reduce interference between the two kinds of image modalities.
-Then, a novel bi\-directional decoupled focus is developed to enlarge the
-receptive field of the backbone network in different directions, which improves
-the representation quality of DEYOLO. Extensive experiments on M3FD and LLVIP
-show that our approach outperforms SOTA object detection algorithms by a clear
-margin. Our code is available at https://github.com/chips96/DEYOLO.
-
-
-**代码链接**：https://github.com/chips96/DEYOLO.
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2412.04931v1)
 
 ---
 
