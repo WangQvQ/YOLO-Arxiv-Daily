@@ -1,6 +1,44 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## A Light\-Weight Framework for Open\-Set Object Detection with Decoupled Feature Alignment in Joint Space
+
+**发布日期**：2024-12-19
+
+**作者**：Yonghao He
+
+**摘要**：Open\-set object detection \(OSOD\) is highly desirable for robotic manipulation
+in unstructured environments. However, existing OSOD methods often fail to meet
+the requirements of robotic applications due to their high computational burden
+and complex deployment. To address this issue, this paper proposes a
+light\-weight framework called Decoupled OSOD \(DOSOD\), which is a practical and
+highly efficient solution to support real\-time OSOD tasks in robotic systems.
+Specifically, DOSOD builds upon the YOLO\-World pipeline by integrating a
+vision\-language model \(VLM\) with a detector. A Multilayer Perceptron \(MLP\)
+adaptor is developed to transform text embeddings extracted by the VLM into a
+joint space, within which the detector learns the region representations of
+class\-agnostic proposals. Cross\-modality features are directly aligned in the
+joint space, avoiding the complex feature interactions and thereby improving
+computational efficiency. DOSOD operates like a traditional closed\-set detector
+during the testing phase, effectively bridging the gap between closed\-set and
+open\-set detection. Compared to the baseline YOLO\-World, the proposed DOSOD
+significantly enhances real\-time performance while maintaining comparable
+accuracy. The slight DOSOD\-S model achieves a Fixed AP of $26.7\\%$, compared to
+$26.2\\%$ for YOLO\-World\-v1\-S and $22.7\\%$ for YOLO\-World\-v2\-S, using similar
+backbones on the LVIS minival dataset. Meanwhile, the FPS of DOSOD\-S is
+$57.1\\%$ higher than YOLO\-World\-v1\-S and $29.6\\%$ higher than YOLO\-World\-v2\-S.
+Meanwhile, we demonstrate that the DOSOD model facilitates the deployment of
+edge devices. The codes and models are publicly available at
+https://github.com/D\-Robotics\-AI\-Lab/DOSOD.
+
+
+**代码链接**：https://github.com/D-Robotics-AI-Lab/DOSOD.
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2412.14680v1)
+
+---
+
+
 ## Physics\-Based Adversarial Attack on Near\-Infrared Human Detector for Nighttime Surveillance Camera Systems
 
 **发布日期**：2024-12-18
@@ -303,37 +341,6 @@ Yolo\-v8\) over state\-of\-the\-art static PAE generating methods.
 **代码链接**：摘要中未找到代码链接。
 
 **论文链接**：[阅读更多](http://arxiv.org/abs/2412.08053v1)
-
----
-
-
-## 3A\-YOLO: New Real\-Time Object Detectors with Triple Discriminative Awareness and Coordinated Representations
-
-**发布日期**：2024-12-10
-
-**作者**：Xuecheng Wu
-
-**摘要**：Recent research on real\-time object detectors \(e.g., YOLO series\) has
-demonstrated the effectiveness of attention mechanisms for elevating model
-performance. Nevertheless, existing methods neglect to unifiedly deploy
-hierarchical attention mechanisms to construct a more discriminative YOLO head
-which is enriched with more useful intermediate features. To tackle this gap,
-this work aims to leverage multiple attention mechanisms to hierarchically
-enhance the triple discriminative awareness of the YOLO detection head and
-complementarily learn the coordinated intermediate representations, resulting
-in a new series detectors denoted 3A\-YOLO. Specifically, we first propose a new
-head denoted TDA\-YOLO Module, which unifiedly enhance the representations
-learning of scale\-awareness, spatial\-awareness, and task\-awareness. Secondly,
-we steer the intermediate features to coordinately learn the inter\-channel
-relationships and precise positional information. Finally, we perform neck
-network improvements followed by introducing various tricks to boost the
-adaptability of 3A\-YOLO. Extensive experiments across COCO and VOC benchmarks
-indicate the effectiveness of our detectors.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2412.07168v1)
 
 ---
 
