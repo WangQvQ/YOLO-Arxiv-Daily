@@ -1,6 +1,66 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Detecting and Classifying Defective Products in Images Using YOLO
+
+**发布日期**：2024-12-22
+
+**作者**：Zhen Qi
+
+**摘要**：With the continuous advancement of industrial automation, product quality
+inspection has become increasingly important in the manufacturing process.
+Traditional inspection methods, which often rely on manual checks or simple
+machine vision techniques, suffer from low efficiency and insufficient
+accuracy. In recent years, deep learning technology, especially the YOLO \(You
+Only Look Once\) algorithm, has emerged as a prominent solution in the field of
+product defect detection due to its efficient real\-time detection capabilities
+and excellent classification performance. This study aims to use the YOLO
+algorithm to detect and classify defects in product images. By constructing and
+training a YOLO model, we conducted experiments on multiple industrial product
+datasets. The results demonstrate that this method can achieve real\-time
+detection while maintaining high detection accuracy, significantly improving
+the efficiency and accuracy of product quality inspection. This paper further
+analyzes the advantages and limitations of the YOLO algorithm in practical
+applications and explores future research directions.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2412.16935v1)
+
+---
+
+
+## Texture\- and Shape\-based Adversarial Attacks for Vehicle Detection in Synthetic Overhead Imagery
+
+**发布日期**：2024-12-20
+
+**作者**：Mikael Yeghiazaryan
+
+**摘要**：Detecting vehicles in aerial images can be very challenging due to complex
+backgrounds, small resolution, shadows, and occlusions. Despite the
+effectiveness of SOTA detectors such as YOLO, they remain vulnerable to
+adversarial attacks \(AAs\), compromising their reliability. Traditional AA
+strategies often overlook the practical constraints of physical implementation,
+focusing solely on attack performance. Our work addresses this issue by
+proposing practical implementation constraints for AA in texture and/or shape.
+These constraints include pixelation, masking, limiting the color palette of
+the textures, and constraining the shape modifications. We evaluated the
+proposed constraints through extensive experiments using three widely used
+object detector architectures, and compared them to previous works. The results
+demonstrate the effectiveness of our solutions and reveal a trade\-off between
+practicality and performance. Additionally, we introduce a labeled dataset of
+overhead images featuring vehicles of various categories. We will make the
+code/dataset public upon paper acceptance.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2412.16358v1)
+
+---
+
+
 ## A Light\-Weight Framework for Open\-Set Object Detection with Decoupled Feature Alignment in Joint Space
 
 **发布日期**：2024-12-19
@@ -260,87 +320,6 @@ in diverse scenarios, including urban road maintenance and highway inspections.
 **代码链接**：摘要中未找到代码链接。
 
 **论文链接**：[阅读更多](http://arxiv.org/abs/2412.10902v1)
-
----
-
-
-## SPACE\-SUIT: An Artificial Intelligence based chromospheric feature extractor and classifier for SUIT
-
-**发布日期**：2024-12-11
-
-**作者**：Pranava Seth
-
-**摘要**：The Solar Ultraviolet Imaging Telescope\(SUIT\) onboard Aditya\-L1 is an imager
-that observes the solar photosphere and chromosphere through observations in
-the wavelength range of 200\-400 nm. A comprehensive understanding of the plasma
-and thermodynamic properties of chromospheric and photospheric morphological
-structures requires a large sample statistical study, necessitating the
-development of automatic feature detection methods. To this end, we develop the
-feature detection algorithm SPACE\-SUIT: Solar Phenomena Analysis and
-Classification using Enhanced vision techniques for SUIT, to detect and
-classify the solar chromospheric features to be observed from SUIT's Mg II k
-filter. Specifically, we target plage regions, sunspots, filaments, and
-off\-limb structures. SPACE uses You Only Look Once\(YOLO\), a neural
-network\-based model to identify regions of interest. We train and validate
-SPACE using mock\-SUIT images developed from Interface Region Imaging
-Spectrometer\(IRIS\) full\-disk mosaic images in Mg II k line, while we also
-perform detection on Level\-1 SUIT data. SPACE achieves an approximate precision
-of 0.788, recall 0.863 and MAP of 0.874 on the validation mock SUIT FITS
-dataset. Given the manual labeling of our dataset, we perform "self\-validation"
-by applying statistical measures and Tamura features on the ground truth and
-predicted bounding boxes. We find the distributions of entropy, contrast,
-dissimilarity, and energy to show differences in the features. These
-differences are qualitatively captured by the detected regions predicted by
-SPACE and validated with the observed SUIT images, even in the absence of
-labeled ground truth. This work not only develops a chromospheric feature
-extractor but also demonstrates the effectiveness of statistical metrics and
-Tamura features for distinguishing chromospheric features, offering independent
-validation for future detection schemes.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2412.08589v1)
-
----
-
-
-## DynamicPAE: Generating Scene\-Aware Physical Adversarial Examples in Real\-Time
-
-**发布日期**：2024-12-11
-
-**作者**：Jin Hu
-
-**摘要**：Physical adversarial examples \(PAEs\) are regarded as "whistle\-blowers" of
-real\-world risks in deep\-learning applications. However, current PAE generation
-studies show limited adaptive attacking ability to diverse and varying scenes.
-The key challenges in generating dynamic PAEs are exploring their patterns
-under noisy gradient feedback and adapting the attack to agnostic scenario
-natures. To address the problems, we present DynamicPAE, the first generative
-framework that enables scene\-aware real\-time physical attacks beyond static
-attacks. Specifically, to train the dynamic PAE generator under noisy gradient
-feedback, we introduce the residual\-driven sample trajectory guidance
-technique, which redefines the training task to break the limited feedback
-information restriction that leads to the degeneracy problem. Intuitively, it
-allows the gradient feedback to be passed to the generator through a low\-noise
-auxiliary task, thereby guiding the optimization away from degenerate solutions
-and facilitating a more comprehensive and stable exploration of feasible PAEs.
-To adapt the generator to agnostic scenario natures, we introduce the
-context\-aligned scene expectation simulation process, consisting of the
-conditional\-uncertainty\-aligned data module and the skewness\-aligned objective
-re\-weighting module. The former enhances robustness in the context of
-incomplete observation by employing a conditional probabilistic model for
-domain randomization, while the latter facilitates consistent stealth control
-across different attack targets by automatically reweighting losses based on
-the skewness indicator. Extensive digital and physical evaluations demonstrate
-the superior attack performance of DynamicPAE, attaining a 1.95 $\\times$ boost
-\(65.55% average AP drop under attack\) on representative object detectors \(e.g.,
-Yolo\-v8\) over state\-of\-the\-art static PAE generating methods.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2412.08053v1)
 
 ---
 
