@@ -1,6 +1,43 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Efficient Detection Framework Adaptation for Edge Computing: A Plug\-and\-play Neural Network Toolbox Enabling Edge Deployment
+
+**发布日期**：2024-12-24
+
+**作者**：Jiaqi Wu
+
+**摘要**：Edge computing has emerged as a key paradigm for deploying deep
+learning\-based object detection in time\-sensitive scenarios. However, existing
+edge detection methods face challenges: 1\) difficulty balancing detection
+precision with lightweight models, 2\) limited adaptability of generalized
+deployment designs, and 3\) insufficient real\-world validation. To address these
+issues, we propose the Edge Detection Toolbox \(ED\-TOOLBOX\), which utilizes
+generalizable plug\-and\-play components to adapt object detection models for
+edge environments. Specifically, we introduce a lightweight Reparameterized
+Dynamic Convolutional Network \(Rep\-DConvNet\) featuring weighted multi\-shape
+convolutional branches to enhance detection performance. Additionally, we
+design a Sparse Cross\-Attention \(SC\-A\) network with a
+localized\-mapping\-assisted self\-attention mechanism, enabling a well\-crafted
+joint module for adaptive feature transfer. For real\-world applications, we
+incorporate an Efficient Head into the YOLO framework to accelerate edge model
+optimization. To demonstrate practical impact, we identify a gap in helmet
+detection \-\- overlooking band fastening, a critical safety factor \-\- and create
+the Helmet Band Detection Dataset \(HBDD\). Using ED\-TOOLBOX\-optimized models, we
+address this real\-world task. Extensive experiments validate the effectiveness
+of ED\-TOOLBOX, with edge detection models outperforming six state\-of\-the\-art
+methods in visual surveillance simulations, achieving real\-time and accurate
+performance. These results highlight ED\-TOOLBOX as a superior solution for edge
+object detection.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2412.18230v1)
+
+---
+
+
 ## Detecting and Classifying Defective Products in Images Using YOLO
 
 **发布日期**：2024-12-22
@@ -290,36 +327,6 @@ examples are available on GitHub
 **代码链接**：https://github.com/lrncrd/PyPottery/tree/PyPotteryLens).
 
 **论文链接**：[阅读更多](http://arxiv.org/abs/2412.11574v1)
-
----
-
-
-## Enhancing Road Crack Detection Accuracy with BsS\-YOLO: Optimizing Feature Fusion and Attention Mechanisms
-
-**发布日期**：2024-12-14
-
-**作者**：Jiaze Tang
-
-**摘要**：Effective road crack detection is crucial for road safety, infrastructure
-preservation, and extending road lifespan, offering significant economic
-benefits. However, existing methods struggle with varied target scales, complex
-backgrounds, and low adaptability to different environments. This paper
-presents the BsS\-YOLO model, which optimizes multi\-scale feature fusion through
-an enhanced Path Aggregation Network \(PAN\) and Bidirectional Feature Pyramid
-Network \(BiFPN\). The incorporation of weighted feature fusion improves feature
-representation, boosting detection accuracy and robustness. Furthermore, a
-Simple and Effective Attention Mechanism \(SimAM\) within the backbone enhances
-precision via spatial and channel\-wise attention. The detection layer
-integrates a Shuffle Attention mechanism, which rearranges and mixes features
-across channels, refining key representations and further improving accuracy.
-Experimental results show that BsS\-YOLO achieves a 2.8% increase in mean
-average precision \(mAP\) for road crack detection, supporting its applicability
-in diverse scenarios, including urban road maintenance and highway inspections.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2412.10902v1)
 
 ---
 
