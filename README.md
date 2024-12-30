@@ -1,6 +1,34 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Optimizing Helmet Detection with Hybrid YOLO Pipelines: A Detailed Analysis
+
+**发布日期**：2024-12-27
+
+**作者**：Vaikunth M
+
+**摘要**：Helmet detection is crucial for advancing protection levels in public road
+traffic dynamics. This problem statement translates to an object detection
+task. Therefore, this paper compares recent You Only Look Once \(YOLO\) models in
+the context of helmet detection in terms of reliability and computational load.
+Specifically, YOLOv8, YOLOv9, and the newly released YOLOv11 have been used.
+Besides, a modified architectural pipeline that remarkably improves the overall
+performance has been proposed in this manuscript. This hybridized YOLO model
+\(h\-YOLO\) has been pitted against the independent models for analysis that
+proves h\-YOLO is preferable for helmet detection over plain YOLO models. The
+models were tested using a range of standard object detection benchmarks such
+as recall, precision, and mAP \(Mean Average Precision\). In addition, training
+and testing times were recorded to provide the overall scope of the models in a
+real\-time detection scenario.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2412.19467v1)
+
+---
+
+
 ## Efficient Detection Framework Adaptation for Edge Computing: A Plug\-and\-play Neural Network Toolbox Enabling Edge Deployment
 
 **发布日期**：2024-12-24
@@ -131,7 +159,7 @@ https://github.com/D\-Robotics\-AI\-Lab/DOSOD.
 
 **代码链接**：https://github.com/D-Robotics-AI-Lab/DOSOD.
 
-**论文链接**：[阅读更多](http://arxiv.org/abs/2412.14680v1)
+**论文链接**：[阅读更多](http://arxiv.org/abs/2412.14680v2)
 
 ---
 
@@ -293,40 +321,6 @@ without any reduction in inference speed.
 **代码链接**：摘要中未找到代码链接。
 
 **论文链接**：[阅读更多](http://arxiv.org/abs/2412.11812v1)
-
----
-
-
-## PyPotteryLens: An Open\-Source Deep Learning Framework for Automated Digitisation of Archaeological Pottery Documentation
-
-**发布日期**：2024-12-16
-
-**作者**：Lorenzo Cardarelli
-
-**摘要**：Archaeological pottery documentation and study represents a crucial but
-time\-consuming aspect of archaeology. While recent years have seen advances in
-digital documentation methods, vast amounts of legacy data remain locked in
-traditional publications. This paper introduces PyPotteryLens, an open\-source
-framework that leverages deep learning to automate the digitisation and
-processing of archaeological pottery drawings from published sources. The
-system combines state\-of\-the\-art computer vision models \(YOLO for instance
-segmentation and EfficientNetV2 for classification\) with an intuitive user
-interface, making advanced digital methods accessible to archaeologists
-regardless of technical expertise. The framework achieves over 97\\% precision
-and recall in pottery detection and classification tasks, while reducing
-processing time by up to 5x to 20x compared to manual methods. Testing across
-diverse archaeological contexts demonstrates robust generalisation
-capabilities. Also, the system's modular architecture facilitates extension to
-other archaeological materials, while its standardised output format ensures
-long\-term preservation and reusability of digitised data as well as solid basis
-for training machine learning algorithms. The software, documentation, and
-examples are available on GitHub
-\(https://github.com/lrncrd/PyPottery/tree/PyPotteryLens\).
-
-
-**代码链接**：https://github.com/lrncrd/PyPottery/tree/PyPotteryLens).
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2412.11574v1)
 
 ---
 
