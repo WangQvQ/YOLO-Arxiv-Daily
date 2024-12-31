@@ -1,6 +1,144 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## YOLO\-UniOW: Efficient Universal Open\-World Object Detection
+
+**发布日期**：2024-12-30
+
+**作者**：Lihao Liu
+
+**摘要**：Traditional object detection models are constrained by the limitations of
+closed\-set datasets, detecting only categories encountered during training.
+While multimodal models have extended category recognition by aligning text and
+image modalities, they introduce significant inference overhead due to
+cross\-modality fusion and still remain restricted by predefined vocabulary,
+leaving them ineffective at handling unknown objects in open\-world scenarios.
+In this work, we introduce Universal Open\-World Object Detection \(Uni\-OWD\), a
+new paradigm that unifies open\-vocabulary and open\-world object detection
+tasks. To address the challenges of this setting, we propose YOLO\-UniOW, a
+novel model that advances the boundaries of efficiency, versatility, and
+performance. YOLO\-UniOW incorporates Adaptive Decision Learning to replace
+computationally expensive cross\-modality fusion with lightweight alignment in
+the CLIP latent space, achieving efficient detection without compromising
+generalization. Additionally, we design a Wildcard Learning strategy that
+detects out\-of\-distribution objects as "unknown" while enabling dynamic
+vocabulary expansion without the need for incremental learning. This design
+empowers YOLO\-UniOW to seamlessly adapt to new categories in open\-world
+environments. Extensive experiments validate the superiority of YOLO\-UniOW,
+achieving achieving 34.6 AP and 30.0 APr on LVIS with an inference speed of
+69.6 FPS. The model also sets benchmarks on M\-OWODB, S\-OWODB, and nuScenes
+datasets, showcasing its unmatched performance in open\-world object detection.
+Code and models are available at https://github.com/THU\-MIG/YOLO\-UniOW.
+
+
+**代码链接**：https://github.com/THU-MIG/YOLO-UniOW.
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2412.20645v1)
+
+---
+
+
+## Differential Evolution Integrated Hybrid Deep Learning Model for Object Detection in Pre\-made Dishes
+
+**发布日期**：2024-12-29
+
+**作者**：Lujia Lv
+
+**摘要**：With the continuous improvement of people's living standards and fast\-paced
+working conditions, pre\-made dishes are becoming increasingly popular among
+families and restaurants due to their advantages of time\-saving, convenience,
+variety, cost\-effectiveness, standard quality, etc. Object detection is a key
+technology for selecting ingredients and evaluating the quality of dishes in
+the pre\-made dishes industry. To date, many object detection approaches have
+been proposed. However, accurate object detection of pre\-made dishes is
+extremely difficult because of overlapping occlusion of ingredients, similarity
+of ingredients, and insufficient light in the processing environment. As a
+result, the recognition scene is relatively complex and thus leads to poor
+object detection by a single model. To address this issue, this paper proposes
+a Differential Evolution Integrated Hybrid Deep Learning \(DEIHDL\) model. The
+main idea of DEIHDL is three\-fold: 1\) three YOLO\-based and transformer\-based
+base models are developed respectively to increase diversity for detecting
+objects of pre\-made dishes, 2\) the three base models are integrated by
+differential evolution optimized self\-adjusting weights, and 3\) weighted boxes
+fusion strategy is employed to score the confidence of the three base models
+during the integration. As such, DEIHDL possesses the multi\-performance
+originating from the three base models to achieve accurate object detection in
+complex pre\-made dish scenes. Extensive experiments on real datasets
+demonstrate that the proposed DEIHDL model significantly outperforms the base
+models in detecting objects of pre\-made dishes.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2412.20370v1)
+
+---
+
+
+## Plastic Waste Classification Using Deep Learning: Insights from the WaDaBa Dataset
+
+**发布日期**：2024-12-28
+
+**作者**：Suman Kunwar
+
+**摘要**：With the increasing use of plastic, the challenges associated with managing
+plastic waste have become more challenging, emphasizing the need of effective
+solutions for classification and recycling. This study explores the potential
+of deep learning, focusing on convolutional neural networks \(CNNs\) and object
+detection models like YOLO \(You Only Look Once\), to tackle this issue using the
+WaDaBa dataset. The study shows that YOLO\- 11m achieved highest accuracy
+\(98.03%\) and mAP50 \(0.990\), with YOLO\-11n performing similarly but highest
+mAP50\(0.992\). Lightweight models like YOLO\-10n trained faster but with lower
+accuracy, whereas MobileNet V2 showed impressive performance \(97.12% accuracy\)
+but fell short in object detection. Our study highlights the potential of deep
+learning models in transforming how we classify plastic waste, with YOLO models
+proving to be the most effective. By balancing accuracy and computational
+efficiency, these models can help to create scalable, impactful solutions in
+waste management and recycling.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2412.20232v1)
+
+---
+
+
+## YOLO\-MST: Multiscale deep learning method for infrared small target detection based on super\-resolution and YOLO
+
+**发布日期**：2024-12-27
+
+**作者**：Taoran Yue
+
+**摘要**：With the advancement of aerospace technology and the increasing demands of
+military applications, the development of low false\-alarm and high\-precision
+infrared small target detection algorithms has emerged as a key focus of
+research globally. However, the traditional model\-driven method is not robust
+enough when dealing with features such as noise, target size, and contrast. The
+existing deep\-learning methods have limited ability to extract and fuse key
+features, and it is difficult to achieve high\-precision detection in complex
+backgrounds and when target features are not obvious. To solve these problems,
+this paper proposes a deep\-learning infrared small target detection method that
+combines image super\-resolution technology with multi\-scale observation. First,
+the input infrared images are preprocessed with super\-resolution and multiple
+data enhancements are performed. Secondly, based on the YOLOv5 model, we
+proposed a new deep\-learning network named YOLO\-MST. This network includes
+replacing the SPPF module with the self\-designed MSFA module in the backbone,
+optimizing the neck, and finally adding a multi\-scale dynamic detection head to
+the prediction head. By dynamically fusing features from different scales, the
+detection head can better adapt to complex scenes. The mAP@0.5 detection rates
+of this method on two public datasets, SIRST and IRIS, reached 96.4% and 99.5%
+respectively, more effectively solving the problems of missed detection, false
+alarms, and low precision.
+
+
+**代码链接**：摘要中未找到代码链接。
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2412.19878v1)
+
+---
+
+
 ## Optimizing Helmet Detection with Hybrid YOLO Pipelines: A Detailed Analysis
 
 **发布日期**：2024-12-27
@@ -194,133 +332,6 @@ https://github.com/MyNiuuu/AdvNIR
 **代码链接**：https://github.com/MyNiuuu/AdvNIR
 
 **论文链接**：[阅读更多](http://arxiv.org/abs/2412.13709v1)
-
----
-
-
-## Training a Distributed Acoustic Sensing Traffic Monitoring Network With Video Inputs
-
-**发布日期**：2024-12-17
-
-**作者**：Khen Cohen
-
-**摘要**：Distributed Acoustic Sensing \(DAS\) has emerged as a promising tool for
-real\-time traffic monitoring in densely populated areas. In this paper, we
-present a novel concept that integrates DAS data with co\-located visual
-information. We use YOLO\-derived vehicle location and classification from
-camera inputs as labeled data to train a detection and classification neural
-network utilizing DAS data only. Our model achieves a performance exceeding 94%
-for detection and classification, and about 1.2% false alarm rate. We
-illustrate the model's application in monitoring traffic over a week, yielding
-statistical insights that could benefit future smart city developments. Our
-approach highlights the potential of combining fiber\-optic sensors with visual
-information, focusing on practicality and scalability, protecting privacy, and
-minimizing infrastructure costs. To encourage future research, we share our
-dataset.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2412.12743v1)
-
----
-
-
-## Domain Generalization in Autonomous Driving: Evaluating YOLOv8s, RT\-DETR, and YOLO\-NAS with the ROAD\-Almaty Dataset
-
-**发布日期**：2024-12-16
-
-**作者**：Madiyar Alimov
-
-**摘要**：This study investigates the domain generalization capabilities of three
-state\-of\-the\-art object detection models \- YOLOv8s, RT\-DETR, and YOLO\-NAS \-
-within the unique driving environment of Kazakhstan. Utilizing the newly
-constructed ROAD\-Almaty dataset, which encompasses diverse weather, lighting,
-and traffic conditions, we evaluated the models' performance without any
-retraining. Quantitative analysis revealed that RT\-DETR achieved an average
-F1\-score of 0.672 at IoU=0.5, outperforming YOLOv8s \(0.458\) and YOLO\-NAS
-\(0.526\) by approximately 46% and 27%, respectively. Additionally, all models
-exhibited significant performance declines at higher IoU thresholds \(e.g., a
-drop of approximately 20% when increasing IoU from 0.5 to 0.75\) and under
-challenging environmental conditions, such as heavy snowfall and low\-light
-scenarios. These findings underscore the necessity for geographically diverse
-training datasets and the implementation of specialized domain adaptation
-techniques to enhance the reliability of autonomous vehicle detection systems
-globally. This research contributes to the understanding of domain
-generalization challenges in autonomous driving, particularly in
-underrepresented regions.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2412.12349v1)
-
----
-
-
-## Coconut Palm Tree Counting on Drone Images with Deep Object Detection and Synthetic Training Data
-
-**发布日期**：2024-12-16
-
-**作者**：Tobias Rohe
-
-**摘要**：Drones have revolutionized various domains, including agriculture. Recent
-advances in deep learning have propelled among other things object detection in
-computer vision. This study utilized YOLO, a real\-time object detector, to
-identify and count coconut palm trees in Ghanaian farm drone footage. The farm
-presented has lost track of its trees due to different planting phases. While
-manual counting would be very tedious and error\-prone, accurately determining
-the number of trees is crucial for efficient planning and management of
-agricultural processes, especially for optimizing yields and predicting
-production. We assessed YOLO for palm detection within a semi\-automated
-framework, evaluated accuracy augmentations, and pondered its potential for
-farmers. Data was captured in September 2022 via drones. To optimize YOLO with
-scarce data, synthetic images were created for model training and validation.
-The YOLOv7 model, pretrained on the COCO dataset \(excluding coconut palms\), was
-adapted using tailored data. Trees from footage were repositioned on synthetic
-images, with testing on distinct authentic images. In our experiments, we
-adjusted hyperparameters, improving YOLO's mean average precision \(mAP\). We
-also tested various altitudes to determine the best drone height. From an
-initial mAP@.5 of $0.65$, we achieved 0.88, highlighting the value of synthetic
-images in agricultural scenarios.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2412.11949v1)
-
----
-
-
-## CLDA\-YOLO: Visual Contrastive Learning Based Domain Adaptive YOLO Detector
-
-**发布日期**：2024-12-16
-
-**作者**：Tianheng Qiu
-
-**摘要**：Unsupervised domain adaptive \(UDA\) algorithms can markedly enhance the
-performance of object detectors under conditions of domain shifts, thereby
-reducing the necessity for extensive labeling and retraining. Current domain
-adaptive object detection algorithms primarily cater to two\-stage detectors,
-which tend to offer minimal improvements when directly applied to single\-stage
-detectors such as YOLO. Intending to benefit the YOLO detector from UDA, we
-build a comprehensive domain adaptive architecture using a teacher\-student
-cooperative system for the YOLO detector. In this process, we propose
-uncertainty learning to cope with pseudo\-labeling generated by the teacher
-model with extreme uncertainty and leverage dynamic data augmentation to
-asymptotically adapt the teacher\-student system to the environment. To address
-the inability of single\-stage object detectors to align at multiple stages, we
-utilize a unified visual contrastive learning paradigm that aligns instance at
-backbone and head respectively, which steadily improves the robustness of the
-detectors in cross\-domain tasks. In summary, we present an unsupervised domain
-adaptive YOLO detector based on visual contrastive learning \(CLDA\-YOLO\), which
-achieves highly competitive results across multiple domain adaptive datasets
-without any reduction in inference speed.
-
-
-**代码链接**：摘要中未找到代码链接。
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2412.11812v1)
 
 ---
 
