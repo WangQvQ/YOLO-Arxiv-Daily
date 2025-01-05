@@ -1,6 +1,39 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Lightweight G\-YOLOv11: Advancing Efficient Fracture Detection in Pediatric Wrist X\-rays
+
+**发布日期**：2024-12-31
+
+**作者**：Abdesselam Ferdi
+
+**摘要**：Computer\-aided diagnosis \(CAD\) systems have greatly improved the
+interpretation of medical images by radiologists and surgeons. However, current
+CAD systems for fracture detection in X\-ray images primarily rely on large,
+resource\-intensive detectors, which limits their practicality in clinical
+settings. To address this limitation, we propose a novel lightweight CAD system
+based on the YOLO detector for fracture detection. This system, named ghost
+convolution\-based YOLOv11 \(G\-YOLOv11\), builds on the latest version of the YOLO
+detector family and incorporates the ghost convolution operation for feature
+extraction. The ghost convolution operation generates the same number of
+feature maps as traditional convolution but requires fewer linear operations,
+thereby reducing the detector's computational resource requirements. We
+evaluated the performance of the proposed G\-YOLOv11 detector on the
+GRAZPEDWRI\-DX dataset, achieving an mAP@0.5 of 0.535 with an inference time of
+2.4 ms on an NVIDIA A10 GPU. Compared to the standard YOLOv11l, G\-YOLOv11l
+achieved reductions of 13.6% in mAP@0.5 and 68.7% in size. These results
+establish a new state\-of\-the\-art benchmark in terms of efficiency,
+outperforming existing detectors. Code and models are available at
+https://github.com/AbdesselamFerdi/G\-YOLOv11.
+
+
+**代码链接**：https://github.com/AbdesselamFerdi/G-YOLOv11.
+
+**论文链接**：[阅读更多](http://arxiv.org/abs/2501.00647v1)
+
+---
+
+
 ## YOLO\-UniOW: Efficient Universal Open\-World Object Detection
 
 **发布日期**：2024-12-30
@@ -298,40 +331,6 @@ https://github.com/D\-Robotics\-AI\-Lab/DOSOD.
 **代码链接**：https://github.com/D-Robotics-AI-Lab/DOSOD.
 
 **论文链接**：[阅读更多](http://arxiv.org/abs/2412.14680v2)
-
----
-
-
-## Physics\-Based Adversarial Attack on Near\-Infrared Human Detector for Nighttime Surveillance Camera Systems
-
-**发布日期**：2024-12-18
-
-**作者**：Muyao Niu
-
-**摘要**：Many surveillance cameras switch between daytime and nighttime modes based on
-illuminance levels. During the day, the camera records ordinary RGB images
-through an enabled IR\-cut filter. At night, the filter is disabled to capture
-near\-infrared \(NIR\) light emitted from NIR LEDs typically mounted around the
-lens. While RGB\-based AI algorithm vulnerabilities have been widely reported,
-the vulnerabilities of NIR\-based AI have rarely been investigated. In this
-paper, we identify fundamental vulnerabilities in NIR\-based image understanding
-caused by color and texture loss due to the intrinsic characteristics of
-clothes' reflectance and cameras' spectral sensitivity in the NIR range. We
-further show that the nearly co\-located configuration of illuminants and
-cameras in existing surveillance systems facilitates concealing and fully
-passive attacks in the physical world. Specifically, we demonstrate how
-retro\-reflective and insulation plastic tapes can manipulate the intensity
-distribution of NIR images. We showcase an attack on the YOLO\-based human
-detector using binary patterns designed in the digital space \(via black\-box
-query and searching\) and then physically realized using tapes pasted onto
-clothes. Our attack highlights significant reliability concerns for nighttime
-surveillance systems, which are intended to enhance security. Codes Available:
-https://github.com/MyNiuuu/AdvNIR
-
-
-**代码链接**：https://github.com/MyNiuuu/AdvNIR
-
-**论文链接**：[阅读更多](http://arxiv.org/abs/2412.13709v1)
 
 ---
 
