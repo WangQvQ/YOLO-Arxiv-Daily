@@ -9,8 +9,8 @@ import datetime
 import arxiv
 
 # 百度翻译API配置，请替换为你自己的凭证
-appid = '20210513000825520'
-appkey = 'Q1IrMO__aVBDEc9MFSap'
+appid = BAI_DU_APPID
+appkey = BAI_DU_APPKEY
 from_lang = 'en'
 to_lang = 'zh'
 
