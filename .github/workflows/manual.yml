@@ -24,6 +24,9 @@ jobs:
         pip install arxiv  # 安装 arxiv 包
 
     - name: Execute the script
+      env:
+        BAI_DU_APPID: ${{ secrets.BAI_DU_APPID }}
+        BAI_DU_APPKEY: ${{ secrets.BAI_DU_APPKEY }}
       run: python daily_arxiv.py  # 替换为你的脚本文件名
 
     - name: Configure Git
@@ -47,4 +50,4 @@ jobs:
 
     - name: Push changes
       run: |
-        git push origin main --force-with-lease 
+        git push origin main --force-with-lease
