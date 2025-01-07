@@ -1,6 +1,60 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Identifying Surgical Instruments in Pedagogical Cataract Surgery Videos through an Optimized Aggregation Network / 
+
+发布日期：2025-01-05
+
+作者：Sanya Sinha
+
+摘要：Instructional cataract surgery videos are crucial for ophthalmologists and trainees to observe surgical details repeatedly. This paper presents a deep learning model for real\-time identification of surgical instruments in these videos, using a custom dataset scraped from open\-access sources. Inspired by the architecture of YOLOV9, the model employs a Programmable Gradient Information \(PGI\) mechanism and a novel Generally\-Optimized Efficient Layer Aggregation Network \(Go\-ELAN\) to address the information bottleneck problem, enhancing Minimum Average Precision \(mAP\) at higher Non\-Maximum Suppression Intersection over Union \(NMS IoU\) scores. The Go\-ELAN YOLOV9 model, evaluated against YOLO v5, v7, v8, v9 vanilla, Laptool and DETR, achieves a superior mAP of 73.74 at IoU 0.5 on a dataset of 615 images with 10 instrument classes, demonstrating the effectiveness of the proposed model.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2501.02618v1)
+
+---
+
+
+## Accurate Crop Yield Estimation of Blueberries using Deep Learning and Smart Drones / 
+
+发布日期：2025-01-04
+
+作者：Hieu D. Nguyen
+
+摘要：We present an AI pipeline that involves using smart drones equipped with computer vision to obtain a more accurate fruit count and yield estimation of the number of blueberries in a field. The core components are two object\-detection models based on the YOLO deep learning architecture: a Bush Model that is able to detect blueberry bushes from images captured at low altitudes and at different angles, and a Berry Model that can detect individual berries that are visible on a bush. Together, both models allow for more accurate crop yield estimation by allowing intelligent control of the drone's position and camera to safely capture side\-view images of bushes up close. In addition to providing experimental results for our models, which show good accuracy in terms of precision and recall when captured images are cropped around the foreground center bush, we also describe how to deploy our models to map out blueberry fields using different sampling strategies, and discuss the challenges of annotating very small objects \(blueberries\) and difficulties in evaluating the effectiveness of our models.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2501.02344v1)
+
+---
+
+
+## Efficient Video\-Based ALPR System Using YOLO and Visual Rhythm / 
+
+发布日期：2025-01-04
+
+作者：Victor Nascimento Ribeiro
+
+摘要：Automatic License Plate Recognition \(ALPR\) involves extracting vehicle license plate information from image or a video capture. These systems have gained popularity due to the wide availability of low\-cost surveillance cameras and advances in Deep Learning. Typically, video\-based ALPR systems rely on multiple frames to detect the vehicle and recognize the license plates. Therefore, we propose a system capable of extracting exactly one frame per vehicle and recognizing its license plate characters from this singular image using an Optical Character Recognition \(OCR\) model. Early experiments show that this methodology is viable.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2501.02270v1)
+
+---
+
+
 ## Lightweight G\-YOLOv11: Advancing Efficient Fracture Detection in Pediatric Wrist X\-rays / 
 
 发布日期：2024-12-31
@@ -33,60 +87,6 @@
 代码链接：https://github.com/THU-MIG/YOLO-UniOW.
 
 论文链接：[阅读更多](http://arxiv.org/abs/2412.20645v1)
-
----
-
-
-## Differential Evolution Integrated Hybrid Deep Learning Model for Object Detection in Pre\-made Dishes / 
-
-发布日期：2024-12-29
-
-作者：Lujia Lv
-
-摘要：With the continuous improvement of people's living standards and fast\-paced working conditions, pre\-made dishes are becoming increasingly popular among families and restaurants due to their advantages of time\-saving, convenience, variety, cost\-effectiveness, standard quality, etc. Object detection is a key technology for selecting ingredients and evaluating the quality of dishes in the pre\-made dishes industry. To date, many object detection approaches have been proposed. However, accurate object detection of pre\-made dishes is extremely difficult because of overlapping occlusion of ingredients, similarity of ingredients, and insufficient light in the processing environment. As a result, the recognition scene is relatively complex and thus leads to poor object detection by a single model. To address this issue, this paper proposes a Differential Evolution Integrated Hybrid Deep Learning \(DEIHDL\) model. The main idea of DEIHDL is three\-fold: 1\) three YOLO\-based and transformer\-based base models are developed respectively to increase diversity for detecting objects of pre\-made dishes, 2\) the three base models are integrated by differential evolution optimized self\-adjusting weights, and 3\) weighted boxes fusion strategy is employed to score the confidence of the three base models during the integration. As such, DEIHDL possesses the multi\-performance originating from the three base models to achieve accurate object detection in complex pre\-made dish scenes. Extensive experiments on real datasets demonstrate that the proposed DEIHDL model significantly outperforms the base models in detecting objects of pre\-made dishes.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2412.20370v1)
-
----
-
-
-## Plastic Waste Classification Using Deep Learning: Insights from the WaDaBa Dataset / 
-
-发布日期：2024-12-28
-
-作者：Suman Kunwar
-
-摘要：With the increasing use of plastic, the challenges associated with managing plastic waste have become more challenging, emphasizing the need of effective solutions for classification and recycling. This study explores the potential of deep learning, focusing on convolutional neural networks \(CNNs\) and object detection models like YOLO \(You Only Look Once\), to tackle this issue using the WaDaBa dataset. The study shows that YOLO\- 11m achieved highest accuracy \(98.03%\) and mAP50 \(0.990\), with YOLO\-11n performing similarly but highest mAP50\(0.992\). Lightweight models like YOLO\-10n trained faster but with lower accuracy, whereas MobileNet V2 showed impressive performance \(97.12% accuracy\) but fell short in object detection. Our study highlights the potential of deep learning models in transforming how we classify plastic waste, with YOLO models proving to be the most effective. By balancing accuracy and computational efficiency, these models can help to create scalable, impactful solutions in waste management and recycling.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2412.20232v1)
-
----
-
-
-## YOLO\-MST: Multiscale deep learning method for infrared small target detection based on super\-resolution and YOLO / 
-
-发布日期：2024-12-27
-
-作者：Taoran Yue
-
-摘要：With the advancement of aerospace technology and the increasing demands of military applications, the development of low false\-alarm and high\-precision infrared small target detection algorithms has emerged as a key focus of research globally. However, the traditional model\-driven method is not robust enough when dealing with features such as noise, target size, and contrast. The existing deep\-learning methods have limited ability to extract and fuse key features, and it is difficult to achieve high\-precision detection in complex backgrounds and when target features are not obvious. To solve these problems, this paper proposes a deep\-learning infrared small target detection method that combines image super\-resolution technology with multi\-scale observation. First, the input infrared images are preprocessed with super\-resolution and multiple data enhancements are performed. Secondly, based on the YOLOv5 model, we proposed a new deep\-learning network named YOLO\-MST. This network includes replacing the SPPF module with the self\-designed MSFA module in the backbone, optimizing the neck, and finally adding a multi\-scale dynamic detection head to the prediction head. By dynamically fusing features from different scales, the detection head can better adapt to complex scenes. The mAP@0.5 detection rates of this method on two public datasets, SIRST and IRIS, reached 96.4% and 99.5% respectively, more effectively solving the problems of missed detection, false alarms, and low precision.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2412.19878v1)
 
 ---
 
