@@ -1,6 +1,24 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## SCC\-YOLO: An Improved Object Detector for Assisting in Brain Tumor Diagnosis / 
+
+发布日期：2025-01-07
+
+作者：Runci Bai
+
+摘要：Brain tumors can result in neurological dysfunction, alterations in cognitive and psychological states, increased intracranial pressure, and the occurrence of seizures, thereby presenting a substantial risk to human life and health. The You Only Look Once\(YOLO\) series models have demonstrated superior accuracy in object detection for medical imaging. In this paper, we develop a novel SCC\-YOLO architecture by integrating the SCConv attention mechanism into YOLOv9. The SCConv module reconstructs an efficient convolutional module by reducing spatial and channel redundancy among features, thereby enhancing the learning of image features. We investigate the impact of intergrating different attention mechanisms with the YOLOv9 model on brain tumor image detection using both the Br35H dataset and our self\-made dataset\(Brain\_Tumor\_Dataset\). Experimental results show that on the Br35H dataset, SCC\-YOLO achieved a 0.3% improvement in mAp50 compared to YOLOv9, while on our self\-made dataset, SCC\-YOLO exhibited a 0.5% improvement over YOLOv9. SCC\-YOLO has reached state\-of\-the\-art performance in brain tumor detection. Source code is available at : https://jihulab.com/healthcare\-information\-studio/SCC\-YOLO/\-/tree/master
+
+中文摘要：
+
+
+代码链接：https://jihulab.com/healthcare-information-studio/SCC-YOLO/-/tree/master
+
+论文链接：[阅读更多](http://arxiv.org/abs/2501.03836v1)
+
+---
+
+
 ## Identifying Surgical Instruments in Pedagogical Cataract Surgery Videos through an Optimized Aggregation Network / 
 
 发布日期：2025-01-05
@@ -69,24 +87,6 @@
 代码链接：https://github.com/AbdesselamFerdi/G-YOLOv11.
 
 论文链接：[阅读更多](http://arxiv.org/abs/2501.00647v1)
-
----
-
-
-## YOLO\-UniOW: Efficient Universal Open\-World Object Detection / 
-
-发布日期：2024-12-30
-
-作者：Lihao Liu
-
-摘要：Traditional object detection models are constrained by the limitations of closed\-set datasets, detecting only categories encountered during training. While multimodal models have extended category recognition by aligning text and image modalities, they introduce significant inference overhead due to cross\-modality fusion and still remain restricted by predefined vocabulary, leaving them ineffective at handling unknown objects in open\-world scenarios. In this work, we introduce Universal Open\-World Object Detection \(Uni\-OWD\), a new paradigm that unifies open\-vocabulary and open\-world object detection tasks. To address the challenges of this setting, we propose YOLO\-UniOW, a novel model that advances the boundaries of efficiency, versatility, and performance. YOLO\-UniOW incorporates Adaptive Decision Learning to replace computationally expensive cross\-modality fusion with lightweight alignment in the CLIP latent space, achieving efficient detection without compromising generalization. Additionally, we design a Wildcard Learning strategy that detects out\-of\-distribution objects as "unknown" while enabling dynamic vocabulary expansion without the need for incremental learning. This design empowers YOLO\-UniOW to seamlessly adapt to new categories in open\-world environments. Extensive experiments validate the superiority of YOLO\-UniOW, achieving achieving 34.6 AP and 30.0 APr on LVIS with an inference speed of 69.6 FPS. The model also sets benchmarks on M\-OWODB, S\-OWODB, and nuScenes datasets, showcasing its unmatched performance in open\-world object detection. Code and models are available at https://github.com/THU\-MIG/YOLO\-UniOW.
-
-中文摘要：
-
-
-代码链接：https://github.com/THU-MIG/YOLO-UniOW.
-
-论文链接：[阅读更多](http://arxiv.org/abs/2412.20645v1)
 
 ---
 
