@@ -1,6 +1,24 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Combining YOLO and Visual Rhythm for Vehicle Counting / 
+
+发布日期：2025-01-08
+
+作者：Victor Nascimento Ribeiro
+
+摘要：Video\-based vehicle detection and counting play a critical role in managing transport infrastructure. Traditional image\-based counting methods usually involve two main steps: initial detection and subsequent tracking, which are applied to all video frames, leading to a significant increase in computational complexity. To address this issue, this work presents an alternative and more efficient method for vehicle detection and counting. The proposed approach eliminates the need for a tracking step and focuses solely on detecting vehicles in key video frames, thereby increasing its efficiency. To achieve this, we developed a system that combines YOLO, for vehicle detection, with Visual Rhythm, a way to create time\-spatial images that allows us to focus on frames that contain useful information. Additionally, this method can be used for counting in any application involving unidirectional moving targets to be detected and identified. Experimental analysis using real videos shows that the proposed method achieves mean counting accuracy around 99.15% over a set of videos, with a processing speed three times faster than tracking based approaches.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2501.04534v1)
+
+---
+
+
 ## SCC\-YOLO: An Improved Object Detector for Assisting in Brain Tumor Diagnosis / 
 
 发布日期：2025-01-07
@@ -68,25 +86,7 @@
 
 代码链接：摘要中未找到代码链接。
 
-论文链接：[阅读更多](http://arxiv.org/abs/2501.02270v1)
-
----
-
-
-## Lightweight G\-YOLOv11: Advancing Efficient Fracture Detection in Pediatric Wrist X\-rays / 
-
-发布日期：2024-12-31
-
-作者：Abdesselam Ferdi
-
-摘要：Computer\-aided diagnosis \(CAD\) systems have greatly improved the interpretation of medical images by radiologists and surgeons. However, current CAD systems for fracture detection in X\-ray images primarily rely on large, resource\-intensive detectors, which limits their practicality in clinical settings. To address this limitation, we propose a novel lightweight CAD system based on the YOLO detector for fracture detection. This system, named ghost convolution\-based YOLOv11 \(G\-YOLOv11\), builds on the latest version of the YOLO detector family and incorporates the ghost convolution operation for feature extraction. The ghost convolution operation generates the same number of feature maps as traditional convolution but requires fewer linear operations, thereby reducing the detector's computational resource requirements. We evaluated the performance of the proposed G\-YOLOv11 detector on the GRAZPEDWRI\-DX dataset, achieving an mAP@0.5 of 0.535 with an inference time of 2.4 ms on an NVIDIA A10 GPU. Compared to the standard YOLOv11l, G\-YOLOv11l achieved reductions of 13.6% in mAP@0.5 and 68.7% in size. These results establish a new state\-of\-the\-art benchmark in terms of efficiency, outperforming existing detectors. Code and models are available at https://github.com/AbdesselamFerdi/G\-YOLOv11.
-
-中文摘要：
-
-
-代码链接：https://github.com/AbdesselamFerdi/G-YOLOv11.
-
-论文链接：[阅读更多](http://arxiv.org/abs/2501.00647v1)
+论文链接：[阅读更多](http://arxiv.org/abs/2501.02270v2)
 
 ---
 
