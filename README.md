@@ -1,6 +1,42 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Video Summarisation with Incident and Context Information using Generative AI / 
+
+发布日期：2025-01-08
+
+作者：Ulindu De Silva
+
+摘要：The proliferation of video content production has led to vast amounts of data, posing substantial challenges in terms of analysis efficiency and resource utilization. Addressing this issue calls for the development of robust video analysis tools. This paper proposes a novel approach leveraging Generative Artificial Intelligence \(GenAI\) to facilitate streamlined video analysis. Our tool aims to deliver tailored textual summaries of user\-defined queries, offering a focused insight amidst extensive video datasets. Unlike conventional frameworks that offer generic summaries or limited action recognition, our method harnesses the power of GenAI to distil relevant information, enhancing analysis precision and efficiency. Employing YOLO\-V8 for object detection and Gemini for comprehensive video and text analysis, our solution achieves heightened contextual accuracy. By combining YOLO with Gemini, our approach furnishes textual summaries extracted from extensive CCTV footage, enabling users to swiftly navigate and verify pertinent events without the need for exhaustive manual review. The quantitative evaluation revealed a similarity of 72.8%, while the qualitative assessment rated an accuracy of 85%, demonstrating the capability of the proposed method.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2501.04764v1)
+
+---
+
+
+## Efficient License Plate Recognition in Videos Using Visual Rhythm and Accumulative Line Analysis / 
+
+发布日期：2025-01-08
+
+作者：Victor Nascimento Ribeiro
+
+摘要：Video\-based Automatic License Plate Recognition \(ALPR\) involves extracting vehicle license plate text information from video captures. Traditional systems typically rely heavily on high\-end computing resources and utilize multiple frames to recognize license plates, leading to increased computational overhead. In this paper, we propose two methods capable of efficiently extracting exactly one frame per vehicle and recognizing its license plate characters from this single image, thus significantly reducing computational demands. The first method uses Visual Rhythm \(VR\) to generate time\-spatial images from videos, while the second employs Accumulative Line Analysis \(ALA\), a novel algorithm based on single\-line video processing for real\-time operation. Both methods leverage YOLO for license plate detection within the frame and a Convolutional Neural Network \(CNN\) for Optical Character Recognition \(OCR\) to extract textual information. Experiments on real videos demonstrate that the proposed methods achieve results comparable to traditional frame\-by\-frame approaches, with processing speeds three times faster.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2501.04750v1)
+
+---
+
+
 ## Combining YOLO and Visual Rhythm for Vehicle Counting / 
 
 发布日期：2025-01-08
@@ -51,42 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2501.02618v1)
-
----
-
-
-## Accurate Crop Yield Estimation of Blueberries using Deep Learning and Smart Drones / 
-
-发布日期：2025-01-04
-
-作者：Hieu D. Nguyen
-
-摘要：We present an AI pipeline that involves using smart drones equipped with computer vision to obtain a more accurate fruit count and yield estimation of the number of blueberries in a field. The core components are two object\-detection models based on the YOLO deep learning architecture: a Bush Model that is able to detect blueberry bushes from images captured at low altitudes and at different angles, and a Berry Model that can detect individual berries that are visible on a bush. Together, both models allow for more accurate crop yield estimation by allowing intelligent control of the drone's position and camera to safely capture side\-view images of bushes up close. In addition to providing experimental results for our models, which show good accuracy in terms of precision and recall when captured images are cropped around the foreground center bush, we also describe how to deploy our models to map out blueberry fields using different sampling strategies, and discuss the challenges of annotating very small objects \(blueberries\) and difficulties in evaluating the effectiveness of our models.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2501.02344v1)
-
----
-
-
-## Efficient Video\-Based ALPR System Using YOLO and Visual Rhythm / 
-
-发布日期：2025-01-04
-
-作者：Victor Nascimento Ribeiro
-
-摘要：Automatic License Plate Recognition \(ALPR\) involves extracting vehicle license plate information from image or a video capture. These systems have gained popularity due to the wide availability of low\-cost surveillance cameras and advances in Deep Learning. Typically, video\-based ALPR systems rely on multiple frames to detect the vehicle and recognize the license plates. Therefore, we propose a system capable of extracting exactly one frame per vehicle and recognizing its license plate characters from this singular image using an Optical Character Recognition \(OCR\) model. Early experiments show that this methodology is viable.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2501.02270v2)
 
 ---
 
