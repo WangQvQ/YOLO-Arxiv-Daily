@@ -1,6 +1,42 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Benchmarking YOLOv8 for Optimal Crack Detection in Civil Infrastructure / 
+
+发布日期：2025-01-12
+
+作者：Woubishet Zewdu Taffese
+
+摘要：Ensuring the structural integrity and safety of bridges is crucial for the reliability of transportation networks and public safety. Traditional crack detection methods are increasingly being supplemented or replaced by advanced artificial intelligence \(AI\) techniques. However, most of the models rely on two\-stage target detection algorithms, which pose concerns for real\-time applications due to their lower speed. While models such as YOLO \(You Only Look Once\) have emerged as transformative tools due to their remarkable speed and accuracy. However, the potential of the latest YOLOv8 framework in this domain remains underexplored. This study bridges that gap by rigorously evaluating YOLOv8's performance across five model scales \(nano, small, medium, large, and extra\-large\) using a high\-quality Roboflow dataset. A comprehensive hyperparameter optimization was performed, testing six state\-of\-the\-art optimizers\-Stochastic Gradient Descent, Adaptive Moment Estimation, Adam with Decoupled Weight Decay, Root Mean Square Propagation, Rectified Adam, and Nesterov\-accelerated Adam. Results revealed that YOLOv8, optimized with Stochastic Gradient Descent, delivered exceptional accuracy and speed, setting a new benchmark for real\-time crack detection. Beyond its immediate application, this research positions YOLOv8 as a foundational approach for integrating advanced computer vision techniques into infrastructure monitoring. By enabling more reliable and proactive maintenance of aging bridge networks, this work paves the way for safer, more efficient transportation systems worldwide.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2501.06922v1)
+
+---
+
+
+## YO\-CSA\-T: A Real\-time Badminton Tracking System Utilizing YOLO Based on Contextual and Spatial Attention / 
+
+发布日期：2025-01-11
+
+作者：Yuan Lai
+
+摘要：The 3D trajectory of a shuttlecock required for a badminton rally robot for human\-robot competition demands real\-time performance with high accuracy. However, the fast flight speed of the shuttlecock, along with various visual effects, and its tendency to blend with environmental elements, such as court lines and lighting, present challenges for rapid and accurate 2D detection. In this paper, we first propose the YO\-CSA detection network, which optimizes and reconfigures the YOLOv8s model's backbone, neck, and head by incorporating contextual and spatial attention mechanisms to enhance model's ability in extracting and integrating both global and local features. Next, we integrate three major subtasks, detection, prediction, and compensation, into a real\-time 3D shuttlecock trajectory detection system. Specifically, our system maps the 2D coordinate sequence extracted by YO\-CSA into 3D space using stereo vision, then predicts the future 3D coordinates based on historical information, and re\-projects them onto the left and right views to update the position constraints for 2D detection. Additionally, our system includes a compensation module to fill in missing intermediate frames, ensuring a more complete trajectory. We conduct extensive experiments on our own dataset to evaluate both YO\-CSA's performance and system effectiveness. Experimental results show that YO\-CSA achieves a high accuracy of 90.43% mAP@0.75, surpassing both YOLOv8s and YOLO11s. Our system performs excellently, maintaining a speed of over 130 fps across 12 test sequences.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2501.06472v1)
+
+---
+
+
 ## Video Summarisation with Incident and Context Information using Generative AI / 
 
 发布日期：2025-01-08
@@ -51,42 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2501.04534v1)
-
----
-
-
-## SCC\-YOLO: An Improved Object Detector for Assisting in Brain Tumor Diagnosis / 
-
-发布日期：2025-01-07
-
-作者：Runci Bai
-
-摘要：Brain tumors can result in neurological dysfunction, alterations in cognitive and psychological states, increased intracranial pressure, and the occurrence of seizures, thereby presenting a substantial risk to human life and health. The You Only Look Once\(YOLO\) series models have demonstrated superior accuracy in object detection for medical imaging. In this paper, we develop a novel SCC\-YOLO architecture by integrating the SCConv attention mechanism into YOLOv9. The SCConv module reconstructs an efficient convolutional module by reducing spatial and channel redundancy among features, thereby enhancing the learning of image features. We investigate the impact of intergrating different attention mechanisms with the YOLOv9 model on brain tumor image detection using both the Br35H dataset and our self\-made dataset\(Brain\_Tumor\_Dataset\). Experimental results show that on the Br35H dataset, SCC\-YOLO achieved a 0.3% improvement in mAp50 compared to YOLOv9, while on our self\-made dataset, SCC\-YOLO exhibited a 0.5% improvement over YOLOv9. SCC\-YOLO has reached state\-of\-the\-art performance in brain tumor detection. Source code is available at : https://jihulab.com/healthcare\-information\-studio/SCC\-YOLO/\-/tree/master
-
-中文摘要：
-
-
-代码链接：https://jihulab.com/healthcare-information-studio/SCC-YOLO/-/tree/master
-
-论文链接：[阅读更多](http://arxiv.org/abs/2501.03836v1)
-
----
-
-
-## Identifying Surgical Instruments in Pedagogical Cataract Surgery Videos through an Optimized Aggregation Network / 
-
-发布日期：2025-01-05
-
-作者：Sanya Sinha
-
-摘要：Instructional cataract surgery videos are crucial for ophthalmologists and trainees to observe surgical details repeatedly. This paper presents a deep learning model for real\-time identification of surgical instruments in these videos, using a custom dataset scraped from open\-access sources. Inspired by the architecture of YOLOV9, the model employs a Programmable Gradient Information \(PGI\) mechanism and a novel Generally\-Optimized Efficient Layer Aggregation Network \(Go\-ELAN\) to address the information bottleneck problem, enhancing Minimum Average Precision \(mAP\) at higher Non\-Maximum Suppression Intersection over Union \(NMS IoU\) scores. The Go\-ELAN YOLOV9 model, evaluated against YOLO v5, v7, v8, v9 vanilla, Laptool and DETR, achieves a superior mAP of 73.74 at IoU 0.5 on a dataset of 615 images with 10 instrument classes, demonstrating the effectiveness of the proposed model.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2501.02618v1)
 
 ---
 
