@@ -1,6 +1,24 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Detecting Wildfire Flame and Smoke through Edge Computing using Transfer Learning Enhanced Deep Learning Models / 
+
+发布日期：2025-01-15
+
+作者：Giovanny Vazquez
+
+摘要：Autonomous unmanned aerial vehicles \(UAVs\) integrated with edge computing capabilities empower real\-time data processing directly on the device, dramatically reducing latency in critical scenarios such as wildfire detection. This study underscores Transfer Learning's \(TL\) significance in boosting the performance of object detectors for identifying wildfire smoke and flames, especially when trained on limited datasets, and investigates the impact TL has on edge computing metrics. With the latter focusing how TL\-enhanced You Only Look Once \(YOLO\) models perform in terms of inference time, power usage, and energy consumption when using edge computing devices. This study utilizes the Aerial Fire and Smoke Essential \(AFSE\) dataset as the target, with the Flame and Smoke Detection Dataset \(FASDD\) and the Microsoft Common Objects in Context \(COCO\) dataset serving as source datasets. We explore a two\-stage cascaded TL method, utilizing D\-Fire or FASDD as initial stage target datasets and AFSE as the subsequent stage. Through fine\-tuning, TL significantly enhances detection precision, achieving up to 79.2% mean Average Precision \(mAP@0.5\), reduces training time, and increases model generalizability across the AFSE dataset. However, cascaded TL yielded no notable improvements and TL alone did not benefit the edge computing metrics evaluated. Lastly, this work found that YOLOv5n remains a powerful model when lacking hardware acceleration, finding that YOLOv5n can process images nearly twice as fast as its newer counterpart, YOLO11n. Overall, the results affirm TL's role in augmenting the accuracy of object detectors while also illustrating that additional enhancements are needed to improve edge computing performance.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2501.08639v1)
+
+---
+
+
 ## Benchmarking YOLOv8 for Optimal Crack Detection in Civil Infrastructure / 
 
 发布日期：2025-01-12
@@ -69,24 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2501.04750v1)
-
----
-
-
-## Combining YOLO and Visual Rhythm for Vehicle Counting / 
-
-发布日期：2025-01-08
-
-作者：Victor Nascimento Ribeiro
-
-摘要：Video\-based vehicle detection and counting play a critical role in managing transport infrastructure. Traditional image\-based counting methods usually involve two main steps: initial detection and subsequent tracking, which are applied to all video frames, leading to a significant increase in computational complexity. To address this issue, this work presents an alternative and more efficient method for vehicle detection and counting. The proposed approach eliminates the need for a tracking step and focuses solely on detecting vehicles in key video frames, thereby increasing its efficiency. To achieve this, we developed a system that combines YOLO, for vehicle detection, with Visual Rhythm, a way to create time\-spatial images that allows us to focus on frames that contain useful information. Additionally, this method can be used for counting in any application involving unidirectional moving targets to be detected and identified. Experimental analysis using real videos shows that the proposed method achieves mean counting accuracy around 99.15% over a set of videos, with a processing speed three times faster than tracking based approaches.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2501.04534v1)
 
 ---
 
