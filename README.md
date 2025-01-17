@@ -1,6 +1,24 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Polyp detection in colonoscopy images using YOLOv11 / 
+
+发布日期：2025-01-15
+
+作者：Alok Ranjan Sahoo
+
+摘要：Colorectal cancer \(CRC\) is one of the most commonly diagnosed cancers all over the world. It starts as a polyp in the inner lining of the colon. To prevent CRC, early polyp detection is required. Colonosopy is used for the inspection of the colon. Generally, the images taken by the camera placed at the tip of the endoscope are analyzed by the experts manually. Various traditional machine learning models have been used with the rise of machine learning. Recently, deep learning models have shown more effectiveness in polyp detection due to their superiority in generalizing and learning small features. These deep learning models for object detection can be segregated into two different types: single\-stage and two\-stage. Generally, two stage models have higher accuracy than single stage ones but the single stage models have low inference time. Hence, single stage models are easy to use for quick object detection. YOLO is one of the singlestage models used successfully for polyp detection. It has drawn the attention of researchers because of its lower inference time. The researchers have used Different versions of YOLO so far, and with each newer version, the accuracy of the model is increasing. This paper aims to see the effectiveness of the recently released YOLOv11 to detect polyp. We analyzed the performance for all five models of YOLOv11 \(YOLO11n, YOLO11s, YOLO11m, YOLO11l, YOLO11x\) with Kvasir dataset for the training and testing. Two different versions of the dataset were used. The first consisted of the original dataset, and the other was created using augmentation techniques. The performance of all the models with these two versions of the dataset have been analysed.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2501.09051v1)
+
+---
+
+
 ## Detecting Wildfire Flame and Smoke through Edge Computing using Transfer Learning Enhanced Deep Learning Models / 
 
 发布日期：2025-01-15
@@ -69,24 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2501.04764v1)
-
----
-
-
-## Efficient License Plate Recognition in Videos Using Visual Rhythm and Accumulative Line Analysis / 
-
-发布日期：2025-01-08
-
-作者：Victor Nascimento Ribeiro
-
-摘要：Video\-based Automatic License Plate Recognition \(ALPR\) involves extracting vehicle license plate text information from video captures. Traditional systems typically rely heavily on high\-end computing resources and utilize multiple frames to recognize license plates, leading to increased computational overhead. In this paper, we propose two methods capable of efficiently extracting exactly one frame per vehicle and recognizing its license plate characters from this single image, thus significantly reducing computational demands. The first method uses Visual Rhythm \(VR\) to generate time\-spatial images from videos, while the second employs Accumulative Line Analysis \(ALA\), a novel algorithm based on single\-line video processing for real\-time operation. Both methods leverage YOLO for license plate detection within the frame and a Convolutional Neural Network \(CNN\) for Optical Character Recognition \(OCR\) to extract textual information. Experiments on real videos demonstrate that the proposed methods achieve results comparable to traditional frame\-by\-frame approaches, with processing speeds three times faster.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2501.04750v1)
 
 ---
 
