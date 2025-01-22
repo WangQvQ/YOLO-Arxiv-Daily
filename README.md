@@ -1,6 +1,42 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Data\-driven Detection and Evaluation of Damages in Concrete Structures: Using Deep Learning and Computer Vision / 
+
+发布日期：2025-01-21
+
+作者：Saeid Ataei
+
+摘要：Structural integrity is vital for maintaining the safety and longevity of concrete infrastructures such as bridges, tunnels, and walls. Traditional methods for detecting damages like cracks and spalls are labor\-intensive, time\-consuming, and prone to human error. To address these challenges, this study explores advanced data\-driven techniques using deep learning for automated damage detection and analysis. Two state\-of\-the\-art instance segmentation models, YOLO\-v7 instance segmentation and Mask R\-CNN, were evaluated using a dataset comprising 400 images, augmented to 10,995 images through geometric and color\-based transformations to enhance robustness. The models were trained and validated using a dataset split into 90% training set, validation and test set 10%. Performance metrics such as precision, recall, mean average precision \(mAP@0.5\), and frames per second \(FPS\) were used for evaluation. YOLO\-v7 achieved a superior mAP@0.5 of 96.1% and processed 40 FPS, outperforming Mask R\-CNN, which achieved a mAP@0.5 of 92.1% with a slower processing speed of 18 FPS. The findings recommend YOLO\-v7 instance segmentation model for real\-time, high\-speed structural health monitoring, while Mask R\-CNN is better suited for detailed offline assessments. This study demonstrates the potential of deep learning to revolutionize infrastructure maintenance, offering a scalable and efficient solution for automated damage detection.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2501.11836v1)
+
+---
+
+
+## Efficient Auto\-Labeling of Large\-Scale Poultry Datasets \(ALPD\) Using Semi\-Supervised Models, Active Learning, and Prompt\-then\-Detect Approach / 
+
+发布日期：2025-01-18
+
+作者：Ramesh Bahadur Bist
+
+摘要：The rapid growth of AI in poultry farming has highlighted the challenge of efficiently labeling large, diverse datasets. Manual annotation is time\-consuming, making it impractical for modern systems that continuously generate data. This study explores semi\-supervised auto\-labeling methods, integrating active learning, and prompt\-then\-detect paradigm to develop an efficient framework for auto\-labeling of large poultry datasets aimed at advancing AI\-driven behavior and health monitoring. Viideo data were collected from broilers and laying hens housed at the University of Arkansas and the University of Georgia. The collected videos were converted into images, pre\-processed, augmented, and labeled. Various machine learning models, including zero\-shot models like Grounding DINO, YOLO\-World, and CLIP, and supervised models like YOLO and Faster\-RCNN, were utilized for broilers, hens, and behavior detection. The results showed that YOLOv8s\-World and YOLOv9s performed better when compared performance metrics for broiler and hen detection under supervised learning, while among the semi\-supervised model, YOLOv8s\-ALPD achieved the highest precision \(96.1%\) and recall \(99.0%\) with an RMSE of 1.9. The hybrid YOLO\-World model, incorporating the optimal YOLOv8s backbone, demonstrated the highest overall performance. It achieved a precision of 99.2%, recall of 99.4%, and an F1 score of 98.7% for breed detection, alongside a precision of 88.4%, recall of 83.1%, and an F1 score of 84.5% for individual behavior detection. Additionally, semi\-supervised models showed significant improvements in behavior detection, achieving up to 31% improvement in precision and 16% in F1\-score. The semi\-supervised models with minimal active learning reduced annotation time by over 80% compared to full manual labeling. Moreover, integrating zero\-shot models enhanced detection and behavior identification.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2501.10809v1)
+
+---
+
+
 ## Polyp detection in colonoscopy images using YOLOv11 / 
 
 发布日期：2025-01-15
@@ -51,42 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2501.06922v1)
-
----
-
-
-## YO\-CSA\-T: A Real\-time Badminton Tracking System Utilizing YOLO Based on Contextual and Spatial Attention / 
-
-发布日期：2025-01-11
-
-作者：Yuan Lai
-
-摘要：The 3D trajectory of a shuttlecock required for a badminton rally robot for human\-robot competition demands real\-time performance with high accuracy. However, the fast flight speed of the shuttlecock, along with various visual effects, and its tendency to blend with environmental elements, such as court lines and lighting, present challenges for rapid and accurate 2D detection. In this paper, we first propose the YO\-CSA detection network, which optimizes and reconfigures the YOLOv8s model's backbone, neck, and head by incorporating contextual and spatial attention mechanisms to enhance model's ability in extracting and integrating both global and local features. Next, we integrate three major subtasks, detection, prediction, and compensation, into a real\-time 3D shuttlecock trajectory detection system. Specifically, our system maps the 2D coordinate sequence extracted by YO\-CSA into 3D space using stereo vision, then predicts the future 3D coordinates based on historical information, and re\-projects them onto the left and right views to update the position constraints for 2D detection. Additionally, our system includes a compensation module to fill in missing intermediate frames, ensuring a more complete trajectory. We conduct extensive experiments on our own dataset to evaluate both YO\-CSA's performance and system effectiveness. Experimental results show that YO\-CSA achieves a high accuracy of 90.43% mAP@0.75, surpassing both YOLOv8s and YOLO11s. Our system performs excellently, maintaining a speed of over 130 fps across 12 test sequences.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2501.06472v1)
-
----
-
-
-## Video Summarisation with Incident and Context Information using Generative AI / 
-
-发布日期：2025-01-08
-
-作者：Ulindu De Silva
-
-摘要：The proliferation of video content production has led to vast amounts of data, posing substantial challenges in terms of analysis efficiency and resource utilization. Addressing this issue calls for the development of robust video analysis tools. This paper proposes a novel approach leveraging Generative Artificial Intelligence \(GenAI\) to facilitate streamlined video analysis. Our tool aims to deliver tailored textual summaries of user\-defined queries, offering a focused insight amidst extensive video datasets. Unlike conventional frameworks that offer generic summaries or limited action recognition, our method harnesses the power of GenAI to distil relevant information, enhancing analysis precision and efficiency. Employing YOLO\-V8 for object detection and Gemini for comprehensive video and text analysis, our solution achieves heightened contextual accuracy. By combining YOLO with Gemini, our approach furnishes textual summaries extracted from extensive CCTV footage, enabling users to swiftly navigate and verify pertinent events without the need for exhaustive manual review. The quantitative evaluation revealed a similarity of 72.8%, while the qualitative assessment rated an accuracy of 85%, demonstrating the capability of the proposed method.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2501.04764v1)
 
 ---
 
