@@ -1,6 +1,42 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## YOLOv8 to YOLO11: A Comprehensive Architecture In\-depth Comparative Review / 
+
+发布日期：2025-01-23
+
+作者：Priyanto Hidayatullah
+
+摘要：In the field of deep learning\-based computer vision, YOLO is revolutionary. With respect to deep learning models, YOLO is also the one that is evolving the most rapidly. Unfortunately, not every YOLO model possesses scholarly publications. Moreover, there exists a YOLO model that lacks a publicly accessible official architectural diagram. Naturally, this engenders challenges, such as complicating the understanding of how the model operates in practice. Furthermore, the review articles that are presently available do not delve into the specifics of each model. The objective of this study is to present a comprehensive and in\-depth architecture comparison of the four most recent YOLO models, specifically YOLOv8 through YOLO11, thereby enabling readers to quickly grasp not only how each model functions, but also the distinctions between them. To analyze each YOLO version's architecture, we meticulously examined the relevant academic papers, documentation, and scrutinized the source code. The analysis reveals that while each version of YOLO has improvements in architecture and feature extraction, certain blocks remain unchanged. The lack of scholarly publications and official diagrams presents challenges for understanding the model's functionality and future enhancement. Future developers are encouraged to provide these resources.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2501.13400v1)
+
+---
+
+
+## YOLOSCM: An improved YOLO algorithm for cars detection / 
+
+发布日期：2025-01-23
+
+作者：Changhui Deng
+
+摘要：Detecting objects in urban traffic images presents considerable difficulties because of the following reasons: 1\) These images are typically immense in size, encompassing millions or even hundreds of millions of pixels, yet computational resources are constrained. 2\) The small size of vehicles in certain scenarios leads to insufficient information for accurate detection. 3\) The uneven distribution of vehicles causes inefficient use of computational resources. To address these issues, we propose YOLOSCM \(You Only Look Once with Segmentation Clustering Module\), an efficient and effective framework. To address the challenges of large\-scale images and the non\-uniform distribution of vehicles, we propose a Segmentation Clustering Module \(SCM\). This module adaptively identifies clustered regions, enabling the model to focus on these areas for more precise detection. Additionally, we propose a new training strategy to optimize the detection of small vehicles and densely packed targets in complex urban traffic scenes. We perform extensive experiments on urban traffic datasets to demonstrate the effectiveness and superiority of our proposed approach.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2501.13343v1)
+
+---
+
+
 ## Data\-driven Detection and Evaluation of Damages in Concrete Structures: Using Deep Learning and Computer Vision / 
 
 发布日期：2025-01-21
@@ -51,42 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2501.09051v1)
-
----
-
-
-## Detecting Wildfire Flame and Smoke through Edge Computing using Transfer Learning Enhanced Deep Learning Models / 
-
-发布日期：2025-01-15
-
-作者：Giovanny Vazquez
-
-摘要：Autonomous unmanned aerial vehicles \(UAVs\) integrated with edge computing capabilities empower real\-time data processing directly on the device, dramatically reducing latency in critical scenarios such as wildfire detection. This study underscores Transfer Learning's \(TL\) significance in boosting the performance of object detectors for identifying wildfire smoke and flames, especially when trained on limited datasets, and investigates the impact TL has on edge computing metrics. With the latter focusing how TL\-enhanced You Only Look Once \(YOLO\) models perform in terms of inference time, power usage, and energy consumption when using edge computing devices. This study utilizes the Aerial Fire and Smoke Essential \(AFSE\) dataset as the target, with the Flame and Smoke Detection Dataset \(FASDD\) and the Microsoft Common Objects in Context \(COCO\) dataset serving as source datasets. We explore a two\-stage cascaded TL method, utilizing D\-Fire or FASDD as initial stage target datasets and AFSE as the subsequent stage. Through fine\-tuning, TL significantly enhances detection precision, achieving up to 79.2% mean Average Precision \(mAP@0.5\), reduces training time, and increases model generalizability across the AFSE dataset. However, cascaded TL yielded no notable improvements and TL alone did not benefit the edge computing metrics evaluated. Lastly, this work found that YOLOv5n remains a powerful model when lacking hardware acceleration, finding that YOLOv5n can process images nearly twice as fast as its newer counterpart, YOLO11n. Overall, the results affirm TL's role in augmenting the accuracy of object detectors while also illustrating that additional enhancements are needed to improve edge computing performance.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2501.08639v1)
-
----
-
-
-## Benchmarking YOLOv8 for Optimal Crack Detection in Civil Infrastructure / 
-
-发布日期：2025-01-12
-
-作者：Woubishet Zewdu Taffese
-
-摘要：Ensuring the structural integrity and safety of bridges is crucial for the reliability of transportation networks and public safety. Traditional crack detection methods are increasingly being supplemented or replaced by advanced artificial intelligence \(AI\) techniques. However, most of the models rely on two\-stage target detection algorithms, which pose concerns for real\-time applications due to their lower speed. While models such as YOLO \(You Only Look Once\) have emerged as transformative tools due to their remarkable speed and accuracy. However, the potential of the latest YOLOv8 framework in this domain remains underexplored. This study bridges that gap by rigorously evaluating YOLOv8's performance across five model scales \(nano, small, medium, large, and extra\-large\) using a high\-quality Roboflow dataset. A comprehensive hyperparameter optimization was performed, testing six state\-of\-the\-art optimizers\-Stochastic Gradient Descent, Adaptive Moment Estimation, Adam with Decoupled Weight Decay, Root Mean Square Propagation, Rectified Adam, and Nesterov\-accelerated Adam. Results revealed that YOLOv8, optimized with Stochastic Gradient Descent, delivered exceptional accuracy and speed, setting a new benchmark for real\-time crack detection. Beyond its immediate application, this research positions YOLOv8 as a foundational approach for integrating advanced computer vision techniques into infrastructure monitoring. By enabling more reliable and proactive maintenance of aging bridge networks, this work paves the way for safer, more efficient transportation systems worldwide.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2501.06922v1)
 
 ---
 
