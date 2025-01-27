@@ -1,6 +1,24 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Effective Defect Detection Using Instance Segmentation for NDI / 
+
+发布日期：2025-01-24
+
+作者：Ashiqur Rahman
+
+摘要：Ultrasonic testing is a common Non\-Destructive Inspection \(NDI\) method used in aerospace manufacturing. However, the complexity and size of the ultrasonic scans make it challenging to identify defects through visual inspection or machine learning models. Using computer vision techniques to identify defects from ultrasonic scans is an evolving research area. In this study, we used instance segmentation to identify the presence of defects in the ultrasonic scan images of composite panels that are representative of real components manufactured in aerospace. We used two models based on Mask\-RCNN \(Detectron 2\) and YOLO 11 respectively. Additionally, we implemented a simple statistical pre\-processing technique that reduces the burden of requiring custom\-tailored pre\-processing techniques. Our study demonstrates the feasibility and effectiveness of using instance segmentation in the NDI pipeline by significantly reducing data pre\-processing time, inspection time, and overall costs.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2501.14149v1)
+
+---
+
+
 ## YOLOv8 to YOLO11: A Comprehensive Architecture In\-depth Comparative Review / 
 
 发布日期：2025-01-23
@@ -15,6 +33,24 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2501.13400v1)
+
+---
+
+
+## Enhanced PEC\-YOLO for Detecting Improper Safety Gear Wearing Among Power Line Workers / 
+
+发布日期：2025-01-23
+
+作者：Chen Zuguo
+
+摘要：To address the high risks associated with improper use of safety gear in complex power line environments, where target occlusion and large variance are prevalent, this paper proposes an enhanced PEC\-YOLO object detection algorithm. The method integrates deep perception with multi\-scale feature fusion, utilizing PConv and EMA attention mechanisms to enhance feature extraction efficiency and minimize model complexity. The CPCA attention mechanism is incorporated into the SPPF module, improving the model's ability to focus on critical information and enhance detection accuracy, particularly in challenging conditions. Furthermore, the introduction of the BiFPN neck architecture optimizes the utilization of low\-level and high\-level features, enhancing feature representation through adaptive fusion and context\-aware mechanism. Experimental results demonstrate that the proposed PEC\-YOLO achieves a 2.7% improvement in detection accuracy compared to YOLOv8s, while reducing model parameters by 42.58%. Under identical conditions, PEC\-YOLO outperforms other models in detection speed, meeting the stringent accuracy requirements for safety gear detection in construction sites. This study contributes to the development of efficient and accurate intelligent monitoring systems for ensuring worker safety in hazardous environments.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2501.13981v1)
 
 ---
 
@@ -37,56 +73,20 @@
 ---
 
 
-## Data\-driven Detection and Evaluation of Damages in Concrete Structures: Using Deep Learning and Computer Vision / 
+## LiCAR: pseudo\-RGB LiDAR image for CAR segmentation / 
 
 发布日期：2025-01-21
 
-作者：Saeid Ataei
+作者：Ignacio de Loyola Páez\-Ubieta
 
-摘要：Structural integrity is vital for maintaining the safety and longevity of concrete infrastructures such as bridges, tunnels, and walls. Traditional methods for detecting damages like cracks and spalls are labor\-intensive, time\-consuming, and prone to human error. To address these challenges, this study explores advanced data\-driven techniques using deep learning for automated damage detection and analysis. Two state\-of\-the\-art instance segmentation models, YOLO\-v7 instance segmentation and Mask R\-CNN, were evaluated using a dataset comprising 400 images, augmented to 10,995 images through geometric and color\-based transformations to enhance robustness. The models were trained and validated using a dataset split into 90% training set, validation and test set 10%. Performance metrics such as precision, recall, mean average precision \(mAP@0.5\), and frames per second \(FPS\) were used for evaluation. YOLO\-v7 achieved a superior mAP@0.5 of 96.1% and processed 40 FPS, outperforming Mask R\-CNN, which achieved a mAP@0.5 of 92.1% with a slower processing speed of 18 FPS. The findings recommend YOLO\-v7 instance segmentation model for real\-time, high\-speed structural health monitoring, while Mask R\-CNN is better suited for detailed offline assessments. This study demonstrates the potential of deep learning to revolutionize infrastructure maintenance, offering a scalable and efficient solution for automated damage detection.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2501.11836v1)
-
----
-
-
-## Efficient Auto\-Labeling of Large\-Scale Poultry Datasets \(ALPD\) Using Semi\-Supervised Models, Active Learning, and Prompt\-then\-Detect Approach / 
-
-发布日期：2025-01-18
-
-作者：Ramesh Bahadur Bist
-
-摘要：The rapid growth of AI in poultry farming has highlighted the challenge of efficiently labeling large, diverse datasets. Manual annotation is time\-consuming, making it impractical for modern systems that continuously generate data. This study explores semi\-supervised auto\-labeling methods, integrating active learning, and prompt\-then\-detect paradigm to develop an efficient framework for auto\-labeling of large poultry datasets aimed at advancing AI\-driven behavior and health monitoring. Viideo data were collected from broilers and laying hens housed at the University of Arkansas and the University of Georgia. The collected videos were converted into images, pre\-processed, augmented, and labeled. Various machine learning models, including zero\-shot models like Grounding DINO, YOLO\-World, and CLIP, and supervised models like YOLO and Faster\-RCNN, were utilized for broilers, hens, and behavior detection. The results showed that YOLOv8s\-World and YOLOv9s performed better when compared performance metrics for broiler and hen detection under supervised learning, while among the semi\-supervised model, YOLOv8s\-ALPD achieved the highest precision \(96.1%\) and recall \(99.0%\) with an RMSE of 1.9. The hybrid YOLO\-World model, incorporating the optimal YOLOv8s backbone, demonstrated the highest overall performance. It achieved a precision of 99.2%, recall of 99.4%, and an F1 score of 98.7% for breed detection, alongside a precision of 88.4%, recall of 83.1%, and an F1 score of 84.5% for individual behavior detection. Additionally, semi\-supervised models showed significant improvements in behavior detection, achieving up to 31% improvement in precision and 16% in F1\-score. The semi\-supervised models with minimal active learning reduced annotation time by over 80% compared to full manual labeling. Moreover, integrating zero\-shot models enhanced detection and behavior identification.
+摘要：With the advancement of computing resources, an increasing number of Neural Networks \(NNs\) are appearing for image detection and segmentation appear. However, these methods usually accept as input a RGB 2D image. On the other side, Light Detection And Ranging \(LiDAR\) sensors with many layers provide images that are similar to those obtained from a traditional low resolution RGB camera. Following this principle, a new dataset for segmenting cars in pseudo\-RGB images has been generated. This dataset combines the information given by the LiDAR sensor into a Spherical Range Image \(SRI\), concretely the reflectivity, near infrared and signal intensity 2D images. These images are then fed into instance segmentation NNs. These NNs segment the cars that appear in these images, having as result a Bounding Box \(BB\) and mask precision of 88% and 81.5% respectively with You Only Look Once \(YOLO\)\-v8 large. By using this segmentation NN, some trackers have been applied so as to follow each car segmented instance along a video feed, having great performance in real world experiments.
 
 中文摘要：
 
 
 代码链接：摘要中未找到代码链接。
 
-论文链接：[阅读更多](http://arxiv.org/abs/2501.10809v1)
-
----
-
-
-## Polyp detection in colonoscopy images using YOLOv11 / 
-
-发布日期：2025-01-15
-
-作者：Alok Ranjan Sahoo
-
-摘要：Colorectal cancer \(CRC\) is one of the most commonly diagnosed cancers all over the world. It starts as a polyp in the inner lining of the colon. To prevent CRC, early polyp detection is required. Colonosopy is used for the inspection of the colon. Generally, the images taken by the camera placed at the tip of the endoscope are analyzed by the experts manually. Various traditional machine learning models have been used with the rise of machine learning. Recently, deep learning models have shown more effectiveness in polyp detection due to their superiority in generalizing and learning small features. These deep learning models for object detection can be segregated into two different types: single\-stage and two\-stage. Generally, two stage models have higher accuracy than single stage ones but the single stage models have low inference time. Hence, single stage models are easy to use for quick object detection. YOLO is one of the singlestage models used successfully for polyp detection. It has drawn the attention of researchers because of its lower inference time. The researchers have used Different versions of YOLO so far, and with each newer version, the accuracy of the model is increasing. This paper aims to see the effectiveness of the recently released YOLOv11 to detect polyp. We analyzed the performance for all five models of YOLOv11 \(YOLO11n, YOLO11s, YOLO11m, YOLO11l, YOLO11x\) with Kvasir dataset for the training and testing. Two different versions of the dataset were used. The first consisted of the original dataset, and the other was created using augmentation techniques. The performance of all the models with these two versions of the dataset have been analysed.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2501.09051v1)
+论文链接：[阅读更多](http://arxiv.org/abs/2501.13960v1)
 
 ---
 
