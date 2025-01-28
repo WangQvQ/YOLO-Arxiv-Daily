@@ -1,6 +1,42 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Explainable YOLO\-Based Dyslexia Detection in Synthetic Handwriting Data / 
+
+发布日期：2025-01-25
+
+作者：Nora Fink
+
+摘要：Dyslexia affects reading and writing skills across many languages. This work describes a new application of YOLO\-based object detection to isolate and label handwriting patterns \(Normal, Reversal, Corrected\) within synthetic images that resemble real words. Individual letters are first collected, preprocessed into 32x32 samples, then assembled into larger synthetic 'words' to simulate realistic handwriting. Our YOLOv11 framework simultaneously localizes each letter and classifies it into one of three categories, reflecting key dyslexia traits. Empirically, we achieve near\-perfect performance, with precision, recall, and F1 metrics typically exceeding 0.999. This surpasses earlier single\-letter approaches that rely on conventional CNNs or transfer\-learning classifiers \(for example, MobileNet\-based methods in Robaa et al. arXiv:2410.19821\). Unlike simpler pipelines that consider each letter in isolation, our solution processes complete word images, resulting in more authentic representations of handwriting. Although relying on synthetic data raises concerns about domain gaps, these experiments highlight the promise of YOLO\-based detection for faster and more interpretable dyslexia screening. Future work will expand to real\-world handwriting, other languages, and deeper explainability methods to build confidence among educators, clinicians, and families.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2501.15263v1)
+
+---
+
+
+## Comprehensive Evaluation of Cloaking Backdoor Attacks on Object Detector in Real\-World / 
+
+发布日期：2025-01-25
+
+作者：Hua Ma
+
+摘要：The exploration of backdoor vulnerabilities in object detectors, particularly in real\-world scenarios, remains limited. A significant challenge lies in the absence of a natural physical backdoor dataset, and constructing such a dataset is both time\- and labor\-intensive. In this work, we address this gap by creating a large\-scale dataset comprising approximately 11,800 images/frames with annotations featuring natural objects \(e.g., T\-shirts and hats\) as triggers to incur cloaking adversarial effects in diverse real\-world scenarios. This dataset is tailored for the study of physical backdoors in object detectors. Leveraging this dataset, we conduct a comprehensive evaluation of an insidious cloaking backdoor effect against object detectors, wherein the bounding box around a person vanishes when the individual is near a natural object \(e.g., a commonly available T\-shirt\) in front of the detector. Our evaluations encompass three prevalent attack surfaces: data outsourcing, model outsourcing, and the use of pretrained models. The cloaking effect is successfully implanted in object detectors across all three attack surfaces. We extensively evaluate four popular object detection algorithms \(anchor\-based Yolo\-V3, Yolo\-V4, Faster R\-CNN, and anchor\-free CenterNet\) using 19 videos \(totaling approximately 11,800 frames\) in real\-world scenarios. Our results demonstrate that the backdoor attack exhibits remarkable robustness against various factors, including movement, distance, angle, non\-rigid deformation, and lighting. In data and model outsourcing scenarios, the attack success rate \(ASR\) in most videos reaches 100% or near it, while the clean data accuracy of the backdoored model remains indistinguishable from that of the clean model, making it impossible to detect backdoor behavior through a validation set.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2501.15101v1)
+
+---
+
+
 ## Effective Defect Detection Using Instance Segmentation for NDI / 
 
 发布日期：2025-01-24
@@ -51,42 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2501.13981v1)
-
----
-
-
-## YOLOSCM: An improved YOLO algorithm for cars detection / 
-
-发布日期：2025-01-23
-
-作者：Changhui Deng
-
-摘要：Detecting objects in urban traffic images presents considerable difficulties because of the following reasons: 1\) These images are typically immense in size, encompassing millions or even hundreds of millions of pixels, yet computational resources are constrained. 2\) The small size of vehicles in certain scenarios leads to insufficient information for accurate detection. 3\) The uneven distribution of vehicles causes inefficient use of computational resources. To address these issues, we propose YOLOSCM \(You Only Look Once with Segmentation Clustering Module\), an efficient and effective framework. To address the challenges of large\-scale images and the non\-uniform distribution of vehicles, we propose a Segmentation Clustering Module \(SCM\). This module adaptively identifies clustered regions, enabling the model to focus on these areas for more precise detection. Additionally, we propose a new training strategy to optimize the detection of small vehicles and densely packed targets in complex urban traffic scenes. We perform extensive experiments on urban traffic datasets to demonstrate the effectiveness and superiority of our proposed approach.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2501.13343v1)
-
----
-
-
-## LiCAR: pseudo\-RGB LiDAR image for CAR segmentation / 
-
-发布日期：2025-01-21
-
-作者：Ignacio de Loyola Páez\-Ubieta
-
-摘要：With the advancement of computing resources, an increasing number of Neural Networks \(NNs\) are appearing for image detection and segmentation appear. However, these methods usually accept as input a RGB 2D image. On the other side, Light Detection And Ranging \(LiDAR\) sensors with many layers provide images that are similar to those obtained from a traditional low resolution RGB camera. Following this principle, a new dataset for segmenting cars in pseudo\-RGB images has been generated. This dataset combines the information given by the LiDAR sensor into a Spherical Range Image \(SRI\), concretely the reflectivity, near infrared and signal intensity 2D images. These images are then fed into instance segmentation NNs. These NNs segment the cars that appear in these images, having as result a Bounding Box \(BB\) and mask precision of 88% and 81.5% respectively with You Only Look Once \(YOLO\)\-v8 large. By using this segmentation NN, some trackers have been applied so as to follow each car segmented instance along a video feed, having great performance in real world experiments.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2501.13960v1)
 
 ---
 
