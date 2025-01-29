@@ -1,6 +1,24 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Efficient Object Detection of Marine Debris using Pruned YOLO Model / 
+
+发布日期：2025-01-27
+
+作者：Abi Aryaza
+
+摘要：Marine debris poses significant harm to marine life due to substances like microplastics, polychlorinated biphenyls, and pesticides, which damage habitats and poison organisms. Human\-based solutions, such as diving, are increasingly ineffective in addressing this issue. Autonomous underwater vehicles \(AUVs\) are being developed for efficient sea garbage collection, with the choice of object detection architecture being critical. This research employs the YOLOv4 model for real\-time detection of marine debris using the Trash\-ICRA 19 dataset, consisting of 7683 images at 480x320 pixels. Various modifications\-pretrained models, training from scratch, mosaic augmentation, layer freezing, YOLOv4\-tiny, and channel pruning\-are compared to enhance architecture efficiency. Channel pruning significantly improves detection speed, increasing the base YOLOv4 frame rate from 15.19 FPS to 19.4 FPS, with only a 1.2% drop in mean Average Precision, from 97.6% to 96.4%.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2501.16571v1)
+
+---
+
+
 ## Explainable YOLO\-Based Dyslexia Detection in Synthetic Handwriting Data / 
 
 发布日期：2025-01-25
@@ -69,24 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2501.13400v1)
-
----
-
-
-## Enhanced PEC\-YOLO for Detecting Improper Safety Gear Wearing Among Power Line Workers / 
-
-发布日期：2025-01-23
-
-作者：Chen Zuguo
-
-摘要：To address the high risks associated with improper use of safety gear in complex power line environments, where target occlusion and large variance are prevalent, this paper proposes an enhanced PEC\-YOLO object detection algorithm. The method integrates deep perception with multi\-scale feature fusion, utilizing PConv and EMA attention mechanisms to enhance feature extraction efficiency and minimize model complexity. The CPCA attention mechanism is incorporated into the SPPF module, improving the model's ability to focus on critical information and enhance detection accuracy, particularly in challenging conditions. Furthermore, the introduction of the BiFPN neck architecture optimizes the utilization of low\-level and high\-level features, enhancing feature representation through adaptive fusion and context\-aware mechanism. Experimental results demonstrate that the proposed PEC\-YOLO achieves a 2.7% improvement in detection accuracy compared to YOLOv8s, while reducing model parameters by 42.58%. Under identical conditions, PEC\-YOLO outperforms other models in detection speed, meeting the stringent accuracy requirements for safety gear detection in construction sites. This study contributes to the development of efficient and accurate intelligent monitoring systems for ensuring worker safety in hazardous environments.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2501.13981v1)
 
 ---
 
