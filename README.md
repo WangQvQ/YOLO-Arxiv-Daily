@@ -1,6 +1,24 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Assessing the Capability of YOLO\- and Transformer\-based Object Detectors for Real\-time Weed Detection / 
+
+发布日期：2025-01-29
+
+作者：Alicia Allmendinger
+
+摘要：Spot spraying represents an efficient and sustainable method for reducing the amount of pesticides, particularly herbicides, used in agricultural fields. To achieve this, it is of utmost importance to reliably differentiate between crops and weeds, and even between individual weed species in situ and under real\-time conditions. To assess suitability for real\-time application, different object detection models that are currently state\-of\-the\-art are compared. All available models of YOLOv8, YOLOv9, YOLOv10, and RT\-DETR are trained and evaluated with images from a real field situation. The images are separated into two distinct datasets: In the initial data set, each species of plants is trained individually; in the subsequent dataset, a distinction is made between monocotyledonous weeds, dicotyledonous weeds, and three chosen crops. The results demonstrate that while all models perform equally well in the metrics evaluated, the YOLOv9 models, particularly the YOLOv9s and YOLOv9e, stand out in terms of their strong recall scores \(66.58 % and 72.36 %\), as well as mAP50 \(73.52 % and 79.86 %\), and mAP50\-95 \(43.82 % and 47.00 %\) in dataset 2. However, the RT\-DETR models, especially RT\-DETR\-l, excel in precision with reaching 82.44 % on dataset 1 and 81.46 % in dataset 2, making them particularly suitable for scenarios where minimizing false positives is critical. In particular, the smallest variants of the YOLO models \(YOLOv8n, YOLOv9t, and YOLOv10n\) achieve substantially faster inference times down to 7.58 ms for dataset 2 on the NVIDIA GeForce RTX 4090 GPU for analyzing one frame, while maintaining competitive accuracy, highlighting their potential for deployment in resource\-constrained embedded computing devices as typically used in productive setups.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2501.17387v1)
+
+---
+
+
 ## Efficient Object Detection of Marine Debris using Pruned YOLO Model / 
 
 发布日期：2025-01-27
@@ -69,24 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2501.14149v1)
-
----
-
-
-## YOLOv8 to YOLO11: A Comprehensive Architecture In\-depth Comparative Review / 
-
-发布日期：2025-01-23
-
-作者：Priyanto Hidayatullah
-
-摘要：In the field of deep learning\-based computer vision, YOLO is revolutionary. With respect to deep learning models, YOLO is also the one that is evolving the most rapidly. Unfortunately, not every YOLO model possesses scholarly publications. Moreover, there exists a YOLO model that lacks a publicly accessible official architectural diagram. Naturally, this engenders challenges, such as complicating the understanding of how the model operates in practice. Furthermore, the review articles that are presently available do not delve into the specifics of each model. The objective of this study is to present a comprehensive and in\-depth architecture comparison of the four most recent YOLO models, specifically YOLOv8 through YOLO11, thereby enabling readers to quickly grasp not only how each model functions, but also the distinctions between them. To analyze each YOLO version's architecture, we meticulously examined the relevant academic papers, documentation, and scrutinized the source code. The analysis reveals that while each version of YOLO has improvements in architecture and feature extraction, certain blocks remain unchanged. The lack of scholarly publications and official diagrams presents challenges for understanding the model's functionality and future enhancement. Future developers are encouraged to provide these resources.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2501.13400v1)
 
 ---
 
