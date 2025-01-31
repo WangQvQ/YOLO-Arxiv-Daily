@@ -1,6 +1,60 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Adaptive Object Detection for Indoor Navigation Assistance: A Performance Evaluation of Real\-Time Algorithms / 
+
+发布日期：2025-01-30
+
+作者：Abhinav Pratap
+
+摘要：This study addresses the need for accurate and efficient object detection in assistive technologies for visually impaired individuals. We evaluate four real\-time object detection algorithms YOLO, SSD, Faster R\-CNN, and Mask R\-CNN within the context of indoor navigation assistance. Using the Indoor Objects Detection dataset, we analyze detection accuracy, processing speed, and adaptability to indoor environments. Our findings highlight the trade\-offs between precision and efficiency, offering insights into selecting optimal algorithms for realtime assistive navigation. This research advances adaptive machine learning applications, enhancing indoor navigation solutions for the visually impaired and promoting accessibility.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2501.18444v1)
+
+---
+
+
+## Efficient Feature Fusion for UAV Object Detection / 
+
+发布日期：2025-01-29
+
+作者：Xudong Wang
+
+摘要：Object detection in unmanned aerial vehicle \(UAV\) remote sensing images poses significant challenges due to unstable image quality, small object sizes, complex backgrounds, and environmental occlusions. Small objects, in particular, occupy minimal portions of images, making their accurate detection highly difficult. Existing multi\-scale feature fusion methods address these challenges to some extent by aggregating features across different resolutions. However, these methods often fail to effectively balance classification and localization performance for small objects, primarily due to insufficient feature representation and imbalanced network information flow. In this paper, we propose a novel feature fusion framework specifically designed for UAV object detection tasks to enhance both localization accuracy and classification performance. The proposed framework integrates hybrid upsampling and downsampling modules, enabling feature maps from different network depths to be flexibly adjusted to arbitrary resolutions. This design facilitates cross\-layer connections and multi\-scale feature fusion, ensuring improved representation of small objects. Our approach leverages hybrid downsampling to enhance fine\-grained feature representation, improving spatial localization of small targets, even under complex conditions. Simultaneously, the upsampling module aggregates global contextual information, optimizing feature consistency across scales and enhancing classification robustness in cluttered scenes. Experimental results on two public UAV datasets demonstrate the effectiveness of the proposed framework. Integrated into the YOLO\-V10 model, our method achieves a 2% improvement in average precision \(AP\) compared to the baseline YOLO\-V10 model, while maintaining the same number of parameters. These results highlight the potential of our framework for accurate and efficient UAV object detection.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2501.17983v1)
+
+---
+
+
+## Real Time Scheduling Framework for Multi Object Detection via Spiking Neural Networks / 
+
+发布日期：2025-01-29
+
+作者：Donghwa Kang
+
+摘要：Given the energy constraints in autonomous mobile agents \(AMAs\), such as unmanned vehicles, spiking neural networks \(SNNs\) are increasingly favored as a more efficient alternative to traditional artificial neural networks. AMAs employ multi\-object detection \(MOD\) from multiple cameras to identify nearby objects while ensuring two essential objectives, \(R1\) timing guarantee and \(R2\) high accuracy for safety. In this paper, we propose RT\-SNN, the first system design, aiming at achieving R1 and R2 in SNN\-based MOD systems on AMAs. Leveraging the characteristic that SNNs gather feature data of input image termed as membrane potential, through iterative computation over multiple timesteps, RT\-SNN provides multiple execution options with adjustable timesteps and a novel method for reusing membrane potential to support R1. Then, it captures how these execution strategies influence R2 by introducing a novel notion of mean absolute error and membrane confidence. Further, RT\-SNN develops a new scheduling framework consisting of offline schedulability analysis for R1 and a run\-time scheduling algorithm for R2 using the notion of membrane confidence. We deployed RT\-SNN to Spiking\-YOLO, the SNN\-based MOD model derived from ANN\-to\-SNN conversion, and our experimental evaluation confirms its effectiveness in meeting the R1 and R2 requirements while providing significant energy efficiency.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2501.18412v1)
+
+---
+
+
 ## Assessing the Capability of YOLO\- and Transformer\-based Object Detectors for Real\-time Weed Detection / 
 
 发布日期：2025-01-29
@@ -14,7 +68,7 @@
 
 代码链接：摘要中未找到代码链接。
 
-论文链接：[阅读更多](http://arxiv.org/abs/2501.17387v1)
+论文链接：[阅读更多](http://arxiv.org/abs/2501.17387v2)
 
 ---
 
@@ -33,60 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2501.16571v1)
-
----
-
-
-## Explainable YOLO\-Based Dyslexia Detection in Synthetic Handwriting Data / 
-
-发布日期：2025-01-25
-
-作者：Nora Fink
-
-摘要：Dyslexia affects reading and writing skills across many languages. This work describes a new application of YOLO\-based object detection to isolate and label handwriting patterns \(Normal, Reversal, Corrected\) within synthetic images that resemble real words. Individual letters are first collected, preprocessed into 32x32 samples, then assembled into larger synthetic 'words' to simulate realistic handwriting. Our YOLOv11 framework simultaneously localizes each letter and classifies it into one of three categories, reflecting key dyslexia traits. Empirically, we achieve near\-perfect performance, with precision, recall, and F1 metrics typically exceeding 0.999. This surpasses earlier single\-letter approaches that rely on conventional CNNs or transfer\-learning classifiers \(for example, MobileNet\-based methods in Robaa et al. arXiv:2410.19821\). Unlike simpler pipelines that consider each letter in isolation, our solution processes complete word images, resulting in more authentic representations of handwriting. Although relying on synthetic data raises concerns about domain gaps, these experiments highlight the promise of YOLO\-based detection for faster and more interpretable dyslexia screening. Future work will expand to real\-world handwriting, other languages, and deeper explainability methods to build confidence among educators, clinicians, and families.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2501.15263v1)
-
----
-
-
-## Comprehensive Evaluation of Cloaking Backdoor Attacks on Object Detector in Real\-World / 
-
-发布日期：2025-01-25
-
-作者：Hua Ma
-
-摘要：The exploration of backdoor vulnerabilities in object detectors, particularly in real\-world scenarios, remains limited. A significant challenge lies in the absence of a natural physical backdoor dataset, and constructing such a dataset is both time\- and labor\-intensive. In this work, we address this gap by creating a large\-scale dataset comprising approximately 11,800 images/frames with annotations featuring natural objects \(e.g., T\-shirts and hats\) as triggers to incur cloaking adversarial effects in diverse real\-world scenarios. This dataset is tailored for the study of physical backdoors in object detectors. Leveraging this dataset, we conduct a comprehensive evaluation of an insidious cloaking backdoor effect against object detectors, wherein the bounding box around a person vanishes when the individual is near a natural object \(e.g., a commonly available T\-shirt\) in front of the detector. Our evaluations encompass three prevalent attack surfaces: data outsourcing, model outsourcing, and the use of pretrained models. The cloaking effect is successfully implanted in object detectors across all three attack surfaces. We extensively evaluate four popular object detection algorithms \(anchor\-based Yolo\-V3, Yolo\-V4, Faster R\-CNN, and anchor\-free CenterNet\) using 19 videos \(totaling approximately 11,800 frames\) in real\-world scenarios. Our results demonstrate that the backdoor attack exhibits remarkable robustness against various factors, including movement, distance, angle, non\-rigid deformation, and lighting. In data and model outsourcing scenarios, the attack success rate \(ASR\) in most videos reaches 100% or near it, while the clean data accuracy of the backdoored model remains indistinguishable from that of the clean model, making it impossible to detect backdoor behavior through a validation set.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2501.15101v1)
-
----
-
-
-## Effective Defect Detection Using Instance Segmentation for NDI / 
-
-发布日期：2025-01-24
-
-作者：Ashiqur Rahman
-
-摘要：Ultrasonic testing is a common Non\-Destructive Inspection \(NDI\) method used in aerospace manufacturing. However, the complexity and size of the ultrasonic scans make it challenging to identify defects through visual inspection or machine learning models. Using computer vision techniques to identify defects from ultrasonic scans is an evolving research area. In this study, we used instance segmentation to identify the presence of defects in the ultrasonic scan images of composite panels that are representative of real components manufactured in aerospace. We used two models based on Mask\-RCNN \(Detectron 2\) and YOLO 11 respectively. Additionally, we implemented a simple statistical pre\-processing technique that reduces the burden of requiring custom\-tailored pre\-processing techniques. Our study demonstrates the feasibility and effectiveness of using instance segmentation in the NDI pipeline by significantly reducing data pre\-processing time, inspection time, and overall costs.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2501.14149v1)
 
 ---
 
