@@ -1,6 +1,24 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## MHAF\-YOLO: Multi\-Branch Heterogeneous Auxiliary Fusion YOLO for accurate object detection / 
+
+发布日期：2025-02-07
+
+作者：Zhiqiang Yang
+
+摘要：Due to the effective multi\-scale feature fusion capabilities of the Path Aggregation FPN \(PAFPN\), it has become a widely adopted component in YOLO\-based detectors. However, PAFPN struggles to integrate high\-level semantic cues with low\-level spatial details, limiting its performance in real\-world applications, especially with significant scale variations. In this paper, we propose MHAF\-YOLO, a novel detection framework featuring a versatile neck design called the Multi\-Branch Auxiliary FPN \(MAFPN\), which consists of two key modules: the Superficial Assisted Fusion \(SAF\) and Advanced Assisted Fusion \(AAF\). The SAF bridges the backbone and the neck by fusing shallow features, effectively transferring crucial low\-level spatial information with high fidelity. Meanwhile, the AAF integrates multi\-scale feature information at deeper neck layers, delivering richer gradient information to the output layer and further enhancing the model learning capacity. To complement MAFPN, we introduce the Global Heterogeneous Flexible Kernel Selection \(GHFKS\) mechanism and the Reparameterized Heterogeneous Multi\-Scale \(RepHMS\) module to enhance feature fusion. RepHMS is globally integrated into the network, utilizing GHFKS to select larger convolutional kernels for various feature layers, expanding the vertical receptive field and capturing contextual information across spatial hierarchies. Locally, it optimizes convolution by processing both large and small kernels within the same layer, broadening the lateral receptive field and preserving crucial details for detecting smaller targets. The source code of this work is available at: https://github.com/yang0201/MHAF\-YOLO.
+
+中文摘要：
+
+
+代码链接：https://github.com/yang0201/MHAF-YOLO.
+
+论文链接：[阅读更多](http://arxiv.org/abs/2502.04656v1)
+
+---
+
+
 ## Brain Tumor Identification using Improved YOLOv8 / 
 
 发布日期：2025-02-06
@@ -69,24 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2501.17983v2)
-
----
-
-
-## Real Time Scheduling Framework for Multi Object Detection via Spiking Neural Networks / 
-
-发布日期：2025-01-29
-
-作者：Donghwa Kang
-
-摘要：Given the energy constraints in autonomous mobile agents \(AMAs\), such as unmanned vehicles, spiking neural networks \(SNNs\) are increasingly favored as a more efficient alternative to traditional artificial neural networks. AMAs employ multi\-object detection \(MOD\) from multiple cameras to identify nearby objects while ensuring two essential objectives, \(R1\) timing guarantee and \(R2\) high accuracy for safety. In this paper, we propose RT\-SNN, the first system design, aiming at achieving R1 and R2 in SNN\-based MOD systems on AMAs. Leveraging the characteristic that SNNs gather feature data of input image termed as membrane potential, through iterative computation over multiple timesteps, RT\-SNN provides multiple execution options with adjustable timesteps and a novel method for reusing membrane potential to support R1. Then, it captures how these execution strategies influence R2 by introducing a novel notion of mean absolute error and membrane confidence. Further, RT\-SNN develops a new scheduling framework consisting of offline schedulability analysis for R1 and a run\-time scheduling algorithm for R2 using the notion of membrane confidence. We deployed RT\-SNN to Spiking\-YOLO, the SNN\-based MOD model derived from ANN\-to\-SNN conversion, and our experimental evaluation confirms its effectiveness in meeting the R1 and R2 requirements while providing significant energy efficiency.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2501.18412v1)
 
 ---
 
