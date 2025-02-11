@@ -1,6 +1,24 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Drone Detection and Tracking with YOLO and a Rule\-based Method / 
+
+发布日期：2025-02-07
+
+作者：Purbaditya Bhattacharya
+
+摘要：Drones or unmanned aerial vehicles are traditionally used for military missions, warfare, and espionage. However, the usage of drones has significantly increased due to multiple industrial applications involving security and inspection, transportation, research purposes, and recreational drone flying. Such an increased volume of drone activity in public spaces requires regulatory actions for purposes of privacy protection and safety. Hence, detection of illegal drone activities such as boundary encroachment becomes a necessity. Such detection tasks are usually automated and performed by deep learning models which are trained on annotated image datasets. This paper builds on a previous work and extends an already published open source dataset. A description and analysis of the entire dataset is provided. The dataset is used to train the YOLOv7 deep learning model and some of its minor variants and the results are provided. Since the detection models are based on a single image input, a simple cross\-correlation based tracker is used to reduce detection drops and improve tracking performance in videos. Finally, the entire drone detection system is summarized.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2502.05292v1)
+
+---
+
+
 ## MHAF\-YOLO: Multi\-Branch Heterogeneous Auxiliary Fusion YOLO for accurate object detection / 
 
 发布日期：2025-02-07
@@ -69,24 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2501.18444v1)
-
----
-
-
-## Efficient Feature Fusion for UAV Object Detection / 
-
-发布日期：2025-01-29
-
-作者：Xudong Wang
-
-摘要：Object detection in unmanned aerial vehicle \(UAV\) remote sensing images poses significant challenges due to unstable image quality, small object sizes, complex backgrounds, and environmental occlusions. Small objects, in particular, occupy small portions of images, making their accurate detection highly difficult. Existing multi\-scale feature fusion methods address these challenges to some extent by aggregating features across different resolutions. However, they often fail to effectively balance the classification and localization performance for small objects, primarily due to insufficient feature representation and imbalanced network information flow. In this paper, we propose a novel feature fusion framework specifically designed for UAV object detection tasks to enhance both localization accuracy and classification performance. The proposed framework integrates hybrid upsampling and downsampling modules, enabling feature maps from different network depths to be flexibly adjusted to arbitrary resolutions. This design facilitates cross\-layer connections and multi\-scale feature fusion, ensuring improved representation of small objects. Our approach leverages hybrid downsampling to enhance fine\-grained feature representation, improving spatial localization of small targets, even under complex conditions. Simultaneously, the upsampling module aggregates global contextual information, optimizing feature consistency across scales and enhancing classification robustness in cluttered scenes. Experimental results on two public UAV datasets demonstrate the effectiveness of the proposed framework. Integrated into the YOLO\-v10 model, our method achieves a 2% improvement in average precision \(AP\) compared to the baseline YOLO\-v10 model, while maintaining the same number of parameters. These results highlight the potential of our framework for accurate and efficient UAV object detection.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2501.17983v2)
 
 ---
 
