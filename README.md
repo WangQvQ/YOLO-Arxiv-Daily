@@ -1,6 +1,42 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## YOLO Network For Defect Detection In Optical lenses / 
+
+发布日期：2025-02-11
+
+作者：Habib Yaseen
+
+摘要：Mass\-produced optical lenses often exhibit defects that alter their scattering properties and compromise quality standards. Manual inspection is usually adopted to detect defects, but it is not recommended due to low accuracy, high error rate and limited scalability. To address these challenges, this study presents an automated defect detection system based on the YOLOv8 deep learning model. A custom dataset of optical lenses, annotated with defect and lens regions, was created to train the model. Experimental results obtained in this study reveal that the system can be used to efficiently and accurately detect defects in optical lenses. The proposed system can be utilized in real\-time industrial environments to enhance quality control processes by enabling reliable and scalable defect detection in optical lens manufacturing.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2502.07592v1)
+
+---
+
+
+## Data Warehouse Design for Multiple Source Forest Inventory Management and Image Processing / 
+
+发布日期：2025-02-10
+
+作者：Kristina Cormier
+
+摘要：This research developed a prototype data warehouse to integrate multi\-source forestry data for long\-term monitoring, management, and sustainability. The data warehouse is intended to accommodate all types of imagery from various platforms, LiDAR point clouds, survey records, and paper documents, with the capability to transform these datasets into machine learning \(ML\) and deep learning classification and segmentation models. In this study, we pioneered the integration of unmanned aerial vehicle \(UAV\) imagery and paper records, testing the merged data on the YOLOv11 model. Paper records improved ground truth, and preliminary results demonstrated notable performance improvements.   This research aims to implement a data warehouse \(DW\) to manage data for a YOLO \(You Only Look Once\) model, which identifies objects in images. It does this by integrating advanced data processing pipelines. Data are also stored and easily accessible for future use, including comparing current and historical data to understand growth or declining patterns. In addition, the design is used to optimize resource usage. It also scales easily, not affecting other parts of the data warehouse when adding dimension tables or other fields to the fact table. DW performance and estimations for growing workloads are also explored in this paper.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2502.07015v1)
+
+---
+
+
 ## Drone Detection and Tracking with YOLO and a Rule\-based Method / 
 
 发布日期：2025-02-07
@@ -51,42 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2502.03746v1)
-
----
-
-
-## Early Diagnosis and Severity Assessment of Weligama Coconut Leaf Wilt Disease and Coconut Caterpillar Infestation using Deep Learning\-based Image Processing Techniques / 
-
-发布日期：2025-01-31
-
-作者：Samitha Vidhanaarachchi
-
-摘要：Global Coconut \(Cocos nucifera \(L.\)\) cultivation faces significant challenges, including yield loss, due to pest and disease outbreaks. In particular, Weligama Coconut Leaf Wilt Disease \(WCWLD\) and Coconut Caterpillar Infestation \(CCI\) damage coconut trees, causing severe coconut production loss in Sri Lanka and nearby coconut\-producing countries. Currently, both WCWLD and CCI are detected through on\-field human observations, a process that is not only time\-consuming but also limits the early detection of infections. This paper presents a study conducted in Sri Lanka, demonstrating the effectiveness of employing transfer learning\-based Convolutional Neural Network \(CNN\) and Mask Region\-based\-CNN \(Mask R\-CNN\) to identify WCWLD and CCI at their early stages and to assess disease progression. Further, this paper presents the use of the You Only Look Once \(YOLO\) object detection model to count the number of caterpillars distributed on leaves with CCI. The introduced methods were tested and validated using datasets collected from Matara, Puttalam, and Makandura, Sri Lanka. The results show that the proposed methods identify WCWLD and CCI with an accuracy of 90% and 95%, respectively. In addition, the proposed WCWLD disease severity identification method classifies the severity with an accuracy of 97%. Furthermore, the accuracies of the object detection models for calculating the number of caterpillars in the leaflets were: YOLOv5\-96.87%, YOLOv8\-96.1%, and YOLO11\-95.9%.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2501.18835v1)
-
----
-
-
-## Adaptive Object Detection for Indoor Navigation Assistance: A Performance Evaluation of Real\-Time Algorithms / 
-
-发布日期：2025-01-30
-
-作者：Abhinav Pratap
-
-摘要：This study addresses the need for accurate and efficient object detection in assistive technologies for visually impaired individuals. We evaluate four real\-time object detection algorithms YOLO, SSD, Faster R\-CNN, and Mask R\-CNN within the context of indoor navigation assistance. Using the Indoor Objects Detection dataset, we analyze detection accuracy, processing speed, and adaptability to indoor environments. Our findings highlight the trade\-offs between precision and efficiency, offering insights into selecting optimal algorithms for realtime assistive navigation. This research advances adaptive machine learning applications, enhancing indoor navigation solutions for the visually impaired and promoting accessibility.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2501.18444v1)
 
 ---
 
