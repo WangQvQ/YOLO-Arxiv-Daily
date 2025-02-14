@@ -1,6 +1,24 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Bridging Logic Programming and Deep Learning for Explainability through ILASP / 
+
+发布日期：2025-02-13
+
+作者：Talissa Dreossi
+
+摘要：My research explores integrating deep learning and logic programming to set the basis for a new generation of AI systems. By combining neural networks with Inductive Logic Programming \(ILP\), the goal is to construct systems that make accurate predictions and generate comprehensible rules to validate these predictions. Deep learning models process and analyze complex data, while ILP techniques derive logical rules to prove the network's conclusions. Explainable AI methods, like eXplainable Answer Set Programming \(XASP\), elucidate the reasoning behind these rules and decisions. The focus is on applying ILP frameworks, specifically ILASP and FastLAS, to enhance explainability in various domains. My test cases span weather prediction, the legal field, and image recognition. In weather forecasting, the system will predict events and provides explanations using FastLAS, with plans to integrate recurrent neural networks in the future. In the legal domain, the research focuses on interpreting vague decisions and assisting legal professionals by encoding Italian legal articles and learning reasoning patterns from Court of Cassation decisions using ILASP. For biological laboratories, we will collaborate with a research group to automate spermatozoa morphology classification for Bull Breeding Soundness Evaluation using YOLO networks and ILP to explain classification outcomes. This hybrid approach aims to bridge the gap between the high performance of deep learning models and the transparency of symbolic reasoning, advancing AI by providing interpretable and trustworthy applications.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2502.09227v1)
+
+---
+
+
 ## YOLO Network For Defect Detection In Optical lenses / 
 
 发布日期：2025-02-11
@@ -69,24 +87,6 @@
 代码链接：https://github.com/yang0201/MHAF-YOLO.
 
 论文链接：[阅读更多](http://arxiv.org/abs/2502.04656v1)
-
----
-
-
-## Brain Tumor Identification using Improved YOLOv8 / 
-
-发布日期：2025-02-06
-
-作者：Rupesh Dulal
-
-摘要：Identifying the extent of brain tumors is a significant challenge in brain cancer treatment. The main difficulty is in the approximate detection of tumor size. Magnetic resonance imaging \(MRI\) has become a critical diagnostic tool. However, manually detecting the boundaries of brain tumors from MRI scans is a labor\-intensive task that requires extensive expertise. Deep learning and computer\-aided detection techniques have led to notable advances in machine learning for this purpose. In this paper, we propose a modified You Only Look Once \(YOLOv8\) model to accurately detect the tumors within the MRI images. The proposed model replaced the Non\-Maximum Suppression \(NMS\) algorithm with a Real\-Time Detection Transformer \(RT\- DETR\) in the detection head. NMS filters out redundant or overlapping bounding boxes in the detected tumors, but they are hand\-designed and pre\-set. RT\-DETR removes hand\-designed components. The second improvement was made by replacing the normal convolution block with ghost convolution. Ghost Convolution reduces computational and memory costs while maintaining high accuracy and enabling faster inference, making it ideal for resource\-constrained environments and real\-time applications. The third improvement was made by introducing a vision transformer block in the backbone of YOLOv8 to extract context\-aware features. We used a publicly available dataset of brain tumors in the proposed model. The proposed model performed better than the original YOLOv8 model and also performed better than other object detectors \(Faster R\- CNN, Mask R\-CNN, YOLO, YOLOv3, YOLOv4, YOLOv5, SSD, RetinaNet, EfficientDet, and DETR\). The proposed model achieved 0.91 mAP \(mean Average Precision\)@0.5.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2502.03746v1)
 
 ---
 
