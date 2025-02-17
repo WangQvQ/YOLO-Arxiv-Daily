@@ -1,6 +1,24 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Acute Lymphoblastic Leukemia Diagnosis Employing YOLOv11, YOLOv8, ResNet50, and Inception\-ResNet\-v2 Deep Learning Models / 
+
+发布日期：2025-02-13
+
+作者：Alaa Awad
+
+摘要：Thousands of individuals succumb annually to leukemia alone. As artificial intelligence\-driven technologies continue to evolve and advance, the question of their applicability and reliability remains unresolved. This study aims to utilize image processing and deep learning methodologies to achieve state\-of\-the\-art results for the detection of Acute Lymphoblastic Leukemia \(ALL\) using data that best represents real\-world scenarios. ALL is one of several types of blood cancer, and it is an aggressive form of leukemia. In this investigation, we examine the most recent advancements in ALL detection, as well as the latest iteration of the YOLO series and its performance. We address the question of whether white blood cells are malignant or benign. Additionally, the proposed models can identify different ALL stages, including early stages. Furthermore, these models can detect hematogones despite their frequent misclassification as ALL. By utilizing advanced deep learning models, namely, YOLOv8, YOLOv11, ResNet50 and Inception\-ResNet\-v2, the study achieves accuracy rates as high as 99.7%, demonstrating the effectiveness of these algorithms across multiple datasets and various real\-world situations.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2502.09804v1)
+
+---
+
+
 ## Bridging Logic Programming and Deep Learning for Explainability through ILASP / 
 
 发布日期：2025-02-13
@@ -69,24 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2502.05292v1)
-
----
-
-
-## MHAF\-YOLO: Multi\-Branch Heterogeneous Auxiliary Fusion YOLO for accurate object detection / 
-
-发布日期：2025-02-07
-
-作者：Zhiqiang Yang
-
-摘要：Due to the effective multi\-scale feature fusion capabilities of the Path Aggregation FPN \(PAFPN\), it has become a widely adopted component in YOLO\-based detectors. However, PAFPN struggles to integrate high\-level semantic cues with low\-level spatial details, limiting its performance in real\-world applications, especially with significant scale variations. In this paper, we propose MHAF\-YOLO, a novel detection framework featuring a versatile neck design called the Multi\-Branch Auxiliary FPN \(MAFPN\), which consists of two key modules: the Superficial Assisted Fusion \(SAF\) and Advanced Assisted Fusion \(AAF\). The SAF bridges the backbone and the neck by fusing shallow features, effectively transferring crucial low\-level spatial information with high fidelity. Meanwhile, the AAF integrates multi\-scale feature information at deeper neck layers, delivering richer gradient information to the output layer and further enhancing the model learning capacity. To complement MAFPN, we introduce the Global Heterogeneous Flexible Kernel Selection \(GHFKS\) mechanism and the Reparameterized Heterogeneous Multi\-Scale \(RepHMS\) module to enhance feature fusion. RepHMS is globally integrated into the network, utilizing GHFKS to select larger convolutional kernels for various feature layers, expanding the vertical receptive field and capturing contextual information across spatial hierarchies. Locally, it optimizes convolution by processing both large and small kernels within the same layer, broadening the lateral receptive field and preserving crucial details for detecting smaller targets. The source code of this work is available at: https://github.com/yang0201/MHAF\-YOLO.
-
-中文摘要：
-
-
-代码链接：https://github.com/yang0201/MHAF-YOLO.
-
-论文链接：[阅读更多](http://arxiv.org/abs/2502.04656v1)
 
 ---
 
