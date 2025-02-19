@@ -1,6 +1,24 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## YOLOv12: Attention\-Centric Real\-Time Object Detectors / 
+
+发布日期：2025-02-18
+
+作者：Yunjie Tian
+
+摘要：Enhancing the network architecture of the YOLO framework has been crucial for a long time, but has focused on CNN\-based improvements despite the proven superiority of attention mechanisms in modeling capabilities. This is because attention\-based models cannot match the speed of CNN\-based models. This paper proposes an attention\-centric YOLO framework, namely YOLOv12, that matches the speed of previous CNN\-based ones while harnessing the performance benefits of attention mechanisms. YOLOv12 surpasses all popular real\-time object detectors in accuracy with competitive speed. For example, YOLOv12\-N achieves 40.6% mAP with an inference latency of 1.64 ms on a T4 GPU, outperforming advanced YOLOv10\-N / YOLOv11\-N by 2.1%/1.2% mAP with a comparable speed. This advantage extends to other model scales. YOLOv12 also surpasses end\-to\-end real\-time detectors that improve DETR, such as RT\-DETR / RT\-DETRv2: YOLOv12\-S beats RT\-DETR\-R18 / RT\-DETRv2\-R18 while running 42% faster, using only 36% of the computation and 45% of the parameters. More comparisons are shown in Figure 1.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2502.12524v1)
+
+---
+
+
 ## Acute Lymphoblastic Leukemia Diagnosis Employing YOLOv11, YOLOv8, ResNet50, and Inception\-ResNet\-v2 Deep Learning Models / 
 
 发布日期：2025-02-13
@@ -69,24 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2502.07015v1)
-
----
-
-
-## Drone Detection and Tracking with YOLO and a Rule\-based Method / 
-
-发布日期：2025-02-07
-
-作者：Purbaditya Bhattacharya
-
-摘要：Drones or unmanned aerial vehicles are traditionally used for military missions, warfare, and espionage. However, the usage of drones has significantly increased due to multiple industrial applications involving security and inspection, transportation, research purposes, and recreational drone flying. Such an increased volume of drone activity in public spaces requires regulatory actions for purposes of privacy protection and safety. Hence, detection of illegal drone activities such as boundary encroachment becomes a necessity. Such detection tasks are usually automated and performed by deep learning models which are trained on annotated image datasets. This paper builds on a previous work and extends an already published open source dataset. A description and analysis of the entire dataset is provided. The dataset is used to train the YOLOv7 deep learning model and some of its minor variants and the results are provided. Since the detection models are based on a single image input, a simple cross\-correlation based tracker is used to reduce detection drops and improve tracking performance in videos. Finally, the entire drone detection system is summarized.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2502.05292v1)
 
 ---
 
