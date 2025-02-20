@@ -1,6 +1,24 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Benchmarking of Different YOLO Models for CAPTCHAs Detection and Classification / 
+
+发布日期：2025-02-19
+
+作者：Mikołaj Wysocki
+
+摘要：This paper provides an analysis and comparison of the YOLOv5, YOLOv8 and YOLOv10 models for webpage CAPTCHAs detection using the datasets collected from the web and darknet as well as synthetized data of webpages. The study examines the nano \(n\), small \(s\), and medium \(m\) variants of YOLO architectures and use metrics such as Precision, Recall, F1 score, mAP@50 and inference speed to determine the real\-life utility. Additionally, the possibility of tuning the trained model to detect new CAPTCHA patterns efficiently was examined as it is a crucial part of real\-life applications. The image slicing method was proposed as a way to improve the metrics of detection on oversized input images which can be a common scenario in webpages analysis. Models in version nano achieved the best results in terms of speed, while more complexed architectures scored better in terms of other metrics.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2502.13740v1)
+
+---
+
+
 ## YOLOv12: Attention\-Centric Real\-Time Object Detectors / 
 
 发布日期：2025-02-18
@@ -69,24 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2502.07592v1)
-
----
-
-
-## Data Warehouse Design for Multiple Source Forest Inventory Management and Image Processing / 
-
-发布日期：2025-02-10
-
-作者：Kristina Cormier
-
-摘要：This research developed a prototype data warehouse to integrate multi\-source forestry data for long\-term monitoring, management, and sustainability. The data warehouse is intended to accommodate all types of imagery from various platforms, LiDAR point clouds, survey records, and paper documents, with the capability to transform these datasets into machine learning \(ML\) and deep learning classification and segmentation models. In this study, we pioneered the integration of unmanned aerial vehicle \(UAV\) imagery and paper records, testing the merged data on the YOLOv11 model. Paper records improved ground truth, and preliminary results demonstrated notable performance improvements.   This research aims to implement a data warehouse \(DW\) to manage data for a YOLO \(You Only Look Once\) model, which identifies objects in images. It does this by integrating advanced data processing pipelines. Data are also stored and easily accessible for future use, including comparing current and historical data to understand growth or declining patterns. In addition, the design is used to optimize resource usage. It also scales easily, not affecting other parts of the data warehouse when adding dimension tables or other fields to the fact table. DW performance and estimations for growing workloads are also explored in this paper.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2502.07015v1)
 
 ---
 
