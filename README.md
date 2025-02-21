@@ -1,6 +1,24 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## ODVerse33: Is the New YOLO Version Always Better? A Multi Domain benchmark from YOLO v5 to v11 / 
+
+发布日期：2025-02-20
+
+作者：Tianyou Jiang
+
+摘要：You Look Only Once \(YOLO\) models have been widely used for building real\-time object detectors across various domains. With the increasing frequency of new YOLO versions being released, key questions arise. Are the newer versions always better than their previous versions? What are the core innovations in each YOLO version and how do these changes translate into real\-world performance gains? In this paper, we summarize the key innovations from YOLOv1 to YOLOv11, introduce a comprehensive benchmark called ODverse33, which includes 33 datasets spanning 11 diverse domains \(Autonomous driving, Agricultural, Underwater, Medical, Videogame, Industrial, Aerial, Wildlife, Retail, Microscopic, and Security\), and explore the practical impact of model improvements in real\-world, multi\-domain applications through extensive experimental results. We hope this study can provide some guidance to the extensive users of object detection models and give some references for future real\-time object detector development.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2502.14314v1)
+
+---
+
+
 ## Benchmarking of Different YOLO Models for CAPTCHAs Detection and Classification / 
 
 发布日期：2025-02-19
@@ -69,24 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2502.09227v1)
-
----
-
-
-## YOLO Network For Defect Detection In Optical lenses / 
-
-发布日期：2025-02-11
-
-作者：Habib Yaseen
-
-摘要：Mass\-produced optical lenses often exhibit defects that alter their scattering properties and compromise quality standards. Manual inspection is usually adopted to detect defects, but it is not recommended due to low accuracy, high error rate and limited scalability. To address these challenges, this study presents an automated defect detection system based on the YOLOv8 deep learning model. A custom dataset of optical lenses, annotated with defect and lens regions, was created to train the model. Experimental results obtained in this study reveal that the system can be used to efficiently and accurately detect defects in optical lenses. The proposed system can be utilized in real\-time industrial environments to enhance quality control processes by enabling reliable and scalable defect detection in optical lens manufacturing.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2502.07592v1)
 
 ---
 
