@@ -1,6 +1,24 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Soybean pod and seed counting in both outdoor fields and indoor laboratories using unions of deep neural networks / 
+
+发布日期：2025-02-21
+
+作者：Tianyou Jiang
+
+摘要：Automatic counting soybean pods and seeds in outdoor fields allows for rapid yield estimation before harvesting, while indoor laboratory counting offers greater accuracy. Both methods can significantly accelerate the breeding process. However, it remains challenging for accurately counting pods and seeds in outdoor fields, and there are still no accurate enough tools for counting pods and seeds in laboratories. In this study, we developed efficient deep learning models for counting soybean pods and seeds in both outdoor fields and indoor laboratories. For outdoor fields, annotating not only visible seeds but also occluded seeds makes YOLO have the ability to estimate the number of soybean seeds that are occluded. Moreover, we enhanced YOLO architecture by integrating it with HQ\-SAM \(YOLO\-SAM\), and domain adaptation techniques \(YOLO\-DA\), to improve model robustness and generalization across soybean images taken in outdoor fields. Testing on soybean images from the outdoor field, we achieved a mean absolute error \(MAE\) of 6.13 for pod counting and 10.05 for seed counting. For the indoor setting, we utilized Mask\-RCNN supplemented with a Swin Transformer module \(Mask\-RCNN\-Swin\), models were trained exclusively on synthetic training images generated from a small set of labeled data. This approach resulted in near\-perfect accuracy, with an MAE of 1.07 for pod counting and 1.33 for seed counting across actual laboratory images from two distinct studies.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2502.15286v1)
+
+---
+
+
 ## ODVerse33: Is the New YOLO Version Always Better? A Multi Domain benchmark from YOLO v5 to v11 / 
 
 发布日期：2025-02-20
@@ -69,24 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2502.09804v1)
-
----
-
-
-## Bridging Logic Programming and Deep Learning for Explainability through ILASP / 
-
-发布日期：2025-02-13
-
-作者：Talissa Dreossi
-
-摘要：My research explores integrating deep learning and logic programming to set the basis for a new generation of AI systems. By combining neural networks with Inductive Logic Programming \(ILP\), the goal is to construct systems that make accurate predictions and generate comprehensible rules to validate these predictions. Deep learning models process and analyze complex data, while ILP techniques derive logical rules to prove the network's conclusions. Explainable AI methods, like eXplainable Answer Set Programming \(XASP\), elucidate the reasoning behind these rules and decisions. The focus is on applying ILP frameworks, specifically ILASP and FastLAS, to enhance explainability in various domains. My test cases span weather prediction, the legal field, and image recognition. In weather forecasting, the system will predict events and provides explanations using FastLAS, with plans to integrate recurrent neural networks in the future. In the legal domain, the research focuses on interpreting vague decisions and assisting legal professionals by encoding Italian legal articles and learning reasoning patterns from Court of Cassation decisions using ILASP. For biological laboratories, we will collaborate with a research group to automate spermatozoa morphology classification for Bull Breeding Soundness Evaluation using YOLO networks and ILP to explain classification outcomes. This hybrid approach aims to bridge the gap between the high performance of deep learning models and the transparency of symbolic reasoning, advancing AI by providing interpretable and trustworthy applications.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2502.09227v1)
 
 ---
 
