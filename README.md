@@ -1,6 +1,42 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Experimental validation of UAV search and detection system in real wilderness environment / 
+
+发布日期：2025-02-24
+
+作者：Stella Dumenčić
+
+摘要：Search and rescue \(SAR\) missions require reliable search methods to locate survivors, especially in challenging or inaccessible environments. This is why introducing unmanned aerial vehicles \(UAVs\) can be of great help to enhance the efficiency of SAR missions while simultaneously increasing the safety of everyone involved in the mission. Motivated by this, we design and experiment with autonomous UAV search for humans in a Mediterranean karst environment. The UAVs are directed using Heat equation\-driven area coverage \(HEDAC\) ergodic control method according to known probability density and detection function. The implemented sensing framework consists of a probabilistic search model, motion control system, and computer vision object detection. It enables calculation of the probability of the target being detected in the SAR mission, and this paper focuses on experimental validation of proposed probabilistic framework and UAV control. The uniform probability density to ensure the even probability of finding the targets in the desired search area is achieved by assigning suitably thought\-out tasks to 78 volunteers. The detection model is based on YOLO and trained with a previously collected ortho\-photo image database. The experimental search is carefully planned and conducted, while as many parameters as possible are recorded. The thorough analysis consists of the motion control system, object detection, and the search validation. The assessment of the detection and search performance provides strong indication that the designed detection model in the UAV control algorithm is aligned with real\-world results.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2502.17372v1)
+
+---
+
+
+## Efficient Semantic\-aware Encryption for Secure Communications in Intelligent Connected Vehicles / 
+
+发布日期：2025-02-23
+
+作者：Bizhu Wang
+
+摘要：Semantic communication \(SemCom\) significantly improves inter\-vehicle interactions in intelligent connected vehicles \(ICVs\) within limited wireless spectrum. However, the open nature of wireless communications introduces eavesdropping risks. To mitigate this, we propose the Efficient Semantic\-aware Encryption \(ESAE\) mechanism, integrating cryptography into SemCom to secure semantic transmission without complex key management. ESAE leverages semantic reciprocity between source and reconstructed information from past communications to independently generate session keys at both ends, reducing key transmission costs and associated security risks. Additionally, ESAE introduces a semantic\-aware key pre\-processing method \(SA\-KP\) using the YOLO\-v10 model to extract consistent semantics from bit\-level diverse yet semantically identical content, ensuring key consistency. Experimental results validate ESAE's effectiveness and feasibility under various wireless conditions, with key performance factors discussed.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2502.16400v1)
+
+---
+
+
 ## Soybean pod and seed counting in both outdoor fields and indoor laboratories using unions of deep neural networks / 
 
 发布日期：2025-02-21
@@ -51,42 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2502.13740v1)
-
----
-
-
-## YOLOv12: Attention\-Centric Real\-Time Object Detectors / 
-
-发布日期：2025-02-18
-
-作者：Yunjie Tian
-
-摘要：Enhancing the network architecture of the YOLO framework has been crucial for a long time, but has focused on CNN\-based improvements despite the proven superiority of attention mechanisms in modeling capabilities. This is because attention\-based models cannot match the speed of CNN\-based models. This paper proposes an attention\-centric YOLO framework, namely YOLOv12, that matches the speed of previous CNN\-based ones while harnessing the performance benefits of attention mechanisms. YOLOv12 surpasses all popular real\-time object detectors in accuracy with competitive speed. For example, YOLOv12\-N achieves 40.6% mAP with an inference latency of 1.64 ms on a T4 GPU, outperforming advanced YOLOv10\-N / YOLOv11\-N by 2.1%/1.2% mAP with a comparable speed. This advantage extends to other model scales. YOLOv12 also surpasses end\-to\-end real\-time detectors that improve DETR, such as RT\-DETR / RT\-DETRv2: YOLOv12\-S beats RT\-DETR\-R18 / RT\-DETRv2\-R18 while running 42% faster, using only 36% of the computation and 45% of the parameters. More comparisons are shown in Figure 1.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2502.12524v1)
-
----
-
-
-## Acute Lymphoblastic Leukemia Diagnosis Employing YOLOv11, YOLOv8, ResNet50, and Inception\-ResNet\-v2 Deep Learning Models / 
-
-发布日期：2025-02-13
-
-作者：Alaa Awad
-
-摘要：Thousands of individuals succumb annually to leukemia alone. As artificial intelligence\-driven technologies continue to evolve and advance, the question of their applicability and reliability remains unresolved. This study aims to utilize image processing and deep learning methodologies to achieve state\-of\-the\-art results for the detection of Acute Lymphoblastic Leukemia \(ALL\) using data that best represents real\-world scenarios. ALL is one of several types of blood cancer, and it is an aggressive form of leukemia. In this investigation, we examine the most recent advancements in ALL detection, as well as the latest iteration of the YOLO series and its performance. We address the question of whether white blood cells are malignant or benign. Additionally, the proposed models can identify different ALL stages, including early stages. Furthermore, these models can detect hematogones despite their frequent misclassification as ALL. By utilizing advanced deep learning models, namely, YOLOv8, YOLOv11, ResNet50 and Inception\-ResNet\-v2, the study achieves accuracy rates as high as 99.7%, demonstrating the effectiveness of these algorithms across multiple datasets and various real\-world situations.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2502.09804v1)
 
 ---
 
