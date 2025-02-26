@@ -1,6 +1,24 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Automatic Vehicle Detection using DETR: A Transformer\-Based Approach for Navigating Treacherous Roads / 
+
+发布日期：2025-02-25
+
+作者：Istiaq Ahmed Fahad
+
+摘要：Automatic Vehicle Detection \(AVD\) in diverse driving environments presents unique challenges due to varying lighting conditions, road types, and vehicle types. Traditional methods, such as YOLO and Faster R\-CNN, often struggle to cope with these complexities. As computer vision evolves, combining Convolutional Neural Networks \(CNNs\) with Transformer\-based approaches offers promising opportunities for improving detection accuracy and efficiency. This study is the first to experiment with Detection Transformer \(DETR\) for automatic vehicle detection in complex and varied settings. We employ a Collaborative Hybrid Assignments Training scheme, Co\-DETR, to enhance feature learning and attention mechanisms in DETR. By leveraging versatile label assignment strategies and introducing multiple parallel auxiliary heads, we provide more effective supervision during training and extract positive coordinates to boost training efficiency. Through extensive experiments on DETR variants and YOLO models, conducted using the BadODD dataset, we demonstrate the advantages of our approach. Our method achieves superior results, and improved accuracy in diverse conditions, making it practical for real\-world deployment. This work significantly advances autonomous navigation technology and opens new research avenues in object detection for autonomous vehicles. By integrating the strengths of CNNs and Transformers, we highlight the potential of DETR for robust and efficient vehicle detection in challenging driving environments.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2502.17843v1)
+
+---
+
+
 ## Experimental validation of UAV search and detection system in real wilderness environment / 
 
 发布日期：2025-02-24
@@ -69,24 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2502.14314v1)
-
----
-
-
-## Benchmarking of Different YOLO Models for CAPTCHAs Detection and Classification / 
-
-发布日期：2025-02-19
-
-作者：Mikołaj Wysocki
-
-摘要：This paper provides an analysis and comparison of the YOLOv5, YOLOv8 and YOLOv10 models for webpage CAPTCHAs detection using the datasets collected from the web and darknet as well as synthetized data of webpages. The study examines the nano \(n\), small \(s\), and medium \(m\) variants of YOLO architectures and use metrics such as Precision, Recall, F1 score, mAP@50 and inference speed to determine the real\-life utility. Additionally, the possibility of tuning the trained model to detect new CAPTCHA patterns efficiently was examined as it is a crucial part of real\-life applications. The image slicing method was proposed as a way to improve the metrics of detection on oversized input images which can be a common scenario in webpages analysis. Models in version nano achieved the best results in terms of speed, while more complexed architectures scored better in terms of other metrics.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2502.13740v1)
 
 ---
 
