@@ -1,92 +1,92 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
-## Automatic Vehicle Detection using DETR: A Transformer\-Based Approach for Navigating Treacherous Roads / 
+## YOLO\-PRO: Enhancing Instance\-Specific Object Detection with Full\-Channel Global Self\-Attention / 
 
-发布日期：2025-02-25
+发布日期：2025-03-04
 
-作者：Istiaq Ahmed Fahad
+作者：Lin Huang
 
-摘要：Automatic Vehicle Detection \(AVD\) in diverse driving environments presents unique challenges due to varying lighting conditions, road types, and vehicle types. Traditional methods, such as YOLO and Faster R\-CNN, often struggle to cope with these complexities. As computer vision evolves, combining Convolutional Neural Networks \(CNNs\) with Transformer\-based approaches offers promising opportunities for improving detection accuracy and efficiency. This study is the first to experiment with Detection Transformer \(DETR\) for automatic vehicle detection in complex and varied settings. We employ a Collaborative Hybrid Assignments Training scheme, Co\-DETR, to enhance feature learning and attention mechanisms in DETR. By leveraging versatile label assignment strategies and introducing multiple parallel auxiliary heads, we provide more effective supervision during training and extract positive coordinates to boost training efficiency. Through extensive experiments on DETR variants and YOLO models, conducted using the BadODD dataset, we demonstrate the advantages of our approach. Our method achieves superior results, and improved accuracy in diverse conditions, making it practical for real\-world deployment. This work significantly advances autonomous navigation technology and opens new research avenues in object detection for autonomous vehicles. By integrating the strengths of CNNs and Transformers, we highlight the potential of DETR for robust and efficient vehicle detection in challenging driving environments.
+摘要：This paper addresses the inherent limitations of conventional bottleneck structures \(diminished instance discriminability due to overemphasis on batch statistics\) and decoupled heads \(computational redundancy\) in object detection frameworks by proposing two novel modules: the Instance\-Specific Bottleneck with full\-channel global self\-attention \(ISB\) and the Instance\-Specific Asymmetric Decoupled Head \(ISADH\). The ISB module innovatively reconstructs feature maps to establish an efficient full\-channel global attention mechanism through synergistic fusion of batch\-statistical and instance\-specific features. Complementing this, the ISADH module pioneers an asymmetric decoupled architecture enabling hierarchical multi\-dimensional feature integration via dual\-stream batch\-instance representation fusion. Extensive experiments on the MS\-COCO benchmark demonstrate that the coordinated deployment of ISB and ISADH in the YOLO\-PRO framework achieves state\-of\-the\-art performance across all computational scales. Specifically, YOLO\-PRO surpasses YOLOv8 by 1.0\-1.6% AP \(N/S/M/L/X scales\) and outperforms YOLO11 by 0.1\-0.5% AP in critical M/L/X groups, while maintaining competitive computational efficiency. This work provides practical insights for developing high\-precision detectors deployable on edge devices.
 
 中文摘要：
 
 
 代码链接：摘要中未找到代码链接。
 
-论文链接：[阅读更多](http://arxiv.org/abs/2502.17843v1)
+论文链接：[阅读更多](http://arxiv.org/abs/2503.02348v1)
 
 ---
 
 
-## Experimental validation of UAV search and detection system in real wilderness environment / 
+## Evaluating Stenosis Detection with Grounding DINO, YOLO, and DINO\-DETR / 
 
-发布日期：2025-02-24
+发布日期：2025-03-03
 
-作者：Stella Dumenčić
+作者：Muhammad Musab Ansari
 
-摘要：Search and rescue \(SAR\) missions require reliable search methods to locate survivors, especially in challenging or inaccessible environments. This is why introducing unmanned aerial vehicles \(UAVs\) can be of great help to enhance the efficiency of SAR missions while simultaneously increasing the safety of everyone involved in the mission. Motivated by this, we design and experiment with autonomous UAV search for humans in a Mediterranean karst environment. The UAVs are directed using Heat equation\-driven area coverage \(HEDAC\) ergodic control method according to known probability density and detection function. The implemented sensing framework consists of a probabilistic search model, motion control system, and computer vision object detection. It enables calculation of the probability of the target being detected in the SAR mission, and this paper focuses on experimental validation of proposed probabilistic framework and UAV control. The uniform probability density to ensure the even probability of finding the targets in the desired search area is achieved by assigning suitably thought\-out tasks to 78 volunteers. The detection model is based on YOLO and trained with a previously collected ortho\-photo image database. The experimental search is carefully planned and conducted, while as many parameters as possible are recorded. The thorough analysis consists of the motion control system, object detection, and the search validation. The assessment of the detection and search performance provides strong indication that the designed detection model in the UAV control algorithm is aligned with real\-world results.
+摘要：Detecting stenosis in coronary angiography is vital for diagnosing and managing cardiovascular diseases. This study evaluates the performance of state\-of\-the\-art object detection models on the ARCADE dataset using the MMDetection framework. The models are assessed using COCO evaluation metrics, including Intersection over Union \(IoU\), Average Precision \(AP\), and Average Recall \(AR\). Results indicate variations in detection accuracy across different models, attributed to differences in algorithmic design, transformer\-based vs. convolutional architectures. Additionally, several challenges were encountered during implementation, such as compatibility issues between PyTorch, CUDA, and MMDetection, as well as dataset inconsistencies in ARCADE. The findings provide insights into model selection for stenosis detection and highlight areas for further improvement in deep learning\-based coronary artery disease diagnosis.
 
 中文摘要：
 
 
 代码链接：摘要中未找到代码链接。
 
-论文链接：[阅读更多](http://arxiv.org/abs/2502.17372v1)
+论文链接：[阅读更多](http://arxiv.org/abs/2503.01601v1)
 
 ---
 
 
-## Efficient Semantic\-aware Encryption for Secure Communications in Intelligent Connected Vehicles / 
+## Rapid morphology characterization of two\-dimensional TMDs and lateral heterostructures based on deep learning / 
 
-发布日期：2025-02-23
+发布日期：2025-03-01
 
-作者：Bizhu Wang
+作者：Junqi He
 
-摘要：Semantic communication \(SemCom\) significantly improves inter\-vehicle interactions in intelligent connected vehicles \(ICVs\) within limited wireless spectrum. However, the open nature of wireless communications introduces eavesdropping risks. To mitigate this, we propose the Efficient Semantic\-aware Encryption \(ESAE\) mechanism, integrating cryptography into SemCom to secure semantic transmission without complex key management. ESAE leverages semantic reciprocity between source and reconstructed information from past communications to independently generate session keys at both ends, reducing key transmission costs and associated security risks. Additionally, ESAE introduces a semantic\-aware key pre\-processing method \(SA\-KP\) using the YOLO\-v10 model to extract consistent semantics from bit\-level diverse yet semantically identical content, ensuring key consistency. Experimental results validate ESAE's effectiveness and feasibility under various wireless conditions, with key performance factors discussed.
+摘要：Two\-dimensional \(2D\) materials and heterostructures exhibit unique physical properties, necessitating efficient and accurate characterization methods. Leveraging advancements in artificial intelligence, we introduce a deep learning\-based method for efficiently characterizing heterostructures and 2D materials, specifically MoS2\-MoSe2 lateral heterostructures and MoS2 flakes with varying shapes and thicknesses. By utilizing YOLO models, we achieve an accuracy rate of over 94.67% in identifying these materials. Additionally, we explore the application of transfer learning across different materials, which further enhances model performance. This model exhibits robust generalization and anti\-interference ability, ensuring reliable results in diverse scenarios. To facilitate practical use, we have developed an application that enables real\-time analysis directly from optical microscope images, making the process significantly faster and more cost\-effective than traditional methods. This deep learning\-driven approach represents a promising tool for the rapid and accurate characterization of 2D materials, opening new avenues for research and development in material science.
 
 中文摘要：
 
 
 代码链接：摘要中未找到代码链接。
 
-论文链接：[阅读更多](http://arxiv.org/abs/2502.16400v1)
+论文链接：[阅读更多](http://arxiv.org/abs/2503.00470v1)
 
 ---
 
 
-## Soybean pod and seed counting in both outdoor fields and indoor laboratories using unions of deep neural networks / 
+## Improved YOLOv12 with LLM\-Generated Synthetic Data for Enhanced Apple Detection and Benchmarking Against YOLOv11 and YOLOv10 / 
 
-发布日期：2025-02-21
+发布日期：2025-02-26
 
-作者：Tianyou Jiang
+作者：Ranjan Sapkota
 
-摘要：Automatic counting soybean pods and seeds in outdoor fields allows for rapid yield estimation before harvesting, while indoor laboratory counting offers greater accuracy. Both methods can significantly accelerate the breeding process. However, it remains challenging for accurately counting pods and seeds in outdoor fields, and there are still no accurate enough tools for counting pods and seeds in laboratories. In this study, we developed efficient deep learning models for counting soybean pods and seeds in both outdoor fields and indoor laboratories. For outdoor fields, annotating not only visible seeds but also occluded seeds makes YOLO have the ability to estimate the number of soybean seeds that are occluded. Moreover, we enhanced YOLO architecture by integrating it with HQ\-SAM \(YOLO\-SAM\), and domain adaptation techniques \(YOLO\-DA\), to improve model robustness and generalization across soybean images taken in outdoor fields. Testing on soybean images from the outdoor field, we achieved a mean absolute error \(MAE\) of 6.13 for pod counting and 10.05 for seed counting. For the indoor setting, we utilized Mask\-RCNN supplemented with a Swin Transformer module \(Mask\-RCNN\-Swin\), models were trained exclusively on synthetic training images generated from a small set of labeled data. This approach resulted in near\-perfect accuracy, with an MAE of 1.07 for pod counting and 1.33 for seed counting across actual laboratory images from two distinct studies.
+摘要：This study evaluated the performance of the YOLOv12 object detection model, and compared against YOLOv11 and YOLOv10 for apple detection in commercial orchards using synthetic images generated by Large Language Models \(LLMs\). The YOLOv12n configuration excelled, achieving the highest precision at 0.916, the highest recall at 0.969, and the highest mean Average Precision \(mAP@50\) at 0.978. In comparison, the YOLOv11 series was led by YOLO11x, which recorded the highest precision at 0.857, recall at 0.85, and mAP@50 at 0.91. For the YOLOv10 series, YOLOv10b and YOLOv10l tied for the highest precision at 0.85, with YOLOv10n achieving the highest recall at 0.8 and mAP@50 at 0.89. The study also highlighted efficiency in processing speeds, where YOLOv11n reported the lowest inference time at 4.7 ms, compared to YOLOv12n's 5.6 ms and YOLOv10n's 5.9 ms. Although YOLOv12 is new in more accurate than YOLOv11, and YOLOv10, the YOLO11n still stays the fastest YOLO algorithm among YOLOv10, YOLOv11 and YOLOv12. These findings demonstrated that YOLOv12, when trained on high\-quality LLM\-generated datasets, not only surpassed its predecessors in key performance metrics but also offered a cost\-effective solution by reducing the need for extensive manual data collection in the field.
 
 中文摘要：
 
 
 代码链接：摘要中未找到代码链接。
 
-论文链接：[阅读更多](http://arxiv.org/abs/2502.15286v1)
+论文链接：[阅读更多](http://arxiv.org/abs/2503.00057v1)
 
 ---
 
 
-## ODVerse33: Is the New YOLO Version Always Better? A Multi Domain benchmark from YOLO v5 to v11 / 
+## Advanced YOLO\-based Real\-time Power Line Detection for Vegetation Management / 
 
-发布日期：2025-02-20
+发布日期：2025-02-26
 
-作者：Tianyou Jiang
+作者：Shuaiang Rong
 
-摘要：You Look Only Once \(YOLO\) models have been widely used for building real\-time object detectors across various domains. With the increasing frequency of new YOLO versions being released, key questions arise. Are the newer versions always better than their previous versions? What are the core innovations in each YOLO version and how do these changes translate into real\-world performance gains? In this paper, we summarize the key innovations from YOLOv1 to YOLOv11, introduce a comprehensive benchmark called ODverse33, which includes 33 datasets spanning 11 diverse domains \(Autonomous driving, Agricultural, Underwater, Medical, Videogame, Industrial, Aerial, Wildlife, Retail, Microscopic, and Security\), and explore the practical impact of model improvements in real\-world, multi\-domain applications through extensive experimental results. We hope this study can provide some guidance to the extensive users of object detection models and give some references for future real\-time object detector development.
+摘要：Power line infrastructure is a key component of the power system, and it is rapidly expanding to meet growing energy demands. Vegetation encroachment is a significant threat to the safe operation of power lines, requiring reliable and timely management to enhance the resilience and reliability of the power network. Integrating smart grid technology, especially Unmanned Aerial Vehicles \(UAVs\), provides substantial potential to revolutionize the management of extensive power line networks with advanced imaging techniques. However, processing the vast quantity of images captured by UAV patrols remains a significant challenge. This paper introduces an intelligent real\-time monitoring framework for detecting power lines and adjacent vegetation. It is developed based on the deep\-learning Convolutional Neural Network \(CNN\), You Only Look Once \(YOLO\), renowned for its high\-speed object detection capabilities. Unlike existing deep learning\-based methods, this framework enhances accuracy by integrating YOLOv8 with directional filters. They can extract directional features and textures of power lines and their vicinity, generating Oriented Bounding Boxes \(OBB\) for more precise localization. Additionally, a post\-processing algorithm is developed to create a vegetation encroachment metric for power lines, allowing for a quantitative assessment of the surrounding vegetation distribution. The effectiveness of the proposed framework is demonstrated using a widely used power line dataset.
 
 中文摘要：
 
 
 代码链接：摘要中未找到代码链接。
 
-论文链接：[阅读更多](http://arxiv.org/abs/2502.14314v1)
+论文链接：[阅读更多](http://arxiv.org/abs/2503.00044v1)
 
 ---
 
