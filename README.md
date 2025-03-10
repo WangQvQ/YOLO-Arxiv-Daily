@@ -1,6 +1,24 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Fine\-Tuning Florence2 for Enhanced Object Detection in Un\-constructed Environments: Vision\-Language Model Approach / 
+
+发布日期：2025-03-06
+
+作者：Soumyadeep Ro
+
+摘要：Artificial intelligence has progressed through the development of Vision\-Language Models \(VLMs\), which integrate text and visual inputs to achieve comprehensive understanding and interaction in various contexts. Enhancing the performance of these models such as the transformer based Florence 2 on specialized tasks like object detection in complex and unstructured environments requires fine\-tuning. The goal of this paper is to improve the efficiency of the Florence 2 model in challenging environments by finetuning it. We accomplished this by experimenting with different configurations, using various GPU types \(T4, L4, A100\) and optimizers such as AdamW and SGD. We also employed a range of learning rates and LoRA \(Low Rank Adaptation\) settings. Analyzing the performance metrics, such as Mean Average Precision \(mAP\) scores,reveals that the finetuned Florence 2 models performed comparably to YOLO models, including YOLOv8, YOLOv9, and YOLOv10. This demonstrates how transformer based VLMs can be adapted for detailed object detection tasks. The paper emphasizes the capability of optimized transformer based VLMs to address specific challenges in object detection within unstructured environments, opening up promising avenues for practical applications in demanding and complex settings.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2503.04918v1)
+
+---
+
+
 ## DEAL\-YOLO: Drone\-based Efficient Animal Localization using YOLO / 
 
 发布日期：2025-03-06
@@ -69,24 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2503.04139v1)
-
----
-
-
-## YOLO\-PRO: Enhancing Instance\-Specific Object Detection with Full\-Channel Global Self\-Attention / 
-
-发布日期：2025-03-04
-
-作者：Lin Huang
-
-摘要：This paper addresses the inherent limitations of conventional bottleneck structures \(diminished instance discriminability due to overemphasis on batch statistics\) and decoupled heads \(computational redundancy\) in object detection frameworks by proposing two novel modules: the Instance\-Specific Bottleneck with full\-channel global self\-attention \(ISB\) and the Instance\-Specific Asymmetric Decoupled Head \(ISADH\). The ISB module innovatively reconstructs feature maps to establish an efficient full\-channel global attention mechanism through synergistic fusion of batch\-statistical and instance\-specific features. Complementing this, the ISADH module pioneers an asymmetric decoupled architecture enabling hierarchical multi\-dimensional feature integration via dual\-stream batch\-instance representation fusion. Extensive experiments on the MS\-COCO benchmark demonstrate that the coordinated deployment of ISB and ISADH in the YOLO\-PRO framework achieves state\-of\-the\-art performance across all computational scales. Specifically, YOLO\-PRO surpasses YOLOv8 by 1.0\-1.6% AP \(N/S/M/L/X scales\) and outperforms YOLO11 by 0.1\-0.5% AP in critical M/L/X groups, while maintaining competitive computational efficiency. This work provides practical insights for developing high\-precision detectors deployable on edge devices.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2503.02348v1)
 
 ---
 
