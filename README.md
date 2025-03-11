@@ -1,6 +1,78 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## YOLOE: Real\-Time Seeing Anything / 
+
+发布日期：2025-03-10
+
+作者：Ao Wang
+
+摘要：Object detection and segmentation are widely employed in computer vision applications, yet conventional models like YOLO series, while efficient and accurate, are limited by predefined categories, hindering adaptability in open scenarios. Recent open\-set methods leverage text prompts, visual cues, or prompt\-free paradigm to overcome this, but often compromise between performance and efficiency due to high computational demands or deployment complexity. In this work, we introduce YOLOE, which integrates detection and segmentation across diverse open prompt mechanisms within a single highly efficient model, achieving real\-time seeing anything. For text prompts, we propose Re\-parameterizable Region\-Text Alignment \(RepRTA\) strategy. It refines pretrained textual embeddings via a re\-parameterizable lightweight auxiliary network and enhances visual\-textual alignment with zero inference and transferring overhead. For visual prompts, we present Semantic\-Activated Visual Prompt Encoder \(SAVPE\). It employs decoupled semantic and activation branches to bring improved visual embedding and accuracy with minimal complexity. For prompt\-free scenario, we introduce Lazy Region\-Prompt Contrast \(LRPC\) strategy. It utilizes a built\-in large vocabulary and specialized embedding to identify all objects, avoiding costly language model dependency. Extensive experiments show YOLOE's exceptional zero\-shot performance and transferability with high inference efficiency and low training cost. Notably, on LVIS, with 3$times$ less training cost and 1.4$times$ inference speedup, YOLOE\-v8\-S surpasses YOLO\-Worldv2\-S by 3.5 AP. When transferring to COCO, YOLOE\-v8\-L achieves 0.6 AP$^b$ and 0.4 AP$^m$ gains over closed\-set YOLOv8\-L with nearly 4$times$ less training time. Code and models are available at https://github.com/THU\-MIG/yoloe.
+
+中文摘要：
+
+
+代码链接：https://github.com/THU-MIG/yoloe.
+
+论文链接：[阅读更多](http://arxiv.org/abs/2503.07465v1)
+
+---
+
+
+## HGO\-YOLO: Advancing Anomaly Behavior Detection with Hierarchical Features and Lightweight Optimized Detection / 
+
+发布日期：2025-03-10
+
+作者：Qizhi Zheng
+
+摘要：Accurate and real\-time object detection is crucial for anomaly behavior detection, especially in scenarios constrained by hardware limitations, where balancing accuracy and speed is essential for enhancing detection performance. This study proposes a model called HGO\-YOLO, which integrates the HGNetv2 architecture into YOLOv8. This combination expands the receptive field and captures a wider range of features while simplifying model complexity through GhostConv. We introduced a lightweight detection head, OptiConvDetect, which utilizes parameter sharing to construct the detection head effectively. Evaluation results show that the proposed algorithm achieves a mAP@0.5 of 87.4% and a recall rate of 81.1%, with a model size of only 4.6 MB and a frame rate of 56 FPS on the CPU. HGO\-YOLO not only improves accuracy by 3.0% but also reduces computational load by 51.69% \(from 8.9 GFLOPs to 4.3 GFLOPs\), while increasing the frame rate by a factor of 1.7. Additionally, real\-time tests were conducted on Raspberry Pi4 and NVIDIA platforms. These results indicate that the HGO\-YOLO model demonstrates superior performance in anomaly behavior detection.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2503.07371v1)
+
+---
+
+
+## Mitigating Hallucinations in YOLO\-based Object Detection Models: A Revisit to Out\-of\-Distribution Detection / 
+
+发布日期：2025-03-10
+
+作者：Weicheng He
+
+摘要：Object detection systems must reliably perceive objects of interest without being overly confident to ensure safe decision\-making in dynamic environments. Filtering techniques based on out\-of\-distribution \(OoD\) detection are commonly added as an extra safeguard to filter hallucinations caused by overconfidence in novel objects. Nevertheless, evaluating YOLO\-family detectors and their filters under existing OoD benchmarks often leads to unsatisfactory performance. This paper studies the underlying reasons for performance bottlenecks and proposes a methodology to improve performance fundamentally. Our first contribution is a calibration of all existing evaluation results: Although images in existing OoD benchmark datasets are claimed not to have objects within in\-distribution \(ID\) classes \(i.e., categories defined in the training dataset\), around 13% of objects detected by the object detector are actually ID objects. Dually, the ID dataset containing OoD objects can also negatively impact the decision boundary of filters. These ultimately lead to a significantly imprecise performance estimation. Our second contribution is to consider the task of hallucination reduction as a joint pipeline of detectors and filters. By developing a methodology to carefully synthesize an OoD dataset that semantically resembles the objects to be detected, and using the crafted OoD dataset in the fine\-tuning of YOLO detectors to suppress the objectness score, we achieve a 88% reduction in overall hallucination error with a combined fine\-tuned detection and filtering system on the self\-driving benchmark BDD\-100K. Our code and dataset are available at: https://gricad\-gitlab.univ\-grenoble\-alpes.fr/dnn\-safety/m\-hood.
+
+中文摘要：
+
+
+代码链接：https://gricad-gitlab.univ-grenoble-alpes.fr/dnn-safety/m-hood.
+
+论文链接：[阅读更多](http://arxiv.org/abs/2503.07330v1)
+
+---
+
+
+## OpenRSD: Towards Open\-prompts for Object Detection in Remote Sensing Images / 
+
+发布日期：2025-03-08
+
+作者：Ziyue Huang
+
+摘要：Remote sensing object detection has made significant progress, but most studies still focus on closed\-set detection, limiting generalization across diverse datasets. Open\-vocabulary object detection \(OVD\) provides a solution by leveraging multimodal associations between text prompts and visual features. However, existing OVD methods for remote sensing \(RS\) images are constrained by small\-scale datasets and fail to address the unique challenges of remote sensing interpretation, include oriented object detection and the need for both high precision and real\-time performance in diverse scenarios. To tackle these challenges, we propose OpenRSD, a universal open\-prompt RS object detection framework. OpenRSD supports multimodal prompts and integrates multi\-task detection heads to balance accuracy and real\-time requirements. Additionally, we design a multi\-stage training pipeline to enhance the generalization of model. Evaluated on seven public datasets, OpenRSD demonstrates superior performance in oriented and horizontal bounding box detection, with real\-time inference capabilities suitable for large\-scale RS image analysis. Compared to YOLO\-World, OpenRSD exhibits an 8.7% higher average precision and achieves an inference speed of 20.8 FPS. Codes and models will be released.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2503.06146v1)
+
+---
+
+
 ## Fine\-Tuning Florence2 for Enhanced Object Detection in Un\-constructed Environments: Vision\-Language Model Approach / 
 
 发布日期：2025-03-06
@@ -15,78 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2503.04918v1)
-
----
-
-
-## DEAL\-YOLO: Drone\-based Efficient Animal Localization using YOLO / 
-
-发布日期：2025-03-06
-
-作者：Aditya Prashant Naidu
-
-摘要：Although advances in deep learning and aerial surveillance technology are improving wildlife conservation efforts, complex and erratic environmental conditions still pose a problem, requiring innovative solutions for cost\-effective small animal detection. This work introduces DEAL\-YOLO, a novel approach that improves small object detection in Unmanned Aerial Vehicle \(UAV\) images by using multi\-objective loss functions like Wise IoU \(WIoU\) and Normalized Wasserstein Distance \(NWD\), which prioritize pixels near the centre of the bounding box, ensuring smoother localization and reducing abrupt deviations. Additionally, the model is optimized through efficient feature extraction with Linear Deformable \(LD\) convolutions, enhancing accuracy while maintaining computational efficiency. The Scaled Sequence Feature Fusion \(SSFF\) module enhances object detection by effectively capturing inter\-scale relationships, improving feature representation, and boosting metrics through optimized multiscale fusion. Comparison with baseline models reveals high efficacy with up to 69.5% fewer parameters compared to vanilla Yolov8\-N, highlighting the robustness of the proposed modifications. Through this approach, our paper aims to facilitate the detection of endangered species, animal population analysis, habitat monitoring, biodiversity research, and various other applications that enrich wildlife conservation efforts. DEAL\-YOLO employs a two\-stage inference paradigm for object detection, refining selected regions to improve localization and confidence. This approach enhances performance, especially for small instances with low objectness scores.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2503.04698v1)
-
----
-
-
-## Teach YOLO to Remember: A Self\-Distillation Approach for Continual Object Detection / 
-
-发布日期：2025-03-06
-
-作者：Riccardo De Monte
-
-摘要：Real\-time object detectors like YOLO achieve exceptional performance when trained on large datasets for multiple epochs. However, in real\-world scenarios where data arrives incrementally, neural networks suffer from catastrophic forgetting, leading to a loss of previously learned knowledge. To address this, prior research has explored strategies for Class Incremental Learning \(CIL\) in Continual Learning for Object Detection \(CLOD\), with most approaches focusing on two\-stage object detectors. However, existing work suggests that Learning without Forgetting \(LwF\) may be ineffective for one\-stage anchor\-free detectors like YOLO due to noisy regression outputs, which risk transferring corrupted knowledge. In this work, we introduce YOLO LwF, a self\-distillation approach tailored for YOLO\-based continual object detection. We demonstrate that when coupled with a replay memory, YOLO LwF significantly mitigates forgetting. Compared to previous approaches, it achieves state\-of\-the\-art performance, improving mAP by \+2.1% and \+2.9% on the VOC and COCO benchmarks, respectively.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2503.04688v1)
-
----
-
-
-## A lightweight model FDM\-YOLO for small target improvement based on YOLOv8 / 
-
-发布日期：2025-03-06
-
-作者：Xuerui Zhang
-
-摘要：Small targets are particularly difficult to detect due to their low pixel count, complex backgrounds, and varying shooting angles, which make it hard for models to extract effective features. While some large\-scale models offer high accuracy, their long inference times make them unsuitable for real\-time deployment on edge devices. On the other hand, models designed for low computational power often suffer from poor detection accuracy. This paper focuses on small target detection and explores methods for object detection under low computational constraints. Building on the YOLOv8 model, we propose a new network architecture called FDM\-YOLO. Our research includes the following key contributions: We introduce FDM\-YOLO by analyzing the output of the YOLOv8 detection head. We add a highresolution layer and remove the large target detection layer to better handle small targets. Based on PConv, we propose a lightweight network structure called Fast\-C2f, which is integrated into the PAN module of the model. To mitigate the accuracy loss caused by model lightweighting, we employ dynamic upsampling \(Dysample\) and a lightweight EMA attention mechanism.The FDM\-YOLO model was validated on the Visdrone dataset, achieving a 38% reduction in parameter count and improving the Map0.5 score from 38.4% to 42.5%, all while maintaining nearly the same inference speed. This demonstrates the effectiveness of our approach in balancing accuracy and efficiency for edge device deployment.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2503.04452v1)
-
----
-
-
-## Robust Computer\-Vision based Construction Site Detection for Assistive\-Technology Applications / 
-
-发布日期：2025-03-06
-
-作者：Junchi Feng
-
-摘要：Navigating urban environments poses significant challenges for people with disabilities, particularly those with blindness and low vision. Environments with dynamic and unpredictable elements like construction sites are especially challenging. Construction sites introduce hazards like uneven surfaces, obstructive barriers, hazardous materials, and excessive noise, and they can alter routing, complicating safe mobility. Existing assistive technologies are limited, as navigation apps do not account for construction sites during trip planning, and detection tools that attempt hazard recognition struggle to address the extreme variability of construction paraphernalia. This study introduces a novel computer vision\-based system that integrates open\-vocabulary object detection, a YOLO\-based scaffolding\-pole detection model, and an optical character recognition \(OCR\) module to comprehensively identify and interpret construction site elements for assistive navigation. In static testing across seven construction sites, the system achieved an overall accuracy of 88.56%, reliably detecting objects from 2m to 10m within a 0$^circ$ \-\- 75$^circ$ angular offset. At closer distances \(2\-\-4m\), the detection rate was 100% at all tested angles. At
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2503.04139v1)
 
 ---
 
