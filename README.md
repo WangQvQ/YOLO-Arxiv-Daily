@@ -1,6 +1,24 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Object detection characteristics in a learning factory environment using YOLOv8 / 
+
+发布日期：2025-03-13
+
+作者：Toni Schneidereit
+
+摘要：AI\-based object detection, and efforts to explain and investigate their characteristics, is a topic of high interest. The impact of, e.g., complex background structures with similar appearances as the objects of interest, on the detection accuracy and, beforehand, the necessary dataset composition are topics of ongoing research. In this paper, we present a systematic investigation of background influences and different features of the object to be detected. The latter includes various materials and surfaces, partially transparent and with shiny reflections in the context of an Industry 4.0 learning factory. Different YOLOv8 models have been trained for each of the materials on different sized datasets, where the appearance was the only changing parameter. In the end, similar characteristics tend to show different behaviours and sometimes unexpected results. While some background components tend to be detected, others with the same features are not part of the detection. Additionally, some more precise conclusions can be drawn from the results. Therefore, we contribute a challenging dataset with detailed investigations on 92 trained YOLO models, addressing some issues on the detection accuracy and possible overfitting.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2503.10356v1)
+
+---
+
+
 ## YOLOE: Real\-Time Seeing Anything / 
 
 发布日期：2025-03-10
@@ -69,24 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2503.06146v1)
-
----
-
-
-## Fine\-Tuning Florence2 for Enhanced Object Detection in Un\-constructed Environments: Vision\-Language Model Approach / 
-
-发布日期：2025-03-06
-
-作者：Soumyadeep Ro
-
-摘要：Artificial intelligence has progressed through the development of Vision\-Language Models \(VLMs\), which integrate text and visual inputs to achieve comprehensive understanding and interaction in various contexts. Enhancing the performance of these models such as the transformer based Florence 2 on specialized tasks like object detection in complex and unstructured environments requires fine\-tuning. The goal of this paper is to improve the efficiency of the Florence 2 model in challenging environments by finetuning it. We accomplished this by experimenting with different configurations, using various GPU types \(T4, L4, A100\) and optimizers such as AdamW and SGD. We also employed a range of learning rates and LoRA \(Low Rank Adaptation\) settings. Analyzing the performance metrics, such as Mean Average Precision \(mAP\) scores,reveals that the finetuned Florence 2 models performed comparably to YOLO models, including YOLOv8, YOLOv9, and YOLOv10. This demonstrates how transformer based VLMs can be adapted for detailed object detection tasks. The paper emphasizes the capability of optimized transformer based VLMs to address specific challenges in object detection within unstructured environments, opening up promising avenues for practical applications in demanding and complex settings.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2503.04918v1)
 
 ---
 
