@@ -1,6 +1,24 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Comparative Analysis of Advanced AI\-based Object Detection Models for Pavement Marking Quality Assessment during Daytime / 
+
+发布日期：2025-03-14
+
+作者：Gian Antariksa
+
+摘要：Visual object detection utilizing deep learning plays a vital role in computer vision and has extensive applications in transportation engineering. This paper focuses on detecting pavement marking quality during daytime using the You Only Look Once \(YOLO\) model, leveraging its advanced architectural features to enhance road safety through precise and real\-time assessments. Utilizing image data from New Jersey, this study employed three YOLOv8 variants: YOLOv8m, YOLOv8n, and YOLOv8x. The models were evaluated based on their prediction accuracy for classifying pavement markings into good, moderate, and poor visibility categories. The results demonstrated that YOLOv8n provides the best balance between accuracy and computational efficiency, achieving the highest mean Average Precision \(mAP\) for objects with good visibility and demonstrating robust performance across various Intersections over Union \(IoU\) thresholds. This research enhances transportation safety by offering an automated and accurate method for evaluating the quality of pavement markings.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2503.11008v1)
+
+---
+
+
 ## Object detection characteristics in a learning factory environment using YOLOv8 / 
 
 发布日期：2025-03-13
@@ -69,24 +87,6 @@
 代码链接：https://gricad-gitlab.univ-grenoble-alpes.fr/dnn-safety/m-hood.
 
 论文链接：[阅读更多](http://arxiv.org/abs/2503.07330v1)
-
----
-
-
-## OpenRSD: Towards Open\-prompts for Object Detection in Remote Sensing Images / 
-
-发布日期：2025-03-08
-
-作者：Ziyue Huang
-
-摘要：Remote sensing object detection has made significant progress, but most studies still focus on closed\-set detection, limiting generalization across diverse datasets. Open\-vocabulary object detection \(OVD\) provides a solution by leveraging multimodal associations between text prompts and visual features. However, existing OVD methods for remote sensing \(RS\) images are constrained by small\-scale datasets and fail to address the unique challenges of remote sensing interpretation, include oriented object detection and the need for both high precision and real\-time performance in diverse scenarios. To tackle these challenges, we propose OpenRSD, a universal open\-prompt RS object detection framework. OpenRSD supports multimodal prompts and integrates multi\-task detection heads to balance accuracy and real\-time requirements. Additionally, we design a multi\-stage training pipeline to enhance the generalization of model. Evaluated on seven public datasets, OpenRSD demonstrates superior performance in oriented and horizontal bounding box detection, with real\-time inference capabilities suitable for large\-scale RS image analysis. Compared to YOLO\-World, OpenRSD exhibits an 8.7% higher average precision and achieves an inference speed of 20.8 FPS. Codes and models will be released.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2503.06146v1)
 
 ---
 
