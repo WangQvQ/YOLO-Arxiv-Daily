@@ -1,6 +1,42 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## YOLO\-LLTS: Real\-Time Low\-Light Traffic Sign Detection via Prior\-Guided Enhancement and Multi\-Branch Feature Interaction / 
+
+发布日期：2025-03-18
+
+作者：Ziyu Lin
+
+摘要：Detecting traffic signs effectively under low\-light conditions remains a significant challenge. To address this issue, we propose YOLO\-LLTS, an end\-to\-end real\-time traffic sign detection algorithm specifically designed for low\-light environments. Firstly, we introduce the High\-Resolution Feature Map for Small Object Detection \(HRFM\-TOD\) module to address indistinct small\-object features in low\-light scenarios. By leveraging high\-resolution feature maps, HRFM\-TOD effectively mitigates the feature dilution problem encountered in conventional PANet frameworks, thereby enhancing both detection accuracy and inference speed. Secondly, we develop the Multi\-branch Feature Interaction Attention \(MFIA\) module, which facilitates deep feature interaction across multiple receptive fields in both channel and spatial dimensions, significantly improving the model's information extraction capabilities. Finally, we propose the Prior\-Guided Enhancement Module \(PGFE\) to tackle common image quality challenges in low\-light environments, such as noise, low contrast, and blurriness. This module employs prior knowledge to enrich image details and enhance visibility, substantially boosting detection performance. To support this research, we construct a novel dataset, the Chinese Nighttime Traffic Sign Sample Set \(CNTSSS\), covering diverse nighttime scenarios, including urban, highway, and rural environments under varying weather conditions. Experimental evaluations demonstrate that YOLO\-LLTS achieves state\-of\-the\-art performance, outperforming the previous best methods by 2.7% mAP50 and 1.6% mAP50:95 on TT100K\-night, 1.3% mAP50 and 1.9% mAP50:95 on CNTSSS, and achieving superior results on the CCTSDB2021 dataset. Moreover, deployment experiments on edge devices confirm the real\-time applicability and effectiveness of our proposed approach.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2503.13883v1)
+
+---
+
+
+## 8\-Calves Image dataset / 
+
+发布日期：2025-03-17
+
+作者：Xuyang Fang
+
+摘要：We introduce the 8\-Calves dataset, a benchmark for evaluating object detection and identity classification in occlusion\-rich, temporally consistent environments. The dataset comprises a 1\-hour video \(67,760 frames\) of eight Holstein Friesian calves in a barn, with ground truth bounding boxes and identities, alongside 900 static frames for detection tasks. Each calf exhibits a unique coat pattern, enabling precise identity distinction.   For cow detection, we fine\-tuned 28 models \(25 YOLO variants, 3 transformers\) on 600 frames, testing on the full video. Results reveal smaller YOLO models \(e.g., YOLOV9c\) outperform larger counterparts despite potential bias from a YOLOv8m\-based labeling pipeline. For identity classification, embeddings from 23 pretrained vision models \(ResNet, ConvNextV2, ViTs\) were evaluated via linear classifiers and KNN. Modern architectures like ConvNextV2 excelled, while larger models frequently overfit, highlighting inefficiencies in scaling.   Key findings include: \(1\) Minimal, targeted augmentations \(e.g., rotation\) outperform complex strategies on simpler datasets; \(2\) Pretraining strategies \(e.g., BEiT, DinoV2\) significantly boost identity recognition; \(3\) Temporal continuity and natural motion patterns offer unique challenges absent in synthetic or domain\-specific benchmarks. The dataset's controlled design and extended sequences \(1 hour vs. prior 10\-minute benchmarks\) make it a pragmatic tool for stress\-testing occlusion handling, temporal consistency, and efficiency.   The link to the dataset is https://github.com/tonyFang04/8\-calves.
+
+中文摘要：
+
+
+代码链接：https://github.com/tonyFang04/8-calves.
+
+论文链接：[阅读更多](http://arxiv.org/abs/2503.13777v1)
+
+---
+
+
 ## Comparative Analysis of Advanced AI\-based Object Detection Models for Pavement Marking Quality Assessment during Daytime / 
 
 发布日期：2025-03-14
@@ -51,42 +87,6 @@
 代码链接：https://github.com/THU-MIG/yoloe.
 
 论文链接：[阅读更多](http://arxiv.org/abs/2503.07465v1)
-
----
-
-
-## HGO\-YOLO: Advancing Anomaly Behavior Detection with Hierarchical Features and Lightweight Optimized Detection / 
-
-发布日期：2025-03-10
-
-作者：Qizhi Zheng
-
-摘要：Accurate and real\-time object detection is crucial for anomaly behavior detection, especially in scenarios constrained by hardware limitations, where balancing accuracy and speed is essential for enhancing detection performance. This study proposes a model called HGO\-YOLO, which integrates the HGNetv2 architecture into YOLOv8. This combination expands the receptive field and captures a wider range of features while simplifying model complexity through GhostConv. We introduced a lightweight detection head, OptiConvDetect, which utilizes parameter sharing to construct the detection head effectively. Evaluation results show that the proposed algorithm achieves a mAP@0.5 of 87.4% and a recall rate of 81.1%, with a model size of only 4.6 MB and a frame rate of 56 FPS on the CPU. HGO\-YOLO not only improves accuracy by 3.0% but also reduces computational load by 51.69% \(from 8.9 GFLOPs to 4.3 GFLOPs\), while increasing the frame rate by a factor of 1.7. Additionally, real\-time tests were conducted on Raspberry Pi4 and NVIDIA platforms. These results indicate that the HGO\-YOLO model demonstrates superior performance in anomaly behavior detection.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2503.07371v1)
-
----
-
-
-## Mitigating Hallucinations in YOLO\-based Object Detection Models: A Revisit to Out\-of\-Distribution Detection / 
-
-发布日期：2025-03-10
-
-作者：Weicheng He
-
-摘要：Object detection systems must reliably perceive objects of interest without being overly confident to ensure safe decision\-making in dynamic environments. Filtering techniques based on out\-of\-distribution \(OoD\) detection are commonly added as an extra safeguard to filter hallucinations caused by overconfidence in novel objects. Nevertheless, evaluating YOLO\-family detectors and their filters under existing OoD benchmarks often leads to unsatisfactory performance. This paper studies the underlying reasons for performance bottlenecks and proposes a methodology to improve performance fundamentally. Our first contribution is a calibration of all existing evaluation results: Although images in existing OoD benchmark datasets are claimed not to have objects within in\-distribution \(ID\) classes \(i.e., categories defined in the training dataset\), around 13% of objects detected by the object detector are actually ID objects. Dually, the ID dataset containing OoD objects can also negatively impact the decision boundary of filters. These ultimately lead to a significantly imprecise performance estimation. Our second contribution is to consider the task of hallucination reduction as a joint pipeline of detectors and filters. By developing a methodology to carefully synthesize an OoD dataset that semantically resembles the objects to be detected, and using the crafted OoD dataset in the fine\-tuning of YOLO detectors to suppress the objectness score, we achieve a 88% reduction in overall hallucination error with a combined fine\-tuned detection and filtering system on the self\-driving benchmark BDD\-100K. Our code and dataset are available at: https://gricad\-gitlab.univ\-grenoble\-alpes.fr/dnn\-safety/m\-hood.
-
-中文摘要：
-
-
-代码链接：https://gricad-gitlab.univ-grenoble-alpes.fr/dnn-safety/m-hood.
-
-论文链接：[阅读更多](http://arxiv.org/abs/2503.07330v1)
 
 ---
 
