@@ -1,6 +1,24 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## UltraFlwr \-\- An Efficient Federated Medical and Surgical Object Detection Framework / 
+
+发布日期：2025-03-19
+
+作者：Yang Li
+
+摘要：Object detection shows promise for medical and surgical applications such as cell counting and tool tracking. However, its faces multiple real\-world edge deployment challenges including limited high\-quality annotated data, data sharing restrictions, and computational constraints. In this work, we introduce UltraFlwr, a framework for federated medical and surgical object detection. By leveraging Federated Learning \(FL\), UltraFlwr enables decentralized model training across multiple sites without sharing raw data. To further enhance UltraFlwr's efficiency, we propose YOLO\-PA, a set of novel Partial Aggregation \(PA\) strategies specifically designed for YOLO models in FL. YOLO\-PA significantly reduces communication overhead by up to 83% per round while maintaining performance comparable to Full Aggregation \(FA\) strategies. Our extensive experiments on BCCD and m2cai16\-tool\-locations datasets demonstrate that YOLO\-PA not only provides better client models compared to client\-wise centralized training and FA strategies, but also facilitates efficient training and deployment across resource\-constrained edge devices. Further, we also establish one of the first benchmarks in federated medical and surgical object detection. This paper advances the feasibility of training and deploying detection models on the edge, making federated object detection more practical for time\-critical and resource\-constrained medical and surgical applications. UltraFlwr is publicly available at https://github.com/KCL\-BMEIS/UltraFlwr.
+
+中文摘要：
+
+
+代码链接：https://github.com/KCL-BMEIS/UltraFlwr.
+
+论文链接：[阅读更多](http://arxiv.org/abs/2503.15161v1)
+
+---
+
+
 ## YOLO\-LLTS: Real\-Time Low\-Light Traffic Sign Detection via Prior\-Guided Enhancement and Multi\-Branch Feature Interaction / 
 
 发布日期：2025-03-18
@@ -69,24 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2503.10356v1)
-
----
-
-
-## YOLOE: Real\-Time Seeing Anything / 
-
-发布日期：2025-03-10
-
-作者：Ao Wang
-
-摘要：Object detection and segmentation are widely employed in computer vision applications, yet conventional models like YOLO series, while efficient and accurate, are limited by predefined categories, hindering adaptability in open scenarios. Recent open\-set methods leverage text prompts, visual cues, or prompt\-free paradigm to overcome this, but often compromise between performance and efficiency due to high computational demands or deployment complexity. In this work, we introduce YOLOE, which integrates detection and segmentation across diverse open prompt mechanisms within a single highly efficient model, achieving real\-time seeing anything. For text prompts, we propose Re\-parameterizable Region\-Text Alignment \(RepRTA\) strategy. It refines pretrained textual embeddings via a re\-parameterizable lightweight auxiliary network and enhances visual\-textual alignment with zero inference and transferring overhead. For visual prompts, we present Semantic\-Activated Visual Prompt Encoder \(SAVPE\). It employs decoupled semantic and activation branches to bring improved visual embedding and accuracy with minimal complexity. For prompt\-free scenario, we introduce Lazy Region\-Prompt Contrast \(LRPC\) strategy. It utilizes a built\-in large vocabulary and specialized embedding to identify all objects, avoiding costly language model dependency. Extensive experiments show YOLOE's exceptional zero\-shot performance and transferability with high inference efficiency and low training cost. Notably, on LVIS, with 3$times$ less training cost and 1.4$times$ inference speedup, YOLOE\-v8\-S surpasses YOLO\-Worldv2\-S by 3.5 AP. When transferring to COCO, YOLOE\-v8\-L achieves 0.6 AP$^b$ and 0.4 AP$^m$ gains over closed\-set YOLOv8\-L with nearly 4$times$ less training time. Code and models are available at https://github.com/THU\-MIG/yoloe.
-
-中文摘要：
-
-
-代码链接：https://github.com/THU-MIG/yoloe.
-
-论文链接：[阅读更多](http://arxiv.org/abs/2503.07465v1)
 
 ---
 
