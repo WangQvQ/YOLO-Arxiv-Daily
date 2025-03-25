@@ -1,6 +1,24 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## You Only Look Once at Anytime \(AnytimeYOLO\): Analysis and Optimization of Early\-Exits for Object\-Detection / 
+
+发布日期：2025-03-21
+
+作者：Daniel Kuhse
+
+摘要：We introduce AnytimeYOLO, a family of variants of the YOLO architecture that enables anytime object detection. Our AnytimeYOLO networks allow for interruptible inference, i.e., they provide a prediction at any point in time, a property desirable for safety\-critical real\-time applications.   We present structured explorations to modify the YOLO architecture, enabling early termination to obtain intermediate results. We focus on providing fine\-grained control through high granularity of available termination points. First, we formalize Anytime Models as a special class of prediction models that offer anytime predictions. Then, we discuss a novel transposed variant of the YOLO architecture, that changes the architecture to enable better early predictions and greater freedom for the order of processing stages. Finally, we propose two optimization algorithms that, given an anytime model, can be used to determine the optimal exit execution order and the optimal subset of early\-exits to select for deployment in low\-resource environments. We evaluate the anytime performance and trade\-offs of design choices, proposing a new anytime quality metric for this purpose. In particular, we also discuss key challenges for anytime inference that currently make its deployment costly.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2503.17497v1)
+
+---
+
+
 ## UltraFlwr \-\- An Efficient Federated Medical and Surgical Object Detection Framework / 
 
 发布日期：2025-03-19
@@ -69,24 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2503.11008v2)
-
----
-
-
-## Object detection characteristics in a learning factory environment using YOLOv8 / 
-
-发布日期：2025-03-13
-
-作者：Toni Schneidereit
-
-摘要：AI\-based object detection, and efforts to explain and investigate their characteristics, is a topic of high interest. The impact of, e.g., complex background structures with similar appearances as the objects of interest, on the detection accuracy and, beforehand, the necessary dataset composition are topics of ongoing research. In this paper, we present a systematic investigation of background influences and different features of the object to be detected. The latter includes various materials and surfaces, partially transparent and with shiny reflections in the context of an Industry 4.0 learning factory. Different YOLOv8 models have been trained for each of the materials on different sized datasets, where the appearance was the only changing parameter. In the end, similar characteristics tend to show different behaviours and sometimes unexpected results. While some background components tend to be detected, others with the same features are not part of the detection. Additionally, some more precise conclusions can be drawn from the results. Therefore, we contribute a challenging dataset with detailed investigations on 92 trained YOLO models, addressing some issues on the detection accuracy and possible overfitting.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2503.10356v1)
 
 ---
 
