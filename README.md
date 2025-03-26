@@ -1,6 +1,24 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## BiblioPage: A Dataset of Scanned Title Pages for Bibliographic Metadata Extraction / 
+
+发布日期：2025-03-25
+
+作者：Jan Kohút
+
+摘要：Manual digitization of bibliographic metadata is time consuming and labor intensive, especially for historical and real\-world archives with highly variable formatting across documents. Despite advances in machine learning, the absence of dedicated datasets for metadata extraction hinders automation. To address this gap, we introduce BiblioPage, a dataset of scanned title pages annotated with structured bibliographic metadata. The dataset consists of approximately 2,000 monograph title pages collected from 14 Czech libraries, spanning a wide range of publication periods, typographic styles, and layout structures. Each title page is annotated with 16 bibliographic attributes, including title, contributors, and publication metadata, along with precise positional information in the form of bounding boxes. To extract structured information from this dataset, we valuated object detection models such as YOLO and DETR combined with transformer\-based OCR, achieving a maximum mAP of 52 and an F1 score of 59. Additionally, we assess the performance of various visual large language models, including LlamA 3.2\-Vision and GPT\-4o, with the best model reaching an F1 score of 67. BiblioPage serves as a real\-world benchmark for bibliographic metadata extraction, contributing to document understanding, document question answering, and document information extraction. Dataset and evaluation scripts are availible at: https://github.com/DCGM/biblio\-dataset
+
+中文摘要：
+
+
+代码链接：https://github.com/DCGM/biblio-dataset
+
+论文链接：[阅读更多](http://arxiv.org/abs/2503.19658v1)
+
+---
+
+
 ## You Only Look Once at Anytime \(AnytimeYOLO\): Analysis and Optimization of Early\-Exits for Object\-Detection / 
 
 发布日期：2025-03-21
@@ -69,24 +87,6 @@
 代码链接：https://github.com/tonyFang04/8-calves.
 
 论文链接：[阅读更多](http://arxiv.org/abs/2503.13777v1)
-
----
-
-
-## Comparative Analysis of Advanced AI\-based Object Detection Models for Pavement Marking Quality Assessment during Daytime / 
-
-发布日期：2025-03-14
-
-作者：Gian Antariksa
-
-摘要：Visual object detection utilizing deep learning plays a vital role in computer vision and has extensive applications in transportation engineering. This paper focuses on detecting pavement marking quality during daytime using the You Only Look Once \(YOLO\) model, leveraging its advanced architectural features to enhance road safety through precise and real\-time assessments. Utilizing image data from New Jersey, this study employed three YOLOv8 variants: YOLOv8m, YOLOv8n, and YOLOv8x. The models were evaluated based on their prediction accuracy for classifying pavement markings into good, moderate, and poor visibility categories. The results demonstrated that YOLOv8n provides the best balance between accuracy and computational efficiency, achieving the highest mean Average Precision \(mAP\) for objects with good visibility and demonstrating robust performance across various Intersections over Union \(IoU\) thresholds. This research enhances transportation safety by offering an automated and accurate method for evaluating the quality of pavement markings.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2503.11008v2)
 
 ---
 
