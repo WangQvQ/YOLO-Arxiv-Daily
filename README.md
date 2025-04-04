@@ -1,6 +1,24 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## LLM\-Guided Evolution: An Autonomous Model Optimization for Object Detection / 
+
+发布日期：2025-04-03
+
+作者：YiMing Yu
+
+摘要：In machine learning, Neural Architecture Search \(NAS\) requires domain knowledge of model design and a large amount of trial\-and\-error to achieve promising performance. Meanwhile, evolutionary algorithms have traditionally relied on fixed rules and pre\-defined building blocks. The Large Language Model \(LLM\)\-Guided Evolution \(GE\) framework transformed this approach by incorporating LLMs to directly modify model source code for image classification algorithms on CIFAR data and intelligently guide mutations and crossovers. A key element of LLM\-GE is the "Evolution of Thought" \(EoT\) technique, which establishes feedback loops, allowing LLMs to refine their decisions iteratively based on how previous operations performed. In this study, we perform NAS for object detection by improving LLM\-GE to modify the architecture of You Only Look Once \(YOLO\) models to enhance performance on the KITTI dataset. Our approach intelligently adjusts the design and settings of YOLO to find the optimal algorithms against objective such as detection accuracy and speed. We show that LLM\-GE produced variants with significant performance improvements, such as an increase in Mean Average Precision from 92.5% to 94.5%. This result highlights the flexibility and effectiveness of LLM\-GE on real\-world challenges, offering a novel paradigm for automated machine learning that combines LLM\-driven reasoning with evolutionary strategies.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2504.02280v1)
+
+---
+
+
 ## A YOLO\-Based Semi\-Automated Labeling Approach to Improve Fault Detection Efficiency in Railroad Videos / 
 
 发布日期：2025-04-01
@@ -69,24 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2503.23178v1)
-
----
-
-
-## AnnoPage Dataset: Dataset of Non\-Textual Elements in Documents with Fine\-Grained Categorization / 
-
-发布日期：2025-03-28
-
-作者：Martin Kišš
-
-摘要：We introduce the AnnoPage Dataset, a novel collection of 7550 pages from historical documents, primarily in Czech and German, spanning from 1485 to the present, focusing on the late 19th and early 20th centuries. The dataset is designed to support research in document layout analysis and object detection. Each page is annotated with axis\-aligned bounding boxes \(AABB\) representing elements of 25 categories of non\-textual elements, such as images, maps, decorative elements, or charts, following the Czech Methodology of image document processing. The annotations were created by expert librarians to ensure accuracy and consistency. The dataset also incorporates pages from multiple, mainly historical, document datasets to enhance variability and maintain continuity. The dataset is divided into development and test subsets, with the test set carefully selected to maintain the category distribution. We provide baseline results using YOLO and DETR object detectors, offering a reference point for future research. The AnnoPage Dataset is publicly available on Zenodo \(https://doi.org/10.5281/zenodo.12788419\), along with ground\-truth annotations in YOLO format.
-
-中文摘要：
-
-
-代码链接：https://doi.org/10.5281/zenodo.12788419),
-
-论文链接：[阅读更多](http://arxiv.org/abs/2503.22526v1)
 
 ---
 
