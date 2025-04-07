@@ -1,6 +1,24 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Real\-Time Roadway Obstacle Detection for Electric Scooters Using Deep Learning and Multi\-Sensor Fusion / 
+
+发布日期：2025-04-04
+
+作者：Zeyang Zheng
+
+摘要：The increasing adoption of electric scooters \(e\-scooters\) in urban areas has coincided with a rise in traffic accidents and injuries, largely due to their small wheels, lack of suspension, and sensitivity to uneven surfaces. While deep learning\-based object detection has been widely used to improve automobile safety, its application for e\-scooter obstacle detection remains unexplored. This study introduces a novel ground obstacle detection system for e\-scooters, integrating an RGB camera, and a depth camera to enhance real\-time road hazard detection. Additionally, the Inertial Measurement Unit \(IMU\) measures linear vertical acceleration to identify surface vibrations, guiding the selection of six obstacle categories: tree branches, manhole covers, potholes, pine cones, non\-directional cracks, and truncated domes. All sensors, including the RGB camera, depth camera, and IMU, are integrated within the Intel RealSense Camera D435i. A deep learning model powered by YOLO detects road hazards and utilizes depth data to estimate obstacle proximity. Evaluated on the seven hours of naturalistic riding dataset, the system achieves a high mean average precision \(mAP\) of 0.827 and demonstrates excellent real\-time performance. This approach provides an effective solution to enhance e\-scooter safety through advanced computer vision and data fusion. The dataset is accessible at https://zenodo.org/records/14583718, and the project code is hosted on https://github.com/Zeyang\-Zheng/Real\-Time\-Roadway\-Obstacle\-Detection\-for\-Electric\-Scooters.
+
+中文摘要：
+
+
+代码链接：https://zenodo.org/records/14583718,，https://github.com/Zeyang-Zheng/Real-Time-Roadway-Obstacle-Detection-for-Electric-Scooters.
+
+论文链接：[阅读更多](http://arxiv.org/abs/2504.03171v1)
+
+---
+
+
 ## LLM\-Guided Evolution: An Autonomous Model Optimization for Object Detection / 
 
 发布日期：2025-04-03
@@ -69,24 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2503.24138v1)
-
----
-
-
-## Intelligent Bear Prevention System Based on Computer Vision: An Approach to Reduce Human\-Bear Conflicts in the Tibetan Plateau Area, China / 
-
-发布日期：2025-03-29
-
-作者：Pengyu Chen
-
-摘要：Conflicts between humans and bears on the Tibetan Plateau present substantial threats to local communities and hinder wildlife preservation initiatives. This research introduces a novel strategy that incorporates computer vision alongside Internet of Things \(IoT\) technologies to alleviate these issues. Tailored specifically for the harsh environment of the Tibetan Plateau, the approach utilizes the K210 development board paired with the YOLO object detection framework along with a tailored bear\-deterrent mechanism, offering minimal energy usage and real\-time efficiency in bear identification and deterrence. The model's performance was evaluated experimentally, achieving a mean Average Precision \(mAP\) of 91.4%, demonstrating excellent precision and dependability. By integrating energy\-efficient components, the proposed system effectively surpasses the challenges of remote and off\-grid environments, ensuring uninterrupted operation in secluded locations. This study provides a viable, eco\-friendly, and expandable solution to mitigate human\-bear conflicts, thereby improving human safety and promoting bear conservation in isolated areas like Yushu, China.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2503.23178v1)
 
 ---
 
