@@ -1,6 +1,42 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## MMLA: Multi\-Environment, Multi\-Species, Low\-Altitude Aerial Footage Dataset / 
+
+发布日期：2025-04-10
+
+作者：Jenna Kline
+
+摘要：Real\-time wildlife detection in drone imagery is critical for numerous applications, including animal ecology, conservation, and biodiversity monitoring. Low\-altitude drone missions are effective for collecting fine\-grained animal movement and behavior data, particularly if missions are automated for increased speed and consistency. However, little work exists on evaluating computer vision models on low\-altitude aerial imagery and generalizability across different species and settings. To fill this gap, we present a novel multi\-environment, multi\-species, low\-altitude aerial footage \(MMLA\) dataset. MMLA consists of drone footage collected across three diverse environments: Ol Pejeta Conservancy and Mpala Research Centre in Kenya, and The Wilds Conservation Center in Ohio, which includes five species: Plains zebras, Grevy's zebras, giraffes, onagers, and African Painted Dogs. We comprehensively evaluate three YOLO models \(YOLOv5m, YOLOv8m, and YOLOv11m\) for detecting animals. Results demonstrate significant performance disparities across locations and species\-specific detection variations. Our work highlights the importance of evaluating detection algorithms across different environments for robust wildlife monitoring applications using drones.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2504.07744v1)
+
+---
+
+
+## Few\-Shot Adaptation of Grounding DINO for Agricultural Domain / 
+
+发布日期：2025-04-09
+
+作者：Rajhans Singh
+
+摘要：Deep learning models are transforming agricultural applications by enabling automated phenotyping, monitoring, and yield estimation. However, their effectiveness heavily depends on large amounts of annotated training data, which can be labor and time intensive. Recent advances in open\-set object detection, particularly with models like Grounding\-DINO, offer a potential solution to detect regions of interests based on text prompt input. Initial zero\-shot experiments revealed challenges in crafting effective text prompts, especially for complex objects like individual leaves and visually similar classes. To address these limitations, we propose an efficient few\-shot adaptation method that simplifies the Grounding\-DINO architecture by removing the text encoder module \(BERT\) and introducing a randomly initialized trainable text embedding. This method achieves superior performance across multiple agricultural datasets, including plant\-weed detection, plant counting, insect identification, fruit counting, and remote sensing tasks. Specifically, it demonstrates up to a $sim24%$ higher mAP than fully fine\-tuned YOLO models on agricultural datasets and outperforms previous state\-of\-the\-art methods by $sim10%$ in remote sensing, under few\-shot learning conditions. Our method offers a promising solution for automating annotation and accelerating the development of specialized agricultural AI solutions.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2504.07252v1)
+
+---
+
+
 ## Real\-Time Roadway Obstacle Detection for Electric Scooters Using Deep Learning and Multi\-Sensor Fusion / 
 
 发布日期：2025-04-04
@@ -51,42 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2504.01010v1)
-
----
-
-
-## SU\-YOLO: Spiking Neural Network for Efficient Underwater Object Detection / 
-
-发布日期：2025-03-31
-
-作者：Chenyang Li
-
-摘要：Underwater object detection is critical for oceanic research and industrial safety inspections. However, the complex optical environment and the limited resources of underwater equipment pose significant challenges to achieving high accuracy and low power consumption. To address these issues, we propose Spiking Underwater YOLO \(SU\-YOLO\), a Spiking Neural Network \(SNN\) model. Leveraging the lightweight and energy\-efficient properties of SNNs, SU\-YOLO incorporates a novel spike\-based underwater image denoising method based solely on integer addition, which enhances the quality of feature maps with minimal computational overhead. In addition, we introduce Separated Batch Normalization \(SeBN\), a technique that normalizes feature maps independently across multiple time steps and is optimized for integration with residual structures to capture the temporal dynamics of SNNs more effectively. The redesigned spiking residual blocks integrate the Cross Stage Partial Network \(CSPNet\) with the YOLO architecture to mitigate spike degradation and enhance the model's feature extraction capabilities. Experimental results on URPC2019 underwater dataset demonstrate that SU\-YOLO achieves mAP of 78.8% with 6.97M parameters and an energy consumption of 2.98 mJ, surpassing mainstream SNN models in both detection accuracy and computational efficiency. These results underscore the potential of SNNs for engineering applications. The code is available in https://github.com/lwxfight/snn\-underwater.
-
-中文摘要：
-
-
-代码链接：https://github.com/lwxfight/snn-underwater.
-
-论文链接：[阅读更多](http://arxiv.org/abs/2503.24389v1)
-
----
-
-
-## AI\-Assisted Colonoscopy: Polyp Detection and Segmentation using Foundation Models / 
-
-发布日期：2025-03-31
-
-作者：Uxue Delaquintana\-Aramendi
-
-摘要：In colonoscopy, 80% of the missed polyps could be detected with the help of Deep Learning models. In the search for algorithms capable of addressing this challenge, foundation models emerge as promising candidates. Their zero\-shot or few\-shot learning capabilities, facilitate generalization to new data or tasks without extensive fine\-tuning. A concept that is particularly advantageous in the medical imaging domain, where large annotated datasets for traditional training are scarce. In this context, a comprehensive evaluation of foundation models for polyp segmentation was conducted, assessing both detection and delimitation. For the study, three different colonoscopy datasets have been employed to compare the performance of five different foundation models, DINOv2, YOLO\-World, GroundingDINO, SAM and MedSAM, against two benchmark networks, YOLOv8 and Mask R\-CNN. Results show that the success of foundation models in polyp characterization is highly dependent on domain specialization. For optimal performance in medical applications, domain\-specific models are essential, and generic models require fine\-tuning to achieve effective results. Through this specialization, foundation models demonstrated superior performance compared to state\-of\-the\-art detection and segmentation models, with some models even excelling in zero\-shot evaluation; outperforming fine\-tuned models on unseen data.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2503.24138v1)
 
 ---
 
