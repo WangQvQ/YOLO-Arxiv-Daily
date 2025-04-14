@@ -1,6 +1,24 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Shadow Erosion and Nighttime Adaptability for Camera\-Based Automated Driving Applications / 
+
+发布日期：2025-04-11
+
+作者：Mohamed Sabry
+
+摘要：Enhancement of images from RGB cameras is of particular interest due to its wide range of ever\-increasing applications such as medical imaging, satellite imaging, automated driving, etc. In autonomous driving, various techniques are used to enhance image quality under challenging lighting conditions. These include artificial augmentation to improve visibility in poor nighttime conditions, illumination\-invariant imaging to reduce the impact of lighting variations, and shadow mitigation to ensure consistent image clarity in bright daylight. This paper proposes a pipeline for Shadow Erosion and Nighttime Adaptability in images for automated driving applications while preserving color and texture details. The Shadow Erosion and Nighttime Adaptability pipeline is compared to the widely used CLAHE technique and evaluated based on illumination uniformity and visual perception quality metrics. The results also demonstrate a significant improvement over CLAHE, enhancing a YOLO\-based drivable area segmentation algorithm.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2504.08551v1)
+
+---
+
+
 ## MMLA: Multi\-Environment, Multi\-Species, Low\-Altitude Aerial Footage Dataset / 
 
 发布日期：2025-04-10
@@ -69,24 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2504.02280v1)
-
----
-
-
-## A YOLO\-Based Semi\-Automated Labeling Approach to Improve Fault Detection Efficiency in Railroad Videos / 
-
-发布日期：2025-04-01
-
-作者：Dylan Lester
-
-摘要：Manual labeling for large\-scale image and video datasets is often time\-intensive, error\-prone, and costly, posing a significant barrier to efficient machine learning workflows in fault detection from railroad videos. This study introduces a semi\-automated labeling method that utilizes a pre\-trained You Only Look Once \(YOLO\) model to streamline the labeling process and enhance fault detection accuracy in railroad videos. By initiating the process with a small set of manually labeled data, our approach iteratively trains the YOLO model, using each cycle's output to improve model accuracy and progressively reduce the need for human intervention.   To facilitate easy correction of model predictions, we developed a system to export YOLO's detection data as an editable text file, enabling rapid adjustments when detections require refinement. This approach decreases labeling time from an average of 2 to 4 minutes per image to 30 seconds to 2 minutes, effectively minimizing labor costs and labeling errors. Unlike costly AI based labeling solutions on paid platforms, our method provides a cost\-effective alternative for researchers and practitioners handling large datasets in fault detection and other detection based machine learning applications.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2504.01010v1)
 
 ---
 
