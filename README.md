@@ -1,6 +1,42 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## WildLive: Near Real\-time Visual Wildlife Tracking onboard UAVs / 
+
+发布日期：2025-04-14
+
+作者：Nguyen Ngoc Dat
+
+摘要：Live tracking of wildlife via high\-resolution video processing directly onboard drones is widely unexplored and most existing solutions rely on streaming video to ground stations to support navigation. Yet, both autonomous animal\-reactive flight control beyond visual line of sight and/or mission\-specific individual and behaviour recognition tasks rely to some degree on this capability. In response, we introduce WildLive \-\- a near real\-time animal detection and tracking framework for high\-resolution imagery running directly onboard uncrewed aerial vehicles \(UAVs\). The system performs multi\-animal detection and tracking at 17fps\+ for HD and 7fps\+ on 4K video streams suitable for operation during higher altitude flights to minimise animal disturbance. Our system is optimised for Jetson Orin AGX onboard hardware. It integrates the efficiency of sparse optical flow tracking and mission\-specific sampling with device\-optimised and proven YOLO\-driven object detection and segmentation techniques. Essentially, computational resource is focused onto spatio\-temporal regions of high uncertainty to significantly improve UAV processing speeds without domain\-specific loss of accuracy. Alongside, we introduce our WildLive dataset, which comprises 200k\+ annotated animal instances across 19k\+ frames from 4K UAV videos collected at the Ol Pejeta Conservancy in Kenya. All frames contain ground truth bounding boxes, segmentation masks, as well as individual tracklets and tracking point trajectories. We compare our system against current object tracking approaches including OC\-SORT, ByteTrack, and SORT. Our multi\-animal tracking experiments with onboard hardware confirm that near real\-time high\-resolution wildlife tracking is possible on UAVs whilst maintaining high accuracy levels as needed for future navigational and mission\-specific animal\-centric operational autonomy.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2504.10165v1)
+
+---
+
+
+## Small Object Detection with YOLO: A Performance Analysis Across Model Versions and Hardware / 
+
+发布日期：2025-04-14
+
+作者：Muhammad Fasih Tariq
+
+摘要：This paper provides an extensive evaluation of YOLO object detection models \(v5, v8, v9, v10, v11\) by com\- paring their performance across various hardware platforms and optimization libraries. Our study investigates inference speed and detection accuracy on Intel and AMD CPUs using popular libraries such as ONNX and OpenVINO, as well as on GPUs through TensorRT and other GPU\-optimized frameworks. Furthermore, we analyze the sensitivity of these YOLO models to object size within the image, examining performance when detecting objects that occupy 1%, 2.5%, and 5% of the total area of the image. By identifying the trade\-offs in efficiency, accuracy, and object size adaptability, this paper offers insights for optimal model selection based on specific hardware constraints and detection requirements, aiding practitioners in deploying YOLO models effectively for real\-world applications.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2504.09900v1)
+
+---
+
+
 ## Shadow Erosion and Nighttime Adaptability for Camera\-Based Automated Driving Applications / 
 
 发布日期：2025-04-11
@@ -51,42 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2504.07252v1)
-
----
-
-
-## Real\-Time Roadway Obstacle Detection for Electric Scooters Using Deep Learning and Multi\-Sensor Fusion / 
-
-发布日期：2025-04-04
-
-作者：Zeyang Zheng
-
-摘要：The increasing adoption of electric scooters \(e\-scooters\) in urban areas has coincided with a rise in traffic accidents and injuries, largely due to their small wheels, lack of suspension, and sensitivity to uneven surfaces. While deep learning\-based object detection has been widely used to improve automobile safety, its application for e\-scooter obstacle detection remains unexplored. This study introduces a novel ground obstacle detection system for e\-scooters, integrating an RGB camera, and a depth camera to enhance real\-time road hazard detection. Additionally, the Inertial Measurement Unit \(IMU\) measures linear vertical acceleration to identify surface vibrations, guiding the selection of six obstacle categories: tree branches, manhole covers, potholes, pine cones, non\-directional cracks, and truncated domes. All sensors, including the RGB camera, depth camera, and IMU, are integrated within the Intel RealSense Camera D435i. A deep learning model powered by YOLO detects road hazards and utilizes depth data to estimate obstacle proximity. Evaluated on the seven hours of naturalistic riding dataset, the system achieves a high mean average precision \(mAP\) of 0.827 and demonstrates excellent real\-time performance. This approach provides an effective solution to enhance e\-scooter safety through advanced computer vision and data fusion. The dataset is accessible at https://zenodo.org/records/14583718, and the project code is hosted on https://github.com/Zeyang\-Zheng/Real\-Time\-Roadway\-Obstacle\-Detection\-for\-Electric\-Scooters.
-
-中文摘要：
-
-
-代码链接：https://zenodo.org/records/14583718,，https://github.com/Zeyang-Zheng/Real-Time-Roadway-Obstacle-Detection-for-Electric-Scooters.
-
-论文链接：[阅读更多](http://arxiv.org/abs/2504.03171v1)
-
----
-
-
-## LLM\-Guided Evolution: An Autonomous Model Optimization for Object Detection / 
-
-发布日期：2025-04-03
-
-作者：YiMing Yu
-
-摘要：In machine learning, Neural Architecture Search \(NAS\) requires domain knowledge of model design and a large amount of trial\-and\-error to achieve promising performance. Meanwhile, evolutionary algorithms have traditionally relied on fixed rules and pre\-defined building blocks. The Large Language Model \(LLM\)\-Guided Evolution \(GE\) framework transformed this approach by incorporating LLMs to directly modify model source code for image classification algorithms on CIFAR data and intelligently guide mutations and crossovers. A key element of LLM\-GE is the "Evolution of Thought" \(EoT\) technique, which establishes feedback loops, allowing LLMs to refine their decisions iteratively based on how previous operations performed. In this study, we perform NAS for object detection by improving LLM\-GE to modify the architecture of You Only Look Once \(YOLO\) models to enhance performance on the KITTI dataset. Our approach intelligently adjusts the design and settings of YOLO to find the optimal algorithms against objective such as detection accuracy and speed. We show that LLM\-GE produced variants with significant performance improvements, such as an increase in Mean Average Precision from 92.5% to 94.5%. This result highlights the flexibility and effectiveness of LLM\-GE on real\-world challenges, offering a novel paradigm for automated machine learning that combines LLM\-driven reasoning with evolutionary strategies.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2504.02280v1)
 
 ---
 
