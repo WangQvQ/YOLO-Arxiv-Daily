@@ -1,6 +1,24 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## A Review of YOLOv12: Attention\-Based Enhancements vs. Previous Versions / 
+
+发布日期：2025-04-16
+
+作者：Rahima Khanam
+
+摘要：The YOLO \(You Only Look Once\) series has been a leading framework in real\-time object detection, consistently improving the balance between speed and accuracy. However, integrating attention mechanisms into YOLO has been challenging due to their high computational overhead. YOLOv12 introduces a novel approach that successfully incorporates attention\-based enhancements while preserving real\-time performance. This paper provides a comprehensive review of YOLOv12's architectural innovations, including Area Attention for computationally efficient self\-attention, Residual Efficient Layer Aggregation Networks for improved feature aggregation, and FlashAttention for optimized memory access. Additionally, we benchmark YOLOv12 against prior YOLO versions and competing object detectors, analyzing its improvements in accuracy, inference speed, and computational efficiency. Through this analysis, we demonstrate how YOLOv12 advances real\-time object detection by refining the latency\-accuracy trade\-off and optimizing computational resources.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2504.11995v1)
+
+---
+
+
 ## CFIS\-YOLO: A Lightweight Multi\-Scale Fusion Network for Edge\-Deployable Wood Defect Detection / 
 
 发布日期：2025-04-15
@@ -69,24 +87,6 @@
 代码链接：https://dat-nguyenvn.github.io/WildLive/
 
 论文链接：[阅读更多](http://arxiv.org/abs/2504.10165v2)
-
----
-
-
-## Small Object Detection with YOLO: A Performance Analysis Across Model Versions and Hardware / 
-
-发布日期：2025-04-14
-
-作者：Muhammad Fasih Tariq
-
-摘要：This paper provides an extensive evaluation of YOLO object detection models \(v5, v8, v9, v10, v11\) by com\- paring their performance across various hardware platforms and optimization libraries. Our study investigates inference speed and detection accuracy on Intel and AMD CPUs using popular libraries such as ONNX and OpenVINO, as well as on GPUs through TensorRT and other GPU\-optimized frameworks. Furthermore, we analyze the sensitivity of these YOLO models to object size within the image, examining performance when detecting objects that occupy 1%, 2.5%, and 5% of the total area of the image. By identifying the trade\-offs in efficiency, accuracy, and object size adaptability, this paper offers insights for optimal model selection based on specific hardware constraints and detection requirements, aiding practitioners in deploying YOLO models effectively for real\-world applications.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2504.09900v1)
 
 ---
 
