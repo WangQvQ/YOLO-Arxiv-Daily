@@ -1,6 +1,24 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## RF\-DETR Object Detection vs YOLOv12 : A Study of Transformer\-based and CNN\-based Architectures for Single\-Class and Multi\-Class Greenfruit Detection in Complex Orchard Environments Under Label Ambiguity / 
+
+发布日期：2025-04-17
+
+作者：Ranjan Sapkota
+
+摘要：This study conducts a detailed comparison of RF\-DETR object detection base model and YOLOv12 object detection model configurations for detecting greenfruits in a complex orchard environment marked by label ambiguity, occlusions, and background blending. A custom dataset was developed featuring both single\-class \(greenfruit\) and multi\-class \(occluded and non\-occluded greenfruits\) annotations to assess model performance under dynamic real\-world conditions. RF\-DETR object detection model, utilizing a DINOv2 backbone and deformable attention, excelled in global context modeling, effectively identifying partially occluded or ambiguous greenfruits. In contrast, YOLOv12 leveraged CNN\-based attention for enhanced local feature extraction, optimizing it for computational efficiency and edge deployment. RF\-DETR achieved the highest mean Average Precision \(mAP50\) of 0.9464 in single\-class detection, proving its superior ability to localize greenfruits in cluttered scenes. Although YOLOv12N recorded the highest mAP@50:95 of 0.7620, RF\-DETR consistently outperformed in complex spatial scenarios. For multi\-class detection, RF\-DETR led with an mAP@50 of 0.8298, showing its capability to differentiate between occluded and non\-occluded fruits, while YOLOv12L scored highest in mAP@50:95 with 0.6622, indicating better classification in detailed occlusion contexts. Training dynamics analysis highlighted RF\-DETR's swift convergence, particularly in single\-class settings where it plateaued within 10 epochs, demonstrating the efficiency of transformer\-based architectures in adapting to dynamic visual data. These findings validate RF\-DETR's effectiveness for precision agricultural applications, with YOLOv12 suited for fast\-response scenarios. >Index Terms: RF\-DETR object detection, YOLOv12, YOLOv13, YOLOv14, YOLOv15, YOLOE, YOLO World, YOLO, You Only Look Once, Roboflow, Detection Transformers, CNNs
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2504.13099v1)
+
+---
+
+
 ## A Review of YOLOv12: Attention\-Based Enhancements vs. Previous Versions / 
 
 发布日期：2025-04-16
@@ -69,24 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2504.10810v1)
-
----
-
-
-## WildLive: Near Real\-time Visual Wildlife Tracking onboard UAVs / 
-
-发布日期：2025-04-14
-
-作者：Nguyen Ngoc Dat
-
-摘要：Live tracking of wildlife via high\-resolution video processing directly onboard drones is widely unexplored and most existing solutions rely on streaming video to ground stations to support navigation. Yet, both autonomous animal\-reactive flight control beyond visual line of sight and/or mission\-specific individual and behaviour recognition tasks rely to some degree on this capability. In response, we introduce WildLive \-\- a near real\-time animal detection and tracking framework for high\-resolution imagery running directly onboard uncrewed aerial vehicles \(UAVs\). The system performs multi\-animal detection and tracking at 17fps\+ for HD and 7fps\+ on 4K video streams suitable for operation during higher altitude flights to minimise animal disturbance. Our system is optimised for Jetson Orin AGX onboard hardware. It integrates the efficiency of sparse optical flow tracking and mission\-specific sampling with device\-optimised and proven YOLO\-driven object detection and segmentation techniques. Essentially, computational resource is focused onto spatio\-temporal regions of high uncertainty to significantly improve UAV processing speeds without domain\-specific loss of accuracy. Alongside, we introduce our WildLive dataset, which comprises 200k\+ annotated animal instances across 19k\+ frames from 4K UAV videos collected at the Ol Pejeta Conservancy in Kenya. All frames contain ground truth bounding boxes, segmentation masks, as well as individual tracklets and tracking point trajectories. We compare our system against current object tracking approaches including OC\-SORT, ByteTrack, and SORT. Our materials are available at: https://dat\-nguyenvn.github.io/WildLive/
-
-中文摘要：
-
-
-代码链接：https://dat-nguyenvn.github.io/WildLive/
-
-论文链接：[阅读更多](http://arxiv.org/abs/2504.10165v2)
 
 ---
 
