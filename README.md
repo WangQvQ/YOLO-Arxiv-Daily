@@ -1,6 +1,24 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## ISTD\-YOLO: A Multi\-Scale Lightweight High\-Performance Infrared Small Target Detection Algorithm / 
+
+发布日期：2025-04-19
+
+作者：Shang Zhang
+
+摘要：Aiming at the detection difficulties of infrared images such as complex background, low signal\-to\-noise ratio, small target size and weak brightness, a lightweight infrared small target detection algorithm ISTD\-YOLO based on improved YOLOv7 was proposed. Firstly, the YOLOv7 network structure was lightweight reconstructed, and a three\-scale lightweight network architecture was designed. Then, the ELAN\-W module of the model neck network is replaced by VoV\-GSCSP to reduce the computational cost and the complexity of the network structure. Secondly, a parameter\-free attention mechanism was introduced into the neck network to enhance the relevance of local con\-text information. Finally, the Normalized Wasserstein Distance \(NWD\) was used to optimize the commonly used IoU index to enhance the localization and detection accuracy of small targets. Experimental results show that compared with YOLOv7 and the current mainstream algorithms, ISTD\-YOLO can effectively improve the detection effect, and all indicators are effectively improved, which can achieve high\-quality detection of infrared small targets.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2504.14289v1)
+
+---
+
+
 ## RF\-DETR Object Detection vs YOLOv12 : A Study of Transformer\-based and CNN\-based Architectures for Single\-Class and Multi\-Class Greenfruit Detection in Complex Orchard Environments Under Label Ambiguity / 
 
 发布日期：2025-04-17
@@ -69,24 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2504.11165v1)
-
----
-
-
-## PatrolVision: Automated License Plate Recognition in the wild / 
-
-发布日期：2025-04-15
-
-作者：Anmol Singhal Navya Singhal
-
-摘要：Adoption of AI driven techniques in public services remains low due to challenges related to accuracy and speed of information at population scale. Computer vision techniques for traffic monitoring have not gained much popularity despite their relative strength in areas such as autonomous driving. Despite large number of academic methods for Automatic License Plate Recognition \(ALPR\) systems, very few provide an end to end solution for patrolling in the city. This paper presents a novel prototype for a low power GPU based patrolling system to be deployed in an urban environment on surveillance vehicles for automated vehicle detection, recognition and tracking. In this work, we propose a complete ALPR system for Singapore license plates having both single and double line creating our own YOLO based network. We focus on unconstrained capture scenarios as would be the case in real world application, where the license plate \(LP\) might be considerably distorted due to oblique views. In this work, we first detect the license plate from the full image using RFB\-Net and rectify multiple distorted license plates in a single image. After that, the detected license plate image is fed to our network for character recognition. We evaluate the performance of our proposed system on a newly built dataset covering more than 16,000 images. The system was able to correctly detect license plates with 86% precision and recognize characters of a license plate in 67% of the test set, and 89% accuracy with one incorrect character \(partial match\). We also test latency of our system and achieve 64FPS on Tesla P4 GPU
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2504.10810v1)
 
 ---
 
