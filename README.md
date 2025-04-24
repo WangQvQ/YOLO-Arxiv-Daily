@@ -1,6 +1,24 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Vision Controlled Orthotic Hand Exoskeleton / 
+
+发布日期：2025-04-22
+
+作者：Connor Blais
+
+摘要：This paper presents the design and implementation of an AI vision\-controlled orthotic hand exoskeleton to enhance rehabilitation and assistive functionality for individuals with hand mobility impairments. The system leverages a Google Coral Dev Board Micro with an Edge TPU to enable real\-time object detection using a customized MobileNet\_V2 model trained on a six\-class dataset. The exoskeleton autonomously detects objects, estimates proximity, and triggers pneumatic actuation for grasp\-and\-release tasks, eliminating the need for user\-specific calibration needed in traditional EMG\-based systems. The design prioritizes compactness, featuring an internal battery. It achieves an 8\-hour runtime with a 1300 mAh battery. Experimental results demonstrate a 51ms inference speed, a significant improvement over prior iterations, though challenges persist in model robustness under varying lighting conditions and object orientations. While the most recent YOLO model \(YOLOv11\) showed potential with 15.4 FPS performance, quantization issues hindered deployment. The prototype underscores the viability of vision\-controlled exoskeletons for real\-world assistive applications, balancing portability, efficiency, and real\-time responsiveness, while highlighting future directions for model optimization and hardware miniaturization.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2504.16319v1)
+
+---
+
+
 ## ISTD\-YOLO: A Multi\-Scale Lightweight High\-Performance Infrared Small Target Detection Algorithm / 
 
 发布日期：2025-04-19
@@ -69,24 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2504.11305v1)
-
----
-
-
-## YOLO\-RS: Remote Sensing Enhanced Crop Detection Methods / 
-
-发布日期：2025-04-15
-
-作者：Linlin Xiao
-
-摘要：With the rapid development of remote sensing technology, crop classification and health detection based on deep learning have gradually become a research hotspot. However, the existing target detection methods show poor performance when dealing with small targets in remote sensing images, especially in the case of complex background and image mixing, which is difficult to meet the practical application requirementsite. To address this problem, a novel target detection model YOLO\-RS is proposed in this paper. The model is based on the latest Yolov11 which significantly enhances the detection of small targets by introducing the Context Anchor Attention \(CAA\) mechanism and an efficient multi\-field multi\-scale feature fusion network. YOLO\-RS adopts a bidirectional feature fusion strategy in the feature fusion process, which effectively enhances the model's performance in the detection of small targets. Small target detection. Meanwhile, the ACmix module at the end of the model backbone network solves the category imbalance problem by adaptively adjusting the contrast and sample mixing, thus enhancing the detection accuracy in complex scenes. In the experiments on the PDT remote sensing crop health detection dataset and the CWC crop classification dataset, YOLO\-RS improves both the recall and the mean average precision \(mAP\) by about 2\-3% or so compared with the existing state\-of\-the\-art methods, while the F1\-score is also significantly improved. Moreover, the computational complexity of the model only increases by about 5.2 GFLOPs, indicating its significant advantages in both performance and efficiency. The experimental results validate the effectiveness and application potential of YOLO\-RS in the task of detecting small targets in remote sensing images.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2504.11165v1)
 
 ---
 
