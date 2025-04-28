@@ -1,6 +1,24 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## MASF\-YOLO: An Improved YOLOv11 Network for Small Object Detection on Drone View / 
+
+发布日期：2025-04-25
+
+作者：Liugang Lu
+
+摘要：With the rapid advancement of Unmanned Aerial Vehicle \(UAV\) and computer vision technologies, object detection from UAV perspectives has emerged as a prominent research area. However, challenges for detection brought by the extremely small proportion of target pixels, significant scale variations of objects, and complex background information in UAV images have greatly limited the practical applications of UAV. To address these challenges, we propose a novel object detection network Multi\-scale Context Aggregation and Scale\-adaptive Fusion YOLO \(MASF\-YOLO\), which is developed based on YOLOv11. Firstly, to tackle the difficulty of detecting small objects in UAV images, we design a Multi\-scale Feature Aggregation Module \(MFAM\), which significantly improves the detection accuracy of small objects through parallel multi\-scale convolutions and feature fusion. Secondly, to mitigate the interference of background noise, we propose an Improved Efficient Multi\-scale Attention Module \(IEMA\), which enhances the focus on target regions through feature grouping, parallel sub\-networks, and cross\-spatial learning. Thirdly, we introduce a Dimension\-Aware Selective Integration Module \(DASI\), which further enhances multi\-scale feature fusion capabilities by adaptively weighting and fusing low\-dimensional features and high\-dimensional features. Finally, we conducted extensive performance evaluations of our proposed method on the VisDrone2019 dataset. Compared to YOLOv11\-s, MASFYOLO\-s achieves improvements of 4.6% in mAP@0.5 and 3.5% in mAP@0.5:0.95 on the VisDrone2019 validation set. Remarkably, MASF\-YOLO\-s outperforms YOLOv11\-m while requiring only approximately 60% of its parameters and 65% of its computational cost. Furthermore, comparative experiments with state\-of\-the\-art detectors confirm that MASF\-YOLO\-s maintains a clear competitive advantage in both detection accuracy and model efficiency.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2504.18136v1)
+
+---
+
+
 ## Vision Controlled Orthotic Hand Exoskeleton / 
 
 发布日期：2025-04-22
@@ -69,24 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2504.11995v1)
-
----
-
-
-## CFIS\-YOLO: A Lightweight Multi\-Scale Fusion Network for Edge\-Deployable Wood Defect Detection / 
-
-发布日期：2025-04-15
-
-作者：Jincheng Kang
-
-摘要：Wood defect detection is critical for ensuring quality control in the wood processing industry. However, current industrial applications face two major challenges: traditional methods are costly, subjective, and labor\-intensive, while mainstream deep learning models often struggle to balance detection accuracy and computational efficiency for edge deployment. To address these issues, this study proposes CFIS\-YOLO, a lightweight object detection model optimized for edge devices. The model introduces an enhanced C2f structure, a dynamic feature recombination module, and a novel loss function that incorporates auxiliary bounding boxes and angular constraints. These innovations improve multi\-scale feature fusion and small object localization while significantly reducing computational overhead. Evaluated on a public wood defect dataset, CFIS\-YOLO achieves a mean Average Precision \(mAP@0.5\) of 77.5%, outperforming the baseline YOLOv10s by 4 percentage points. On SOPHON BM1684X edge devices, CFIS\-YOLO delivers 135 FPS, reduces power consumption to 17.3% of the original implementation, and incurs only a 0.5 percentage point drop in mAP. These results demonstrate that CFIS\-YOLO is a practical and effective solution for real\-world wood defect detection in resource\-constrained environments.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2504.11305v1)
 
 ---
 
