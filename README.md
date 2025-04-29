@@ -19,6 +19,24 @@
 ---
 
 
+## A Decade of You Only Look Once \(YOLO\) for Object Detection / 
+
+发布日期：2025-04-24
+
+作者：Leo Thomas Ramos
+
+摘要：This review marks the tenth anniversary of You Only Look Once \(YOLO\), one of the most influential frameworks in real\-time object detection. Over the past decade, YOLO has evolved from a streamlined detector into a diverse family of architectures characterized by efficient design, modular scalability, and cross\-domain adaptability. The paper presents a technical overview of the main versions, highlights key architectural trends, and surveys the principal application areas in which YOLO has been adopted. It also addresses evaluation practices, ethical considerations, and potential future directions for the framework's continued development. The analysis aims to provide a comprehensive and critical perspective on YOLO's trajectory and ongoing transformation.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2504.18586v1)
+
+---
+
+
 ## Vision Controlled Orthotic Hand Exoskeleton / 
 
 发布日期：2025-04-22
@@ -69,24 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2504.13099v1)
-
----
-
-
-## A Review of YOLOv12: Attention\-Based Enhancements vs. Previous Versions / 
-
-发布日期：2025-04-16
-
-作者：Rahima Khanam
-
-摘要：The YOLO \(You Only Look Once\) series has been a leading framework in real\-time object detection, consistently improving the balance between speed and accuracy. However, integrating attention mechanisms into YOLO has been challenging due to their high computational overhead. YOLOv12 introduces a novel approach that successfully incorporates attention\-based enhancements while preserving real\-time performance. This paper provides a comprehensive review of YOLOv12's architectural innovations, including Area Attention for computationally efficient self\-attention, Residual Efficient Layer Aggregation Networks for improved feature aggregation, and FlashAttention for optimized memory access. Additionally, we benchmark YOLOv12 against prior YOLO versions and competing object detectors, analyzing its improvements in accuracy, inference speed, and computational efficiency. Through this analysis, we demonstrate how YOLOv12 advances real\-time object detection by refining the latency\-accuracy trade\-off and optimizing computational resources.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2504.11995v1)
 
 ---
 
