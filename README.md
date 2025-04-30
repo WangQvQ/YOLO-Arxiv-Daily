@@ -1,6 +1,24 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## FBRT\-YOLO: Faster and Better for Real\-Time Aerial Image Detection / 
+
+发布日期：2025-04-29
+
+作者：Yao Xiao
+
+摘要：Embedded flight devices with visual capabilities have become essential for a wide range of applications. In aerial image detection, while many existing methods have partially addressed the issue of small target detection, challenges remain in optimizing small target detection and balancing detection accuracy with efficiency. These issues are key obstacles to the advancement of real\-time aerial image detection. In this paper, we propose a new family of real\-time detectors for aerial image detection, named FBRT\-YOLO, to address the imbalance between detection accuracy and efficiency. Our method comprises two lightweight modules: Feature Complementary Mapping Module \(FCM\) and Multi\-Kernel Perception Unit\(MKP\), designed to enhance object perception for small targets in aerial images. FCM focuses on alleviating the problem of information imbalance caused by the loss of small target information in deep networks. It aims to integrate spatial positional information of targets more deeply into the network,better aligning with semantic information in the deeper layers to improve the localization of small targets. We introduce MKP, which leverages convolutions with kernels of different sizes to enhance the relationships between targets of various scales and improve the perception of targets at different scales. Extensive experimental results on three major aerial image datasets, including Visdrone, UAVDT, and AI\-TOD,demonstrate that FBRT\-YOLO outperforms various real\-time detectors in terms of performance and speed.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2504.20670v1)
+
+---
+
+
 ## MASF\-YOLO: An Improved YOLOv11 Network for Small Object Detection on Drone View / 
 
 发布日期：2025-04-25
@@ -69,24 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2504.14289v1)
-
----
-
-
-## RF\-DETR Object Detection vs YOLOv12 : A Study of Transformer\-based and CNN\-based Architectures for Single\-Class and Multi\-Class Greenfruit Detection in Complex Orchard Environments Under Label Ambiguity / 
-
-发布日期：2025-04-17
-
-作者：Ranjan Sapkota
-
-摘要：This study conducts a detailed comparison of RF\-DETR object detection base model and YOLOv12 object detection model configurations for detecting greenfruits in a complex orchard environment marked by label ambiguity, occlusions, and background blending. A custom dataset was developed featuring both single\-class \(greenfruit\) and multi\-class \(occluded and non\-occluded greenfruits\) annotations to assess model performance under dynamic real\-world conditions. RF\-DETR object detection model, utilizing a DINOv2 backbone and deformable attention, excelled in global context modeling, effectively identifying partially occluded or ambiguous greenfruits. In contrast, YOLOv12 leveraged CNN\-based attention for enhanced local feature extraction, optimizing it for computational efficiency and edge deployment. RF\-DETR achieved the highest mean Average Precision \(mAP50\) of 0.9464 in single\-class detection, proving its superior ability to localize greenfruits in cluttered scenes. Although YOLOv12N recorded the highest mAP@50:95 of 0.7620, RF\-DETR consistently outperformed in complex spatial scenarios. For multi\-class detection, RF\-DETR led with an mAP@50 of 0.8298, showing its capability to differentiate between occluded and non\-occluded fruits, while YOLOv12L scored highest in mAP@50:95 with 0.6622, indicating better classification in detailed occlusion contexts. Training dynamics analysis highlighted RF\-DETR's swift convergence, particularly in single\-class settings where it plateaued within 10 epochs, demonstrating the efficiency of transformer\-based architectures in adapting to dynamic visual data. These findings validate RF\-DETR's effectiveness for precision agricultural applications, with YOLOv12 suited for fast\-response scenarios. >Index Terms: RF\-DETR object detection, YOLOv12, YOLOv13, YOLOv14, YOLOv15, YOLOE, YOLO World, YOLO, You Only Look Once, Roboflow, Detection Transformers, CNNs
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2504.13099v1)
 
 ---
 
