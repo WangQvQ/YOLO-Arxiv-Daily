@@ -1,6 +1,24 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Sim2Real Transfer for Vision\-Based Grasp Verification / 
+
+发布日期：2025-05-05
+
+作者：Pau Amargant
+
+摘要：The verification of successful grasps is a crucial aspect of robot manipulation, particularly when handling deformable objects. Traditional methods relying on force and tactile sensors often struggle with deformable and non\-rigid objects. In this work, we present a vision\-based approach for grasp verification to determine whether the robotic gripper has successfully grasped an object. Our method employs a two\-stage architecture; first YOLO\-based object detection model to detect and locate the robot's gripper and then a ResNet\-based classifier determines the presence of an object. To address the limitations of real\-world data capture, we introduce HSR\-GraspSynth, a synthetic dataset designed to simulate diverse grasping scenarios. Furthermore, we explore the use of Visual Question Answering capabilities as a zero\-shot baseline to which we compare our model. Experimental results demonstrate that our approach achieves high accuracy in real\-world environments, with potential for integration into grasping pipelines. Code and datasets are publicly available at https://github.com/pauamargant/HSR\-GraspSynth .
+
+中文摘要：
+
+
+代码链接：https://github.com/pauamargant/HSR-GraspSynth
+
+论文链接：[阅读更多](http://arxiv.org/abs/2505.03046v1)
+
+---
+
+
 ## FBRT\-YOLO: Faster and Better for Real\-Time Aerial Image Detection / 
 
 发布日期：2025-04-29
@@ -69,24 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2504.16319v1)
-
----
-
-
-## ISTD\-YOLO: A Multi\-Scale Lightweight High\-Performance Infrared Small Target Detection Algorithm / 
-
-发布日期：2025-04-19
-
-作者：Shang Zhang
-
-摘要：Aiming at the detection difficulties of infrared images such as complex background, low signal\-to\-noise ratio, small target size and weak brightness, a lightweight infrared small target detection algorithm ISTD\-YOLO based on improved YOLOv7 was proposed. Firstly, the YOLOv7 network structure was lightweight reconstructed, and a three\-scale lightweight network architecture was designed. Then, the ELAN\-W module of the model neck network is replaced by VoV\-GSCSP to reduce the computational cost and the complexity of the network structure. Secondly, a parameter\-free attention mechanism was introduced into the neck network to enhance the relevance of local con\-text information. Finally, the Normalized Wasserstein Distance \(NWD\) was used to optimize the commonly used IoU index to enhance the localization and detection accuracy of small targets. Experimental results show that compared with YOLOv7 and the current mainstream algorithms, ISTD\-YOLO can effectively improve the detection effect, and all indicators are effectively improved, which can achieve high\-quality detection of infrared small targets.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2504.14289v1)
 
 ---
 
