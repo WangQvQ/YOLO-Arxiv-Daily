@@ -1,6 +1,24 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## An Enhanced YOLOv8 Model for Real\-Time and Accurate Pothole Detection and Measurement / 
+
+发布日期：2025-05-07
+
+作者：Mustafa Yurdakul
+
+摘要：Potholes cause vehicle damage and traffic accidents, creating serious safety and economic problems. Therefore, early and accurate detection of potholes is crucial. Existing detection methods are usually only based on 2D RGB images and cannot accurately analyze the physical characteristics of potholes. In this paper, a publicly available dataset of RGB\-D images \(PothRGBD\) is created and an improved YOLOv8\-based model is proposed for both pothole detection and pothole physical features analysis. The Intel RealSense D415 depth camera was used to collect RGB and depth data from the road surfaces, resulting in a PothRGBD dataset of 1000 images. The data was labeled in YOLO format suitable for segmentation. A novel YOLO model is proposed based on the YOLOv8n\-seg architecture, which is structurally improved with Dynamic Snake Convolution \(DSConv\), Simple Attention Module \(SimAM\) and Gaussian Error Linear Unit \(GELU\). The proposed model segmented potholes with irregular edge structure more accurately, and performed perimeter and depth measurements on depth maps with high accuracy. The standard YOLOv8n\-seg model achieved 91.9% precision, 85.2% recall and 91.9% mAP@50. With the proposed model, the values increased to 93.7%, 90.4% and 93.8% respectively. Thus, an improvement of 1.96% in precision, 6.13% in recall and 2.07% in mAP was achieved. The proposed model performs pothole detection as well as perimeter and depth measurement with high accuracy and is suitable for real\-time applications due to its low model complexity. In this way, a lightweight and effective model that can be used in deep learning\-based intelligent transportation solutions has been acquired.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2505.04207v1)
+
+---
+
+
 ## Sim2Real Transfer for Vision\-Based Grasp Verification / 
 
 发布日期：2025-05-05
@@ -15,6 +33,24 @@
 代码链接：https://github.com/pauamargant/HSR-GraspSynth
 
 论文链接：[阅读更多](http://arxiv.org/abs/2505.03046v1)
+
+---
+
+
+## Design description of Wisdom Computing Persperctive / 
+
+发布日期：2025-05-02
+
+作者：TianYi Yu
+
+摘要：This course design aims to develop and research a handwriting matrix recognition and step\-by\-step visual calculation process display system, addressing the issue of abstract formulas and complex calculation steps that students find difficult to understand when learning mathematics. By integrating artificial intelligence with visualization animation technology, the system enhances precise recognition of handwritten matrix content through the introduction of Mamba backbone networks, completes digital extraction and matrix reconstruction using the YOLO model, and simultaneously combines CoordAttention coordinate attention mechanisms to improve the accurate grasp of character spatial positions. The calculation process is demonstrated frame by frame through the Manim animation engine, vividly showcasing each mathematical calculation step, helping students intuitively understand the intrinsic logic of mathematical operations. Through dynamically generating animation processes for different computational tasks, the system exhibits high modularity and flexibility, capable of generating various mathematical operation examples in real\-time according to student needs. By innovating human\-computer interaction methods, it brings mathematical calculation processes to life, helping students bridge the gap between knowledge and understanding on a deeper level, ultimately achieving a learning experience where "every step is understood." The system's scalability and interactivity make it an intuitive, user\-friendly, and efficient auxiliary tool in education.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2505.03800v1)
 
 ---
 
@@ -51,42 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2504.18136v1)
-
----
-
-
-## A Decade of You Only Look Once \(YOLO\) for Object Detection / 
-
-发布日期：2025-04-24
-
-作者：Leo Thomas Ramos
-
-摘要：This review marks the tenth anniversary of You Only Look Once \(YOLO\), one of the most influential frameworks in real\-time object detection. Over the past decade, YOLO has evolved from a streamlined detector into a diverse family of architectures characterized by efficient design, modular scalability, and cross\-domain adaptability. The paper presents a technical overview of the main versions, highlights key architectural trends, and surveys the principal application areas in which YOLO has been adopted. It also addresses evaluation practices, ethical considerations, and potential future directions for the framework's continued development. The analysis aims to provide a comprehensive and critical perspective on YOLO's trajectory and ongoing transformation.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2504.18586v1)
-
----
-
-
-## Vision Controlled Orthotic Hand Exoskeleton / 
-
-发布日期：2025-04-22
-
-作者：Connor Blais
-
-摘要：This paper presents the design and implementation of an AI vision\-controlled orthotic hand exoskeleton to enhance rehabilitation and assistive functionality for individuals with hand mobility impairments. The system leverages a Google Coral Dev Board Micro with an Edge TPU to enable real\-time object detection using a customized MobileNet\_V2 model trained on a six\-class dataset. The exoskeleton autonomously detects objects, estimates proximity, and triggers pneumatic actuation for grasp\-and\-release tasks, eliminating the need for user\-specific calibration needed in traditional EMG\-based systems. The design prioritizes compactness, featuring an internal battery. It achieves an 8\-hour runtime with a 1300 mAh battery. Experimental results demonstrate a 51ms inference speed, a significant improvement over prior iterations, though challenges persist in model robustness under varying lighting conditions and object orientations. While the most recent YOLO model \(YOLOv11\) showed potential with 15.4 FPS performance, quantization issues hindered deployment. The prototype underscores the viability of vision\-controlled exoskeletons for real\-world assistive applications, balancing portability, efficiency, and real\-time responsiveness, while highlighting future directions for model optimization and hardware miniaturization.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2504.16319v1)
 
 ---
 
