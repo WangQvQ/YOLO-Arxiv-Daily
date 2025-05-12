@@ -1,6 +1,24 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Enhancing Satellite Object Localization with Dilated Convolutions and Attention\-aided Spatial Pooling / 
+
+发布日期：2025-05-08
+
+作者：Seraj Al Mahmud Mostafa
+
+摘要：Object localization in satellite imagery is particularly challenging due to the high variability of objects, low spatial resolution, and interference from noise and dominant features such as clouds and city lights. In this research, we focus on three satellite datasets: upper atmospheric Gravity Waves \(GW\), mesospheric Bores \(Bore\), and Ocean Eddies \(OE\), each presenting its own unique challenges. These challenges include the variability in the scale and appearance of the main object patterns, where the size, shape, and feature extent of objects of interest can differ significantly. To address these challenges, we introduce YOLO\-DCAP, a novel enhanced version of YOLOv5 designed to improve object localization in these complex scenarios. YOLO\-DCAP incorporates a Multi\-scale Dilated Residual Convolution \(MDRC\) block to capture multi\-scale features at scale with varying dilation rates, and an Attention\-aided Spatial Pooling \(AaSP\) module to focus on the global relevant spatial regions, enhancing feature selection. These structural improvements help to better localize objects in satellite imagery. Experimental results demonstrate that YOLO\-DCAP significantly outperforms both the YOLO base model and state\-of\-the\-art approaches, achieving an average improvement of 20.95% in mAP50 and 32.23% in IoU over the base model, and 7.35% and 9.84% respectively over state\-of\-the\-art alternatives, consistently across all three satellite datasets. These consistent gains across all three satellite datasets highlight the robustness and generalizability of the proposed approach. Our code is open sourced at https://github.com/AI\-4\-atmosphere\-remote\-sensing/satellite\-object\-localization.
+
+中文摘要：
+
+
+代码链接：https://github.com/AI-4-atmosphere-remote-sensing/satellite-object-localization.
+
+论文链接：[阅读更多](http://arxiv.org/abs/2505.05599v1)
+
+---
+
+
 ## PaniCar: Securing the Perception of Advanced Driving Assistance Systems Against Emergency Vehicle Lighting / 
 
 发布日期：2025-05-08
@@ -69,24 +87,6 @@
 代码链接：https://github.com/pauamargant/HSR-GraspSynth
 
 论文链接：[阅读更多](http://arxiv.org/abs/2505.03046v1)
-
----
-
-
-## Design description of Wisdom Computing Persperctive / 
-
-发布日期：2025-05-02
-
-作者：TianYi Yu
-
-摘要：This course design aims to develop and research a handwriting matrix recognition and step\-by\-step visual calculation process display system, addressing the issue of abstract formulas and complex calculation steps that students find difficult to understand when learning mathematics. By integrating artificial intelligence with visualization animation technology, the system enhances precise recognition of handwritten matrix content through the introduction of Mamba backbone networks, completes digital extraction and matrix reconstruction using the YOLO model, and simultaneously combines CoordAttention coordinate attention mechanisms to improve the accurate grasp of character spatial positions. The calculation process is demonstrated frame by frame through the Manim animation engine, vividly showcasing each mathematical calculation step, helping students intuitively understand the intrinsic logic of mathematical operations. Through dynamically generating animation processes for different computational tasks, the system exhibits high modularity and flexibility, capable of generating various mathematical operation examples in real\-time according to student needs. By innovating human\-computer interaction methods, it brings mathematical calculation processes to life, helping students bridge the gap between knowledge and understanding on a deeper level, ultimately achieving a learning experience where "every step is understood." The system's scalability and interactivity make it an intuitive, user\-friendly, and efficient auxiliary tool in education.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2505.03800v1)
 
 ---
 
