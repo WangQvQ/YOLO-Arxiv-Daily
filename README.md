@@ -1,6 +1,24 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Thermal Detection of People with Mobility Restrictions for Barrier Reduction at Traffic Lights Controlled Intersections / 
+
+发布日期：2025-05-13
+
+作者：Xiao Ni
+
+摘要：Rapid advances in deep learning for computer vision have driven the adoption of RGB camera\-based adaptive traffic light systems to improve traffic safety and pedestrian comfort. However, these systems often overlook the needs of people with mobility restrictions. Moreover, the use of RGB cameras presents significant challenges, including limited detection performance under adverse weather or low\-visibility conditions, as well as heightened privacy concerns. To address these issues, we propose a fully automated, thermal detector\-based traffic light system that dynamically adjusts signal durations for individuals with walking impairments or mobility burden and triggers the auditory signal for visually impaired individuals, thereby advancing towards barrier\-free intersection for all users. To this end, we build the thermal dataset for people with mobility restrictions \(TD4PWMR\), designed to capture diverse pedestrian scenarios, particularly focusing on individuals with mobility aids or mobility burden under varying environmental conditions, such as different lighting, weather, and crowded urban settings. While thermal imaging offers advantages in terms of privacy and robustness to adverse conditions, it also introduces inherent hurdles for object detection due to its lack of color and fine texture details and generally lower resolution of thermal images. To overcome these limitations, we develop YOLO\-Thermal, a novel variant of the YOLO architecture that integrates advanced feature extraction and attention mechanisms for enhanced detection accuracy and robustness in thermal imaging. Experiments demonstrate that the proposed thermal detector outperforms existing detectors, while the proposed traffic light system effectively enhances barrier\-free intersection. The source codes and dataset are available at https://github.com/leon2014dresden/YOLO\-THERMAL.
+
+中文摘要：
+
+
+代码链接：https://github.com/leon2014dresden/YOLO-THERMAL.
+
+论文链接：[阅读更多](http://arxiv.org/abs/2505.08568v1)
+
+---
+
+
 ## Enhancing Satellite Object Localization with Dilated Convolutions and Attention\-aided Spatial Pooling / 
 
 发布日期：2025-05-08
@@ -69,24 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2505.04207v1)
-
----
-
-
-## Sim2Real Transfer for Vision\-Based Grasp Verification / 
-
-发布日期：2025-05-05
-
-作者：Pau Amargant
-
-摘要：The verification of successful grasps is a crucial aspect of robot manipulation, particularly when handling deformable objects. Traditional methods relying on force and tactile sensors often struggle with deformable and non\-rigid objects. In this work, we present a vision\-based approach for grasp verification to determine whether the robotic gripper has successfully grasped an object. Our method employs a two\-stage architecture; first YOLO\-based object detection model to detect and locate the robot's gripper and then a ResNet\-based classifier determines the presence of an object. To address the limitations of real\-world data capture, we introduce HSR\-GraspSynth, a synthetic dataset designed to simulate diverse grasping scenarios. Furthermore, we explore the use of Visual Question Answering capabilities as a zero\-shot baseline to which we compare our model. Experimental results demonstrate that our approach achieves high accuracy in real\-world environments, with potential for integration into grasping pipelines. Code and datasets are publicly available at https://github.com/pauamargant/HSR\-GraspSynth .
-
-中文摘要：
-
-
-代码链接：https://github.com/pauamargant/HSR-GraspSynth
-
-论文链接：[阅读更多](http://arxiv.org/abs/2505.03046v1)
 
 ---
 
