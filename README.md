@@ -14,7 +14,7 @@
 
 代码链接：https://github.com/leon2014dresden/YOLO-THERMAL.
 
-论文链接：[阅读更多](http://arxiv.org/abs/2505.08568v1)
+论文链接：[阅读更多](http://arxiv.org/abs/2505.08568v2)
 
 ---
 
