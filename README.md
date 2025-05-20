@@ -55,6 +55,24 @@
 ---
 
 
+## Revisiting Adversarial Perception Attacks and Defense Methods on Autonomous Driving Systems / 
+
+发布日期：2025-05-14
+
+作者：Cheng Chen
+
+摘要：Autonomous driving systems \(ADS\) increasingly rely on deep learning\-based perception models, which remain vulnerable to adversarial attacks. In this paper, we revisit adversarial attacks and defense methods, focusing on road sign recognition and lead object detection and prediction \(e.g., relative distance\). Using a Level\-2 production ADS, OpenPilot by Comma.ai, and the widely adopted YOLO model, we systematically examine the impact of adversarial perturbations and assess defense techniques, including adversarial training, image processing, contrastive learning, and diffusion models. Our experiments highlight both the strengths and limitations of these methods in mitigating complex attacks. Through targeted evaluations of model robustness, we aim to provide deeper insights into the vulnerabilities of ADS perception systems and contribute guidance for developing more resilient defense strategies.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2505.11532v1)
+
+---
+
+
 ## Thermal Detection of People with Mobility Restrictions for Barrier Reduction at Traffic Lights Controlled Intersections / 
 
 发布日期：2025-05-13
@@ -69,24 +87,6 @@
 代码链接：https://github.com/leon2014dresden/YOLO-THERMAL.
 
 论文链接：[阅读更多](http://arxiv.org/abs/2505.08568v2)
-
----
-
-
-## Enhancing Satellite Object Localization with Dilated Convolutions and Attention\-aided Spatial Pooling / 
-
-发布日期：2025-05-08
-
-作者：Seraj Al Mahmud Mostafa
-
-摘要：Object localization in satellite imagery is particularly challenging due to the high variability of objects, low spatial resolution, and interference from noise and dominant features such as clouds and city lights. In this research, we focus on three satellite datasets: upper atmospheric Gravity Waves \(GW\), mesospheric Bores \(Bore\), and Ocean Eddies \(OE\), each presenting its own unique challenges. These challenges include the variability in the scale and appearance of the main object patterns, where the size, shape, and feature extent of objects of interest can differ significantly. To address these challenges, we introduce YOLO\-DCAP, a novel enhanced version of YOLOv5 designed to improve object localization in these complex scenarios. YOLO\-DCAP incorporates a Multi\-scale Dilated Residual Convolution \(MDRC\) block to capture multi\-scale features at scale with varying dilation rates, and an Attention\-aided Spatial Pooling \(AaSP\) module to focus on the global relevant spatial regions, enhancing feature selection. These structural improvements help to better localize objects in satellite imagery. Experimental results demonstrate that YOLO\-DCAP significantly outperforms both the YOLO base model and state\-of\-the\-art approaches, achieving an average improvement of 20.95% in mAP50 and 32.23% in IoU over the base model, and 7.35% and 9.84% respectively over state\-of\-the\-art alternatives, consistently across all three satellite datasets. These consistent gains across all three satellite datasets highlight the robustness and generalizability of the proposed approach. Our code is open sourced at https://github.com/AI\-4\-atmosphere\-remote\-sensing/satellite\-object\-localization.
-
-中文摘要：
-
-
-代码链接：https://github.com/AI-4-atmosphere-remote-sensing/satellite-object-localization.
-
-论文链接：[阅读更多](http://arxiv.org/abs/2505.05599v1)
 
 ---
 
