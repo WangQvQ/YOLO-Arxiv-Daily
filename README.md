@@ -1,6 +1,42 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Detailed Evaluation of Modern Machine Learning Approaches for Optic Plastics Sorting / 
+
+发布日期：2025-05-22
+
+作者：Vaishali Maheshkar
+
+摘要：According to the EPA, only 25% of waste is recycled, and just 60% of U.S. municipalities offer curbside recycling. Plastics fare worse, with a recycling rate of only 8%; an additional 16% is incinerated, while the remaining 76% ends up in landfills. The low plastic recycling rate stems from contamination, poor economic incentives, and technical difficulties, making efficient recycling a challenge. To improve recovery, automated sorting plays a critical role. Companies like AMP Robotics and Greyparrot utilize optical systems for sorting, while Materials Recovery Facilities \(MRFs\) employ Near\-Infrared \(NIR\) sensors to detect plastic types.   Modern optical sorting uses advances in computer vision such as object recognition and instance segmentation, powered by machine learning. Two\-stage detectors like Mask R\-CNN use region proposals and classification with deep backbones like ResNet. Single\-stage detectors like YOLO handle detection in one pass, trading some accuracy for speed. While such methods excel under ideal conditions with a large volume of labeled training data, challenges arise in realistic scenarios, emphasizing the need to further examine the efficacy of optic detection for automated sorting.   In this study, we compiled novel datasets totaling 20,000\+ images from varied sources. Using both public and custom machine learning pipelines, we assessed the capabilities and limitations of optical recognition for sorting. Grad\-CAM, saliency maps, and confusion matrices were employed to interpret model behavior. We perform this analysis on our custom trained models from the compiled datasets. To conclude, our findings are that optic recognition methods have limited success in accurate sorting of real\-world plastics at MRFs, primarily because they rely on physical properties such as color and shape.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2505.16513v1)
+
+---
+
+
+## ViQAgent: Zero\-Shot Video Question Answering via Agent with Open\-Vocabulary Grounding Validation / 
+
+发布日期：2025-05-21
+
+作者：Tony Montes
+
+摘要：Recent advancements in Video Question Answering \(VideoQA\) have introduced LLM\-based agents, modular frameworks, and procedural solutions, yielding promising results. These systems use dynamic agents and memory\-based mechanisms to break down complex tasks and refine answers. However, significant improvements remain in tracking objects for grounding over time and decision\-making based on reasoning to better align object references with language model outputs, as newer models get better at both tasks. This work presents an LLM\-brained agent for zero\-shot Video Question Answering \(VideoQA\) that combines a Chain\-of\-Thought framework with grounding reasoning alongside YOLO\-World to enhance object tracking and alignment. This approach establishes a new state\-of\-the\-art in VideoQA and Video Understanding, showing enhanced performance on NExT\-QA, iVQA, and ActivityNet\-QA benchmarks. Our framework also enables cross\-checking of grounding timeframes, improving accuracy and providing valuable support for verification and increased output reliability across multiple video domains. The code is available at https://github.com/t\-montes/viqagent.
+
+中文摘要：
+
+
+代码链接：https://github.com/t-montes/viqagent.
+
+论文链接：[阅读更多](http://arxiv.org/abs/2505.15928v1)
+
+---
+
+
 ## Towards Self\-Improvement of Diffusion Models via Group Preference Optimization / 
 
 发布日期：2025-05-16
@@ -51,42 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2505.10770v1)
-
----
-
-
-## Revisiting Adversarial Perception Attacks and Defense Methods on Autonomous Driving Systems / 
-
-发布日期：2025-05-14
-
-作者：Cheng Chen
-
-摘要：Autonomous driving systems \(ADS\) increasingly rely on deep learning\-based perception models, which remain vulnerable to adversarial attacks. In this paper, we revisit adversarial attacks and defense methods, focusing on road sign recognition and lead object detection and prediction \(e.g., relative distance\). Using a Level\-2 production ADS, OpenPilot by Comma.ai, and the widely adopted YOLO model, we systematically examine the impact of adversarial perturbations and assess defense techniques, including adversarial training, image processing, contrastive learning, and diffusion models. Our experiments highlight both the strengths and limitations of these methods in mitigating complex attacks. Through targeted evaluations of model robustness, we aim to provide deeper insights into the vulnerabilities of ADS perception systems and contribute guidance for developing more resilient defense strategies.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2505.11532v1)
-
----
-
-
-## Thermal Detection of People with Mobility Restrictions for Barrier Reduction at Traffic Lights Controlled Intersections / 
-
-发布日期：2025-05-13
-
-作者：Xiao Ni
-
-摘要：Rapid advances in deep learning for computer vision have driven the adoption of RGB camera\-based adaptive traffic light systems to improve traffic safety and pedestrian comfort. However, these systems often overlook the needs of people with mobility restrictions. Moreover, the use of RGB cameras presents significant challenges, including limited detection performance under adverse weather or low\-visibility conditions, as well as heightened privacy concerns. To address these issues, we propose a fully automated, thermal detector\-based traffic light system that dynamically adjusts signal durations for individuals with walking impairments or mobility burden and triggers the auditory signal for visually impaired individuals, thereby advancing towards barrier\-free intersection for all users. To this end, we build the thermal dataset for people with mobility restrictions \(TD4PWMR\), designed to capture diverse pedestrian scenarios, particularly focusing on individuals with mobility aids or mobility burden under varying environmental conditions, such as different lighting, weather, and crowded urban settings. While thermal imaging offers advantages in terms of privacy and robustness to adverse conditions, it also introduces inherent hurdles for object detection due to its lack of color and fine texture details and generally lower resolution of thermal images. To overcome these limitations, we develop YOLO\-Thermal, a novel variant of the YOLO architecture that integrates advanced feature extraction and attention mechanisms for enhanced detection accuracy and robustness in thermal imaging. Experiments demonstrate that the proposed thermal detector outperforms existing detectors, while the proposed traffic light system effectively enhances barrier\-free intersection. The source codes and dataset are available at https://github.com/leon2014dresden/YOLO\-THERMAL.
-
-中文摘要：
-
-
-代码链接：https://github.com/leon2014dresden/YOLO-THERMAL.
-
-论文链接：[阅读更多](http://arxiv.org/abs/2505.08568v2)
 
 ---
 
