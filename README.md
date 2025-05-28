@@ -1,6 +1,42 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## YOLO\-SPCI: Enhancing Remote Sensing Object Detection via Selective\-Perspective\-Class Integration / 
+
+发布日期：2025-05-27
+
+作者：Xinyuan Wang
+
+摘要：Object detection in remote sensing imagery remains a challenging task due to extreme scale variation, dense object distributions, and cluttered backgrounds. While recent detectors such as YOLOv8 have shown promising results, their backbone architectures lack explicit mechanisms to guide multi\-scale feature refinement, limiting performance on high\-resolution aerial data. In this work, we propose YOLO\-SPCI, an attention\-enhanced detection framework that introduces a lightweight Selective\-Perspective\-Class Integration \(SPCI\) module to improve feature representation. The SPCI module integrates three components: a Selective Stream Gate \(SSG\) for adaptive regulation of global feature flow, a Perspective Fusion Module \(PFM\) for context\-aware multi\-scale integration, and a Class Discrimination Module \(CDM\) to enhance inter\-class separability. We embed two SPCI blocks into the P3 and P5 stages of the YOLOv8 backbone, enabling effective refinement while preserving compatibility with the original neck and head. Experiments on the NWPU VHR\-10 dataset demonstrate that YOLO\-SPCI achieves superior performance compared to state\-of\-the\-art detectors.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2505.21370v1)
+
+---
+
+
+## YOLO\-FireAD: Efficient Fire Detection via Attention\-Guided Inverted Residual Learning and Dual\-Pooling Feature Preservation / 
+
+发布日期：2025-05-27
+
+作者：Weichao Pan
+
+摘要：Fire detection in dynamic environments faces continuous challenges, including the interference of illumination changes, many false detections or missed detections, and it is difficult to achieve both efficiency and accuracy. To address the problem of feature extraction limitation and information loss in the existing YOLO\-based models, this study propose You Only Look Once for Fire Detection with Attention\-guided Inverted Residual and Dual\-pooling Downscale Fusion \(YOLO\-FireAD\) with two core innovations: \(1\) Attention\-guided Inverted Residual Block \(AIR\) integrates hybrid channel\-spatial attention with inverted residuals to adaptively enhance fire features and suppress environmental noise; \(2\) Dual Pool Downscale Fusion Block \(DPDF\) preserves multi\-scale fire patterns through learnable fusion of max\-average pooling outputs, mitigating small\-fire detection failures. Extensive evaluation on two public datasets shows the efficient performance of our model. Our proposed model keeps the sum amount of parameters \(1.45M, 51.8% lower than YOLOv8n\) \(4.6G, 43.2% lower than YOLOv8n\), and mAP75 is higher than the mainstream real\-time object detection models YOLOv8n, YOL\-Ov9t, YOLOv10n, YOLO11n, YOLOv12n and other YOLOv8 variants 1.3\-5.5%.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2505.20884v1)
+
+---
+
+
 ## Detailed Evaluation of Modern Machine Learning Approaches for Optic Plastics Sorting / 
 
 发布日期：2025-05-22
@@ -51,42 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2505.11070v1)
-
----
-
-
-## A High\-Performance Thermal Infrared Object Detection Framework with Centralized Regulation / 
-
-发布日期：2025-05-16
-
-作者：Jinke Li
-
-摘要：Thermal Infrared \(TIR\) technology involves the use of sensors to detect and measure infrared radiation emitted by objects, and it is widely utilized across a broad spectrum of applications. The advancements in object detection methods utilizing TIR images have sparked significant research interest. However, most traditional methods lack the capability to effectively extract and fuse local\-global information, which is crucial for TIR\-domain feature attention. In this study, we present a novel and efficient thermal infrared object detection framework, known as CRT\-YOLO, that is based on centralized feature regulation, enabling the establishment of global\-range interaction on TIR information. Our proposed model integrates efficient multi\-scale attention \(EMA\) modules, which adeptly capture long\-range dependencies while incurring minimal computational overhead. Additionally, it leverages the Centralized Feature Pyramid \(CFP\) network, which offers global regulation of TIR features. Extensive experiments conducted on two benchmark datasets demonstrate that our CRT\-YOLO model significantly outperforms conventional methods for TIR image object detection. Furthermore, the ablation study provides compelling evidence of the effectiveness of our proposed modules, reinforcing the potential impact of our approach on advancing the field of thermal infrared object detection.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2505.10825v1)
-
----
-
-
-## Geofenced Unmanned Aerial Robotic Defender for Deer Detection and Deterrence \(GUARD\) / 
-
-发布日期：2025-05-16
-
-作者：Ebasa Temesgen
-
-摘要：Wildlife\-induced crop damage, particularly from deer, threatens agricultural productivity. Traditional deterrence methods often fall short in scalability, responsiveness, and adaptability to diverse farmland environments. This paper presents an integrated unmanned aerial vehicle \(UAV\) system designed for autonomous wildlife deterrence, developed as part of the Farm Robotics Challenge. Our system combines a YOLO\-based real\-time computer vision module for deer detection, an energy\-efficient coverage path planning algorithm for efficient field monitoring, and an autonomous charging station for continuous operation of the UAV. In collaboration with a local Minnesota farmer, the system is tailored to address practical constraints such as terrain, infrastructure limitations, and animal behavior. The solution is evaluated through a combination of simulation and field testing, demonstrating robust detection accuracy, efficient coverage, and extended operational time. The results highlight the feasibility and effectiveness of drone\-based wildlife deterrence in precision agriculture, offering a scalable framework for future deployment and extension.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2505.10770v1)
 
 ---
 
