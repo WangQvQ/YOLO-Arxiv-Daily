@@ -37,6 +37,42 @@
 ---
 
 
+## Knowledge Distillation Approach for SOS Fusion Staging: Towards Fully Automated Skeletal Maturity Assessment / 
+
+发布日期：2025-05-27
+
+作者：Omid Halimi Milani
+
+摘要：We introduce a novel deep learning framework for the automated staging of spheno\-occipital synchondrosis \(SOS\) fusion, a critical diagnostic marker in both orthodontics and forensic anthropology. Our approach leverages a dual\-model architecture wherein a teacher model, trained on manually cropped images, transfers its precise spatial understanding to a student model that operates on full, uncropped images. This knowledge distillation is facilitated by a newly formulated loss function that aligns spatial logits as well as incorporates gradient\-based attention spatial mapping, ensuring that the student model internalizes the anatomically relevant features without relying on external cropping or YOLO\-based segmentation. By leveraging expert\-curated data and feedback at each step, our framework attains robust diagnostic accuracy, culminating in a clinically viable end\-to\-end pipeline. This streamlined approach obviates the need for additional pre\-processing tools and accelerates deployment, thereby enhancing both the efficiency and consistency of skeletal maturation assessment in diverse clinical settings.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2505.21561v1)
+
+---
+
+
+## Distill CLIP \(DCLIP\): Enhancing Image\-Text Retrieval via Cross\-Modal Transformer Distillation / 
+
+发布日期：2025-05-25
+
+作者：Daniel Csizmadia
+
+摘要：We present Distill CLIP \(DCLIP\), a fine\-tuned variant of the CLIP model that enhances multimodal image\-text retrieval while preserving the original model's strong zero\-shot classification capabilities. CLIP models are typically constrained by fixed image resolutions and limited context, which can hinder their effectiveness in retrieval tasks that require fine\-grained cross\-modal understanding. DCLIP addresses these challenges through a meta teacher\-student distillation framework, where a cross\-modal transformer teacher is fine\-tuned to produce enriched embeddings via bidirectional cross\-attention between YOLO\-extracted image regions and corresponding textual spans. These semantically and spatially aligned global representations guide the training of a lightweight student model using a hybrid loss that combines contrastive learning and cosine similarity objectives. Despite being trained on only ~67,500 samples curated from MSCOCO, Flickr30k, and Conceptual Captions\-just a fraction of CLIP's original dataset\-DCLIP significantly improves image\-text retrieval metrics \(Recall@K, MAP\), while retaining approximately 94% of CLIP's zero\-shot classification performance. These results demonstrate that DCLIP effectively mitigates the trade\-off between task specialization and generalization, offering a resource\-efficient, domain\-adaptive, and detail\-sensitive solution for advanced vision\-language tasks. Code available at https://anonymous.4open.science/r/DCLIP\-B772/README.md.
+
+中文摘要：
+
+
+代码链接：https://anonymous.4open.science/r/DCLIP-B772/README.md.
+
+论文链接：[阅读更多](http://arxiv.org/abs/2505.21549v1)
+
+---
+
+
 ## Detailed Evaluation of Modern Machine Learning Approaches for Optic Plastics Sorting / 
 
 发布日期：2025-05-22
@@ -51,42 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2505.16513v1)
-
----
-
-
-## ViQAgent: Zero\-Shot Video Question Answering via Agent with Open\-Vocabulary Grounding Validation / 
-
-发布日期：2025-05-21
-
-作者：Tony Montes
-
-摘要：Recent advancements in Video Question Answering \(VideoQA\) have introduced LLM\-based agents, modular frameworks, and procedural solutions, yielding promising results. These systems use dynamic agents and memory\-based mechanisms to break down complex tasks and refine answers. However, significant improvements remain in tracking objects for grounding over time and decision\-making based on reasoning to better align object references with language model outputs, as newer models get better at both tasks. This work presents an LLM\-brained agent for zero\-shot Video Question Answering \(VideoQA\) that combines a Chain\-of\-Thought framework with grounding reasoning alongside YOLO\-World to enhance object tracking and alignment. This approach establishes a new state\-of\-the\-art in VideoQA and Video Understanding, showing enhanced performance on NExT\-QA, iVQA, and ActivityNet\-QA benchmarks. Our framework also enables cross\-checking of grounding timeframes, improving accuracy and providing valuable support for verification and increased output reliability across multiple video domains. The code is available at https://github.com/t\-montes/viqagent.
-
-中文摘要：
-
-
-代码链接：https://github.com/t-montes/viqagent.
-
-论文链接：[阅读更多](http://arxiv.org/abs/2505.15928v1)
-
----
-
-
-## Towards Self\-Improvement of Diffusion Models via Group Preference Optimization / 
-
-发布日期：2025-05-16
-
-作者：Renjie Chen
-
-摘要：Aligning text\-to\-image \(T2I\) diffusion models with Direct Preference Optimization \(DPO\) has shown notable improvements in generation quality. However, applying DPO to T2I faces two challenges: the sensitivity of DPO to preference pairs and the labor\-intensive process of collecting and annotating high\-quality data. In this work, we demonstrate that preference pairs with marginal differences can degrade DPO performance. Since DPO relies exclusively on relative ranking while disregarding the absolute difference of pairs, it may misclassify losing samples as wins, or vice versa. We empirically show that extending the DPO from pairwise to groupwise and incorporating reward standardization for reweighting leads to performance gains without explicit data selection. Furthermore, we propose Group Preference Optimization \(GPO\), an effective self\-improvement method that enhances performance by leveraging the model's own capabilities without requiring external data. Extensive experiments demonstrate that GPO is effective across various diffusion models and tasks. Specifically, combining with widely used computer vision models, such as YOLO and OCR, the GPO improves the accurate counting and text rendering capabilities of the Stable Diffusion 3.5 Medium by 20 percentage points. Notably, as a plug\-and\-play method, no extra overhead is introduced during inference.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2505.11070v1)
 
 ---
 
