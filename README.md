@@ -1,6 +1,24 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Robust and Annotation\-Free Wound Segmentation on Noisy Real\-World Pressure Ulcer Images: Towards Automated DESIGN\-R\textsuperscript\{\textregistered\} Assessment / 
+
+发布日期：2025-05-29
+
+作者：Yun\-Cheng Tsai
+
+摘要：Purpose: Accurate wound segmentation is essential for automated DESIGN\-R scoring. However, existing models such as FUSegNet, which are trained primarily on foot ulcer datasets, often fail to generalize to wounds on other body sites.   Methods: We propose an annotation\-efficient pipeline that combines a lightweight YOLOv11n\-based detector with the pre\-trained FUSegNet segmentation model. Instead of relying on pixel\-level annotations or retraining for new anatomical regions, our method achieves robust performance using only 500 manually labeled bounding boxes. This zero fine\-tuning approach effectively bridges the domain gap and enables direct deployment across diverse wound types. This is an advance not previously demonstrated in the wound segmentation literature.   Results: Evaluated on three real\-world test sets spanning foot, sacral, and trochanter wounds, our YOLO plus FUSegNet pipeline improved mean IoU by 23 percentage points over vanilla FUSegNet and increased end\-to\-end DESIGN\-R size estimation accuracy from 71 percent to 94 percent \(see Table 3 for details\).   Conclusion: Our pipeline generalizes effectively across body sites without task\-specific fine\-tuning, demonstrating that minimal supervision, with 500 annotated ROIs, is sufficient for scalable, annotation\-light wound segmentation. This capability paves the way for real\-world DESIGN\-R automation, reducing reliance on pixel\-wise labeling, streamlining documentation workflows, and supporting objective and consistent wound scoring in clinical practice. We will publicly release the trained detector weights and configuration to promote reproducibility and facilitate downstream deployment.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2505.23392v1)
+
+---
+
+
 ## YOLO\-SPCI: Enhancing Remote Sensing Object Detection via Selective\-Perspective\-Class Integration / 
 
 发布日期：2025-05-27
@@ -68,25 +86,7 @@
 
 代码链接：https://anonymous.4open.science/r/DCLIP-B772/README.md.
 
-论文链接：[阅读更多](http://arxiv.org/abs/2505.21549v1)
-
----
-
-
-## Detailed Evaluation of Modern Machine Learning Approaches for Optic Plastics Sorting / 
-
-发布日期：2025-05-22
-
-作者：Vaishali Maheshkar
-
-摘要：According to the EPA, only 25% of waste is recycled, and just 60% of U.S. municipalities offer curbside recycling. Plastics fare worse, with a recycling rate of only 8%; an additional 16% is incinerated, while the remaining 76% ends up in landfills. The low plastic recycling rate stems from contamination, poor economic incentives, and technical difficulties, making efficient recycling a challenge. To improve recovery, automated sorting plays a critical role. Companies like AMP Robotics and Greyparrot utilize optical systems for sorting, while Materials Recovery Facilities \(MRFs\) employ Near\-Infrared \(NIR\) sensors to detect plastic types.   Modern optical sorting uses advances in computer vision such as object recognition and instance segmentation, powered by machine learning. Two\-stage detectors like Mask R\-CNN use region proposals and classification with deep backbones like ResNet. Single\-stage detectors like YOLO handle detection in one pass, trading some accuracy for speed. While such methods excel under ideal conditions with a large volume of labeled training data, challenges arise in realistic scenarios, emphasizing the need to further examine the efficacy of optic detection for automated sorting.   In this study, we compiled novel datasets totaling 20,000\+ images from varied sources. Using both public and custom machine learning pipelines, we assessed the capabilities and limitations of optical recognition for sorting. Grad\-CAM, saliency maps, and confusion matrices were employed to interpret model behavior. We perform this analysis on our custom trained models from the compiled datasets. To conclude, our findings are that optic recognition methods have limited success in accurate sorting of real\-world plastics at MRFs, primarily because they rely on physical properties such as color and shape.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2505.16513v1)
+论文链接：[阅读更多](http://arxiv.org/abs/2505.21549v2)
 
 ---
 
