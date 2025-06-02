@@ -1,6 +1,24 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Leadership Assessment in Pediatric Intensive Care Unit Team Training / 
+
+发布日期：2025-05-30
+
+作者：Liangyang Ouyang
+
+摘要：This paper addresses the task of assessing PICU team's leadership skills by developing an automated analysis framework based on egocentric vision. We identify key behavioral cues, including fixation object, eye contact, and conversation patterns, as essential indicators of leadership assessment. In order to capture these multimodal signals, we employ Aria Glasses to record egocentric video, audio, gaze, and head movement data. We collect one\-hour videos of four simulated sessions involving doctors with different roles and levels. To automate data processing, we propose a method leveraging REMoDNaV, SAM, YOLO, and ChatGPT for fixation object detection, eye contact detection, and conversation classification. In the experiments, significant correlations are observed between leadership skills and behavioral metrics, i.e., the output of our proposed methods, such as fixation time, transition patterns, and direct orders in speech. These results indicate that our proposed data collection and analysis framework can effectively solve skill assessment for training PICU teams.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2505.24389v1)
+
+---
+
+
 ## Robust and Annotation\-Free Wound Segmentation on Noisy Real\-World Pressure Ulcer Images: Towards Automated DESIGN\-R\textsuperscript\{\textregistered\} Assessment / 
 
 发布日期：2025-05-29
@@ -69,24 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2505.21561v1)
-
----
-
-
-## Distill CLIP \(DCLIP\): Enhancing Image\-Text Retrieval via Cross\-Modal Transformer Distillation / 
-
-发布日期：2025-05-25
-
-作者：Daniel Csizmadia
-
-摘要：We present Distill CLIP \(DCLIP\), a fine\-tuned variant of the CLIP model that enhances multimodal image\-text retrieval while preserving the original model's strong zero\-shot classification capabilities. CLIP models are typically constrained by fixed image resolutions and limited context, which can hinder their effectiveness in retrieval tasks that require fine\-grained cross\-modal understanding. DCLIP addresses these challenges through a meta teacher\-student distillation framework, where a cross\-modal transformer teacher is fine\-tuned to produce enriched embeddings via bidirectional cross\-attention between YOLO\-extracted image regions and corresponding textual spans. These semantically and spatially aligned global representations guide the training of a lightweight student model using a hybrid loss that combines contrastive learning and cosine similarity objectives. Despite being trained on only ~67,500 samples curated from MSCOCO, Flickr30k, and Conceptual Captions\-just a fraction of CLIP's original dataset\-DCLIP significantly improves image\-text retrieval metrics \(Recall@K, MAP\), while retaining approximately 94% of CLIP's zero\-shot classification performance. These results demonstrate that DCLIP effectively mitigates the trade\-off between task specialization and generalization, offering a resource\-efficient, domain\-adaptive, and detail\-sensitive solution for advanced vision\-language tasks. Code available at https://anonymous.4open.science/r/DCLIP\-B772/README.md.
-
-中文摘要：
-
-
-代码链接：https://anonymous.4open.science/r/DCLIP-B772/README.md.
-
-论文链接：[阅读更多](http://arxiv.org/abs/2505.21549v2)
 
 ---
 
