@@ -1,6 +1,42 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Efficient Endangered Deer Species Monitoring with UAV Aerial Imagery and Deep Learning / 
+
+发布日期：2025-05-30
+
+作者：Agustín Roca
+
+摘要：This paper examines the use of Unmanned Aerial Vehicles \(UAVs\) and deep learning for detecting endangered deer species in their natural habitats. As traditional identification processes require trained manual labor that can be costly in resources and time, there is a need for more efficient solutions. Leveraging high\-resolution aerial imagery, advanced computer vision techniques are applied to automate the identification process of deer across two distinct projects in Buenos Aires, Argentina. The first project, Pantano Project, involves the marsh deer in the Paran'a Delta, while the second, WiMoBo, focuses on the Pampas deer in Campos del Tuy'u National Park. A tailored algorithm was developed using the YOLO framework, trained on extensive datasets compiled from UAV\-captured images. The findings demonstrate that the algorithm effectively identifies marsh deer with a high degree of accuracy and provides initial insights into its applicability to Pampas deer, albeit with noted limitations. This study not only supports ongoing conservation efforts but also highlights the potential of integrating AI with UAV technology to enhance wildlife monitoring and management practices.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2506.00164v1)
+
+---
+
+
+## Detection of Endangered Deer Species Using UAV Imagery: A Comparative Study Between Efficient Deep Learning Approaches / 
+
+发布日期：2025-05-30
+
+作者：Agustín Roca
+
+摘要：This study compares the performance of state\-of\-the\-art neural networks including variants of the YOLOv11 and RT\-DETR models for detecting marsh deer in UAV imagery, in scenarios where specimens occupy a very small portion of the image and are occluded by vegetation. We extend previous analysis adding precise segmentation masks for our datasets enabling a fine\-grained training of a YOLO model with a segmentation head included. Experimental results show the effectiveness of incorporating the segmentation head achieving superior detection performance. This work contributes valuable insights for improving UAV\-based wildlife monitoring and conservation strategies through scalable and accurate AI\-driven detection systems.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2506.00154v1)
+
+---
+
+
 ## Leadership Assessment in Pediatric Intensive Care Unit Team Training / 
 
 发布日期：2025-05-30
@@ -51,42 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2505.21370v1)
-
----
-
-
-## YOLO\-FireAD: Efficient Fire Detection via Attention\-Guided Inverted Residual Learning and Dual\-Pooling Feature Preservation / 
-
-发布日期：2025-05-27
-
-作者：Weichao Pan
-
-摘要：Fire detection in dynamic environments faces continuous challenges, including the interference of illumination changes, many false detections or missed detections, and it is difficult to achieve both efficiency and accuracy. To address the problem of feature extraction limitation and information loss in the existing YOLO\-based models, this study propose You Only Look Once for Fire Detection with Attention\-guided Inverted Residual and Dual\-pooling Downscale Fusion \(YOLO\-FireAD\) with two core innovations: \(1\) Attention\-guided Inverted Residual Block \(AIR\) integrates hybrid channel\-spatial attention with inverted residuals to adaptively enhance fire features and suppress environmental noise; \(2\) Dual Pool Downscale Fusion Block \(DPDF\) preserves multi\-scale fire patterns through learnable fusion of max\-average pooling outputs, mitigating small\-fire detection failures. Extensive evaluation on two public datasets shows the efficient performance of our model. Our proposed model keeps the sum amount of parameters \(1.45M, 51.8% lower than YOLOv8n\) \(4.6G, 43.2% lower than YOLOv8n\), and mAP75 is higher than the mainstream real\-time object detection models YOLOv8n, YOL\-Ov9t, YOLOv10n, YOLO11n, YOLOv12n and other YOLOv8 variants 1.3\-5.5%.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2505.20884v1)
-
----
-
-
-## Knowledge Distillation Approach for SOS Fusion Staging: Towards Fully Automated Skeletal Maturity Assessment / 
-
-发布日期：2025-05-27
-
-作者：Omid Halimi Milani
-
-摘要：We introduce a novel deep learning framework for the automated staging of spheno\-occipital synchondrosis \(SOS\) fusion, a critical diagnostic marker in both orthodontics and forensic anthropology. Our approach leverages a dual\-model architecture wherein a teacher model, trained on manually cropped images, transfers its precise spatial understanding to a student model that operates on full, uncropped images. This knowledge distillation is facilitated by a newly formulated loss function that aligns spatial logits as well as incorporates gradient\-based attention spatial mapping, ensuring that the student model internalizes the anatomically relevant features without relying on external cropping or YOLO\-based segmentation. By leveraging expert\-curated data and feedback at each step, our framework attains robust diagnostic accuracy, culminating in a clinically viable end\-to\-end pipeline. This streamlined approach obviates the need for additional pre\-processing tools and accelerates deployment, thereby enhancing both the efficiency and consistency of skeletal maturation assessment in diverse clinical settings.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2505.21561v1)
 
 ---
 
