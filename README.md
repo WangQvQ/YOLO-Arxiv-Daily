@@ -1,6 +1,60 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## MS\-YOLO: A Multi\-Scale Model for Accurate and Efficient Blood Cell Detection / 
+
+发布日期：2025-06-04
+
+作者：Guohua Wu
+
+摘要：Complete blood cell detection holds significant value in clinical diagnostics. Conventional manual microscopy methods suffer from time inefficiency and diagnostic inaccuracies. Existing automated detection approaches remain constrained by high deployment costs and suboptimal accuracy. While deep learning has introduced powerful paradigms to this field, persistent challenges in detecting overlapping cells and multi\-scale objects hinder practical deployment. This study proposes the multi\-scale YOLO \(MS\-YOLO\), a blood cell detection model based on the YOLOv11 framework, incorporating three key architectural innovations to enhance detection performance. Specifically, the multi\-scale dilated residual module \(MS\-DRM\) replaces the original C3K2 modules to improve multi\-scale discriminability; the dynamic cross\-path feature enhancement module \(DCFEM\) enables the fusion of hierarchical features from the backbone with aggregated features from the neck to enhance feature representations; and the light adaptive\-weight downsampling module \(LADS\) improves feature downsampling through adaptive spatial weighting while reducing computational complexity. Experimental results on the CBC benchmark demonstrate that MS\-YOLO achieves precise detection of overlapping cells and multi\-scale objects, particularly small targets such as platelets, achieving an mAP@50 of 97.4% that outperforms existing models. Further validation on the supplementary WBCDD dataset confirms its robust generalization capability. Additionally, with a lightweight architecture and real\-time inference efficiency, MS\-YOLO meets clinical deployment requirements, providing reliable technical support for standardized blood pathology assessment.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2506.03972v1)
+
+---
+
+
+## MambaNeXt\-YOLO: A Hybrid State Space Model for Real\-time Object Detection / 
+
+发布日期：2025-06-04
+
+作者：Xiaochun Lei
+
+摘要：Real\-time object detection is a fundamental but challenging task in computer vision, particularly when computational resources are limited. Although YOLO\-series models have set strong benchmarks by balancing speed and accuracy, the increasing need for richer global context modeling has led to the use of Transformer\-based architectures. Nevertheless, Transformers have high computational complexity because of their self\-attention mechanism, which limits their practicality for real\-time and edge deployments. To overcome these challenges, recent developments in linear state space models, such as Mamba, provide a promising alternative by enabling efficient sequence modeling with linear complexity. Building on this insight, we propose MambaNeXt\-YOLO, a novel object detection framework that balances accuracy and efficiency through three key contributions: \(1\) MambaNeXt Block: a hybrid design that integrates CNNs with Mamba to effectively capture both local features and long\-range dependencies; \(2\) Multi\-branch Asymmetric Fusion Pyramid Network \(MAFPN\): an enhanced feature pyramid architecture that improves multi\-scale object detection across various object sizes; and \(3\) Edge\-focused Efficiency: our method achieved 66.6% mAP at 31.9 FPS on the PASCAL VOC dataset without any pre\-training and supports deployment on edge devices such as the NVIDIA Jetson Xavier NX and Orin NX.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2506.03654v1)
+
+---
+
+
+## DiagNet: Detecting Objects using Diagonal Constraints on Adjacency Matrix of Graph Neural Network / 
+
+发布日期：2025-06-04
+
+作者：Chong Hyun Lee
+
+摘要：We propose DaigNet, a new approach to object detection with which we can detect an object bounding box using diagonal constraints on adjacency matrix of a graph convolutional network \(GCN\). We propose two diagonalization algorithms based on hard and soft constraints on adjacency matrix and two loss functions using diagonal constraint and complementary constraint. The DaigNet eliminates the need for designing a set of anchor boxes commonly used. To prove feasibility of our novel detector, we adopt detection head in YOLO models. Experiments show that the DiagNet achieves 7.5% higher mAP50 on Pascal VOC than YOLOv1. The DiagNet also shows 5.1% higher mAP on MS COCO than YOLOv3u, 3.7% higher mAP than YOLOv5u, and 2.9% higher mAP than YOLOv8.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2506.03571v1)
+
+---
+
+
 ## Efficient Endangered Deer Species Monitoring with UAV Aerial Imagery and Deep Learning / 
 
 发布日期：2025-05-30
@@ -33,60 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2506.00154v1)
-
----
-
-
-## Leadership Assessment in Pediatric Intensive Care Unit Team Training / 
-
-发布日期：2025-05-30
-
-作者：Liangyang Ouyang
-
-摘要：This paper addresses the task of assessing PICU team's leadership skills by developing an automated analysis framework based on egocentric vision. We identify key behavioral cues, including fixation object, eye contact, and conversation patterns, as essential indicators of leadership assessment. In order to capture these multimodal signals, we employ Aria Glasses to record egocentric video, audio, gaze, and head movement data. We collect one\-hour videos of four simulated sessions involving doctors with different roles and levels. To automate data processing, we propose a method leveraging REMoDNaV, SAM, YOLO, and ChatGPT for fixation object detection, eye contact detection, and conversation classification. In the experiments, significant correlations are observed between leadership skills and behavioral metrics, i.e., the output of our proposed methods, such as fixation time, transition patterns, and direct orders in speech. These results indicate that our proposed data collection and analysis framework can effectively solve skill assessment for training PICU teams.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2505.24389v1)
-
----
-
-
-## Robust and Annotation\-Free Wound Segmentation on Noisy Real\-World Pressure Ulcer Images: Towards Automated DESIGN\-R\textsuperscript\{\textregistered\} Assessment / 
-
-发布日期：2025-05-29
-
-作者：Yun\-Cheng Tsai
-
-摘要：Purpose: Accurate wound segmentation is essential for automated DESIGN\-R scoring. However, existing models such as FUSegNet, which are trained primarily on foot ulcer datasets, often fail to generalize to wounds on other body sites.   Methods: We propose an annotation\-efficient pipeline that combines a lightweight YOLOv11n\-based detector with the pre\-trained FUSegNet segmentation model. Instead of relying on pixel\-level annotations or retraining for new anatomical regions, our method achieves robust performance using only 500 manually labeled bounding boxes. This zero fine\-tuning approach effectively bridges the domain gap and enables direct deployment across diverse wound types. This is an advance not previously demonstrated in the wound segmentation literature.   Results: Evaluated on three real\-world test sets spanning foot, sacral, and trochanter wounds, our YOLO plus FUSegNet pipeline improved mean IoU by 23 percentage points over vanilla FUSegNet and increased end\-to\-end DESIGN\-R size estimation accuracy from 71 percent to 94 percent \(see Table 3 for details\).   Conclusion: Our pipeline generalizes effectively across body sites without task\-specific fine\-tuning, demonstrating that minimal supervision, with 500 annotated ROIs, is sufficient for scalable, annotation\-light wound segmentation. This capability paves the way for real\-world DESIGN\-R automation, reducing reliance on pixel\-wise labeling, streamlining documentation workflows, and supporting objective and consistent wound scoring in clinical practice. We will publicly release the trained detector weights and configuration to promote reproducibility and facilitate downstream deployment.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2505.23392v1)
-
----
-
-
-## YOLO\-SPCI: Enhancing Remote Sensing Object Detection via Selective\-Perspective\-Class Integration / 
-
-发布日期：2025-05-27
-
-作者：Xinyuan Wang
-
-摘要：Object detection in remote sensing imagery remains a challenging task due to extreme scale variation, dense object distributions, and cluttered backgrounds. While recent detectors such as YOLOv8 have shown promising results, their backbone architectures lack explicit mechanisms to guide multi\-scale feature refinement, limiting performance on high\-resolution aerial data. In this work, we propose YOLO\-SPCI, an attention\-enhanced detection framework that introduces a lightweight Selective\-Perspective\-Class Integration \(SPCI\) module to improve feature representation. The SPCI module integrates three components: a Selective Stream Gate \(SSG\) for adaptive regulation of global feature flow, a Perspective Fusion Module \(PFM\) for context\-aware multi\-scale integration, and a Class Discrimination Module \(CDM\) to enhance inter\-class separability. We embed two SPCI blocks into the P3 and P5 stages of the YOLOv8 backbone, enabling effective refinement while preserving compatibility with the original neck and head. Experiments on the NWPU VHR\-10 dataset demonstrate that YOLO\-SPCI achieves superior performance compared to state\-of\-the\-art detectors.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2505.21370v1)
 
 ---
 
