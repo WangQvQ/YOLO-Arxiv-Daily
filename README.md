@@ -1,6 +1,24 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Gen\-n\-Val: Agentic Image Data Generation and Validation / 
+
+发布日期：2025-06-05
+
+作者：Jing\-En Huang
+
+摘要：Recently, Large Language Models \(LLMs\) and Vision Large Language Models \(VLLMs\) have demonstrated impressive performance as agents across various tasks while data scarcity and label noise remain significant challenges in computer vision tasks, such as object detection and instance segmentation. A common solution for resolving these issues is to generate synthetic data. However, current synthetic data generation methods struggle with issues, such as multiple objects per mask, inaccurate segmentation, and incorrect category labels, limiting their effectiveness. To address these issues, we introduce Gen\-n\-Val, a novel agentic data generation framework that leverages Layer Diffusion \(LD\), LLMs, and VLLMs to produce high\-quality, single\-object masks and diverse backgrounds. Gen\-n\-Val consists of two agents: \(1\) The LD prompt agent, an LLM, optimizes prompts for LD to generate high\-quality foreground instance images and segmentation masks. These optimized prompts ensure the generation of single\-object synthetic data with precise instance masks and clean backgrounds. \(2\) The data validation agent, a VLLM, which filters out low\-quality synthetic instance images. The system prompts for both agents are refined through TextGrad. Additionally, we use image harmonization to combine multiple instances within scenes. Compared to state\-of\-the\-art synthetic data approaches like MosaicFusion, our approach reduces invalid synthetic data from 50% to 7% and improves performance by 1% mAP on rare classes in COCO instance segmentation with YOLOv9c and YOLO11m. Furthermore, Gen\-n\-Val shows significant improvements \(7. 1% mAP\) over YOLO\-Worldv2\-M in open\-vocabulary object detection benchmarks with YOLO11m. Moreover, Gen\-n\-Val improves the performance of YOLOv9 and YOLO11 families in instance segmentation and object detection.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2506.04676v1)
+
+---
+
+
 ## MS\-YOLO: A Multi\-Scale Model for Accurate and Efficient Blood Cell Detection / 
 
 发布日期：2025-06-04
@@ -32,7 +50,7 @@
 
 代码链接：摘要中未找到代码链接。
 
-论文链接：[阅读更多](http://arxiv.org/abs/2506.03654v1)
+论文链接：[阅读更多](http://arxiv.org/abs/2506.03654v2)
 
 ---
 
@@ -69,24 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2506.00164v1)
-
----
-
-
-## Detection of Endangered Deer Species Using UAV Imagery: A Comparative Study Between Efficient Deep Learning Approaches / 
-
-发布日期：2025-05-30
-
-作者：Agustín Roca
-
-摘要：This study compares the performance of state\-of\-the\-art neural networks including variants of the YOLOv11 and RT\-DETR models for detecting marsh deer in UAV imagery, in scenarios where specimens occupy a very small portion of the image and are occluded by vegetation. We extend previous analysis adding precise segmentation masks for our datasets enabling a fine\-grained training of a YOLO model with a segmentation head included. Experimental results show the effectiveness of incorporating the segmentation head achieving superior detection performance. This work contributes valuable insights for improving UAV\-based wildlife monitoring and conservation strategies through scalable and accurate AI\-driven detection systems.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2506.00154v1)
 
 ---
 
