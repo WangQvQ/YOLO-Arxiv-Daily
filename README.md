@@ -1,6 +1,24 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## CBAM\-STN\-TPS\-YOLO: Enhancing Agricultural Object Detection through Spatially Adaptive Attention Mechanisms / 
+
+发布日期：2025-06-09
+
+作者：Satvik Praveen
+
+摘要：Object detection is vital in precision agriculture for plant monitoring, disease detection, and yield estimation. However, models like YOLO struggle with occlusions, irregular structures, and background noise, reducing detection accuracy. While Spatial Transformer Networks \(STNs\) improve spatial invariance through learned transformations, affine mappings are insufficient for non\-rigid deformations such as bent leaves and overlaps.   We propose CBAM\-STN\-TPS\-YOLO, a model integrating Thin\-Plate Splines \(TPS\) into STNs for flexible, non\-rigid spatial transformations that better align features. Performance is further enhanced by the Convolutional Block Attention Module \(CBAM\), which suppresses background noise and emphasizes relevant spatial and channel\-wise features.   On the occlusion\-heavy Plant Growth and Phenotyping \(PGP\) dataset, our model outperforms STN\-YOLO in precision, recall, and mAP. It achieves a 12% reduction in false positives, highlighting the benefits of improved spatial flexibility and attention\-guided refinement. We also examine the impact of the TPS regularization parameter in balancing transformation smoothness and detection performance.   This lightweight model improves spatial awareness and supports real\-time edge deployment, making it ideal for smart farming applications requiring accurate and efficient monitoring.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2506.07357v1)
+
+---
+
+
 ## Gen\-n\-Val: Agentic Image Data Generation and Validation / 
 
 发布日期：2025-06-05
@@ -69,24 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2506.03571v1)
-
----
-
-
-## Efficient Endangered Deer Species Monitoring with UAV Aerial Imagery and Deep Learning / 
-
-发布日期：2025-05-30
-
-作者：Agustín Roca
-
-摘要：This paper examines the use of Unmanned Aerial Vehicles \(UAVs\) and deep learning for detecting endangered deer species in their natural habitats. As traditional identification processes require trained manual labor that can be costly in resources and time, there is a need for more efficient solutions. Leveraging high\-resolution aerial imagery, advanced computer vision techniques are applied to automate the identification process of deer across two distinct projects in Buenos Aires, Argentina. The first project, Pantano Project, involves the marsh deer in the Paran'a Delta, while the second, WiMoBo, focuses on the Pampas deer in Campos del Tuy'u National Park. A tailored algorithm was developed using the YOLO framework, trained on extensive datasets compiled from UAV\-captured images. The findings demonstrate that the algorithm effectively identifies marsh deer with a high degree of accuracy and provides initial insights into its applicability to Pampas deer, albeit with noted limitations. This study not only supports ongoing conservation efforts but also highlights the potential of integrating AI with UAV technology to enhance wildlife monitoring and management practices.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2506.00164v1)
 
 ---
 
