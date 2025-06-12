@@ -1,6 +1,24 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## BakuFlow: A Streamlining Semi\-Automatic Label Generation Tool / 
+
+发布日期：2025-06-10
+
+作者：Jerry Lin
+
+摘要：Accurately labeling \(or annotation\) data is still a bottleneck in computer vision, especially for large\-scale tasks where manual labeling is time\-consuming and error\-prone. While tools like LabelImg can handle the labeling task, some of them still require annotators to manually label each image. In this paper, we introduce BakuFlow, a streamlining semi\-automatic label generation tool. Key features include \(1\) a live adjustable magnifier for pixel\-precise manual corrections, improving user experience; \(2\) an interactive data augmentation module to diversify training datasets; \(3\) label propagation for rapidly copying labeled objects between consecutive frames, greatly accelerating annotation of video data; and \(4\) an automatic labeling module powered by a modified YOLOE framework. Unlike the original YOLOE, our extension supports adding new object classes and any number of visual prompts per class during annotation, enabling flexible and scalable labeling for dynamic, real\-world datasets. These innovations make BakuFlow especially effective for object detection and tracking, substantially reducing labeling workload and improving efficiency in practical computer vision and industrial scenarios.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2506.09083v1)
+
+---
+
+
 ## CBAM\-STN\-TPS\-YOLO: Enhancing Agricultural Object Detection through Spatially Adaptive Attention Mechanisms / 
 
 发布日期：2025-06-09
@@ -69,24 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2506.03654v2)
-
----
-
-
-## DiagNet: Detecting Objects using Diagonal Constraints on Adjacency Matrix of Graph Neural Network / 
-
-发布日期：2025-06-04
-
-作者：Chong Hyun Lee
-
-摘要：We propose DaigNet, a new approach to object detection with which we can detect an object bounding box using diagonal constraints on adjacency matrix of a graph convolutional network \(GCN\). We propose two diagonalization algorithms based on hard and soft constraints on adjacency matrix and two loss functions using diagonal constraint and complementary constraint. The DaigNet eliminates the need for designing a set of anchor boxes commonly used. To prove feasibility of our novel detector, we adopt detection head in YOLO models. Experiments show that the DiagNet achieves 7.5% higher mAP50 on Pascal VOC than YOLOv1. The DiagNet also shows 5.1% higher mAP on MS COCO than YOLOv3u, 3.7% higher mAP than YOLOv5u, and 2.9% higher mAP than YOLOv8.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2506.03571v1)
 
 ---
 
