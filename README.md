@@ -1,6 +1,24 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## J\-DDL: Surface Damage Detection and Localization System for Fighter Aircraft / 
+
+发布日期：2025-06-12
+
+作者：Jin Huang
+
+摘要：Ensuring the safety and extended operational life of fighter aircraft necessitates frequent and exhaustive inspections. While surface defect detection is feasible for human inspectors, manual methods face critical limitations in scalability, efficiency, and consistency due to the vast surface area, structural complexity, and operational demands of aircraft maintenance. We propose a smart surface damage detection and localization system for fighter aircraft, termed J\-DDL. J\-DDL integrates 2D images and 3D point clouds of the entire aircraft surface, captured using a combined system of laser scanners and cameras, to achieve precise damage detection and localization. Central to our system is a novel damage detection network built on the YOLO architecture, specifically optimized for identifying surface defects in 2D aircraft images. Key innovations include lightweight Fasternet blocks for efficient feature extraction, an optimized neck architecture incorporating Efficient Multiscale Attention \(EMA\) modules for superior feature aggregation, and the introduction of a novel loss function, Inner\-CIOU, to enhance detection accuracy. After detecting damage in 2D images, the system maps the identified anomalies onto corresponding 3D point clouds, enabling accurate 3D localization of defects across the aircraft surface. Our J\-DDL not only streamlines the inspection process but also ensures more comprehensive and detailed coverage of large and complex aircraft exteriors. To facilitate further advancements in this domain, we have developed the first publicly available dataset specifically focused on aircraft damage. Experimental evaluations validate the effectiveness of our framework, underscoring its potential to significantly advance automated aircraft inspection technologies.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2506.10505v1)
+
+---
+
+
 ## BakuFlow: A Streamlining Semi\-Automatic Label Generation Tool / 
 
 发布日期：2025-06-10
@@ -69,24 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2506.03972v1)
-
----
-
-
-## MambaNeXt\-YOLO: A Hybrid State Space Model for Real\-time Object Detection / 
-
-发布日期：2025-06-04
-
-作者：Xiaochun Lei
-
-摘要：Real\-time object detection is a fundamental but challenging task in computer vision, particularly when computational resources are limited. Although YOLO\-series models have set strong benchmarks by balancing speed and accuracy, the increasing need for richer global context modeling has led to the use of Transformer\-based architectures. Nevertheless, Transformers have high computational complexity because of their self\-attention mechanism, which limits their practicality for real\-time and edge deployments. To overcome these challenges, recent developments in linear state space models, such as Mamba, provide a promising alternative by enabling efficient sequence modeling with linear complexity. Building on this insight, we propose MambaNeXt\-YOLO, a novel object detection framework that balances accuracy and efficiency through three key contributions: \(1\) MambaNeXt Block: a hybrid design that integrates CNNs with Mamba to effectively capture both local features and long\-range dependencies; \(2\) Multi\-branch Asymmetric Fusion Pyramid Network \(MAFPN\): an enhanced feature pyramid architecture that improves multi\-scale object detection across various object sizes; and \(3\) Edge\-focused Efficiency: our method achieved 66.6% mAP at 31.9 FPS on the PASCAL VOC dataset without any pre\-training and supports deployment on edge devices such as the NVIDIA Jetson Xavier NX and Orin NX.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2506.03654v2)
 
 ---
 
