@@ -1,6 +1,60 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Lightweight Multi\-Frame Integration for Robust YOLO Object Detection in Videos / 
+
+发布日期：2025-06-25
+
+作者：Yitong Quan
+
+摘要：Modern image\-based object detection models, such as YOLOv7, primarily process individual frames independently, thus ignoring valuable temporal context naturally present in videos. Meanwhile, existing video\-based detection methods often introduce complex temporal modules, significantly increasing model size and computational complexity. In practical applications such as surveillance and autonomous driving, transient challenges including motion blur, occlusions, and abrupt appearance changes can severely degrade single\-frame detection performance. To address these issues, we propose a straightforward yet highly effective strategy: stacking multiple consecutive frames as input to a YOLO\-based detector while supervising only the output corresponding to a single target frame. This approach leverages temporal information with minimal modifications to existing architectures, preserving simplicity, computational efficiency, and real\-time inference capability. Extensive experiments on the challenging MOT20Det and our BOAT360 datasets demonstrate that our method improves detection robustness, especially for lightweight models, effectively narrowing the gap between compact and heavy detection networks. Additionally, we contribute the BOAT360 benchmark dataset, comprising annotated fisheye video sequences captured from a boat, to support future research in multi\-frame video object detection in challenging real\-world scenarios.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2506.20550v1)
+
+---
+
+
+## From Codicology to Code: A Comparative Study of Transformer and YOLO\-based Detectors for Layout Analysis in Historical Documents / 
+
+发布日期：2025-06-25
+
+作者：Sergio Torres Aguilar
+
+摘要：Robust Document Layout Analysis \(DLA\) is critical for the automated processing and understanding of historical documents with complex page organizations. This paper benchmarks five state\-of\-the\-art object detection architectures on three annotated datasets representing a spectrum of codicological complexity: The e\-NDP, a corpus of Parisian medieval registers \(1326\-1504\); CATMuS, a diverse multiclass dataset derived from various medieval and modern sources \(ca.12th\-17th centuries\) and HORAE, a corpus of decorated books of hours \(ca.13th\-16th centuries\). We evaluate two Transformer\-based models \(Co\-DETR, Grounding DINO\) against three YOLO variants \(AABB, OBB, and YOLO\-World\). Our findings reveal significant performance variations dependent on model architecture, data set characteristics, and bounding box representation. In the e\-NDP dataset, Co\-DETR achieves state\-of\-the\-art results \(0.752 mAP@.50:.95\), closely followed by YOLOv11X\-OBB \(0.721\). Conversely, on the more complex CATMuS and HORAE datasets, the CNN\-based YOLOv11x\-OBB significantly outperforms all other models \(0.564 and 0.568, respectively\). This study unequivocally demonstrates that using Oriented Bounding Boxes \(OBB\) is not a minor refinement but a fundamental requirement for accurately modeling the non\-Cartesian nature of historical manuscripts. We conclude that a key trade\-off exists between the global context awareness of Transformers, ideal for structured layouts, and the superior generalization of CNN\-OBB models for visually diverse and complex documents.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2506.20326v1)
+
+---
+
+
+## Computer Vision based Automated Quantification of Agricultural Sprayers Boom Displacement / 
+
+发布日期：2025-06-24
+
+作者：Aryan Singh Dalal
+
+摘要：Application rate errors when using self\-propelled agricultural sprayers for agricultural production remain a concern. Among other factors, spray boom instability is one of the major contributors to application errors. Spray booms' width of 38m, combined with 30 kph driving speeds, varying terrain, and machine dynamics when maneuvering complex field boundaries, make controls of these booms very complex. However, there is no quantitative knowledge on the extent of boom movement to systematically develop a solution that might include boom designs and responsive boom control systems. Therefore, this study was conducted to develop an automated computer vision system to quantify the boom movement of various agricultural sprayers. A computer vision system was developed to track a target on the edge of the sprayer boom in real time. YOLO V7, V8, and V11 neural network models were trained to track the boom's movements in field operations to quantify effective displacement in the vertical and transverse directions. An inclinometer sensor was mounted on the boom to capture boom angles and validate the neural network model output. The results showed that the model could detect the target with more than 90 percent accuracy, and distance estimates of the target on the boom were within 0.026 m of the inclinometer sensor data. This system can quantify the boom movement on the current sprayer and potentially on any other sprayer with minor modifications. The data can be used to make design improvements to make sprayer booms more stable and achieve greater application accuracy.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2506.19939v1)
+
+---
+
+
 ## YOLOv13: Real\-Time Object Detection with Hypergraph\-Enhanced Adaptive Visual Perception / 
 
 发布日期：2025-06-21
@@ -33,60 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2506.11239v1)
-
----
-
-
-## J\-DDL: Surface Damage Detection and Localization System for Fighter Aircraft / 
-
-发布日期：2025-06-12
-
-作者：Jin Huang
-
-摘要：Ensuring the safety and extended operational life of fighter aircraft necessitates frequent and exhaustive inspections. While surface defect detection is feasible for human inspectors, manual methods face critical limitations in scalability, efficiency, and consistency due to the vast surface area, structural complexity, and operational demands of aircraft maintenance. We propose a smart surface damage detection and localization system for fighter aircraft, termed J\-DDL. J\-DDL integrates 2D images and 3D point clouds of the entire aircraft surface, captured using a combined system of laser scanners and cameras, to achieve precise damage detection and localization. Central to our system is a novel damage detection network built on the YOLO architecture, specifically optimized for identifying surface defects in 2D aircraft images. Key innovations include lightweight Fasternet blocks for efficient feature extraction, an optimized neck architecture incorporating Efficient Multiscale Attention \(EMA\) modules for superior feature aggregation, and the introduction of a novel loss function, Inner\-CIOU, to enhance detection accuracy. After detecting damage in 2D images, the system maps the identified anomalies onto corresponding 3D point clouds, enabling accurate 3D localization of defects across the aircraft surface. Our J\-DDL not only streamlines the inspection process but also ensures more comprehensive and detailed coverage of large and complex aircraft exteriors. To facilitate further advancements in this domain, we have developed the first publicly available dataset specifically focused on aircraft damage. Experimental evaluations validate the effectiveness of our framework, underscoring its potential to significantly advance automated aircraft inspection technologies.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2506.10505v1)
-
----
-
-
-## BakuFlow: A Streamlining Semi\-Automatic Label Generation Tool / 
-
-发布日期：2025-06-10
-
-作者：Jerry Lin
-
-摘要：Accurately labeling \(or annotation\) data is still a bottleneck in computer vision, especially for large\-scale tasks where manual labeling is time\-consuming and error\-prone. While tools like LabelImg can handle the labeling task, some of them still require annotators to manually label each image. In this paper, we introduce BakuFlow, a streamlining semi\-automatic label generation tool. Key features include \(1\) a live adjustable magnifier for pixel\-precise manual corrections, improving user experience; \(2\) an interactive data augmentation module to diversify training datasets; \(3\) label propagation for rapidly copying labeled objects between consecutive frames, greatly accelerating annotation of video data; and \(4\) an automatic labeling module powered by a modified YOLOE framework. Unlike the original YOLOE, our extension supports adding new object classes and any number of visual prompts per class during annotation, enabling flexible and scalable labeling for dynamic, real\-world datasets. These innovations make BakuFlow especially effective for object detection and tracking, substantially reducing labeling workload and improving efficiency in practical computer vision and industrial scenarios.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2506.09083v1)
-
----
-
-
-## CBAM\-STN\-TPS\-YOLO: Enhancing Agricultural Object Detection through Spatially Adaptive Attention Mechanisms / 
-
-发布日期：2025-06-09
-
-作者：Satvik Praveen
-
-摘要：Object detection is vital in precision agriculture for plant monitoring, disease detection, and yield estimation. However, models like YOLO struggle with occlusions, irregular structures, and background noise, reducing detection accuracy. While Spatial Transformer Networks \(STNs\) improve spatial invariance through learned transformations, affine mappings are insufficient for non\-rigid deformations such as bent leaves and overlaps.   We propose CBAM\-STN\-TPS\-YOLO, a model integrating Thin\-Plate Splines \(TPS\) into STNs for flexible, non\-rigid spatial transformations that better align features. Performance is further enhanced by the Convolutional Block Attention Module \(CBAM\), which suppresses background noise and emphasizes relevant spatial and channel\-wise features.   On the occlusion\-heavy Plant Growth and Phenotyping \(PGP\) dataset, our model outperforms STN\-YOLO in precision, recall, and mAP. It achieves a 12% reduction in false positives, highlighting the benefits of improved spatial flexibility and attention\-guided refinement. We also examine the impact of the TPS regularization parameter in balancing transformation smoothness and detection performance.   This lightweight model improves spatial awareness and supports real\-time edge deployment, making it ideal for smart farming applications requiring accurate and efficient monitoring.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2506.07357v1)
 
 ---
 
