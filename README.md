@@ -1,6 +1,24 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## YOLO\-FDA: Integrating Hierarchical Attention and Detail Enhancement for Surface Defect Detection / 
+
+发布日期：2025-06-26
+
+作者：Jiawei Hu
+
+摘要：Surface defect detection in industrial scenarios is both crucial and technically demanding due to the wide variability in defect types, irregular shapes and sizes, fine\-grained requirements, and complex material textures. Although recent advances in AI\-based detectors have improved performance, existing methods often suffer from redundant features, limited detail sensitivity, and weak robustness under multiscale conditions. To address these challenges, we propose YOLO\-FDA, a novel YOLO\-based detection framework that integrates fine\-grained detail enhancement and attention\-guided feature fusion. Specifically, we adopt a BiFPN\-style architecture to strengthen bidirectional multilevel feature aggregation within the YOLOv5 backbone. To better capture fine structural changes, we introduce a Detail\-directional Fusion Module \(DDFM\) that introduces a directional asymmetric convolution in the second\-lowest layer to enrich spatial details and fuses the second\-lowest layer with low\-level features to enhance semantic consistency. Furthermore, we propose two novel attention\-based fusion strategies, Attention\-weighted Concatenation \(AC\) and Cross\-layer Attention Fusion \(CAF\) to improve contextual representation and reduce feature noise. Extensive experiments on benchmark datasets demonstrate that YOLO\-FDA consistently outperforms existing state\-of\-the\-art methods in terms of both accuracy and robustness across diverse types of defects and scales.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2506.21135v1)
+
+---
+
+
 ## Lightweight Multi\-Frame Integration for Robust YOLO Object Detection in Videos / 
 
 发布日期：2025-06-25
@@ -69,24 +87,6 @@
 代码链接：https://github.com/iMoonLab/yolov13.
 
 论文链接：[阅读更多](http://arxiv.org/abs/2506.17733v1)
-
----
-
-
-## Enhanced Vehicle Speed Detection Considering Lane Recognition Using Drone Videos in California / 
-
-发布日期：2025-06-12
-
-作者：Amirali Ataee Naeini
-
-摘要：The increase in vehicle numbers in California, driven by inadequate transportation systems and sparse speed cameras, necessitates effective vehicle speed detection. Detecting vehicle speeds per lane is critical for monitoring High\-Occupancy Vehicle \(HOV\) lane speeds, distinguishing between cars and heavy vehicles with differing speed limits, and enforcing lane restrictions for heavy vehicles. While prior works utilized YOLO \(You Only Look Once\) for vehicle speed detection, they often lacked accuracy, failed to identify vehicle lanes, and offered limited or less practical classification categories. This study introduces a fine\-tuned YOLOv11 model, trained on almost 800 bird's\-eye view images, to enhance vehicle speed detection accuracy which is much higher compare to the previous works. The proposed system identifies the lane for each vehicle and classifies vehicles into two categories: cars and heavy vehicles. Designed to meet the specific requirements of traffic monitoring and regulation, the model also evaluates the effects of factors such as drone height, distance of Region of Interest \(ROI\), and vehicle speed on detection accuracy and speed measurement. Drone footage collected from Northern California was used to assess the proposed system. The fine\-tuned YOLOv11 achieved its best performance with a mean absolute error \(MAE\) of 0.97 mph and mean squared error \(MSE\) of 0.94 $text\{mph\}^2$, demonstrating its efficacy in addressing challenges in vehicle speed detection and classification.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2506.11239v1)
 
 ---
 
