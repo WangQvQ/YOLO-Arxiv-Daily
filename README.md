@@ -1,6 +1,42 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## CERBERUS: Crack Evaluation & Recognition Benchmark for Engineering Reliability & Urban Stability / 
+
+发布日期：2025-06-27
+
+作者：Justin Reinman
+
+摘要：CERBERUS is a synthetic benchmark designed to help train and evaluate AI models for detecting cracks and other defects in infrastructure. It includes a crack image generator and realistic 3D inspection scenarios built in Unity. The benchmark features two types of setups: a simple Fly\-By wall inspection and a more complex Underpass scene with lighting and geometry challenges. We tested a popular object detection model \(YOLO\) using different combinations of synthetic and real crack data. Results show that combining synthetic and real data improves performance on real\-world images. CERBERUS provides a flexible, repeatable way to test defect detection systems and supports future research in automated infrastructure inspection. CERBERUS is publicly available at https://github.com/justinreinman/Cerberus\-Defect\-Generator.
+
+中文摘要：
+
+
+代码链接：https://github.com/justinreinman/Cerberus-Defect-Generator.
+
+论文链接：[阅读更多](http://arxiv.org/abs/2506.21909v1)
+
+---
+
+
+## Visual Content Detection in Educational Videos with Transfer Learning and Dataset Enrichment / 
+
+发布日期：2025-06-27
+
+作者：Dipayan Biswas
+
+摘要：Video is transforming education with online courses and recorded lectures supplementing and replacing classroom teaching. Recent research has focused on enhancing information retrieval for video lectures with advanced navigation, searchability, summarization, as well as question answering chatbots. Visual elements like tables, charts, and illustrations are central to comprehension, retention, and data presentation in lecture videos, yet their full potential for improving access to video content remains underutilized. A major factor is that accurate automatic detection of visual elements in a lecture video is challenging; reasons include i\) most visual elements, such as charts, graphs, tables, and illustrations, are artificially created and lack any standard structure, and ii\) coherent visual objects may lack clear boundaries and may be composed of connected text and visual components. Despite advancements in deep learning based object detection, current models do not yield satisfactory performance due to the unique nature of visual content in lectures and scarcity of annotated datasets. This paper reports on a transfer learning approach for detecting visual elements in lecture video frames. A suite of state of the art object detection models were evaluated for their performance on lecture video datasets. YOLO emerged as the most promising model for this task. Subsequently YOLO was optimized for lecture video object detection with training on multiple benchmark datasets and deploying a semi\-supervised auto labeling strategy. Results evaluate the success of this approach, also in developing a general solution to the problem of object detection in lecture videos. Paper contributions include a publicly released benchmark of annotated lecture video frames, along with the source code to facilitate future research.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2506.21903v1)
+
+---
+
+
 ## YOLO\-FDA: Integrating Hierarchical Attention and Detail Enhancement for Surface Defect Detection / 
 
 发布日期：2025-06-26
@@ -51,42 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2506.20326v1)
-
----
-
-
-## Computer Vision based Automated Quantification of Agricultural Sprayers Boom Displacement / 
-
-发布日期：2025-06-24
-
-作者：Aryan Singh Dalal
-
-摘要：Application rate errors when using self\-propelled agricultural sprayers for agricultural production remain a concern. Among other factors, spray boom instability is one of the major contributors to application errors. Spray booms' width of 38m, combined with 30 kph driving speeds, varying terrain, and machine dynamics when maneuvering complex field boundaries, make controls of these booms very complex. However, there is no quantitative knowledge on the extent of boom movement to systematically develop a solution that might include boom designs and responsive boom control systems. Therefore, this study was conducted to develop an automated computer vision system to quantify the boom movement of various agricultural sprayers. A computer vision system was developed to track a target on the edge of the sprayer boom in real time. YOLO V7, V8, and V11 neural network models were trained to track the boom's movements in field operations to quantify effective displacement in the vertical and transverse directions. An inclinometer sensor was mounted on the boom to capture boom angles and validate the neural network model output. The results showed that the model could detect the target with more than 90 percent accuracy, and distance estimates of the target on the boom were within 0.026 m of the inclinometer sensor data. This system can quantify the boom movement on the current sprayer and potentially on any other sprayer with minor modifications. The data can be used to make design improvements to make sprayer booms more stable and achieve greater application accuracy.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2506.19939v1)
-
----
-
-
-## YOLOv13: Real\-Time Object Detection with Hypergraph\-Enhanced Adaptive Visual Perception / 
-
-发布日期：2025-06-21
-
-作者：Mengqi Lei
-
-摘要：The YOLO series models reign supreme in real\-time object detection due to their superior accuracy and computational efficiency. However, both the convolutional architectures of YOLO11 and earlier versions and the area\-based self\-attention mechanism introduced in YOLOv12 are limited to local information aggregation and pairwise correlation modeling, lacking the capability to capture global multi\-to\-multi high\-order correlations, which limits detection performance in complex scenarios. In this paper, we propose YOLOv13, an accurate and lightweight object detector. To address the above\-mentioned challenges, we propose a Hypergraph\-based Adaptive Correlation Enhancement \(HyperACE\) mechanism that adaptively exploits latent high\-order correlations and overcomes the limitation of previous methods that are restricted to pairwise correlation modeling based on hypergraph computation, achieving efficient global cross\-location and cross\-scale feature fusion and enhancement. Subsequently, we propose a Full\-Pipeline Aggregation\-and\-Distribution \(FullPAD\) paradigm based on HyperACE, which effectively achieves fine\-grained information flow and representation synergy within the entire network by distributing correlation\-enhanced features to the full pipeline. Finally, we propose to leverage depthwise separable convolutions to replace vanilla large\-kernel convolutions, and design a series of blocks that significantly reduce parameters and computational complexity without sacrificing performance. We conduct extensive experiments on the widely used MS COCO benchmark, and the experimental results demonstrate that our method achieves state\-of\-the\-art performance with fewer parameters and FLOPs. Specifically, our YOLOv13\-N improves mAP by 3.0% over YOLO11\-N and by 1.5% over YOLOv12\-N. The code and models of our YOLOv13 model are available at: https://github.com/iMoonLab/yolov13.
-
-中文摘要：
-
-
-代码链接：https://github.com/iMoonLab/yolov13.
-
-论文链接：[阅读更多](http://arxiv.org/abs/2506.17733v1)
 
 ---
 
