@@ -1,6 +1,60 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Deep Learning\-Based Semantic Segmentation for Real\-Time Kidney Imaging and Measurements with Augmented Reality\-Assisted Ultrasound / 
+
+发布日期：2025-06-30
+
+作者：Gijs Luijten
+
+摘要：Ultrasound \(US\) is widely accessible and radiation\-free but has a steep learning curve due to its dynamic nature and non\-standard imaging planes. Additionally, the constant need to shift focus between the US screen and the patient poses a challenge. To address these issues, we integrate deep learning \(DL\)\-based semantic segmentation for real\-time \(RT\) automated kidney volumetric measurements, which are essential for clinical assessment but are traditionally time\-consuming and prone to fatigue. This automation allows clinicians to concentrate on image interpretation rather than manual measurements. Complementing DL, augmented reality \(AR\) enhances the usability of US by projecting the display directly into the clinician's field of view, improving ergonomics and reducing the cognitive load associated with screen\-to\-patient transitions. Two AR\-DL\-assisted US pipelines on HoloLens\-2 are proposed: one streams directly via the application programming interface for a wireless setup, while the other supports any US device with video output for broader accessibility. We evaluate RT feasibility and accuracy using the Open Kidney Dataset and open\-source segmentation models \(nnU\-Net, Segmenter, YOLO with MedSAM and LiteMedSAM\). Our open\-source GitHub pipeline includes model implementations, measurement algorithms, and a Wi\-Fi\-based streaming solution, enhancing US training and diagnostics, especially in point\-of\-care settings.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2506.23721v1)
+
+---
+
+
+## DGE\-YOLO: Dual\-Branch Gathering and Attention for Accurate UAV Object Detection / 
+
+发布日期：2025-06-29
+
+作者：Kunwei Lv
+
+摘要：The rapid proliferation of unmanned aerial vehicles \(UAVs\) has highlighted the importance of robust and efficient object detection in diverse aerial scenarios. Detecting small objects under complex conditions, however, remains a significant challenge. Existing approaches often prioritize inference speed, leading to degraded performance when handling multi\-modal inputs. To address this, we present DGE\-YOLO, an enhanced YOLO\-based detection framework designed to effectively fuse multi\-modal information. Specifically, we introduce a dual\-branch architecture for modality\-specific feature extraction, enabling the model to process both infrared and visible images. To further enrich semantic representation, we propose an Efficient Multi\-scale Attention \(EMA\) mechanism that enhances feature learning across spatial scales. Additionally, we replace the conventional neck with a Gather\-and\-Distribute module to mitigate information loss during feature aggregation. Extensive experiments on the Drone Vehicle dataset demonstrate that DGE\-YOLO achieves superior performance over state\-of\-the\-art methods, validating its effectiveness in multi\-modal UAV object detection tasks.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2506.23252v1)
+
+---
+
+
+## YM\-WML: A new Yolo\-based segmentation Model with Weighted Multi\-class Loss for medical imaging / 
+
+发布日期：2025-06-28
+
+作者：Haniyeh Nikkhah
+
+摘要：Medical image segmentation poses significant challenges due to class imbalance and the complex structure of medical images. To address these challenges, this study proposes YM\-WML, a novel model for cardiac image segmentation. The model integrates a robust backbone for effective feature extraction, a YOLOv11 neck for multi\-scale feature aggregation, and an attention\-based segmentation head for precise and accurate segmentation. To address class imbalance, we introduce the Weighted Multi\-class Exponential \(WME\) loss function. On the ACDC dataset, YM\-WML achieves a Dice Similarity Coefficient of 91.02, outperforming state\-of\-the\-art methods. The model demonstrates stable training, accurate segmentation, and strong generalization, setting a new benchmark in cardiac segmentation tasks.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2506.22955v1)
+
+---
+
+
 ## CERBERUS: Crack Evaluation & Recognition Benchmark for Engineering Reliability & Urban Stability / 
 
 发布日期：2025-06-27
@@ -33,60 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2506.21903v1)
-
----
-
-
-## YOLO\-FDA: Integrating Hierarchical Attention and Detail Enhancement for Surface Defect Detection / 
-
-发布日期：2025-06-26
-
-作者：Jiawei Hu
-
-摘要：Surface defect detection in industrial scenarios is both crucial and technically demanding due to the wide variability in defect types, irregular shapes and sizes, fine\-grained requirements, and complex material textures. Although recent advances in AI\-based detectors have improved performance, existing methods often suffer from redundant features, limited detail sensitivity, and weak robustness under multiscale conditions. To address these challenges, we propose YOLO\-FDA, a novel YOLO\-based detection framework that integrates fine\-grained detail enhancement and attention\-guided feature fusion. Specifically, we adopt a BiFPN\-style architecture to strengthen bidirectional multilevel feature aggregation within the YOLOv5 backbone. To better capture fine structural changes, we introduce a Detail\-directional Fusion Module \(DDFM\) that introduces a directional asymmetric convolution in the second\-lowest layer to enrich spatial details and fuses the second\-lowest layer with low\-level features to enhance semantic consistency. Furthermore, we propose two novel attention\-based fusion strategies, Attention\-weighted Concatenation \(AC\) and Cross\-layer Attention Fusion \(CAF\) to improve contextual representation and reduce feature noise. Extensive experiments on benchmark datasets demonstrate that YOLO\-FDA consistently outperforms existing state\-of\-the\-art methods in terms of both accuracy and robustness across diverse types of defects and scales.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2506.21135v1)
-
----
-
-
-## Lightweight Multi\-Frame Integration for Robust YOLO Object Detection in Videos / 
-
-发布日期：2025-06-25
-
-作者：Yitong Quan
-
-摘要：Modern image\-based object detection models, such as YOLOv7, primarily process individual frames independently, thus ignoring valuable temporal context naturally present in videos. Meanwhile, existing video\-based detection methods often introduce complex temporal modules, significantly increasing model size and computational complexity. In practical applications such as surveillance and autonomous driving, transient challenges including motion blur, occlusions, and abrupt appearance changes can severely degrade single\-frame detection performance. To address these issues, we propose a straightforward yet highly effective strategy: stacking multiple consecutive frames as input to a YOLO\-based detector while supervising only the output corresponding to a single target frame. This approach leverages temporal information with minimal modifications to existing architectures, preserving simplicity, computational efficiency, and real\-time inference capability. Extensive experiments on the challenging MOT20Det and our BOAT360 datasets demonstrate that our method improves detection robustness, especially for lightweight models, effectively narrowing the gap between compact and heavy detection networks. Additionally, we contribute the BOAT360 benchmark dataset, comprising annotated fisheye video sequences captured from a boat, to support future research in multi\-frame video object detection in challenging real\-world scenarios.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2506.20550v1)
-
----
-
-
-## From Codicology to Code: A Comparative Study of Transformer and YOLO\-based Detectors for Layout Analysis in Historical Documents / 
-
-发布日期：2025-06-25
-
-作者：Sergio Torres Aguilar
-
-摘要：Robust Document Layout Analysis \(DLA\) is critical for the automated processing and understanding of historical documents with complex page organizations. This paper benchmarks five state\-of\-the\-art object detection architectures on three annotated datasets representing a spectrum of codicological complexity: The e\-NDP, a corpus of Parisian medieval registers \(1326\-1504\); CATMuS, a diverse multiclass dataset derived from various medieval and modern sources \(ca.12th\-17th centuries\) and HORAE, a corpus of decorated books of hours \(ca.13th\-16th centuries\). We evaluate two Transformer\-based models \(Co\-DETR, Grounding DINO\) against three YOLO variants \(AABB, OBB, and YOLO\-World\). Our findings reveal significant performance variations dependent on model architecture, data set characteristics, and bounding box representation. In the e\-NDP dataset, Co\-DETR achieves state\-of\-the\-art results \(0.752 mAP@.50:.95\), closely followed by YOLOv11X\-OBB \(0.721\). Conversely, on the more complex CATMuS and HORAE datasets, the CNN\-based YOLOv11x\-OBB significantly outperforms all other models \(0.564 and 0.568, respectively\). This study unequivocally demonstrates that using Oriented Bounding Boxes \(OBB\) is not a minor refinement but a fundamental requirement for accurately modeling the non\-Cartesian nature of historical manuscripts. We conclude that a key trade\-off exists between the global context awareness of Transformers, ideal for structured layouts, and the superior generalization of CNN\-OBB models for visually diverse and complex documents.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2506.20326v1)
 
 ---
 
