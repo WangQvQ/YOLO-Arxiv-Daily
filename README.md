@@ -1,6 +1,60 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Autonomous AI Surveillance: Multimodal Deep Learning for Cognitive and Behavioral Monitoring / 
+
+发布日期：2025-07-02
+
+作者：Ameer Hamza
+
+摘要：This study presents a novel classroom surveillance system that integrates multiple modalities, including drowsiness, tracking of mobile phone usage, and face recognition,to assess student attentiveness with enhanced precision.The system leverages the YOLOv8 model to detect both mobile phone and sleep usage,\(Ghatge et al., 2024\) while facial recognition is achieved through LResNet Occ FC body tracking using YOLO and MTCNN.\(Durai et al., 2024\) These models work in synergy to provide comprehensive, real\-time monitoring, offering insights into student engagement and behavior.\(S et al., 2023\) The framework is trained on specialized datasets, such as the RMFD dataset for face recognition and a Roboflow dataset for mobile phone detection. The extensive evaluation of the system shows promising results. Sleep detection achieves 97. 42% mAP@50, face recognition achieves 86. 45% validation accuracy and mobile phone detection reach 85. 89% mAP@50. The system is implemented within a core PHP web application and utilizes ESP32\-CAM hardware for seamless data capture.\(Neto et al., 2024\) This integrated approach not only enhances classroom monitoring, but also ensures automatic attendance recording via face recognition as students remain seated in the classroom, offering scalability for diverse educational environments.\(Banada,2025\)
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2507.01590v1)
+
+---
+
+
+## UAVD\-Mamba: Deformable Token Fusion Vision Mamba for Multimodal UAV Detection / 
+
+发布日期：2025-07-01
+
+作者：Wei Li
+
+摘要：Unmanned Aerial Vehicle \(UAV\) object detection has been widely used in traffic management, agriculture, emergency rescue, etc. However, it faces significant challenges, including occlusions, small object sizes, and irregular shapes. These challenges highlight the necessity for a robust and efficient multimodal UAV object detection method. Mamba has demonstrated considerable potential in multimodal image fusion. Leveraging this, we propose UAVD\-Mamba, a multimodal UAV object detection framework based on Mamba architectures. To improve geometric adaptability, we propose the Deformable Token Mamba Block \(DTMB\) to generate deformable tokens by incorporating adaptive patches from deformable convolutions alongside normal patches from normal convolutions, which serve as the inputs to the Mamba Block. To optimize the multimodal feature complementarity, we design two separate DTMBs for the RGB and infrared \(IR\) modalities, with the outputs from both DTMBs integrated into the Mamba Block for feature extraction and into the Fusion Mamba Block for feature fusion. Additionally, to improve multiscale object detection, especially for small objects, we stack four DTMBs at different scales to produce multiscale feature representations, which are then sent to the Detection Neck for Mamba \(DNM\). The DNM module, inspired by the YOLO series, includes modifications to the SPPF and C3K2 of YOLOv11 to better handle the multiscale features. In particular, we employ cross\-enhanced spatial attention before the DTMB and cross\-channel attention after the Fusion Mamba Block to extract more discriminative features. Experimental results on the DroneVehicle dataset show that our method outperforms the baseline OAFA method by 3.6% in the mAP metric. Codes will be released at https://github.com/GreatPlum\-hnu/UAVD\-Mamba.git.
+
+中文摘要：
+
+
+代码链接：https://github.com/GreatPlum-hnu/UAVD-Mamba.git.
+
+论文链接：[阅读更多](http://arxiv.org/abs/2507.00849v1)
+
+---
+
+
+## Research on Improving the High Precision and Lightweight Diabetic Retinopathy Detection of YOLOv8n / 
+
+发布日期：2025-07-01
+
+作者：Fei Yuhuan
+
+摘要：Early detection and diagnosis of diabetic retinopathy is one of the current research focuses in ophthalmology. However, due to the subtle features of micro\-lesions and their susceptibility to background interference, ex\-isting detection methods still face many challenges in terms of accuracy and robustness. To address these issues, a lightweight and high\-precision detection model based on the improved YOLOv8n, named YOLO\-KFG, is proposed. Firstly, a new dynamic convolution KWConv and C2f\-KW module are designed to improve the backbone network, enhancing the model's ability to perceive micro\-lesions. Secondly, a fea\-ture\-focused diffusion pyramid network FDPN is designed to fully integrate multi\-scale context information, further improving the model's ability to perceive micro\-lesions. Finally, a lightweight shared detection head GSDHead is designed to reduce the model's parameter count, making it more deployable on re\-source\-constrained devices. Experimental results show that compared with the base model YOLOv8n, the improved model reduces the parameter count by 20.7%, increases mAP@0.5 by 4.1%, and improves the recall rate by 7.9%. Compared with single\-stage mainstream algorithms such as YOLOv5n and YOLOv10n, YOLO\-KFG demonstrates significant advantages in both detection accuracy and efficiency.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2507.00780v1)
+
+---
+
+
 ## Deep Learning\-Based Semantic Segmentation for Real\-Time Kidney Imaging and Measurements with Augmented Reality\-Assisted Ultrasound / 
 
 发布日期：2025-06-30
@@ -33,60 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2506.23252v1)
-
----
-
-
-## YM\-WML: A new Yolo\-based segmentation Model with Weighted Multi\-class Loss for medical imaging / 
-
-发布日期：2025-06-28
-
-作者：Haniyeh Nikkhah
-
-摘要：Medical image segmentation poses significant challenges due to class imbalance and the complex structure of medical images. To address these challenges, this study proposes YM\-WML, a novel model for cardiac image segmentation. The model integrates a robust backbone for effective feature extraction, a YOLOv11 neck for multi\-scale feature aggregation, and an attention\-based segmentation head for precise and accurate segmentation. To address class imbalance, we introduce the Weighted Multi\-class Exponential \(WME\) loss function. On the ACDC dataset, YM\-WML achieves a Dice Similarity Coefficient of 91.02, outperforming state\-of\-the\-art methods. The model demonstrates stable training, accurate segmentation, and strong generalization, setting a new benchmark in cardiac segmentation tasks.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2506.22955v1)
-
----
-
-
-## CERBERUS: Crack Evaluation & Recognition Benchmark for Engineering Reliability & Urban Stability / 
-
-发布日期：2025-06-27
-
-作者：Justin Reinman
-
-摘要：CERBERUS is a synthetic benchmark designed to help train and evaluate AI models for detecting cracks and other defects in infrastructure. It includes a crack image generator and realistic 3D inspection scenarios built in Unity. The benchmark features two types of setups: a simple Fly\-By wall inspection and a more complex Underpass scene with lighting and geometry challenges. We tested a popular object detection model \(YOLO\) using different combinations of synthetic and real crack data. Results show that combining synthetic and real data improves performance on real\-world images. CERBERUS provides a flexible, repeatable way to test defect detection systems and supports future research in automated infrastructure inspection. CERBERUS is publicly available at https://github.com/justinreinman/Cerberus\-Defect\-Generator.
-
-中文摘要：
-
-
-代码链接：https://github.com/justinreinman/Cerberus-Defect-Generator.
-
-论文链接：[阅读更多](http://arxiv.org/abs/2506.21909v1)
-
----
-
-
-## Visual Content Detection in Educational Videos with Transfer Learning and Dataset Enrichment / 
-
-发布日期：2025-06-27
-
-作者：Dipayan Biswas
-
-摘要：Video is transforming education with online courses and recorded lectures supplementing and replacing classroom teaching. Recent research has focused on enhancing information retrieval for video lectures with advanced navigation, searchability, summarization, as well as question answering chatbots. Visual elements like tables, charts, and illustrations are central to comprehension, retention, and data presentation in lecture videos, yet their full potential for improving access to video content remains underutilized. A major factor is that accurate automatic detection of visual elements in a lecture video is challenging; reasons include i\) most visual elements, such as charts, graphs, tables, and illustrations, are artificially created and lack any standard structure, and ii\) coherent visual objects may lack clear boundaries and may be composed of connected text and visual components. Despite advancements in deep learning based object detection, current models do not yield satisfactory performance due to the unique nature of visual content in lectures and scarcity of annotated datasets. This paper reports on a transfer learning approach for detecting visual elements in lecture video frames. A suite of state of the art object detection models were evaluated for their performance on lecture video datasets. YOLO emerged as the most promising model for this task. Subsequently YOLO was optimized for lecture video object detection with training on multiple benchmark datasets and deploying a semi\-supervised auto labeling strategy. Results evaluate the success of this approach, also in developing a general solution to the problem of object detection in lecture videos. Paper contributions include a publicly released benchmark of annotated lecture video frames, along with the source code to facilitate future research.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2506.21903v1)
 
 ---
 
