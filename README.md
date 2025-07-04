@@ -1,6 +1,24 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Lightweight Shrimp Disease Detection Research Based on YOLOv8n / 
+
+发布日期：2025-07-03
+
+作者：Fei Yuhuan
+
+摘要：Shrimp diseases are one of the primary causes of economic losses in shrimp aquaculture. To prevent disease transmission and enhance intelligent detection efficiency in shrimp farming, this paper proposes a lightweight network architecture based on YOLOv8n. First, by designing the RLDD detection head and C2f\-EMCM module, the model reduces computational complexity while maintaining detection accuracy, improving computational efficiency. Subsequently, an improved SegNext\_Attention self\-attention mechanism is introduced to further enhance the model's feature extraction capability, enabling more precise identification of disease characteristics. Extensive experiments, including ablation studies and comparative evaluations, are conducted on a self\-constructed shrimp disease dataset, with generalization tests extended to the URPC2020 dataset. Results demonstrate that the proposed model achieves a 32.3% reduction in parameters compared to the original YOLOv8n, with a mAP@0.5 of 92.7% \(3% improvement over YOLOv8n\). Additionally, the model outperforms other lightweight YOLO\-series models in mAP@0.5, parameter count, and model size. Generalization experiments on the URPC2020 dataset further validate the model's robustness, showing a 4.1% increase in mAP@0.5 compared to YOLOv8n. The proposed method achieves an optimal balance between accuracy and efficiency, providing reliable technical support for intelligent disease detection in shrimp aquaculture.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2507.02354v1)
+
+---
+
+
 ## Autonomous AI Surveillance: Multimodal Deep Learning for Cognitive and Behavioral Monitoring / 
 
 发布日期：2025-07-02
@@ -69,24 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2506.23721v1)
-
----
-
-
-## DGE\-YOLO: Dual\-Branch Gathering and Attention for Accurate UAV Object Detection / 
-
-发布日期：2025-06-29
-
-作者：Kunwei Lv
-
-摘要：The rapid proliferation of unmanned aerial vehicles \(UAVs\) has highlighted the importance of robust and efficient object detection in diverse aerial scenarios. Detecting small objects under complex conditions, however, remains a significant challenge. Existing approaches often prioritize inference speed, leading to degraded performance when handling multi\-modal inputs. To address this, we present DGE\-YOLO, an enhanced YOLO\-based detection framework designed to effectively fuse multi\-modal information. Specifically, we introduce a dual\-branch architecture for modality\-specific feature extraction, enabling the model to process both infrared and visible images. To further enrich semantic representation, we propose an Efficient Multi\-scale Attention \(EMA\) mechanism that enhances feature learning across spatial scales. Additionally, we replace the conventional neck with a Gather\-and\-Distribute module to mitigate information loss during feature aggregation. Extensive experiments on the Drone Vehicle dataset demonstrate that DGE\-YOLO achieves superior performance over state\-of\-the\-art methods, validating its effectiveness in multi\-modal UAV object detection tasks.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2506.23252v1)
 
 ---
 
