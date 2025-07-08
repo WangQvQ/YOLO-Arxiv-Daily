@@ -1,6 +1,24 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Development of an Improved Capsule\-Yolo Network for Automatic Tomato Plant Disease Early Detection and Diagnosis / 
+
+发布日期：2025-07-03
+
+作者：Idris Ochijenu
+
+摘要：Like many countries, Nigeria is naturally endowed with fertile agricultural soil that supports large\-scale tomato production. However, the prevalence of disease causing pathogens poses a significant threat to tomato health, often leading to reduced yields and, in severe cases, the extinction of certain species. These diseases jeopardise both the quality and quantity of tomato harvests, contributing to food insecurity. Fortunately, tomato diseases can often be visually identified through distinct forms, appearances, or textures, typically first visible on leaves and fruits. This study presents an enhanced Capsule\-YOLO network architecture designed to automatically segment overlapping and occluded tomato leaf images from complex backgrounds using the YOLO framework. It identifies disease symptoms with impressive performance metrics: 99.31% accuracy, 98.78% recall, and 99.09% precision, and a 98.93% F1\-score representing improvements of 2.91%, 1.84%, 5.64%, and 4.12% over existing state\-of\-the\-art methods. Additionally, a user\-friendly interface was developed to allow farmers and users to upload images of affected tomato plants and detect early disease symptoms. The system also provides recommendations for appropriate diagnosis and treatment. The effectiveness of this approach promises significant benefits for the agricultural sector by enhancing crop yields and strengthening food security.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2507.03219v1)
+
+---
+
+
 ## Lightweight Shrimp Disease Detection Research Based on YOLOv8n / 
 
 发布日期：2025-07-03
@@ -69,24 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2507.00780v1)
-
----
-
-
-## Deep Learning\-Based Semantic Segmentation for Real\-Time Kidney Imaging and Measurements with Augmented Reality\-Assisted Ultrasound / 
-
-发布日期：2025-06-30
-
-作者：Gijs Luijten
-
-摘要：Ultrasound \(US\) is widely accessible and radiation\-free but has a steep learning curve due to its dynamic nature and non\-standard imaging planes. Additionally, the constant need to shift focus between the US screen and the patient poses a challenge. To address these issues, we integrate deep learning \(DL\)\-based semantic segmentation for real\-time \(RT\) automated kidney volumetric measurements, which are essential for clinical assessment but are traditionally time\-consuming and prone to fatigue. This automation allows clinicians to concentrate on image interpretation rather than manual measurements. Complementing DL, augmented reality \(AR\) enhances the usability of US by projecting the display directly into the clinician's field of view, improving ergonomics and reducing the cognitive load associated with screen\-to\-patient transitions. Two AR\-DL\-assisted US pipelines on HoloLens\-2 are proposed: one streams directly via the application programming interface for a wireless setup, while the other supports any US device with video output for broader accessibility. We evaluate RT feasibility and accuracy using the Open Kidney Dataset and open\-source segmentation models \(nnU\-Net, Segmenter, YOLO with MedSAM and LiteMedSAM\). Our open\-source GitHub pipeline includes model implementations, measurement algorithms, and a Wi\-Fi\-based streaming solution, enhancing US training and diagnostics, especially in point\-of\-care settings.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2506.23721v1)
 
 ---
 
