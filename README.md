@@ -1,6 +1,42 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## ECORE: Energy\-Conscious Optimized Routing for Deep Learning Models at the Edge / 
+
+发布日期：2025-07-08
+
+作者：Daghash K. Alqahtani
+
+摘要：Edge computing enables data processing closer to the source, significantly reducing latency an essential requirement for real\-time vision\-based analytics such as object detection in surveillance and smart city environments. However, these tasks place substantial demands on resource constrained edge devices, making the joint optimization of energy consumption and detection accuracy critical. To address this challenge, we propose ECORE, a framework that integrates multiple dynamic routing strategies including estimation based techniques and a greedy selection algorithm to direct image processing requests to the most suitable edge device\-model pair. ECORE dynamically balances energy efficiency and detection performance based on object characteristics. We evaluate our approach through extensive experiments on real\-world datasets, comparing the proposed routers against widely used baseline techniques. The evaluation leverages established object detection models \(YOLO, SSD, EfficientDet\) and diverse edge platforms, including Jetson Orin Nano, Raspberry Pi 4 and 5, and TPU accelerators. Results demonstrate that our proposed context\-aware routing strategies can reduce energy consumption and latency by 45% and 49%, respectively, while incurring only a 2% loss in detection accuracy compared to accuracy\-centric methods.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2507.06011v1)
+
+---
+
+
+## YOLO\-APD: Enhancing YOLOv8 for Robust Pedestrian Detection on Complex Road Geometries / 
+
+发布日期：2025-07-07
+
+作者：Aquino Joctum
+
+摘要：Autonomous vehicle perception systems require robust pedestrian detection, particularly on geometrically complex roadways like Type\-S curved surfaces, where standard RGB camera\-based methods face limitations. This paper introduces YOLO\-APD, a novel deep learning architecture enhancing the YOLOv8 framework specifically for this challenge. YOLO\-APD integrates several key architectural modifications: a parameter\-free SimAM attention mechanism, computationally efficient C3Ghost modules, a novel SimSPPF module for enhanced multi\-scale feature pooling, the Mish activation function for improved optimization, and an Intelligent Gather & Distribute \(IGD\) module for superior feature fusion in the network's neck. The concept of leveraging vehicle steering dynamics for adaptive region\-of\-interest processing is also presented. Comprehensive evaluations on a custom CARLA dataset simulating complex scenarios demonstrate that YOLO\-APD achieves state\-of\-the\-art detection accuracy, reaching 77.7% mAP@0.5:0.95 and exceptional pedestrian recall exceeding 96%, significantly outperforming baseline models, including YOLOv8. Furthermore, it maintains real\-time processing capabilities at 100 FPS, showcasing a superior balance between accuracy and efficiency. Ablation studies validate the synergistic contribution of each integrated component. Evaluation on the KITTI dataset confirms the architecture's potential while highlighting the need for domain adaptation. This research advances the development of highly accurate, efficient, and adaptable perception systems based on cost\-effective sensors, contributing to enhanced safety and reliability for autonomous navigation in challenging, less\-structured driving environments.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2507.05376v1)
+
+---
+
+
 ## Development of an Improved Capsule\-Yolo Network for Automatic Tomato Plant Disease Early Detection and Diagnosis / 
 
 发布日期：2025-07-03
@@ -51,42 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2507.01590v1)
-
----
-
-
-## UAVD\-Mamba: Deformable Token Fusion Vision Mamba for Multimodal UAV Detection / 
-
-发布日期：2025-07-01
-
-作者：Wei Li
-
-摘要：Unmanned Aerial Vehicle \(UAV\) object detection has been widely used in traffic management, agriculture, emergency rescue, etc. However, it faces significant challenges, including occlusions, small object sizes, and irregular shapes. These challenges highlight the necessity for a robust and efficient multimodal UAV object detection method. Mamba has demonstrated considerable potential in multimodal image fusion. Leveraging this, we propose UAVD\-Mamba, a multimodal UAV object detection framework based on Mamba architectures. To improve geometric adaptability, we propose the Deformable Token Mamba Block \(DTMB\) to generate deformable tokens by incorporating adaptive patches from deformable convolutions alongside normal patches from normal convolutions, which serve as the inputs to the Mamba Block. To optimize the multimodal feature complementarity, we design two separate DTMBs for the RGB and infrared \(IR\) modalities, with the outputs from both DTMBs integrated into the Mamba Block for feature extraction and into the Fusion Mamba Block for feature fusion. Additionally, to improve multiscale object detection, especially for small objects, we stack four DTMBs at different scales to produce multiscale feature representations, which are then sent to the Detection Neck for Mamba \(DNM\). The DNM module, inspired by the YOLO series, includes modifications to the SPPF and C3K2 of YOLOv11 to better handle the multiscale features. In particular, we employ cross\-enhanced spatial attention before the DTMB and cross\-channel attention after the Fusion Mamba Block to extract more discriminative features. Experimental results on the DroneVehicle dataset show that our method outperforms the baseline OAFA method by 3.6% in the mAP metric. Codes will be released at https://github.com/GreatPlum\-hnu/UAVD\-Mamba.git.
-
-中文摘要：
-
-
-代码链接：https://github.com/GreatPlum-hnu/UAVD-Mamba.git.
-
-论文链接：[阅读更多](http://arxiv.org/abs/2507.00849v1)
-
----
-
-
-## Research on Improving the High Precision and Lightweight Diabetic Retinopathy Detection of YOLOv8n / 
-
-发布日期：2025-07-01
-
-作者：Fei Yuhuan
-
-摘要：Early detection and diagnosis of diabetic retinopathy is one of the current research focuses in ophthalmology. However, due to the subtle features of micro\-lesions and their susceptibility to background interference, ex\-isting detection methods still face many challenges in terms of accuracy and robustness. To address these issues, a lightweight and high\-precision detection model based on the improved YOLOv8n, named YOLO\-KFG, is proposed. Firstly, a new dynamic convolution KWConv and C2f\-KW module are designed to improve the backbone network, enhancing the model's ability to perceive micro\-lesions. Secondly, a fea\-ture\-focused diffusion pyramid network FDPN is designed to fully integrate multi\-scale context information, further improving the model's ability to perceive micro\-lesions. Finally, a lightweight shared detection head GSDHead is designed to reduce the model's parameter count, making it more deployable on re\-source\-constrained devices. Experimental results show that compared with the base model YOLOv8n, the improved model reduces the parameter count by 20.7%, increases mAP@0.5 by 4.1%, and improves the recall rate by 7.9%. Compared with single\-stage mainstream algorithms such as YOLOv5n and YOLOv10n, YOLO\-KFG demonstrates significant advantages in both detection accuracy and efficiency.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2507.00780v1)
 
 ---
 
