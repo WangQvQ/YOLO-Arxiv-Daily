@@ -1,6 +1,24 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## EA: An Event Autoencoder for High\-Speed Vision Sensing / 
+
+发布日期：2025-07-09
+
+作者：Riadul Islam
+
+摘要：High\-speed vision sensing is essential for real\-time perception in applications such as robotics, autonomous vehicles, and industrial automation. Traditional frame\-based vision systems suffer from motion blur, high latency, and redundant data processing, limiting their performance in dynamic environments. Event cameras, which capture asynchronous brightness changes at the pixel level, offer a promising alternative but pose challenges in object detection due to sparse and noisy event streams. To address this, we propose an event autoencoder architecture that efficiently compresses and reconstructs event data while preserving critical spatial and temporal features. The proposed model employs convolutional encoding and incorporates adaptive threshold selection and a lightweight classifier to enhance recognition accuracy while reducing computational complexity. Experimental results on the existing Smart Event Face Dataset \(SEFD\) demonstrate that our approach achieves comparable accuracy to the YOLO\-v4 model while utilizing up to $35.5times$ fewer parameters. Implementations on embedded platforms, including Raspberry Pi 4B and NVIDIA Jetson Nano, show high frame rates ranging from 8 FPS up to 44.8 FPS. The proposed classifier exhibits up to 87.84x better FPS than the state\-of\-the\-art and significantly improves event\-based vision performance, making it ideal for low\-power, high\-speed applications in real\-time edge computing.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2507.06459v1)
+
+---
+
+
 ## ECORE: Energy\-Conscious Optimized Routing for Deep Learning Models at the Edge / 
 
 发布日期：2025-07-08
@@ -69,24 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2507.02354v1)
-
----
-
-
-## Autonomous AI Surveillance: Multimodal Deep Learning for Cognitive and Behavioral Monitoring / 
-
-发布日期：2025-07-02
-
-作者：Ameer Hamza
-
-摘要：This study presents a novel classroom surveillance system that integrates multiple modalities, including drowsiness, tracking of mobile phone usage, and face recognition,to assess student attentiveness with enhanced precision.The system leverages the YOLOv8 model to detect both mobile phone and sleep usage,\(Ghatge et al., 2024\) while facial recognition is achieved through LResNet Occ FC body tracking using YOLO and MTCNN.\(Durai et al., 2024\) These models work in synergy to provide comprehensive, real\-time monitoring, offering insights into student engagement and behavior.\(S et al., 2023\) The framework is trained on specialized datasets, such as the RMFD dataset for face recognition and a Roboflow dataset for mobile phone detection. The extensive evaluation of the system shows promising results. Sleep detection achieves 97. 42% mAP@50, face recognition achieves 86. 45% validation accuracy and mobile phone detection reach 85. 89% mAP@50. The system is implemented within a core PHP web application and utilizes ESP32\-CAM hardware for seamless data capture.\(Neto et al., 2024\) This integrated approach not only enhances classroom monitoring, but also ensures automatic attendance recording via face recognition as students remain seated in the classroom, offering scalability for diverse educational environments.\(Banada,2025\)
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2507.01590v1)
 
 ---
 
