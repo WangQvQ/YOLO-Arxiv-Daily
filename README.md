@@ -1,6 +1,42 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Automatic Road Subsurface Distress Recognition from Ground Penetrating Radar Images using Deep Learning\-based Cross\-verification / 
+
+发布日期：2025-07-15
+
+作者：Chang Peng
+
+摘要：Ground penetrating radar \(GPR\) has become a rapid and non\-destructive solution for road subsurface distress \(RSD\) detection. However, RSD recognition from GPR images is labor\-intensive and heavily relies on inspectors' expertise. Deep learning offers the possibility for automatic RSD recognition, but its current performance is limited by two factors: Scarcity of high\-quality dataset for network training and insufficient capability of network to distinguish RSD. In this study, a rigorously validated 3D GPR dataset containing 2134 samples of diverse types was constructed through field scanning. Based on the finding that the YOLO model trained with one of the three scans of GPR images exhibits varying sensitivity to specific type of RSD, we proposed a novel cross\-verification strategy with outstanding accuracy in RSD recognition, achieving recall over 98.6% in field tests. The approach, integrated into an online RSD detection system, can reduce the labor of inspection by around 90%.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2507.11081v1)
+
+---
+
+
+## A Lightweight and Robust Framework for Real\-Time Colorectal Polyp Detection Using LOF\-Based Preprocessing and YOLO\-v11n / 
+
+发布日期：2025-07-14
+
+作者：Saadat Behzadi
+
+摘要：Objectives: Timely and accurate detection of colorectal polyps plays a crucial role in diagnosing and preventing colorectal cancer, a major cause of mortality worldwide. This study introduces a new, lightweight, and efficient framework for polyp detection that combines the Local Outlier Factor \(LOF\) algorithm for filtering noisy data with the YOLO\-v11n deep learning model.   Study design: An experimental study leveraging deep learning and outlier removal techniques across multiple public datasets.   Methods: The proposed approach was tested on five diverse and publicly available datasets: CVC\-ColonDB, CVC\-ClinicDB, Kvasir\-SEG, ETIS, and EndoScene. Since these datasets originally lacked bounding box annotations, we converted their segmentation masks into suitable detection labels. To enhance the robustness and generalizability of our model, we apply 5\-fold cross\-validation and remove anomalous samples using the LOF method configured with 30 neighbors and a contamination ratio of 5%. Cleaned data are then fed into YOLO\-v11n, a fast and resource\-efficient object detection architecture optimized for real\-time applications. We train the model using a combination of modern augmentation strategies to improve detection accuracy under diverse conditions.   Results: Our approach significantly improves polyp localization performance, achieving a precision of 95.83%, recall of 91.85%, F1\-score of 93.48%, mAP@0.5 of 96.48%, and mAP@0.5:0.95 of 77.75%. Compared to previous YOLO\-based methods, our model demonstrates enhanced accuracy and efficiency.   Conclusions: These results suggest that the proposed method is well\-suited for real\-time colonoscopy support in clinical settings. Overall, the study underscores how crucial data preprocessing and model efficiency are when designing effective AI systems for medical imaging.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2507.10864v1)
+
+---
+
+
 ## EA: An Event Autoencoder for High\-Speed Vision Sensing / 
 
 发布日期：2025-07-09
@@ -51,42 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2507.05376v1)
-
----
-
-
-## Development of an Improved Capsule\-Yolo Network for Automatic Tomato Plant Disease Early Detection and Diagnosis / 
-
-发布日期：2025-07-03
-
-作者：Idris Ochijenu
-
-摘要：Like many countries, Nigeria is naturally endowed with fertile agricultural soil that supports large\-scale tomato production. However, the prevalence of disease causing pathogens poses a significant threat to tomato health, often leading to reduced yields and, in severe cases, the extinction of certain species. These diseases jeopardise both the quality and quantity of tomato harvests, contributing to food insecurity. Fortunately, tomato diseases can often be visually identified through distinct forms, appearances, or textures, typically first visible on leaves and fruits. This study presents an enhanced Capsule\-YOLO network architecture designed to automatically segment overlapping and occluded tomato leaf images from complex backgrounds using the YOLO framework. It identifies disease symptoms with impressive performance metrics: 99.31% accuracy, 98.78% recall, and 99.09% precision, and a 98.93% F1\-score representing improvements of 2.91%, 1.84%, 5.64%, and 4.12% over existing state\-of\-the\-art methods. Additionally, a user\-friendly interface was developed to allow farmers and users to upload images of affected tomato plants and detect early disease symptoms. The system also provides recommendations for appropriate diagnosis and treatment. The effectiveness of this approach promises significant benefits for the agricultural sector by enhancing crop yields and strengthening food security.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2507.03219v1)
-
----
-
-
-## Lightweight Shrimp Disease Detection Research Based on YOLOv8n / 
-
-发布日期：2025-07-03
-
-作者：Fei Yuhuan
-
-摘要：Shrimp diseases are one of the primary causes of economic losses in shrimp aquaculture. To prevent disease transmission and enhance intelligent detection efficiency in shrimp farming, this paper proposes a lightweight network architecture based on YOLOv8n. First, by designing the RLDD detection head and C2f\-EMCM module, the model reduces computational complexity while maintaining detection accuracy, improving computational efficiency. Subsequently, an improved SegNext\_Attention self\-attention mechanism is introduced to further enhance the model's feature extraction capability, enabling more precise identification of disease characteristics. Extensive experiments, including ablation studies and comparative evaluations, are conducted on a self\-constructed shrimp disease dataset, with generalization tests extended to the URPC2020 dataset. Results demonstrate that the proposed model achieves a 32.3% reduction in parameters compared to the original YOLOv8n, with a mAP@0.5 of 92.7% \(3% improvement over YOLOv8n\). Additionally, the model outperforms other lightweight YOLO\-series models in mAP@0.5, parameter count, and model size. Generalization experiments on the URPC2020 dataset further validate the model's robustness, showing a 4.1% increase in mAP@0.5 compared to YOLOv8n. The proposed method achieves an optimal balance between accuracy and efficiency, providing reliable technical support for intelligent disease detection in shrimp aquaculture.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2507.02354v1)
 
 ---
 
