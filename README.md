@@ -37,6 +37,24 @@
 ---
 
 
+## Landmark Detection for Medical Images using a General\-purpose Segmentation Model / 
+
+发布日期：2025-07-13
+
+作者：Ekaterina Stansfield
+
+摘要：Radiographic images are a cornerstone of medical diagnostics in orthopaedics, with anatomical landmark detection serving as a crucial intermediate step for information extraction. General\-purpose foundational segmentation models, such as SAM \(Segment Anything Model\), do not support landmark segmentation out of the box and require prompts to function. However, in medical imaging, the prompts for landmarks are highly specific. Since SAM has not been trained to recognize such landmarks, it cannot generate accurate landmark segmentations for diagnostic purposes. Even MedSAM, a medically adapted variant of SAM, has been trained to identify larger anatomical structures, such as organs and their parts, and lacks the fine\-grained precision required for orthopaedic pelvic landmarks. To address this limitation, we propose leveraging another general\-purpose, non\-foundational model: YOLO. YOLO excels in object detection and can provide bounding boxes that serve as input prompts for SAM. While YOLO is efficient at detection, it is significantly outperformed by SAM in segmenting complex structures. In combination, these two models form a reliable pipeline capable of segmenting not only a small pilot set of eight anatomical landmarks but also an expanded set of 72 landmarks and 16 regions with complex outlines, such as the femoral cortical bone and the pelvic inlet. By using YOLO\-generated bounding boxes to guide SAM, we trained the hybrid model to accurately segment orthopaedic pelvic radiographs. Our results show that the proposed combination of YOLO and SAM yields excellent performance in detecting anatomical landmarks and intricate outlines in orthopaedic pelvic radiographs.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2507.11551v1)
+
+---
+
+
 ## EA: An Event Autoencoder for High\-Speed Vision Sensing / 
 
 发布日期：2025-07-09
@@ -69,24 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2507.06011v2)
-
----
-
-
-## YOLO\-APD: Enhancing YOLOv8 for Robust Pedestrian Detection on Complex Road Geometries / 
-
-发布日期：2025-07-07
-
-作者：Aquino Joctum
-
-摘要：Autonomous vehicle perception systems require robust pedestrian detection, particularly on geometrically complex roadways like Type\-S curved surfaces, where standard RGB camera\-based methods face limitations. This paper introduces YOLO\-APD, a novel deep learning architecture enhancing the YOLOv8 framework specifically for this challenge. YOLO\-APD integrates several key architectural modifications: a parameter\-free SimAM attention mechanism, computationally efficient C3Ghost modules, a novel SimSPPF module for enhanced multi\-scale feature pooling, the Mish activation function for improved optimization, and an Intelligent Gather & Distribute \(IGD\) module for superior feature fusion in the network's neck. The concept of leveraging vehicle steering dynamics for adaptive region\-of\-interest processing is also presented. Comprehensive evaluations on a custom CARLA dataset simulating complex scenarios demonstrate that YOLO\-APD achieves state\-of\-the\-art detection accuracy, reaching 77.7% mAP@0.5:0.95 and exceptional pedestrian recall exceeding 96%, significantly outperforming baseline models, including YOLOv8. Furthermore, it maintains real\-time processing capabilities at 100 FPS, showcasing a superior balance between accuracy and efficiency. Ablation studies validate the synergistic contribution of each integrated component. Evaluation on the KITTI dataset confirms the architecture's potential while highlighting the need for domain adaptation. This research advances the development of highly accurate, efficient, and adaptable perception systems based on cost\-effective sensors, contributing to enhanced safety and reliability for autonomous navigation in challenging, less\-structured driving environments.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2507.05376v1)
 
 ---
 
