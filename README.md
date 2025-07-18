@@ -1,6 +1,24 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## SOD\-YOLO: Enhancing YOLO\-Based Detection of Small Objects in UAV Imagery / 
+
+发布日期：2025-07-17
+
+作者：Peijun Wang
+
+摘要：Small object detection remains a challenging problem in the field of object detection. To address this challenge, we propose an enhanced YOLOv8\-based model, SOD\-YOLO. This model integrates an ASF mechanism in the neck to enhance multi\-scale feature fusion, adds a Small Object Detection Layer \(named P2\) to provide higher\-resolution feature maps for better small object detection, and employs Soft\-NMS to refine confidence scores and retain true positives. Experimental results demonstrate that SOD\-YOLO significantly improves detection performance, achieving a 36.1% increase in mAP$\_\{50:95\}$ and 20.6% increase in mAP$\_\{50\}$ on the VisDrone2019\-DET dataset compared to the baseline model. These enhancements make SOD\-YOLO a practical and efficient solution for small object detection in UAV imagery. Our source code, hyper\-parameters, and model weights are available at https://github.com/iamwangxiaobai/SOD\-YOLO.
+
+中文摘要：
+
+
+代码链接：https://github.com/iamwangxiaobai/SOD-YOLO.
+
+论文链接：[阅读更多](http://arxiv.org/abs/2507.12727v1)
+
+---
+
+
 ## Automatic Road Subsurface Distress Recognition from Ground Penetrating Radar Images using Deep Learning\-based Cross\-verification / 
 
 发布日期：2025-07-15
@@ -69,24 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2507.06459v1)
-
----
-
-
-## ECORE: Energy\-Conscious Optimized Routing for Deep Learning Models at the Edge / 
-
-发布日期：2025-07-08
-
-作者：Daghash K. Alqahtani
-
-摘要：Edge computing enables data processing closer to the source, significantly reducing latency an essential requirement for real\-time vision\-based analytics such as object detection in surveillance and smart city environments. However, these tasks place substantial demands on resource constrained edge devices, making the joint optimization of energy consumption and detection accuracy critical. To address this challenge, we propose ECORE, a framework that integrates multiple dynamic routing strategies including estimation based techniques and a greedy selection algorithm to direct image processing requests to the most suitable edge device\-model pair. ECORE dynamically balances energy efficiency and detection performance based on object characteristics. We evaluate our approach through extensive experiments on real\-world datasets, comparing the proposed routers against widely used baseline techniques. The evaluation leverages established object detection models \(YOLO, SSD, EfficientDet\) and diverse edge platforms, including Jetson Orin Nano, Raspberry Pi 4 and 5, and TPU accelerators. Results demonstrate that our proposed context\-aware routing strategies can reduce energy consumption and latency by 45% and 49%, respectively, while incurring only a 2% loss in detection accuracy compared to accuracy\-centric methods.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2507.06011v2)
 
 ---
 
