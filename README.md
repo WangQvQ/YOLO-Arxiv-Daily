@@ -73,20 +73,20 @@
 ---
 
 
-## EA: An Event Autoencoder for High\-Speed Vision Sensing / 
+## Butter: Frequency Consistency and Hierarchical Fusion for Autonomous Driving Object Detection / 
 
-发布日期：2025-07-09
+发布日期：2025-07-12
 
-作者：Riadul Islam
+作者：Xiaojian Lin
 
-摘要：High\-speed vision sensing is essential for real\-time perception in applications such as robotics, autonomous vehicles, and industrial automation. Traditional frame\-based vision systems suffer from motion blur, high latency, and redundant data processing, limiting their performance in dynamic environments. Event cameras, which capture asynchronous brightness changes at the pixel level, offer a promising alternative but pose challenges in object detection due to sparse and noisy event streams. To address this, we propose an event autoencoder architecture that efficiently compresses and reconstructs event data while preserving critical spatial and temporal features. The proposed model employs convolutional encoding and incorporates adaptive threshold selection and a lightweight classifier to enhance recognition accuracy while reducing computational complexity. Experimental results on the existing Smart Event Face Dataset \(SEFD\) demonstrate that our approach achieves comparable accuracy to the YOLO\-v4 model while utilizing up to $35.5times$ fewer parameters. Implementations on embedded platforms, including Raspberry Pi 4B and NVIDIA Jetson Nano, show high frame rates ranging from 8 FPS up to 44.8 FPS. The proposed classifier exhibits up to 87.84x better FPS than the state\-of\-the\-art and significantly improves event\-based vision performance, making it ideal for low\-power, high\-speed applications in real\-time edge computing.
+摘要：Hierarchical feature representations play a pivotal role in computer vision, particularly in object detection for autonomous driving. Multi\-level semantic understanding is crucial for accurately identifying pedestrians, vehicles, and traffic signs in dynamic environments. However, existing architectures, such as YOLO and DETR, struggle to maintain feature consistency across different scales while balancing detection precision and computational efficiency. To address these challenges, we propose Butter, a novel object detection framework designed to enhance hierarchical feature representations for improving detection robustness. Specifically, Butter introduces two key innovations: Frequency\-Adaptive Feature Consistency Enhancement \(FAFCE\) Component, which refines multi\-scale feature consistency by leveraging adaptive frequency filtering to enhance structural and boundary precision, and Progressive Hierarchical Feature Fusion Network \(PHFFNet\) Module, which progressively integrates multi\-level features to mitigate semantic gaps and strengthen hierarchical feature learning. Through extensive experiments on BDD100K, KITTI, and Cityscapes, Butter demonstrates superior feature representation capabilities, leading to notable improvements in detection accuracy while reducing model complexity. By focusing on hierarchical feature refinement and integration, Butter provides an advanced approach to object detection that achieves a balance between accuracy, deployability, and computational efficiency in real\-time autonomous driving scenarios. Our model and implementation are publicly available at https://github.com/Aveiro\-Lin/Butter, facilitating further research and validation within the autonomous driving community.
 
 中文摘要：
 
 
-代码链接：摘要中未找到代码链接。
+代码链接：https://github.com/Aveiro-Lin/Butter,
 
-论文链接：[阅读更多](http://arxiv.org/abs/2507.06459v1)
+论文链接：[阅读更多](http://arxiv.org/abs/2507.13373v1)
 
 ---
 
