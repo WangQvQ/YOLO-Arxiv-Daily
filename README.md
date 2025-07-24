@@ -1,6 +1,24 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## BetterCheck: Towards Safeguarding VLMs for Automotive Perception Systems / 
+
+发布日期：2025-07-23
+
+作者：Malsha Ashani Mahawatta Dona
+
+摘要：Large language models \(LLMs\) are growingly extended to process multimodal data such as text and video simultaneously. Their remarkable performance in understanding what is shown in images is surpassing specialized neural networks \(NNs\) such as Yolo that is supporting only a well\-formed but very limited vocabulary, ie., objects that they are able to detect. When being non\-restricted, LLMs and in particular state\-of\-the\-art vision language models \(VLMs\) show impressive performance to describe even complex traffic situations. This is making them potentially suitable components for automotive perception systems to support the understanding of complex traffic situations or edge case situation. However, LLMs and VLMs are prone to hallucination, which mean to either potentially not seeing traffic agents such as vulnerable road users who are present in a situation, or to seeing traffic agents who are not there in reality. While the latter is unwanted making an ADAS or autonomous driving systems \(ADS\) to unnecessarily slow down, the former could lead to disastrous decisions from an ADS. In our work, we are systematically assessing the performance of 3 state\-of\-the\-art VLMs on a diverse subset of traffic situations sampled from the Waymo Open Dataset to support safety guardrails for capturing such hallucinations in VLM\-supported perception systems. We observe that both, proprietary and open VLMs exhibit remarkable image understanding capabilities even paying thorough attention to fine details sometimes difficult to spot for us humans. However, they are also still prone to making up elements in their descriptions to date requiring hallucination detection strategies such as BetterCheck that we propose in our work.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2507.17722v1)
+
+---
+
+
 ## SOD\-YOLO: Enhancing YOLO\-Based Detection of Small Objects in UAV Imagery / 
 
 发布日期：2025-07-17
@@ -69,24 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2507.11551v1)
-
----
-
-
-## Butter: Frequency Consistency and Hierarchical Fusion for Autonomous Driving Object Detection / 
-
-发布日期：2025-07-12
-
-作者：Xiaojian Lin
-
-摘要：Hierarchical feature representations play a pivotal role in computer vision, particularly in object detection for autonomous driving. Multi\-level semantic understanding is crucial for accurately identifying pedestrians, vehicles, and traffic signs in dynamic environments. However, existing architectures, such as YOLO and DETR, struggle to maintain feature consistency across different scales while balancing detection precision and computational efficiency. To address these challenges, we propose Butter, a novel object detection framework designed to enhance hierarchical feature representations for improving detection robustness. Specifically, Butter introduces two key innovations: Frequency\-Adaptive Feature Consistency Enhancement \(FAFCE\) Component, which refines multi\-scale feature consistency by leveraging adaptive frequency filtering to enhance structural and boundary precision, and Progressive Hierarchical Feature Fusion Network \(PHFFNet\) Module, which progressively integrates multi\-level features to mitigate semantic gaps and strengthen hierarchical feature learning. Through extensive experiments on BDD100K, KITTI, and Cityscapes, Butter demonstrates superior feature representation capabilities, leading to notable improvements in detection accuracy while reducing model complexity. By focusing on hierarchical feature refinement and integration, Butter provides an advanced approach to object detection that achieves a balance between accuracy, deployability, and computational efficiency in real\-time autonomous driving scenarios. Our model and implementation are publicly available at https://github.com/Aveiro\-Lin/Butter, facilitating further research and validation within the autonomous driving community.
-
-中文摘要：
-
-
-代码链接：https://github.com/Aveiro-Lin/Butter,
-
-论文链接：[阅读更多](http://arxiv.org/abs/2507.13373v1)
 
 ---
 
