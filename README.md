@@ -1,6 +1,42 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Real\-Time Object Detection and Classification using YOLO for Edge FPGAs / 
+
+发布日期：2025-07-24
+
+作者：Rashed Al Amin
+
+摘要：Object detection and classification are crucial tasks across various application domains, particularly in the development of safe and reliable Advanced Driver Assistance Systems \(ADAS\). Existing deep learning\-based methods such as Convolutional Neural Networks \(CNNs\), Single Shot Detectors \(SSDs\), and You Only Look Once \(YOLO\) have demonstrated high performance in terms of accuracy and computational speed when deployed on Field\-Programmable Gate Arrays \(FPGAs\). However, despite these advances, state\-of\-the\-art YOLO\-based object detection and classification systems continue to face challenges in achieving resource efficiency suitable for edge FPGA platforms. To address this limitation, this paper presents a resource\-efficient real\-time object detection and classification system based on YOLOv5 optimized for FPGA deployment. The proposed system is trained on the COCO and GTSRD datasets and implemented on the Xilinx Kria KV260 FPGA board. Experimental results demonstrate a classification accuracy of 99%, with a power consumption of 3.5W and a processing speed of 9 frames per second \(FPS\). These findings highlight the effectiveness of the proposed approach in enabling real\-time, resource\-efficient object detection and classification for edge computing applications.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2507.18174v1)
+
+---
+
+
+## Bearded Dragon Activity Recognition Pipeline: An AI\-Based Approach to Behavioural Monitoring / 
+
+发布日期：2025-07-23
+
+作者：Arsen Yermukan
+
+摘要：Traditional monitoring of bearded dragon \(Pogona Viticeps\) behaviour is time\-consuming and prone to errors. This project introduces an automated system for real\-time video analysis, using You Only Look Once \(YOLO\) object detection models to identify two key behaviours: basking and hunting. We trained five YOLO variants \(v5, v7, v8, v11, v12\) on a custom, publicly available dataset of 1200 images, encompassing bearded dragons \(600\), heating lamps \(500\), and crickets \(100\). YOLOv8s was selected as the optimal model due to its superior balance of accuracy \(mAP@0.5:0.95 = 0.855\) and speed. The system processes video footage by extracting per\-frame object coordinates, applying temporal interpolation for continuity, and using rule\-based logic to classify specific behaviours. Basking detection proved reliable. However, hunting detection was less accurate, primarily due to weak cricket detection \(mAP@0.5 = 0.392\). Future improvements will focus on enhancing cricket detection through expanded datasets or specialised small\-object detectors. This automated system offers a scalable solution for monitoring reptile behaviour in controlled environments, significantly improving research efficiency and data quality.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2507.17987v1)
+
+---
+
+
 ## BetterCheck: Towards Safeguarding VLMs for Automotive Perception Systems / 
 
 发布日期：2025-07-23
@@ -51,42 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2507.11081v1)
-
----
-
-
-## A Lightweight and Robust Framework for Real\-Time Colorectal Polyp Detection Using LOF\-Based Preprocessing and YOLO\-v11n / 
-
-发布日期：2025-07-14
-
-作者：Saadat Behzadi
-
-摘要：Objectives: Timely and accurate detection of colorectal polyps plays a crucial role in diagnosing and preventing colorectal cancer, a major cause of mortality worldwide. This study introduces a new, lightweight, and efficient framework for polyp detection that combines the Local Outlier Factor \(LOF\) algorithm for filtering noisy data with the YOLO\-v11n deep learning model.   Study design: An experimental study leveraging deep learning and outlier removal techniques across multiple public datasets.   Methods: The proposed approach was tested on five diverse and publicly available datasets: CVC\-ColonDB, CVC\-ClinicDB, Kvasir\-SEG, ETIS, and EndoScene. Since these datasets originally lacked bounding box annotations, we converted their segmentation masks into suitable detection labels. To enhance the robustness and generalizability of our model, we apply 5\-fold cross\-validation and remove anomalous samples using the LOF method configured with 30 neighbors and a contamination ratio of 5%. Cleaned data are then fed into YOLO\-v11n, a fast and resource\-efficient object detection architecture optimized for real\-time applications. We train the model using a combination of modern augmentation strategies to improve detection accuracy under diverse conditions.   Results: Our approach significantly improves polyp localization performance, achieving a precision of 95.83%, recall of 91.85%, F1\-score of 93.48%, mAP@0.5 of 96.48%, and mAP@0.5:0.95 of 77.75%. Compared to previous YOLO\-based methods, our model demonstrates enhanced accuracy and efficiency.   Conclusions: These results suggest that the proposed method is well\-suited for real\-time colonoscopy support in clinical settings. Overall, the study underscores how crucial data preprocessing and model efficiency are when designing effective AI systems for medical imaging.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2507.10864v2)
-
----
-
-
-## Landmark Detection for Medical Images using a General\-purpose Segmentation Model / 
-
-发布日期：2025-07-13
-
-作者：Ekaterina Stansfield
-
-摘要：Radiographic images are a cornerstone of medical diagnostics in orthopaedics, with anatomical landmark detection serving as a crucial intermediate step for information extraction. General\-purpose foundational segmentation models, such as SAM \(Segment Anything Model\), do not support landmark segmentation out of the box and require prompts to function. However, in medical imaging, the prompts for landmarks are highly specific. Since SAM has not been trained to recognize such landmarks, it cannot generate accurate landmark segmentations for diagnostic purposes. Even MedSAM, a medically adapted variant of SAM, has been trained to identify larger anatomical structures, such as organs and their parts, and lacks the fine\-grained precision required for orthopaedic pelvic landmarks. To address this limitation, we propose leveraging another general\-purpose, non\-foundational model: YOLO. YOLO excels in object detection and can provide bounding boxes that serve as input prompts for SAM. While YOLO is efficient at detection, it is significantly outperformed by SAM in segmenting complex structures. In combination, these two models form a reliable pipeline capable of segmenting not only a small pilot set of eight anatomical landmarks but also an expanded set of 72 landmarks and 16 regions with complex outlines, such as the femoral cortical bone and the pelvic inlet. By using YOLO\-generated bounding boxes to guide SAM, we trained the hybrid model to accurately segment orthopaedic pelvic radiographs. Our results show that the proposed combination of YOLO and SAM yields excellent performance in detecting anatomical landmarks and intricate outlines in orthopaedic pelvic radiographs.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2507.11551v1)
 
 ---
 
