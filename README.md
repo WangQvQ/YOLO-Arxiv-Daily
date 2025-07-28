@@ -1,6 +1,42 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Underwater Waste Detection Using Deep Learning A Performance Comparison of YOLOv7 to 10 and Faster RCNN / 
+
+发布日期：2025-07-25
+
+作者：UMMPK Nawarathne
+
+摘要：Underwater pollution is one of today's most significant environmental concerns, with vast volumes of garbage found in seas, rivers, and landscapes around the world. Accurate detection of these waste materials is crucial for successful waste management, environmental monitoring, and mitigation strategies. In this study, we investigated the performance of five cutting\-edge object recognition algorithms, namely YOLO \(You Only Look Once\) models, including YOLOv7, YOLOv8, YOLOv9, YOLOv10, and Faster Region\-Convolutional Neural Network \(R\-CNN\), to identify which model was most effective at recognizing materials in underwater situations. The models were thoroughly trained and tested on a large dataset containing fifteen different classes under diverse conditions, such as low visibility and variable depths. From the above\-mentioned models, YOLOv8 outperformed the others, with a mean Average Precision \(mAP\) of 80.9%, indicating a significant performance. This increased performance is attributed to YOLOv8's architecture, which incorporates advanced features such as improved anchor\-free mechanisms and self\-supervised learning, allowing for more precise and efficient recognition of items in a variety of settings. These findings highlight the YOLOv8 model's potential as an effective tool in the global fight against pollution, improving both the detection capabilities and scalability of underwater cleanup operations.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2507.18967v1)
+
+---
+
+
+## YOLO for Knowledge Extraction from Vehicle Images: A Baseline Study / 
+
+发布日期：2025-07-25
+
+作者：Saraa Al\-Saddik
+
+摘要：Accurate identification of vehicle attributes such as make, colour, and shape is critical for law enforcement and intelligence applications. This study evaluates the effectiveness of three state\-of\-the\-art deep learning approaches YOLO\-v11, YOLO\-World, and YOLO\-Classification on a real\-world vehicle image dataset. This dataset was collected under challenging and unconstrained conditions by NSW Police Highway Patrol Vehicles. A multi\-view inference \(MVI\) approach was deployed to enhance the performance of the models' predictions. To conduct the analyses, datasets with 100,000 plus images were created for each of the three metadata prediction tasks, specifically make, shape and colour. The models were tested on a separate dataset with 29,937 images belonging to 1809 number plates. Different sets of experiments have been investigated by varying the models sizes. A classification accuracy of 93.70%, 82.86%, 85.19%, and 94.86% was achieved with the best performing make, shape, colour, and colour\-binary models respectively. It was concluded that there is a need to use MVI to get usable models within such complex real\-world datasets. Our findings indicated that the object detection models YOLO\-v11 and YOLO\-World outperformed classification\-only models in make and shape extraction. Moreover, smaller YOLO variants perform comparably to larger counterparts, offering substantial efficiency benefits for real\-time predictions. This work provides a robust baseline for extracting vehicle metadata in real\-world scenarios. Such models can be used in filtering and sorting user queries, minimising the time required to search large vehicle images datasets.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2507.18966v1)
+
+---
+
+
 ## Real\-Time Object Detection and Classification using YOLO for Edge FPGAs / 
 
 发布日期：2025-07-24
@@ -51,42 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2507.17722v1)
-
----
-
-
-## SOD\-YOLO: Enhancing YOLO\-Based Detection of Small Objects in UAV Imagery / 
-
-发布日期：2025-07-17
-
-作者：Peijun Wang
-
-摘要：Small object detection remains a challenging problem in the field of object detection. To address this challenge, we propose an enhanced YOLOv8\-based model, SOD\-YOLO. This model integrates an ASF mechanism in the neck to enhance multi\-scale feature fusion, adds a Small Object Detection Layer \(named P2\) to provide higher\-resolution feature maps for better small object detection, and employs Soft\-NMS to refine confidence scores and retain true positives. Experimental results demonstrate that SOD\-YOLO significantly improves detection performance, achieving a 36.1% increase in mAP$\_\{50:95\}$ and 20.6% increase in mAP$\_\{50\}$ on the VisDrone2019\-DET dataset compared to the baseline model. These enhancements make SOD\-YOLO a practical and efficient solution for small object detection in UAV imagery. Our source code, hyper\-parameters, and model weights are available at https://github.com/iamwangxiaobai/SOD\-YOLO.
-
-中文摘要：
-
-
-代码链接：https://github.com/iamwangxiaobai/SOD-YOLO.
-
-论文链接：[阅读更多](http://arxiv.org/abs/2507.12727v1)
-
----
-
-
-## Automatic Road Subsurface Distress Recognition from Ground Penetrating Radar Images using Deep Learning\-based Cross\-verification / 
-
-发布日期：2025-07-15
-
-作者：Chang Peng
-
-摘要：Ground penetrating radar \(GPR\) has become a rapid and non\-destructive solution for road subsurface distress \(RSD\) detection. However, RSD recognition from GPR images is labor\-intensive and heavily relies on inspectors' expertise. Deep learning offers the possibility for automatic RSD recognition, but its current performance is limited by two factors: Scarcity of high\-quality dataset for network training and insufficient capability of network to distinguish RSD. In this study, a rigorously validated 3D GPR dataset containing 2134 samples of diverse types was constructed through field scanning. Based on the finding that the YOLO model trained with one of the three scans of GPR images exhibits varying sensitivity to specific type of RSD, we proposed a novel cross\-verification strategy with outstanding accuracy in RSD recognition, achieving recall over 98.6% in field tests. The approach, integrated into an online RSD detection system, can reduce the labor of inspection by around 90%.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2507.11081v1)
 
 ---
 
