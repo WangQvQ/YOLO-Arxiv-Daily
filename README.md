@@ -1,6 +1,24 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## DriveIndia: An Object Detection Dataset for Diverse Indian Traffic Scenes / 
+
+发布日期：2025-07-26
+
+作者：Rishav Kumar
+
+摘要：We introduce textbf\{DriveIndia\}, a large\-scale object detection dataset purpose\-built to capture the complexity and unpredictability of Indian traffic environments. The dataset contains textbf\{66,986 high\-resolution images\} annotated in YOLO format across textbf\{24 traffic\-relevant object categories\}, encompassing diverse conditions such as varied weather \(fog, rain\), illumination changes, heterogeneous road infrastructure, and dense, mixed traffic patterns and collected over textbf\{120\+ hours\} and covering textbf\{3,400\+ kilometers\} across urban, rural, and highway routes. DriveIndia offers a comprehensive benchmark for real\-world autonomous driving challenges. We provide baseline results using state\-of\-the\-art textbf\{YOLO family models\}, with the top\-performing variant achieving a $mAP\_\{50\}$ of textbf\{78.7%\}. Designed to support research in robust, generalizable object detection under uncertain road conditions, DriveIndia will be publicly available via the TiHAN\-IIT Hyderabad dataset repository \(https://tihan.iith.ac.in/tiand\-datasets/\).
+
+中文摘要：
+
+
+代码链接：https://tihan.iith.ac.in/tiand-datasets/).
+
+论文链接：[阅读更多](http://arxiv.org/abs/2507.19912v1)
+
+---
+
+
 ## Underwater Waste Detection Using Deep Learning A Performance Comparison of YOLOv7 to 10 and Faster RCNN / 
 
 发布日期：2025-07-25
@@ -69,24 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2507.17987v1)
-
----
-
-
-## BetterCheck: Towards Safeguarding VLMs for Automotive Perception Systems / 
-
-发布日期：2025-07-23
-
-作者：Malsha Ashani Mahawatta Dona
-
-摘要：Large language models \(LLMs\) are growingly extended to process multimodal data such as text and video simultaneously. Their remarkable performance in understanding what is shown in images is surpassing specialized neural networks \(NNs\) such as Yolo that is supporting only a well\-formed but very limited vocabulary, ie., objects that they are able to detect. When being non\-restricted, LLMs and in particular state\-of\-the\-art vision language models \(VLMs\) show impressive performance to describe even complex traffic situations. This is making them potentially suitable components for automotive perception systems to support the understanding of complex traffic situations or edge case situation. However, LLMs and VLMs are prone to hallucination, which mean to either potentially not seeing traffic agents such as vulnerable road users who are present in a situation, or to seeing traffic agents who are not there in reality. While the latter is unwanted making an ADAS or autonomous driving systems \(ADS\) to unnecessarily slow down, the former could lead to disastrous decisions from an ADS. In our work, we are systematically assessing the performance of 3 state\-of\-the\-art VLMs on a diverse subset of traffic situations sampled from the Waymo Open Dataset to support safety guardrails for capturing such hallucinations in VLM\-supported perception systems. We observe that both, proprietary and open VLMs exhibit remarkable image understanding capabilities even paying thorough attention to fine details sometimes difficult to spot for us humans. However, they are also still prone to making up elements in their descriptions to date requiring hallucination detection strategies such as BetterCheck that we propose in our work.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2507.17722v1)
 
 ---
 
