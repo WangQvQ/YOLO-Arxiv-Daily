@@ -1,6 +1,24 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## YOLO\-Count: Differentiable Object Counting for Text\-to\-Image Generation / 
+
+发布日期：2025-08-01
+
+作者：Guanning Zeng
+
+摘要：We propose YOLO\-Count, a differentiable open\-vocabulary object counting model that tackles both general counting challenges and enables precise quantity control for text\-to\-image \(T2I\) generation. A core contribution is the 'cardinality' map, a novel regression target that accounts for variations in object size and spatial distribution. Leveraging representation alignment and a hybrid strong\-weak supervision scheme, YOLO\-Count bridges the gap between open\-vocabulary counting and T2I generation control. Its fully differentiable architecture facilitates gradient\-based optimization, enabling accurate object count estimation and fine\-grained guidance for generative models. Extensive experiments demonstrate that YOLO\-Count achieves state\-of\-the\-art counting accuracy while providing robust and effective quantity control for T2I systems.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2508.00728v1)
+
+---
+
+
 ## Towards Field\-Ready AI\-based Malaria Diagnosis: A Continual Learning Approach / 
 
 发布日期：2025-07-31
@@ -69,24 +87,6 @@
 代码链接：https://tihan.iith.ac.in/tiand-datasets/).
 
 论文链接：[阅读更多](http://arxiv.org/abs/2507.19912v2)
-
----
-
-
-## Underwater Waste Detection Using Deep Learning A Performance Comparison of YOLOv7 to 10 and Faster RCNN / 
-
-发布日期：2025-07-25
-
-作者：UMMPK Nawarathne
-
-摘要：Underwater pollution is one of today's most significant environmental concerns, with vast volumes of garbage found in seas, rivers, and landscapes around the world. Accurate detection of these waste materials is crucial for successful waste management, environmental monitoring, and mitigation strategies. In this study, we investigated the performance of five cutting\-edge object recognition algorithms, namely YOLO \(You Only Look Once\) models, including YOLOv7, YOLOv8, YOLOv9, YOLOv10, and Faster Region\-Convolutional Neural Network \(R\-CNN\), to identify which model was most effective at recognizing materials in underwater situations. The models were thoroughly trained and tested on a large dataset containing fifteen different classes under diverse conditions, such as low visibility and variable depths. From the above\-mentioned models, YOLOv8 outperformed the others, with a mean Average Precision \(mAP\) of 80.9%, indicating a significant performance. This increased performance is attributed to YOLOv8's architecture, which incorporates advanced features such as improved anchor\-free mechanisms and self\-supervised learning, allowing for more precise and efficient recognition of items in a variety of settings. These findings highlight the YOLOv8 model's potential as an effective tool in the global fight against pollution, improving both the detection capabilities and scalability of underwater cleanup operations.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2507.18967v1)
 
 ---
 
