@@ -1,6 +1,60 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## YOLOv1 to YOLOv11: A Comprehensive Survey of Real\-Time Object Detection Innovations and Challenges / 
+
+发布日期：2025-08-04
+
+作者：Manikanta Kotthapalli
+
+摘要：Over the past decade, object detection has advanced significantly, with the YOLO \(You Only Look Once\) family of models transforming the landscape of real\-time vision applications through unified, end\-to\-end detection frameworks. From YOLOv1's pioneering regression\-based detection to the latest YOLOv9, each version has systematically enhanced the balance between speed, accuracy, and deployment efficiency through continuous architectural and algorithmic advancements.. Beyond core object detection, modern YOLO architectures have expanded to support tasks such as instance segmentation, pose estimation, object tracking, and domain\-specific applications including medical imaging and industrial automation. This paper offers a comprehensive review of the YOLO family, highlighting architectural innovations, performance benchmarks, extended capabilities, and real\-world use cases. We critically analyze the evolution of YOLO models and discuss emerging research directions that extend their impact across diverse computer vision domains.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2508.02067v1)
+
+---
+
+
+## Self\-Supervised YOLO: Leveraging Contrastive Learning for Label\-Efficient Object Detection / 
+
+发布日期：2025-08-04
+
+作者：Manikanta Kotthapalli
+
+摘要：One\-stage object detectors such as the YOLO family achieve state\-of\-the\-art performance in real\-time vision applications but remain heavily reliant on large\-scale labeled datasets for training. In this work, we present a systematic study of contrastive self\-supervised learning \(SSL\) as a means to reduce this dependency by pretraining YOLOv5 and YOLOv8 backbones on unlabeled images using the SimCLR framework. Our approach introduces a simple yet effective pipeline that adapts YOLO's convolutional backbones as encoders, employs global pooling and projection heads, and optimizes a contrastive loss using augmentations of the COCO unlabeled dataset \(120k images\). The pretrained backbones are then fine\-tuned on a cyclist detection task with limited labeled data. Experimental results show that SSL pretraining leads to consistently higher mAP, faster convergence, and improved precision\-recall performance, especially in low\-label regimes. For example, our SimCLR\-pretrained YOLOv8 achieves a mAP@50:95 of 0.7663, outperforming its supervised counterpart despite using no annotations during pretraining. These findings establish a strong baseline for applying contrastive SSL to one\-stage detectors and highlight the potential of unlabeled data as a scalable resource for label\-efficient object detection.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2508.01966v1)
+
+---
+
+
+## SBP\-YOLO:A Lightweight Real\-Time Model for Detecting Speed Bumps and Potholes / 
+
+发布日期：2025-08-02
+
+作者：Chuanqi Liang
+
+摘要：With increasing demand for ride comfort in new energy vehicles, accurate real\-time detection of speed bumps and potholes is critical for predictive suspension control. This paper proposes SBP\-YOLO, a lightweight detection framework based on YOLOv11, optimized for embedded deployment. The model integrates GhostConv for efficient computation, VoVGSCSPC for multi\-scale feature enhancement, and a Lightweight Efficiency Detection Head \(LEDH\) to reduce early\-stage feature processing costs. A hybrid training strategy combining NWD loss, knowledge distillation, and Albumentations\-based weather augmentation improves detection robustness, especially for small and distant targets. Experiments show SBP\-YOLO achieves 87.0% mAP \(outperforming YOLOv11n by 5.8%\) and runs at 139.5 FPS on a Jetson AGX Xavier with TensorRT FP16 quantization. The results validate its effectiveness for real\-time road condition perception in intelligent suspension systems.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2508.01339v1)
+
+---
+
+
 ## YOLO\-Count: Differentiable Object Counting for Text\-to\-Image Generation / 
 
 发布日期：2025-08-01
@@ -33,60 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2507.23648v1)
-
----
-
-
-## Contrastive Learning\-Driven Traffic Sign Perception: Multi\-Modal Fusion of Text and Vision / 
-
-发布日期：2025-07-31
-
-作者：Qiang Lu
-
-摘要：Traffic sign recognition, as a core component of autonomous driving perception systems, directly influences vehicle environmental awareness and driving safety. Current technologies face two significant challenges: first, the traffic sign dataset exhibits a pronounced long\-tail distribution, resulting in a substantial decline in recognition performance of traditional convolutional networks when processing low\-frequency and out\-of\-distribution classes; second, traffic signs in real\-world scenarios are predominantly small targets with significant scale variations, making it difficult to extract multi\-scale features.To overcome these issues, we propose a novel two\-stage framework combining open\-vocabulary detection and cross\-modal learning. For traffic sign detection, our NanoVerse YOLO model integrates a reparameterizable vision\-language path aggregation network \(RepVL\-PAN\) and an SPD\-Conv module to specifically enhance feature extraction for small, multi\-scale targets. For traffic sign classification, we designed a Traffic Sign Recognition Multimodal Contrastive Learning model \(TSR\-MCL\). By contrasting visual features from a Vision Transformer with semantic features from a rule\-based BERT, TSR\-MCL learns robust, frequency\-independent representations, effectively mitigating class confusion caused by data imbalance. On the TT100K dataset, our method achieves a state\-of\-the\-art 78.4% mAP in the long\-tail detection task for all\-class recognition. The model also obtains 91.8% accuracy and 88.9% recall, significantly outperforming mainstream algorithms and demonstrating superior accuracy and generalization in complex, open\-world scenarios.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2507.23331v1)
-
----
-
-
-## YOLO\-ROC: A High\-Precision and Ultra\-Lightweight Model for Real\-Time Road Damage Detection / 
-
-发布日期：2025-07-31
-
-作者：Zicheng Lin
-
-摘要：Road damage detection is a critical task for ensuring traffic safety and maintaining infrastructure integrity. While deep learning\-based detection methods are now widely adopted, they still face two core challenges: first, the inadequate multi\-scale feature extraction capabilities of existing networks for diverse targets like cracks and potholes, leading to high miss rates for small\-scale damage; and second, the substantial parameter counts and computational demands of mainstream models, which hinder their deployment for efficient, real\-time detection in practical applications. To address these issues, this paper proposes a high\-precision and lightweight model, YOLO \- Road Orthogonal Compact \(YOLO\-ROC\). We designed a Bidirectional Multi\-scale Spatial Pyramid Pooling Fast \(BMS\-SPPF\) module to enhance multi\-scale feature extraction and implemented a hierarchical channel compression strategy to reduce computational complexity. The BMS\-SPPF module leverages a bidirectional spatial\-channel attention mechanism to improve the detection of small targets. Concurrently, the channel compression strategy reduces the parameter count from 3.01M to 0.89M and GFLOPs from 8.1 to 2.6. Experiments on the RDD2022\_China\_Drone dataset demonstrate that YOLO\-ROC achieves a mAP50 of 67.6%, surpassing the baseline YOLOv8n by 2.11%. Notably, the mAP50 for the small\-target D40 category improved by 16.8%, and the final model size is only 2.0 MB. Furthermore, the model exhibits excellent generalization performance on the RDD2022\_China\_Motorbike dataset.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2507.23225v1)
-
----
-
-
-## DriveIndia: An Object Detection Dataset for Diverse Indian Traffic Scenes / 
-
-发布日期：2025-07-26
-
-作者：Rishav Kumar
-
-摘要：We introduce DriveIndia, a large\-scale object detection dataset purpose\-built to capture the complexity and unpredictability of Indian traffic environments. The dataset contains 66,986 high\-resolution images annotated in YOLO format across 24 traffic\-relevant object categories, encompassing diverse conditions such as varied weather \(fog, rain\), illumination changes, heterogeneous road infrastructure, and dense, mixed traffic patterns and collected over 120\+ hours and covering 3,400\+ kilometers across urban, rural, and highway routes. DriveIndia offers a comprehensive benchmark for real\-world autonomous driving challenges. We provide baseline results using state\-of\-the\-art YOLO family models, with the top\-performing variant achieving a mAP50 of 78.7%. Designed to support research in robust, generalizable object detection under uncertain road conditions, DriveIndia will be publicly available via the TiHAN\-IIT Hyderabad dataset repository \(https://tihan.iith.ac.in/tiand\-datasets/\).
-
-中文摘要：
-
-
-代码链接：https://tihan.iith.ac.in/tiand-datasets/).
-
-论文链接：[阅读更多](http://arxiv.org/abs/2507.19912v2)
 
 ---
 
