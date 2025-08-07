@@ -1,6 +1,42 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## YOLOv8\-Based Deep Learning Model for Automated Poultry Disease Detection and Health Monitoring paper / 
+
+发布日期：2025-08-06
+
+作者：Akhil Saketh Reddy Sabbella
+
+摘要：In the poultry industry, detecting chicken illnesses is essential to avoid financial losses. Conventional techniques depend on manual observation, which is laborious and prone to mistakes. Using YOLO v8 a deep learning model for real\-time object recognition. This study suggests an AI based approach, by developing a system that analyzes high resolution chicken photos, YOLO v8 detects signs of illness, such as abnormalities in behavior and appearance. A sizable, annotated dataset has been used to train the algorithm, which provides accurate real\-time identification of infected chicken and prompt warnings to farm operators for prompt action. By facilitating early infection identification, eliminating the need for human inspection, and enhancing biosecurity in large\-scale farms, this AI technology improves chicken health management. The real\-time features of YOLO v8 provide a scalable and effective method for improving farm management techniques.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2508.04658v1)
+
+---
+
+
+## Deep learning framework for crater detection and identification on the Moon and Mars / 
+
+发布日期：2025-08-05
+
+作者：Yihan Ma
+
+摘要：Impact craters are among the most prominent geomorphological features on planetary surfaces and are of substantial significance in planetary science research. Their spatial distribution and morphological characteristics provide critical information on planetary surface composition, geological history, and impact processes. In recent years, the rapid advancement of deep learning models has fostered significant interest in automated crater detection. In this paper, we apply advancements in deep learning models for impact crater detection and identification. We use novel models, including Convolutional Neural Networks \(CNNs\) and variants such as YOLO and ResNet. We present a framework that features a two\-stage approach where the first stage features crater identification using simple classic CNN, ResNet\-50 and YOLO. In the second stage, our framework employs YOLO\-based detection for crater localisation. Therefore, we detect and identify different types of craters and present a summary report with remote sensing data for a selected region. We consider selected regions for craters and identification from Mars and the Moon based on remote sensing data. Our results indicate that YOLO demonstrates the most balanced crater detection performance, while ResNet\-50 excels in identifying large craters with high precision.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2508.03920v1)
+
+---
+
+
 ## YOLOv1 to YOLOv11: A Comprehensive Survey of Real\-Time Object Detection Innovations and Challenges / 
 
 发布日期：2025-08-04
@@ -51,42 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2508.01339v1)
-
----
-
-
-## YOLO\-Count: Differentiable Object Counting for Text\-to\-Image Generation / 
-
-发布日期：2025-08-01
-
-作者：Guanning Zeng
-
-摘要：We propose YOLO\-Count, a differentiable open\-vocabulary object counting model that tackles both general counting challenges and enables precise quantity control for text\-to\-image \(T2I\) generation. A core contribution is the 'cardinality' map, a novel regression target that accounts for variations in object size and spatial distribution. Leveraging representation alignment and a hybrid strong\-weak supervision scheme, YOLO\-Count bridges the gap between open\-vocabulary counting and T2I generation control. Its fully differentiable architecture facilitates gradient\-based optimization, enabling accurate object count estimation and fine\-grained guidance for generative models. Extensive experiments demonstrate that YOLO\-Count achieves state\-of\-the\-art counting accuracy while providing robust and effective quantity control for T2I systems.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2508.00728v1)
-
----
-
-
-## Towards Field\-Ready AI\-based Malaria Diagnosis: A Continual Learning Approach / 
-
-发布日期：2025-07-31
-
-作者：Louise Guillon
-
-摘要：Malaria remains a major global health challenge, particularly in low\-resource settings where access to expert microscopy may be limited. Deep learning\-based computer\-aided diagnosis \(CAD\) systems have been developed and demonstrate promising performance on thin blood smear images. However, their clinical deployment may be hindered by limited generalization across sites with varying conditions. Yet very few practical solutions have been proposed. In this work, we investigate continual learning \(CL\) as a strategy to enhance the robustness of malaria CAD models to domain shifts. We frame the problem as a domain\-incremental learning scenario, where a YOLO\-based object detector must adapt to new acquisition sites while retaining performance on previously seen domains. We evaluate four CL strategies, two rehearsal\-based and two regularization\-based methods, on real\-life conditions thanks to a multi\-site clinical dataset of thin blood smear images. Our results suggest that CL, and rehearsal\-based methods in particular, can significantly improve performance. These findings highlight the potential of continual learning to support the development of deployable, field\-ready CAD tools for malaria.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2507.23648v1)
 
 ---
 
