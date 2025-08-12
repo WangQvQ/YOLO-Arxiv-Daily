@@ -1,6 +1,24 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Grasp\-HGN: Grasping the Unexpected / 
+
+发布日期：2025-08-11
+
+作者：Mehrshad Zandigohar
+
+摘要：For transradial amputees, robotic prosthetic hands promise to regain the capability to perform daily living activities. To advance next\-generation prosthetic hand control design, it is crucial to address current shortcomings in robustness to out of lab artifacts, and generalizability to new environments. Due to the fixed number of object to interact with in existing datasets, contrasted with the virtually infinite variety of objects encountered in the real world, current grasp models perform poorly on unseen objects, negatively affecting users' independence and quality of life.   To address this: \(i\) we define semantic projection, the ability of a model to generalize to unseen object types and show that conventional models like YOLO, despite 80% training accuracy, drop to 15% on unseen objects. \(ii\) we propose Grasp\-LLaVA, a Grasp Vision Language Model enabling human\-like reasoning to infer the suitable grasp type estimate based on the object's physical characteristics resulting in a significant 50.2% accuracy over unseen object types compared to 36.7% accuracy of an SOTA grasp estimation model.   Lastly, to bridge the performance\-latency gap, we propose Hybrid Grasp Network \(HGN\), an edge\-cloud deployment infrastructure enabling fast grasp estimation on edge and accurate cloud inference as a fail\-safe, effectively expanding the latency vs. accuracy Pareto. HGN with confidence calibration \(DC\) enables dynamic switching between edge and cloud models, improving semantic projection accuracy by 5.6% \(to 42.3%\) with 3.5x speedup over the unseen object types. Over a real\-world sample mix, it reaches 86% average accuracy \(12.2% gain over edge\-only\), and 2.2x faster inference than Grasp\-LLaVA alone.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2508.07648v1)
+
+---
+
+
 ## YOLOv8\-Based Deep Learning Model for Automated Poultry Disease Detection and Health Monitoring paper / 
 
 发布日期：2025-08-06
@@ -69,24 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2508.01966v1)
-
----
-
-
-## SBP\-YOLO:A Lightweight Real\-Time Model for Detecting Speed Bumps and Potholes / 
-
-发布日期：2025-08-02
-
-作者：Chuanqi Liang
-
-摘要：With increasing demand for ride comfort in new energy vehicles, accurate real\-time detection of speed bumps and potholes is critical for predictive suspension control. This paper proposes SBP\-YOLO, a lightweight detection framework based on YOLOv11, optimized for embedded deployment. The model integrates GhostConv for efficient computation, VoVGSCSPC for multi\-scale feature enhancement, and a Lightweight Efficiency Detection Head \(LEDH\) to reduce early\-stage feature processing costs. A hybrid training strategy combining NWD loss, knowledge distillation, and Albumentations\-based weather augmentation improves detection robustness, especially for small and distant targets. Experiments show SBP\-YOLO achieves 87.0% mAP \(outperforming YOLOv11n by 5.8%\) and runs at 139.5 FPS on a Jetson AGX Xavier with TensorRT FP16 quantization. The results validate its effectiveness for real\-time road condition perception in intelligent suspension systems.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2508.01339v1)
 
 ---
 
