@@ -1,6 +1,42 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Robustness analysis of Deep Sky Objects detection models on HPC / 
+
+发布日期：2025-08-13
+
+作者：Olivier Parisot
+
+摘要：Astronomical surveys and the growing involvement of amateur astronomers are producing more sky images than ever before, and this calls for automated processing methods that are accurate and robust. Detecting Deep Sky Objects \-\- such as galaxies, nebulae, and star clusters \-\- remains challenging because of their faint signals and complex backgrounds. Advances in Computer Vision and Deep Learning now make it possible to improve and automate this process. In this paper, we present the training and comparison of different detection models \(YOLO, RET\-DETR\) on smart telescope images, using High\-Performance Computing \(HPC\) to parallelise computations, in particular for robustness testing.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2508.09831v1)
+
+---
+
+
+## SegDAC: Segmentation\-Driven Actor\-Critic for Visual Reinforcement Learning / 
+
+发布日期：2025-08-12
+
+作者：Alexandre Brown
+
+摘要：Visual reinforcement learning \(RL\) is challenging due to the need to learn both perception and actions from high\-dimensional inputs and noisy rewards. Although large perception models exist, integrating them effectively into RL for visual generalization and improved sample efficiency remains unclear. We propose SegDAC, a Segmentation\-Driven Actor\-Critic method. SegDAC uses Segment Anything \(SAM\) for object\-centric decomposition and YOLO\-World to ground segments semantically via text prompts. It includes a novel transformer\-based architecture that supports a dynamic number of segments at each time step and effectively learns which segments to focus on using online RL, without using human labels. By evaluating SegDAC over a challenging visual generalization benchmark using Maniskill3, which covers diverse manipulation tasks under strong visual perturbations, we demonstrate that SegDAC achieves significantly better visual generalization, doubling prior performance on the hardest setting and matching or surpassing prior methods in sample efficiency across all evaluated tasks.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2508.09325v1)
+
+---
+
+
 ## Grasp\-HGN: Grasping the Unexpected / 
 
 发布日期：2025-08-11
@@ -51,42 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2508.03920v1)
-
----
-
-
-## YOLOv1 to YOLOv11: A Comprehensive Survey of Real\-Time Object Detection Innovations and Challenges / 
-
-发布日期：2025-08-04
-
-作者：Manikanta Kotthapalli
-
-摘要：Over the past decade, object detection has advanced significantly, with the YOLO \(You Only Look Once\) family of models transforming the landscape of real\-time vision applications through unified, end\-to\-end detection frameworks. From YOLOv1's pioneering regression\-based detection to the latest YOLOv9, each version has systematically enhanced the balance between speed, accuracy, and deployment efficiency through continuous architectural and algorithmic advancements.. Beyond core object detection, modern YOLO architectures have expanded to support tasks such as instance segmentation, pose estimation, object tracking, and domain\-specific applications including medical imaging and industrial automation. This paper offers a comprehensive review of the YOLO family, highlighting architectural innovations, performance benchmarks, extended capabilities, and real\-world use cases. We critically analyze the evolution of YOLO models and discuss emerging research directions that extend their impact across diverse computer vision domains.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2508.02067v1)
-
----
-
-
-## Self\-Supervised YOLO: Leveraging Contrastive Learning for Label\-Efficient Object Detection / 
-
-发布日期：2025-08-04
-
-作者：Manikanta Kotthapalli
-
-摘要：One\-stage object detectors such as the YOLO family achieve state\-of\-the\-art performance in real\-time vision applications but remain heavily reliant on large\-scale labeled datasets for training. In this work, we present a systematic study of contrastive self\-supervised learning \(SSL\) as a means to reduce this dependency by pretraining YOLOv5 and YOLOv8 backbones on unlabeled images using the SimCLR framework. Our approach introduces a simple yet effective pipeline that adapts YOLO's convolutional backbones as encoders, employs global pooling and projection heads, and optimizes a contrastive loss using augmentations of the COCO unlabeled dataset \(120k images\). The pretrained backbones are then fine\-tuned on a cyclist detection task with limited labeled data. Experimental results show that SSL pretraining leads to consistently higher mAP, faster convergence, and improved precision\-recall performance, especially in low\-label regimes. For example, our SimCLR\-pretrained YOLOv8 achieves a mAP@50:95 of 0.7663, outperforming its supervised counterpart despite using no annotations during pretraining. These findings establish a strong baseline for applying contrastive SSL to one\-stage detectors and highlight the potential of unlabeled data as a scalable resource for label\-efficient object detection.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2508.01966v1)
 
 ---
 
