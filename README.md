@@ -1,6 +1,24 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## SynSpill: Improved Industrial Spill Detection With Synthetic Data / 
+
+发布日期：2025-08-13
+
+作者：Aaditya Baranwal
+
+摘要：Large\-scale Vision\-Language Models \(VLMs\) have transformed general\-purpose visual recognition through strong zero\-shot capabilities. However, their performance degrades significantly in niche, safety\-critical domains such as industrial spill detection, where hazardous events are rare, sensitive, and difficult to annotate. This scarcity \-\- driven by privacy concerns, data sensitivity, and the infrequency of real incidents \-\- renders conventional fine\-tuning of detectors infeasible for most industrial settings.   We address this challenge by introducing a scalable framework centered on a high\-quality synthetic data generation pipeline. We demonstrate that this synthetic corpus enables effective Parameter\-Efficient Fine\-Tuning \(PEFT\) of VLMs and substantially boosts the performance of state\-of\-the\-art object detectors such as YOLO and DETR. Notably, in the absence of synthetic data \(SynSpill dataset\), VLMs still generalize better to unseen spill scenarios than these detectors. When SynSpill is used, both VLMs and detectors achieve marked improvements, with their performance becoming comparable.   Our results underscore that high\-fidelity synthetic data is a powerful means to bridge the domain gap in safety\-critical applications. The combination of synthetic generation and lightweight adaptation offers a cost\-effective, scalable pathway for deploying vision systems in industrial environments where real data is scarce/impractical to obtain.   Project Page: https://synspill.vercel.app
+
+中文摘要：
+
+
+代码链接：https://synspill.vercel.app
+
+论文链接：[阅读更多](http://arxiv.org/abs/2508.10171v1)
+
+---
+
+
 ## Robustness analysis of Deep Sky Objects detection models on HPC / 
 
 发布日期：2025-08-13
@@ -69,24 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2508.04658v1)
-
----
-
-
-## Deep learning framework for crater detection and identification on the Moon and Mars / 
-
-发布日期：2025-08-05
-
-作者：Yihan Ma
-
-摘要：Impact craters are among the most prominent geomorphological features on planetary surfaces and are of substantial significance in planetary science research. Their spatial distribution and morphological characteristics provide critical information on planetary surface composition, geological history, and impact processes. In recent years, the rapid advancement of deep learning models has fostered significant interest in automated crater detection. In this paper, we apply advancements in deep learning models for impact crater detection and identification. We use novel models, including Convolutional Neural Networks \(CNNs\) and variants such as YOLO and ResNet. We present a framework that features a two\-stage approach where the first stage features crater identification using simple classic CNN, ResNet\-50 and YOLO. In the second stage, our framework employs YOLO\-based detection for crater localisation. Therefore, we detect and identify different types of craters and present a summary report with remote sensing data for a selected region. We consider selected regions for craters and identification from Mars and the Moon based on remote sensing data. Our results indicate that YOLO demonstrates the most balanced crater detection performance, while ResNet\-50 excels in identifying large craters with high precision.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2508.03920v1)
 
 ---
 
