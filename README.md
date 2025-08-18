@@ -1,6 +1,42 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## TACR\-YOLO: A Real\-time Detection Framework for Abnormal Human Behaviors Enhanced with Coordinate and Task\-Aware Representations / 
+
+发布日期：2025-08-15
+
+作者：Xinyi Yin
+
+摘要：Abnormal Human Behavior Detection \(AHBD\) under special scenarios is becoming increasingly crucial. While YOLO\-based detection methods excel in real\-time tasks, they remain hindered by challenges including small objects, task conflicts, and multi\-scale fusion in AHBD. To tackle them, we propose TACR\-YOLO, a new real\-time framework for AHBD. We introduce a Coordinate Attention Module to enhance small object detection, a Task\-Aware Attention Module to deal with classification\-regression conflicts, and a Strengthen Neck Network for refined multi\-scale fusion, respectively. In addition, we optimize Anchor Box sizes using K\-means clustering and deploy DIoU\-Loss to improve bounding box regression. The Personnel Anomalous Behavior Detection \(PABD\) dataset, which includes 8,529 samples across four behavior categories, is also presented. Extensive experimental results indicate that TACR\-YOLO achieves 91.92% mAP on PABD, with competitive speed and robustness. Ablation studies highlight the contribution of each improvement. This work provides new insights for abnormal behavior detection under special scenarios, advancing its progress.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2508.11478v1)
+
+---
+
+
+## Utilizing Vision\-Language Models as Action Models for Intent Recognition and Assistance / 
+
+发布日期：2025-08-14
+
+作者：Cesar Alan Contreras
+
+摘要：Human\-robot collaboration requires robots to quickly infer user intent, provide transparent reasoning, and assist users in achieving their goals. Our recent work introduced GUIDER, our framework for inferring navigation and manipulation intents. We propose augmenting GUIDER with a vision\-language model \(VLM\) and a text\-only language model \(LLM\) to form a semantic prior that filters objects and locations based on the mission prompt. A vision pipeline \(YOLO for object detection and the Segment Anything Model for instance segmentation\) feeds candidate object crops into the VLM, which scores their relevance given an operator prompt; in addition, the list of detected object labels is ranked by a text\-only LLM. These scores weight the existing navigation and manipulation layers of GUIDER, selecting context\-relevant targets while suppressing unrelated objects. Once the combined belief exceeds a threshold, autonomy changes occur, enabling the robot to navigate to the desired area and retrieve the desired object, while adapting to any changes in the operator's intent. Future work will evaluate the system on Isaac Sim using a Franka Emika arm on a Ridgeback base, with a focus on real\-time assistance.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2508.11093v1)
+
+---
+
+
 ## SynSpill: Improved Industrial Spill Detection With Synthetic Data / 
 
 发布日期：2025-08-13
@@ -19,74 +55,38 @@
 ---
 
 
-## Robustness analysis of Deep Sky Objects detection models on HPC / 
+## IPG: Incremental Patch Generation for Generalized Adversarial Patch Training / 
 
 发布日期：2025-08-13
 
-作者：Olivier Parisot
+作者：Wonho Lee
 
-摘要：Astronomical surveys and the growing involvement of amateur astronomers are producing more sky images than ever before, and this calls for automated processing methods that are accurate and robust. Detecting Deep Sky Objects \-\- such as galaxies, nebulae, and star clusters \-\- remains challenging because of their faint signals and complex backgrounds. Advances in Computer Vision and Deep Learning now make it possible to improve and automate this process. In this paper, we present the training and comparison of different detection models \(YOLO, RET\-DETR\) on smart telescope images, using High\-Performance Computing \(HPC\) to parallelise computations, in particular for robustness testing.
+摘要：The advent of adversarial patches poses a significant challenge to the robustness of AI models, particularly in the domain of computer vision tasks such as object detection. In contradistinction to traditional adversarial examples, these patches target specific regions of an image, resulting in the malfunction of AI models. This paper proposes Incremental Patch Generation \(IPG\), a method that generates adversarial patches up to 11.1 times more efficiently than existing approaches while maintaining comparable attack performance. The efficacy of IPG is demonstrated by experiments and ablation studies including YOLO's feature distribution visualization and adversarial training results, which show that it produces well\-generalized patches that effectively cover a broader range of model vulnerabilities. Furthermore, IPG\-generated datasets can serve as a robust knowledge foundation for constructing a robust model, enabling structured representation, advanced reasoning, and proactive defenses in AI security ecosystems. The findings of this study suggest that IPG has considerable potential for future utilization not only in adversarial patch defense but also in real\-world applications such as autonomous vehicles, security systems, and medical imaging, where AI models must remain resilient to adversarial attacks in dynamic and high\-stakes environments.
 
 中文摘要：
 
 
 代码链接：摘要中未找到代码链接。
 
-论文链接：[阅读更多](http://arxiv.org/abs/2508.09831v1)
+论文链接：[阅读更多](http://arxiv.org/abs/2508.10946v1)
 
 ---
 
 
-## SegDAC: Segmentation\-Driven Actor\-Critic for Visual Reinforcement Learning / 
+## iWatchRoad: Scalable Detection and Geospatial Visualization of Potholes for Smart Cities / 
 
-发布日期：2025-08-12
+发布日期：2025-08-13
 
-作者：Alexandre Brown
+作者：Rishi Raj Sahoo
 
-摘要：Visual reinforcement learning \(RL\) is challenging due to the need to learn both perception and actions from high\-dimensional inputs and noisy rewards. Although large perception models exist, integrating them effectively into RL for visual generalization and improved sample efficiency remains unclear. We propose SegDAC, a Segmentation\-Driven Actor\-Critic method. SegDAC uses Segment Anything \(SAM\) for object\-centric decomposition and YOLO\-World to ground segments semantically via text prompts. It includes a novel transformer\-based architecture that supports a dynamic number of segments at each time step and effectively learns which segments to focus on using online RL, without using human labels. By evaluating SegDAC over a challenging visual generalization benchmark using Maniskill3, which covers diverse manipulation tasks under strong visual perturbations, we demonstrate that SegDAC achieves significantly better visual generalization, doubling prior performance on the hardest setting and matching or surpassing prior methods in sample efficiency across all evaluated tasks.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2508.09325v1)
-
----
-
-
-## Grasp\-HGN: Grasping the Unexpected / 
-
-发布日期：2025-08-11
-
-作者：Mehrshad Zandigohar
-
-摘要：For transradial amputees, robotic prosthetic hands promise to regain the capability to perform daily living activities. To advance next\-generation prosthetic hand control design, it is crucial to address current shortcomings in robustness to out of lab artifacts, and generalizability to new environments. Due to the fixed number of object to interact with in existing datasets, contrasted with the virtually infinite variety of objects encountered in the real world, current grasp models perform poorly on unseen objects, negatively affecting users' independence and quality of life.   To address this: \(i\) we define semantic projection, the ability of a model to generalize to unseen object types and show that conventional models like YOLO, despite 80% training accuracy, drop to 15% on unseen objects. \(ii\) we propose Grasp\-LLaVA, a Grasp Vision Language Model enabling human\-like reasoning to infer the suitable grasp type estimate based on the object's physical characteristics resulting in a significant 50.2% accuracy over unseen object types compared to 36.7% accuracy of an SOTA grasp estimation model.   Lastly, to bridge the performance\-latency gap, we propose Hybrid Grasp Network \(HGN\), an edge\-cloud deployment infrastructure enabling fast grasp estimation on edge and accurate cloud inference as a fail\-safe, effectively expanding the latency vs. accuracy Pareto. HGN with confidence calibration \(DC\) enables dynamic switching between edge and cloud models, improving semantic projection accuracy by 5.6% \(to 42.3%\) with 3.5x speedup over the unseen object types. Over a real\-world sample mix, it reaches 86% average accuracy \(12.2% gain over edge\-only\), and 2.2x faster inference than Grasp\-LLaVA alone.
+摘要：Potholes on the roads are a serious hazard and maintenance burden. This poses a significant threat to road safety and vehicle longevity, especially on the diverse and under\-maintained roads of India. In this paper, we present a complete end\-to\-end system called iWatchRoad for automated pothole detection, Global Positioning System \(GPS\) tagging, and real time mapping using OpenStreetMap \(OSM\). We curated a large, self\-annotated dataset of over 7,000 frames captured across various road types, lighting conditions, and weather scenarios unique to Indian environments, leveraging dashcam footage. This dataset is used to fine\-tune, Ultralytics You Only Look Once \(YOLO\) model to perform real time pothole detection, while a custom Optical Character Recognition \(OCR\) module was employed to extract timestamps directly from video frames. The timestamps are synchronized with GPS logs to geotag each detected potholes accurately. The processed data includes the potholes' details and frames as metadata is stored in a database and visualized via a user friendly web interface using OSM. iWatchRoad not only improves detection accuracy under challenging conditions but also provides government compatible outputs for road assessment and maintenance planning through the metadata visible on the website. Our solution is cost effective, hardware efficient, and scalable, offering a practical tool for urban and rural road management in developing regions, making the system automated. iWatchRoad is available at https://smlab.niser.ac.in/project/iwatchroad
 
 中文摘要：
 
 
-代码链接：摘要中未找到代码链接。
+代码链接：https://smlab.niser.ac.in/project/iwatchroad
 
-论文链接：[阅读更多](http://arxiv.org/abs/2508.07648v1)
-
----
-
-
-## YOLOv8\-Based Deep Learning Model for Automated Poultry Disease Detection and Health Monitoring paper / 
-
-发布日期：2025-08-06
-
-作者：Akhil Saketh Reddy Sabbella
-
-摘要：In the poultry industry, detecting chicken illnesses is essential to avoid financial losses. Conventional techniques depend on manual observation, which is laborious and prone to mistakes. Using YOLO v8 a deep learning model for real\-time object recognition. This study suggests an AI based approach, by developing a system that analyzes high resolution chicken photos, YOLO v8 detects signs of illness, such as abnormalities in behavior and appearance. A sizable, annotated dataset has been used to train the algorithm, which provides accurate real\-time identification of infected chicken and prompt warnings to farm operators for prompt action. By facilitating early infection identification, eliminating the need for human inspection, and enhancing biosecurity in large\-scale farms, this AI technology improves chicken health management. The real\-time features of YOLO v8 provide a scalable and effective method for improving farm management techniques.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2508.04658v1)
+论文链接：[阅读更多](http://arxiv.org/abs/2508.10945v1)
 
 ---
 
