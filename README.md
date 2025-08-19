@@ -1,6 +1,24 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Mechanical Automation with Vision: A Design for Rubik's Cube Solver / 
+
+发布日期：2025-08-17
+
+作者：Abhinav Chalise
+
+摘要：The core mechanical system is built around three stepper motors for physical manipulation, a microcontroller for hardware control, a camera and YOLO detection model for real\-time cube state detection. A significant software component is the development of a user\-friendly graphical user interface \(GUI\) designed in Unity. The initial state after detection from real\-time YOLOv8 model \(Precision 0.98443, Recall 0.98419, Box Loss 0.42051, Class Loss 0.2611\) is virtualized on GUI. To get the solution, the system employs the Kociemba's algorithm while physical manipulation with a single degree of freedom is done by combination of stepper motors' interaction with the cube achieving the average solving time of ~2.2 minutes.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2508.12469v1)
+
+---
+
+
 ## TACR\-YOLO: A Real\-time Detection Framework for Abnormal Human Behaviors Enhanced with Coordinate and Task\-Aware Representations / 
 
 发布日期：2025-08-15
@@ -69,24 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2508.10946v1)
-
----
-
-
-## iWatchRoad: Scalable Detection and Geospatial Visualization of Potholes for Smart Cities / 
-
-发布日期：2025-08-13
-
-作者：Rishi Raj Sahoo
-
-摘要：Potholes on the roads are a serious hazard and maintenance burden. This poses a significant threat to road safety and vehicle longevity, especially on the diverse and under\-maintained roads of India. In this paper, we present a complete end\-to\-end system called iWatchRoad for automated pothole detection, Global Positioning System \(GPS\) tagging, and real time mapping using OpenStreetMap \(OSM\). We curated a large, self\-annotated dataset of over 7,000 frames captured across various road types, lighting conditions, and weather scenarios unique to Indian environments, leveraging dashcam footage. This dataset is used to fine\-tune, Ultralytics You Only Look Once \(YOLO\) model to perform real time pothole detection, while a custom Optical Character Recognition \(OCR\) module was employed to extract timestamps directly from video frames. The timestamps are synchronized with GPS logs to geotag each detected potholes accurately. The processed data includes the potholes' details and frames as metadata is stored in a database and visualized via a user friendly web interface using OSM. iWatchRoad not only improves detection accuracy under challenging conditions but also provides government compatible outputs for road assessment and maintenance planning through the metadata visible on the website. Our solution is cost effective, hardware efficient, and scalable, offering a practical tool for urban and rural road management in developing regions, making the system automated. iWatchRoad is available at https://smlab.niser.ac.in/project/iwatchroad
-
-中文摘要：
-
-
-代码链接：https://smlab.niser.ac.in/project/iwatchroad
-
-论文链接：[阅读更多](http://arxiv.org/abs/2508.10945v1)
 
 ---
 
