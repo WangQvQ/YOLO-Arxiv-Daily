@@ -1,6 +1,24 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## A Novel Attention\-Augmented Wavelet YOLO System for Real\-time Brain Vessel Segmentation on Transcranial Color\-coded Doppler / 
+
+发布日期：2025-08-19
+
+作者：Wenxuan Zhang
+
+摘要：The Circle of Willis \(CoW\), vital for ensuring consistent blood flow to the brain, is closely linked to ischemic stroke. Accurate assessment of the CoW is important for identifying individuals at risk and guiding appropriate clinical management. Among existing imaging methods, Transcranial Color\-coded Doppler \(TCCD\) offers unique advantages due to its radiation\-free nature, affordability, and accessibility. However, reliable TCCD assessments depend heavily on operator expertise for identifying anatomical landmarks and performing accurate angle correction, which limits its widespread adoption. To address this challenge, we propose an AI\-powered, real\-time CoW auto\-segmentation system capable of efficiently capturing cerebral arteries. No prior studies have explored AI\-driven cerebrovascular segmentation using TCCD. In this work, we introduce a novel Attention\-Augmented Wavelet YOLO \(AAW\-YOLO\) network tailored for TCCD data, designed to provide real\-time guidance for brain vessel segmentation in the CoW. We prospectively collected TCCD data comprising 738 annotated frames and 3,419 labeled artery instances to establish a high\-quality dataset for model training and evaluation. The proposed AAW\-YOLO demonstrated strong performance in segmenting both ipsilateral and contralateral CoW vessels, achieving an average Dice score of 0.901, IoU of 0.823, precision of 0.882, recall of 0.926, and mAP of 0.953, with a per\-frame inference speed of 14.199 ms. This system offers a practical solution to reduce reliance on operator experience in TCCD\-based cerebrovascular screening, with potential applications in routine clinical workflows and resource\-constrained settings. Future research will explore bilateral modeling and larger\-scale validation.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2508.13875v1)
+
+---
+
+
 ## Mechanical Automation with Vision: A Design for Rubik's Cube Solver / 
 
 发布日期：2025-08-17
@@ -69,24 +87,6 @@
 代码链接：https://synspill.vercel.app
 
 论文链接：[阅读更多](http://arxiv.org/abs/2508.10171v1)
-
----
-
-
-## IPG: Incremental Patch Generation for Generalized Adversarial Patch Training / 
-
-发布日期：2025-08-13
-
-作者：Wonho Lee
-
-摘要：The advent of adversarial patches poses a significant challenge to the robustness of AI models, particularly in the domain of computer vision tasks such as object detection. In contradistinction to traditional adversarial examples, these patches target specific regions of an image, resulting in the malfunction of AI models. This paper proposes Incremental Patch Generation \(IPG\), a method that generates adversarial patches up to 11.1 times more efficiently than existing approaches while maintaining comparable attack performance. The efficacy of IPG is demonstrated by experiments and ablation studies including YOLO's feature distribution visualization and adversarial training results, which show that it produces well\-generalized patches that effectively cover a broader range of model vulnerabilities. Furthermore, IPG\-generated datasets can serve as a robust knowledge foundation for constructing a robust model, enabling structured representation, advanced reasoning, and proactive defenses in AI security ecosystems. The findings of this study suggest that IPG has considerable potential for future utilization not only in adversarial patch defense but also in real\-world applications such as autonomous vehicles, security systems, and medical imaging, where AI models must remain resilient to adversarial attacks in dynamic and high\-stakes environments.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2508.10946v1)
 
 ---
 
