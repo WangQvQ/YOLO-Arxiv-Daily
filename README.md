@@ -1,6 +1,42 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## An Investigation of Visual Foundation Models Robustness / 
+
+发布日期：2025-08-22
+
+作者：Sandeep Gupta
+
+摘要：Visual Foundation Models \(VFMs\) are becoming ubiquitous in computer vision, powering systems for diverse tasks such as object detection, image classification, segmentation, pose estimation, and motion tracking. VFMs are capitalizing on seminal innovations in deep learning models, such as LeNet\-5, AlexNet, ResNet, VGGNet, InceptionNet, DenseNet, YOLO, and ViT, to deliver superior performance across a range of critical computer vision applications. These include security\-sensitive domains like biometric verification, autonomous vehicle perception, and medical image analysis, where robustness is essential to fostering trust between technology and the end\-users. This article investigates network robustness requirements crucial in computer vision systems to adapt effectively to dynamic environments influenced by factors such as lighting, weather conditions, and sensor characteristics. We examine the prevalent empirical defenses and robust training employed to enhance vision network robustness against real\-world challenges such as distributional shifts, noisy and spatially distorted inputs, and adversarial attacks. Subsequently, we provide a comprehensive analysis of the challenges associated with these defense mechanisms, including network properties and components to guide ablation studies and benchmarking metrics to evaluate network robustness.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2508.16225v1)
+
+---
+
+
+## DRespNeT: A UAV Dataset and YOLOv8\-DRN Model for Aerial Instance Segmentation of Building Access Points for Post\-Earthquake Search\-and\-Rescue Missions / 
+
+发布日期：2025-08-22
+
+作者：Aykut Sirma
+
+摘要：Recent advancements in computer vision and deep learning have enhanced disaster\-response capabilities, particularly in the rapid assessment of earthquake\-affected urban environments. Timely identification of accessible entry points and structural obstacles is essential for effective search\-and\-rescue \(SAR\) operations. To address this need, we introduce DRespNeT, a high\-resolution dataset specifically developed for aerial instance segmentation of post\-earthquake structural environments. Unlike existing datasets, which rely heavily on satellite imagery or coarse semantic labeling, DRespNeT provides detailed polygon\-level instance segmentation annotations derived from high\-definition \(1080p\) aerial footage captured in disaster zones, including the 2023 Turkiye earthquake and other impacted regions. The dataset comprises 28 operationally critical classes, including structurally compromised buildings, access points such as doors, windows, and gaps, multiple debris levels, rescue personnel, vehicles, and civilian visibility. A distinctive feature of DRespNeT is its fine\-grained annotation detail, enabling differentiation between accessible and obstructed areas, thereby improving operational planning and response efficiency. Performance evaluations using YOLO\-based instance segmentation models, specifically YOLOv8\-seg, demonstrate significant gains in real\-time situational awareness and decision\-making. Our optimized YOLOv8\-DRN model achieves 92.7% mAP50 with an inference speed of 27 FPS on an RTX\-4090 GPU for multi\-target detection, meeting real\-time operational requirements. The dataset and models support SAR teams and robotic systems, providing a foundation for enhancing human\-robot collaboration, streamlining emergency response, and improving survivor outcomes.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2508.16016v1)
+
+---
+
+
 ## A Novel Attention\-Augmented Wavelet YOLO System for Real\-time Brain Vessel Segmentation on Transcranial Color\-coded Doppler / 
 
 发布日期：2025-08-19
@@ -51,42 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2508.11478v1)
-
----
-
-
-## Utilizing Vision\-Language Models as Action Models for Intent Recognition and Assistance / 
-
-发布日期：2025-08-14
-
-作者：Cesar Alan Contreras
-
-摘要：Human\-robot collaboration requires robots to quickly infer user intent, provide transparent reasoning, and assist users in achieving their goals. Our recent work introduced GUIDER, our framework for inferring navigation and manipulation intents. We propose augmenting GUIDER with a vision\-language model \(VLM\) and a text\-only language model \(LLM\) to form a semantic prior that filters objects and locations based on the mission prompt. A vision pipeline \(YOLO for object detection and the Segment Anything Model for instance segmentation\) feeds candidate object crops into the VLM, which scores their relevance given an operator prompt; in addition, the list of detected object labels is ranked by a text\-only LLM. These scores weight the existing navigation and manipulation layers of GUIDER, selecting context\-relevant targets while suppressing unrelated objects. Once the combined belief exceeds a threshold, autonomy changes occur, enabling the robot to navigate to the desired area and retrieve the desired object, while adapting to any changes in the operator's intent. Future work will evaluate the system on Isaac Sim using a Franka Emika arm on a Ridgeback base, with a focus on real\-time assistance.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2508.11093v1)
-
----
-
-
-## SynSpill: Improved Industrial Spill Detection With Synthetic Data / 
-
-发布日期：2025-08-13
-
-作者：Aaditya Baranwal
-
-摘要：Large\-scale Vision\-Language Models \(VLMs\) have transformed general\-purpose visual recognition through strong zero\-shot capabilities. However, their performance degrades significantly in niche, safety\-critical domains such as industrial spill detection, where hazardous events are rare, sensitive, and difficult to annotate. This scarcity \-\- driven by privacy concerns, data sensitivity, and the infrequency of real incidents \-\- renders conventional fine\-tuning of detectors infeasible for most industrial settings.   We address this challenge by introducing a scalable framework centered on a high\-quality synthetic data generation pipeline. We demonstrate that this synthetic corpus enables effective Parameter\-Efficient Fine\-Tuning \(PEFT\) of VLMs and substantially boosts the performance of state\-of\-the\-art object detectors such as YOLO and DETR. Notably, in the absence of synthetic data \(SynSpill dataset\), VLMs still generalize better to unseen spill scenarios than these detectors. When SynSpill is used, both VLMs and detectors achieve marked improvements, with their performance becoming comparable.   Our results underscore that high\-fidelity synthetic data is a powerful means to bridge the domain gap in safety\-critical applications. The combination of synthetic generation and lightweight adaptation offers a cost\-effective, scalable pathway for deploying vision systems in industrial environments where real data is scarce/impractical to obtain.   Project Page: https://synspill.vercel.app
-
-中文摘要：
-
-
-代码链接：https://synspill.vercel.app
-
-论文链接：[阅读更多](http://arxiv.org/abs/2508.10171v1)
 
 ---
 
