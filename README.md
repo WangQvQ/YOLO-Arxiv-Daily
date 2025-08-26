@@ -1,6 +1,78 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Integration of Computer Vision with Adaptive Control for Autonomous Driving Using ADORE / 
+
+发布日期：2025-08-25
+
+作者：Abu Shad Ahammed
+
+摘要：Ensuring safety in autonomous driving requires a seamless integration of perception and decision making under uncertain conditions. Although computer vision \(CV\) models such as YOLO achieve high accuracy in detecting traffic signs and obstacles, their performance degrades in drift scenarios caused by weather variations or unseen objects. This work presents a simulated autonomous driving system that combines a context aware CV model with adaptive control using the ADORE framework. The CARLA simulator was integrated with ADORE via the ROS bridge, allowing real\-time communication between perception, decision, and control modules. A simulated test case was designed in both clear and drift weather conditions to demonstrate the robust detection performance of the perception model while ADORE successfully adapted vehicle behavior to speed limits and obstacles with low response latency. The findings highlight the potential of coupling deep learning\-based perception with rule\-based adaptive decision making to improve automotive safety critical system.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2508.17985v1)
+
+---
+
+
+## Enhanced Drift\-Aware Computer Vision Architecture for Autonomous Driving / 
+
+发布日期：2025-08-25
+
+作者：Md Shahi Amran Hossain
+
+摘要：The use of computer vision in automotive is a trending research in which safety and security are a primary concern. In particular, for autonomous driving, preventing road accidents requires highly accurate object detection under diverse conditions. To address this issue, recently the International Organization for Standardization \(ISO\) released the 8800 norm, providing structured frameworks for managing associated AI relevant risks. However, challenging scenarios such as adverse weather or low lighting often introduce data drift, leading to degraded model performance and potential safety violations. In this work, we present a novel hybrid computer vision architecture trained with thousands of synthetic image data from the road environment to improve robustness in unseen drifted environments. Our dual mode framework utilized YOLO version 8 for swift detection and incorporated a five\-layer CNN for verification. The system functioned in sequence and improved the detection accuracy by more than 90% when tested with drift\-augmented road images. The focus was to demonstrate how such a hybrid model can provide better road safety when working together in a hybrid structure.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2508.17975v1)
+
+---
+
+
+## A Synthetic Dataset for Manometry Recognition in Robotic Applications / 
+
+发布日期：2025-08-24
+
+作者：Pedro Antonio Rabelo Saraiva
+
+摘要：This work addresses the challenges of data scarcity and high acquisition costs for training robust object detection models in complex industrial environments, such as offshore oil platforms. The practical and economic barriers to collecting real\-world data in these hazardous settings often hamper the development of autonomous inspection systems. To overcome this, in this work we propose and validate a hybrid data synthesis pipeline that combines procedural rendering with AI\-driven video generation. Our methodology leverages BlenderProc to create photorealistic images with precise annotations and controlled domain randomization, and integrates NVIDIA's Cosmos\-Predict2 world\-foundation model to synthesize physically plausible video sequences with temporal diversity, capturing rare viewpoints and adverse conditions. We demonstrate that a YOLO\-based detection network trained on a composite dataset, blending real images with our synthetic data, achieves superior performance compared to models trained exclusively on real\-world data. Notably, a 1:1 mixture of real and synthetic data yielded the highest accuracy, surpassing the real\-only baseline. These findings highlight the viability of a synthetic\-first approach as an efficient, cost\-effective, and safe alternative for developing reliable perception systems in safety\-critical and resource\-constrained industrial applications.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2508.17468v1)
+
+---
+
+
+## GW\-YOLO: Multi\-transient segmentation in LIGO using computer vision / 
+
+发布日期：2025-08-24
+
+作者：Siddharth Soni
+
+摘要：Time series data and their time\-frequency representation from gravitational\-wave interferometers present multiple opportunities for the use of artificial intelligence methods associated with signal and image processing. Closely connected with this is the real\-time aspect associated with gravitational\-wave interferometers and the astrophysical observations they perform; the discovery potential of these instruments can be significantly enhanced when data processing can be achieved in O\(1s\) timescales. In this work, we introduce a novel signal and noise identification tool based on the YOLO \(You Only Look Once\) object detection framework. For its application into gravitational waves, we will refer to it as GW\-YOLO. This tool can provide scene identification capabilities and essential information regarding whether an observed transient is any combination of noise and signal. Additionally, it supplies detailed time\-frequency coordinates of the detected objects in the form of pixel masks, an essential property that can be used to understand and characterize astrophysical sources, as well as instrumental noise. The simultaneous identification of noise and signal, combined with precise pixel\-level localization, represents a significant advancement in gravitational\-wave data analysis. Our approach yields a 50% detection efficiency for binary black hole signals at a signal\-to\-noise ratio \(SNR\) of 15 when such signals overlap with transient noise artifacts. When noise artifacts overlap with binary neutron star signals, our algorithm attains 50% detection efficiency at an SNR of 30. This presents the first quantitative assessment of the ability to detect astrophysical events overlapping with realistic, instrument noise present in gravitational\-wave interferometers.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2508.17399v1)
+
+---
+
+
 ## An Investigation of Visual Foundation Models Robustness / 
 
 发布日期：2025-08-22
@@ -15,78 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2508.16225v1)
-
----
-
-
-## DRespNeT: A UAV Dataset and YOLOv8\-DRN Model for Aerial Instance Segmentation of Building Access Points for Post\-Earthquake Search\-and\-Rescue Missions / 
-
-发布日期：2025-08-22
-
-作者：Aykut Sirma
-
-摘要：Recent advancements in computer vision and deep learning have enhanced disaster\-response capabilities, particularly in the rapid assessment of earthquake\-affected urban environments. Timely identification of accessible entry points and structural obstacles is essential for effective search\-and\-rescue \(SAR\) operations. To address this need, we introduce DRespNeT, a high\-resolution dataset specifically developed for aerial instance segmentation of post\-earthquake structural environments. Unlike existing datasets, which rely heavily on satellite imagery or coarse semantic labeling, DRespNeT provides detailed polygon\-level instance segmentation annotations derived from high\-definition \(1080p\) aerial footage captured in disaster zones, including the 2023 Turkiye earthquake and other impacted regions. The dataset comprises 28 operationally critical classes, including structurally compromised buildings, access points such as doors, windows, and gaps, multiple debris levels, rescue personnel, vehicles, and civilian visibility. A distinctive feature of DRespNeT is its fine\-grained annotation detail, enabling differentiation between accessible and obstructed areas, thereby improving operational planning and response efficiency. Performance evaluations using YOLO\-based instance segmentation models, specifically YOLOv8\-seg, demonstrate significant gains in real\-time situational awareness and decision\-making. Our optimized YOLOv8\-DRN model achieves 92.7% mAP50 with an inference speed of 27 FPS on an RTX\-4090 GPU for multi\-target detection, meeting real\-time operational requirements. The dataset and models support SAR teams and robotic systems, providing a foundation for enhancing human\-robot collaboration, streamlining emergency response, and improving survivor outcomes.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2508.16016v1)
-
----
-
-
-## A Novel Attention\-Augmented Wavelet YOLO System for Real\-time Brain Vessel Segmentation on Transcranial Color\-coded Doppler / 
-
-发布日期：2025-08-19
-
-作者：Wenxuan Zhang
-
-摘要：The Circle of Willis \(CoW\), vital for ensuring consistent blood flow to the brain, is closely linked to ischemic stroke. Accurate assessment of the CoW is important for identifying individuals at risk and guiding appropriate clinical management. Among existing imaging methods, Transcranial Color\-coded Doppler \(TCCD\) offers unique advantages due to its radiation\-free nature, affordability, and accessibility. However, reliable TCCD assessments depend heavily on operator expertise for identifying anatomical landmarks and performing accurate angle correction, which limits its widespread adoption. To address this challenge, we propose an AI\-powered, real\-time CoW auto\-segmentation system capable of efficiently capturing cerebral arteries. No prior studies have explored AI\-driven cerebrovascular segmentation using TCCD. In this work, we introduce a novel Attention\-Augmented Wavelet YOLO \(AAW\-YOLO\) network tailored for TCCD data, designed to provide real\-time guidance for brain vessel segmentation in the CoW. We prospectively collected TCCD data comprising 738 annotated frames and 3,419 labeled artery instances to establish a high\-quality dataset for model training and evaluation. The proposed AAW\-YOLO demonstrated strong performance in segmenting both ipsilateral and contralateral CoW vessels, achieving an average Dice score of 0.901, IoU of 0.823, precision of 0.882, recall of 0.926, and mAP of 0.953, with a per\-frame inference speed of 14.199 ms. This system offers a practical solution to reduce reliance on operator experience in TCCD\-based cerebrovascular screening, with potential applications in routine clinical workflows and resource\-constrained settings. Future research will explore bilateral modeling and larger\-scale validation.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2508.13875v1)
-
----
-
-
-## Mechanical Automation with Vision: A Design for Rubik's Cube Solver / 
-
-发布日期：2025-08-17
-
-作者：Abhinav Chalise
-
-摘要：The core mechanical system is built around three stepper motors for physical manipulation, a microcontroller for hardware control, a camera and YOLO detection model for real\-time cube state detection. A significant software component is the development of a user\-friendly graphical user interface \(GUI\) designed in Unity. The initial state after detection from real\-time YOLOv8 model \(Precision 0.98443, Recall 0.98419, Box Loss 0.42051, Class Loss 0.2611\) is virtualized on GUI. To get the solution, the system employs the Kociemba's algorithm while physical manipulation with a single degree of freedom is done by combination of stepper motors' interaction with the cube achieving the average solving time of ~2.2 minutes.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2508.12469v1)
-
----
-
-
-## TACR\-YOLO: A Real\-time Detection Framework for Abnormal Human Behaviors Enhanced with Coordinate and Task\-Aware Representations / 
-
-发布日期：2025-08-15
-
-作者：Xinyi Yin
-
-摘要：Abnormal Human Behavior Detection \(AHBD\) under special scenarios is becoming increasingly crucial. While YOLO\-based detection methods excel in real\-time tasks, they remain hindered by challenges including small objects, task conflicts, and multi\-scale fusion in AHBD. To tackle them, we propose TACR\-YOLO, a new real\-time framework for AHBD. We introduce a Coordinate Attention Module to enhance small object detection, a Task\-Aware Attention Module to deal with classification\-regression conflicts, and a Strengthen Neck Network for refined multi\-scale fusion, respectively. In addition, we optimize Anchor Box sizes using K\-means clustering and deploy DIoU\-Loss to improve bounding box regression. The Personnel Anomalous Behavior Detection \(PABD\) dataset, which includes 8,529 samples across four behavior categories, is also presented. Extensive experimental results indicate that TACR\-YOLO achieves 91.92% mAP on PABD, with competitive speed and robustness. Ablation studies highlight the contribution of each improvement. This work provides new insights for abnormal behavior detection under special scenarios, advancing its progress.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2508.11478v1)
 
 ---
 
