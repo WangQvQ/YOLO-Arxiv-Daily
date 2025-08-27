@@ -1,6 +1,42 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## HOTSPOT\-YOLO: A Lightweight Deep Learning Attention\-Driven Model for Detecting Thermal Anomalies in Drone\-Based Solar Photovoltaic Inspections / 
+
+发布日期：2025-08-26
+
+作者：Mahmoud Dhimish
+
+摘要：Thermal anomaly detection in solar photovoltaic \(PV\) systems is essential for ensuring operational efficiency and reducing maintenance costs. In this study, we developed and named HOTSPOT\-YOLO, a lightweight artificial intelligence \(AI\) model that integrates an efficient convolutional neural network backbone and attention mechanisms to improve object detection. This model is specifically designed for drone\-based thermal inspections of PV systems, addressing the unique challenges of detecting small and subtle thermal anomalies, such as hotspots and defective modules, while maintaining real\-time performance. Experimental results demonstrate a mean average precision of 90.8%, reflecting a significant improvement over baseline object detection models. With a reduced computational load and robustness under diverse environmental conditions, HOTSPOT\-YOLO offers a scalable and reliable solution for large\-scale PV inspections. This work highlights the integration of advanced AI techniques with practical engineering applications, revolutionizing automated fault detection in renewable energy systems.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2508.18912v1)
+
+---
+
+
+## LPLC: A Dataset for License Plate Legibility Classification / 
+
+发布日期：2025-08-25
+
+作者：Lucas Wojcik
+
+摘要：Automatic License Plate Recognition \(ALPR\) faces a major challenge when dealing with illegible license plates \(LPs\). While reconstruction methods such as super\-resolution \(SR\) have emerged, the core issue of recognizing these low\-quality LPs remains unresolved. To optimize model performance and computational efficiency, image pre\-processing should be applied selectively to cases that require enhanced legibility. To support research in this area, we introduce a novel dataset comprising 10,210 images of vehicles with 12,687 annotated LPs for legibility classification \(the LPLC dataset\). The images span a wide range of vehicle types, lighting conditions, and camera/image quality levels. We adopt a fine\-grained annotation strategy that includes vehicle\- and LP\-level occlusions, four legibility categories \(perfect, good, poor, and illegible\), and character labels for three categories \(excluding illegible LPs\). As a benchmark, we propose a classification task using three image recognition networks to determine whether an LP image is good enough, requires super\-resolution, or is completely unrecoverable. The overall F1 score, which remained below 80% for all three baseline models \(ViT, ResNet, and YOLO\), together with the analyses of SR and LP recognition methods, highlights the difficulty of the task and reinforces the need for further research. The proposed dataset is publicly available at https://github.com/lmlwojcik/lplc\-dataset.
+
+中文摘要：
+
+
+代码链接：https://github.com/lmlwojcik/lplc-dataset.
+
+论文链接：[阅读更多](http://arxiv.org/abs/2508.18425v1)
+
+---
+
+
 ## Integration of Computer Vision with Adaptive Control for Autonomous Driving Using ADORE / 
 
 发布日期：2025-08-25
@@ -51,42 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2508.17468v1)
-
----
-
-
-## GW\-YOLO: Multi\-transient segmentation in LIGO using computer vision / 
-
-发布日期：2025-08-24
-
-作者：Siddharth Soni
-
-摘要：Time series data and their time\-frequency representation from gravitational\-wave interferometers present multiple opportunities for the use of artificial intelligence methods associated with signal and image processing. Closely connected with this is the real\-time aspect associated with gravitational\-wave interferometers and the astrophysical observations they perform; the discovery potential of these instruments can be significantly enhanced when data processing can be achieved in O\(1s\) timescales. In this work, we introduce a novel signal and noise identification tool based on the YOLO \(You Only Look Once\) object detection framework. For its application into gravitational waves, we will refer to it as GW\-YOLO. This tool can provide scene identification capabilities and essential information regarding whether an observed transient is any combination of noise and signal. Additionally, it supplies detailed time\-frequency coordinates of the detected objects in the form of pixel masks, an essential property that can be used to understand and characterize astrophysical sources, as well as instrumental noise. The simultaneous identification of noise and signal, combined with precise pixel\-level localization, represents a significant advancement in gravitational\-wave data analysis. Our approach yields a 50% detection efficiency for binary black hole signals at a signal\-to\-noise ratio \(SNR\) of 15 when such signals overlap with transient noise artifacts. When noise artifacts overlap with binary neutron star signals, our algorithm attains 50% detection efficiency at an SNR of 30. This presents the first quantitative assessment of the ability to detect astrophysical events overlapping with realistic, instrument noise present in gravitational\-wave interferometers.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2508.17399v1)
-
----
-
-
-## An Investigation of Visual Foundation Models Robustness / 
-
-发布日期：2025-08-22
-
-作者：Sandeep Gupta
-
-摘要：Visual Foundation Models \(VFMs\) are becoming ubiquitous in computer vision, powering systems for diverse tasks such as object detection, image classification, segmentation, pose estimation, and motion tracking. VFMs are capitalizing on seminal innovations in deep learning models, such as LeNet\-5, AlexNet, ResNet, VGGNet, InceptionNet, DenseNet, YOLO, and ViT, to deliver superior performance across a range of critical computer vision applications. These include security\-sensitive domains like biometric verification, autonomous vehicle perception, and medical image analysis, where robustness is essential to fostering trust between technology and the end\-users. This article investigates network robustness requirements crucial in computer vision systems to adapt effectively to dynamic environments influenced by factors such as lighting, weather conditions, and sensor characteristics. We examine the prevalent empirical defenses and robust training employed to enhance vision network robustness against real\-world challenges such as distributional shifts, noisy and spatially distorted inputs, and adversarial attacks. Subsequently, we provide a comprehensive analysis of the challenges associated with these defense mechanisms, including network properties and components to guide ablation studies and benchmarking metrics to evaluate network robustness.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2508.16225v1)
 
 ---
 
