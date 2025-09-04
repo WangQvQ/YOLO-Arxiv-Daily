@@ -1,6 +1,78 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## YOLO\-based Bearing Fault Diagnosis With Continuous Wavelet Transform / 
+
+发布日期：2025-09-03
+
+作者：Po\-Heng Chou
+
+摘要：This letter proposes a YOLO\-based framework for spatial bearing fault diagnosis using time\-frequency spectrograms derived from continuous wavelet transform \(CWT\). One\-dimensional vibration signals are first transformed into time\-frequency spectrograms using Morlet wavelets to capture transient fault signatures. These spectrograms are then processed by YOLOv9, v10, and v11 models to classify fault types. Evaluated on three benchmark datasets, including Case Western Reserve University \(CWRU\), Paderborn University \(PU\), and Intelligent Maintenance System \(IMS\), the proposed CWT\-\-YOLO pipeline achieves significantly higher accuracy and generalizability than the baseline MCNN\-\-LSTM model. Notably, YOLOv11 reaches mAP scores of 99.4% \(CWRU\), 97.8% \(PU\), and 99.5% \(IMS\). In addition, its region\-aware detection mechanism enables direct visualization of fault locations in spectrograms, offering a practical solution for condition monitoring in rotating machinery.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2509.03070v1)
+
+---
+
+
+## Ensemble YOLO Framework for Multi\-Domain Mitotic Figure Detection in Histopathology Images / 
+
+发布日期：2025-09-03
+
+作者：Navya Sri Kelam
+
+摘要：Accurate detection of mitotic figures in whole slide histopathological images remains a challenging task due to their scarcity, morphological heterogeneity, and the variability introduced by tissue preparation and staining protocols. The MIDOG competition series provides standardized benchmarks for evaluating detection approaches across diverse domains, thus motivating the development of generalizable deep learning models. In this work, we investigate the performance of two modern one\-stage detectors, YOLOv5 and YOLOv8, trained on MIDOG\+\+, CMC, and CCMCT datasets. To enhance robustness, training incorporated stain\-invariant color perturbations and texture preserving augmentations. In internal validation, YOLOv5 achieved superior precision, while YOLOv8 provided improved recall, reflecting architectural trade\-offs between anchor\-based and anchor\-free detection. To capitalize on these complementary strengths, we employed an ensemble of the two models, which improved sensitivity without a major reduction in precision. These findings highlight the effectiveness of ensemble strategies built upon contemporary object detectors to advance automated mitosis detection in digital pathology.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2509.02957v1)
+
+---
+
+
+## Explaining What Machines See: XAI Strategies in Deep Object Detection Models / 
+
+发布日期：2025-09-02
+
+作者：FatemehSadat Seyedmomeni
+
+摘要：In recent years, deep learning has achieved unprecedented success in various computer vision tasks, particularly in object detection. However, the black\-box nature and high complexity of deep neural networks pose significant challenges for interpretability, especially in critical domains such as autonomous driving, medical imaging, and security systems. Explainable Artificial Intelligence \(XAI\) aims to address this challenge by providing tools and methods to make model decisions more transparent, interpretable, and trust\-worthy for humans. This review provides a comprehensive analysis of state\-of\-the\-art explain\-ability methods specifically applied to object detection models. The paper be\-gins by categorizing existing XAI techniques based on their underlying mechanisms\-perturbation\-based, gradient\-based, backpropagation\-based, and graph\-based methods. Notable methods such as D\-RISE, BODEM, D\-CLOSE, and FSOD are discussed in detail. Furthermore, the paper investigates their applicability to various object detection architectures, including YOLO, SSD, Faster R\-CNN, and EfficientDet. Statistical analysis of publication trends from 2022 to mid\-2025 shows an accelerating interest in explainable object detection, indicating its increasing importance. The study also explores common datasets and evaluation metrics, and highlights the major challenges associated with model interpretability. By providing a structured taxonomy and a critical assessment of existing methods, this review aims to guide researchers and practitioners in selecting suitable explainability techniques for object detection applications and to foster the development of more interpretable AI systems.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2509.01991v1)
+
+---
+
+
+## A Single Detect Focused YOLO Framework for Robust Mitotic Figure Detection / 
+
+发布日期：2025-09-01
+
+作者：Yasemin Topuz
+
+摘要：Mitotic figure detection is a crucial task in computational pathology, as mitotic activity serves as a strong prognostic marker for tumor aggressiveness. However, domain variability that arises from differences in scanners, tissue types, and staining protocols poses a major challenge to the robustness of automated detection methods. In this study, we introduce SDF\-YOLO \(Single Detect Focused YOLO\), a lightweight yet domain\-robust detection framework designed specifically for small, rare targets such as mitotic figures. The model builds on YOLOv11 with task\-specific modifications, including a single detection head aligned with mitotic figure scale, coordinate attention to enhance positional sensitivity, and improved cross\-channel feature mixing. Experiments were conducted on three datasets that span human and canine tumors: MIDOG \+\+, canine cutaneous mast cell tumor \(CCMCT\), and canine mammary carcinoma \(CMC\). When submitted to the preliminary test set for the MIDOG2025 challenge, SDF\-YOLO achieved an average precision \(AP\) of 0.799, with a precision of 0.758, a recall of 0.775, an F1 score of 0.766, and an FROC\-AUC of 5.793, demonstrating both competitive accuracy and computational efficiency. These results indicate that SDF\-YOLO provides a reliable and efficient framework for robust mitotic figure detection across diverse domains.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2509.02637v1)
+
+---
+
+
 ## Quantization Robustness to Input Degradations for Object Detection / 
 
 发布日期：2025-08-27
@@ -15,78 +87,6 @@
 代码链接：https://github.com/AllanK24/QRID.
 
 论文链接：[阅读更多](http://arxiv.org/abs/2508.19600v1)
-
----
-
-
-## Spatial\-temporal risk field\-based coupled dynamic\-static driving risk assessment and trajectory planning in weaving segments / 
-
-发布日期：2025-08-27
-
-作者：Guodong Ma
-
-摘要：In this paper, we first propose a spatial\-temporal coupled risk assessment paradigm by constructing a three\-dimensional spatial\-temporal risk field \(STRF\). Specifically, we introduce spatial\-temporal distances to quantify the impact of future trajectories of dynamic obstacles. We also incorporate a geometrically configured specialized field for the weaving segment to constrain vehicle movement directionally. To enhance the STRF's accuracy, we further developed a parameter calibration method using real\-world aerial video data, leveraging YOLO\-based machine vision and dynamic risk balance theory. A comparative analysis with the traditional risk field demonstrates the STRF's superior situational awareness of anticipatory risk. Building on these results, we final design a STRF\-based CAV trajectory planning method in weaving segments. We integrate spatial\-temporal risk occupancy maps, dynamic iterative sampling, and quadratic programming to enhance safety, comfort, and efficiency. By incorporating both dynamic and static risk factors during the sampling phase, our method ensures robust safety performance. Additionally, the proposed method simultaneously optimizes path and speed using a parallel computing approach, reducing computation time. Real\-world cases show that, compared to the dynamic planning \+ quadratic programming schemes, and real human driving trajectories, our method significantly improves safety, reduces lane\-change completion time, and minimizes speed fluctuations.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2508.19513v1)
-
----
-
-
-## Weed Detection in Challenging Field Conditions: A Semi\-Supervised Framework for Overcoming Shadow Bias and Data Scarcity / 
-
-发布日期：2025-08-27
-
-作者：Alzayat Saleh
-
-摘要：The automated management of invasive weeds is critical for sustainable agriculture, yet the performance of deep learning models in real\-world fields is often compromised by two factors: challenging environmental conditions and the high cost of data annotation. This study tackles both issues through a diagnostic\-driven, semi\-supervised framework. Using a unique dataset of approximately 975 labeled and 10,000 unlabeled images of Guinea Grass in sugarcane, we first establish strong supervised baselines for classification \(ResNet\) and detection \(YOLO, RF\-DETR\), achieving F1 scores up to 0.90 and mAP50 scores exceeding 0.82. Crucially, this foundational analysis, aided by interpretability tools, uncovered a pervasive "shadow bias," where models learned to misidentify shadows as vegetation. This diagnostic insight motivated our primary contribution: a semi\-supervised pipeline that leverages unlabeled data to enhance model robustness. By training models on a more diverse set of visual information through pseudo\-labeling, this framework not only helps mitigate the shadow bias but also provides a tangible boost in recall, a critical metric for minimizing weed escapes in automated spraying systems. To validate our methodology, we demonstrate its effectiveness in a low\-data regime on a public crop\-weed benchmark. Our work provides a clear and field\-tested framework for developing, diagnosing, and improving robust computer vision systems for the complex realities of precision agriculture.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2508.19511v1)
-
----
-
-
-## HOTSPOT\-YOLO: A Lightweight Deep Learning Attention\-Driven Model for Detecting Thermal Anomalies in Drone\-Based Solar Photovoltaic Inspections / 
-
-发布日期：2025-08-26
-
-作者：Mahmoud Dhimish
-
-摘要：Thermal anomaly detection in solar photovoltaic \(PV\) systems is essential for ensuring operational efficiency and reducing maintenance costs. In this study, we developed and named HOTSPOT\-YOLO, a lightweight artificial intelligence \(AI\) model that integrates an efficient convolutional neural network backbone and attention mechanisms to improve object detection. This model is specifically designed for drone\-based thermal inspections of PV systems, addressing the unique challenges of detecting small and subtle thermal anomalies, such as hotspots and defective modules, while maintaining real\-time performance. Experimental results demonstrate a mean average precision of 90.8%, reflecting a significant improvement over baseline object detection models. With a reduced computational load and robustness under diverse environmental conditions, HOTSPOT\-YOLO offers a scalable and reliable solution for large\-scale PV inspections. This work highlights the integration of advanced AI techniques with practical engineering applications, revolutionizing automated fault detection in renewable energy systems.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2508.18912v1)
-
----
-
-
-## LPLC: A Dataset for License Plate Legibility Classification / 
-
-发布日期：2025-08-25
-
-作者：Lucas Wojcik
-
-摘要：Automatic License Plate Recognition \(ALPR\) faces a major challenge when dealing with illegible license plates \(LPs\). While reconstruction methods such as super\-resolution \(SR\) have emerged, the core issue of recognizing these low\-quality LPs remains unresolved. To optimize model performance and computational efficiency, image pre\-processing should be applied selectively to cases that require enhanced legibility. To support research in this area, we introduce a novel dataset comprising 10,210 images of vehicles with 12,687 annotated LPs for legibility classification \(the LPLC dataset\). The images span a wide range of vehicle types, lighting conditions, and camera/image quality levels. We adopt a fine\-grained annotation strategy that includes vehicle\- and LP\-level occlusions, four legibility categories \(perfect, good, poor, and illegible\), and character labels for three categories \(excluding illegible LPs\). As a benchmark, we propose a classification task using three image recognition networks to determine whether an LP image is good enough, requires super\-resolution, or is completely unrecoverable. The overall F1 score, which remained below 80% for all three baseline models \(ViT, ResNet, and YOLO\), together with the analyses of SR and LP recognition methods, highlights the difficulty of the task and reinforces the need for further research. The proposed dataset is publicly available at https://github.com/lmlwojcik/lplc\-dataset.
-
-中文摘要：
-
-
-代码链接：https://github.com/lmlwojcik/lplc-dataset.
-
-论文链接：[阅读更多](http://arxiv.org/abs/2508.18425v1)
 
 ---
 
