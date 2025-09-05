@@ -1,6 +1,42 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## VisioFirm: Cross\-Platform AI\-assisted Annotation Tool for Computer Vision / 
+
+发布日期：2025-09-04
+
+作者：Safouane El Ghazouali
+
+摘要：AI models rely on annotated data to learn pattern and perform prediction. Annotation is usually a labor\-intensive step that require associating labels ranging from a simple classification label to more complex tasks such as object detection, oriented bounding box estimation, and instance segmentation. Traditional tools often require extensive manual input, limiting scalability for large datasets. To address this, we introduce VisioFirm, an open\-source web application designed to streamline image labeling through AI\-assisted automation. VisioFirm integrates state\-of\-the\-art foundation models into an interface with a filtering pipeline to reduce human\-in\-the\-loop efforts. This hybrid approach employs CLIP combined with pre\-trained detectors like Ultralytics models for common classes and zero\-shot models such as Grounding DINO for custom labels, generating initial annotations with low\-confidence thresholding to maximize recall. Through this framework, when tested on COCO\-type of classes, initial prediction have been proven to be mostly correct though the users can refine these via interactive tools supporting bounding boxes, oriented bounding boxes, and polygons. Additionally, VisioFirm has on\-the\-fly segmentation powered by Segment Anything accelerated through WebGPU for browser\-side efficiency. The tool supports multiple export formats \(YOLO, COCO, Pascal VOC, CSV\) and operates offline after model caching, enhancing accessibility. VisioFirm demonstrates up to 90% reduction in manual effort through benchmarks on diverse datasets, while maintaining high annotation accuracy via clustering of connected CLIP\-based disambiguate components and IoU\-graph for redundant detection suppression. VisioFirm can be accessed from href\{https://github.com/OschAI/VisioFirm\}\{https://github.com/OschAI/VisioFirm\}.
+
+中文摘要：
+
+
+代码链接：https://github.com/OschAI/VisioFirm}{https://github.com/OschAI/VisioFirm}.
+
+论文链接：[阅读更多](http://arxiv.org/abs/2509.04180v1)
+
+---
+
+
+## YOLO Ensemble for UAV\-based Multispectral Defect Detection in Wind Turbine Components / 
+
+发布日期：2025-09-04
+
+作者：Serhii Svystun
+
+摘要：Unmanned aerial vehicles \(UAVs\) equipped with advanced sensors have opened up new opportunities for monitoring wind power plants, including blades, towers, and other critical components. However, reliable defect detection requires high\-resolution data and efficient methods to process multispectral imagery. In this research, we aim to enhance defect detection accuracy through the development of an ensemble of YOLO\-based deep learning models that integrate both visible and thermal channels. We propose an ensemble approach that integrates a general\-purpose YOLOv8 model with a specialized thermal model, using a sophisticated bounding box fusion algorithm to combine their predictions. Our experiments show this approach achieves a mean Average Precision \(mAP@.5\) of 0.93 and an F1\-score of 0.90, outperforming a standalone YOLOv8 model, which scored an mAP@.5 of 0.91. These findings demonstrate that combining multiple YOLO architectures with fused multispectral data provides a more reliable solution, improving the detection of both visual and thermal defects.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2509.04156v1)
+
+---
+
+
 ## YOLO\-based Bearing Fault Diagnosis With Continuous Wavelet Transform / 
 
 发布日期：2025-09-03
@@ -51,42 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2509.01991v1)
-
----
-
-
-## A Single Detect Focused YOLO Framework for Robust Mitotic Figure Detection / 
-
-发布日期：2025-09-01
-
-作者：Yasemin Topuz
-
-摘要：Mitotic figure detection is a crucial task in computational pathology, as mitotic activity serves as a strong prognostic marker for tumor aggressiveness. However, domain variability that arises from differences in scanners, tissue types, and staining protocols poses a major challenge to the robustness of automated detection methods. In this study, we introduce SDF\-YOLO \(Single Detect Focused YOLO\), a lightweight yet domain\-robust detection framework designed specifically for small, rare targets such as mitotic figures. The model builds on YOLOv11 with task\-specific modifications, including a single detection head aligned with mitotic figure scale, coordinate attention to enhance positional sensitivity, and improved cross\-channel feature mixing. Experiments were conducted on three datasets that span human and canine tumors: MIDOG \+\+, canine cutaneous mast cell tumor \(CCMCT\), and canine mammary carcinoma \(CMC\). When submitted to the preliminary test set for the MIDOG2025 challenge, SDF\-YOLO achieved an average precision \(AP\) of 0.799, with a precision of 0.758, a recall of 0.775, an F1 score of 0.766, and an FROC\-AUC of 5.793, demonstrating both competitive accuracy and computational efficiency. These results indicate that SDF\-YOLO provides a reliable and efficient framework for robust mitotic figure detection across diverse domains.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2509.02637v1)
-
----
-
-
-## Quantization Robustness to Input Degradations for Object Detection / 
-
-发布日期：2025-08-27
-
-作者：Toghrul Karimov
-
-摘要：Post\-training quantization \(PTQ\) is crucial for deploying efficient object detection models, like YOLO, on resource\-constrained devices. However, the impact of reduced precision on model robustness to real\-world input degradations such as noise, blur, and compression artifacts is a significant concern. This paper presents a comprehensive empirical study evaluating the robustness of YOLO models \(nano to extra\-large scales\) across multiple precision formats: FP32, FP16 \(TensorRT\), Dynamic UINT8 \(ONNX\), and Static INT8 \(TensorRT\). We introduce and evaluate a degradation\-aware calibration strategy for Static INT8 PTQ, where the TensorRT calibration process is exposed to a mix of clean and synthetically degraded images. Models were benchmarked on the COCO dataset under seven distinct degradation conditions \(including various types and levels of noise, blur, low contrast, and JPEG compression\) and a mixed\-degradation scenario. Results indicate that while Static INT8 TensorRT engines offer substantial speedups \(~1.5\-3.3x\) with a moderate accuracy drop \(~3\-7% mAP50\-95\) on clean data, the proposed degradation\-aware calibration did not yield consistent, broad improvements in robustness over standard clean\-data calibration across most models and degradations. A notable exception was observed for larger model scales under specific noise conditions, suggesting model capacity may influence the efficacy of this calibration approach. These findings highlight the challenges in enhancing PTQ robustness and provide insights for deploying quantized detectors in uncontrolled environments. All code and evaluation tables are available at https://github.com/AllanK24/QRID.
-
-中文摘要：
-
-
-代码链接：https://github.com/AllanK24/QRID.
-
-论文链接：[阅读更多](http://arxiv.org/abs/2508.19600v1)
 
 ---
 
