@@ -37,20 +37,20 @@
 ---
 
 
-## Cross\-Modal Enhancement and Benchmark for UAV\-based Open\-Vocabulary Object Detection / 
+## Light\-Weight Cross\-Modal Enhancement Method with Benchmark Construction for UAV\-based Open\-Vocabulary Object Detection / 
 
 发布日期：2025-09-07
 
 作者：Zhenhai Weng
 
-摘要：Open\-Vocabulary Object Detection \(OVD\) has emerged as a pivotal technology for applications involving Unmanned Aerial Vehicles \(UAVs\). However, the prevailing large\-scale datasets for OVD pre\-training are predominantly composed of ground\-level, natural images. This creates a significant domain gap, causing models trained on them to exhibit a substantial drop in performance on UAV imagery. To address this limitation, we first propose a refined UAV\-Label engine. Then we construct and introduce UAVDE\-2M\(contains over 2,000,000 instances and 1800 categories\) and UAVCAP\-15k\(contains over 15,000 images\). Furthermore, we propose a novel Cross\-Attention Gated Enhancement Fusion \(CAGE\) module and integrate it into the YOLO\-World\-v2 architecture. Finally, extensive experiments on the VisDrone and SIMD datasets verify the effectiveness of our proposed method for applications in UAV\-based imagery and remote sensing.
+摘要：Open\-Vocabulary Object Detection \(OVD\) faces severe performance degradation when applied to UAV imagery due to the domain gap from ground\-level datasets. To address this challenge, we propose a complete UAV\-oriented solution that combines both dataset construction and model innovation. First, we design a refined UAV\-Label Engine, which efficiently resolves annotation redundancy, inconsistency, and ambiguity, enabling the generation of largescale UAV datasets. Based on this engine, we construct two new benchmarks: UAVDE\-2M, with over 2.4M instances across 1,800\+ categories, and UAVCAP\-15K, providing rich image\-text pairs for vision\-language pretraining. Second, we introduce the Cross\-Attention Gated Enhancement \(CAGE\) module, a lightweight dual\-path fusion design that integrates cross\-attention, adaptive gating, and global FiLM modulation for robust textvision alignment. By embedding CAGE into the YOLO\-World\-v2 framework, our method achieves significant gains in both accuracy and efficiency, notably improving zero\-shot detection on VisDrone by \+5.3 mAP while reducing parameters and GFLOPs, and demonstrating strong cross\-domain generalization on SIMD. Extensive experiments and real\-world UAV deployment confirm the effectiveness and practicality of our proposed solution for UAV\-based OVD
 
 中文摘要：
 
 
 代码链接：摘要中未找到代码链接。
 
-论文链接：[阅读更多](http://arxiv.org/abs/2509.06011v1)
+论文链接：[阅读更多](http://arxiv.org/abs/2509.06011v2)
 
 ---
 
