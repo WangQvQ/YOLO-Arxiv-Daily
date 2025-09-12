@@ -1,6 +1,60 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Classification of Driver Behaviour Using External Observation Techniques for Autonomous Vehicles / 
+
+发布日期：2025-09-11
+
+作者：Ian Nell
+
+摘要：Road traffic accidents remain a significant global concern, with human error, particularly distracted and impaired driving, among the leading causes. This study introduces a novel driver behavior classification system that uses external observation techniques to detect indicators of distraction and impairment. The proposed framework employs advanced computer vision methodologies, including real\-time object tracking, lateral displacement analysis, and lane position monitoring. The system identifies unsafe driving behaviors such as excessive lateral movement and erratic trajectory patterns by implementing the YOLO object detection model and custom lane estimation algorithms. Unlike systems reliant on inter\-vehicular communication, this vision\-based approach enables behavioral analysis of non\-connected vehicles. Experimental evaluations on diverse video datasets demonstrate the framework's reliability and adaptability across varying road and environmental conditions.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2509.09349v1)
+
+---
+
+
+## Model\-Agnostic Open\-Set Air\-to\-Air Visual Object Detection for Reliable UAV Perception / 
+
+发布日期：2025-09-11
+
+作者：Spyridon Loukovitis
+
+摘要：Open\-set detection is crucial for robust UAV autonomy in air\-to\-air object detection under real\-world conditions. Traditional closed\-set detectors degrade significantly under domain shifts and flight data corruption, posing risks to safety\-critical applications. We propose a novel, model\-agnostic open\-set detection framework designed specifically for embedding\-based detectors. The method explicitly handles unknown object rejection while maintaining robustness against corrupted flight data. It estimates semantic uncertainty via entropy modeling in the embedding space and incorporates spectral normalization and temperature scaling to enhance open\-set discrimination. We validate our approach on the challenging AOT aerial benchmark and through extensive real\-world flight tests. Comprehensive ablation studies demonstrate consistent improvements over baseline methods, achieving up to a 10% relative AUROC gain compared to standard YOLO\-based detectors. Additionally, we show that background rejection further strengthens robustness without compromising detection accuracy, making our solution particularly well\-suited for reliable UAV perception in dynamic air\-to\-air environments.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2509.09297v1)
+
+---
+
+
+## FPI\-Det: a face\-\-phone Interaction Dataset for phone\-use detection and understanding / 
+
+发布日期：2025-09-11
+
+作者：Jianqin Gao
+
+摘要：The widespread use of mobile devices has created new challenges for vision systems in safety monitoring, workplace productivity assessment, and attention management. Detecting whether a person is using a phone requires not only object recognition but also an understanding of behavioral context, which involves reasoning about the relationship between faces, hands, and devices under diverse conditions. Existing generic benchmarks do not fully capture such fine\-grained human\-\-device interactions. To address this gap, we introduce the FPI\-Det, containing 22\{,\}879 images with synchronized annotations for faces and phones across workplace, education, transportation, and public scenarios. The dataset features extreme scale variation, frequent occlusions, and varied capture conditions. We evaluate representative YOLO and DETR detectors, providing baseline results and an analysis of performance across object sizes, occlusion levels, and environments. Source code and dataset is available at https://github.com/KvCgRv/FPI\-Det.
+
+中文摘要：
+
+
+代码链接：https://github.com/KvCgRv/FPI-Det.
+
+论文链接：[阅读更多](http://arxiv.org/abs/2509.09111v1)
+
+---
+
+
 ## A New Hybrid Model of Generative Adversarial Network and You Only Look Once Algorithm for Automatic License\-Plate Recognition / 
 
 发布日期：2025-09-08
@@ -33,60 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2509.06427v1)
-
----
-
-
-## Light\-Weight Cross\-Modal Enhancement Method with Benchmark Construction for UAV\-based Open\-Vocabulary Object Detection / 
-
-发布日期：2025-09-07
-
-作者：Zhenhai Weng
-
-摘要：Open\-Vocabulary Object Detection \(OVD\) faces severe performance degradation when applied to UAV imagery due to the domain gap from ground\-level datasets. To address this challenge, we propose a complete UAV\-oriented solution that combines both dataset construction and model innovation. First, we design a refined UAV\-Label Engine, which efficiently resolves annotation redundancy, inconsistency, and ambiguity, enabling the generation of largescale UAV datasets. Based on this engine, we construct two new benchmarks: UAVDE\-2M, with over 2.4M instances across 1,800\+ categories, and UAVCAP\-15K, providing rich image\-text pairs for vision\-language pretraining. Second, we introduce the Cross\-Attention Gated Enhancement \(CAGE\) module, a lightweight dual\-path fusion design that integrates cross\-attention, adaptive gating, and global FiLM modulation for robust textvision alignment. By embedding CAGE into the YOLO\-World\-v2 framework, our method achieves significant gains in both accuracy and efficiency, notably improving zero\-shot detection on VisDrone by \+5.3 mAP while reducing parameters and GFLOPs, and demonstrating strong cross\-domain generalization on SIMD. Extensive experiments and real\-world UAV deployment confirm the effectiveness and practicality of our proposed solution for UAV\-based OVD
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2509.06011v2)
-
----
-
-
-## Evaluating YOLO Architectures: Implications for Real\-Time Vehicle Detection in Urban Environments of Bangladesh / 
-
-发布日期：2025-09-06
-
-作者：Ha Meem Hossain
-
-摘要：Vehicle detection systems trained on Non\-Bangladeshi datasets struggle to accurately identify local vehicle types in Bangladesh's unique road environments, creating critical gaps in autonomous driving technology for developing regions. This study evaluates six YOLO model variants on a custom dataset featuring 29 distinct vehicle classes, including region\-specific vehicles such as \`\`Desi Nosimon'', \`\`Leguna'', \`\`Battery Rickshaw'', and \`\`CNG''. The dataset comprises high\-resolution images \(1920x1080\) captured across various Bangladeshi roads using mobile phone cameras and manually annotated using LabelImg with YOLO format bounding boxes. Performance evaluation revealed YOLOv11x as the top performer, achieving 63.7% mAP@0.5, 43.8% mAP@0.5:0.95, 61.4% recall, and 61.6% F1\-score, though requiring 45.8 milliseconds per image for inference. Medium variants \(YOLOv8m, YOLOv11m\) struck an optimal balance, delivering robust detection performance with mAP@0.5 values of 62.5% and 61.8% respectively, while maintaining moderate inference times around 14\-15 milliseconds. The study identified significant detection challenges for rare vehicle classes, with Construction Vehicles and Desi Nosimons showing near\-zero accuracy due to dataset imbalances and insufficient training samples. Confusion matrices revealed frequent misclassifications between visually similar vehicles, particularly Mini Trucks versus Mini Covered Vans. This research provides a foundation for developing robust object detection systems specifically adapted to Bangladesh traffic conditions, addressing critical needs in autonomous vehicle technology advancement for developing regions where conventional generic\-trained models fail to perform adequately.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2509.05652v1)
-
----
-
-
-## An Analysis of Layer\-Freezing Strategies for Enhanced Transfer Learning in YOLO Architectures / 
-
-发布日期：2025-09-05
-
-作者：Andrzej D. Dobrzycki
-
-摘要：The You Only Look Once \(YOLO\) architecture is crucial for real\-time object detection. However, deploying it in resource\-constrained environments such as unmanned aerial vehicles \(UAVs\) requires efficient transfer learning. Although layer freezing is a common technique, the specific impact of various freezing configurations on contemporary YOLOv8 and YOLOv10 architectures remains unexplored, particularly with regard to the interplay between freezing depth, dataset characteristics, and training dynamics. This research addresses this gap by presenting a detailed analysis of layer\-freezing strategies. We systematically investigate multiple freezing configurations across YOLOv8 and YOLOv10 variants using four challenging datasets that represent critical infrastructure monitoring. Our methodology integrates a gradient behavior analysis \(L2 norm\) and visual explanations \(Grad\-CAM\) to provide deeper insights into training dynamics under different freezing strategies. Our results reveal that there is no universal optimal freezing strategy but, rather, one that depends on the properties of the data. For example, freezing the backbone is effective for preserving general\-purpose features, while a shallower freeze is better suited to handling extreme class imbalance. These configurations reduce graphics processing unit \(GPU\) memory consumption by up to 28% compared to full fine\-tuning and, in some cases, achieve mean average precision \(mAP@50\) scores that surpass those of full fine\-tuning. Gradient analysis corroborates these findings, showing distinct convergence patterns for moderately frozen models. Ultimately, this work provides empirical findings and practical guidelines for selecting freezing strategies. It offers a practical, evidence\-based approach to balanced transfer learning for object detection in scenarios with limited resources.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2509.05490v1)
 
 ---
 
