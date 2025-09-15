@@ -1,6 +1,60 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Drone\-Based Multispectral Imaging and Deep Learning for Timely Detection of Branched Broomrape in Tomato Farms / 
+
+发布日期：2025-09-12
+
+作者：Mohammadreza Narimani
+
+摘要：This study addresses the escalating threat of branched broomrape \(Phelipanche ramosa\) to California's tomato industry, which supplies over 90 percent of U.S. processing tomatoes. The parasite's largely underground life cycle makes early detection difficult, while conventional chemical controls are costly, environmentally harmful, and often ineffective. To address this, we combined drone\-based multispectral imagery with Long Short\-Term Memory \(LSTM\) deep learning networks, using the Synthetic Minority Over\-sampling Technique \(SMOTE\) to handle class imbalance. Research was conducted on a known broomrape\-infested tomato farm in Woodland, Yolo County, CA, across five key growth stages determined by growing degree days \(GDD\). Multispectral images were processed to isolate tomato canopy reflectance. At 897 GDD, broomrape could be detected with 79.09 percent overall accuracy and 70.36 percent recall without integrating later stages. Incorporating sequential growth stages with LSTM improved detection substantially. The best\-performing scenario, which integrated all growth stages with SMOTE augmentation, achieved 88.37 percent overall accuracy and 95.37 percent recall. These results demonstrate the strong potential of temporal multispectral analysis and LSTM networks for early broomrape detection. While further real\-world data collection is needed for practical deployment, this study shows that UAV\-based multispectral sensing coupled with deep learning could provide a powerful precision agriculture tool to reduce losses and improve sustainability in tomato production.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2509.09972v1)
+
+---
+
+
+## Zero\-Shot Referring Expression Comprehension via Visual\-Language True/False Verification / 
+
+发布日期：2025-09-12
+
+作者：Jeffrey Liu
+
+摘要：Referring Expression Comprehension \(REC\) is usually addressed with task\-trained grounding models. We show that a zero\-shot workflow, without any REC\-specific training, can achieve competitive or superior performance. Our approach reformulates REC as box\-wise visual\-language verification: given proposals from a COCO\-clean generic detector \(YOLO\-World\), a general\-purpose VLM independently answers True/False queries for each region. This simple procedure reduces cross\-box interference, supports abstention and multiple matches, and requires no fine\-tuning. On RefCOCO, RefCOCO\+, and RefCOCOg, our method not only surpasses a zero\-shot GroundingDINO baseline but also exceeds reported results for GroundingDINO trained on REC and GroundingDINO\+CRG. Controlled studies with identical proposals confirm that verification significantly outperforms selection\-based prompting, and results hold with open VLMs. Overall, we show that workflow design, rather than task\-specific pretraining, drives strong zero\-shot REC performance.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2509.09958v1)
+
+---
+
+
+## A Co\-Training Semi\-Supervised Framework Using Faster R\-CNN and YOLO Networks for Object Detection in Densely Packed Retail Images / 
+
+发布日期：2025-09-11
+
+作者：Hossein Yazdanjouei
+
+摘要：This study proposes a semi\-supervised co\-training framework for object detection in densely packed retail environments, where limited labeled data and complex conditions pose major challenges. The framework combines Faster R\-CNN \(utilizing a ResNet backbone\) for precise localization with YOLO \(employing a Darknet backbone\) for global context, enabling mutual pseudo\-label exchange that improves accuracy in scenes with occlusion and overlapping objects. To strengthen classification, it employs an ensemble of XGBoost, Random Forest, and SVM, utilizing diverse feature representations for higher robustness. Hyperparameters are optimized using a metaheuristic\-driven algorithm, enhancing precision and efficiency across models. By minimizing reliance on manual labeling, the approach reduces annotation costs and adapts effectively to frequent product and layout changes common in retail. Experiments on the SKU\-110k dataset demonstrate strong performance, highlighting the scalability and practicality of the proposed framework for real\-world retail applications such as automated inventory tracking, product monitoring, and checkout systems.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2509.09750v1)
+
+---
+
+
 ## Classification of Driver Behaviour Using External Observation Techniques for Autonomous Vehicles / 
 
 发布日期：2025-09-11
@@ -33,60 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2509.09297v1)
-
----
-
-
-## FPI\-Det: a face\-\-phone Interaction Dataset for phone\-use detection and understanding / 
-
-发布日期：2025-09-11
-
-作者：Jianqin Gao
-
-摘要：The widespread use of mobile devices has created new challenges for vision systems in safety monitoring, workplace productivity assessment, and attention management. Detecting whether a person is using a phone requires not only object recognition but also an understanding of behavioral context, which involves reasoning about the relationship between faces, hands, and devices under diverse conditions. Existing generic benchmarks do not fully capture such fine\-grained human\-\-device interactions. To address this gap, we introduce the FPI\-Det, containing 22\{,\}879 images with synchronized annotations for faces and phones across workplace, education, transportation, and public scenarios. The dataset features extreme scale variation, frequent occlusions, and varied capture conditions. We evaluate representative YOLO and DETR detectors, providing baseline results and an analysis of performance across object sizes, occlusion levels, and environments. Source code and dataset is available at https://github.com/KvCgRv/FPI\-Det.
-
-中文摘要：
-
-
-代码链接：https://github.com/KvCgRv/FPI-Det.
-
-论文链接：[阅读更多](http://arxiv.org/abs/2509.09111v1)
-
----
-
-
-## A New Hybrid Model of Generative Adversarial Network and You Only Look Once Algorithm for Automatic License\-Plate Recognition / 
-
-发布日期：2025-09-08
-
-作者：Behnoud Shafiezadeh
-
-摘要：Automatic License\-Plate Recognition \(ALPR\) plays a pivotal role in Intelligent Transportation Systems \(ITS\) as a fundamental element of Smart Cities. However, due to its high variability, ALPR faces challenging issues more efficiently addressed by deep learning techniques. In this paper, a selective Generative Adversarial Network \(GAN\) is proposed for deblurring in the preprocessing step, coupled with the state\-of\-the\-art You\-Only\-Look\-Once \(YOLO\)v5 object detection architectures for License\-Plate Detection \(LPD\), and the integrated Character Segmentation \(CS\) and Character Recognition \(CR\) steps. The selective preprocessing bypasses unnecessary and sometimes counter\-productive input manipulations, while YOLOv5 LPD/CS\+CR delivers high accuracy and low computing cost. As a result, YOLOv5 achieves a detection time of 0.026 seconds for both LP and CR detection stages, facilitating real\-time applications with exceptionally rapid responsiveness. Moreover, the proposed model achieves accuracy rates of 95% and 97% in the LPD and CR detection phases, respectively. Furthermore, the inclusion of the Deblur\-GAN pre\-processor significantly improves detection accuracy by nearly 40%, especially when encountering blurred License Plates \(LPs\).To train and test the learning components, we generated and publicly released our blur and ALPR datasets \(using Iranian license plates as a use\-case\), which are more representative of close\-to\-real\-life ad\-hoc situations. The findings demonstrate that employing the state\-of\-the\-art YOLO model results in excellent overall precision and detection time, making it well\-suited for portable applications. Additionally, integrating the Deblur\-GAN model as a preliminary processing step enhances the overall effectiveness of our comprehensive model, particularly when confronted with blurred scenes captured by the camera as input.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2509.06868v1)
-
----
-
-
-## When Language Model Guides Vision: Grounding DINO for Cattle Muzzle Detection / 
-
-发布日期：2025-09-08
-
-作者：Rabin Dulal
-
-摘要：Muzzle patterns are among the most effective biometric traits for cattle identification. Fast and accurate detection of the muzzle region as the region of interest is critical to automatic visual cattle identification.. Earlier approaches relied on manual detection, which is labor\-intensive and inconsistent. Recently, automated methods using supervised models like YOLO have become popular for muzzle detection. Although effective, these methods require extensive annotated datasets and tend to be trained data\-dependent, limiting their performance on new or unseen cattle. To address these limitations, this study proposes a zero\-shot muzzle detection framework based on Grounding DINO, a vision\-language model capable of detecting muzzles without any task\-specific training or annotated data. This approach leverages natural language prompts to guide detection, enabling scalable and flexible muzzle localization across diverse breeds and environments. Our model achieves a mean Average Precision \(mAP\)@0.5 of 76.8%, demonstrating promising performance without requiring annotated data. To our knowledge, this is the first research to provide a real\-world, industry\-oriented, and annotation\-free solution for cattle muzzle detection. The framework offers a practical alternative to supervised methods, promising improved adaptability and ease of deployment in livestock monitoring applications.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2509.06427v1)
 
 ---
 
