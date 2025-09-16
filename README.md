@@ -1,6 +1,24 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## YOLO\-CIANNA: Galaxy detection with deep learning in radio data: II. Winning the SKA SDC2 using a generalized 3D\-YOLO network / 
+
+发布日期：2025-09-15
+
+作者：D. Cornu
+
+摘要：As the scientific exploitation of the Square Kilometre Array \(SKA\) approaches, there is a need for new advanced data analysis and visualization tools capable of processing large high\-dimensional datasets. In this study, we aim to generalize the YOLO\-CIANNA deep learning source detection and characterization method for 3D hyperspectral HI emission cubes. We present the adaptations we made to the regression\-based detection formalism and the construction of an end\-to\-end 3D convolutional neural network \(CNN\) backbone. We then describe a processing pipeline for applying the method to simulated 3D HI cubes from the SKA Observatory Science Data Challenge 2 \(SDC2\) dataset. The YOLO\-CIANNA method was originally developed and used by the MINERVA team that won the official SDC2 competition. Despite the public release of the full SDC2 dataset, no published result has yet surpassed MINERVA's top score. In this paper, we present an updated version of our method that improves our challenge score by 9.5%. The resulting catalog exhibits a high detection purity of 92.3%, best\-in\-class characterization accuracy, and contains 45% more confirmed sources than concurrent classical detection tools. The method is also computationally efficient, processing the full ~1TB SDC2 data cube in 30 min on a single GPU. These state\-of\-the\-art results highlight the effectiveness of 3D CNN\-based detectors for processing large hyperspectral data cubes and represent a promising step toward applying YOLO\-CIANNA to observational data from SKA and its precursors.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2509.12082v1)
+
+---
+
+
 ## Drone\-Based Multispectral Imaging and Deep Learning for Timely Detection of Branched Broomrape in Tomato Farms / 
 
 发布日期：2025-09-12
@@ -69,24 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2509.09349v1)
-
----
-
-
-## Model\-Agnostic Open\-Set Air\-to\-Air Visual Object Detection for Reliable UAV Perception / 
-
-发布日期：2025-09-11
-
-作者：Spyridon Loukovitis
-
-摘要：Open\-set detection is crucial for robust UAV autonomy in air\-to\-air object detection under real\-world conditions. Traditional closed\-set detectors degrade significantly under domain shifts and flight data corruption, posing risks to safety\-critical applications. We propose a novel, model\-agnostic open\-set detection framework designed specifically for embedding\-based detectors. The method explicitly handles unknown object rejection while maintaining robustness against corrupted flight data. It estimates semantic uncertainty via entropy modeling in the embedding space and incorporates spectral normalization and temperature scaling to enhance open\-set discrimination. We validate our approach on the challenging AOT aerial benchmark and through extensive real\-world flight tests. Comprehensive ablation studies demonstrate consistent improvements over baseline methods, achieving up to a 10% relative AUROC gain compared to standard YOLO\-based detectors. Additionally, we show that background rejection further strengthens robustness without compromising detection accuracy, making our solution particularly well\-suited for reliable UAV perception in dynamic air\-to\-air environments.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2509.09297v1)
 
 ---
 
