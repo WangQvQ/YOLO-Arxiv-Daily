@@ -1,6 +1,42 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Layout\-Aware OCR for Black Digital Archives with Unsupervised Evaluation / 
+
+发布日期：2025-09-16
+
+作者：Fitsum Sileshi Beyene
+
+摘要：Despite their cultural and historical significance, Black digital archives continue to be a structurally underrepresented area in AI research and infrastructure. This is especially evident in efforts to digitize historical Black newspapers, where inconsistent typography, visual degradation, and limited annotated layout data hinder accurate transcription, despite the availability of various systems that claim to handle optical character recognition \(OCR\) well. In this short paper, we present a layout\-aware OCR pipeline tailored for Black newspaper archives and introduce an unsupervised evaluation framework suited to low\-resource archival contexts. Our approach integrates synthetic layout generation, model pretraining on augmented data, and a fusion of state\-of\-the\-art You Only Look Once \(YOLO\) detectors. We used three annotation\-free evaluation metrics, the Semantic Coherence Score \(SCS\), Region Entropy \(RE\), and Textual Redundancy Score \(TRS\), which quantify linguistic fluency, informational diversity, and redundancy across OCR regions. Our evaluation on a 400\-page dataset from ten Black newspaper titles demonstrates that layout\-aware OCR improves structural diversity and reduces redundancy compared to full\-page baselines, with modest trade\-offs in coherence. Our results highlight the importance of respecting cultural layout logic in AI\-driven document understanding and lay the foundation for future community\-driven and ethically grounded archival AI systems.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2509.13236v1)
+
+---
+
+
+## A Comparative Study of YOLOv8 to YOLOv11 Performance in Underwater Vision Tasks / 
+
+发布日期：2025-09-16
+
+作者：Gordon Hung
+
+摘要：Autonomous underwater vehicles \(AUVs\) increasingly rely on on\-board computer\-vision systems for tasks such as habitat mapping, ecological monitoring, and infrastructure inspection. However, underwater imagery is hindered by light attenuation, turbidity, and severe class imbalance, while the computational resources available on AUVs are limited. One\-stage detectors from the YOLO family are attractive because they fuse localization and classification in a single, low\-latency network; however, their terrestrial benchmarks \(COCO, PASCAL\-VOC, Open Images\) leave open the question of how successive YOLO releases perform in the marine domain. We curate two openly available datasets that span contrasting operating conditions: a Coral Disease set \(4,480 images, 18 classes\) and a Fish Species set \(7,500 images, 20 classes\). For each dataset, we create four training regimes \(25 %, 50 %, 75 %, 100 % of the images\) while keeping balanced validation and test partitions fixed. We train YOLOv8\-s, YOLOv9\-s, YOLOv10\-s, and YOLOv11\-s with identical hyperparameters \(100 epochs, 640 px input, batch = 16, T4 GPU\) and evaluate precision, recall, mAP50, mAP50\-95, per\-image inference time, and frames\-per\-second \(FPS\). Post\-hoc Grad\-CAM visualizations probe feature utilization and localization faithfulness. Across both datasets, accuracy saturates after YOLOv9, suggesting architectural innovations primarily target efficiency rather than accuracy. Inference speed, however, improves markedly. Our results \(i\) provide the first controlled comparison of recent YOLO variants on underwater imagery, \(ii\) show that lightweight YOLOv10 offers the best speed\-accuracy trade\-off for embedded AUV deployment, and \(iii\) deliver an open, reproducible benchmark and codebase to accelerate future marine\-vision research.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2509.12682v1)
+
+---
+
+
 ## YOLO\-CIANNA: Galaxy detection with deep learning in radio data: II. Winning the SKA SDC2 using a generalized 3D\-YOLO network / 
 
 发布日期：2025-09-15
@@ -51,42 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2509.09958v1)
-
----
-
-
-## A Co\-Training Semi\-Supervised Framework Using Faster R\-CNN and YOLO Networks for Object Detection in Densely Packed Retail Images / 
-
-发布日期：2025-09-11
-
-作者：Hossein Yazdanjouei
-
-摘要：This study proposes a semi\-supervised co\-training framework for object detection in densely packed retail environments, where limited labeled data and complex conditions pose major challenges. The framework combines Faster R\-CNN \(utilizing a ResNet backbone\) for precise localization with YOLO \(employing a Darknet backbone\) for global context, enabling mutual pseudo\-label exchange that improves accuracy in scenes with occlusion and overlapping objects. To strengthen classification, it employs an ensemble of XGBoost, Random Forest, and SVM, utilizing diverse feature representations for higher robustness. Hyperparameters are optimized using a metaheuristic\-driven algorithm, enhancing precision and efficiency across models. By minimizing reliance on manual labeling, the approach reduces annotation costs and adapts effectively to frequent product and layout changes common in retail. Experiments on the SKU\-110k dataset demonstrate strong performance, highlighting the scalability and practicality of the proposed framework for real\-world retail applications such as automated inventory tracking, product monitoring, and checkout systems.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2509.09750v1)
-
----
-
-
-## Classification of Driver Behaviour Using External Observation Techniques for Autonomous Vehicles / 
-
-发布日期：2025-09-11
-
-作者：Ian Nell
-
-摘要：Road traffic accidents remain a significant global concern, with human error, particularly distracted and impaired driving, among the leading causes. This study introduces a novel driver behavior classification system that uses external observation techniques to detect indicators of distraction and impairment. The proposed framework employs advanced computer vision methodologies, including real\-time object tracking, lateral displacement analysis, and lane position monitoring. The system identifies unsafe driving behaviors such as excessive lateral movement and erratic trajectory patterns by implementing the YOLO object detection model and custom lane estimation algorithms. Unlike systems reliant on inter\-vehicular communication, this vision\-based approach enables behavioral analysis of non\-connected vehicles. Experimental evaluations on diverse video datasets demonstrate the framework's reliability and adaptability across varying road and environmental conditions.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2509.09349v1)
 
 ---
 
