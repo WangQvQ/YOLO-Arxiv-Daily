@@ -1,6 +1,60 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Performance Optimization of YOLO\-FEDER FusionNet for Robust Drone Detection in Visually Complex Environments / 
+
+发布日期：2025-09-17
+
+作者：Tamara R. Lenhard
+
+摘要：Drone detection in visually complex environments remains challenging due to background clutter, small object scale, and camouflage effects. While generic object detectors like YOLO exhibit strong performance in low\-texture scenes, their effectiveness degrades in cluttered environments with low object\-background separability. To address these limitations, this work presents an enhanced iteration of YOLO\-FEDER FusionNet \-\- a detection framework that integrates generic object detection with camouflage object detection techniques. Building upon the original architecture, the proposed iteration introduces systematic advancements in training data composition, feature fusion strategies, and backbone design. Specifically, the training process leverages large\-scale, photo\-realistic synthetic data, complemented by a small set of real\-world samples, to enhance robustness under visually complex conditions. The contribution of intermediate multi\-scale FEDER features is systematically evaluated, and detection performance is comprehensively benchmarked across multiple YOLO\-based backbone configurations. Empirical results indicate that integrating intermediate FEDER features, in combination with backbone upgrades, contributes to notable performance improvements. In the most promising configuration \-\- YOLO\-FEDER FusionNet with a YOLOv8l backbone and FEDER features derived from the DWD module \-\- these enhancements lead to a FNR reduction of up to 39.1 percentage points and a mAP increase of up to 62.8 percentage points at an IoU threshold of 0.5, compared to the initial baseline.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2509.14012v1)
+
+---
+
+
+## MOCHA: Multi\-modal Objects\-aware Cross\-arcHitecture Alignment / 
+
+发布日期：2025-09-17
+
+作者：Elena Camuffo
+
+摘要：We introduce MOCHA \(Multi\-modal Objects\-aware Cross\-arcHitecture Alignment\), a knowledge distillation approach that transfers region\-level multimodal semantics from a large vision\-language teacher \(e.g., LLaVa\) into a lightweight vision\-only object detector student \(e.g., YOLO\). A translation module maps student features into a joint space, where the training of the student and translator is guided by a dual\-objective loss that enforces both local alignment and global relational consistency. Unlike prior approaches focused on dense or global alignment, MOCHA operates at the object level, enabling efficient transfer of semantics without modifying the teacher or requiring textual input at inference. We validate our method across four personalized detection benchmarks under few\-shot regimes. Results show consistent gains over baselines, with a \+10.1 average score improvement. Despite its compact architecture, MOCHA reaches performance on par with larger multimodal models, proving its suitability for real\-world deployment.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2509.14001v1)
+
+---
+
+
+## Federated Learning for Deforestation Detection: A Distributed Approach with Satellite Imagery / 
+
+发布日期：2025-09-17
+
+作者：Yuvraj Dutta
+
+摘要：Accurate identification of deforestation from satellite images is essential in order to understand the geographical situation of an area. This paper introduces a new distributed approach to identify as well as locate deforestation across different clients using Federated Learning \(FL\). Federated Learning enables distributed network clients to collaboratively train a model while maintaining data privacy and security of the active users. In our framework, a client corresponds to an edge satellite center responsible for local data processing. Moreover, FL provides an advantage over centralized training method which requires combining data, thereby compromising with data security of the clients. Our framework leverages the FLOWER framework with RAY framework to execute the distributed learning workload. Furthermore, efficient client spawning is ensured by RAY as it can select definite amount of users to create an emulation environment. Our FL framework uses YOLOS\-small \(a Vision Transformer variant\), Faster R\-CNN with a ResNet50 backbone, and Faster R\-CNN with a MobileNetV3 backbone models trained and tested on publicly available datasets. Our approach provides us a different view for image segmentation\-based tasks on satellite imagery.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2509.13631v1)
+
+---
+
+
 ## Layout\-Aware OCR for Black Digital Archives with Unsupervised Evaluation / 
 
 发布日期：2025-09-16
@@ -33,60 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2509.12682v1)
-
----
-
-
-## YOLO\-CIANNA: Galaxy detection with deep learning in radio data: II. Winning the SKA SDC2 using a generalized 3D\-YOLO network / 
-
-发布日期：2025-09-15
-
-作者：D. Cornu
-
-摘要：As the scientific exploitation of the Square Kilometre Array \(SKA\) approaches, there is a need for new advanced data analysis and visualization tools capable of processing large high\-dimensional datasets. In this study, we aim to generalize the YOLO\-CIANNA deep learning source detection and characterization method for 3D hyperspectral HI emission cubes. We present the adaptations we made to the regression\-based detection formalism and the construction of an end\-to\-end 3D convolutional neural network \(CNN\) backbone. We then describe a processing pipeline for applying the method to simulated 3D HI cubes from the SKA Observatory Science Data Challenge 2 \(SDC2\) dataset. The YOLO\-CIANNA method was originally developed and used by the MINERVA team that won the official SDC2 competition. Despite the public release of the full SDC2 dataset, no published result has yet surpassed MINERVA's top score. In this paper, we present an updated version of our method that improves our challenge score by 9.5%. The resulting catalog exhibits a high detection purity of 92.3%, best\-in\-class characterization accuracy, and contains 45% more confirmed sources than concurrent classical detection tools. The method is also computationally efficient, processing the full ~1TB SDC2 data cube in 30 min on a single GPU. These state\-of\-the\-art results highlight the effectiveness of 3D CNN\-based detectors for processing large hyperspectral data cubes and represent a promising step toward applying YOLO\-CIANNA to observational data from SKA and its precursors.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2509.12082v1)
-
----
-
-
-## Drone\-Based Multispectral Imaging and Deep Learning for Timely Detection of Branched Broomrape in Tomato Farms / 
-
-发布日期：2025-09-12
-
-作者：Mohammadreza Narimani
-
-摘要：This study addresses the escalating threat of branched broomrape \(Phelipanche ramosa\) to California's tomato industry, which supplies over 90 percent of U.S. processing tomatoes. The parasite's largely underground life cycle makes early detection difficult, while conventional chemical controls are costly, environmentally harmful, and often ineffective. To address this, we combined drone\-based multispectral imagery with Long Short\-Term Memory \(LSTM\) deep learning networks, using the Synthetic Minority Over\-sampling Technique \(SMOTE\) to handle class imbalance. Research was conducted on a known broomrape\-infested tomato farm in Woodland, Yolo County, CA, across five key growth stages determined by growing degree days \(GDD\). Multispectral images were processed to isolate tomato canopy reflectance. At 897 GDD, broomrape could be detected with 79.09 percent overall accuracy and 70.36 percent recall without integrating later stages. Incorporating sequential growth stages with LSTM improved detection substantially. The best\-performing scenario, which integrated all growth stages with SMOTE augmentation, achieved 88.37 percent overall accuracy and 95.37 percent recall. These results demonstrate the strong potential of temporal multispectral analysis and LSTM networks for early broomrape detection. While further real\-world data collection is needed for practical deployment, this study shows that UAV\-based multispectral sensing coupled with deep learning could provide a powerful precision agriculture tool to reduce losses and improve sustainability in tomato production.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2509.09972v1)
-
----
-
-
-## Zero\-Shot Referring Expression Comprehension via Visual\-Language True/False Verification / 
-
-发布日期：2025-09-12
-
-作者：Jeffrey Liu
-
-摘要：Referring Expression Comprehension \(REC\) is usually addressed with task\-trained grounding models. We show that a zero\-shot workflow, without any REC\-specific training, can achieve competitive or superior performance. Our approach reformulates REC as box\-wise visual\-language verification: given proposals from a COCO\-clean generic detector \(YOLO\-World\), a general\-purpose VLM independently answers True/False queries for each region. This simple procedure reduces cross\-box interference, supports abstention and multiple matches, and requires no fine\-tuning. On RefCOCO, RefCOCO\+, and RefCOCOg, our method not only surpasses a zero\-shot GroundingDINO baseline but also exceeds reported results for GroundingDINO trained on REC and GroundingDINO\+CRG. Controlled studies with identical proposals confirm that verification significantly outperforms selection\-based prompting, and results hold with open VLMs. Overall, we show that workflow design, rather than task\-specific pretraining, drives strong zero\-shot REC performance.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2509.09958v1)
 
 ---
 
