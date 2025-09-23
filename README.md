@@ -1,6 +1,60 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## An Empirical Study on the Robustness of YOLO Models for Underwater Object Detection / 
+
+发布日期：2025-09-22
+
+作者：Edwine Nabahirwa
+
+摘要：Underwater object detection \(UOD\) remains a critical challenge in computer vision due to underwater distortions which degrade low\-level features and compromise the reliability of even state\-of\-the\-art detectors. While YOLO models have become the backbone of real\-time object detection, little work has systematically examined their robustness under these uniquely challenging conditions. This raises a critical question: Are YOLO models genuinely robust when operating under the chaotic and unpredictable conditions of underwater environments? In this study, we present one of the first comprehensive evaluations of recent YOLO variants \(YOLOv8\-YOLOv12\) across six simulated underwater environments. Using a unified dataset of 10,000 annotated images from DUO and Roboflow100, we not only benchmark model robustness but also analyze how distortions affect key low\-level features such as texture, edges, and color. Our findings show that \(1\) YOLOv12 delivers the strongest overall performance but is highly vulnerable to noise, and \(2\) noise disrupts edge and texture features, explaining the poor detection performance in noisy images. Class imbalance is a persistent challenge in UOD. Experiments revealed that \(3\) image counts and instance frequency primarily drive detection performance, while object appearance exerts only a secondary influence. Finally, we evaluated lightweight training\-aware strategies: noise\-aware sample injection, which improves robustness in both noisy and real\-world conditions, and fine\-tuning with advanced enhancement, which boosts accuracy in enhanced domains but slightly lowers performance in original data, demonstrating strong potential for domain adaptation, respectively. Together, these insights provide practical guidance for building resilient and cost\-efficient UOD systems.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2509.17561v1)
+
+---
+
+
+## Vision\-Based Driver Drowsiness Monitoring: Comparative Analysis of YOLOv5\-v11 Models / 
+
+发布日期：2025-09-22
+
+作者：Dilshara Herath
+
+摘要：Driver drowsiness remains a critical factor in road accidents, accounting for thousands of fatalities and injuries each year. This paper presents a comprehensive evaluation of real\-time, non\-intrusive drowsiness detection methods, focusing on computer vision based YOLO \(You Look Only Once\) algorithms. A publicly available dataset namely, UTA\-RLDD was used, containing both awake and drowsy conditions, ensuring variability in gender, eyewear, illumination, and skin tone. Seven YOLO variants \(v5s, v9c, v9t, v10n, v10l, v11n, v11l\) are fine\-tuned, with performance measured in terms of Precision, Recall, mAP0.5, and mAP 0.5\-0.95. Among these, YOLOv9c achieved the highest accuracy \(0.986 mAP 0.5, 0.978 Recall\) while YOLOv11n strikes the optimal balance between precision \(0.954\) and inference efficiency, making it highly suitable for embedded deployment. Additionally, we implement an Eye Aspect Ratio \(EAR\) approach using Dlib's facial landmarks, which despite its low computational footprint exhibits reduced robustness under pose variation and occlusions. Our findings illustrate clear trade offs between accuracy, latency, and resource requirements, and offer practical guidelines for selecting or combining detection methods in autonomous driving and industrial safety applications.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2509.17498v1)
+
+---
+
+
+## SFN\-YOLO: Towards Free\-Range Poultry Detection via Scale\-aware Fusion Networks / 
+
+发布日期：2025-09-21
+
+作者：Jie Chen
+
+摘要：Detecting and localizing poultry is essential for advancing smart poultry farming. Despite the progress of detection\-centric methods, challenges persist in free\-range settings due to multiscale targets, obstructions, and complex or dynamic backgrounds. To tackle these challenges, we introduce an innovative poultry detection approach named SFN\-YOLO that utilizes scale\-aware fusion. This approach combines detailed local features with broader global context to improve detection in intricate environments. Furthermore, we have developed a new expansive dataset \(M\-SCOPE\) tailored for varied free\-range conditions. Comprehensive experiments demonstrate our model achieves an mAP of 80.7% with just 7.2M parameters, which is 35.1% fewer than the benchmark, while retaining strong generalization capability across different domains. The efficient and real\-time detection capabilities of SFN\-YOLO support automated smart poultry farming. The code and dataset can be accessed at https://github.com/chenjessiee/SFN\-YOLO.
+
+中文摘要：
+
+
+代码链接：https://github.com/chenjessiee/SFN-YOLO.
+
+论文链接：[阅读更多](http://arxiv.org/abs/2509.17086v1)
+
+---
+
+
 ## Performance Optimization of YOLO\-FEDER FusionNet for Robust Drone Detection in Visually Complex Environments / 
 
 发布日期：2025-09-17
@@ -33,60 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2509.14001v1)
-
----
-
-
-## Federated Learning for Deforestation Detection: A Distributed Approach with Satellite Imagery / 
-
-发布日期：2025-09-17
-
-作者：Yuvraj Dutta
-
-摘要：Accurate identification of deforestation from satellite images is essential in order to understand the geographical situation of an area. This paper introduces a new distributed approach to identify as well as locate deforestation across different clients using Federated Learning \(FL\). Federated Learning enables distributed network clients to collaboratively train a model while maintaining data privacy and security of the active users. In our framework, a client corresponds to an edge satellite center responsible for local data processing. Moreover, FL provides an advantage over centralized training method which requires combining data, thereby compromising with data security of the clients. Our framework leverages the FLOWER framework with RAY framework to execute the distributed learning workload. Furthermore, efficient client spawning is ensured by RAY as it can select definite amount of users to create an emulation environment. Our FL framework uses YOLOS\-small \(a Vision Transformer variant\), Faster R\-CNN with a ResNet50 backbone, and Faster R\-CNN with a MobileNetV3 backbone models trained and tested on publicly available datasets. Our approach provides us a different view for image segmentation\-based tasks on satellite imagery.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2509.13631v1)
-
----
-
-
-## Layout\-Aware OCR for Black Digital Archives with Unsupervised Evaluation / 
-
-发布日期：2025-09-16
-
-作者：Fitsum Sileshi Beyene
-
-摘要：Despite their cultural and historical significance, Black digital archives continue to be a structurally underrepresented area in AI research and infrastructure. This is especially evident in efforts to digitize historical Black newspapers, where inconsistent typography, visual degradation, and limited annotated layout data hinder accurate transcription, despite the availability of various systems that claim to handle optical character recognition \(OCR\) well. In this short paper, we present a layout\-aware OCR pipeline tailored for Black newspaper archives and introduce an unsupervised evaluation framework suited to low\-resource archival contexts. Our approach integrates synthetic layout generation, model pretraining on augmented data, and a fusion of state\-of\-the\-art You Only Look Once \(YOLO\) detectors. We used three annotation\-free evaluation metrics, the Semantic Coherence Score \(SCS\), Region Entropy \(RE\), and Textual Redundancy Score \(TRS\), which quantify linguistic fluency, informational diversity, and redundancy across OCR regions. Our evaluation on a 400\-page dataset from ten Black newspaper titles demonstrates that layout\-aware OCR improves structural diversity and reduces redundancy compared to full\-page baselines, with modest trade\-offs in coherence. Our results highlight the importance of respecting cultural layout logic in AI\-driven document understanding and lay the foundation for future community\-driven and ethically grounded archival AI systems.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2509.13236v1)
-
----
-
-
-## A Comparative Study of YOLOv8 to YOLOv11 Performance in Underwater Vision Tasks / 
-
-发布日期：2025-09-16
-
-作者：Gordon Hung
-
-摘要：Autonomous underwater vehicles \(AUVs\) increasingly rely on on\-board computer\-vision systems for tasks such as habitat mapping, ecological monitoring, and infrastructure inspection. However, underwater imagery is hindered by light attenuation, turbidity, and severe class imbalance, while the computational resources available on AUVs are limited. One\-stage detectors from the YOLO family are attractive because they fuse localization and classification in a single, low\-latency network; however, their terrestrial benchmarks \(COCO, PASCAL\-VOC, Open Images\) leave open the question of how successive YOLO releases perform in the marine domain. We curate two openly available datasets that span contrasting operating conditions: a Coral Disease set \(4,480 images, 18 classes\) and a Fish Species set \(7,500 images, 20 classes\). For each dataset, we create four training regimes \(25 %, 50 %, 75 %, 100 % of the images\) while keeping balanced validation and test partitions fixed. We train YOLOv8\-s, YOLOv9\-s, YOLOv10\-s, and YOLOv11\-s with identical hyperparameters \(100 epochs, 640 px input, batch = 16, T4 GPU\) and evaluate precision, recall, mAP50, mAP50\-95, per\-image inference time, and frames\-per\-second \(FPS\). Post\-hoc Grad\-CAM visualizations probe feature utilization and localization faithfulness. Across both datasets, accuracy saturates after YOLOv9, suggesting architectural innovations primarily target efficiency rather than accuracy. Inference speed, however, improves markedly. Our results \(i\) provide the first controlled comparison of recent YOLO variants on underwater imagery, \(ii\) show that lightweight YOLOv10 offers the best speed\-accuracy trade\-off for embedded AUV deployment, and \(iii\) deliver an open, reproducible benchmark and codebase to accelerate future marine\-vision research.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2509.12682v1)
 
 ---
 
