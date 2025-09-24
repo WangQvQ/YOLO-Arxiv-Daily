@@ -1,6 +1,60 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## YOLO\-LAN: Precise Polyp Detection via Optimized Loss, Augmentations and Negatives / 
+
+发布日期：2025-09-23
+
+作者：Siddharth Gupta
+
+摘要：Colorectal cancer \(CRC\), a lethal disease, begins with the growth of abnormal mucosal cell proliferation called polyps in the inner wall of the colon. When left undetected, polyps can become malignant tumors. Colonoscopy is the standard procedure for detecting polyps, as it enables direct visualization and removal of suspicious lesions. Manual detection by colonoscopy can be inconsistent and is subject to oversight. Therefore, object detection based on deep learning offers a better solution for a more accurate and real\-time diagnosis during colonoscopy. In this work, we propose YOLO\-LAN, a YOLO\-based polyp detection pipeline, trained using M2IoU loss, versatile data augmentations and negative data to replicate real clinical situations. Our pipeline outperformed existing methods for the Kvasir\-seg and BKAI\-IGH NeoPolyp datasets, achieving mAP$\_\{50\}$ of 0.9619, mAP$\_\{50:95\}$ of 0.8599 with YOLOv12 and mAP$\_\{50\}$ of 0.9540, mAP$\_\{50:95\}$ of 0.8487 with YOLOv8 on the Kvasir\-seg dataset. The significant increase is achieved in mAP$\_\{50:95\}$ score, showing the precision of polyp detection. We show robustness based on polyp size and precise location detection, making it clinically relevant in AI\-assisted colorectal screening.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2509.19166v1)
+
+---
+
+
+## Investigating Traffic Accident Detection Using Multimodal Large Language Models / 
+
+发布日期：2025-09-23
+
+作者：Ilhan Skender
+
+摘要：Traffic safety remains a critical global concern, with timely and accurate accident detection essential for hazard reduction and rapid emergency response. Infrastructure\-based vision sensors offer scalable and efficient solutions for continuous real\-time monitoring, facilitating automated detection of acci\- dents directly from captured images. This research investigates the zero\-shot capabilities of multimodal large language models \(MLLMs\) for detecting and describing traffic accidents using images from infrastructure cameras, thus minimizing reliance on extensive labeled datasets. Main contributions include: \(1\) Evaluation of MLLMs using the simulated DeepAccident dataset from CARLA, explicitly addressing the scarcity of diverse, realistic, infrastructure\-based accident data through controlled simulations; \(2\) Comparative performance analysis between Gemini 1.5 and 2.0, Gemma 3 and Pixtral models in acci\- dent identification and descriptive capabilities without prior fine\-tuning; and \(3\) Integration of advanced visual analytics, specifically YOLO for object detection, Deep SORT for multi\- object tracking, and Segment Anything \(SAM\) for instance segmentation, into enhanced prompts to improve model accuracy and explainability. Key numerical results show Pixtral as the top performer with an F1\-score of 0.71 and 83% recall, while Gemini models gained precision with enhanced prompts \(e.g., Gemini 1.5 rose to 90%\) but suffered notable F1 and recall losses. Gemma 3 offered the most balanced performance with minimal metric fluctuation. These findings demonstrate the substantial potential of integrating MLLMs with advanced visual analytics techniques, enhancing their applicability in real\-world automated traffic monitoring systems.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2509.19096v1)
+
+---
+
+
+## Generative data augmentation for biliary tract detection on intraoperative images / 
+
+发布日期：2025-09-23
+
+作者：Cristina Iacono
+
+摘要：Cholecystectomy is one of the most frequently performed procedures in gastrointestinal surgery, and the laparoscopic approach is the gold standard for symptomatic cholecystolithiasis and acute cholecystitis. In addition to the advantages of a significantly faster recovery and better cosmetic results, the laparoscopic approach bears a higher risk of bile duct injury, which has a significant impact on quality of life and survival. To avoid bile duct injury, it is essential to improve the intraoperative visualization of the bile duct. This work aims to address this problem by leveraging a deep\-learning approach for the localization of the biliary tract from white\-light images acquired during the surgical procedures. To this end, the construction and annotation of an image database to train the Yolo detection algorithm has been employed. Besides classical data augmentation techniques, the paper proposes Generative Adversarial Network \(GAN\) for the generation of a synthetic portion of the training dataset. Experimental results have been discussed along with ethical considerations.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2509.18958v1)
+
+---
+
+
 ## An Empirical Study on the Robustness of YOLO Models for Underwater Object Detection / 
 
 发布日期：2025-09-22
@@ -33,60 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2509.17498v1)
-
----
-
-
-## SFN\-YOLO: Towards Free\-Range Poultry Detection via Scale\-aware Fusion Networks / 
-
-发布日期：2025-09-21
-
-作者：Jie Chen
-
-摘要：Detecting and localizing poultry is essential for advancing smart poultry farming. Despite the progress of detection\-centric methods, challenges persist in free\-range settings due to multiscale targets, obstructions, and complex or dynamic backgrounds. To tackle these challenges, we introduce an innovative poultry detection approach named SFN\-YOLO that utilizes scale\-aware fusion. This approach combines detailed local features with broader global context to improve detection in intricate environments. Furthermore, we have developed a new expansive dataset \(M\-SCOPE\) tailored for varied free\-range conditions. Comprehensive experiments demonstrate our model achieves an mAP of 80.7% with just 7.2M parameters, which is 35.1% fewer than the benchmark, while retaining strong generalization capability across different domains. The efficient and real\-time detection capabilities of SFN\-YOLO support automated smart poultry farming. The code and dataset can be accessed at https://github.com/chenjessiee/SFN\-YOLO.
-
-中文摘要：
-
-
-代码链接：https://github.com/chenjessiee/SFN-YOLO.
-
-论文链接：[阅读更多](http://arxiv.org/abs/2509.17086v1)
-
----
-
-
-## Performance Optimization of YOLO\-FEDER FusionNet for Robust Drone Detection in Visually Complex Environments / 
-
-发布日期：2025-09-17
-
-作者：Tamara R. Lenhard
-
-摘要：Drone detection in visually complex environments remains challenging due to background clutter, small object scale, and camouflage effects. While generic object detectors like YOLO exhibit strong performance in low\-texture scenes, their effectiveness degrades in cluttered environments with low object\-background separability. To address these limitations, this work presents an enhanced iteration of YOLO\-FEDER FusionNet \-\- a detection framework that integrates generic object detection with camouflage object detection techniques. Building upon the original architecture, the proposed iteration introduces systematic advancements in training data composition, feature fusion strategies, and backbone design. Specifically, the training process leverages large\-scale, photo\-realistic synthetic data, complemented by a small set of real\-world samples, to enhance robustness under visually complex conditions. The contribution of intermediate multi\-scale FEDER features is systematically evaluated, and detection performance is comprehensively benchmarked across multiple YOLO\-based backbone configurations. Empirical results indicate that integrating intermediate FEDER features, in combination with backbone upgrades, contributes to notable performance improvements. In the most promising configuration \-\- YOLO\-FEDER FusionNet with a YOLOv8l backbone and FEDER features derived from the DWD module \-\- these enhancements lead to a FNR reduction of up to 39.1 percentage points and a mAP increase of up to 62.8 percentage points at an IoU threshold of 0.5, compared to the initial baseline.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2509.14012v1)
-
----
-
-
-## MOCHA: Multi\-modal Objects\-aware Cross\-arcHitecture Alignment / 
-
-发布日期：2025-09-17
-
-作者：Elena Camuffo
-
-摘要：We introduce MOCHA \(Multi\-modal Objects\-aware Cross\-arcHitecture Alignment\), a knowledge distillation approach that transfers region\-level multimodal semantics from a large vision\-language teacher \(e.g., LLaVa\) into a lightweight vision\-only object detector student \(e.g., YOLO\). A translation module maps student features into a joint space, where the training of the student and translator is guided by a dual\-objective loss that enforces both local alignment and global relational consistency. Unlike prior approaches focused on dense or global alignment, MOCHA operates at the object level, enabling efficient transfer of semantics without modifying the teacher or requiring textual input at inference. We validate our method across four personalized detection benchmarks under few\-shot regimes. Results show consistent gains over baselines, with a \+10.1 average score improvement. Despite its compact architecture, MOCHA reaches performance on par with larger multimodal models, proving its suitability for real\-world deployment.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2509.14001v1)
 
 ---
 
