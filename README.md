@@ -1,6 +1,60 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## A Comprehensive Evaluation of YOLO\-based Deer Detection Performance on Edge Devices / 
+
+发布日期：2025-09-24
+
+作者：Bishal Adhikari
+
+摘要：The escalating economic losses in agriculture due to deer intrusion, estimated to be in the hundreds of millions of dollars annually in the U.S., highlight the inadequacy of traditional mitigation strategies since these methods are often labor\-intensive, costly, and ineffective for modern farming systems. To overcome this, there is a critical need for intelligent, autonomous solutions which require accurate and efficient deer detection. But the progress in this field is impeded by a significant gap in the literature, mainly the lack of a domain\-specific, practical dataset and limited study on the on\-field deployability of deer detection systems. Addressing this gap, this study presents a comprehensive evaluation of state\-of\-the\-art deep learning models for deer detection in challenging real\-world scenarios. The contributions of this work are threefold. First, we introduce a curated, publicly available dataset of 3,095 annotated images with bounding\-box annotations of deer, derived from the Idaho Cameratraps project. Second, we provide an extensive comparative analysis of 12 model variants across four recent YOLO architectures\(v8, v9, v10, and v11\). Finally, we benchmarked performance on a high\-end NVIDIA RTX 5090 GPU and evaluated on two representative edge computing platforms: Raspberry Pi 5 and NVIDIA Jetson AGX Xavier. Results show that the real\-time detection is not feasible in Raspberry Pi without hardware\-specific model optimization, while NVIDIA Jetson provides greater than 30 FPS with GPU\-accelerated inference on 's' and 'n' series models. This study also reveals that smaller, architecturally advanced models such as YOLOv11n, YOLOv8s, and YOLOv9s offer the optimal balance of high accuracy \(AP@.5 > 0.85\) and computational efficiency \(FPS > 30\). To support further research, both the source code and datasets are publicly available at https://github.com/WinnerBishal/track\-the\-deer.
+
+中文摘要：
+
+
+代码链接：https://github.com/WinnerBishal/track-the-deer.
+
+论文链接：[阅读更多](http://arxiv.org/abs/2509.20318v1)
+
+---
+
+
+## SDE\-DET: A Precision Network for Shatian Pomelo Detection in Complex Orchard Environments / 
+
+发布日期：2025-09-24
+
+作者：Yihao Hu
+
+摘要：Pomelo detection is an essential process for their localization, automated robotic harvesting, and maturity analysis. However, detecting Shatian pomelo in complex orchard environments poses significant challenges, including multi\-scale issues, obstructions from trunks and leaves, small object detection, etc. To address these issues, this study constructs a custom dataset STP\-AgriData and proposes the SDE\-DET model for Shatian pomelo detection. SDE\-DET first utilizes the Star Block to effectively acquire high\-dimensional information without increasing the computational overhead. Furthermore, the presented model adopts Deformable Attention in its backbone, to enhance its ability to detect pomelos under occluded conditions. Finally, multiple Efficient Multi\-Scale Attention mechanisms are integrated into our model to reduce the computational overhead and extract deep visual representations, thereby improving the capacity for small object detection. In the experiment, we compared SDE\-DET with the Yolo series and other mainstream detection models in Shatian pomelo detection. The presented SDE\-DET model achieved scores of 0.883, 0.771, 0.838, 0.497, and 0.823 in Precision, Recall, mAP@0.5, mAP@0.5:0.95 and F1\-score, respectively. SDE\-DET has achieved state\-of\-the\-art performance on the STP\-AgriData dataset. Experiments indicate that the SDE\-DET provides a reliable method for Shatian pomelo detection, laying the foundation for the further development of automatic harvest robots.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2509.19990v1)
+
+---
+
+
+## High Clockrate Free\-space Optical In\-Memory Computing / 
+
+发布日期：2025-09-23
+
+作者：Yuanhao Liang
+
+摘要：The ability to process and act on data in real time is increasingly critical for applications ranging from autonomous vehicles, three\-dimensional environmental sensing and remote robotics. However, the deployment of deep neural networks \(DNNs\) in edge devices is hindered by the lack of energy\-efficient scalable computing hardware. Here, we introduce a fanout spatial time\-of\-flight optical neural network \(FAST\-ONN\) that calculates billions of convolutions per second with ultralow latency and power consumption. This is enabled by the combination of high\-speed dense arrays of vertical\-cavity surface\-emitting lasers \(VCSELs\) for input modulation with spatial light modulators of high pixel counts for in\-memory weighting. In a three\-dimensional optical system, parallel differential readout allows signed weight values accurate inference in a single shot. The performance is benchmarked with feature extraction in You\-Only\-Look\-Once \(YOLO\) for convolution at 100 million frames per second \(MFPS\), and in\-system backward propagation training with photonic reprogrammability. The VCSEL transmitters are implementable in any free\-space optical computing systems to improve the clockrate to over gigahertz. The high scalability in device counts and channel parallelism enables a new avenue to scale up free space computing hardware.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2509.19642v1)
+
+---
+
+
 ## YOLO\-LAN: Precise Polyp Detection via Optimized Loss, Augmentations and Negatives / 
 
 发布日期：2025-09-23
@@ -25,68 +79,14 @@
 
 作者：Ilhan Skender
 
-摘要：Traffic safety remains a critical global concern, with timely and accurate accident detection essential for hazard reduction and rapid emergency response. Infrastructure\-based vision sensors offer scalable and efficient solutions for continuous real\-time monitoring, facilitating automated detection of acci\- dents directly from captured images. This research investigates the zero\-shot capabilities of multimodal large language models \(MLLMs\) for detecting and describing traffic accidents using images from infrastructure cameras, thus minimizing reliance on extensive labeled datasets. Main contributions include: \(1\) Evaluation of MLLMs using the simulated DeepAccident dataset from CARLA, explicitly addressing the scarcity of diverse, realistic, infrastructure\-based accident data through controlled simulations; \(2\) Comparative performance analysis between Gemini 1.5 and 2.0, Gemma 3 and Pixtral models in acci\- dent identification and descriptive capabilities without prior fine\-tuning; and \(3\) Integration of advanced visual analytics, specifically YOLO for object detection, Deep SORT for multi\- object tracking, and Segment Anything \(SAM\) for instance segmentation, into enhanced prompts to improve model accuracy and explainability. Key numerical results show Pixtral as the top performer with an F1\-score of 0.71 and 83% recall, while Gemini models gained precision with enhanced prompts \(e.g., Gemini 1.5 rose to 90%\) but suffered notable F1 and recall losses. Gemma 3 offered the most balanced performance with minimal metric fluctuation. These findings demonstrate the substantial potential of integrating MLLMs with advanced visual analytics techniques, enhancing their applicability in real\-world automated traffic monitoring systems.
+摘要：Traffic safety remains a critical global concern, with timely and accurate accident detection essential for hazard reduction and rapid emergency response. Infrastructure\-based vision sensors offer scalable and efficient solutions for continuous real\-time monitoring, facilitating automated detection of accidents directly from captured images. This research investigates the zero\-shot capabilities of multimodal large language models \(MLLMs\) for detecting and describing traffic accidents using images from infrastructure cameras, thus minimizing reliance on extensive labeled datasets. Main contributions include: \(1\) Evaluation of MLLMs using the simulated DeepAccident dataset from CARLA, explicitly addressing the scarcity of diverse, realistic, infrastructure\-based accident data through controlled simulations; \(2\) Comparative performance analysis between Gemini 1.5 and 2.0, Gemma 3 and Pixtral models in accident identification and descriptive capabilities without prior fine\-tuning; and \(3\) Integration of advanced visual analytics, specifically YOLO for object detection, Deep SORT for multi\-object tracking, and Segment Anything \(SAM\) for instance segmentation, into enhanced prompts to improve model accuracy and explainability. Key numerical results show Pixtral as the top performer with an F1\-score of 71% and 83% recall, while Gemini models gained precision with enhanced prompts \(e.g., Gemini 1.5 rose to 90%\) but suffered notable F1 and recall losses. Gemma 3 offered the most balanced performance with minimal metric fluctuation. These findings demonstrate the substantial potential of integrating MLLMs with advanced visual analytics techniques, enhancing their applicability in real\-world automated traffic monitoring systems.
 
 中文摘要：
 
 
 代码链接：摘要中未找到代码链接。
 
-论文链接：[阅读更多](http://arxiv.org/abs/2509.19096v1)
-
----
-
-
-## Generative data augmentation for biliary tract detection on intraoperative images / 
-
-发布日期：2025-09-23
-
-作者：Cristina Iacono
-
-摘要：Cholecystectomy is one of the most frequently performed procedures in gastrointestinal surgery, and the laparoscopic approach is the gold standard for symptomatic cholecystolithiasis and acute cholecystitis. In addition to the advantages of a significantly faster recovery and better cosmetic results, the laparoscopic approach bears a higher risk of bile duct injury, which has a significant impact on quality of life and survival. To avoid bile duct injury, it is essential to improve the intraoperative visualization of the bile duct. This work aims to address this problem by leveraging a deep\-learning approach for the localization of the biliary tract from white\-light images acquired during the surgical procedures. To this end, the construction and annotation of an image database to train the Yolo detection algorithm has been employed. Besides classical data augmentation techniques, the paper proposes Generative Adversarial Network \(GAN\) for the generation of a synthetic portion of the training dataset. Experimental results have been discussed along with ethical considerations.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2509.18958v1)
-
----
-
-
-## An Empirical Study on the Robustness of YOLO Models for Underwater Object Detection / 
-
-发布日期：2025-09-22
-
-作者：Edwine Nabahirwa
-
-摘要：Underwater object detection \(UOD\) remains a critical challenge in computer vision due to underwater distortions which degrade low\-level features and compromise the reliability of even state\-of\-the\-art detectors. While YOLO models have become the backbone of real\-time object detection, little work has systematically examined their robustness under these uniquely challenging conditions. This raises a critical question: Are YOLO models genuinely robust when operating under the chaotic and unpredictable conditions of underwater environments? In this study, we present one of the first comprehensive evaluations of recent YOLO variants \(YOLOv8\-YOLOv12\) across six simulated underwater environments. Using a unified dataset of 10,000 annotated images from DUO and Roboflow100, we not only benchmark model robustness but also analyze how distortions affect key low\-level features such as texture, edges, and color. Our findings show that \(1\) YOLOv12 delivers the strongest overall performance but is highly vulnerable to noise, and \(2\) noise disrupts edge and texture features, explaining the poor detection performance in noisy images. Class imbalance is a persistent challenge in UOD. Experiments revealed that \(3\) image counts and instance frequency primarily drive detection performance, while object appearance exerts only a secondary influence. Finally, we evaluated lightweight training\-aware strategies: noise\-aware sample injection, which improves robustness in both noisy and real\-world conditions, and fine\-tuning with advanced enhancement, which boosts accuracy in enhanced domains but slightly lowers performance in original data, demonstrating strong potential for domain adaptation, respectively. Together, these insights provide practical guidance for building resilient and cost\-efficient UOD systems.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2509.17561v1)
-
----
-
-
-## Vision\-Based Driver Drowsiness Monitoring: Comparative Analysis of YOLOv5\-v11 Models / 
-
-发布日期：2025-09-22
-
-作者：Dilshara Herath
-
-摘要：Driver drowsiness remains a critical factor in road accidents, accounting for thousands of fatalities and injuries each year. This paper presents a comprehensive evaluation of real\-time, non\-intrusive drowsiness detection methods, focusing on computer vision based YOLO \(You Look Only Once\) algorithms. A publicly available dataset namely, UTA\-RLDD was used, containing both awake and drowsy conditions, ensuring variability in gender, eyewear, illumination, and skin tone. Seven YOLO variants \(v5s, v9c, v9t, v10n, v10l, v11n, v11l\) are fine\-tuned, with performance measured in terms of Precision, Recall, mAP0.5, and mAP 0.5\-0.95. Among these, YOLOv9c achieved the highest accuracy \(0.986 mAP 0.5, 0.978 Recall\) while YOLOv11n strikes the optimal balance between precision \(0.954\) and inference efficiency, making it highly suitable for embedded deployment. Additionally, we implement an Eye Aspect Ratio \(EAR\) approach using Dlib's facial landmarks, which despite its low computational footprint exhibits reduced robustness under pose variation and occlusions. Our findings illustrate clear trade offs between accuracy, latency, and resource requirements, and offer practical guidelines for selecting or combining detection methods in autonomous driving and industrial safety applications.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2509.17498v1)
+论文链接：[阅读更多](http://arxiv.org/abs/2509.19096v2)
 
 ---
 
