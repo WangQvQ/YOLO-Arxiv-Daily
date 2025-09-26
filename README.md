@@ -1,6 +1,60 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Real\-Time Object Detection Meets DINOv3 / 
+
+发布日期：2025-09-25
+
+作者：Shihua Huang
+
+摘要：Benefiting from the simplicity and effectiveness of Dense O2O and MAL, DEIM has become the mainstream training framework for real\-time DETRs, significantly outperforming the YOLO series. In this work, we extend it with DINOv3 features, resulting in DEIMv2. DEIMv2 spans eight model sizes from X to Atto, covering GPU, edge, and mobile deployment. For the X, L, M, and S variants, we adopt DINOv3\-pretrained or distilled backbones and introduce a Spatial Tuning Adapter \(STA\), which efficiently converts DINOv3's single\-scale output into multi\-scale features and complements strong semantics with fine\-grained details to enhance detection. For ultra\-lightweight models \(Nano, Pico, Femto, and Atto\), we employ HGNetv2 with depth and width pruning to meet strict resource budgets. Together with a simplified decoder and an upgraded Dense O2O, this unified design enables DEIMv2 to achieve a superior performance\-cost trade\-off across diverse scenarios, establishing new state\-of\-the\-art results. Notably, our largest model, DEIMv2\-X, achieves 57.8 AP with only 50.3 million parameters, surpassing prior X\-scale models that require over 60 million parameters for just 56.5 AP. On the compact side, DEIMv2\-S is the first sub\-10 million model \(9.71 million\) to exceed the 50 AP milestone on COCO, reaching 50.9 AP. Even the ultra\-lightweight DEIMv2\-Pico, with just 1.5 million parameters, delivers 38.5 AP, matching YOLOv10\-Nano \(2.3 million\) with around 50 percent fewer parameters.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2509.20787v1)
+
+---
+
+
+## Building Information Models to Robot\-Ready Site Digital Twins \(BIM2RDT\): An Agentic AI Safety\-First Framework / 
+
+发布日期：2025-09-25
+
+作者：Reza Akhavian
+
+摘要：The adoption of cyber\-physical systems and jobsite intelligence that connects design models, real\-time site sensing, and autonomous field operations can dramatically enhance digital management in the construction industry. This paper introduces BIM2RDT \(Building Information Models to Robot\-Ready Site Digital Twins\), an agentic artificial intelligence \(AI\) framework designed to transform static Building Information Modeling \(BIM\) into dynamic, robot\-ready digital twins \(DTs\) that prioritize safety during execution. The framework bridges the gap between pre\-existing BIM data and real\-time site conditions by integrating three key data streams: geometric and semantic information from BIM models, activity data from IoT sensor networks, and visual\-spatial data collected by robots during site traversal. The methodology introduces Semantic\-Gravity ICP \(SG\-ICP\), a point cloud registration algorithm that leverages large language model \(LLM\) reasoning. Unlike traditional methods, SG\-ICP utilizes an LLM to infer object\-specific, plausible orientation priors based on BIM semantics, improving alignment accuracy by avoiding convergence on local minima. This creates a feedback loop where robot\-collected data updates the DT, which in turn optimizes paths for missions. The framework employs YOLOE object detection and Shi\-Tomasi corner detection to identify and track construction elements while using BIM geometry as a priori maps. The framework also integrates real\-time Hand\-Arm Vibration \(HAV\) monitoring, mapping sensor\-detected safety events to the digital twin using IFC standards for intervention. Experiments demonstrate SG\-ICP's superiority over standard ICP, achieving RMSE reductions of 64.3%\-\-88.3% in alignment across scenarios with occluded features, ensuring plausible orientations. HAV integration triggers warnings upon exceeding exposure limits, enhancing compliance with ISO 5349\-1.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2509.20705v1)
+
+---
+
+
+## A Comparative Benchmark of Real\-time Detectors for Blueberry Detection towards Precision Orchard Management / 
+
+发布日期：2025-09-24
+
+作者：Xinyang Mu
+
+摘要：Blueberry detection in natural environments remains challenging due to variable lighting, occlusions, and motion blur due to environmental factors and imaging devices. Deep learning\-based object detectors promise to address these challenges, but they demand a large\-scale, diverse dataset that captures the real\-world complexities. Moreover, deploying these models in practical scenarios often requires the right accuracy/speed/memory trade\-off in model selection. This study presents a novel comparative benchmark analysis of advanced real\-time object detectors, including YOLO \(You Only Look Once\) \(v8\-v12\) and RT\-DETR \(Real\-Time Detection Transformers\) \(v1\-v2\) families, consisting of 36 model variants, evaluated on a newly curated dataset for blueberry detection. This dataset comprises 661 canopy images collected with smartphones during the 2022\-2023 seasons, consisting of 85,879 labelled instances \(including 36,256 ripe and 49,623 unripe blueberries\) across a wide range of lighting conditions, occlusions, and fruit maturity stages. Among the YOLO models, YOLOv12m achieved the best accuracy with a mAP@50 of 93.3%, while RT\-DETRv2\-X obtained a mAP@50 of 93.6%, the highest among all the RT\-DETR variants. The inference time varied with the model scale and complexity, and the mid\-sized models appeared to offer a good accuracy\-speed balance. To further enhance detection performance, all the models were fine\-tuned using Unbiased Mean Teacher\-based semi\-supervised learning \(SSL\) on a separate set of 1,035 unlabeled images acquired by a ground\-based machine vision platform in 2024. This resulted in accuracy gains ranging from \-1.4% to 2.9%, with RT\-DETR\-v2\-X achieving the best mAP@50 of 94.8%. More in\-depth research into SSL is needed to better leverage cross\-domain unlabeled data. Both the dataset and software programs of this study are made publicly available to support further research.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2509.20580v1)
+
+---
+
+
 ## A Comprehensive Evaluation of YOLO\-based Deer Detection Performance on Edge Devices / 
 
 发布日期：2025-09-24
@@ -33,60 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2509.19990v1)
-
----
-
-
-## High Clockrate Free\-space Optical In\-Memory Computing / 
-
-发布日期：2025-09-23
-
-作者：Yuanhao Liang
-
-摘要：The ability to process and act on data in real time is increasingly critical for applications ranging from autonomous vehicles, three\-dimensional environmental sensing and remote robotics. However, the deployment of deep neural networks \(DNNs\) in edge devices is hindered by the lack of energy\-efficient scalable computing hardware. Here, we introduce a fanout spatial time\-of\-flight optical neural network \(FAST\-ONN\) that calculates billions of convolutions per second with ultralow latency and power consumption. This is enabled by the combination of high\-speed dense arrays of vertical\-cavity surface\-emitting lasers \(VCSELs\) for input modulation with spatial light modulators of high pixel counts for in\-memory weighting. In a three\-dimensional optical system, parallel differential readout allows signed weight values accurate inference in a single shot. The performance is benchmarked with feature extraction in You\-Only\-Look\-Once \(YOLO\) for convolution at 100 million frames per second \(MFPS\), and in\-system backward propagation training with photonic reprogrammability. The VCSEL transmitters are implementable in any free\-space optical computing systems to improve the clockrate to over gigahertz. The high scalability in device counts and channel parallelism enables a new avenue to scale up free space computing hardware.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2509.19642v1)
-
----
-
-
-## YOLO\-LAN: Precise Polyp Detection via Optimized Loss, Augmentations and Negatives / 
-
-发布日期：2025-09-23
-
-作者：Siddharth Gupta
-
-摘要：Colorectal cancer \(CRC\), a lethal disease, begins with the growth of abnormal mucosal cell proliferation called polyps in the inner wall of the colon. When left undetected, polyps can become malignant tumors. Colonoscopy is the standard procedure for detecting polyps, as it enables direct visualization and removal of suspicious lesions. Manual detection by colonoscopy can be inconsistent and is subject to oversight. Therefore, object detection based on deep learning offers a better solution for a more accurate and real\-time diagnosis during colonoscopy. In this work, we propose YOLO\-LAN, a YOLO\-based polyp detection pipeline, trained using M2IoU loss, versatile data augmentations and negative data to replicate real clinical situations. Our pipeline outperformed existing methods for the Kvasir\-seg and BKAI\-IGH NeoPolyp datasets, achieving mAP$\_\{50\}$ of 0.9619, mAP$\_\{50:95\}$ of 0.8599 with YOLOv12 and mAP$\_\{50\}$ of 0.9540, mAP$\_\{50:95\}$ of 0.8487 with YOLOv8 on the Kvasir\-seg dataset. The significant increase is achieved in mAP$\_\{50:95\}$ score, showing the precision of polyp detection. We show robustness based on polyp size and precise location detection, making it clinically relevant in AI\-assisted colorectal screening.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2509.19166v1)
-
----
-
-
-## Investigating Traffic Accident Detection Using Multimodal Large Language Models / 
-
-发布日期：2025-09-23
-
-作者：Ilhan Skender
-
-摘要：Traffic safety remains a critical global concern, with timely and accurate accident detection essential for hazard reduction and rapid emergency response. Infrastructure\-based vision sensors offer scalable and efficient solutions for continuous real\-time monitoring, facilitating automated detection of accidents directly from captured images. This research investigates the zero\-shot capabilities of multimodal large language models \(MLLMs\) for detecting and describing traffic accidents using images from infrastructure cameras, thus minimizing reliance on extensive labeled datasets. Main contributions include: \(1\) Evaluation of MLLMs using the simulated DeepAccident dataset from CARLA, explicitly addressing the scarcity of diverse, realistic, infrastructure\-based accident data through controlled simulations; \(2\) Comparative performance analysis between Gemini 1.5 and 2.0, Gemma 3 and Pixtral models in accident identification and descriptive capabilities without prior fine\-tuning; and \(3\) Integration of advanced visual analytics, specifically YOLO for object detection, Deep SORT for multi\-object tracking, and Segment Anything \(SAM\) for instance segmentation, into enhanced prompts to improve model accuracy and explainability. Key numerical results show Pixtral as the top performer with an F1\-score of 71% and 83% recall, while Gemini models gained precision with enhanced prompts \(e.g., Gemini 1.5 rose to 90%\) but suffered notable F1 and recall losses. Gemma 3 offered the most balanced performance with minimal metric fluctuation. These findings demonstrate the substantial potential of integrating MLLMs with advanced visual analytics techniques, enhancing their applicability in real\-world automated traffic monitoring systems.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2509.19096v2)
 
 ---
 
