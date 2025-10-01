@@ -1,6 +1,78 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Rings of Light, Speed of AI: YOLO for Cherenkov Reconstruction / 
+
+发布日期：2025-09-30
+
+作者：Martino Borsato
+
+摘要：Cherenkov rings play a crucial role in identifying charged particles in high\-energy physics \(HEP\) experiments. Most Cherenkov ring pattern reconstruction algorithms currently used in HEP experiments rely on a likelihood fit to the photo\-detector response, which often consumes a significant portion of the computing budget for event reconstruction. We present a novel approach to Cherenkov ring reconstruction using YOLO, a computer vision algorithm capable of real\-time object identification with a single pass through a neural network. We obtain a reconstruction efficiency above 95% and a pion misidentification rate below 5% across a wide momentum range for all particle species.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2509.26273v1)
+
+---
+
+
+## YOLO\-Based Defect Detection for Metal Sheets / 
+
+发布日期：2025-09-30
+
+作者：Po\-Heng Chou
+
+摘要：In this paper, we propose a YOLO\-based deep learning \(DL\) model for automatic defect detection to solve the time\-consuming and labor\-intensive tasks in industrial manufacturing. In our experiments, the images of metal sheets are used as the dataset for training the YOLO model to detect the defects on the surfaces and in the holes of metal sheets. However, the lack of metal sheet images significantly degrades the performance of detection accuracy. To address this issue, the ConSinGAN is used to generate a considerable amount of data. Four versions of the YOLO model \(i.e., YOLOv3, v4, v7, and v9\) are combined with the ConSinGAN for data augmentation. The proposed YOLOv9 model with ConSinGAN outperforms the other YOLO models with an accuracy of 91.3%, and a detection time of 146 ms. The proposed YOLOv9 model is integrated into manufacturing hardware and a supervisory control and data acquisition \(SCADA\) system to establish a practical automated optical inspection \(AOI\) system. Additionally, the proposed automated defect detection is easily applied to other components in industrial manufacturing.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2509.25659v1)
+
+---
+
+
+## Using Images from a Video Game to Improve the Detection of Truck Axles / 
+
+发布日期：2025-09-30
+
+作者：Leandro Arab Marcomini
+
+摘要：Convolutional Neural Networks \(CNNs\) traditionally require large amounts of data to train models with good performance. However, data collection is an expensive process, both in time and resources. Generated synthetic images are a good alternative, with video games producing realistic 3D models. This paper aims to determine whether images extracted from a video game can be effectively used to train a CNN to detect real\-life truck axles. Three different databases were created, with real\-life and synthetic trucks, to provide training and testing examples for three different You Only Look Once \(YOLO\) architectures. Results were evaluated based on four metrics: recall, precision, F1\-score, and mean Average Precision \(mAP\). To evaluate the statistical significance of the results, the Mann\-Whitney U test was also applied to the resulting mAP of all models. Synthetic images from trucks extracted from a video game proved to be a reliable source of training data, contributing to the performance of all networks. The highest mAP score reached 99%. Results indicate that synthetic images can be used to train neural networks, providing a reliable, low\-cost data source for extracting knowledge.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2509.25644v1)
+
+---
+
+
+## YOLO26: Key Architectural Enhancements and Performance Benchmarking for Real\-Time Object Detection / 
+
+发布日期：2025-09-29
+
+作者：Ranjan Sapkota
+
+摘要：This study presents a comprehensive analysis of Ultralytics YOLO26, highlighting its key architectural enhancements and performance benchmarking for real\-time object detection. YOLO26, released in September 2025, stands as the newest and most advanced member of the YOLO family, purpose\-built to deliver efficiency, accuracy, and deployment readiness on edge and low\-power devices. The paper sequentially details architectural innovations of YOLO26, including the removal of Distribution Focal Loss \(DFL\), adoption of end\-to\-end NMS\-free inference, integration of ProgLoss and Small\-Target\-Aware Label Assignment \(STAL\), and the introduction of the MuSGD optimizer for stable convergence. Beyond architecture, the study positions YOLO26 as a multi\-task framework, supporting object detection, instance segmentation, pose/keypoints estimation, oriented detection, and classification. We present performance benchmarks of YOLO26 on edge devices such as NVIDIA Jetson Nano and Orin, comparing its results with YOLOv8, YOLOv11, YOLOv12, YOLOv13, and transformer\-based detectors\(RF\-DETR and RT\-DETR\). This paper further explores real\-time deployment pathways, flexible export options \(ONNX, TensorRT, CoreML, TFLite\), and quantization for INT8/FP16. Practical use cases of YOLO26 across robotics, manufacturing, and IoT are highlighted to demonstrate cross\-industry adaptability. Finally, insights on deployment efficiency and broader implications are discussed, with future directions for YOLO26 and the YOLO lineage outlined.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2509.25164v2)
+
+---
+
+
 ## Enhanced Fracture Diagnosis Based on Critical Regional and Scale Aware in YOLO / 
 
 发布日期：2025-09-27
@@ -15,78 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2509.23408v1)
-
----
-
-
-## TRAX: TRacking Axles for Accurate Axle Count Estimation / 
-
-发布日期：2025-09-27
-
-作者：Avinash Rai
-
-摘要：Accurate counting of vehicle axles is essential for traffic control, toll collection, and infrastructure development. We present an end\-to\-end, video\-based pipeline for axle counting that tackles limitations of previous works in dense environments. Our system leverages a combination of YOLO\-OBB to detect and categorize vehicles, and YOLO to detect tires. Detected tires are intelligently associated to their respective parent vehicles, enabling accurate axle prediction even in complex scenarios. However, there are a few challenges in detection when it comes to scenarios with longer and occluded vehicles. We mitigate vehicular occlusions and partial detections for longer vehicles by proposing a novel TRAX \(Tire and Axle Tracking\) Algorithm to successfully track axle\-related features between frames. Our method stands out by significantly reducing false positives and improving the accuracy of axle\-counting for long vehicles, demonstrating strong robustness in real\-world traffic videos. This work represents a significant step toward scalable, AI\-driven axle counting systems, paving the way for machine vision to replace legacy roadside infrastructure.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2509.23171v1)
-
----
-
-
-## TY\-RIST: Tactical YOLO Tricks for Real\-time Infrared Small Target Detection / 
-
-发布日期：2025-09-26
-
-作者：Abdulkarim Atrash
-
-摘要：Infrared small target detection \(IRSTD\) is critical for defense and surveillance but remains challenging due to \(1\) target loss from minimal features, \(2\) false alarms in cluttered environments, \(3\) missed detections from low saliency, and \(4\) high computational costs. To address these issues, we propose TY\-RIST, an optimized YOLOv12n architecture that integrates \(1\) a stride\-aware backbone with fine\-grained receptive fields, \(2\) a high\-resolution detection head, \(3\) cascaded coordinate attention blocks, and \(4\) a branch pruning strategy that reduces computational cost by about 25.5% while marginally improving accuracy and enabling real\-time inference. We also incorporate the Normalized Gaussian Wasserstein Distance \(NWD\) to enhance regression stability. Extensive experiments on four benchmarks and across 20 different models demonstrate state\-of\-the\-art performance, improving mAP at 0.5 IoU by \+7.9%, Precision by \+3%, and Recall by \+10.2%, while achieving up to 123 FPS on a single GPU. Cross\-dataset validation on a fifth dataset further confirms strong generalization capability. Additional results and resources are available at https://www.github.com/moured/TY\-RIST
-
-中文摘要：
-
-
-代码链接：https://www.github.com/moured/TY-RIST
-
-论文链接：[阅读更多](http://arxiv.org/abs/2509.22909v1)
-
----
-
-
-## HierLight\-YOLO: A Hierarchical and Lightweight Object Detection Network for UAV Photography / 
-
-发布日期：2025-09-26
-
-作者：Defan Chen
-
-摘要：The real\-time detection of small objects in complex scenes, such as the unmanned aerial vehicle \(UAV\) photography captured by drones, has dual challenges of detecting small targets \(<32 pixels\) and maintaining real\-time efficiency on resource\-constrained platforms. While YOLO\-series detectors have achieved remarkable success in real\-time large object detection, they suffer from significantly higher false negative rates for drone\-based detection where small objects dominate, compared to large object scenarios. This paper proposes HierLight\-YOLO, a hierarchical feature fusion and lightweight model that enhances the real\-time detection of small objects, based on the YOLOv8 architecture. We propose the Hierarchical Extended Path Aggregation Network \(HEPAN\), a multi\-scale feature fusion method through hierarchical cross\-level connections, enhancing the small object detection accuracy. HierLight\-YOLO includes two innovative lightweight modules: Inverted Residual Depthwise Convolution Block \(IRDCB\) and Lightweight Downsample \(LDown\) module, which significantly reduce the model's parameters and computational complexity without sacrificing detection capabilities. Small object detection head is designed to further enhance spatial resolution and feature fusion to tackle the tiny object \(4 pixels\) detection. Comparison experiments and ablation studies on the VisDrone2019 benchmark demonstrate state\-of\-the\-art performance of HierLight\-YOLO.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2509.22365v1)
-
----
-
-
-## MS\-YOLO: Infrared Object Detection for Edge Deployment via MobileNetV4 and SlideLoss / 
-
-发布日期：2025-09-25
-
-作者：Jiali Zhang
-
-摘要：Infrared imaging has emerged as a robust solution for urban object detection under low\-light and adverse weather conditions, offering significant advantages over traditional visible\-light cameras. However, challenges such as class imbalance, thermal noise, and computational constraints can significantly hinder model performance in practical settings. To address these issues, we evaluate multiple YOLO variants on the FLIR ADAS V2 dataset, ultimately selecting YOLOv8 as our baseline due to its balanced accuracy and efficiency. Building on this foundation, we present texttt\{MS\-YOLO\} \(textbf\{M\}obileNetv4 and textbf\{S\}lideLoss based on YOLO\), which replaces YOLOv8's CSPDarknet backbone with the more efficient MobileNetV4, reducing computational overhead by textbf\{1.5%\} while sustaining high accuracy. In addition, we introduce emph\{SlideLoss\}, a novel loss function that dynamically emphasizes under\-represented and occluded samples, boosting precision without sacrificing recall. Experiments on the FLIR ADAS V2 benchmark show that texttt\{MS\-YOLO\} attains competitive mAP and superior precision while operating at only textbf\{6.7 GFLOPs\}. These results demonstrate that texttt\{MS\-YOLO\} effectively addresses the dual challenge of maintaining high detection quality while minimizing computational costs, making it well\-suited for real\-time edge deployment in urban environments.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2509.21696v1)
 
 ---
 
