@@ -1,6 +1,78 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Anomaly\-Aware YOLO: A Frugal yet Robust Approach to Infrared Small Target Detection / 
+
+发布日期：2025-10-06
+
+作者：Alina Ciocarlan
+
+摘要：Infrared Small Target Detection \(IRSTD\) is a challenging task in defense applications, where complex backgrounds and tiny target sizes often result in numerous false alarms using conventional object detectors. To overcome this limitation, we propose Anomaly\-Aware YOLO \(AA\-YOLO\), which integrates a statistical anomaly detection test into its detection head. By treating small targets as unexpected patterns against the background, AA\-YOLO effectively controls the false alarm rate. Our approach not only achieves competitive performance on several IRSTD benchmarks, but also demonstrates remarkable robustness in scenarios with limited training data, noise, and domain shifts. Furthermore, since only the detection head is modified, our design is highly generic and has been successfully applied across various YOLO backbones, including lightweight models. It also provides promising results when integrated into an instance segmentation YOLO. This versatility makes AA\-YOLO an attractive solution for real\-world deployments where resources are constrained. The code will be publicly released.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2510.04741v1)
+
+---
+
+
+## Bio\-Inspired Robotic Houbara: From Development to Field Deployment for Behavioral Studies / 
+
+发布日期：2025-10-06
+
+作者：Lyes Saad Saoud
+
+摘要：Biomimetic intelligence and robotics are transforming field ecology by enabling lifelike robotic surrogates that interact naturally with animals under real world conditions. Studying avian behavior in the wild remains challenging due to the need for highly realistic morphology, durable outdoor operation, and intelligent perception that can adapt to uncontrolled environments. We present a next generation bio inspired robotic platform that replicates the morphology and visual appearance of the female Houbara bustard to support controlled ethological studies and conservation oriented field research. The system introduces a fully digitally replicable fabrication workflow that combines high resolution structured light 3D scanning, parametric CAD modelling, articulated 3D printing, and photorealistic UV textured vinyl finishing to achieve anatomically accurate and durable robotic surrogates. A six wheeled rocker bogie chassis ensures stable mobility on sand and irregular terrain, while an embedded NVIDIA Jetson module enables real time RGB and thermal perception, lightweight YOLO based detection, and an autonomous visual servoing loop that aligns the robot's head toward detected targets without human intervention. A lightweight thermal visible fusion module enhances perception in low light conditions. Field trials in desert aviaries demonstrated reliable real time operation at 15 to 22 FPS with latency under 100 ms and confirmed that the platform elicits natural recognition and interactive responses from live Houbara bustards under harsh outdoor conditions. This integrated framework advances biomimetic field robotics by uniting reproducible digital fabrication, embodied visual intelligence, and ecological validation, providing a transferable blueprint for animal robot interaction research, conservation robotics, and public engagement.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2510.04692v1)
+
+---
+
+
+## Road Damage and Manhole Detection using Deep Learning for Smart Cities: A Polygonal Annotation Approach / 
+
+发布日期：2025-10-04
+
+作者：Rasel Hossen
+
+摘要：Urban safety and infrastructure maintenance are critical components of smart city development. Manual monitoring of road damages is time\-consuming, highly costly, and error\-prone. This paper presents a deep learning approach for automated road damage and manhole detection using the YOLOv9 algorithm with polygonal annotations. Unlike traditional bounding box annotation, we employ polygonal annotations for more precise localization of road defects. We develop a novel dataset comprising more than one thousand images which are mostly collected from Dhaka, Bangladesh. This dataset is used to train a YOLO\-based model for three classes, namely Broken, Not Broken, and Manhole. We achieve 78.1% overall image\-level accuracy. The YOLOv9 model demonstrates strong performance for Broken \(86.7% F1\-score\) and Not Broken \(89.2% F1\-score\) classes, with challenges in Manhole detection \(18.2% F1\-score\) due to class imbalance. Our approach offers an efficient and scalable solution for monitoring urban infrastructure in developing countries.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2510.03797v1)
+
+---
+
+
+## Real\-Time Threaded Houbara Detection and Segmentation for Wildlife Conservation using Mobile Platforms / 
+
+发布日期：2025-10-03
+
+作者：Lyes Saad Saoud
+
+摘要：Real\-time animal detection and segmentation in natural environments are vital for wildlife conservation, enabling non\-invasive monitoring through remote camera streams. However, these tasks remain challenging due to limited computational resources and the cryptic appearance of many species. We propose a mobile\-optimized two\-stage deep learning framework that integrates a Threading Detection Model \(TDM\) to parallelize YOLOv10\-based detection and MobileSAM\-based segmentation. Unlike prior YOLO\+SAM pipelines, our approach improves real\-time performance by reducing latency through threading. YOLOv10 handles detection while MobileSAM performs lightweight segmentation, both executed concurrently for efficient resource use. On the cryptic Houbara Bustard, a conservation\-priority species, our model achieves mAP50 of 0.9627, mAP75 of 0.7731, mAP95 of 0.7178, and a MobileSAM mIoU of 0.7421. YOLOv10 operates at 43.7 ms per frame, confirming real\-time readiness. We introduce a curated Houbara dataset of 40,000 annotated images to support model training and evaluation across diverse conditions. The code and dataset used in this study are publicly available on GitHub at https://github.com/LyesSaadSaoud/mobile\-houbara\-detseg. For interactive demos and additional resources, visit https://lyessaadsaoud.github.io/LyesSaadSaoud\-Threaded\-YOLO\-SAM\-Houbara.
+
+中文摘要：
+
+
+代码链接：https://github.com/LyesSaadSaoud/mobile-houbara-detseg.，https://lyessaadsaoud.github.io/LyesSaadSaoud-Threaded-YOLO-SAM-Houbara.
+
+论文链接：[阅读更多](http://arxiv.org/abs/2510.03501v1)
+
+---
+
+
 ## Automated Defect Detection for Mass\-Produced Electronic Components Based on YOLO Object Detection Models / 
 
 发布日期：2025-10-02
@@ -14,79 +86,7 @@
 
 代码链接：摘要中未找到代码链接。
 
-论文链接：[阅读更多](http://arxiv.org/abs/2510.01914v1)
-
----
-
-
-## AdvEvo\-MARL: Shaping Internalized Safety through Adversarial Co\-Evolution in Multi\-Agent Reinforcement Learning / 
-
-发布日期：2025-10-02
-
-作者：Zhenyu Pan
-
-摘要：LLM\-based multi\-agent systems excel at planning, tool use, and role coordination, but their openness and interaction complexity also expose them to jailbreak, prompt\-injection, and adversarial collaboration. Existing defenses fall into two lines: \(i\) self\-verification that asks each agent to pre\-filter unsafe instructions before execution, and \(ii\) external guard modules that police behaviors. The former often underperforms because a standalone agent lacks sufficient capacity to detect cross\-agent unsafe chains and delegation\-induced risks; the latter increases system overhead and creates a single\-point\-of\-failure\-once compromised, system\-wide safety collapses, and adding more guards worsens cost and complexity. To solve these challenges, we propose AdvEvo\-MARL, a co\-evolutionary multi\-agent reinforcement learning framework that internalizes safety into task agents. Rather than relying on external guards, AdvEvo\-MARL jointly optimizes attackers \(which synthesize evolving jailbreak prompts\) and defenders \(task agents trained to both accomplish their duties and resist attacks\) in adversarial learning environments. To stabilize learning and foster cooperation, we introduce a public baseline for advantage estimation: agents within the same functional group share a group\-level mean\-return baseline, enabling lower\-variance updates and stronger intra\-group coordination. Across representative attack scenarios, AdvEvo\-MARL consistently keeps attack\-success rate \(ASR\) below 20%, whereas baselines reach up to 38.33%, while preserving\-and sometimes improving\-task accuracy \(up to \+3.67% on reasoning tasks\). These results show that safety and utility can be jointly improved without relying on extra guard agents or added system overhead.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2510.01586v1)
-
----
-
-
-## Forestpest\-YOLO: A High\-Performance Detection Framework for Small Forestry Pests / 
-
-发布日期：2025-10-01
-
-作者：Aoduo Li
-
-摘要：Detecting agricultural pests in complex forestry environments using remote sensing imagery is fundamental for ecological preservation, yet it is severely hampered by practical challenges. Targets are often minuscule, heavily occluded, and visually similar to the cluttered background, causing conventional object detection models to falter due to the loss of fine\-grained features and an inability to handle extreme data imbalance. To overcome these obstacles, this paper introduces Forestpest\-YOLO, a detection framework meticulously optimized for the nuances of forestry remote sensing. Building upon the YOLOv8 architecture, our framework introduces a synergistic trio of innovations. We first integrate a lossless downsampling module, SPD\-Conv, to ensure that critical high\-resolution details of small targets are preserved throughout the network. This is complemented by a novel cross\-stage feature fusion block, CSPOK, which dynamically enhances multi\-scale feature representation while suppressing background noise. Finally, we employ VarifocalLoss to refine the training objective, compelling the model to focus on high\-quality and hard\-to\-classify samples. Extensive experiments on our challenging, self\-constructed ForestPest dataset demonstrate that Forestpest\-YOLO achieves state\-of\-the\-art performance, showing marked improvements in detecting small, occluded pests and significantly outperforming established baseline models.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2510.00547v1)
-
----
-
-
-## VLOD\-TTA: Test\-Time Adaptation of Vision\-Language Object Detectors / 
-
-发布日期：2025-10-01
-
-作者：Atif Belal
-
-摘要：Vision\-language object detectors \(VLODs\) such as YOLO\-World and Grounding DINO achieve impressive zero\-shot recognition by aligning region proposals with text representations. However, their performance often degrades under domain shift. We introduce VLOD\-TTA, a test\-time adaptation \(TTA\) framework for VLODs that leverages dense proposal overlap and image\-conditioned prompt scores. First, an IoU\-weighted entropy objective is proposed that concentrates adaptation on spatially coherent proposal clusters and reduces confirmation bias from isolated boxes. Second, image\-conditioned prompt selection is introduced, which ranks prompts by image\-level compatibility and fuses the most informative prompts with the detector logits. Our benchmarking across diverse distribution shifts \-\- including stylized domains, driving scenes, low\-light conditions, and common corruptions \-\- shows the effectiveness of our method on two state\-of\-the\-art VLODs, YOLO\-World and Grounding DINO, with consistent improvements over the zero\-shot and TTA baselines. Code : https://github.com/imatif17/VLOD\-TTA
-
-中文摘要：
-
-
-代码链接：https://github.com/imatif17/VLOD-TTA
-
-论文链接：[阅读更多](http://arxiv.org/abs/2510.00458v1)
-
----
-
-
-## Rings of Light, Speed of AI: YOLO for Cherenkov Reconstruction / 
-
-发布日期：2025-09-30
-
-作者：Martino Borsato
-
-摘要：Cherenkov rings play a crucial role in identifying charged particles in high\-energy physics \(HEP\) experiments. Most Cherenkov ring pattern reconstruction algorithms currently used in HEP experiments rely on a likelihood fit to the photo\-detector response, which often consumes a significant portion of the computing budget for event reconstruction. We present a novel approach to Cherenkov ring reconstruction using YOLO, a computer vision algorithm capable of real\-time object identification with a single pass through a neural network. We obtain a reconstruction efficiency above 95% and a pion misidentification rate below 5% across a wide momentum range for all particle species.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2509.26273v1)
+论文链接：[阅读更多](http://arxiv.org/abs/2510.01914v2)
 
 ---
 
