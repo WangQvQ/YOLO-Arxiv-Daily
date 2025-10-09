@@ -1,6 +1,42 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## LogSTOP: Temporal Scores over Prediction Sequences for Matching and Retrieval / 
+
+发布日期：2025-10-07
+
+作者：Avishree Khare
+
+摘要：Neural models such as YOLO and HuBERT can be used to detect local properties such as objects \("car"\) and emotions \("angry"\) in individual frames of videos and audio clips respectively. The likelihood of these detections is indicated by scores in \[0, 1\]. Lifting these scores to temporal properties over sequences can be useful for several downstream applications such as query matching \(e.g., "does the speaker eventually sound happy in this audio clip?"\), and ranked retrieval \(e.g., "retrieve top 5 videos with a 10 second scene where a car is detected until a pedestrian is detected"\). In this work, we formalize this problem of assigning Scores for TempOral Properties \(STOPs\) over sequences, given potentially noisy score predictors for local properties. We then propose a scoring function called LogSTOP that can efficiently compute these scores for temporal properties represented in Linear Temporal Logic. Empirically, LogSTOP, with YOLO and HuBERT, outperforms Large Vision / Audio Language Models and other Temporal Logic\-based baselines by at least 16% on query matching with temporal properties over objects\-in\-videos and emotions\-in\-speech respectively. Similarly, on ranked retrieval with temporal properties over objects and actions in videos, LogSTOP with Grounding DINO and SlowR50 reports at least a 19% and 16% increase in mean average precision and recall over zero\-shot text\-to\-video retrieval baselines respectively.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2510.06512v1)
+
+---
+
+
+## Video\-LMM Post\-Training: A Deep Dive into Video Reasoning with Large Multimodal Models / 
+
+发布日期：2025-10-06
+
+作者：Yolo Yunlong Tang
+
+摘要：Video understanding represents the most challenging frontier in computer vision, requiring models to reason about complex spatiotemporal relationships, long\-term dependencies, and multimodal evidence. The recent emergence of Video\-Large Multimodal Models \(Video\-LMMs\), which integrate visual encoders with powerful decoder\-based language models, has demonstrated remarkable capabilities in video understanding tasks. However, the critical phase that transforms these models from basic perception systems into sophisticated reasoning engines, post\-training, remains fragmented across the literature. This survey provides the first comprehensive examination of post\-training methodologies for Video\-LMMs, encompassing three fundamental pillars: supervised fine\-tuning \(SFT\) with chain\-of\-thought, reinforcement learning \(RL\) from verifiable objectives, and test\-time scaling \(TTS\) through enhanced inference computation. We present a structured taxonomy that clarifies the roles, interconnections, and video\-specific adaptations of these techniques, addressing unique challenges such as temporal localization, spatiotemporal grounding, long video efficiency, and multimodal evidence integration. Through systematic analysis of representative methods, we synthesize key design principles, insights, and evaluation protocols while identifying critical open challenges in reward design, scalability, and cost\-performance optimization. We further curate essential benchmarks, datasets, and metrics to facilitate rigorous assessment of post\-training effectiveness. This survey aims to provide researchers and practitioners with a unified framework for advancing Video\-LMM capabilities. Additional resources and updates are maintained at: https://github.com/yunlong10/Awesome\-Video\-LMM\-Post\-Training
+
+中文摘要：
+
+
+代码链接：https://github.com/yunlong10/Awesome-Video-LMM-Post-Training
+
+论文链接：[阅读更多](http://arxiv.org/abs/2510.05034v2)
+
+---
+
+
 ## Anomaly\-Aware YOLO: A Frugal yet Robust Approach to Infrared Small Target Detection / 
 
 发布日期：2025-10-06
@@ -51,42 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2510.03797v1)
-
----
-
-
-## Real\-Time Threaded Houbara Detection and Segmentation for Wildlife Conservation using Mobile Platforms / 
-
-发布日期：2025-10-03
-
-作者：Lyes Saad Saoud
-
-摘要：Real\-time animal detection and segmentation in natural environments are vital for wildlife conservation, enabling non\-invasive monitoring through remote camera streams. However, these tasks remain challenging due to limited computational resources and the cryptic appearance of many species. We propose a mobile\-optimized two\-stage deep learning framework that integrates a Threading Detection Model \(TDM\) to parallelize YOLOv10\-based detection and MobileSAM\-based segmentation. Unlike prior YOLO\+SAM pipelines, our approach improves real\-time performance by reducing latency through threading. YOLOv10 handles detection while MobileSAM performs lightweight segmentation, both executed concurrently for efficient resource use. On the cryptic Houbara Bustard, a conservation\-priority species, our model achieves mAP50 of 0.9627, mAP75 of 0.7731, mAP95 of 0.7178, and a MobileSAM mIoU of 0.7421. YOLOv10 operates at 43.7 ms per frame, confirming real\-time readiness. We introduce a curated Houbara dataset of 40,000 annotated images to support model training and evaluation across diverse conditions. The code and dataset used in this study are publicly available on GitHub at https://github.com/LyesSaadSaoud/mobile\-houbara\-detseg. For interactive demos and additional resources, visit https://lyessaadsaoud.github.io/LyesSaadSaoud\-Threaded\-YOLO\-SAM\-Houbara.
-
-中文摘要：
-
-
-代码链接：https://github.com/LyesSaadSaoud/mobile-houbara-detseg.，https://lyessaadsaoud.github.io/LyesSaadSaoud-Threaded-YOLO-SAM-Houbara.
-
-论文链接：[阅读更多](http://arxiv.org/abs/2510.03501v1)
-
----
-
-
-## Automated Defect Detection for Mass\-Produced Electronic Components Based on YOLO Object Detection Models / 
-
-发布日期：2025-10-02
-
-作者：Wei\-Lung Mao
-
-摘要：Since the defect detection of conventional industry components is time\-consuming and labor\-intensive, it leads to a significant burden on quality inspection personnel and makes it difficult to manage product quality. In this paper, we propose an automated defect detection system for the dual in\-line package \(DIP\) that is widely used in industry, using digital camera optics and a deep learning \(DL\)\-based model. The two most common defect categories of DIP are examined: \(1\) surface defects, and \(2\) pin\-leg defects. However, the lack of defective component images leads to a challenge for detection tasks. To solve this problem, the ConSinGAN is used to generate a suitable\-sized dataset for training and testing. Four varieties of the YOLO model are investigated \(v3, v4, v7, and v9\), both in isolation and with the ConSinGAN augmentation. The proposed YOLOv7 with ConSinGAN is superior to the other YOLO versions in accuracy of 95.50%, detection time of 285 ms, and is far superior to threshold\-based approaches. In addition, the supervisory control and data acquisition \(SCADA\) system is developed, and the associated sensor architecture is described. The proposed automated defect detection can be easily established with numerous types of defects or insufficient defect data.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2510.01914v2)
 
 ---
 
