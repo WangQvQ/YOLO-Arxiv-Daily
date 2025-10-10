@@ -32,7 +32,7 @@
 
 代码链接：https://github.com/yunlong10/Awesome-Video-LMM-Post-Training
 
-论文链接：[阅读更多](http://arxiv.org/abs/2510.05034v2)
+论文链接：[阅读更多](http://arxiv.org/abs/2510.05034v3)
 
 ---
 
