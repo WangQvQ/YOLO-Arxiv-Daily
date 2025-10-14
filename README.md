@@ -1,92 +1,92 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
-## Re\-Identifying Kākā with AI\-Automated Video Key Frame Extraction / 
+## Enhancing Maritime Domain Awareness on Inland Waterways: A YOLO\-Based Fusion of Satellite and AIS for Vessel Characterization / 
 
-发布日期：2025-10-09
+发布日期：2025-10-13
 
-作者：Paula Maddigan
+作者：Geoffery Agorku
 
-摘要：Accurate recognition and re\-identification of individual animals is essential for successful wildlife population monitoring. Traditional methods, such as leg banding of birds, are time consuming and invasive. Recent progress in artificial intelligence, particularly computer vision, offers encouraging solutions for smart conservation and efficient automation. This study presents a unique pipeline for extracting high\-quality key frames from videos of k=\{a\}k=\{a\} \(Nestor meridionalis\), a threatened forest\-dwelling parrot in New Zealand. Key frame extraction is well\-studied in person re\-identification, however, its application to wildlife is limited. Using video recordings at a custom\-built feeder, we extract key frames and evaluate the re\-identification performance of our pipeline. Our unsupervised methodology combines object detection using YOLO and Grounding DINO, optical flow blur detection, image encoding with DINOv2, and clustering methods to identify representative key frames. The results indicate that our proposed key frame selection methods yield image collections which achieve high accuracy in k=\{a\}k=\{a\} re\-identification, providing a foundation for future research using media collected in more diverse and challenging environments. Through the use of artificial intelligence and computer vision, our non\-invasive and efficient approach provides a valuable alternative to traditional physical tagging methods for recognising k=\{a\}k=\{a\} individuals and therefore improving the monitoring of populations. This research contributes to developing fresh approaches in wildlife monitoring, with applications in ecology and conservation biology.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2510.08775v1)
-
----
-
-
-## LogSTOP: Temporal Scores over Prediction Sequences for Matching and Retrieval / 
-
-发布日期：2025-10-07
-
-作者：Avishree Khare
-
-摘要：Neural models such as YOLO and HuBERT can be used to detect local properties such as objects \("car"\) and emotions \("angry"\) in individual frames of videos and audio clips respectively. The likelihood of these detections is indicated by scores in \[0, 1\]. Lifting these scores to temporal properties over sequences can be useful for several downstream applications such as query matching \(e.g., "does the speaker eventually sound happy in this audio clip?"\), and ranked retrieval \(e.g., "retrieve top 5 videos with a 10 second scene where a car is detected until a pedestrian is detected"\). In this work, we formalize this problem of assigning Scores for TempOral Properties \(STOPs\) over sequences, given potentially noisy score predictors for local properties. We then propose a scoring function called LogSTOP that can efficiently compute these scores for temporal properties represented in Linear Temporal Logic. Empirically, LogSTOP, with YOLO and HuBERT, outperforms Large Vision / Audio Language Models and other Temporal Logic\-based baselines by at least 16% on query matching with temporal properties over objects\-in\-videos and emotions\-in\-speech respectively. Similarly, on ranked retrieval with temporal properties over objects and actions in videos, LogSTOP with Grounding DINO and SlowR50 reports at least a 19% and 16% increase in mean average precision and recall over zero\-shot text\-to\-video retrieval baselines respectively.
+摘要：Maritime Domain Awareness \(MDA\) for inland waterways remains challenged by cooperative system vulnerabilities. This paper presents a novel framework that fuses high\-resolution satellite imagery with vessel trajectory data from the Automatic Identification System \(AIS\). This work addresses the limitations of AIS\-based monitoring by leveraging non\-cooperative satellite imagery and implementing a fusion approach that links visual detections with AIS data to identify dark vessels, validate cooperative traffic, and support advanced MDA. The You Only Look Once \(YOLO\) v11 object detection model is used to detect and characterize vessels and barges by vessel type, barge cover, operational status, barge count, and direction of travel. An annotated data set of 4,550 instances was developed from $5\{,\}973~mathrm\{mi\}^2$ of Lower Mississippi River imagery. Evaluation on a held\-out test set demonstrated vessel classification \(tugboat, crane barge, bulk carrier, cargo ship, and hopper barge\) with an F1 score of 95.8%; barge cover \(covered or uncovered\) detection yielded an F1 score of 91.6%; operational status \(staged or in motion\) classification reached an F1 score of 99.4%. Directionality \(upstream, downstream\) yielded 93.8% accuracy. The barge count estimation resulted in a mean absolute error \(MAE\) of 2.4 barges. Spatial transferability analysis across geographically disjoint river segments showed accuracy was maintained as high as 98%. These results underscore the viability of integrating non\-cooperative satellite sensing with AIS fusion. This approach enables near\-real\-time fleet inventories, supports anomaly detection, and generates high\-quality data for inland waterway surveillance. Future work will expand annotated datasets, incorporate temporal tracking, and explore multi\-modal deep learning to further enhance operational scalability.
 
 中文摘要：
 
 
 代码链接：摘要中未找到代码链接。
 
-论文链接：[阅读更多](http://arxiv.org/abs/2510.06512v1)
+论文链接：[阅读更多](http://arxiv.org/abs/2510.11449v1)
 
 ---
 
 
-## Video\-LMM Post\-Training: A Deep Dive into Video Reasoning with Large Multimodal Models / 
+## When Does Supervised Training Pay Off? The Hidden Economics of Object Detection in the Era of Vision\-Language Models / 
 
-发布日期：2025-10-06
+发布日期：2025-10-13
 
-作者：Yolo Yunlong Tang
+作者：Samer Al\-Hamadani
 
-摘要：Video understanding represents the most challenging frontier in computer vision, requiring models to reason about complex spatiotemporal relationships, long\-term dependencies, and multimodal evidence. The recent emergence of Video\-Large Multimodal Models \(Video\-LMMs\), which integrate visual encoders with powerful decoder\-based language models, has demonstrated remarkable capabilities in video understanding tasks. However, the critical phase that transforms these models from basic perception systems into sophisticated reasoning engines, post\-training, remains fragmented across the literature. This survey provides the first comprehensive examination of post\-training methodologies for Video\-LMMs, encompassing three fundamental pillars: supervised fine\-tuning \(SFT\) with chain\-of\-thought, reinforcement learning \(RL\) from verifiable objectives, and test\-time scaling \(TTS\) through enhanced inference computation. We present a structured taxonomy that clarifies the roles, interconnections, and video\-specific adaptations of these techniques, addressing unique challenges such as temporal localization, spatiotemporal grounding, long video efficiency, and multimodal evidence integration. Through systematic analysis of representative methods, we synthesize key design principles, insights, and evaluation protocols while identifying critical open challenges in reward design, scalability, and cost\-performance optimization. We further curate essential benchmarks, datasets, and metrics to facilitate rigorous assessment of post\-training effectiveness. This survey aims to provide researchers and practitioners with a unified framework for advancing Video\-LMM capabilities. Additional resources and updates are maintained at: https://github.com/yunlong10/Awesome\-Video\-LMM\-Post\-Training
-
-中文摘要：
-
-
-代码链接：https://github.com/yunlong10/Awesome-Video-LMM-Post-Training
-
-论文链接：[阅读更多](http://arxiv.org/abs/2510.05034v3)
-
----
-
-
-## Anomaly\-Aware YOLO: A Frugal yet Robust Approach to Infrared Small Target Detection / 
-
-发布日期：2025-10-06
-
-作者：Alina Ciocarlan
-
-摘要：Infrared Small Target Detection \(IRSTD\) is a challenging task in defense applications, where complex backgrounds and tiny target sizes often result in numerous false alarms using conventional object detectors. To overcome this limitation, we propose Anomaly\-Aware YOLO \(AA\-YOLO\), which integrates a statistical anomaly detection test into its detection head. By treating small targets as unexpected patterns against the background, AA\-YOLO effectively controls the false alarm rate. Our approach not only achieves competitive performance on several IRSTD benchmarks, but also demonstrates remarkable robustness in scenarios with limited training data, noise, and domain shifts. Furthermore, since only the detection head is modified, our design is highly generic and has been successfully applied across various YOLO backbones, including lightweight models. It also provides promising results when integrated into an instance segmentation YOLO. This versatility makes AA\-YOLO an attractive solution for real\-world deployments where resources are constrained. The code will be publicly released.
+摘要：Object detection systems have traditionally relied on supervised learning with manually annotated bounding boxes, achieving high accuracy at the cost of substantial annotation investment. The emergence of Vision\-Language Models \(VLMs\) offers an alternative paradigm enabling zero\-shot detection through natural language queries, eliminating annotation requirements but operating with reduced accuracy. This paper presents the first comprehensive cost\-effectiveness analysis comparing supervised detection \(YOLO\) with zero\-shot VLM inference \(Gemini Flash 2.5\). Through systematic evaluation on 1,000 stratified COCO images and 200 diverse product images spanning consumer electronics and rare categories, combined with detailed Total Cost of Ownership modeling, we establish quantitative break\-even thresholds governing architecture selection. Our findings reveal that supervised YOLO achieves 91.2% accuracy versus 68.5% for zero\-shot Gemini on standard categories, representing a 22.7 percentage point advantage that costs $10,800 in annotation for 100\-category systems. However, this advantage justifies investment only beyond 55 million inferences, equivalent to 151,000 images daily for one year. Zero\-shot Gemini demonstrates 52.3% accuracy on diverse product categories \(ranging from highly web\-prevalent consumer electronics at 75\-85% to rare specialized equipment at 25\-40%\) where supervised YOLO achieves 0% due to architectural constraints preventing detection of untrained classes. Cost per Correct Detection analysis reveals substantially lower per\-detection costs for Gemini \($0.00050 vs $0.143\) at 100,000 inferences despite accuracy deficits. We develop decision frameworks demonstrating that optimal architecture selection depends critically on deployment volume, category stability, budget constraints, and accuracy requirements rather than purely technical performance metrics.
 
 中文摘要：
 
 
 代码链接：摘要中未找到代码链接。
 
-论文链接：[阅读更多](http://arxiv.org/abs/2510.04741v1)
+论文链接：[阅读更多](http://arxiv.org/abs/2510.11302v1)
 
 ---
 
 
-## Bio\-Inspired Robotic Houbara: From Development to Field Deployment for Behavioral Studies / 
+## Slitless Spectroscopy Source Detection Using YOLO Deep Neural Network / 
 
-发布日期：2025-10-06
+发布日期：2025-10-13
 
-作者：Lyes Saad Saoud
+作者：Xiaohan Chen
 
-摘要：Biomimetic intelligence and robotics are transforming field ecology by enabling lifelike robotic surrogates that interact naturally with animals under real world conditions. Studying avian behavior in the wild remains challenging due to the need for highly realistic morphology, durable outdoor operation, and intelligent perception that can adapt to uncontrolled environments. We present a next generation bio inspired robotic platform that replicates the morphology and visual appearance of the female Houbara bustard to support controlled ethological studies and conservation oriented field research. The system introduces a fully digitally replicable fabrication workflow that combines high resolution structured light 3D scanning, parametric CAD modelling, articulated 3D printing, and photorealistic UV textured vinyl finishing to achieve anatomically accurate and durable robotic surrogates. A six wheeled rocker bogie chassis ensures stable mobility on sand and irregular terrain, while an embedded NVIDIA Jetson module enables real time RGB and thermal perception, lightweight YOLO based detection, and an autonomous visual servoing loop that aligns the robot's head toward detected targets without human intervention. A lightweight thermal visible fusion module enhances perception in low light conditions. Field trials in desert aviaries demonstrated reliable real time operation at 15 to 22 FPS with latency under 100 ms and confirmed that the platform elicits natural recognition and interactive responses from live Houbara bustards under harsh outdoor conditions. This integrated framework advances biomimetic field robotics by uniting reproducible digital fabrication, embodied visual intelligence, and ecological validation, providing a transferable blueprint for animal robot interaction research, conservation robotics, and public engagement.
+摘要：Slitless spectroscopy eliminates the need for slits, allowing light to pass directly through a prism or grism to generate a spectral dispersion image that encompasses all celestial objects within a specified area. This technique enables highly efficient spectral acquisition. However, when processing CSST slitless spectroscopy data, the unique design of its focal plane introduces a challenge: photometric and slitless spectroscopic images do not have a one\-to\-one correspondence. As a result, it becomes essential to first identify and count the sources in the slitless spectroscopic images before extracting spectra. To address this challenge, we employed the You Only Look Once \(YOLO\) object detection algorithm to develop a model for detecting targets in slitless spectroscopy images. This model was trained on 1,560 simulated CSST slitless spectroscopic images. These simulations were generated from the CSST Cycle 6 and Cycle 9 main survey data products, representing the Galactic and nearby galaxy regions and the high galactic latitude regions, respectively. On the validation set, the model achieved a precision of 88.6% and recall of 90.4% for spectral lines, and 87.0% and 80.8% for zeroth\-order images. In testing, it maintained a detection rate >80% for targets brighter than 21 mag \(medium\-density regions\) and 20 mag \(low\-density regions\) in the Galactic and nearby galaxies regions, and >70% for targets brighter than 18 mag in high galactic latitude regions.
 
 中文摘要：
 
 
 代码链接：摘要中未找到代码链接。
 
-论文链接：[阅读更多](http://arxiv.org/abs/2510.04692v1)
+论文链接：[阅读更多](http://arxiv.org/abs/2510.10922v1)
+
+---
+
+
+## MRS\-YOLO Railroad Transmission Line Foreign Object Detection Based on Improved YOLO11 and Channel Pruning / 
+
+发布日期：2025-10-12
+
+作者：Siyuan Liu
+
+摘要：Aiming at the problems of missed detection, false detection and low detection efficiency in transmission line foreign object detection under railway environment, we proposed an improved algorithm MRS\-YOLO based on YOLO11. Firstly, a multi\-scale Adaptive Kernel Depth Feature Fusion \(MAKDF\) module is proposed and fused with the C3k2 module to form C3k2\_MAKDF, which enhances the model's feature extraction capability for foreign objects of different sizes and shapes. Secondly, a novel Re\-calibration Feature Fusion Pyramid Network \(RCFPN\) is designed as a neck structure to enhance the model's ability to integrate and utilize multi\-level features effectively. Then, Spatial and Channel Reconstruction Detect Head \(SC\_Detect\) based on spatial and channel preprocessing is designed to enhance the model's overall detection performance. Finally, the channel pruning technique is used to reduce the redundancy of the improved model, drastically reduce Parameters and Giga Floating Point Operations Per Second \(GFLOPs\), and improve the detection efficiency. The experimental results show that the mAP50 and mAP50:95 of the MRS\-YOLO algorithm proposed in this paper are improved to 94.8% and 86.4%, respectively, which are 0.7 and 2.3 percentage points higher compared to the baseline, while Parameters and GFLOPs are reduced by 44.2% and 17.5%, respectively. It is demonstrated that the improved algorithm can be better applied to the task of foreign object detection in railroad transmission lines.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2510.10553v1)
+
+---
+
+
+## Ordinal Scale Traffic Congestion Classification with Multi\-Modal Vision\-Language and Motion Analysis / 
+
+发布日期：2025-10-11
+
+作者：Yu\-Hsuan Lin
+
+摘要：Accurate traffic congestion classification is essential for intelligent transportation systems and real\-time urban traffic management. This paper presents a multimodal framework combining open\-vocabulary visual\-language reasoning \(CLIP\), object detection \(YOLO\-World\), and motion analysis via MOG2\-based background subtraction. The system predicts congestion levels on an ordinal scale from 1 \(free flow\) to 5 \(severe congestion\), enabling semantically aligned and temporally consistent classification. To enhance interpretability, we incorporate motion\-based confidence weighting and generate annotated visual outputs. Experimental results show the model achieves 76.7 percent accuracy, an F1 score of 0.752, and a Quadratic Weighted Kappa \(QWK\) of 0.684, significantly outperforming unimodal baselines. These results demonstrate the framework's effectiveness in preserving ordinal structure and leveraging visual\-language and motion modalities. Future enhancements include incorporating vehicle sizing and refined density metrics.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2510.10342v1)
 
 ---
 
