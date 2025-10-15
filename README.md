@@ -1,6 +1,24 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Detect Anything via Next Point Prediction / 
+
+发布日期：2025-10-14
+
+作者：Qing Jiang
+
+摘要：Object detection has long been dominated by traditional coordinate regression\-based models, such as YOLO, DETR, and Grounding DINO. Although recent efforts have attempted to leverage MLLMs to tackle this task, they face challenges like low recall rate, duplicate predictions, coordinate misalignment, etc. In this work, we bridge this gap and propose Rex\-Omni, a 3B\-scale MLLM that achieves state\-of\-the\-art object perception performance. On benchmarks like COCO and LVIS, Rex\-Omni attains performance comparable to or exceeding regression\-based models \(e.g., DINO, Grounding DINO\) in a zero\-shot setting. This is enabled by three key designs: 1\) Task Formulation: we use special tokens to represent quantized coordinates from 0 to 999, reducing the model's learning difficulty and improving token efficiency for coordinate prediction; 2\) Data Engines: we construct multiple data engines to generate high\-quality grounding, referring, and pointing data, providing semantically rich supervision for training; 3\) Training Pipelines: we employ a two\-stage training process, combining supervised fine\-tuning on 22 million data with GRPO\-based reinforcement post\-training. This RL post\-training leverages geometry\-aware rewards to effectively bridge the discrete\-to\-continuous coordinate prediction gap, improve box accuracy, and mitigate undesirable behaviors like duplicate predictions that stem from the teacher\-guided nature of the initial SFT stage. Beyond conventional detection, Rex\-Omni's inherent language understanding enables versatile capabilities such as object referring, pointing, visual prompting, GUI grounding, spatial referring, OCR and key\-pointing, all systematically evaluated on dedicated benchmarks. We believe that Rex\-Omni paves the way for more versatile and language\-aware visual perception systems.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2510.12798v1)
+
+---
+
+
 ## Enhancing Maritime Domain Awareness on Inland Waterways: A YOLO\-Based Fusion of Satellite and AIS for Vessel Characterization / 
 
 发布日期：2025-10-13
@@ -69,24 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2510.10553v1)
-
----
-
-
-## Ordinal Scale Traffic Congestion Classification with Multi\-Modal Vision\-Language and Motion Analysis / 
-
-发布日期：2025-10-11
-
-作者：Yu\-Hsuan Lin
-
-摘要：Accurate traffic congestion classification is essential for intelligent transportation systems and real\-time urban traffic management. This paper presents a multimodal framework combining open\-vocabulary visual\-language reasoning \(CLIP\), object detection \(YOLO\-World\), and motion analysis via MOG2\-based background subtraction. The system predicts congestion levels on an ordinal scale from 1 \(free flow\) to 5 \(severe congestion\), enabling semantically aligned and temporally consistent classification. To enhance interpretability, we incorporate motion\-based confidence weighting and generate annotated visual outputs. Experimental results show the model achieves 76.7 percent accuracy, an F1 score of 0.752, and a Quadratic Weighted Kappa \(QWK\) of 0.684, significantly outperforming unimodal baselines. These results demonstrate the framework's effectiveness in preserving ordinal structure and leveraging visual\-language and motion modalities. Future enhancements include incorporating vehicle sizing and refined density metrics.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2510.10342v1)
 
 ---
 
