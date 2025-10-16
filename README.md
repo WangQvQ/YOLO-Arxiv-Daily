@@ -1,6 +1,42 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## A Modular Object Detection System for Humanoid Robots Using YOLO / 
+
+发布日期：2025-10-15
+
+作者：Nicolas Pottier
+
+摘要：Within the field of robotics, computer vision remains a significant barrier to progress, with many tasks hindered by inefficient vision systems. This research proposes a generalized vision module leveraging YOLOv9, a state\-of\-the\-art framework optimized for computationally constrained environments like robots. The model is trained on a dataset tailored to the FIRA robotics Hurocup. A new vision module is implemented in ROS1 using a virtual environment to enable YOLO compatibility. Performance is evaluated using metrics such as frames per second \(FPS\) and Mean Average Precision \(mAP\). Performance is then compared to the existing geometric framework in static and dynamic contexts. The YOLO model achieved comparable precision at a higher computational cost then the geometric model, while providing improved robustness.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2510.13625v1)
+
+---
+
+
+## DEF\-YOLO: Leveraging YOLO for Concealed Weapon Detection in Thermal Imagin / 
+
+发布日期：2025-10-15
+
+作者：Divya Bhardwaj
+
+摘要：Concealed weapon detection aims at detecting weapons hidden beneath a person's clothing or luggage. Various imaging modalities like Millimeter Wave, Microwave, Terahertz, Infrared, etc., are exploited for the concealed weapon detection task. These imaging modalities have their own limitations, such as poor resolution in microwave imaging, privacy concerns in millimeter wave imaging, etc. To provide a real\-time, 24 x 7 surveillance, low\-cost, and privacy\-preserved solution, we opted for thermal imaging in spite of the lack of availability of a benchmark dataset. We propose a novel approach and a dataset for concealed weapon detection in thermal imagery. Our YOLO\-based architecture, DEF\-YOLO, is built with key enhancements in YOLOv8 tailored to the unique challenges of concealed weapon detection in thermal vision. We adopt deformable convolutions at the SPPF layer to exploit multi\-scale features; backbone and neck layers to extract low, mid, and high\-level features, enabling DEF\-YOLO to adaptively focus on localization around the objects in thermal homogeneous regions, without sacrificing much of the speed and throughput. In addition to these simple yet effective key architectural changes, we introduce a new, large\-scale Thermal Imaging Concealed Weapon dataset, TICW, featuring a diverse set of concealed weapons and capturing a wide range of scenarios. To the best of our knowledge, this is the first large\-scale contributed dataset for this task. We also incorporate focal loss to address the significant class imbalance inherent in the concealed weapon detection task. The efficacy of the proposed work establishes a new benchmark through extensive experimentation for concealed weapon detection in thermal imagery.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2510.13326v1)
+
+---
+
+
 ## Detect Anything via Next Point Prediction / 
 
 发布日期：2025-10-14
@@ -51,42 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2510.11302v1)
-
----
-
-
-## Slitless Spectroscopy Source Detection Using YOLO Deep Neural Network / 
-
-发布日期：2025-10-13
-
-作者：Xiaohan Chen
-
-摘要：Slitless spectroscopy eliminates the need for slits, allowing light to pass directly through a prism or grism to generate a spectral dispersion image that encompasses all celestial objects within a specified area. This technique enables highly efficient spectral acquisition. However, when processing CSST slitless spectroscopy data, the unique design of its focal plane introduces a challenge: photometric and slitless spectroscopic images do not have a one\-to\-one correspondence. As a result, it becomes essential to first identify and count the sources in the slitless spectroscopic images before extracting spectra. To address this challenge, we employed the You Only Look Once \(YOLO\) object detection algorithm to develop a model for detecting targets in slitless spectroscopy images. This model was trained on 1,560 simulated CSST slitless spectroscopic images. These simulations were generated from the CSST Cycle 6 and Cycle 9 main survey data products, representing the Galactic and nearby galaxy regions and the high galactic latitude regions, respectively. On the validation set, the model achieved a precision of 88.6% and recall of 90.4% for spectral lines, and 87.0% and 80.8% for zeroth\-order images. In testing, it maintained a detection rate >80% for targets brighter than 21 mag \(medium\-density regions\) and 20 mag \(low\-density regions\) in the Galactic and nearby galaxies regions, and >70% for targets brighter than 18 mag in high galactic latitude regions.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2510.10922v1)
-
----
-
-
-## MRS\-YOLO Railroad Transmission Line Foreign Object Detection Based on Improved YOLO11 and Channel Pruning / 
-
-发布日期：2025-10-12
-
-作者：Siyuan Liu
-
-摘要：Aiming at the problems of missed detection, false detection and low detection efficiency in transmission line foreign object detection under railway environment, we proposed an improved algorithm MRS\-YOLO based on YOLO11. Firstly, a multi\-scale Adaptive Kernel Depth Feature Fusion \(MAKDF\) module is proposed and fused with the C3k2 module to form C3k2\_MAKDF, which enhances the model's feature extraction capability for foreign objects of different sizes and shapes. Secondly, a novel Re\-calibration Feature Fusion Pyramid Network \(RCFPN\) is designed as a neck structure to enhance the model's ability to integrate and utilize multi\-level features effectively. Then, Spatial and Channel Reconstruction Detect Head \(SC\_Detect\) based on spatial and channel preprocessing is designed to enhance the model's overall detection performance. Finally, the channel pruning technique is used to reduce the redundancy of the improved model, drastically reduce Parameters and Giga Floating Point Operations Per Second \(GFLOPs\), and improve the detection efficiency. The experimental results show that the mAP50 and mAP50:95 of the MRS\-YOLO algorithm proposed in this paper are improved to 94.8% and 86.4%, respectively, which are 0.7 and 2.3 percentage points higher compared to the baseline, while Parameters and GFLOPs are reduced by 44.2% and 17.5%, respectively. It is demonstrated that the improved algorithm can be better applied to the task of foreign object detection in railroad transmission lines.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2510.10553v1)
 
 ---
 
