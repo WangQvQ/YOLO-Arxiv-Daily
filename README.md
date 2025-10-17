@@ -1,6 +1,42 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## BoardVision: Deployment\-ready and Robust Motherboard Defect Detection with YOLO\+Faster\-RCNN Ensemble / 
+
+发布日期：2025-10-16
+
+作者：Brandon Hill
+
+摘要：Motherboard defect detection is critical for ensuring reliability in high\-volume electronics manufacturing. While prior research in PCB inspection has largely targeted bare\-board or trace\-level defects, assembly\-level inspection of full motherboards inspection remains underexplored. In this work, we present BoardVision, a reproducible framework for detecting assembly\-level defects such as missing screws, loose fan wiring, and surface scratches. We benchmark two representative detectors \- YOLOv7 and Faster R\-CNN, under controlled conditions on the MiracleFactory motherboard dataset, providing the first systematic comparison in this domain. To mitigate the limitations of single models, where YOLO excels in precision but underperforms in recall and Faster R\-CNN shows the reverse, we propose a lightweight ensemble, Confidence\-Temporal Voting \(CTV Voter\), that balances precision and recall through interpretable rules. We further evaluate robustness under realistic perturbations including sharpness, brightness, and orientation changes, highlighting stability challenges often overlooked in motherboard defect detection. Finally, we release a deployable GUI\-driven inspection tool that bridges research evaluation with operator usability. Together, these contributions demonstrate how computer vision techniques can transition from benchmark results to practical quality assurance for assembly\-level motherboard manufacturing.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2510.14389v1)
+
+---
+
+
+## Efficient Few\-Shot Learning in Remote Sensing: Fusing Vision and Vision\-Language Models / 
+
+发布日期：2025-10-15
+
+作者：Jia Yun Chua
+
+摘要：Remote sensing has become a vital tool across sectors such as urban planning, environmental monitoring, and disaster response. While the volume of data generated has increased significantly, traditional vision models are often constrained by the requirement for extensive domain\-specific labelled data and their limited ability to understand the context within complex environments. Vision Language Models offer a complementary approach by integrating visual and textual data; however, their application to remote sensing remains underexplored, particularly given their generalist nature. This work investigates the combination of vision models and VLMs to enhance image analysis in remote sensing, with a focus on aircraft detection and scene understanding. The integration of YOLO with VLMs such as LLaVA, ChatGPT, and Gemini aims to achieve more accurate and contextually aware image interpretation. Performance is evaluated on both labelled and unlabelled remote sensing data, as well as degraded image scenarios which are crucial for remote sensing. The findings show an average MAE improvement of 48.46% across models in the accuracy of aircraft detection and counting, especially in challenging conditions, in both raw and degraded scenarios. A 6.17% improvement in CLIPScore for comprehensive understanding of remote sensing images is obtained. The proposed approach combining traditional vision models and VLMs paves the way for more advanced and efficient remote sensing image analysis, especially in few\-shot learning scenarios.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2510.13993v1)
+
+---
+
+
 ## A Modular Object Detection System for Humanoid Robots Using YOLO / 
 
 发布日期：2025-10-15
@@ -51,42 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2510.12798v1)
-
----
-
-
-## Enhancing Maritime Domain Awareness on Inland Waterways: A YOLO\-Based Fusion of Satellite and AIS for Vessel Characterization / 
-
-发布日期：2025-10-13
-
-作者：Geoffery Agorku
-
-摘要：Maritime Domain Awareness \(MDA\) for inland waterways remains challenged by cooperative system vulnerabilities. This paper presents a novel framework that fuses high\-resolution satellite imagery with vessel trajectory data from the Automatic Identification System \(AIS\). This work addresses the limitations of AIS\-based monitoring by leveraging non\-cooperative satellite imagery and implementing a fusion approach that links visual detections with AIS data to identify dark vessels, validate cooperative traffic, and support advanced MDA. The You Only Look Once \(YOLO\) v11 object detection model is used to detect and characterize vessels and barges by vessel type, barge cover, operational status, barge count, and direction of travel. An annotated data set of 4,550 instances was developed from $5\{,\}973~mathrm\{mi\}^2$ of Lower Mississippi River imagery. Evaluation on a held\-out test set demonstrated vessel classification \(tugboat, crane barge, bulk carrier, cargo ship, and hopper barge\) with an F1 score of 95.8%; barge cover \(covered or uncovered\) detection yielded an F1 score of 91.6%; operational status \(staged or in motion\) classification reached an F1 score of 99.4%. Directionality \(upstream, downstream\) yielded 93.8% accuracy. The barge count estimation resulted in a mean absolute error \(MAE\) of 2.4 barges. Spatial transferability analysis across geographically disjoint river segments showed accuracy was maintained as high as 98%. These results underscore the viability of integrating non\-cooperative satellite sensing with AIS fusion. This approach enables near\-real\-time fleet inventories, supports anomaly detection, and generates high\-quality data for inland waterway surveillance. Future work will expand annotated datasets, incorporate temporal tracking, and explore multi\-modal deep learning to further enhance operational scalability.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2510.11449v1)
-
----
-
-
-## When Does Supervised Training Pay Off? The Hidden Economics of Object Detection in the Era of Vision\-Language Models / 
-
-发布日期：2025-10-13
-
-作者：Samer Al\-Hamadani
-
-摘要：Object detection systems have traditionally relied on supervised learning with manually annotated bounding boxes, achieving high accuracy at the cost of substantial annotation investment. The emergence of Vision\-Language Models \(VLMs\) offers an alternative paradigm enabling zero\-shot detection through natural language queries, eliminating annotation requirements but operating with reduced accuracy. This paper presents the first comprehensive cost\-effectiveness analysis comparing supervised detection \(YOLO\) with zero\-shot VLM inference \(Gemini Flash 2.5\). Through systematic evaluation on 1,000 stratified COCO images and 200 diverse product images spanning consumer electronics and rare categories, combined with detailed Total Cost of Ownership modeling, we establish quantitative break\-even thresholds governing architecture selection. Our findings reveal that supervised YOLO achieves 91.2% accuracy versus 68.5% for zero\-shot Gemini on standard categories, representing a 22.7 percentage point advantage that costs $10,800 in annotation for 100\-category systems. However, this advantage justifies investment only beyond 55 million inferences, equivalent to 151,000 images daily for one year. Zero\-shot Gemini demonstrates 52.3% accuracy on diverse product categories \(ranging from highly web\-prevalent consumer electronics at 75\-85% to rare specialized equipment at 25\-40%\) where supervised YOLO achieves 0% due to architectural constraints preventing detection of untrained classes. Cost per Correct Detection analysis reveals substantially lower per\-detection costs for Gemini \($0.00050 vs $0.143\) at 100,000 inferences despite accuracy deficits. We develop decision frameworks demonstrating that optimal architecture selection depends critically on deployment volume, category stability, budget constraints, and accuracy requirements rather than purely technical performance metrics.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2510.11302v1)
 
 ---
 
