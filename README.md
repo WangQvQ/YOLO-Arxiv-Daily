@@ -1,6 +1,60 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Machine Vision\-Based Surgical Lighting System:Design and Implementation / 
+
+发布日期：2025-10-20
+
+作者：Amir Gharghabi
+
+摘要：Effortless and ergonomically designed surgical lighting is critical for precision and safety during procedures. However, traditional systems often rely on manual adjustments, leading to surgeon fatigue, neck strain, and inconsistent illumination due to drift and shadowing. To address these challenges, we propose a novel surgical lighting system that leverages the YOLOv11 object detection algorithm to identify a blue marker placed above the target surgical site. A high\-power LED light source is then directed to the identified location using two servomotors equipped with tilt\-pan brackets. The YOLO model achieves 96.7% mAP@50 on the validation set consisting of annotated images simulating surgical scenes with the blue spherical marker. By automating the lighting process, this machine vision\-based solution reduces physical strain on surgeons, improves consistency in illumination, and supports improved surgical outcomes.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2510.17287v1)
+
+---
+
+
+## Towards Intelligent Traffic Signaling in Dhaka City Based on Vehicle Detection and Congestion Optimization / 
+
+发布日期：2025-10-18
+
+作者：Kazi Ababil Azam
+
+摘要：The vehicular density in urbanizing cities of developing countries such as Dhaka, Bangladesh result in a lot of traffic congestion, causing poor on\-road experiences. Traffic signaling is a key component in effective traffic management for such situations, but the advancements in intelligent traffic signaling have been exclusive to developed countries with structured traffic. The non\-lane\-based, heterogeneous traffic of Dhaka City requires a contextual approach. This study focuses on the development of an intelligent traffic signaling system feasible in the context of developing countries such as Bangladesh. We propose a pipeline leveraging Real Time Streaming Protocol \(RTSP\) feeds, a low resources system Raspberry Pi 4B processing, and a state of the art YOLO\-based object detection model trained on the Non\-lane\-based and Heterogeneous Traffic \(NHT\-1071\) dataset to detect and classify heterogeneous traffic. A multi\-objective optimization algorithm, NSGA\-II, then generates optimized signal timings, minimizing waiting time while maximizing vehicle throughput. We test our implementation in a five\-road intersection at Palashi, Dhaka, demonstrating the potential to significantly improve traffic management in similar situations. The developed testbed paves the way for more contextual and effective Intelligent Traffic Signaling \(ITS\) solutions for developing areas with complicated traffic dynamics such as Dhaka City.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2510.16622v1)
+
+---
+
+
+## iWatchRoadv2: Pothole Detection, Geospatial Mapping, and Intelligent Road Governance / 
+
+发布日期：2025-10-18
+
+作者：Rishi Raj Sahoo
+
+摘要：Road potholes pose significant safety hazards and maintenance challenges, particularly on India's diverse and under\-maintained road networks. This paper presents iWatchRoadv2, a fully automated end\-to\-end platform for real\-time pothole detection, GPS\-based geotagging, and dynamic road health visualization using OpenStreetMap \(OSM\). We curated a self\-annotated dataset of over 7,000 dashcam frames capturing diverse Indian road conditions, weather patterns, and lighting scenarios, which we used to fine\-tune the Ultralytics YOLO model for accurate pothole detection. The system synchronizes OCR\-extracted video timestamps with external GPS logs to precisely geolocate each detected pothole, enriching detections with comprehensive metadata, including road segment attribution and contractor information managed through an optimized backend database. iWatchRoadv2 introduces intelligent governance features that enable authorities to link road segments with contract metadata through a secure login interface. The system automatically sends alerts to contractors and officials when road health deteriorates, supporting automated accountability and warranty enforcement. The intuitive web interface delivers actionable analytics to stakeholders and the public, facilitating evidence\-driven repair planning, budget allocation, and quality assessment. Our cost\-effective and scalable solution streamlines frame processing and storage while supporting seamless public engagement for urban and rural deployments. By automating the complete pothole monitoring lifecycle, from detection to repair verification, iWatchRoadv2 enables data\-driven smart city management, transparent governance, and sustainable improvements in road infrastructure maintenance. The platform and live demonstration are accessible at https://smlab.niser.ac.in/project/iwatchroad.
+
+中文摘要：
+
+
+代码链接：https://smlab.niser.ac.in/project/iwatchroad.
+
+论文链接：[阅读更多](http://arxiv.org/abs/2510.16375v1)
+
+---
+
+
 ## BoardVision: Deployment\-ready and Robust Motherboard Defect Detection with YOLO\+Faster\-RCNN Ensemble / 
 
 发布日期：2025-10-16
@@ -33,60 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2510.13993v1)
-
----
-
-
-## A Modular Object Detection System for Humanoid Robots Using YOLO / 
-
-发布日期：2025-10-15
-
-作者：Nicolas Pottier
-
-摘要：Within the field of robotics, computer vision remains a significant barrier to progress, with many tasks hindered by inefficient vision systems. This research proposes a generalized vision module leveraging YOLOv9, a state\-of\-the\-art framework optimized for computationally constrained environments like robots. The model is trained on a dataset tailored to the FIRA robotics Hurocup. A new vision module is implemented in ROS1 using a virtual environment to enable YOLO compatibility. Performance is evaluated using metrics such as frames per second \(FPS\) and Mean Average Precision \(mAP\). Performance is then compared to the existing geometric framework in static and dynamic contexts. The YOLO model achieved comparable precision at a higher computational cost then the geometric model, while providing improved robustness.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2510.13625v1)
-
----
-
-
-## DEF\-YOLO: Leveraging YOLO for Concealed Weapon Detection in Thermal Imagin / 
-
-发布日期：2025-10-15
-
-作者：Divya Bhardwaj
-
-摘要：Concealed weapon detection aims at detecting weapons hidden beneath a person's clothing or luggage. Various imaging modalities like Millimeter Wave, Microwave, Terahertz, Infrared, etc., are exploited for the concealed weapon detection task. These imaging modalities have their own limitations, such as poor resolution in microwave imaging, privacy concerns in millimeter wave imaging, etc. To provide a real\-time, 24 x 7 surveillance, low\-cost, and privacy\-preserved solution, we opted for thermal imaging in spite of the lack of availability of a benchmark dataset. We propose a novel approach and a dataset for concealed weapon detection in thermal imagery. Our YOLO\-based architecture, DEF\-YOLO, is built with key enhancements in YOLOv8 tailored to the unique challenges of concealed weapon detection in thermal vision. We adopt deformable convolutions at the SPPF layer to exploit multi\-scale features; backbone and neck layers to extract low, mid, and high\-level features, enabling DEF\-YOLO to adaptively focus on localization around the objects in thermal homogeneous regions, without sacrificing much of the speed and throughput. In addition to these simple yet effective key architectural changes, we introduce a new, large\-scale Thermal Imaging Concealed Weapon dataset, TICW, featuring a diverse set of concealed weapons and capturing a wide range of scenarios. To the best of our knowledge, this is the first large\-scale contributed dataset for this task. We also incorporate focal loss to address the significant class imbalance inherent in the concealed weapon detection task. The efficacy of the proposed work establishes a new benchmark through extensive experimentation for concealed weapon detection in thermal imagery.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2510.13326v1)
-
----
-
-
-## Detect Anything via Next Point Prediction / 
-
-发布日期：2025-10-14
-
-作者：Qing Jiang
-
-摘要：Object detection has long been dominated by traditional coordinate regression\-based models, such as YOLO, DETR, and Grounding DINO. Although recent efforts have attempted to leverage MLLMs to tackle this task, they face challenges like low recall rate, duplicate predictions, coordinate misalignment, etc. In this work, we bridge this gap and propose Rex\-Omni, a 3B\-scale MLLM that achieves state\-of\-the\-art object perception performance. On benchmarks like COCO and LVIS, Rex\-Omni attains performance comparable to or exceeding regression\-based models \(e.g., DINO, Grounding DINO\) in a zero\-shot setting. This is enabled by three key designs: 1\) Task Formulation: we use special tokens to represent quantized coordinates from 0 to 999, reducing the model's learning difficulty and improving token efficiency for coordinate prediction; 2\) Data Engines: we construct multiple data engines to generate high\-quality grounding, referring, and pointing data, providing semantically rich supervision for training; 3\) Training Pipelines: we employ a two\-stage training process, combining supervised fine\-tuning on 22 million data with GRPO\-based reinforcement post\-training. This RL post\-training leverages geometry\-aware rewards to effectively bridge the discrete\-to\-continuous coordinate prediction gap, improve box accuracy, and mitigate undesirable behaviors like duplicate predictions that stem from the teacher\-guided nature of the initial SFT stage. Beyond conventional detection, Rex\-Omni's inherent language understanding enables versatile capabilities such as object referring, pointing, visual prompting, GUI grounding, spatial referring, OCR and key\-pointing, all systematically evaluated on dedicated benchmarks. We believe that Rex\-Omni paves the way for more versatile and language\-aware visual perception systems.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2510.12798v1)
 
 ---
 
