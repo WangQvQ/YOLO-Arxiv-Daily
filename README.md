@@ -1,6 +1,24 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Big Data, Tiny Targets: An Exploratory Study in Machine Learning\-enhanced Detection of Microplastic from Filters / 
+
+发布日期：2025-10-20
+
+作者：Paul\-Tiberiu Miclea
+
+摘要：Microplastics \(MPs\) are ubiquitous pollutants with demonstrated potential to impact ecosystems and human health. Their microscopic size complicates detection, classification, and removal, especially in biological and environmental samples. While techniques like optical microscopy, Scanning Electron Microscopy \(SEM\), and Atomic Force Microscopy \(AFM\) provide a sound basis for detection, applying these approaches requires usually manual analysis and prevents efficient use in large screening studies. To this end, machine learning \(ML\) has emerged as a powerful tool in advancing microplastic detection. In this exploratory study, we investigate potential, limitations and future directions of advancing the detection and quantification of MP particles and fibres using a combination of SEM imaging and machine learning\-based object detection. For simplicity, we focus on a filtration scenario where image backgrounds exhibit a symmetric and repetitive pattern. Our findings indicate differences in the quality of YOLO models for the given task and the relevance of optimizing preprocessing. At the same time, we identify open challenges, such as limited amounts of expert\-labeled data necessary for reliable training of ML models.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2510.18089v1)
+
+---
+
+
 ## Machine Vision\-Based Surgical Lighting System:Design and Implementation / 
 
 发布日期：2025-10-20
@@ -69,24 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2510.14389v1)
-
----
-
-
-## Efficient Few\-Shot Learning in Remote Sensing: Fusing Vision and Vision\-Language Models / 
-
-发布日期：2025-10-15
-
-作者：Jia Yun Chua
-
-摘要：Remote sensing has become a vital tool across sectors such as urban planning, environmental monitoring, and disaster response. While the volume of data generated has increased significantly, traditional vision models are often constrained by the requirement for extensive domain\-specific labelled data and their limited ability to understand the context within complex environments. Vision Language Models offer a complementary approach by integrating visual and textual data; however, their application to remote sensing remains underexplored, particularly given their generalist nature. This work investigates the combination of vision models and VLMs to enhance image analysis in remote sensing, with a focus on aircraft detection and scene understanding. The integration of YOLO with VLMs such as LLaVA, ChatGPT, and Gemini aims to achieve more accurate and contextually aware image interpretation. Performance is evaluated on both labelled and unlabelled remote sensing data, as well as degraded image scenarios which are crucial for remote sensing. The findings show an average MAE improvement of 48.46% across models in the accuracy of aircraft detection and counting, especially in challenging conditions, in both raw and degraded scenarios. A 6.17% improvement in CLIPScore for comprehensive understanding of remote sensing images is obtained. The proposed approach combining traditional vision models and VLMs paves the way for more advanced and efficient remote sensing image analysis, especially in few\-shot learning scenarios.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2510.13993v1)
 
 ---
 
