@@ -1,6 +1,24 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Deep learning\-based automated damage detection in concrete structures using images from earthquake events / 
+
+发布日期：2025-10-24
+
+作者：Abdullah Turer
+
+摘要：Timely assessment of integrity of structures after seismic events is crucial for public safety and emergency response. This study focuses on assessing the structural damage conditions using deep learning methods to detect exposed steel reinforcement in concrete buildings and bridges after large earthquakes. Steel bars are typically exposed after concrete spalling or large flexural or shear cracks. The amount and distribution of exposed steel reinforcement is an indication of structural damage and degradation. To automatically detect exposed steel bars, new datasets of images collected after the 2023 Turkey Earthquakes were labeled to represent a wide variety of damaged concrete structures. The proposed method builds upon a deep learning framework, enhanced with fine\-tuning, data augmentation, and testing on public datasets. An automated classification framework is developed that can be used to identify inside/outside buildings and structural components. Then, a YOLOv11 \(You Only Look Once\) model is trained to detect cracking and spalling damage and exposed bars. Another YOLO model is finetuned to distinguish different categories of structural damage levels. All these trained models are used to create a hybrid framework to automatically and reliably determine the damage levels from input images. This research demonstrates that rapid and automated damage detection following disasters is achievable across diverse damage contexts by utilizing image data collection, annotation, and deep learning approaches.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2510.21063v1)
+
+---
+
+
 ## Big Data, Tiny Targets: An Exploratory Study in Machine Learning\-enhanced Detection of Microplastic from Filters / 
 
 发布日期：2025-10-20
@@ -69,24 +87,6 @@
 代码链接：https://smlab.niser.ac.in/project/iwatchroad.
 
 论文链接：[阅读更多](http://arxiv.org/abs/2510.16375v1)
-
----
-
-
-## BoardVision: Deployment\-ready and Robust Motherboard Defect Detection with YOLO\+Faster\-RCNN Ensemble / 
-
-发布日期：2025-10-16
-
-作者：Brandon Hill
-
-摘要：Motherboard defect detection is critical for ensuring reliability in high\-volume electronics manufacturing. While prior research in PCB inspection has largely targeted bare\-board or trace\-level defects, assembly\-level inspection of full motherboards inspection remains underexplored. In this work, we present BoardVision, a reproducible framework for detecting assembly\-level defects such as missing screws, loose fan wiring, and surface scratches. We benchmark two representative detectors \- YOLOv7 and Faster R\-CNN, under controlled conditions on the MiracleFactory motherboard dataset, providing the first systematic comparison in this domain. To mitigate the limitations of single models, where YOLO excels in precision but underperforms in recall and Faster R\-CNN shows the reverse, we propose a lightweight ensemble, Confidence\-Temporal Voting \(CTV Voter\), that balances precision and recall through interpretable rules. We further evaluate robustness under realistic perturbations including sharpness, brightness, and orientation changes, highlighting stability challenges often overlooked in motherboard defect detection. Finally, we release a deployable GUI\-driven inspection tool that bridges research evaluation with operator usability. Together, these contributions demonstrate how computer vision techniques can transition from benchmark results to practical quality assurance for assembly\-level motherboard manufacturing.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2510.14389v1)
 
 ---
 
