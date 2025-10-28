@@ -1,6 +1,60 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## hYOLO Model: Enhancing Object Classification with Hierarchical Context in YOLOv8 / 
+
+发布日期：2025-10-27
+
+作者：Veska Tsenkova
+
+摘要：Current convolution neural network \(CNN\) classification methods are predominantly focused on flat classification which aims solely to identify a specified object within an image. However, real\-world objects often possess a natural hierarchical organization that can significantly help classification tasks. Capturing the presence of relations between objects enables better contextual understanding as well as control over the severity of mistakes. Considering these aspects, this paper proposes an end\-to\-end hierarchical model for image detection and classification built upon the YOLO model family. A novel hierarchical architecture, a modified loss function, and a performance metric tailored to the hierarchical nature of the model are introduced. The proposed model is trained and evaluated on two different hierarchical categorizations of the same dataset: a systematic categorization that disregards visual similarities between objects and a categorization accounting for common visual characteristics across classes. The results illustrate how the suggested methodology addresses the inherent hierarchical structure present in real\-world objects, which conventional flat classification algorithms often overlook.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2510.23278v1)
+
+---
+
+
+## An Intelligent Water\-Saving Irrigation System Based on Multi\-Sensor Fusion and Visual Servoing Control / 
+
+发布日期：2025-10-27
+
+作者：ZhengKai Huang
+
+摘要：This paper introduces an intelligent water\-saving irrigation system designed to address critical challenges in precision agriculture, such as inefficient water use and poor terrain adaptability. The system integrates advanced computer vision, robotic control, and real\-time stabilization technologies via a multi\-sensor fusion approach. A lightweight YOLO model, deployed on an embedded vision processor \(K210\), enables real\-time plant container detection with over 96% accuracy under varying lighting conditions. A simplified hand\-eye calibration algorithm\-designed for 'handheld camera' robot arm configurations\-ensures that the end effector can be precisely positioned, with a success rate exceeding 90%. The active leveling system, driven by the STM32F103ZET6 main control chip and JY901S inertial measurement data, can stabilize the irrigation platform on slopes up to 10 degrees, with a response time of 1.8 seconds. Experimental results across three simulated agricultural environments \(standard greenhouse, hilly terrain, complex lighting\) demonstrate a 30\-50% reduction in water consumption compared to conventional flood irrigation, with water use efficiency exceeding 92% in all test cases.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2510.23003v1)
+
+---
+
+
+## Human\-Centric Anomaly Detection in Surveillance Videos Using YOLO\-World and Spatio\-Temporal Deep Learning / 
+
+发布日期：2025-10-24
+
+作者：Mohammad Ali Etemadi Naeen
+
+摘要：Anomaly detection in surveillance videos remains a challenging task due to the diversity of abnormal events, class imbalance, and scene\-dependent visual clutter. To address these issues, we propose a robust deep learning framework that integrates human\-centric preprocessing with spatio\-temporal modeling for multi\-class anomaly classification. Our pipeline begins by applying YOLO\-World \- an open\-vocabulary vision\-language detector \- to identify human instances in raw video clips, followed by ByteTrack for consistent identity\-aware tracking. Background regions outside detected bounding boxes are suppressed via Gaussian blurring, effectively reducing scene\-specific distractions and focusing the model on behaviorally relevant foreground content. The refined frames are then processed by an ImageNet\-pretrained InceptionV3 network for spatial feature extraction, and temporal dynamics are captured using a bidirectional LSTM \(BiLSTM\) for sequence\-level classification. Evaluated on a five\-class subset of the UCF\-Crime dataset \(Normal, Burglary, Fighting, Arson, Explosion\), our method achieves a mean test accuracy of 92.41% across three independent trials, with per\-class F1\-scores consistently exceeding 0.85. Comprehensive evaluation metrics \- including confusion matrices, ROC curves, and macro/weighted averages \- demonstrate strong generalization and resilience to class imbalance. The results confirm that foreground\-focused preprocessing significantly enhances anomaly discrimination in real\-world surveillance scenarios.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2510.22056v1)
+
+---
+
+
 ## Deep learning\-based automated damage detection in concrete structures using images from earthquake events / 
 
 发布日期：2025-10-24
@@ -33,60 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2510.18089v1)
-
----
-
-
-## Machine Vision\-Based Surgical Lighting System:Design and Implementation / 
-
-发布日期：2025-10-20
-
-作者：Amir Gharghabi
-
-摘要：Effortless and ergonomically designed surgical lighting is critical for precision and safety during procedures. However, traditional systems often rely on manual adjustments, leading to surgeon fatigue, neck strain, and inconsistent illumination due to drift and shadowing. To address these challenges, we propose a novel surgical lighting system that leverages the YOLOv11 object detection algorithm to identify a blue marker placed above the target surgical site. A high\-power LED light source is then directed to the identified location using two servomotors equipped with tilt\-pan brackets. The YOLO model achieves 96.7% mAP@50 on the validation set consisting of annotated images simulating surgical scenes with the blue spherical marker. By automating the lighting process, this machine vision\-based solution reduces physical strain on surgeons, improves consistency in illumination, and supports improved surgical outcomes.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2510.17287v1)
-
----
-
-
-## Towards Intelligent Traffic Signaling in Dhaka City Based on Vehicle Detection and Congestion Optimization / 
-
-发布日期：2025-10-18
-
-作者：Kazi Ababil Azam
-
-摘要：The vehicular density in urbanizing cities of developing countries such as Dhaka, Bangladesh result in a lot of traffic congestion, causing poor on\-road experiences. Traffic signaling is a key component in effective traffic management for such situations, but the advancements in intelligent traffic signaling have been exclusive to developed countries with structured traffic. The non\-lane\-based, heterogeneous traffic of Dhaka City requires a contextual approach. This study focuses on the development of an intelligent traffic signaling system feasible in the context of developing countries such as Bangladesh. We propose a pipeline leveraging Real Time Streaming Protocol \(RTSP\) feeds, a low resources system Raspberry Pi 4B processing, and a state of the art YOLO\-based object detection model trained on the Non\-lane\-based and Heterogeneous Traffic \(NHT\-1071\) dataset to detect and classify heterogeneous traffic. A multi\-objective optimization algorithm, NSGA\-II, then generates optimized signal timings, minimizing waiting time while maximizing vehicle throughput. We test our implementation in a five\-road intersection at Palashi, Dhaka, demonstrating the potential to significantly improve traffic management in similar situations. The developed testbed paves the way for more contextual and effective Intelligent Traffic Signaling \(ITS\) solutions for developing areas with complicated traffic dynamics such as Dhaka City.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2510.16622v1)
-
----
-
-
-## iWatchRoadv2: Pothole Detection, Geospatial Mapping, and Intelligent Road Governance / 
-
-发布日期：2025-10-18
-
-作者：Rishi Raj Sahoo
-
-摘要：Road potholes pose significant safety hazards and maintenance challenges, particularly on India's diverse and under\-maintained road networks. This paper presents iWatchRoadv2, a fully automated end\-to\-end platform for real\-time pothole detection, GPS\-based geotagging, and dynamic road health visualization using OpenStreetMap \(OSM\). We curated a self\-annotated dataset of over 7,000 dashcam frames capturing diverse Indian road conditions, weather patterns, and lighting scenarios, which we used to fine\-tune the Ultralytics YOLO model for accurate pothole detection. The system synchronizes OCR\-extracted video timestamps with external GPS logs to precisely geolocate each detected pothole, enriching detections with comprehensive metadata, including road segment attribution and contractor information managed through an optimized backend database. iWatchRoadv2 introduces intelligent governance features that enable authorities to link road segments with contract metadata through a secure login interface. The system automatically sends alerts to contractors and officials when road health deteriorates, supporting automated accountability and warranty enforcement. The intuitive web interface delivers actionable analytics to stakeholders and the public, facilitating evidence\-driven repair planning, budget allocation, and quality assessment. Our cost\-effective and scalable solution streamlines frame processing and storage while supporting seamless public engagement for urban and rural deployments. By automating the complete pothole monitoring lifecycle, from detection to repair verification, iWatchRoadv2 enables data\-driven smart city management, transparent governance, and sustainable improvements in road infrastructure maintenance. The platform and live demonstration are accessible at https://smlab.niser.ac.in/project/iwatchroad.
-
-中文摘要：
-
-
-代码链接：https://smlab.niser.ac.in/project/iwatchroad.
-
-论文链接：[阅读更多](http://arxiv.org/abs/2510.16375v1)
 
 ---
 
