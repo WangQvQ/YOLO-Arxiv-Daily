@@ -1,6 +1,42 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Delving into Cascaded Instability: A Lipschitz Continuity View on Image Restoration and Object Detection Synergy / 
+
+发布日期：2025-10-28
+
+作者：Qing Zhao
+
+摘要：To improve detection robustness in adverse conditions \(e.g., haze and low light\), image restoration is commonly applied as a pre\-processing step to enhance image quality for the detector. However, the functional mismatch between restoration and detection networks can introduce instability and hinder effective integration \-\- an issue that remains underexplored. We revisit this limitation through the lens of Lipschitz continuity, analyzing the functional differences between restoration and detection networks in both the input space and the parameter space. Our analysis shows that restoration networks perform smooth, continuous transformations, while object detectors operate with discontinuous decision boundaries, making them highly sensitive to minor perturbations. This mismatch introduces instability in traditional cascade frameworks, where even imperceptible noise from restoration is amplified during detection, disrupting gradient flow and hindering optimization. To address this, we propose Lipschitz\-regularized object detection \(LROD\), a simple yet effective framework that integrates image restoration directly into the detector's feature learning, harmonizing the Lipschitz continuity of both tasks during training. We implement this framework as Lipschitz\-regularized YOLO \(LR\-YOLO\), extending seamlessly to existing YOLO detectors. Extensive experiments on haze and low\-light benchmarks demonstrate that LR\-YOLO consistently improves detection stability, optimization smoothness, and overall accuracy.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2510.24232v1)
+
+---
+
+
+## CSST Slitless Spectra: Target Detection and Classification with YOLO / 
+
+发布日期：2025-10-28
+
+作者：Yingying Zhou
+
+摘要：Addressing the spatial uncertainty and spectral blending challenges in CSST slitless spectroscopy, we present a deep learning\-driven, end\-to\-end framework based on the You Only Look Once \(YOLO\) models. This approach directly detects, classifies, and analyzes spectral traces from raw 2D images, bypassing traditional, error\-accumulating pipelines. YOLOv5 effectively detects both compact zero\-order and extended first\-order traces even in highly crowded fields. Building on this, YOLO11 integrates source classification \(star/galaxy\) and discrete astrophysical parameter estimation \(e.g., redshift bins\), showcasing complete spectral trace analysis without other manual preprocessing. Our framework processes large images rapidly, learning spectral\-spatial features holistically to minimize errors. We achieve high trace detection precision \(YOLOv5\) and demonstrate successful quasar identification and binned redshift estimation \(YOLO11\). This study establishes machine learning as a paradigm shift in slitless spectroscopy, unifying detection, classification, and preliminary parameter estimation in a scalable system. Future research will concentrate on direct, continuous prediction of astrophysical parameters from raw spectral traces.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2510.24087v1)
+
+---
+
+
 ## hYOLO Model: Enhancing Object Classification with Hierarchical Context in YOLOv8 / 
 
 发布日期：2025-10-27
@@ -51,42 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2510.22056v1)
-
----
-
-
-## Deep learning\-based automated damage detection in concrete structures using images from earthquake events / 
-
-发布日期：2025-10-24
-
-作者：Abdullah Turer
-
-摘要：Timely assessment of integrity of structures after seismic events is crucial for public safety and emergency response. This study focuses on assessing the structural damage conditions using deep learning methods to detect exposed steel reinforcement in concrete buildings and bridges after large earthquakes. Steel bars are typically exposed after concrete spalling or large flexural or shear cracks. The amount and distribution of exposed steel reinforcement is an indication of structural damage and degradation. To automatically detect exposed steel bars, new datasets of images collected after the 2023 Turkey Earthquakes were labeled to represent a wide variety of damaged concrete structures. The proposed method builds upon a deep learning framework, enhanced with fine\-tuning, data augmentation, and testing on public datasets. An automated classification framework is developed that can be used to identify inside/outside buildings and structural components. Then, a YOLOv11 \(You Only Look Once\) model is trained to detect cracking and spalling damage and exposed bars. Another YOLO model is finetuned to distinguish different categories of structural damage levels. All these trained models are used to create a hybrid framework to automatically and reliably determine the damage levels from input images. This research demonstrates that rapid and automated damage detection following disasters is achievable across diverse damage contexts by utilizing image data collection, annotation, and deep learning approaches.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2510.21063v1)
-
----
-
-
-## Big Data, Tiny Targets: An Exploratory Study in Machine Learning\-enhanced Detection of Microplastic from Filters / 
-
-发布日期：2025-10-20
-
-作者：Paul\-Tiberiu Miclea
-
-摘要：Microplastics \(MPs\) are ubiquitous pollutants with demonstrated potential to impact ecosystems and human health. Their microscopic size complicates detection, classification, and removal, especially in biological and environmental samples. While techniques like optical microscopy, Scanning Electron Microscopy \(SEM\), and Atomic Force Microscopy \(AFM\) provide a sound basis for detection, applying these approaches requires usually manual analysis and prevents efficient use in large screening studies. To this end, machine learning \(ML\) has emerged as a powerful tool in advancing microplastic detection. In this exploratory study, we investigate potential, limitations and future directions of advancing the detection and quantification of MP particles and fibres using a combination of SEM imaging and machine learning\-based object detection. For simplicity, we focus on a filtration scenario where image backgrounds exhibit a symmetric and repetitive pattern. Our findings indicate differences in the quality of YOLO models for the given task and the relevance of optimizing preprocessing. At the same time, we identify open challenges, such as limited amounts of expert\-labeled data necessary for reliable training of ML models.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2510.18089v1)
 
 ---
 
