@@ -1,6 +1,24 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## DINO\-YOLO: Self\-Supervised Pre\-training for Data\-Efficient Object Detection in Civil Engineering Applications / 
+
+发布日期：2025-10-29
+
+作者：Malaisree P
+
+摘要：Object detection in civil engineering applications is constrained by limited annotated data in specialized domains. We introduce DINO\-YOLO, a hybrid architecture combining YOLOv12 with DINOv3 self\-supervised vision transformers for data\-efficient detection. DINOv3 features are strategically integrated at two locations: input preprocessing \(P0\) and mid\-backbone enhancement \(P3\). Experimental validation demonstrates substantial improvements: Tunnel Segment Crack detection \(648 images\) achieves 12.4% improvement, Construction PPE \(1K images\) gains 13.7%, and KITTI \(7K images\) shows 88.6% improvement, while maintaining real\-time inference \(30\-47 FPS\). Systematic ablation across five YOLO scales and nine DINOv3 variants reveals that Medium\-scale architectures achieve optimal performance with DualP0P3 integration \(55.77% mAP@0.5\), while Small\-scale requires Triple Integration \(53.63%\). The 2\-4x inference overhead \(21\-33ms versus 8\-16ms baseline\) remains acceptable for field deployment on NVIDIA RTX 5090. DINO\-YOLO establishes state\-of\-the\-art performance for civil engineering datasets \(<10K images\) while preserving computational efficiency, providing practical solutions for construction safety monitoring and infrastructure inspection in data\-constrained environments.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2510.25140v1)
+
+---
+
+
 ## Delving into Cascaded Instability: A Lipschitz Continuity View on Image Restoration and Object Detection Synergy / 
 
 发布日期：2025-10-28
@@ -69,24 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2510.23003v1)
-
----
-
-
-## Human\-Centric Anomaly Detection in Surveillance Videos Using YOLO\-World and Spatio\-Temporal Deep Learning / 
-
-发布日期：2025-10-24
-
-作者：Mohammad Ali Etemadi Naeen
-
-摘要：Anomaly detection in surveillance videos remains a challenging task due to the diversity of abnormal events, class imbalance, and scene\-dependent visual clutter. To address these issues, we propose a robust deep learning framework that integrates human\-centric preprocessing with spatio\-temporal modeling for multi\-class anomaly classification. Our pipeline begins by applying YOLO\-World \- an open\-vocabulary vision\-language detector \- to identify human instances in raw video clips, followed by ByteTrack for consistent identity\-aware tracking. Background regions outside detected bounding boxes are suppressed via Gaussian blurring, effectively reducing scene\-specific distractions and focusing the model on behaviorally relevant foreground content. The refined frames are then processed by an ImageNet\-pretrained InceptionV3 network for spatial feature extraction, and temporal dynamics are captured using a bidirectional LSTM \(BiLSTM\) for sequence\-level classification. Evaluated on a five\-class subset of the UCF\-Crime dataset \(Normal, Burglary, Fighting, Arson, Explosion\), our method achieves a mean test accuracy of 92.41% across three independent trials, with per\-class F1\-scores consistently exceeding 0.85. Comprehensive evaluation metrics \- including confusion matrices, ROC curves, and macro/weighted averages \- demonstrate strong generalization and resilience to class imbalance. The results confirm that foreground\-focused preprocessing significantly enhances anomaly discrimination in real\-world surveillance scenarios.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2510.22056v1)
 
 ---
 
