@@ -1,6 +1,60 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## The Urban Vision Hackathon Dataset and Models: Towards Image Annotations and Accurate Vision Models for Indian Traffic / 
+
+发布日期：2025-11-04
+
+作者：Akash Sharma
+
+摘要：This report describes the UVH\-26 dataset, the first public release by AIM@IISc of a large\-scale dataset of annotated traffic\-camera images from India. The dataset comprises 26,646 high\-resolution \(1080p\) images sampled from 2800 Bengaluru's Safe\-City CCTV cameras over a 4\-week period, and subsequently annotated through a crowdsourced hackathon involving 565 college students from across India. In total, 1.8 million bounding boxes were labeled across 14 vehicle classes specific to India: Cycle, 2\-Wheeler \(Motorcycle\), 3\-Wheeler \(Auto\-rickshaw\), LCV \(Light Commercial Vehicles\), Van, Tempo\-traveller, Hatchback, Sedan, SUV, MUV, Mini\-bus, Bus, Truck and Other. Of these, 283k\-316k consensus ground truth bounding boxes and labels were derived for distinct objects in the 26k images using Majority Voting and STAPLE algorithms. Further, we train multiple contemporary detectors, including YOLO11\-S/X, RT\-DETR\-S/X, and DAMO\-YOLO\-T/L using these datasets, and report accuracy based on mAP50, mAP75 and mAP50:95. Models trained on UVH\-26 achieve 8.4\-31.5% improvements in mAP50:95 over equivalent baseline models trained on COCO dataset, with RT\-DETR\-X showing the best performance at 0.67 \(mAP50:95\) as compared to 0.40 for COCO\-trained weights for common classes \(Car, Bus, and Truck\). This demonstrates the benefits of domain\-specific training data for Indian traffic scenarios. The release package provides the 26k images with consensus annotations based on Majority Voting \(UVH\-26\-MV\) and STAPLE \(UVH\-26\-ST\) and the 6 fine\-tuned YOLO and DETR models on each of these datasets. By capturing the heterogeneity of Indian urban mobility directly from operational traffic\-camera streams, UVH\-26 addresses a critical gap in existing global benchmarks, and offers a foundation for advancing detection, classification, and deployment of intelligent transportation systems in emerging nations with complex traffic conditions.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2511.02563v1)
+
+---
+
+
+## ASTROFLOW: A Real\-Time End\-to\-End Pipeline for Radio Single\-Pulse Searches / 
+
+发布日期：2025-11-04
+
+作者：Guanhong Lin
+
+摘要：Fast radio bursts \(FRBs\) are extremely bright, millisecond duration cosmic transients of unknown origin. The growing number of wide\-field and high\-time\-resolution radio surveys, particularly with next\-generation facilities such as the SKA and MeerKAT, will dramatically increase FRB discovery rates, but also produce data volumes that overwhelm conventional search pipelines. Real\-time detection thus demands software that is both algorithmically robust and computationally efficient. We present Astroflow, an end\-to\-end, GPU\-accelerated pipeline for single\-pulse detection in radio time\-frequency data. Built on a unified C\+\+/CUDA core with a Python interface, Astroflow integrates RFI excision, incoherent dedispersion, dynamic\-spectrum tiling, and a YOLO\-based deep detector. Through vectorized memory access, shared\-memory tiling, and OpenMP parallelism, it achieves 10x faster\-than\-real\-time processing on consumer GPUs for a typical 150 s, 2048\-channel observation, while preserving high sensitivity across a wide range of pulse widths and dispersion measures. These results establish the feasibility of a fully integrated, GPU\-accelerated single\-pulse search stack, capable of scaling to the data volumes expected from upcoming large\-scale surveys. Astroflow offers a reusable and deployable solution for real\-time transient discovery, and provides a framework that can be continuously refined with new data and models.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2511.02328v1)
+
+---
+
+
+## Autobiasing Event Cameras for Flickering Mitigation / 
+
+发布日期：2025-11-04
+
+作者：Mehdi Sefidgar Dilmaghani
+
+摘要：Understanding and mitigating flicker effects caused by rapid variations in light intensity is critical for enhancing the performance of event cameras in diverse environments. This paper introduces an innovative autonomous mechanism for tuning the biases of event cameras, effectively addressing flicker across a wide frequency range \-25 Hz to 500 Hz. Unlike traditional methods that rely on additional hardware or software for flicker filtering, our approach leverages the event cameras inherent bias settings. Utilizing a simple Convolutional Neural Networks \-CNNs, the system identifies instances of flicker in a spatial space and dynamically adjusts specific biases to minimize its impact. The efficacy of this autobiasing system was robustly tested using a face detector framework under both well\-lit and low\-light conditions, as well as across various frequencies. The results demonstrated significant improvements: enhanced YOLO confidence metrics for face detection, and an increased percentage of frames capturing detected faces. Moreover, the average gradient, which serves as an indicator of flicker presence through edge detection, decreased by 38.2 percent in well\-lit conditions and by 53.6 percent in low\-light conditions. These findings underscore the potential of our approach to significantly improve the functionality of event cameras in a range of adverse lighting scenarios.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2511.02180v1)
+
+---
+
+
 ## Mask\-to\-Height: A YOLOv11\-Based Architecture for Joint Building Instance Segmentation and Height Classification from Satellite Imagery / 
 
 发布日期：2025-10-31
@@ -33,60 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2510.26146v1)
-
----
-
-
-## DINO\-YOLO: Self\-Supervised Pre\-training for Data\-Efficient Object Detection in Civil Engineering Applications / 
-
-发布日期：2025-10-29
-
-作者：Malaisree P
-
-摘要：Object detection in civil engineering applications is constrained by limited annotated data in specialized domains. We introduce DINO\-YOLO, a hybrid architecture combining YOLOv12 with DINOv3 self\-supervised vision transformers for data\-efficient detection. DINOv3 features are strategically integrated at two locations: input preprocessing \(P0\) and mid\-backbone enhancement \(P3\). Experimental validation demonstrates substantial improvements: Tunnel Segment Crack detection \(648 images\) achieves 12.4% improvement, Construction PPE \(1K images\) gains 13.7%, and KITTI \(7K images\) shows 88.6% improvement, while maintaining real\-time inference \(30\-47 FPS\). Systematic ablation across five YOLO scales and nine DINOv3 variants reveals that Medium\-scale architectures achieve optimal performance with DualP0P3 integration \(55.77% mAP@0.5\), while Small\-scale requires Triple Integration \(53.63%\). The 2\-4x inference overhead \(21\-33ms versus 8\-16ms baseline\) remains acceptable for field deployment on NVIDIA RTX 5090. DINO\-YOLO establishes state\-of\-the\-art performance for civil engineering datasets \(<10K images\) while preserving computational efficiency, providing practical solutions for construction safety monitoring and infrastructure inspection in data\-constrained environments.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2510.25140v2)
-
----
-
-
-## Delving into Cascaded Instability: A Lipschitz Continuity View on Image Restoration and Object Detection Synergy / 
-
-发布日期：2025-10-28
-
-作者：Qing Zhao
-
-摘要：To improve detection robustness in adverse conditions \(e.g., haze and low light\), image restoration is commonly applied as a pre\-processing step to enhance image quality for the detector. However, the functional mismatch between restoration and detection networks can introduce instability and hinder effective integration \-\- an issue that remains underexplored. We revisit this limitation through the lens of Lipschitz continuity, analyzing the functional differences between restoration and detection networks in both the input space and the parameter space. Our analysis shows that restoration networks perform smooth, continuous transformations, while object detectors operate with discontinuous decision boundaries, making them highly sensitive to minor perturbations. This mismatch introduces instability in traditional cascade frameworks, where even imperceptible noise from restoration is amplified during detection, disrupting gradient flow and hindering optimization. To address this, we propose Lipschitz\-regularized object detection \(LROD\), a simple yet effective framework that integrates image restoration directly into the detector's feature learning, harmonizing the Lipschitz continuity of both tasks during training. We implement this framework as Lipschitz\-regularized YOLO \(LR\-YOLO\), extending seamlessly to existing YOLO detectors. Extensive experiments on haze and low\-light benchmarks demonstrate that LR\-YOLO consistently improves detection stability, optimization smoothness, and overall accuracy.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2510.24232v1)
-
----
-
-
-## CSST Slitless Spectra: Target Detection and Classification with YOLO / 
-
-发布日期：2025-10-28
-
-作者：Yingying Zhou
-
-摘要：Addressing the spatial uncertainty and spectral blending challenges in CSST slitless spectroscopy, we present a deep learning\-driven, end\-to\-end framework based on the You Only Look Once \(YOLO\) models. This approach directly detects, classifies, and analyzes spectral traces from raw 2D images, bypassing traditional, error\-accumulating pipelines. YOLOv5 effectively detects both compact zero\-order and extended first\-order traces even in highly crowded fields. Building on this, YOLO11 integrates source classification \(star/galaxy\) and discrete astrophysical parameter estimation \(e.g., redshift bins\), showcasing complete spectral trace analysis without other manual preprocessing. Our framework processes large images rapidly, learning spectral\-spatial features holistically to minimize errors. We achieve high trace detection precision \(YOLOv5\) and demonstrate successful quasar identification and binned redshift estimation \(YOLO11\). This study establishes machine learning as a paradigm shift in slitless spectroscopy, unifying detection, classification, and preliminary parameter estimation in a scalable system. Future research will concentrate on direct, continuous prediction of astrophysical parameters from raw spectral traces.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2510.24087v1)
 
 ---
 
