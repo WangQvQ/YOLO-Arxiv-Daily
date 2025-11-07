@@ -1,6 +1,42 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## HideAndSeg: an AI\-based tool with automated prompting for octopus segmentation in natural habitats / 
+
+发布日期：2025-11-06
+
+作者：Alan de Aguiar
+
+摘要：Analyzing octopuses in their natural habitats is challenging due to their camouflage capability, rapid changes in skin texture and color, non\-rigid body deformations, and frequent occlusions, all of which are compounded by variable underwater lighting and turbidity. Addressing the lack of large\-scale annotated datasets, this paper introduces HideAndSeg, a novel, minimally supervised AI\-based tool for segmenting videos of octopuses. It establishes a quantitative baseline for this task. HideAndSeg integrates SAM2 with a custom\-trained YOLOv11 object detector. First, the user provides point coordinates to generate the initial segmentation masks with SAM2. These masks serve as training data for the YOLO model. After that, our approach fully automates the pipeline by providing a bounding box prompt to SAM2, eliminating the need for further manual intervention. We introduce two unsupervised metrics \- temporal consistency $DICE\_t$ and new component count $NC\_t$ \- to quantitatively evaluate segmentation quality and guide mask refinement in the absence of ground\-truth data, i.e., real\-world information that serves to train, validate, and test AI models. Results show that HideAndSeg achieves satisfactory performance, reducing segmentation noise compared to the manually prompted approach. Our method can re\-identify and segment the octopus even after periods of complete occlusion in natural environments, a scenario in which the manually prompted model fails. By reducing the need for manual analysis in real\-world scenarios, this work provides a practical tool that paves the way for more efficient behavioral studies of wild cephalopods.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2511.04426v1)
+
+---
+
+
+## Desert Waste Detection and Classification Using Data\-Based and Model\-Based Enhanced YOLOv12 DL Model / 
+
+发布日期：2025-11-05
+
+作者：Abdulmumin Sa'ad
+
+摘要：The global waste crisis is escalating, with solid waste generation expected to increase by 70% by 2050. Traditional waste collection methods, particularly in remote or harsh environments like deserts, are labor\-intensive, inefficient, and often hazardous. Recent advances in computer vision and deep learning have opened the door to automated waste detection systems, yet most research focuses on urban environments and recyclable materials, overlooking organic and hazardous waste and underexplored terrains such as deserts. In this work, we propose an enhanced real\-time object detection framework based on a pruned, lightweight version of YOLOv12 integrated with Self\-Adversarial Training \(SAT\) and specialized data augmentation strategies. Using the DroneTrashNet dataset, we demonstrate significant improvements in precision, recall, and mean average precision \(mAP\), while achieving low latency and compact model size suitable for deployment on resource\-constrained aerial drones. Benchmarking our model against state\-of\-the\-art lightweight YOLO variants further highlights its optimal balance of accuracy and efficiency. Our results validate the effectiveness of combining data\-centric and model\-centric enhancements for robust, real\-time waste detection in desert environments.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2511.03888v1)
+
+---
+
+
 ## The Urban Vision Hackathon Dataset and Models: Towards Image Annotations and Accurate Vision Models for Indian Traffic / 
 
 发布日期：2025-11-04
@@ -51,42 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2511.02180v1)
-
----
-
-
-## Mask\-to\-Height: A YOLOv11\-Based Architecture for Joint Building Instance Segmentation and Height Classification from Satellite Imagery / 
-
-发布日期：2025-10-31
-
-作者：Mahmoud El Hussieni
-
-摘要：Accurate building instance segmentation and height classification are critical for urban planning, 3D city modeling, and infrastructure monitoring. This paper presents a detailed analysis of YOLOv11, the recent advancement in the YOLO series of deep learning models, focusing on its application to joint building extraction and discrete height classification from satellite imagery. YOLOv11 builds on the strengths of earlier YOLO models by introducing a more efficient architecture that better combines features at different scales, improves object localization accuracy, and enhances performance in complex urban scenes. Using the DFC2023 Track 2 dataset \-\- which includes over 125,000 annotated buildings across 12 cities \-\- we evaluate YOLOv11's performance using metrics such as precision, recall, F1 score, and mean average precision \(mAP\). Our findings demonstrate that YOLOv11 achieves strong instance segmentation performance with 60.4% mAP@50 and 38.3% mAP@50\-\-95 while maintaining robust classification accuracy across five predefined height tiers. The model excels in handling occlusions, complex building shapes, and class imbalance, particularly for rare high\-rise structures. Comparative analysis confirms that YOLOv11 outperforms earlier multitask frameworks in both detection accuracy and inference speed, making it well\-suited for real\-time, large\-scale urban mapping. This research highlights YOLOv11's potential to advance semantic urban reconstruction through streamlined categorical height modeling, offering actionable insights for future developments in remote sensing and geospatial intelligence.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2510.27224v1)
-
----
-
-
-## maxVSTAR: Maximally Adaptive Vision\-Guided CSI Sensing with Closed\-Loop Edge Model Adaptation for Robust Human Activity Recognition / 
-
-发布日期：2025-10-30
-
-作者：Kexing Liu
-
-摘要：WiFi Channel State Information \(CSI\)\-based human activity recognition \(HAR\) provides a privacy\-preserving, device\-free sensing solution for smart environments. However, its deployment on edge devices is severely constrained by domain shift, where recognition performance deteriorates under varying environmental and hardware conditions. This study presents maxVSTAR \(maximally adaptive Vision\-guided Sensing Technology for Activity Recognition\), a closed\-loop, vision\-guided model adaptation framework that autonomously mitigates domain shift for edge\-deployed CSI sensing systems. The proposed system integrates a cross\-modal teacher\-student architecture, where a high\-accuracy YOLO\-based vision model serves as a dynamic supervisory signal, delivering real\-time activity labels for the CSI data stream. These labels enable autonomous, online fine\-tuning of a lightweight CSI\-based HAR model, termed Sensing Technology for Activity Recognition \(STAR\), directly at the edge. This closed\-loop retraining mechanism allows STAR to continuously adapt to environmental changes without manual intervention. Extensive experiments demonstrate the effectiveness of maxVSTAR. When deployed on uncalibrated hardware, the baseline STAR model's recognition accuracy declined from 93.52% to 49.14%. Following a single vision\-guided adaptation cycle, maxVSTAR restored the accuracy to 81.51%. These results confirm the system's capacity for dynamic, self\-supervised model adaptation in privacy\-conscious IoT environments, establishing a scalable and practical paradigm for long\-term autonomous HAR using CSI sensing at the network edge.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2510.26146v1)
 
 ---
 
