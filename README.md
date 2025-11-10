@@ -1,6 +1,24 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Semantic\-Guided Natural Language and Visual Fusion for Cross\-Modal Interaction Based on Tiny Object Detection / 
+
+发布日期：2025-11-07
+
+作者：Xian\-Hong Huang
+
+摘要：This paper introduces a cutting\-edge approach to cross\-modal interaction for tiny object detection by combining semantic\-guided natural language processing with advanced visual recognition backbones. The proposed method integrates the BERT language model with the CNN\-based Parallel Residual Bi\-Fusion Feature Pyramid Network \(PRB\-FPN\-Net\), incorporating innovative backbone architectures such as ELAN, MSP, and CSP to optimize feature extraction and fusion. By employing lemmatization and fine\-tuning techniques, the system aligns semantic cues from textual inputs with visual features, enhancing detection precision for small and complex objects. Experimental validation using the COCO and Objects365 datasets demonstrates that the model achieves superior performance. On the COCO2017 validation set, it attains a 52.6% average precision \(AP\), outperforming YOLO\-World significantly while maintaining half the parameter consumption of Transformer\-based models like GLIP. Several test on different of backbones such ELAN, MSP, and CSP further enable efficient handling of multi\-scale objects, ensuring scalability and robustness in resource\-constrained environments. This study underscores the potential of integrating natural language understanding with advanced backbone architectures, setting new benchmarks in object detection accuracy, efficiency, and adaptability to real\-world challenges.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2511.05474v1)
+
+---
+
+
 ## HideAndSeg: an AI\-based tool with automated prompting for octopus segmentation in natural habitats / 
 
 发布日期：2025-11-06
@@ -69,24 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2511.02328v1)
-
----
-
-
-## Autobiasing Event Cameras for Flickering Mitigation / 
-
-发布日期：2025-11-04
-
-作者：Mehdi Sefidgar Dilmaghani
-
-摘要：Understanding and mitigating flicker effects caused by rapid variations in light intensity is critical for enhancing the performance of event cameras in diverse environments. This paper introduces an innovative autonomous mechanism for tuning the biases of event cameras, effectively addressing flicker across a wide frequency range \-25 Hz to 500 Hz. Unlike traditional methods that rely on additional hardware or software for flicker filtering, our approach leverages the event cameras inherent bias settings. Utilizing a simple Convolutional Neural Networks \-CNNs, the system identifies instances of flicker in a spatial space and dynamically adjusts specific biases to minimize its impact. The efficacy of this autobiasing system was robustly tested using a face detector framework under both well\-lit and low\-light conditions, as well as across various frequencies. The results demonstrated significant improvements: enhanced YOLO confidence metrics for face detection, and an increased percentage of frames capturing detected faces. Moreover, the average gradient, which serves as an indicator of flicker presence through edge detection, decreased by 38.2 percent in well\-lit conditions and by 53.6 percent in low\-light conditions. These findings underscore the potential of our approach to significantly improve the functionality of event cameras in a range of adverse lighting scenarios.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2511.02180v1)
 
 ---
 
