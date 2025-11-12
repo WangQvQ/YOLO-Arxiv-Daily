@@ -1,92 +1,92 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
-## Semantic\-Guided Natural Language and Visual Fusion for Cross\-Modal Interaction Based on Tiny Object Detection / 
+## DAMO\-YOLO : A Report on Real\-Time Object Detection Design / 
 
-发布日期：2025-11-07
+发布日期：2022-11-23
 
-作者：Xian\-Hong Huang
+作者：Xianzhe Xu
 
-摘要：This paper introduces a cutting\-edge approach to cross\-modal interaction for tiny object detection by combining semantic\-guided natural language processing with advanced visual recognition backbones. The proposed method integrates the BERT language model with the CNN\-based Parallel Residual Bi\-Fusion Feature Pyramid Network \(PRB\-FPN\-Net\), incorporating innovative backbone architectures such as ELAN, MSP, and CSP to optimize feature extraction and fusion. By employing lemmatization and fine\-tuning techniques, the system aligns semantic cues from textual inputs with visual features, enhancing detection precision for small and complex objects. Experimental validation using the COCO and Objects365 datasets demonstrates that the model achieves superior performance. On the COCO2017 validation set, it attains a 52.6% average precision \(AP\), outperforming YOLO\-World significantly while maintaining half the parameter consumption of Transformer\-based models like GLIP. Several test on different of backbones such ELAN, MSP, and CSP further enable efficient handling of multi\-scale objects, ensuring scalability and robustness in resource\-constrained environments. This study underscores the potential of integrating natural language understanding with advanced backbone architectures, setting new benchmarks in object detection accuracy, efficiency, and adaptability to real\-world challenges.
+摘要：In this report, we present a fast and accurate object detection method dubbed DAMO\-YOLO, which achieves higher performance than the state\-of\-the\-art YOLO series. DAMO\-YOLO is extended from YOLO with some new technologies, including Neural Architecture Search \(NAS\), efficient Reparameterized Generalized\-FPN \(RepGFPN\), a lightweight head with AlignedOTA label assignment, and distillation enhancement. In particular, we use MAE\-NAS, a method guided by the principle of maximum entropy, to search our detection backbone under the constraints of low latency and high performance, producing ResNet/CSP\-like structures with spatial pyramid pooling and focus modules. In the design of necks and heads, we follow the rule of \`\`large neck, small head''.We import Generalized\-FPN with accelerated queen\-fusion to build the detector neck and upgrade its CSPNet with efficient layer aggregation networks \(ELAN\) and reparameterization. Then we investigate how detector head size affects detection performance and find that a heavy neck with only one task projection layer would yield better results.In addition, AlignedOTA is proposed to solve the misalignment problem in label assignment. And a distillation schema is introduced to improve performance to a higher level. Based on these new techs, we build a suite of models at various scales to meet the needs of different scenarios. For general industry requirements, we propose DAMO\-YOLO\-T/S/M/L. They can achieve 43.6/47.7/50.2/51.9 mAPs on COCO with the latency of 2.78/3.83/5.62/7.95 ms on T4 GPUs respectively. Additionally, for edge devices with limited computing power, we have also proposed DAMO\-YOLO\-Ns/Nm/Nl lightweight models. They can achieve 32.3/38.2/40.5 mAPs on COCO with the latency of 4.08/5.05/6.69 ms on X86\-CPU. Our proposed general and lightweight models have outperformed other YOLO series models in their respective application scenarios.
 
 中文摘要：
 
 
 代码链接：摘要中未找到代码链接。
 
-论文链接：[阅读更多](http://arxiv.org/abs/2511.05474v1)
+论文链接：[阅读更多](http://arxiv.org/abs/2211.15444v4)
 
 ---
 
 
-## HideAndSeg: an AI\-based tool with automated prompting for octopus segmentation in natural habitats / 
+## YOLO\-World: Real\-Time Open\-Vocabulary Object Detection / 
 
-发布日期：2025-11-06
+发布日期：2024-01-30
 
-作者：Alan de Aguiar
+作者：Tianheng Cheng
 
-摘要：Analyzing octopuses in their natural habitats is challenging due to their camouflage capability, rapid changes in skin texture and color, non\-rigid body deformations, and frequent occlusions, all of which are compounded by variable underwater lighting and turbidity. Addressing the lack of large\-scale annotated datasets, this paper introduces HideAndSeg, a novel, minimally supervised AI\-based tool for segmenting videos of octopuses. It establishes a quantitative baseline for this task. HideAndSeg integrates SAM2 with a custom\-trained YOLOv11 object detector. First, the user provides point coordinates to generate the initial segmentation masks with SAM2. These masks serve as training data for the YOLO model. After that, our approach fully automates the pipeline by providing a bounding box prompt to SAM2, eliminating the need for further manual intervention. We introduce two unsupervised metrics \- temporal consistency $DICE\_t$ and new component count $NC\_t$ \- to quantitatively evaluate segmentation quality and guide mask refinement in the absence of ground\-truth data, i.e., real\-world information that serves to train, validate, and test AI models. Results show that HideAndSeg achieves satisfactory performance, reducing segmentation noise compared to the manually prompted approach. Our method can re\-identify and segment the octopus even after periods of complete occlusion in natural environments, a scenario in which the manually prompted model fails. By reducing the need for manual analysis in real\-world scenarios, this work provides a practical tool that paves the way for more efficient behavioral studies of wild cephalopods.
+摘要：The You Only Look Once \(YOLO\) series of detectors have established themselves as efficient and practical tools. However, their reliance on predefined and trained object categories limits their applicability in open scenarios. Addressing this limitation, we introduce YOLO\-World, an innovative approach that enhances YOLO with open\-vocabulary detection capabilities through vision\-language modeling and pre\-training on large\-scale datasets. Specifically, we propose a new Re\-parameterizable Vision\-Language Path Aggregation Network \(RepVL\-PAN\) and region\-text contrastive loss to facilitate the interaction between visual and linguistic information. Our method excels in detecting a wide range of objects in a zero\-shot manner with high efficiency. On the challenging LVIS dataset, YOLO\-World achieves 35.4 AP with 52.0 FPS on V100, which outperforms many state\-of\-the\-art methods in terms of both accuracy and speed. Furthermore, the fine\-tuned YOLO\-World achieves remarkable performance on several downstream tasks, including object detection and open\-vocabulary instance segmentation.
 
 中文摘要：
 
 
 代码链接：摘要中未找到代码链接。
 
-论文链接：[阅读更多](http://arxiv.org/abs/2511.04426v1)
+论文链接：[阅读更多](http://arxiv.org/abs/2401.17270v3)
 
 ---
 
 
-## Desert Waste Detection and Classification Using Data\-Based and Model\-Based Enhanced YOLOv12 DL Model / 
+## YOLO\-CL: Galaxy cluster detection in the SDSS with deep machine learning / 
 
-发布日期：2025-11-05
+发布日期：2023-01-23
 
-作者：Abdulmumin Sa'ad
+作者：Kirill Grishin
 
-摘要：The global waste crisis is escalating, with solid waste generation expected to increase by 70% by 2050. Traditional waste collection methods, particularly in remote or harsh environments like deserts, are labor\-intensive, inefficient, and often hazardous. Recent advances in computer vision and deep learning have opened the door to automated waste detection systems, yet most research focuses on urban environments and recyclable materials, overlooking organic and hazardous waste and underexplored terrains such as deserts. In this work, we propose an enhanced real\-time object detection framework based on a pruned, lightweight version of YOLOv12 integrated with Self\-Adversarial Training \(SAT\) and specialized data augmentation strategies. Using the DroneTrashNet dataset, we demonstrate significant improvements in precision, recall, and mean average precision \(mAP\), while achieving low latency and compact model size suitable for deployment on resource\-constrained aerial drones. Benchmarking our model against state\-of\-the\-art lightweight YOLO variants further highlights its optimal balance of accuracy and efficiency. Our results validate the effectiveness of combining data\-centric and model\-centric enhancements for robust, real\-time waste detection in desert environments.
+摘要：\(Abridged\) Galaxy clusters are a powerful probe of cosmological models. Next generation large\-scale optical and infrared surveys will reach unprecedented depths over large areas and require highly complete and pure cluster catalogs, with a well defined selection function. We have developed a new cluster detection algorithm YOLO\-CL, which is a modified version of the state\-of\-the\-art object detection deep convolutional network YOLO, optimized for the detection of galaxy clusters. We trained YOLO\-CL on color images of the redMaPPer cluster detections in the SDSS. We find that YOLO\-CL detects $95\-98%$ of the redMaPPer clusters, with a purity of $95\-98%$ calculated by applying the network to SDSS blank fields. When compared to the MCXC2021 X\-ray catalog in the SDSS footprint,YOLO\-CL is more complete then redMaPPer, which means that the neural network improved the cluster detection efficiency of its training sample. The YOLO\-CL selection function is approximately constant with redshift, with respect to the MCXC2021 cluster mean X\-ray surface brightness. YOLO\-CL shows high performance when compared to traditional detection algorithms applied to SDSS. Deep learning networks benefit from a strong advantage over traditional galaxy cluster detection techniques because they do not need galaxy photometric and photometric redshift catalogs. This eliminates systematic uncertainties that can be introduced during source detection, and photometry and photometric redshift measurements. Our results show that YOLO\-CL is an efficient alternative to traditional cluster detection methods. In general, this work shows that it is worth exploring the performance of deep convolution networks for future cosmological cluster surveys, such as the Rubin/LSST, Euclid or the Roman Space Telescope surveys.
 
 中文摘要：
 
 
 代码链接：摘要中未找到代码链接。
 
-论文链接：[阅读更多](http://arxiv.org/abs/2511.03888v1)
+论文链接：[阅读更多](http://arxiv.org/abs/2301.09657v2)
 
 ---
 
 
-## The Urban Vision Hackathon Dataset and Models: Towards Image Annotations and Accurate Vision Models for Indian Traffic / 
+## MS\-YOLO: Infrared Object Detection for Edge Deployment via MobileNetV4 and SlideLoss / 
 
-发布日期：2025-11-04
+发布日期：2025-09-25
 
-作者：Akash Sharma
+作者：Jiali Zhang
 
-摘要：This report describes the UVH\-26 dataset, the first public release by AIM@IISc of a large\-scale dataset of annotated traffic\-camera images from India. The dataset comprises 26,646 high\-resolution \(1080p\) images sampled from 2800 Bengaluru's Safe\-City CCTV cameras over a 4\-week period, and subsequently annotated through a crowdsourced hackathon involving 565 college students from across India. In total, 1.8 million bounding boxes were labeled across 14 vehicle classes specific to India: Cycle, 2\-Wheeler \(Motorcycle\), 3\-Wheeler \(Auto\-rickshaw\), LCV \(Light Commercial Vehicles\), Van, Tempo\-traveller, Hatchback, Sedan, SUV, MUV, Mini\-bus, Bus, Truck and Other. Of these, 283k\-316k consensus ground truth bounding boxes and labels were derived for distinct objects in the 26k images using Majority Voting and STAPLE algorithms. Further, we train multiple contemporary detectors, including YOLO11\-S/X, RT\-DETR\-S/X, and DAMO\-YOLO\-T/L using these datasets, and report accuracy based on mAP50, mAP75 and mAP50:95. Models trained on UVH\-26 achieve 8.4\-31.5% improvements in mAP50:95 over equivalent baseline models trained on COCO dataset, with RT\-DETR\-X showing the best performance at 0.67 \(mAP50:95\) as compared to 0.40 for COCO\-trained weights for common classes \(Car, Bus, and Truck\). This demonstrates the benefits of domain\-specific training data for Indian traffic scenarios. The release package provides the 26k images with consensus annotations based on Majority Voting \(UVH\-26\-MV\) and STAPLE \(UVH\-26\-ST\) and the 6 fine\-tuned YOLO and DETR models on each of these datasets. By capturing the heterogeneity of Indian urban mobility directly from operational traffic\-camera streams, UVH\-26 addresses a critical gap in existing global benchmarks, and offers a foundation for advancing detection, classification, and deployment of intelligent transportation systems in emerging nations with complex traffic conditions.
+摘要：Infrared imaging has emerged as a robust solution for urban object detection under low\-light and adverse weather conditions, offering significant advantages over traditional visible\-light cameras. However, challenges such as class imbalance, thermal noise, and computational constraints can significantly hinder model performance in practical settings. To address these issues, we evaluate multiple YOLO variants on the FLIR ADAS V2 dataset, ultimately selecting YOLOv8 as our baseline due to its balanced accuracy and efficiency. Building on this foundation, we present texttt\{MS\-YOLO\} \(textbf\{M\}obileNetv4 and textbf\{S\}lideLoss based on YOLO\), which replaces YOLOv8's CSPDarknet backbone with the more efficient MobileNetV4, reducing computational overhead by textbf\{1.5%\} while sustaining high accuracy. In addition, we introduce emph\{SlideLoss\}, a novel loss function that dynamically emphasizes under\-represented and occluded samples, boosting precision without sacrificing recall. Experiments on the FLIR ADAS V2 benchmark show that texttt\{MS\-YOLO\} attains competitive mAP and superior precision while operating at only textbf\{6.7 GFLOPs\}. These results demonstrate that texttt\{MS\-YOLO\} effectively addresses the dual challenge of maintaining high detection quality while minimizing computational costs, making it well\-suited for real\-time edge deployment in urban environments.
 
 中文摘要：
 
 
 代码链接：摘要中未找到代码链接。
 
-论文链接：[阅读更多](http://arxiv.org/abs/2511.02563v1)
+论文链接：[阅读更多](http://arxiv.org/abs/2509.21696v1)
 
 ---
 
 
-## ASTROFLOW: A Real\-Time End\-to\-End Pipeline for Radio Single\-Pulse Searches / 
+## Poly\-YOLO: higher speed, more precise detection and instance segmentation for YOLOv3 / 
 
-发布日期：2025-11-04
+发布日期：2020-05-27
 
-作者：Guanhong Lin
+作者：Petr Hurtik
 
-摘要：Fast radio bursts \(FRBs\) are extremely bright, millisecond duration cosmic transients of unknown origin. The growing number of wide\-field and high\-time\-resolution radio surveys, particularly with next\-generation facilities such as the SKA and MeerKAT, will dramatically increase FRB discovery rates, but also produce data volumes that overwhelm conventional search pipelines. Real\-time detection thus demands software that is both algorithmically robust and computationally efficient. We present Astroflow, an end\-to\-end, GPU\-accelerated pipeline for single\-pulse detection in radio time\-frequency data. Built on a unified C\+\+/CUDA core with a Python interface, Astroflow integrates RFI excision, incoherent dedispersion, dynamic\-spectrum tiling, and a YOLO\-based deep detector. Through vectorized memory access, shared\-memory tiling, and OpenMP parallelism, it achieves 10x faster\-than\-real\-time processing on consumer GPUs for a typical 150 s, 2048\-channel observation, while preserving high sensitivity across a wide range of pulse widths and dispersion measures. These results establish the feasibility of a fully integrated, GPU\-accelerated single\-pulse search stack, capable of scaling to the data volumes expected from upcoming large\-scale surveys. Astroflow offers a reusable and deployable solution for real\-time transient discovery, and provides a framework that can be continuously refined with new data and models.
+摘要：We present a new version of YOLO with better performance and extended with instance segmentation called Poly\-YOLO. Poly\-YOLO builds on the original ideas of YOLOv3 and removes two of its weaknesses: a large amount of rewritten labels and inefficient distribution of anchors. Poly\-YOLO reduces the issues by aggregating features from a light SE\-Darknet\-53 backbone with a hypercolumn technique, using stairstep upsampling, and produces a single scale output with high resolution. In comparison with YOLOv3, Poly\-YOLO has only 60% of its trainable parameters but improves mAP by a relative 40%. We also present Poly\-YOLO lite with fewer parameters and a lower output resolution. It has the same precision as YOLOv3, but it is three times smaller and twice as fast, thus suitable for embedded devices. Finally, Poly\-YOLO performs instance segmentation using bounding polygons. The network is trained to detect size\-independent polygons defined on a polar grid. Vertices of each polygon are being predicted with their confidence, and therefore Poly\-YOLO produces polygons with a varying number of vertices.
 
 中文摘要：
 
 
 代码链接：摘要中未找到代码链接。
 
-论文链接：[阅读更多](http://arxiv.org/abs/2511.02328v1)
+论文链接：[阅读更多](http://arxiv.org/abs/2005.13243v2)
 
 ---
 
