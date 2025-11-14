@@ -1,92 +1,92 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
-## DAMO\-YOLO : A Report on Real\-Time Object Detection Design / 
+## Robust Object Detection with Pseudo Labels from VLMs using Per\-Object Co\-teaching / 
 
-发布日期：2022-11-23
+发布日期：2025-11-13
 
-作者：Xianzhe Xu
+作者：Uday Bhaskar
 
-摘要：In this report, we present a fast and accurate object detection method dubbed DAMO\-YOLO, which achieves higher performance than the state\-of\-the\-art YOLO series. DAMO\-YOLO is extended from YOLO with some new technologies, including Neural Architecture Search \(NAS\), efficient Reparameterized Generalized\-FPN \(RepGFPN\), a lightweight head with AlignedOTA label assignment, and distillation enhancement. In particular, we use MAE\-NAS, a method guided by the principle of maximum entropy, to search our detection backbone under the constraints of low latency and high performance, producing ResNet/CSP\-like structures with spatial pyramid pooling and focus modules. In the design of necks and heads, we follow the rule of \`\`large neck, small head''.We import Generalized\-FPN with accelerated queen\-fusion to build the detector neck and upgrade its CSPNet with efficient layer aggregation networks \(ELAN\) and reparameterization. Then we investigate how detector head size affects detection performance and find that a heavy neck with only one task projection layer would yield better results.In addition, AlignedOTA is proposed to solve the misalignment problem in label assignment. And a distillation schema is introduced to improve performance to a higher level. Based on these new techs, we build a suite of models at various scales to meet the needs of different scenarios. For general industry requirements, we propose DAMO\-YOLO\-T/S/M/L. They can achieve 43.6/47.7/50.2/51.9 mAPs on COCO with the latency of 2.78/3.83/5.62/7.95 ms on T4 GPUs respectively. Additionally, for edge devices with limited computing power, we have also proposed DAMO\-YOLO\-Ns/Nm/Nl lightweight models. They can achieve 32.3/38.2/40.5 mAPs on COCO with the latency of 4.08/5.05/6.69 ms on X86\-CPU. Our proposed general and lightweight models have outperformed other YOLO series models in their respective application scenarios.
+摘要：Foundation models, especially vision\-language models \(VLMs\), offer compelling zero\-shot object detection for applications like autonomous driving, a domain where manual labelling is prohibitively expensive. However, their detection latency and tendency to hallucinate predictions render them unsuitable for direct deployment. This work introduces a novel pipeline that addresses this challenge by leveraging VLMs to automatically generate pseudo\-labels for training efficient, real\-time object detectors. Our key innovation is a per\-object co\-teaching\-based training strategy that mitigates the inherent noise in VLM\-generated labels. The proposed per\-object coteaching approach filters noisy bounding boxes from training instead of filtering the entire image. Specifically, two YOLO models learn collaboratively, filtering out unreliable boxes from each mini\-batch based on their peers' per\-object loss values. Overall, our pipeline provides an efficient, robust, and scalable approach to train high\-performance object detectors for autonomous driving, significantly reducing reliance on costly human annotation. Experimental results on the KITTI dataset demonstrate that our method outperforms a baseline YOLOv5m model, achieving a significant mAP@0.5 boost \($31.12%$ to $46.61%$\) while maintaining real\-time detection latency. Furthermore, we show that supplementing our pseudo\-labelled data with a small fraction of ground truth labels \($10%$\) leads to further performance gains, reaching $57.97%$ mAP@0.5 on the KITTI dataset. We observe similar performance improvements for the ACDC and BDD100k datasets.
 
 中文摘要：
 
 
 代码链接：摘要中未找到代码链接。
 
-论文链接：[阅读更多](http://arxiv.org/abs/2211.15444v4)
+论文链接：[阅读更多](http://arxiv.org/abs/2511.09955v1)
 
 ---
 
 
-## YOLO\-World: Real\-Time Open\-Vocabulary Object Detection / 
+## DKDS: A Benchmark Dataset of Degraded Kuzushiji Documents with Seals for Detection and Binarization / 
 
-发布日期：2024-01-30
+发布日期：2025-11-12
 
-作者：Tianheng Cheng
+作者：Rui\-Yang Ju
 
-摘要：The You Only Look Once \(YOLO\) series of detectors have established themselves as efficient and practical tools. However, their reliance on predefined and trained object categories limits their applicability in open scenarios. Addressing this limitation, we introduce YOLO\-World, an innovative approach that enhances YOLO with open\-vocabulary detection capabilities through vision\-language modeling and pre\-training on large\-scale datasets. Specifically, we propose a new Re\-parameterizable Vision\-Language Path Aggregation Network \(RepVL\-PAN\) and region\-text contrastive loss to facilitate the interaction between visual and linguistic information. Our method excels in detecting a wide range of objects in a zero\-shot manner with high efficiency. On the challenging LVIS dataset, YOLO\-World achieves 35.4 AP with 52.0 FPS on V100, which outperforms many state\-of\-the\-art methods in terms of both accuracy and speed. Furthermore, the fine\-tuned YOLO\-World achieves remarkable performance on several downstream tasks, including object detection and open\-vocabulary instance segmentation.
+摘要：Kuzushiji, a pre\-modern Japanese cursive script, can currently be read and understood by only a few thousand trained experts in Japan. With the rapid development of deep learning, researchers have begun applying Optical Character Recognition \(OCR\) techniques to transcribe Kuzushiji into modern Japanese. Although existing OCR methods perform well on clean pre\-modern Japanese documents written in Kuzushiji, they often fail to consider various types of noise, such as document degradation and seals, which significantly affect recognition accuracy. To the best of our knowledge, no existing dataset specifically addresses these challenges. To address this gap, we introduce the Degraded Kuzushiji Documents with Seals \(DKDS\) dataset as a new benchmark for related tasks. We describe the dataset construction process, which required the assistance of a trained Kuzushiji expert, and define two benchmark tracks: \(1\) text and seal detection and \(2\) document binarization. For the text and seal detection track, we provide baseline results using multiple versions of the You Only Look Once \(YOLO\) models for detecting Kuzushiji characters and seals. For the document binarization track, we present baseline results from traditional binarization algorithms, traditional algorithms combined with K\-means clustering, and Generative Adversarial Network \(GAN\)\-based methods. The DKDS dataset and the implementation code for baseline methods are available at https://ruiyangju.github.io/DKDS.
 
 中文摘要：
 
 
-代码链接：摘要中未找到代码链接。
+代码链接：https://ruiyangju.github.io/DKDS.
 
-论文链接：[阅读更多](http://arxiv.org/abs/2401.17270v3)
+论文链接：[阅读更多](http://arxiv.org/abs/2511.09117v1)
 
 ---
 
 
-## YOLO\-CL: Galaxy cluster detection in the SDSS with deep machine learning / 
+## Hardware\-Aware YOLO Compression for Low\-Power Edge AI on STM32U5 for Weeds Detection in Digital Agriculture / 
 
-发布日期：2023-01-23
+发布日期：2025-11-11
 
-作者：Kirill Grishin
+作者：Charalampos S. Kouzinopoulos
 
-摘要：\(Abridged\) Galaxy clusters are a powerful probe of cosmological models. Next generation large\-scale optical and infrared surveys will reach unprecedented depths over large areas and require highly complete and pure cluster catalogs, with a well defined selection function. We have developed a new cluster detection algorithm YOLO\-CL, which is a modified version of the state\-of\-the\-art object detection deep convolutional network YOLO, optimized for the detection of galaxy clusters. We trained YOLO\-CL on color images of the redMaPPer cluster detections in the SDSS. We find that YOLO\-CL detects $95\-98%$ of the redMaPPer clusters, with a purity of $95\-98%$ calculated by applying the network to SDSS blank fields. When compared to the MCXC2021 X\-ray catalog in the SDSS footprint,YOLO\-CL is more complete then redMaPPer, which means that the neural network improved the cluster detection efficiency of its training sample. The YOLO\-CL selection function is approximately constant with redshift, with respect to the MCXC2021 cluster mean X\-ray surface brightness. YOLO\-CL shows high performance when compared to traditional detection algorithms applied to SDSS. Deep learning networks benefit from a strong advantage over traditional galaxy cluster detection techniques because they do not need galaxy photometric and photometric redshift catalogs. This eliminates systematic uncertainties that can be introduced during source detection, and photometry and photometric redshift measurements. Our results show that YOLO\-CL is an efficient alternative to traditional cluster detection methods. In general, this work shows that it is worth exploring the performance of deep convolution networks for future cosmological cluster surveys, such as the Rubin/LSST, Euclid or the Roman Space Telescope surveys.
+摘要：Weeds significantly reduce crop yields worldwide and pose major challenges to sustainable agriculture. Traditional weed management methods, primarily relying on chemical herbicides, risk environmental contamination and lead to the emergence of herbicide\-resistant species. Precision weeding, leveraging computer vision and machine learning methods, offers a promising eco\-friendly alternative but is often limited by reliance on high\-power computational platforms. This work presents an optimized, low\-power edge AI system for weeds detection based on the YOLOv8n object detector deployed on the STM32U575ZI microcontroller. Several compression techniques are applied to the detection model, including structured pruning, integer quantization and input image resolution scaling in order to meet strict hardware constraints. The model is trained and evaluated on the CropAndWeed dataset with 74 plant species, achieving a balanced trade\-off between detection accuracy and efficiency. Our system supports real\-time, in\-situ weeds detection with a minimal energy consumption of 51.8mJ per inference, enabling scalable deployment in power\-constrained agricultural environments.
 
 中文摘要：
 
 
 代码链接：摘要中未找到代码链接。
 
-论文链接：[阅读更多](http://arxiv.org/abs/2301.09657v2)
+论文链接：[阅读更多](http://arxiv.org/abs/2511.07990v1)
 
 ---
 
 
-## MS\-YOLO: Infrared Object Detection for Edge Deployment via MobileNetV4 and SlideLoss / 
+## FPGA\-Accelerated RISC\-V ISA Extensions for Efficient Neural Network Inference on Edge Devices / 
 
-发布日期：2025-09-25
+发布日期：2025-11-10
 
-作者：Jiali Zhang
+作者：Arya Parameshwara
 
-摘要：Infrared imaging has emerged as a robust solution for urban object detection under low\-light and adverse weather conditions, offering significant advantages over traditional visible\-light cameras. However, challenges such as class imbalance, thermal noise, and computational constraints can significantly hinder model performance in practical settings. To address these issues, we evaluate multiple YOLO variants on the FLIR ADAS V2 dataset, ultimately selecting YOLOv8 as our baseline due to its balanced accuracy and efficiency. Building on this foundation, we present texttt\{MS\-YOLO\} \(textbf\{M\}obileNetv4 and textbf\{S\}lideLoss based on YOLO\), which replaces YOLOv8's CSPDarknet backbone with the more efficient MobileNetV4, reducing computational overhead by textbf\{1.5%\} while sustaining high accuracy. In addition, we introduce emph\{SlideLoss\}, a novel loss function that dynamically emphasizes under\-represented and occluded samples, boosting precision without sacrificing recall. Experiments on the FLIR ADAS V2 benchmark show that texttt\{MS\-YOLO\} attains competitive mAP and superior precision while operating at only textbf\{6.7 GFLOPs\}. These results demonstrate that texttt\{MS\-YOLO\} effectively addresses the dual challenge of maintaining high detection quality while minimizing computational costs, making it well\-suited for real\-time edge deployment in urban environments.
+摘要：Edge AI deployment faces critical challenges balancing computational performance, energy efficiency, and resource constraints. This paper presents FPGA\-accelerated RISC\-V instruction set architecture \(ISA\) extensions for efficient neural network inference on resource\-constrained edge devices. We introduce a custom RISC\-V core with four novel ISA extensions \(FPGA.VCONV, FPGA.GEMM, FPGA.RELU, FPGA.CUSTOM\) and integrated neural network accelerators, implemented and validated on the Xilinx PYNQ\-Z2 platform. The complete system achieves 2.14x average latency speedup and 49.1% energy reduction versus an ARM Cortex\-A9 software baseline across four benchmark models \(MobileNet V2, ResNet\-18, EfficientNet Lite, YOLO Tiny\). Hardware implementation closes timing with \+12.793 ns worst negative slack at 50 MHz while using 0.43% LUTs and 11.4% BRAM for the base core and 38.8% DSPs when accelerators are active. Hardware verification confirms successful FPGA deployment with verified 64 KB BRAM memory interface and AXI interconnect functionality. All performance metrics are obtained from physical hardware measurements. This work establishes a reproducible framework for ISA\-guided FPGA acceleration that complements fixed\-function ASICs by trading peak performance for programmability.
 
 中文摘要：
 
 
 代码链接：摘要中未找到代码链接。
 
-论文链接：[阅读更多](http://arxiv.org/abs/2509.21696v1)
+论文链接：[阅读更多](http://arxiv.org/abs/2511.06955v1)
 
 ---
 
 
-## Poly\-YOLO: higher speed, more precise detection and instance segmentation for YOLOv3 / 
+## Semantic\-Guided Natural Language and Visual Fusion for Cross\-Modal Interaction Based on Tiny Object Detection / 
 
-发布日期：2020-05-27
+发布日期：2025-11-07
 
-作者：Petr Hurtik
+作者：Xian\-Hong Huang
 
-摘要：We present a new version of YOLO with better performance and extended with instance segmentation called Poly\-YOLO. Poly\-YOLO builds on the original ideas of YOLOv3 and removes two of its weaknesses: a large amount of rewritten labels and inefficient distribution of anchors. Poly\-YOLO reduces the issues by aggregating features from a light SE\-Darknet\-53 backbone with a hypercolumn technique, using stairstep upsampling, and produces a single scale output with high resolution. In comparison with YOLOv3, Poly\-YOLO has only 60% of its trainable parameters but improves mAP by a relative 40%. We also present Poly\-YOLO lite with fewer parameters and a lower output resolution. It has the same precision as YOLOv3, but it is three times smaller and twice as fast, thus suitable for embedded devices. Finally, Poly\-YOLO performs instance segmentation using bounding polygons. The network is trained to detect size\-independent polygons defined on a polar grid. Vertices of each polygon are being predicted with their confidence, and therefore Poly\-YOLO produces polygons with a varying number of vertices.
+摘要：This paper introduces a cutting\-edge approach to cross\-modal interaction for tiny object detection by combining semantic\-guided natural language processing with advanced visual recognition backbones. The proposed method integrates the BERT language model with the CNN\-based Parallel Residual Bi\-Fusion Feature Pyramid Network \(PRB\-FPN\-Net\), incorporating innovative backbone architectures such as ELAN, MSP, and CSP to optimize feature extraction and fusion. By employing lemmatization and fine\-tuning techniques, the system aligns semantic cues from textual inputs with visual features, enhancing detection precision for small and complex objects. Experimental validation using the COCO and Objects365 datasets demonstrates that the model achieves superior performance. On the COCO2017 validation set, it attains a 52.6% average precision \(AP\), outperforming YOLO\-World significantly while maintaining half the parameter consumption of Transformer\-based models like GLIP. Several test on different of backbones such ELAN, MSP, and CSP further enable efficient handling of multi\-scale objects, ensuring scalability and robustness in resource\-constrained environments. This study underscores the potential of integrating natural language understanding with advanced backbone architectures, setting new benchmarks in object detection accuracy, efficiency, and adaptability to real\-world challenges.
 
 中文摘要：
 
 
 代码链接：摘要中未找到代码链接。
 
-论文链接：[阅读更多](http://arxiv.org/abs/2005.13243v2)
+论文链接：[阅读更多](http://arxiv.org/abs/2511.05474v1)
 
 ---
 
