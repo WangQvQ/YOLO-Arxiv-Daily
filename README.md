@@ -1,6 +1,42 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Facial Expression Recognition with YOLOv11 and YOLOv12: A Comparative Study / 
+
+发布日期：2025-11-14
+
+作者：Umma Aymon
+
+摘要：Facial Expression Recognition remains a challenging task, especially in unconstrained, real\-world environments. This study investigates the performance of two lightweight models, YOLOv11n and YOLOv12n, which are the nano variants of the latest official YOLO series, within a unified detection and classification framework for FER. Two benchmark classification datasets, FER2013 and KDEF, are converted into object detection format and model performance is evaluated using mAP 0.5, precision, recall, and confusion matrices. Results show that YOLOv12n achieves the highest overall performance on the clean KDEF dataset with a mAP 0.5 of 95.6, and also outperforms YOLOv11n on the FER2013 dataset in terms of mAP 63.8, reflecting stronger sensitivity to varied expressions. In contrast, YOLOv11n demonstrates higher precision 65.2 on FER2013, indicating fewer false positives and better reliability in noisy, real\-world conditions. On FER2013, both models show more confusion between visually similar expressions, while clearer class separation is observed on the cleaner KDEF dataset. These findings underscore the trade\-off between sensitivity and precision, illustrating how lightweight YOLO models can effectively balance performance and efficiency. The results demonstrate adaptability across both controlled and real\-world conditions, establishing these models as strong candidates for real\-time, resource\-constrained emotion\-aware AI applications.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2511.10940v1)
+
+---
+
+
+## YOLO\-Drone: An Efficient Object Detection Approach Using the GhostHead Network for Drone Images / 
+
+发布日期：2025-11-14
+
+作者：Hyun\-Ki Jung
+
+摘要：Object detection using images or videos captured by drones is a promising technology with significant potential across various industries. However, a major challenge is that drone images are typically taken from high altitudes, making object identification difficult. This paper proposes an effective solution to address this issue. The base model used in the experiments is YOLOv11, the latest object detection model, with a specific implementation based on YOLOv11n. The experimental data were sourced from the widely used and reliable VisDrone dataset, a standard benchmark in drone\-based object detection. This paper introduces an enhancement to the Head network of the YOLOv11 algorithm, called the GhostHead Network. The model incorporating this improvement is named YOLO\-Drone. Experimental results demonstrate that YOLO\-Drone achieves significant improvements in key detection accuracy metrics, including Precision, Recall, F1\-Score, and mAP \(0.5\), compared to the original YOLOv11. Specifically, the proposed model recorded a 0.4% increase in Precision, a 0.6% increase in Recall, a 0.5% increase in F1\-Score, and a 0.5% increase in mAP \(0.5\). Additionally, the Inference Speed metric, which measures image processing speed, also showed a notable improvement. These results indicate that YOLO\-Drone is a high\-performance model with enhanced accuracy and speed compared to YOLOv11. To further validate its reliability, comparative experiments were conducted against other high\-performance object detection models, including YOLOv8, YOLOv9, and YOLOv10. The results confirmed that the proposed model outperformed YOLOv8 by 0.1% in mAP \(0.5\) and surpassed YOLOv9 and YOLOv10 by 0.3% and 0.6%, respectively.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2511.10905v1)
+
+---
+
+
 ## Robust Object Detection with Pseudo Labels from VLMs using Per\-Object Co\-teaching / 
 
 发布日期：2025-11-13
@@ -51,42 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2511.07990v1)
-
----
-
-
-## FPGA\-Accelerated RISC\-V ISA Extensions for Efficient Neural Network Inference on Edge Devices / 
-
-发布日期：2025-11-10
-
-作者：Arya Parameshwara
-
-摘要：Edge AI deployment faces critical challenges balancing computational performance, energy efficiency, and resource constraints. This paper presents FPGA\-accelerated RISC\-V instruction set architecture \(ISA\) extensions for efficient neural network inference on resource\-constrained edge devices. We introduce a custom RISC\-V core with four novel ISA extensions \(FPGA.VCONV, FPGA.GEMM, FPGA.RELU, FPGA.CUSTOM\) and integrated neural network accelerators, implemented and validated on the Xilinx PYNQ\-Z2 platform. The complete system achieves 2.14x average latency speedup and 49.1% energy reduction versus an ARM Cortex\-A9 software baseline across four benchmark models \(MobileNet V2, ResNet\-18, EfficientNet Lite, YOLO Tiny\). Hardware implementation closes timing with \+12.793 ns worst negative slack at 50 MHz while using 0.43% LUTs and 11.4% BRAM for the base core and 38.8% DSPs when accelerators are active. Hardware verification confirms successful FPGA deployment with verified 64 KB BRAM memory interface and AXI interconnect functionality. All performance metrics are obtained from physical hardware measurements. This work establishes a reproducible framework for ISA\-guided FPGA acceleration that complements fixed\-function ASICs by trading peak performance for programmability.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2511.06955v1)
-
----
-
-
-## Semantic\-Guided Natural Language and Visual Fusion for Cross\-Modal Interaction Based on Tiny Object Detection / 
-
-发布日期：2025-11-07
-
-作者：Xian\-Hong Huang
-
-摘要：This paper introduces a cutting\-edge approach to cross\-modal interaction for tiny object detection by combining semantic\-guided natural language processing with advanced visual recognition backbones. The proposed method integrates the BERT language model with the CNN\-based Parallel Residual Bi\-Fusion Feature Pyramid Network \(PRB\-FPN\-Net\), incorporating innovative backbone architectures such as ELAN, MSP, and CSP to optimize feature extraction and fusion. By employing lemmatization and fine\-tuning techniques, the system aligns semantic cues from textual inputs with visual features, enhancing detection precision for small and complex objects. Experimental validation using the COCO and Objects365 datasets demonstrates that the model achieves superior performance. On the COCO2017 validation set, it attains a 52.6% average precision \(AP\), outperforming YOLO\-World significantly while maintaining half the parameter consumption of Transformer\-based models like GLIP. Several test on different of backbones such ELAN, MSP, and CSP further enable efficient handling of multi\-scale objects, ensuring scalability and robustness in resource\-constrained environments. This study underscores the potential of integrating natural language understanding with advanced backbone architectures, setting new benchmarks in object detection accuracy, efficiency, and adaptability to real\-world challenges.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2511.05474v1)
 
 ---
 
