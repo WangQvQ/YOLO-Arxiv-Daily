@@ -1,6 +1,60 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Hardware optimization on Android for inference of AI models / 
+
+发布日期：2025-11-17
+
+作者：Iulius Gherasim
+
+摘要：The pervasive integration of Artificial Intelligence models into contemporary mobile computing is notable across numerous use cases, from virtual assistants to advanced image processing. Optimizing the mobile user experience involves minimal latency and high responsiveness from deployed AI models with challenges from execution strategies that fully leverage real time constraints to the exploitation of heterogeneous hardware architecture. In this paper, we research and propose the optimal execution configurations for AI models on an Android system, focusing on two critical tasks: object detection \(YOLO family\) and image classification \(ResNet\). These configurations evaluate various model quantization schemes and the utilization of on device accelerators, specifically the GPU and NPU. Our core objective is to empirically determine the combination that achieves the best trade\-off between minimal accuracy degradation and maximal inference speed\-up.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2511.13453v1)
+
+---
+
+
+## YOLO Meets Mixture\-of\-Experts: Adaptive Expert Routing for Robust Object Detection / 
+
+发布日期：2025-11-17
+
+作者：Ori Meiraz
+
+摘要：This paper presents a novel Mixture\-of\-Experts framework for object detection, incorporating adaptive routing among multiple YOLOv9\-T experts to enable dynamic feature specialization and achieve higher mean Average Precision \(mAP\) and Average Recall \(AR\) compared to a single YOLOv9\-T model.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2511.13344v1)
+
+---
+
+
+## MCAQ\-YOLO: Morphological Complexity\-Aware Quantization for Efficient Object Detection with Curriculum Learning / 
+
+发布日期：2025-11-17
+
+作者：Yoonjae Seo
+
+摘要：Most neural network quantization methods apply uniform bit precision across spatial regions, ignoring the heterogeneous structural and textural complexity of visual data. This paper introduces MCAQ\-YOLO, a morphological complexity\-aware quantization framework for object detection. The framework employs five morphological metrics \- fractal dimension, texture entropy, gradient variance, edge density, and contour complexity \- to characterize local visual morphology and guide spatially adaptive bit allocation. By correlating these metrics with quantization sensitivity, MCAQ\-YOLO dynamically adjusts bit precision according to spatial complexity. In addition, a curriculum\-based quantization\-aware training scheme progressively increases quantization difficulty to stabilize optimization and accelerate convergence. Experimental results demonstrate a strong correlation between morphological complexity and quantization sensitivity and show that MCAQ\-YOLO achieves superior detection accuracy and convergence efficiency compared with uniform quantization. On a safety equipment dataset, MCAQ\-YOLO attains 85.6 percent mAP@0.5 with an average of 4.2 bits and a 7.6x compression ratio, yielding 3.5 percentage points higher mAP than uniform 4\-bit quantization while introducing only 1.8 ms of additional runtime overhead per image. Cross\-dataset validation on COCO and Pascal VOC further confirms consistent performance gains, indicating that morphology\-driven spatial quantization can enhance efficiency and robustness for computationally constrained, safety\-critical visual recognition tasks.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2511.12976v1)
+
+---
+
+
 ## Facial Expression Recognition with YOLOv11 and YOLOv12: A Comparative Study / 
 
 发布日期：2025-11-14
@@ -33,60 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2511.10905v1)
-
----
-
-
-## Robust Object Detection with Pseudo Labels from VLMs using Per\-Object Co\-teaching / 
-
-发布日期：2025-11-13
-
-作者：Uday Bhaskar
-
-摘要：Foundation models, especially vision\-language models \(VLMs\), offer compelling zero\-shot object detection for applications like autonomous driving, a domain where manual labelling is prohibitively expensive. However, their detection latency and tendency to hallucinate predictions render them unsuitable for direct deployment. This work introduces a novel pipeline that addresses this challenge by leveraging VLMs to automatically generate pseudo\-labels for training efficient, real\-time object detectors. Our key innovation is a per\-object co\-teaching\-based training strategy that mitigates the inherent noise in VLM\-generated labels. The proposed per\-object coteaching approach filters noisy bounding boxes from training instead of filtering the entire image. Specifically, two YOLO models learn collaboratively, filtering out unreliable boxes from each mini\-batch based on their peers' per\-object loss values. Overall, our pipeline provides an efficient, robust, and scalable approach to train high\-performance object detectors for autonomous driving, significantly reducing reliance on costly human annotation. Experimental results on the KITTI dataset demonstrate that our method outperforms a baseline YOLOv5m model, achieving a significant mAP@0.5 boost \($31.12%$ to $46.61%$\) while maintaining real\-time detection latency. Furthermore, we show that supplementing our pseudo\-labelled data with a small fraction of ground truth labels \($10%$\) leads to further performance gains, reaching $57.97%$ mAP@0.5 on the KITTI dataset. We observe similar performance improvements for the ACDC and BDD100k datasets.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2511.09955v1)
-
----
-
-
-## DKDS: A Benchmark Dataset of Degraded Kuzushiji Documents with Seals for Detection and Binarization / 
-
-发布日期：2025-11-12
-
-作者：Rui\-Yang Ju
-
-摘要：Kuzushiji, a pre\-modern Japanese cursive script, can currently be read and understood by only a few thousand trained experts in Japan. With the rapid development of deep learning, researchers have begun applying Optical Character Recognition \(OCR\) techniques to transcribe Kuzushiji into modern Japanese. Although existing OCR methods perform well on clean pre\-modern Japanese documents written in Kuzushiji, they often fail to consider various types of noise, such as document degradation and seals, which significantly affect recognition accuracy. To the best of our knowledge, no existing dataset specifically addresses these challenges. To address this gap, we introduce the Degraded Kuzushiji Documents with Seals \(DKDS\) dataset as a new benchmark for related tasks. We describe the dataset construction process, which required the assistance of a trained Kuzushiji expert, and define two benchmark tracks: \(1\) text and seal detection and \(2\) document binarization. For the text and seal detection track, we provide baseline results using multiple versions of the You Only Look Once \(YOLO\) models for detecting Kuzushiji characters and seals. For the document binarization track, we present baseline results from traditional binarization algorithms, traditional algorithms combined with K\-means clustering, and Generative Adversarial Network \(GAN\)\-based methods. The DKDS dataset and the implementation code for baseline methods are available at https://ruiyangju.github.io/DKDS.
-
-中文摘要：
-
-
-代码链接：https://ruiyangju.github.io/DKDS.
-
-论文链接：[阅读更多](http://arxiv.org/abs/2511.09117v1)
-
----
-
-
-## Hardware\-Aware YOLO Compression for Low\-Power Edge AI on STM32U5 for Weeds Detection in Digital Agriculture / 
-
-发布日期：2025-11-11
-
-作者：Charalampos S. Kouzinopoulos
-
-摘要：Weeds significantly reduce crop yields worldwide and pose major challenges to sustainable agriculture. Traditional weed management methods, primarily relying on chemical herbicides, risk environmental contamination and lead to the emergence of herbicide\-resistant species. Precision weeding, leveraging computer vision and machine learning methods, offers a promising eco\-friendly alternative but is often limited by reliance on high\-power computational platforms. This work presents an optimized, low\-power edge AI system for weeds detection based on the YOLOv8n object detector deployed on the STM32U575ZI microcontroller. Several compression techniques are applied to the detection model, including structured pruning, integer quantization and input image resolution scaling in order to meet strict hardware constraints. The model is trained and evaluated on the CropAndWeed dataset with 74 plant species, achieving a balanced trade\-off between detection accuracy and efficiency. Our system supports real\-time, in\-situ weeds detection with a minimal energy consumption of 51.8mJ per inference, enabling scalable deployment in power\-constrained agricultural environments.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2511.07990v1)
 
 ---
 
