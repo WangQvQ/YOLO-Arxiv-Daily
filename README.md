@@ -1,6 +1,42 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Cranio\-ID: Graph\-Based Craniofacial Identification via Automatic Landmark Annotation in 2D Multi\-View X\-rays / 
+
+发布日期：2025-11-18
+
+作者：Ravi Shankar Prasad
+
+摘要：In forensic craniofacial identification and in many biomedical applications, craniometric landmarks are important. Traditional methods for locating landmarks are time\-consuming and require specialized knowledge and expertise. Current methods utilize superimposition and deep learning\-based methods that employ automatic annotation of landmarks. However, these methods are not reliable due to insufficient large\-scale validation studies. In this paper, we proposed a novel framework Cranio\-ID: First, an automatic annotation of landmarks on 2D skulls \(which are X\-ray scans of faces\) with their respective optical images using our trained YOLO\-pose models. Second, cross\-modal matching by formulating these landmarks into graph representations and then finding semantic correspondence between graphs of these two modalities using cross\-attention and optimal transport framework. Our proposed framework is validated on the S2F and CUHK datasets \(CUHK dataset resembles with S2F dataset\). Extensive experiments have been conducted to evaluate the performance of our proposed framework, which demonstrates significant improvements in both reliability and accuracy, as well as its effectiveness in cross\-domain skull\-to\-face and sketch\-to\-face matching in forensic science.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2511.14411v1)
+
+---
+
+
+## LSP\-YOLO: A Lightweight Single\-Stage Network for Sitting Posture Recognition on Embedded Devices / 
+
+发布日期：2025-11-18
+
+作者：Nanjun Li
+
+摘要：With the rise in sedentary behavior, health problems caused by poor sitting posture have drawn increasing attention. Most existing methods, whether using invasive sensors or computer vision, rely on two\-stage pipelines, which result in high intrusiveness, intensive computation, and poor real\-time performance on embedded edge devices. Inspired by YOLOv11\-Pose, a lightweight single\-stage network for sitting posture recognition on embedded edge devices termed LSP\-YOLO was proposed. By integrating partial convolution\(PConv\) and Similarity\-Aware Activation Module\(SimAM\), a lightweight module, Light\-C3k2, was designed to reduce computational cost while maintaining feature extraction capability. In the recognition head, keypoints were directly mapped to posture classes through pointwise convolution, and intermediate supervision was employed to enable efficient fusion of pose estimation and classification. Furthermore, a dataset containing 5,000 images across six posture categories was constructed for model training and testing. The smallest trained model, LSP\-YOLO\-n, achieved 94.2% accuracy and 251 Fps on personal computer\(PC\) with a model size of only 1.9 MB. Meanwhile, real\-time and high\-accuracy inference under constrained computational resources was demonstrated on the SV830C \+ GC030A platform. The proposed approach is characterized by high efficiency, lightweight design and deployability, making it suitable for smart classrooms, rehabilitation, and human\-computer interaction applications.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2511.14322v1)
+
+---
+
+
 ## Hardware optimization on Android for inference of AI models / 
 
 发布日期：2025-11-17
@@ -32,7 +68,7 @@
 
 代码链接：摘要中未找到代码链接。
 
-论文链接：[阅读更多](http://arxiv.org/abs/2511.13344v1)
+论文链接：[阅读更多](http://arxiv.org/abs/2511.13344v2)
 
 ---
 
@@ -51,42 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2511.12976v1)
-
----
-
-
-## Facial Expression Recognition with YOLOv11 and YOLOv12: A Comparative Study / 
-
-发布日期：2025-11-14
-
-作者：Umma Aymon
-
-摘要：Facial Expression Recognition remains a challenging task, especially in unconstrained, real\-world environments. This study investigates the performance of two lightweight models, YOLOv11n and YOLOv12n, which are the nano variants of the latest official YOLO series, within a unified detection and classification framework for FER. Two benchmark classification datasets, FER2013 and KDEF, are converted into object detection format and model performance is evaluated using mAP 0.5, precision, recall, and confusion matrices. Results show that YOLOv12n achieves the highest overall performance on the clean KDEF dataset with a mAP 0.5 of 95.6, and also outperforms YOLOv11n on the FER2013 dataset in terms of mAP 63.8, reflecting stronger sensitivity to varied expressions. In contrast, YOLOv11n demonstrates higher precision 65.2 on FER2013, indicating fewer false positives and better reliability in noisy, real\-world conditions. On FER2013, both models show more confusion between visually similar expressions, while clearer class separation is observed on the cleaner KDEF dataset. These findings underscore the trade\-off between sensitivity and precision, illustrating how lightweight YOLO models can effectively balance performance and efficiency. The results demonstrate adaptability across both controlled and real\-world conditions, establishing these models as strong candidates for real\-time, resource\-constrained emotion\-aware AI applications.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2511.10940v1)
-
----
-
-
-## YOLO\-Drone: An Efficient Object Detection Approach Using the GhostHead Network for Drone Images / 
-
-发布日期：2025-11-14
-
-作者：Hyun\-Ki Jung
-
-摘要：Object detection using images or videos captured by drones is a promising technology with significant potential across various industries. However, a major challenge is that drone images are typically taken from high altitudes, making object identification difficult. This paper proposes an effective solution to address this issue. The base model used in the experiments is YOLOv11, the latest object detection model, with a specific implementation based on YOLOv11n. The experimental data were sourced from the widely used and reliable VisDrone dataset, a standard benchmark in drone\-based object detection. This paper introduces an enhancement to the Head network of the YOLOv11 algorithm, called the GhostHead Network. The model incorporating this improvement is named YOLO\-Drone. Experimental results demonstrate that YOLO\-Drone achieves significant improvements in key detection accuracy metrics, including Precision, Recall, F1\-Score, and mAP \(0.5\), compared to the original YOLOv11. Specifically, the proposed model recorded a 0.4% increase in Precision, a 0.6% increase in Recall, a 0.5% increase in F1\-Score, and a 0.5% increase in mAP \(0.5\). Additionally, the Inference Speed metric, which measures image processing speed, also showed a notable improvement. These results indicate that YOLO\-Drone is a high\-performance model with enhanced accuracy and speed compared to YOLOv11. To further validate its reliability, comparative experiments were conducted against other high\-performance object detection models, including YOLOv8, YOLOv9, and YOLOv10. The results confirmed that the proposed model outperformed YOLOv8 by 0.1% in mAP \(0.5\) and surpassed YOLOv9 and YOLOv10 by 0.3% and 0.6%, respectively.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2511.10905v1)
 
 ---
 
