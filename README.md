@@ -1,6 +1,42 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Video\-R4: Reinforcing Text\-Rich Video Reasoning with Visual Rumination / 
+
+发布日期：2025-11-21
+
+作者：Yolo Yunlong Tang
+
+摘要：Understanding text\-rich videos requires reading small, transient textual cues that often demand repeated inspection. Yet most video QA models rely on single\-pass perception over fixed frames, leading to hallucinations and failures on fine\-grained evidence. Inspired by how humans pause, zoom, and re\-read critical regions, we introduce Video\-R4 \(Reinforcing Text\-Rich Video Reasoning with Visual Rumination\), a video reasoning LMM that performs visual rumination: iteratively selecting frames, zooming into informative regions, re\-encoding retrieved pixels, and updating its reasoning state. We construct two datasets with executable rumination trajectories: Video\-R4\-CoT\-17k for supervised practice and Video\-R4\-RL\-30k for reinforcement learning. We propose a multi\-stage rumination learning framework that progressively finetunes a 7B LMM to learn atomic and mixing visual operations via SFT and GRPO\-based RL. Video\-R4\-7B achieves state\-of\-the\-art results on M4\-ViteVQA and further generalizes to multi\-page document QA, slides QA, and generic video QA, demonstrating that iterative rumination is an effective paradigm for pixel\-grounded multimodal reasoning.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2511.17490v1)
+
+---
+
+
+## A lightweight detector for real\-time detection of remote sensing images / 
+
+发布日期：2025-11-21
+
+作者：Qianyi Wang
+
+摘要：Remote sensing imagery is widely used across various fields, yet real\-time detection remains challenging due to the prevalence of small objects and the need to balance accuracy with efficiency. To address this, we propose DMG\-YOLO, a lightweight real\-time detector tailored for small object detection in remote sensing images. Specifically, we design a Dual\-branch Feature Extraction \(DFE\) module in the backbone, which partitions feature maps into two parallel branches: one extracts local features via depthwise separable convolutions, and the other captures global context using a vision transformer with a gating mechanism. Additionally, a Multi\-scale Feature Fusion \(MFF\) module with dilated convolutions enhances multi\-scale integration while preserving fine details. In the neck, we introduce the Global and Local Aggregate Feature Pyramid Network \(GLAFPN\) to further boost small object detection through global\-local feature fusion. Extensive experiments on the VisDrone2019 and NWPU VHR\-10 datasets show that DMG\-YOLO achieves competitive performance in terms of mAP, model size, and other key metrics.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2511.17147v1)
+
+---
+
+
 ## Cranio\-ID: Graph\-Based Craniofacial Identification via Automatic Landmark Annotation in 2D Multi\-View X\-rays / 
 
 发布日期：2025-11-18
@@ -51,42 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2511.13453v1)
-
----
-
-
-## YOLO Meets Mixture\-of\-Experts: Adaptive Expert Routing for Robust Object Detection / 
-
-发布日期：2025-11-17
-
-作者：Ori Meiraz
-
-摘要：This paper presents a novel Mixture\-of\-Experts framework for object detection, incorporating adaptive routing among multiple YOLOv9\-T experts to enable dynamic feature specialization and achieve higher mean Average Precision \(mAP\) and Average Recall \(AR\) compared to a single YOLOv9\-T model.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2511.13344v2)
-
----
-
-
-## MCAQ\-YOLO: Morphological Complexity\-Aware Quantization for Efficient Object Detection with Curriculum Learning / 
-
-发布日期：2025-11-17
-
-作者：Yoonjae Seo
-
-摘要：Most neural network quantization methods apply uniform bit precision across spatial regions, ignoring the heterogeneous structural and textural complexity of visual data. This paper introduces MCAQ\-YOLO, a morphological complexity\-aware quantization framework for object detection. The framework employs five morphological metrics \- fractal dimension, texture entropy, gradient variance, edge density, and contour complexity \- to characterize local visual morphology and guide spatially adaptive bit allocation. By correlating these metrics with quantization sensitivity, MCAQ\-YOLO dynamically adjusts bit precision according to spatial complexity. In addition, a curriculum\-based quantization\-aware training scheme progressively increases quantization difficulty to stabilize optimization and accelerate convergence. Experimental results demonstrate a strong correlation between morphological complexity and quantization sensitivity and show that MCAQ\-YOLO achieves superior detection accuracy and convergence efficiency compared with uniform quantization. On a safety equipment dataset, MCAQ\-YOLO attains 85.6 percent mAP@0.5 with an average of 4.2 bits and a 7.6x compression ratio, yielding 3.5 percentage points higher mAP than uniform 4\-bit quantization while introducing only 1.8 ms of additional runtime overhead per image. Cross\-dataset validation on COCO and Pascal VOC further confirms consistent performance gains, indicating that morphology\-driven spatial quantization can enhance efficiency and robustness for computationally constrained, safety\-critical visual recognition tasks.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2511.12976v1)
 
 ---
 
