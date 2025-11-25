@@ -1,92 +1,92 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
-## Video\-R4: Reinforcing Text\-Rich Video Reasoning with Visual Rumination / 
+## From Pixels to Posts: Retrieval\-Augmented Fashion Captioning and Hashtag Generation / 
 
-发布日期：2025-11-21
+发布日期：2025-11-24
 
-作者：Yolo Yunlong Tang
+作者：Moazzam Umer Gondal
 
-摘要：Understanding text\-rich videos requires reading small, transient textual cues that often demand repeated inspection. Yet most video QA models rely on single\-pass perception over fixed frames, leading to hallucinations and failures on fine\-grained evidence. Inspired by how humans pause, zoom, and re\-read critical regions, we introduce Video\-R4 \(Reinforcing Text\-Rich Video Reasoning with Visual Rumination\), a video reasoning LMM that performs visual rumination: iteratively selecting frames, zooming into informative regions, re\-encoding retrieved pixels, and updating its reasoning state. We construct two datasets with executable rumination trajectories: Video\-R4\-CoT\-17k for supervised practice and Video\-R4\-RL\-30k for reinforcement learning. We propose a multi\-stage rumination learning framework that progressively finetunes a 7B LMM to learn atomic and mixing visual operations via SFT and GRPO\-based RL. Video\-R4\-7B achieves state\-of\-the\-art results on M4\-ViteVQA and further generalizes to multi\-page document QA, slides QA, and generic video QA, demonstrating that iterative rumination is an effective paradigm for pixel\-grounded multimodal reasoning.
+摘要：This paper introduces the retrieval\-augmented framework for automatic fashion caption and hashtag generation, combining multi\-garment detection, attribute reasoning, and Large Language Model \(LLM\) prompting. The system aims to produce visually grounded, descriptive, and stylistically interesting text for fashion imagery, overcoming the limitations of end\-to\-end captioners that have problems with attribute fidelity and domain generalization. The pipeline combines a YOLO\-based detector for multi\-garment localization, k\-means clustering for dominant color extraction, and a CLIP\-FAISS retrieval module for fabric and gender attribute inference based on a structured product index. These attributes, together with retrieved style examples, create a factual evidence pack that is used to guide an LLM to generate human\-like captions and contextually rich hashtags. A fine\-tuned BLIP model is used as a supervised baseline model for comparison. Experimental results show that the YOLO detector is able to obtain a mean Average Precision \(mAP@0.5\) of 0.71 for nine categories of garments. The RAG\-LLM pipeline generates expressive attribute\-aligned captions and achieves mean attribute coverage of 0.80 with full coverage at the 50% threshold in hashtag generation, whereas BLIP gives higher lexical overlap and lower generalization. The retrieval\-augmented approach exhibits better factual grounding, less hallucination, and great potential for scalable deployment in various clothing domains. These results demonstrate the use of retrieval\-augmented generation as an effective and interpretable paradigm for automated and visually grounded fashion content generation.
 
 中文摘要：
 
 
 代码链接：摘要中未找到代码链接。
 
-论文链接：[阅读更多](http://arxiv.org/abs/2511.17490v1)
+论文链接：[阅读更多](http://arxiv.org/abs/2511.19149v1)
 
 ---
 
 
-## A lightweight detector for real\-time detection of remote sensing images / 
+## MambaRefine\-YOLO: A Dual\-Modality Small Object Detector for UAV Imagery / 
 
-发布日期：2025-11-21
+发布日期：2025-11-24
 
-作者：Qianyi Wang
+作者：Shuyu Cao
 
-摘要：Remote sensing imagery is widely used across various fields, yet real\-time detection remains challenging due to the prevalence of small objects and the need to balance accuracy with efficiency. To address this, we propose DMG\-YOLO, a lightweight real\-time detector tailored for small object detection in remote sensing images. Specifically, we design a Dual\-branch Feature Extraction \(DFE\) module in the backbone, which partitions feature maps into two parallel branches: one extracts local features via depthwise separable convolutions, and the other captures global context using a vision transformer with a gating mechanism. Additionally, a Multi\-scale Feature Fusion \(MFF\) module with dilated convolutions enhances multi\-scale integration while preserving fine details. In the neck, we introduce the Global and Local Aggregate Feature Pyramid Network \(GLAFPN\) to further boost small object detection through global\-local feature fusion. Extensive experiments on the VisDrone2019 and NWPU VHR\-10 datasets show that DMG\-YOLO achieves competitive performance in terms of mAP, model size, and other key metrics.
+摘要：Small object detection in Unmanned Aerial Vehicle \(UAV\) imagery is a persistent challenge, hindered by low resolution and background clutter. While fusing RGB and infrared \(IR\) data offers a promising solution, existing methods often struggle with the trade\-off between effective cross\-modal interaction and computational efficiency. In this letter, we introduce MambaRefine\-YOLO. Its core contributions are a Dual\-Gated Complementary Mamba fusion module \(DGC\-MFM\) that adaptively balances RGB and IR modalities through illumination\-aware and difference\-aware gating mechanisms, and a Hierarchical Feature Aggregation Neck \(HFAN\) that uses a \`\`refine\-then\-fuse'' strategy to enhance multi\-scale features. Our comprehensive experiments validate this dual\-pronged approach. On the dual\-modality DroneVehicle dataset, the full model achieves a state\-of\-the\-art mAP of 83.2%, an improvement of 7.9% over the baseline. On the single\-modality VisDrone dataset, a variant using only the HFAN also shows significant gains, demonstrating its general applicability. Our work presents a superior balance between accuracy and speed, making it highly suitable for real\-world UAV applications.
 
 中文摘要：
 
 
 代码链接：摘要中未找到代码链接。
 
-论文链接：[阅读更多](http://arxiv.org/abs/2511.17147v1)
+论文链接：[阅读更多](http://arxiv.org/abs/2511.19134v1)
 
 ---
 
 
-## Cranio\-ID: Graph\-Based Craniofacial Identification via Automatic Landmark Annotation in 2D Multi\-View X\-rays / 
+## Peregrine: One\-Shot Fine\-Tuning for FHE Inference of General Deep CNNs / 
 
-发布日期：2025-11-18
+发布日期：2025-11-24
 
-作者：Ravi Shankar Prasad
+作者：Huaming Ling
 
-摘要：In forensic craniofacial identification and in many biomedical applications, craniometric landmarks are important. Traditional methods for locating landmarks are time\-consuming and require specialized knowledge and expertise. Current methods utilize superimposition and deep learning\-based methods that employ automatic annotation of landmarks. However, these methods are not reliable due to insufficient large\-scale validation studies. In this paper, we proposed a novel framework Cranio\-ID: First, an automatic annotation of landmarks on 2D skulls \(which are X\-ray scans of faces\) with their respective optical images using our trained YOLO\-pose models. Second, cross\-modal matching by formulating these landmarks into graph representations and then finding semantic correspondence between graphs of these two modalities using cross\-attention and optimal transport framework. Our proposed framework is validated on the S2F and CUHK datasets \(CUHK dataset resembles with S2F dataset\). Extensive experiments have been conducted to evaluate the performance of our proposed framework, which demonstrates significant improvements in both reliability and accuracy, as well as its effectiveness in cross\-domain skull\-to\-face and sketch\-to\-face matching in forensic science.
+摘要：We address two fundamental challenges in adapting general deep CNNs for FHE\-based inference: approximating non\-linear activations such as ReLU with low\-degree polynomials while minimizing accuracy degradation, and overcoming the ciphertext capacity barrier that constrains high\-resolution image processing on FHE inference. Our contributions are twofold: \(1\) a single\-stage fine\-tuning \(SFT\) strategy that directly converts pre\-trained CNNs into FHE\-friendly forms using low\-degree polynomials, achieving competitive accuracy with minimal training overhead; and \(2\) a generalized interleaved packing \(GIP\) scheme that is compatible with feature maps of virtually arbitrary spatial resolutions, accompanied by a suite of carefully designed homomorphic operators that preserve the GIP\-form encryption throughout computation. These advances enable efficient, end\-to\-end FHE inference across diverse CNN architectures. Experiments on CIFAR\-10, ImageNet, and MS COCO demonstrate that the FHE\-friendly CNNs obtained via our SFT strategy achieve accuracy comparable to baselines using ReLU or SiLU activations. Moreover, this work presents the first demonstration of FHE\-based inference for YOLO architectures in object detection leveraging low\-degree polynomial activations.
 
 中文摘要：
 
 
 代码链接：摘要中未找到代码链接。
 
-论文链接：[阅读更多](http://arxiv.org/abs/2511.14411v1)
+论文链接：[阅读更多](http://arxiv.org/abs/2511.18976v1)
 
 ---
 
 
-## LSP\-YOLO: A Lightweight Single\-Stage Network for Sitting Posture Recognition on Embedded Devices / 
+## AIRHILT: A Human\-in\-the\-Loop Testbed for Multimodal Conflict Detection in Aviation / 
 
-发布日期：2025-11-18
+发布日期：2025-11-24
 
-作者：Nanjun Li
+作者：Omar Garib
 
-摘要：With the rise in sedentary behavior, health problems caused by poor sitting posture have drawn increasing attention. Most existing methods, whether using invasive sensors or computer vision, rely on two\-stage pipelines, which result in high intrusiveness, intensive computation, and poor real\-time performance on embedded edge devices. Inspired by YOLOv11\-Pose, a lightweight single\-stage network for sitting posture recognition on embedded edge devices termed LSP\-YOLO was proposed. By integrating partial convolution\(PConv\) and Similarity\-Aware Activation Module\(SimAM\), a lightweight module, Light\-C3k2, was designed to reduce computational cost while maintaining feature extraction capability. In the recognition head, keypoints were directly mapped to posture classes through pointwise convolution, and intermediate supervision was employed to enable efficient fusion of pose estimation and classification. Furthermore, a dataset containing 5,000 images across six posture categories was constructed for model training and testing. The smallest trained model, LSP\-YOLO\-n, achieved 94.2% accuracy and 251 Fps on personal computer\(PC\) with a model size of only 1.9 MB. Meanwhile, real\-time and high\-accuracy inference under constrained computational resources was demonstrated on the SV830C \+ GC030A platform. The proposed approach is characterized by high efficiency, lightweight design and deployability, making it suitable for smart classrooms, rehabilitation, and human\-computer interaction applications.
+摘要：We introduce AIRHILT \(Aviation Integrated Reasoning, Human\-in\-the\-Loop Testbed\), a modular and lightweight simulation environment designed to evaluate multimodal pilot and air traffic control \(ATC\) assistance systems for aviation conflict detection. Built on the open\-source Godot engine, AIRHILT synchronizes pilot and ATC radio communications, visual scene understanding from camera streams, and ADS\-B surveillance data within a unified, scalable platform. The environment supports pilot\- and controller\-in\-the\-loop interactions, providing a comprehensive scenario suite covering both terminal area and en route operational conflicts, including communication errors and procedural mistakes. AIRHILT offers standardized JSON\-based interfaces that enable researchers to easily integrate, swap, and evaluate automatic speech recognition \(ASR\), visual detection, decision\-making, and text\-to\-speech \(TTS\) models. We demonstrate AIRHILT through a reference pipeline incorporating fine\-tuned Whisper ASR, YOLO\-based visual detection, ADS\-B\-based conflict logic, and GPT\-OSS\-20B structured reasoning, and present preliminary results from representative runway\-overlap scenarios, where the assistant achieves an average time\-to\-first\-warning of approximately 7.7 s, with average ASR and vision latencies of approximately 5.9 s and 0.4 s, respectively. The AIRHILT environment and scenario suite are openly available, supporting reproducible research on multimodal situational awareness and conflict detection in aviation; code and scenarios are available at https://github.com/ogarib3/airhilt.
 
 中文摘要：
 
 
-代码链接：摘要中未找到代码链接。
+代码链接：https://github.com/ogarib3/airhilt.
 
-论文链接：[阅读更多](http://arxiv.org/abs/2511.14322v1)
+论文链接：[阅读更多](http://arxiv.org/abs/2511.18718v1)
 
 ---
 
 
-## Hardware optimization on Android for inference of AI models / 
+## Multimodal Real\-Time Anomaly Detection and Industrial Applications / 
 
-发布日期：2025-11-17
+发布日期：2025-11-24
 
-作者：Iulius Gherasim
+作者：Aman Verma
 
-摘要：The pervasive integration of Artificial Intelligence models into contemporary mobile computing is notable across numerous use cases, from virtual assistants to advanced image processing. Optimizing the mobile user experience involves minimal latency and high responsiveness from deployed AI models with challenges from execution strategies that fully leverage real time constraints to the exploitation of heterogeneous hardware architecture. In this paper, we research and propose the optimal execution configurations for AI models on an Android system, focusing on two critical tasks: object detection \(YOLO family\) and image classification \(ResNet\). These configurations evaluate various model quantization schemes and the utilization of on device accelerators, specifically the GPU and NPU. Our core objective is to empirically determine the combination that achieves the best trade\-off between minimal accuracy degradation and maximal inference speed\-up.
+摘要：This paper presents the design, implementation, and evolution of a comprehensive multimodal room\-monitoring system that integrates synchronized video and audio processing for real\-time activity recognition and anomaly detection. We describe two iterations of the system: an initial lightweight implementation using YOLOv8, ByteTrack, and the Audio Spectrogram Transformer \(AST\), and an advanced version that incorporates multi\-model audio ensembles, hybrid object detection, bidirectional cross\-modal attention, and multi\-method anomaly detection. The evolution demonstrates significant improvements in accuracy, robustness, and industrial applicability. The advanced system combines three audio models \(AST, Wav2Vec2, and HuBERT\) for comprehensive audio understanding, dual object detectors \(YOLO and DETR\) for improved accuracy, and sophisticated fusion mechanisms for enhanced cross\-modal learning. Experimental evaluation shows the system's effectiveness in general monitoring scenarios as well as specialized industrial safety applications, achieving real\-time performance on standard hardware while maintaining high accuracy.
 
 中文摘要：
 
 
 代码链接：摘要中未找到代码链接。
 
-论文链接：[阅读更多](http://arxiv.org/abs/2511.13453v1)
+论文链接：[阅读更多](http://arxiv.org/abs/2511.18698v1)
 
 ---
 
