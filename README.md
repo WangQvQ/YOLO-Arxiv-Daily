@@ -1,6 +1,24 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Intelligent Image Search Algorithms Fusing Visual Large Models / 
+
+发布日期：2025-11-25
+
+作者：Kehan Wang
+
+摘要：Fine\-grained image retrieval, which aims to find images containing specific object components and assess their detailed states, is critical in fields like security and industrial inspection. However, conventional methods face significant limitations: manual features \(e.g., SIFT\) lack robustness; deep learning\-based detectors \(e.g., YOLO\) can identify component presence but cannot perform state\-specific retrieval or zero\-shot search; Visual Large Models \(VLMs\) offer semantic and zero\-shot capabilities but suffer from poor spatial grounding and high computational cost, making them inefficient for direct retrieval. To bridge these gaps, this paper proposes DetVLM, a novel intelligent image search framework that synergistically fuses object detection with VLMs. The framework pioneers a search\-enhancement paradigm via a two\-stage pipeline: a YOLO detector first conducts efficient, high\-recall component\-level screening to determine component presence; then, a VLM acts as a recall\-enhancement unit, performing secondary verification for components missed by the detector. This architecture directly enables two advanced capabilities: 1\) State Search: Guided by task\-specific prompts, the VLM refines results by verifying component existence and executing sophisticated state judgments \(e.g., "sun visor lowered"\), allowing retrieval based on component state. 2\) Zero\-shot Search: The framework leverages the VLM's inherent zero\-shot capability to recognize and retrieve images containing unseen components or attributes \(e.g., "driver wearing a mask"\) without any task\-specific training. Experiments on a vehicle component dataset show DetVLM achieves a state\-of\-the\-art overall retrieval accuracy of 94.82%, significantly outperforming detection\-only baselines. It also attains 94.95% accuracy in zero\-shot search for driver mask\-wearing and over 90% average accuracy in state search tasks.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2511.19920v1)
+
+---
+
+
 ## From Pixels to Posts: Retrieval\-Augmented Fashion Captioning and Hashtag Generation / 
 
 发布日期：2025-11-24
@@ -69,24 +87,6 @@
 代码链接：https://github.com/ogarib3/airhilt.
 
 论文链接：[阅读更多](http://arxiv.org/abs/2511.18718v1)
-
----
-
-
-## Multimodal Real\-Time Anomaly Detection and Industrial Applications / 
-
-发布日期：2025-11-24
-
-作者：Aman Verma
-
-摘要：This paper presents the design, implementation, and evolution of a comprehensive multimodal room\-monitoring system that integrates synchronized video and audio processing for real\-time activity recognition and anomaly detection. We describe two iterations of the system: an initial lightweight implementation using YOLOv8, ByteTrack, and the Audio Spectrogram Transformer \(AST\), and an advanced version that incorporates multi\-model audio ensembles, hybrid object detection, bidirectional cross\-modal attention, and multi\-method anomaly detection. The evolution demonstrates significant improvements in accuracy, robustness, and industrial applicability. The advanced system combines three audio models \(AST, Wav2Vec2, and HuBERT\) for comprehensive audio understanding, dual object detectors \(YOLO and DETR\) for improved accuracy, and sophisticated fusion mechanisms for enhanced cross\-modal learning. Experimental evaluation shows the system's effectiveness in general monitoring scenarios as well as specialized industrial safety applications, achieving real\-time performance on standard hardware while maintaining high accuracy.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2511.18698v1)
 
 ---
 
