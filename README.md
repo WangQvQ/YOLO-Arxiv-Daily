@@ -1,6 +1,60 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Identifying bars in galaxies using machine learning / 
+
+发布日期：2025-11-28
+
+作者：Rajit Shrivastava
+
+摘要：This thesis presents an innovative framework for the automated detection and characterization of galactic bars, pivotal structures in spiral galaxies, using the YOLO\-OBB \(You Only Look Once with Oriented Bounding Boxes\) model. Traditional methods for identifying bars are often labor\-intensive and subjective, limiting their scalability for large astronomical surveys. To address this, a synthetic dataset of 1,000 barred spiral galaxy images was generated, incorporating realistic components such as disks, bars, bulges, spiral arms, stars, and observational noise, modeled through Gaussian, Ferrers, and Sersic functions. The YOLO\-OBB model, trained on this dataset for six epochs, achieved robust validation metrics, including a precision of 0.93745, recall of 0.85, and mean Average Precision \(mAP50\) of 0.94173. Applied to 10 real galaxy images, the model extracted physical parameters, such as bar lengths ranging from 2.27 to 9.70 kpc and orientations from 13.41$^circ$ to 134.11$^circ$, with detection confidences between 0.26 and 0.68. These measurements, validated through pixel\-to\-kiloparsec conversions, align with established bar sizes, demonstrating the model's reliability. The methodology's scalability and interpretability enable efficient analysis of complex galaxy morphologies, particularly for dwarf galaxies and varied orientations. Future research aims to expand the dataset to 5,000 galaxies and integrate the Tremaine\-Weinberg method to measure bar pattern speeds, enhancing insights into galaxy dynamics and evolution. This work advances automated morphological analysis, offering a transformative tool for large\-scale astronomical studies.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2511.23383v1)
+
+---
+
+
+## Hierarchical Feature Integration for Multi\-Signal Automatic Modulation Recognition / 
+
+发布日期：2025-11-28
+
+作者：Yunpeng Qu
+
+摘要：Automatic modulation recognition \(AMR\) is a crucial step in wireless communication systems, which identifies the modulation scheme from detected signals to provide key information for further processing. However, previous work has mainly focused on the identification of a single signal, overlooking the phenomenon of multiple signal superposition in practical channels and the signal detection procedures that must be conducted beforehand. Considering the susceptibility of radio frequency \(RF\) signals to noise interference and significant spectral variations, we propose a novel Hierarchical Feature Integration \(HIFI\)\-YOLO framework for multi\-signal joint detection and modulation recognition. Our HIFI\-YOLO framework, with its unique design of hierarchical feature integration, effectively enhances the representation capability of features in different modules, thereby improving detection performance. We construct a large\-scale AMR dataset specifically tailored for scenarios of the coexistence or overlapping of multiple signals transmitted through channels with realistic propagation conditions, consisting of diverse digital and analog modulation schemes. Extensive experiments on our dataset demonstrate the excellent performance of HIFI\-YOLO in multi\-signal detection and modulation recognition as a joint approach.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2511.23258v1)
+
+---
+
+
+## SemOD: Semantic Enabled Object Detection Network under Various Weather Conditions / 
+
+发布日期：2025-11-27
+
+作者：Aiyinsi Zuo
+
+摘要：In the field of autonomous driving, camera\-based perception models are mostly trained on clear weather data. Models that focus on addressing specific weather challenges are unable to adapt to various weather changes and primarily prioritize their weather removal characteristics. Our study introduces a semantic\-enabled network for object detection in diverse weather conditions. In our analysis, semantics information can enable the model to generate plausible content for missing areas, understand object boundaries, and preserve visual coherency and realism across both filled\-in and existing portions of the image, which are conducive to image transformation and object recognition. Specific in implementation, our architecture consists of a Preprocessing Unit \(PPU\) and a Detection Unit \(DTU\), where the PPU utilizes a U\-shaped net enriched by semantics to refine degraded images, and the DTU integrates this semantic information for object detection using a modified YOLO network. Our method pioneers the use of semantic data for all\-weather transformations, resulting in an increase between 1.47% to 8.80% in mAP compared to existing methods across benchmark datasets of different weather. This highlights the potency of semantics in image enhancement and object detection, offering a comprehensive approach to improving object detection performance. Code will be available at https://github.com/EnisZuo/SemOD.
+
+中文摘要：
+
+
+代码链接：https://github.com/EnisZuo/SemOD.
+
+论文链接：[阅读更多](http://arxiv.org/abs/2511.22142v1)
+
+---
+
+
 ## Intelligent Image Search Algorithms Fusing Visual Large Models / 
 
 发布日期：2025-11-25
@@ -33,60 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2511.19149v1)
-
----
-
-
-## MambaRefine\-YOLO: A Dual\-Modality Small Object Detector for UAV Imagery / 
-
-发布日期：2025-11-24
-
-作者：Shuyu Cao
-
-摘要：Small object detection in Unmanned Aerial Vehicle \(UAV\) imagery is a persistent challenge, hindered by low resolution and background clutter. While fusing RGB and infrared \(IR\) data offers a promising solution, existing methods often struggle with the trade\-off between effective cross\-modal interaction and computational efficiency. In this letter, we introduce MambaRefine\-YOLO. Its core contributions are a Dual\-Gated Complementary Mamba fusion module \(DGC\-MFM\) that adaptively balances RGB and IR modalities through illumination\-aware and difference\-aware gating mechanisms, and a Hierarchical Feature Aggregation Neck \(HFAN\) that uses a \`\`refine\-then\-fuse'' strategy to enhance multi\-scale features. Our comprehensive experiments validate this dual\-pronged approach. On the dual\-modality DroneVehicle dataset, the full model achieves a state\-of\-the\-art mAP of 83.2%, an improvement of 7.9% over the baseline. On the single\-modality VisDrone dataset, a variant using only the HFAN also shows significant gains, demonstrating its general applicability. Our work presents a superior balance between accuracy and speed, making it highly suitable for real\-world UAV applications.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2511.19134v1)
-
----
-
-
-## Peregrine: One\-Shot Fine\-Tuning for FHE Inference of General Deep CNNs / 
-
-发布日期：2025-11-24
-
-作者：Huaming Ling
-
-摘要：We address two fundamental challenges in adapting general deep CNNs for FHE\-based inference: approximating non\-linear activations such as ReLU with low\-degree polynomials while minimizing accuracy degradation, and overcoming the ciphertext capacity barrier that constrains high\-resolution image processing on FHE inference. Our contributions are twofold: \(1\) a single\-stage fine\-tuning \(SFT\) strategy that directly converts pre\-trained CNNs into FHE\-friendly forms using low\-degree polynomials, achieving competitive accuracy with minimal training overhead; and \(2\) a generalized interleaved packing \(GIP\) scheme that is compatible with feature maps of virtually arbitrary spatial resolutions, accompanied by a suite of carefully designed homomorphic operators that preserve the GIP\-form encryption throughout computation. These advances enable efficient, end\-to\-end FHE inference across diverse CNN architectures. Experiments on CIFAR\-10, ImageNet, and MS COCO demonstrate that the FHE\-friendly CNNs obtained via our SFT strategy achieve accuracy comparable to baselines using ReLU or SiLU activations. Moreover, this work presents the first demonstration of FHE\-based inference for YOLO architectures in object detection leveraging low\-degree polynomial activations.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2511.18976v1)
-
----
-
-
-## AIRHILT: A Human\-in\-the\-Loop Testbed for Multimodal Conflict Detection in Aviation / 
-
-发布日期：2025-11-24
-
-作者：Omar Garib
-
-摘要：We introduce AIRHILT \(Aviation Integrated Reasoning, Human\-in\-the\-Loop Testbed\), a modular and lightweight simulation environment designed to evaluate multimodal pilot and air traffic control \(ATC\) assistance systems for aviation conflict detection. Built on the open\-source Godot engine, AIRHILT synchronizes pilot and ATC radio communications, visual scene understanding from camera streams, and ADS\-B surveillance data within a unified, scalable platform. The environment supports pilot\- and controller\-in\-the\-loop interactions, providing a comprehensive scenario suite covering both terminal area and en route operational conflicts, including communication errors and procedural mistakes. AIRHILT offers standardized JSON\-based interfaces that enable researchers to easily integrate, swap, and evaluate automatic speech recognition \(ASR\), visual detection, decision\-making, and text\-to\-speech \(TTS\) models. We demonstrate AIRHILT through a reference pipeline incorporating fine\-tuned Whisper ASR, YOLO\-based visual detection, ADS\-B\-based conflict logic, and GPT\-OSS\-20B structured reasoning, and present preliminary results from representative runway\-overlap scenarios, where the assistant achieves an average time\-to\-first\-warning of approximately 7.7 s, with average ASR and vision latencies of approximately 5.9 s and 0.4 s, respectively. The AIRHILT environment and scenario suite are openly available, supporting reproducible research on multimodal situational awareness and conflict detection in aviation; code and scenarios are available at https://github.com/ogarib3/airhilt.
-
-中文摘要：
-
-
-代码链接：https://github.com/ogarib3/airhilt.
-
-论文链接：[阅读更多](http://arxiv.org/abs/2511.18718v1)
 
 ---
 
