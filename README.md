@@ -1,6 +1,24 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Real\-Time On\-the\-Go Annotation Framework Using YOLO for Automated Dataset Generation / 
+
+发布日期：2025-12-01
+
+作者：Mohamed Abdallah Salem
+
+摘要：Efficient and accurate annotation of datasets remains a significant challenge for deploying object detection models such as You Only Look Once \(YOLO\) in real\-world applications, particularly in agriculture where rapid decision\-making is critical. Traditional annotation techniques are labor\-intensive, requiring extensive manual labeling post data collection. This paper presents a novel real\-time annotation approach leveraging YOLO models deployed on edge devices, enabling immediate labeling during image capture. To comprehensively evaluate the efficiency and accuracy of our proposed system, we conducted an extensive comparative analysis using three prominent YOLO architectures \(YOLOv5, YOLOv8, YOLOv12\) under various configurations: single\-class versus multi\-class annotation and pretrained versus scratch\-based training. Our analysis includes detailed statistical tests and learning dynamics, demonstrating significant advantages of pretrained and single\-class configurations in terms of model convergence, performance, and robustness. Results strongly validate the feasibility and effectiveness of our real\-time annotation framework, highlighting its capability to drastically reduce dataset preparation time while maintaining high annotation quality.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2512.01165v1)
+
+---
+
+
 ## Identifying bars in galaxies using machine learning / 
 
 发布日期：2025-11-28
@@ -37,6 +55,24 @@
 ---
 
 
+## Analysis of Incursive Breast Cancer in Mammograms Using YOLO, Explainability, and Domain Adaptation / 
+
+发布日期：2025-11-28
+
+作者：Jayan Adhikari
+
+摘要：Deep learning models for breast cancer detection from mammographic images have significant reliability problems when presented with Out\-of\-Distribution \(OOD\) inputs such as other imaging modalities \(CT, MRI, X\-ray\) or equipment variations, leading to unreliable detection and misdiagnosis. The current research mitigates the fundamental OOD issue through a comprehensive approach integrating ResNet50\-based OOD filtering with YOLO architectures \(YOLOv8, YOLOv11, YOLOv12\) for accurate detection of breast cancer. Our strategy establishes an in\-domain gallery via cosine similarity to rigidly reject non\-mammographic inputs prior to processing, ensuring that only domain\-associated images supply the detection pipeline. The OOD detection component achieves 99.77% general accuracy with immaculate 100% accuracy on OOD test sets, effectively eliminating irrelevant imaging modalities. ResNet50 was selected as the optimum backbone after 12 CNN architecture searches. The joint framework unites OOD robustness with high detection performance \(mAP@0.5: 0.947\) and enhanced interpretability through Grad\-CAM visualizations. Experimental validation establishes that OOD filtering significantly improves system reliability by preventing false alarms on out\-of\-distribution inputs while maintaining higher detection accuracy on mammographic data. The present study offers a fundamental foundation for the deployment of reliable AI\-based breast cancer detection systems in diverse clinical environments with inherent data heterogeneity.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2512.00129v1)
+
+---
+
+
 ## SemOD: Semantic Enabled Object Detection Network under Various Weather Conditions / 
 
 发布日期：2025-11-27
@@ -51,42 +87,6 @@
 代码链接：https://github.com/EnisZuo/SemOD.
 
 论文链接：[阅读更多](http://arxiv.org/abs/2511.22142v1)
-
----
-
-
-## Intelligent Image Search Algorithms Fusing Visual Large Models / 
-
-发布日期：2025-11-25
-
-作者：Kehan Wang
-
-摘要：Fine\-grained image retrieval, which aims to find images containing specific object components and assess their detailed states, is critical in fields like security and industrial inspection. However, conventional methods face significant limitations: manual features \(e.g., SIFT\) lack robustness; deep learning\-based detectors \(e.g., YOLO\) can identify component presence but cannot perform state\-specific retrieval or zero\-shot search; Visual Large Models \(VLMs\) offer semantic and zero\-shot capabilities but suffer from poor spatial grounding and high computational cost, making them inefficient for direct retrieval. To bridge these gaps, this paper proposes DetVLM, a novel intelligent image search framework that synergistically fuses object detection with VLMs. The framework pioneers a search\-enhancement paradigm via a two\-stage pipeline: a YOLO detector first conducts efficient, high\-recall component\-level screening to determine component presence; then, a VLM acts as a recall\-enhancement unit, performing secondary verification for components missed by the detector. This architecture directly enables two advanced capabilities: 1\) State Search: Guided by task\-specific prompts, the VLM refines results by verifying component existence and executing sophisticated state judgments \(e.g., "sun visor lowered"\), allowing retrieval based on component state. 2\) Zero\-shot Search: The framework leverages the VLM's inherent zero\-shot capability to recognize and retrieve images containing unseen components or attributes \(e.g., "driver wearing a mask"\) without any task\-specific training. Experiments on a vehicle component dataset show DetVLM achieves a state\-of\-the\-art overall retrieval accuracy of 94.82%, significantly outperforming detection\-only baselines. It also attains 94.95% accuracy in zero\-shot search for driver mask\-wearing and over 90% average accuracy in state search tasks.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2511.19920v1)
-
----
-
-
-## From Pixels to Posts: Retrieval\-Augmented Fashion Captioning and Hashtag Generation / 
-
-发布日期：2025-11-24
-
-作者：Moazzam Umer Gondal
-
-摘要：This paper introduces the retrieval\-augmented framework for automatic fashion caption and hashtag generation, combining multi\-garment detection, attribute reasoning, and Large Language Model \(LLM\) prompting. The system aims to produce visually grounded, descriptive, and stylistically interesting text for fashion imagery, overcoming the limitations of end\-to\-end captioners that have problems with attribute fidelity and domain generalization. The pipeline combines a YOLO\-based detector for multi\-garment localization, k\-means clustering for dominant color extraction, and a CLIP\-FAISS retrieval module for fabric and gender attribute inference based on a structured product index. These attributes, together with retrieved style examples, create a factual evidence pack that is used to guide an LLM to generate human\-like captions and contextually rich hashtags. A fine\-tuned BLIP model is used as a supervised baseline model for comparison. Experimental results show that the YOLO detector is able to obtain a mean Average Precision \(mAP@0.5\) of 0.71 for nine categories of garments. The RAG\-LLM pipeline generates expressive attribute\-aligned captions and achieves mean attribute coverage of 0.80 with full coverage at the 50% threshold in hashtag generation, whereas BLIP gives higher lexical overlap and lower generalization. The retrieval\-augmented approach exhibits better factual grounding, less hallucination, and great potential for scalable deployment in various clothing domains. These results demonstrate the use of retrieval\-augmented generation as an effective and interpretable paradigm for automated and visually grounded fashion content generation.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2511.19149v1)
 
 ---
 
