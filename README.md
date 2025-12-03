@@ -1,6 +1,24 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Edge\-Native, Behavior\-Adaptive Drone System for Wildlife Monitoring / 
+
+发布日期：2025-12-01
+
+作者：Jenna Kline
+
+摘要：Wildlife monitoring with drones must balance competing demands: approaching close enough to capture behaviorally\-relevant video while avoiding stress responses that compromise animal welfare and data validity. Human operators face a fundamental attentional bottleneck: they cannot simultaneously control drone operations and monitor vigilance states across entire animal groups. By the time elevated vigilance becomes obvious, an adverse flee response by the animals may be unavoidable. To solve this challenge, we present an edge\-native, behavior\-adaptive drone system for wildlife monitoring. This configurable decision\-support system augments operator expertise with automated group\-level vigilance monitoring. Our system continuously tracks individual behaviors using YOLOv11m detection and YOLO\-Behavior classification, aggregates vigilance states into a real\-time group stress metric, and provides graduated alerts \(alert vigilance to flee response\) with operator\-tunable thresholds for context\-specific calibration. We derive service\-level objectives \(SLOs\) from video frame rates and behavioral dynamics: to monitor 30fps video streams in real\-time, our system must complete detection and classification within 33ms per frame. Our edge\-native pipeline achieves 23.8ms total inference on GPU\-accelerated hardware, meeting this constraint with a substantial margin. Retrospective analysis of seven wildlife monitoring missions demonstrates detection capability and quantifies the cost of reactive control: manual piloting results in 14 seconds average adverse behavior duration with 71.9% usable frames. Our analysis reveals operators could have received actionable alerts 51s before animals fled in 57% of missions. Simulating 5\-second operator intervention yields a projected performance of 82.8% usable frames with 1\-second adverse behavior duration,a 93% reduction compared to manual piloting.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2512.02285v1)
+
+---
+
+
 ## Real\-Time On\-the\-Go Annotation Framework Using YOLO for Automated Dataset Generation / 
 
 发布日期：2025-12-01
@@ -69,24 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2512.00129v1)
-
----
-
-
-## SemOD: Semantic Enabled Object Detection Network under Various Weather Conditions / 
-
-发布日期：2025-11-27
-
-作者：Aiyinsi Zuo
-
-摘要：In the field of autonomous driving, camera\-based perception models are mostly trained on clear weather data. Models that focus on addressing specific weather challenges are unable to adapt to various weather changes and primarily prioritize their weather removal characteristics. Our study introduces a semantic\-enabled network for object detection in diverse weather conditions. In our analysis, semantics information can enable the model to generate plausible content for missing areas, understand object boundaries, and preserve visual coherency and realism across both filled\-in and existing portions of the image, which are conducive to image transformation and object recognition. Specific in implementation, our architecture consists of a Preprocessing Unit \(PPU\) and a Detection Unit \(DTU\), where the PPU utilizes a U\-shaped net enriched by semantics to refine degraded images, and the DTU integrates this semantic information for object detection using a modified YOLO network. Our method pioneers the use of semantic data for all\-weather transformations, resulting in an increase between 1.47% to 8.80% in mAP compared to existing methods across benchmark datasets of different weather. This highlights the potency of semantics in image enhancement and object detection, offering a comprehensive approach to improving object detection performance. Code will be available at https://github.com/EnisZuo/SemOD.
-
-中文摘要：
-
-
-代码链接：https://github.com/EnisZuo/SemOD.
-
-论文链接：[阅读更多](http://arxiv.org/abs/2511.22142v1)
 
 ---
 
