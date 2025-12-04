@@ -1,6 +1,60 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Real\-Time Control and Automation Framework for Acousto\-Holographic Microscopy / 
+
+发布日期：2025-12-03
+
+作者：Hasan Berkay Abdioğlu
+
+摘要：Manual operation of microscopes for repetitive tasks in cell biology is a significant bottleneck, consuming invaluable expert time, and introducing human error. Automation is essential, and while Digital Holographic Microscopy \(DHM\) offers powerful, label\-free quantitative phase imaging \(QPI\), its inherently noisy and low\-contrast holograms make robust autofocus and object detection challenging. We present the design, integration, and validation of a fully automated closed\-loop DHM system engineered for high\-throughput mechanical characterization of biological cells. The system integrates automated serpentine scanning, real\-time YOLO\-based object detection, and a high\-performance, multi\-threaded software architecture using pinned memory and SPSC queues. This design enables the GPU\-accelerated reconstruction pipeline to run fully in parallel with the 50 fps data acquisition, adding no sequential overhead. A key contribution is the validation of a robust, multi\-stage holographic autofocus strategy; we demonstrate that a selected metric \(based on a low\-pass filter and standard deviation\) provides reliable focusing for noisy holograms where conventional methods \(e.g., Tenengrad, Laplacian\) fail entirely. Performance analysis of the complete system identifies the 2.23\-second autofocus operation\-not reconstruction\-as the primary throughput bottleneck, resulting in a 9.62\-second analysis time per object. This work delivers a complete functional platform for autonomous DHM screening and provides a clear, data\-driven path for future optimization, proposing a hybrid brightfield imaging modality to address current bottlenecks.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2512.03539v1)
+
+---
+
+
+## AfroBeats Dance Movement Analysis Using Computer Vision: A Proof\-of\-Concept Framework Combining YOLO and Segment Anything Model / 
+
+发布日期：2025-12-03
+
+作者：Kwaku Opoku\-Ware
+
+摘要：This paper presents a preliminary investigation into automated dance movement analysis using contemporary computer vision techniques. We propose a proof\-of\-concept framework that integrates YOLOv8 and v11 for dancer detection with the Segment Anything Model \(SAM\) for precise segmentation, enabling the tracking and quantification of dancer movements in video recordings without specialized equipment or markers. Our approach identifies dancers within video frames, counts discrete dance steps, calculates spatial coverage patterns, and measures rhythm consistency across performance sequences. Testing this framework on a single 49\-second recording of Ghanaian AfroBeats dance demonstrates technical feasibility, with the system achieving approximately 94% detection precision and 89% recall on manually inspected samples. The pixel\-level segmentation provided by SAM, achieving approximately 83% intersection\-over\-union with visual inspection, enables motion quantification that captures body configuration changes beyond what bounding\-box approaches can represent. Analysis of this preliminary case study indicates that the dancer classified as primary by our system executed 23% more steps with 37% higher motion intensity and utilized 42% more performance space compared to dancers classified as secondary. However, this work represents an early\-stage investigation with substantial limitations including single\-video validation, absence of systematic ground truth annotations, and lack of comparison with existing pose estimation methods. We present this framework to demonstrate technical feasibility, identify promising directions for quantitative dance metrics, and establish a foundation for future systematic validation studies.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2512.03509v1)
+
+---
+
+
+## YOLOA: Real\-Time Affordance Detection via LLM Adapter / 
+
+发布日期：2025-12-03
+
+作者：Yuqi Ji
+
+摘要：Affordance detection aims to jointly address the fundamental "what\-where\-how" challenge in embodied AI by understanding "what" an object is, "where" the object is located, and "how" it can be used. However, most affordance learning methods focus solely on "how" objects can be used while neglecting the "what" and "where" aspects. Other affordance detection methods treat object detection and affordance learning as two independent tasks, lacking effective interaction and real\-time capability. To overcome these limitations, we introduce YOLO Affordance \(YOLOA\), a real\-time affordance detection model that jointly handles these two tasks via a large language model \(LLM\) adapter. Specifically, YOLOA employs a lightweight detector consisting of object detection and affordance learning branches refined through the LLM Adapter. During training, the LLM Adapter interacts with object and affordance preliminary predictions to refine both branches by generating more accurate class priors, box offsets, and affordance gates. Experiments on our relabeled ADG\-Det and IIT\-Heat benchmarks demonstrate that YOLOA achieves state\-of\-the\-art accuracy \(52.8 / 73.1 mAP on ADG\-Det / IIT\-Heat\) while maintaining real\-time performance \(up to 89.77 FPS, and up to 846.24 FPS for the lightweight variant\). This indicates that YOLOA achieves an excellent trade\-off between accuracy and efficiency.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2512.03418v1)
+
+---
+
+
 ## Edge\-Native, Behavior\-Adaptive Drone System for Wildlife Monitoring / 
 
 发布日期：2025-12-01
@@ -33,60 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2512.01165v1)
-
----
-
-
-## Identifying bars in galaxies using machine learning / 
-
-发布日期：2025-11-28
-
-作者：Rajit Shrivastava
-
-摘要：This thesis presents an innovative framework for the automated detection and characterization of galactic bars, pivotal structures in spiral galaxies, using the YOLO\-OBB \(You Only Look Once with Oriented Bounding Boxes\) model. Traditional methods for identifying bars are often labor\-intensive and subjective, limiting their scalability for large astronomical surveys. To address this, a synthetic dataset of 1,000 barred spiral galaxy images was generated, incorporating realistic components such as disks, bars, bulges, spiral arms, stars, and observational noise, modeled through Gaussian, Ferrers, and Sersic functions. The YOLO\-OBB model, trained on this dataset for six epochs, achieved robust validation metrics, including a precision of 0.93745, recall of 0.85, and mean Average Precision \(mAP50\) of 0.94173. Applied to 10 real galaxy images, the model extracted physical parameters, such as bar lengths ranging from 2.27 to 9.70 kpc and orientations from 13.41$^circ$ to 134.11$^circ$, with detection confidences between 0.26 and 0.68. These measurements, validated through pixel\-to\-kiloparsec conversions, align with established bar sizes, demonstrating the model's reliability. The methodology's scalability and interpretability enable efficient analysis of complex galaxy morphologies, particularly for dwarf galaxies and varied orientations. Future research aims to expand the dataset to 5,000 galaxies and integrate the Tremaine\-Weinberg method to measure bar pattern speeds, enhancing insights into galaxy dynamics and evolution. This work advances automated morphological analysis, offering a transformative tool for large\-scale astronomical studies.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2511.23383v1)
-
----
-
-
-## Hierarchical Feature Integration for Multi\-Signal Automatic Modulation Recognition / 
-
-发布日期：2025-11-28
-
-作者：Yunpeng Qu
-
-摘要：Automatic modulation recognition \(AMR\) is a crucial step in wireless communication systems, which identifies the modulation scheme from detected signals to provide key information for further processing. However, previous work has mainly focused on the identification of a single signal, overlooking the phenomenon of multiple signal superposition in practical channels and the signal detection procedures that must be conducted beforehand. Considering the susceptibility of radio frequency \(RF\) signals to noise interference and significant spectral variations, we propose a novel Hierarchical Feature Integration \(HIFI\)\-YOLO framework for multi\-signal joint detection and modulation recognition. Our HIFI\-YOLO framework, with its unique design of hierarchical feature integration, effectively enhances the representation capability of features in different modules, thereby improving detection performance. We construct a large\-scale AMR dataset specifically tailored for scenarios of the coexistence or overlapping of multiple signals transmitted through channels with realistic propagation conditions, consisting of diverse digital and analog modulation schemes. Extensive experiments on our dataset demonstrate the excellent performance of HIFI\-YOLO in multi\-signal detection and modulation recognition as a joint approach.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2511.23258v1)
-
----
-
-
-## Analysis of Incursive Breast Cancer in Mammograms Using YOLO, Explainability, and Domain Adaptation / 
-
-发布日期：2025-11-28
-
-作者：Jayan Adhikari
-
-摘要：Deep learning models for breast cancer detection from mammographic images have significant reliability problems when presented with Out\-of\-Distribution \(OOD\) inputs such as other imaging modalities \(CT, MRI, X\-ray\) or equipment variations, leading to unreliable detection and misdiagnosis. The current research mitigates the fundamental OOD issue through a comprehensive approach integrating ResNet50\-based OOD filtering with YOLO architectures \(YOLOv8, YOLOv11, YOLOv12\) for accurate detection of breast cancer. Our strategy establishes an in\-domain gallery via cosine similarity to rigidly reject non\-mammographic inputs prior to processing, ensuring that only domain\-associated images supply the detection pipeline. The OOD detection component achieves 99.77% general accuracy with immaculate 100% accuracy on OOD test sets, effectively eliminating irrelevant imaging modalities. ResNet50 was selected as the optimum backbone after 12 CNN architecture searches. The joint framework unites OOD robustness with high detection performance \(mAP@0.5: 0.947\) and enhanced interpretability through Grad\-CAM visualizations. Experimental validation establishes that OOD filtering significantly improves system reliability by preventing false alarms on out\-of\-distribution inputs while maintaining higher detection accuracy on mammographic data. The present study offers a fundamental foundation for the deployment of reliable AI\-based breast cancer detection systems in diverse clinical environments with inherent data heterogeneity.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2512.00129v1)
 
 ---
 
