@@ -1,6 +1,24 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## MT\-Depth: Multi\-task Instance feature analysis for the Depth Completion / 
+
+发布日期：2025-12-04
+
+作者：Abdul Haseeb Nizamani
+
+摘要：Depth completion plays a vital role in 3D perception systems, especially in scenarios where sparse depth data must be densified for tasks such as autonomous driving, robotics, and augmented reality. While many existing approaches rely on semantic segmentation to guide depth completion, they often overlook the benefits of object\-level understanding. In this work, we introduce an instance\-aware depth completion framework that explicitly integrates binary instance masks as spatial priors to refine depth predictions. Our model combines four main components: a frozen YOLO V11 instance segmentation branch, a U\-Net\-based depth completion backbone, a cross\-attention fusion module, and an attention\-guided prediction head. The instance segmentation branch generates per\-image foreground masks that guide the depth branch via cross\-attention, allowing the network to focus on object\-centric regions during refinement. We validate our method on the Virtual KITTI 2 dataset, showing that it achieves lower RMSE compared to both a U\-Net\-only baseline and previous semantic\-guided methods, while maintaining competitive MAE. Qualitative and quantitative results demonstrate that the proposed model effectively enhances depth accuracy near object boundaries, occlusions, and thin structures. Our findings suggest that incorporating instance\-aware cues offers a promising direction for improving depth completion without relying on dense semantic labels.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2512.04734v1)
+
+---
+
+
 ## Real\-Time Control and Automation Framework for Acousto\-Holographic Microscopy / 
 
 发布日期：2025-12-03
@@ -69,24 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2512.02285v1)
-
----
-
-
-## Real\-Time On\-the\-Go Annotation Framework Using YOLO for Automated Dataset Generation / 
-
-发布日期：2025-12-01
-
-作者：Mohamed Abdallah Salem
-
-摘要：Efficient and accurate annotation of datasets remains a significant challenge for deploying object detection models such as You Only Look Once \(YOLO\) in real\-world applications, particularly in agriculture where rapid decision\-making is critical. Traditional annotation techniques are labor\-intensive, requiring extensive manual labeling post data collection. This paper presents a novel real\-time annotation approach leveraging YOLO models deployed on edge devices, enabling immediate labeling during image capture. To comprehensively evaluate the efficiency and accuracy of our proposed system, we conducted an extensive comparative analysis using three prominent YOLO architectures \(YOLOv5, YOLOv8, YOLOv12\) under various configurations: single\-class versus multi\-class annotation and pretrained versus scratch\-based training. Our analysis includes detailed statistical tests and learning dynamics, demonstrating significant advantages of pretrained and single\-class configurations in terms of model convergence, performance, and robustness. Results strongly validate the feasibility and effectiveness of our real\-time annotation framework, highlighting its capability to drastically reduce dataset preparation time while maintaining high annotation quality.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2512.01165v1)
 
 ---
 
