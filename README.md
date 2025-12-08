@@ -1,6 +1,42 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## An Integrated System for WEEE Sorting Employing X\-ray Imaging, AI\-based Object Detection and Segmentation, and Delta Robot Manipulation / 
+
+发布日期：2025-12-05
+
+作者：Panagiotis Giannikos
+
+摘要：Battery recycling is becoming increasingly critical due to the rapid growth in battery usage and the limited availability of natural resources. Moreover, as battery energy densities continue to rise, improper handling during recycling poses significant safety hazards, including potential fires at recycling facilities. Numerous systems have been proposed for battery detection and removal from WEEE recycling lines, including X\-ray and RGB\-based visual inspection methods, typically driven by AI\-powered object detection models \(e.g., Mask R\-CNN, YOLO, ResNets\). Despite advances in optimizing detection techniques and model modifications, a fully autonomous solution capable of accurately identifying and sorting batteries across diverse WEEEs types has yet to be realized. In response to these challenges, we present our novel approach which integrates a specialized X\-ray transmission dual energy imaging subsystem with advanced pre\-processing algorithms, enabling high\-contrast image reconstruction for effective differentiation of dense and thin materials in WEEE. Devices move along a conveyor belt through a high\-resolution X\-ray imaging system, where YOLO and U\-Net models precisely detect and segment battery\-containing items. An intelligent tracking and position estimation algorithm then guides a Delta robot equipped with a suction gripper to selectively extract and properly discard the targeted devices. The approach is validated in a photorealistic simulation environment developed in NVIDIA Isaac Sim and on the real setup.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2512.05599v1)
+
+---
+
+
+## YOLO and SGBM Integration for Autonomous Tree Branch Detection and Depth Estimation in Radiata Pine Pruning Applications / 
+
+发布日期：2025-12-05
+
+作者：Yida Lin
+
+摘要：Manual pruning of radiata pine trees poses significant safety risks due to extreme working heights and challenging terrain. This paper presents a computer vision framework that integrates YOLO object detection with Semi\-Global Block Matching \(SGBM\) stereo vision for autonomous drone\-based pruning operations. Our system achieves precise branch detection and depth estimation using only stereo camera input, eliminating the need for expensive LiDAR sensors. Experimental evaluation demonstrates YOLO's superior performance over Mask R\-CNN, achieving 82.0% mAPmask50\-95 for branch segmentation. The integrated system accurately localizes branches within a 2 m operational range, with processing times under one second per frame. These results establish the feasibility of cost\-effective autonomous pruning systems that enhance worker safety and operational efficiency in commercial forestry.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2512.05412v1)
+
+---
+
+
 ## MT\-Depth: Multi\-task Instance feature analysis for the Depth Completion / 
 
 发布日期：2025-12-04
@@ -51,42 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2512.03509v1)
-
----
-
-
-## YOLOA: Real\-Time Affordance Detection via LLM Adapter / 
-
-发布日期：2025-12-03
-
-作者：Yuqi Ji
-
-摘要：Affordance detection aims to jointly address the fundamental "what\-where\-how" challenge in embodied AI by understanding "what" an object is, "where" the object is located, and "how" it can be used. However, most affordance learning methods focus solely on "how" objects can be used while neglecting the "what" and "where" aspects. Other affordance detection methods treat object detection and affordance learning as two independent tasks, lacking effective interaction and real\-time capability. To overcome these limitations, we introduce YOLO Affordance \(YOLOA\), a real\-time affordance detection model that jointly handles these two tasks via a large language model \(LLM\) adapter. Specifically, YOLOA employs a lightweight detector consisting of object detection and affordance learning branches refined through the LLM Adapter. During training, the LLM Adapter interacts with object and affordance preliminary predictions to refine both branches by generating more accurate class priors, box offsets, and affordance gates. Experiments on our relabeled ADG\-Det and IIT\-Heat benchmarks demonstrate that YOLOA achieves state\-of\-the\-art accuracy \(52.8 / 73.1 mAP on ADG\-Det / IIT\-Heat\) while maintaining real\-time performance \(up to 89.77 FPS, and up to 846.24 FPS for the lightweight variant\). This indicates that YOLOA achieves an excellent trade\-off between accuracy and efficiency.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2512.03418v1)
-
----
-
-
-## Edge\-Native, Behavior\-Adaptive Drone System for Wildlife Monitoring / 
-
-发布日期：2025-12-01
-
-作者：Jenna Kline
-
-摘要：Wildlife monitoring with drones must balance competing demands: approaching close enough to capture behaviorally\-relevant video while avoiding stress responses that compromise animal welfare and data validity. Human operators face a fundamental attentional bottleneck: they cannot simultaneously control drone operations and monitor vigilance states across entire animal groups. By the time elevated vigilance becomes obvious, an adverse flee response by the animals may be unavoidable. To solve this challenge, we present an edge\-native, behavior\-adaptive drone system for wildlife monitoring. This configurable decision\-support system augments operator expertise with automated group\-level vigilance monitoring. Our system continuously tracks individual behaviors using YOLOv11m detection and YOLO\-Behavior classification, aggregates vigilance states into a real\-time group stress metric, and provides graduated alerts \(alert vigilance to flee response\) with operator\-tunable thresholds for context\-specific calibration. We derive service\-level objectives \(SLOs\) from video frame rates and behavioral dynamics: to monitor 30fps video streams in real\-time, our system must complete detection and classification within 33ms per frame. Our edge\-native pipeline achieves 23.8ms total inference on GPU\-accelerated hardware, meeting this constraint with a substantial margin. Retrospective analysis of seven wildlife monitoring missions demonstrates detection capability and quantifies the cost of reactive control: manual piloting results in 14 seconds average adverse behavior duration with 71.9% usable frames. Our analysis reveals operators could have received actionable alerts 51s before animals fled in 57% of missions. Simulating 5\-second operator intervention yields a projected performance of 82.8% usable frames with 1\-second adverse behavior duration,a 93% reduction compared to manual piloting.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2512.02285v1)
 
 ---
 
