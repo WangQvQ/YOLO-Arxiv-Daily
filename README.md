@@ -1,6 +1,42 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Enhancing Small Object Detection with YOLO: A Novel Framework for Improved Accuracy and Efficiency / 
+
+发布日期：2025-12-08
+
+作者：Mahila Moghadami
+
+摘要：This paper investigates and develops methods for detecting small objects in large\-scale aerial images. Current approaches for detecting small objects in aerial images often involve image cropping and modifications to detector network architectures. Techniques such as sliding window cropping and architectural enhancements, including higher\-resolution feature maps and attention mechanisms, are commonly employed. Given the growing importance of aerial imagery in various critical and industrial applications, the need for robust frameworks for small object detection becomes imperative. To address this need, we adopted the base SW\-YOLO approach to enhance speed and accuracy in small object detection by refining cropping dimensions and overlap in sliding window usage and subsequently enhanced it through architectural modifications. we propose a novel model by modifying the base model architecture, including advanced feature extraction modules in the neck for feature map enhancement, integrating CBAM in the backbone to preserve spatial and channel information, and introducing a new head to boost small object detection accuracy. Finally, we compared our method with SAHI, one of the most powerful frameworks for processing large\-scale images, and CZDet, which is also based on image cropping, achieving significant improvements in accuracy. The proposed model achieves significant accuracy gains on the VisDrone2019 dataset, outperforming baseline YOLOv5L detection by a substantial margin. Specifically, the final proposed model elevates the mAP .5.5 accuracy on the VisDrone2019 dataset from the base accuracy of 35.5 achieved by the YOLOv5L detector to 61.2. Notably, the accuracy of CZDet, which is another classic method applied to this dataset, is 58.36. This research demonstrates a significant improvement, achieving an increase in accuracy from 35.5 to 61.2.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2512.07379v1)
+
+---
+
+
+## Hierarchical Image\-Guided 3D Point Cloud Segmentation in Industrial Scenes via Multi\-View Bayesian Fusion / 
+
+发布日期：2025-12-07
+
+作者：Yu Zhu
+
+摘要：Reliable 3D segmentation is critical for understanding complex scenes with dense layouts and multi\-scale objects, as commonly seen in industrial environments. In such scenarios, heavy occlusion weakens geometric boundaries between objects, and large differences in object scale will cause end\-to\-end models fail to capture both coarse and fine details accurately. Existing 3D point\-based methods require costly annotations, while image\-guided methods often suffer from semantic inconsistencies across views. To address these challenges, we propose a hierarchical image\-guided 3D segmentation framework that progressively refines segmentation from instance\-level to part\-level. Instance segmentation involves rendering a top\-view image and projecting SAM\-generated masks prompted by YOLO\-World back onto the 3D point cloud. Part\-level segmentation is subsequently performed by rendering multi\-view images of each instance obtained from the previous stage and applying the same 2D segmentation and back\-projection process at each view, followed by Bayesian updating fusion to ensure semantic consistency across views. Experiments on real\-world factory data demonstrate that our method effectively handles occlusion and structural complexity, achieving consistently high per\-class mIoU scores. Additional evaluations on public dataset confirm the generalization ability of our framework, highlighting its robustness, annotation efficiency, and adaptability to diverse 3D environments.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2512.06882v1)
+
+---
+
+
 ## An Integrated System for WEEE Sorting Employing X\-ray Imaging, AI\-based Object Detection and Segmentation, and Delta Robot Manipulation / 
 
 发布日期：2025-12-05
@@ -51,42 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2512.04734v1)
-
----
-
-
-## Real\-Time Control and Automation Framework for Acousto\-Holographic Microscopy / 
-
-发布日期：2025-12-03
-
-作者：Hasan Berkay Abdioğlu
-
-摘要：Manual operation of microscopes for repetitive tasks in cell biology is a significant bottleneck, consuming invaluable expert time, and introducing human error. Automation is essential, and while Digital Holographic Microscopy \(DHM\) offers powerful, label\-free quantitative phase imaging \(QPI\), its inherently noisy and low\-contrast holograms make robust autofocus and object detection challenging. We present the design, integration, and validation of a fully automated closed\-loop DHM system engineered for high\-throughput mechanical characterization of biological cells. The system integrates automated serpentine scanning, real\-time YOLO\-based object detection, and a high\-performance, multi\-threaded software architecture using pinned memory and SPSC queues. This design enables the GPU\-accelerated reconstruction pipeline to run fully in parallel with the 50 fps data acquisition, adding no sequential overhead. A key contribution is the validation of a robust, multi\-stage holographic autofocus strategy; we demonstrate that a selected metric \(based on a low\-pass filter and standard deviation\) provides reliable focusing for noisy holograms where conventional methods \(e.g., Tenengrad, Laplacian\) fail entirely. Performance analysis of the complete system identifies the 2.23\-second autofocus operation\-not reconstruction\-as the primary throughput bottleneck, resulting in a 9.62\-second analysis time per object. This work delivers a complete functional platform for autonomous DHM screening and provides a clear, data\-driven path for future optimization, proposing a hybrid brightfield imaging modality to address current bottlenecks.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2512.03539v1)
-
----
-
-
-## AfroBeats Dance Movement Analysis Using Computer Vision: A Proof\-of\-Concept Framework Combining YOLO and Segment Anything Model / 
-
-发布日期：2025-12-03
-
-作者：Kwaku Opoku\-Ware
-
-摘要：This paper presents a preliminary investigation into automated dance movement analysis using contemporary computer vision techniques. We propose a proof\-of\-concept framework that integrates YOLOv8 and v11 for dancer detection with the Segment Anything Model \(SAM\) for precise segmentation, enabling the tracking and quantification of dancer movements in video recordings without specialized equipment or markers. Our approach identifies dancers within video frames, counts discrete dance steps, calculates spatial coverage patterns, and measures rhythm consistency across performance sequences. Testing this framework on a single 49\-second recording of Ghanaian AfroBeats dance demonstrates technical feasibility, with the system achieving approximately 94% detection precision and 89% recall on manually inspected samples. The pixel\-level segmentation provided by SAM, achieving approximately 83% intersection\-over\-union with visual inspection, enables motion quantification that captures body configuration changes beyond what bounding\-box approaches can represent. Analysis of this preliminary case study indicates that the dancer classified as primary by our system executed 23% more steps with 37% higher motion intensity and utilized 42% more performance space compared to dancers classified as secondary. However, this work represents an early\-stage investigation with substantial limitations including single\-video validation, absence of systematic ground truth annotations, and lack of comparison with existing pose estimation methods. We present this framework to demonstrate technical feasibility, identify promising directions for quantitative dance metrics, and establish a foundation for future systematic validation studies.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2512.03509v1)
 
 ---
 
