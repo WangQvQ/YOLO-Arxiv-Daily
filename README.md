@@ -79,14 +79,14 @@
 
 作者：Abdul Haseeb Nizamani
 
-摘要：Depth completion plays a vital role in 3D perception systems, especially in scenarios where sparse depth data must be densified for tasks such as autonomous driving, robotics, and augmented reality. While many existing approaches rely on semantic segmentation to guide depth completion, they often overlook the benefits of object\-level understanding. In this work, we introduce an instance\-aware depth completion framework that explicitly integrates binary instance masks as spatial priors to refine depth predictions. Our model combines four main components: a frozen YOLO V11 instance segmentation branch, a U\-Net\-based depth completion backbone, a cross\-attention fusion module, and an attention\-guided prediction head. The instance segmentation branch generates per\-image foreground masks that guide the depth branch via cross\-attention, allowing the network to focus on object\-centric regions during refinement. We validate our method on the Virtual KITTI 2 dataset, showing that it achieves lower RMSE compared to both a U\-Net\-only baseline and previous semantic\-guided methods, while maintaining competitive MAE. Qualitative and quantitative results demonstrate that the proposed model effectively enhances depth accuracy near object boundaries, occlusions, and thin structures. Our findings suggest that incorporating instance\-aware cues offers a promising direction for improving depth completion without relying on dense semantic labels.
+摘要：Depth completion plays a vital role in 3D perception systems, especially in scenarios where sparse depth data must be densified for tasks such as autonomous driving, robotics, and augmented reality. While many existing approaches rely on semantic segmentation to guide depth completion, they often overlook the benefits of object\-level understanding. In this work, we introduce an instance\-aware depth completion framework that explicitly integrates binary instance masks as spatial priors to refine depth predictions. Our model combines four main components: a frozen YOLO V11 instance segmentation branch, a U\-Net\-based depth completion backbone, a cross\-attention fusion module, and an attention\-guided prediction head. The instance segmentation branch generates per\-image foreground masks that guide the depth branch via cross\-attention, allowing the network to focus on object\-centric regions during refinement. We validate our method on the Virtual KITTI 2 dataset, showing that it achieves lower Root Mean Squared Error \(RMSE\) compared to both a U\-Net\-only baseline and previous semantic\-guided methods, while maintaining competitive Mean Absolute Error \(MAE\). Qualitative and quantitative results demonstrate that the proposed model effectively enhances depth accuracy near object boundaries, occlusions, and thin structures. Our findings suggest that incorporating instance\-aware cues offers a promising direction for improving depth completion without relying on dense semantic labels.
 
 中文摘要：
 
 
 代码链接：摘要中未找到代码链接。
 
-论文链接：[阅读更多](http://arxiv.org/abs/2512.04734v1)
+论文链接：[阅读更多](http://arxiv.org/abs/2512.04734v2)
 
 ---
 
