@@ -1,6 +1,24 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## LiM\-YOLO: Less is More with Pyramid Level Shift and Normalized Auxiliary Branch for Ship Detection in Optical Remote Sensing Imagery / 
+
+发布日期：2025-12-10
+
+作者：Seon\-Hoon Kim
+
+摘要：Applying general\-purpose object detectors to ship detection in satellite imagery presents significant challenges due to the extreme scale disparity and morphological anisotropy of maritime targets. Standard architectures utilizing stride\-32 \(P5\) layers often fail to resolve narrow vessels, resulting in spatial feature dilution. In this work, we propose LiM\-YOLO, a specialized detector designed to resolve these domain\-specific conflicts. Based on a statistical analysis of ship scales, we introduce a Pyramid Level Shift Strategy that reconfigures the detection head to P2\-P4. This shift ensures compliance with Nyquist sampling criteria for small objects while eliminating the computational redundancy of deep layers. To further enhance training stability on high\-resolution inputs, we incorporate a Group Normalized Convolutional Block for Linear Projection \(GN\-CBLinear\), which mitigates gradient volatility in micro\-batch settings. Validated on SODA\-A, DOTA\-v1.5, FAIR1M\-v2.0, and ShipRSImageNet\-V1, LiM\-YOLO demonstrates superior detection accuracy and efficiency compared to state\-of\-the\-art models. The code is available at https://github.com/egshkim/LiM\-YOLO.
+
+中文摘要：
+
+
+代码链接：https://github.com/egshkim/LiM-YOLO.
+
+论文链接：[阅读更多](http://arxiv.org/abs/2512.09700v1)
+
+---
+
+
 ## Enhancing Small Object Detection with YOLO: A Novel Framework for Improved Accuracy and Efficiency / 
 
 发布日期：2025-12-08
@@ -69,24 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2512.05412v1)
-
----
-
-
-## MT\-Depth: Multi\-task Instance feature analysis for the Depth Completion / 
-
-发布日期：2025-12-04
-
-作者：Abdul Haseeb Nizamani
-
-摘要：Depth completion plays a vital role in 3D perception systems, especially in scenarios where sparse depth data must be densified for tasks such as autonomous driving, robotics, and augmented reality. While many existing approaches rely on semantic segmentation to guide depth completion, they often overlook the benefits of object\-level understanding. In this work, we introduce an instance\-aware depth completion framework that explicitly integrates binary instance masks as spatial priors to refine depth predictions. Our model combines four main components: a frozen YOLO V11 instance segmentation branch, a U\-Net\-based depth completion backbone, a cross\-attention fusion module, and an attention\-guided prediction head. The instance segmentation branch generates per\-image foreground masks that guide the depth branch via cross\-attention, allowing the network to focus on object\-centric regions during refinement. We validate our method on the Virtual KITTI 2 dataset, showing that it achieves lower Root Mean Squared Error \(RMSE\) compared to both a U\-Net\-only baseline and previous semantic\-guided methods, while maintaining competitive Mean Absolute Error \(MAE\). Qualitative and quantitative results demonstrate that the proposed model effectively enhances depth accuracy near object boundaries, occlusions, and thin structures. Our findings suggest that incorporating instance\-aware cues offers a promising direction for improving depth completion without relying on dense semantic labels.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2512.04734v2)
 
 ---
 
