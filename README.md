@@ -1,6 +1,24 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Enhancing Large Language Models for End\-to\-End Circuit Analysis Problem Solving / 
+
+发布日期：2025-12-10
+
+作者：Liangliang Chen
+
+摘要：Large language models \(LLMs\) have shown strong performance in data\-rich domains such as programming, but their reliability in engineering tasks remains limited. Circuit analysis \-\- requiring multimodal understanding and precise mathematical reasoning \-\- highlights these challenges. Although Gemini 2.5 Pro improves diagram interpretation and analog\-circuit reasoning, it still struggles to consistently produce correct solutions when given both text and circuit diagrams. At the same time, engineering education needs scalable AI tools capable of generating accurate solutions for tasks such as automated homework feedback and question\-answering. This paper presents an enhanced, end\-to\-end circuit problem solver built on Gemini 2.5 Pro. We first benchmark Gemini on a representative set of undergraduate circuit problems and identify two major failure modes: 1\) circuit\-recognition hallucinations, particularly incorrect source polarity detection, and 2\) reasoning\-process hallucinations, such as incorrect current directions. To address recognition errors, we integrate a fine\-tuned YOLO detector and OpenCV processing to isolate voltage and current sources, enabling Gemini to re\-identify source polarities from cropped images with near\-perfect accuracy. To reduce reasoning errors, we introduce an ngspice\-based verification loop in which Gemini generates a .cir file, ngspice simulates the circuit, and discrepancies trigger iterative regeneration with optional human\-in\-the\-loop review. Across 83 problems, the proposed pipeline achieves a 97.59% success rate \(81 correct solutions\), substantially outperforming Gemini 2.5 Pro's original 79.52% accuracy. This system extends LLM capabilities for multimodal engineering problem\-solving and supports the creation of high\-quality educational datasets and AI\-powered instructional tools.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2512.10159v1)
+
+---
+
+
 ## LiM\-YOLO: Less is More with Pyramid Level Shift and Normalized Auxiliary Branch for Ship Detection in Optical Remote Sensing Imagery / 
 
 发布日期：2025-12-10
@@ -69,24 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2512.05599v1)
-
----
-
-
-## YOLO and SGBM Integration for Autonomous Tree Branch Detection and Depth Estimation in Radiata Pine Pruning Applications / 
-
-发布日期：2025-12-05
-
-作者：Yida Lin
-
-摘要：Manual pruning of radiata pine trees poses significant safety risks due to extreme working heights and challenging terrain. This paper presents a computer vision framework that integrates YOLO object detection with Semi\-Global Block Matching \(SGBM\) stereo vision for autonomous drone\-based pruning operations. Our system achieves precise branch detection and depth estimation using only stereo camera input, eliminating the need for expensive LiDAR sensors. Experimental evaluation demonstrates YOLO's superior performance over Mask R\-CNN, achieving 82.0% mAPmask50\-95 for branch segmentation. The integrated system accurately localizes branches within a 2 m operational range, with processing times under one second per frame. These results establish the feasibility of cost\-effective autonomous pruning systems that enhance worker safety and operational efficiency in commercial forestry.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2512.05412v1)
 
 ---
 
