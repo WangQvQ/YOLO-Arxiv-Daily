@@ -1,92 +1,92 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
-## Enhancing Large Language Models for End\-to\-End Circuit Analysis Problem Solving / 
+## Computer vision training dataset generation for robotic environments using Gaussian splatting / 
 
-发布日期：2025-12-10
+发布日期：2025-12-15
 
-作者：Liangliang Chen
+作者：Patryk Niżeniec
 
-摘要：Large language models \(LLMs\) have shown strong performance in data\-rich domains such as programming, but their reliability in engineering tasks remains limited. Circuit analysis \-\- requiring multimodal understanding and precise mathematical reasoning \-\- highlights these challenges. Although Gemini 2.5 Pro improves diagram interpretation and analog\-circuit reasoning, it still struggles to consistently produce correct solutions when given both text and circuit diagrams. At the same time, engineering education needs scalable AI tools capable of generating accurate solutions for tasks such as automated homework feedback and question\-answering. This paper presents an enhanced, end\-to\-end circuit problem solver built on Gemini 2.5 Pro. We first benchmark Gemini on a representative set of undergraduate circuit problems and identify two major failure modes: 1\) circuit\-recognition hallucinations, particularly incorrect source polarity detection, and 2\) reasoning\-process hallucinations, such as incorrect current directions. To address recognition errors, we integrate a fine\-tuned YOLO detector and OpenCV processing to isolate voltage and current sources, enabling Gemini to re\-identify source polarities from cropped images with near\-perfect accuracy. To reduce reasoning errors, we introduce an ngspice\-based verification loop in which Gemini generates a .cir file, ngspice simulates the circuit, and discrepancies trigger iterative regeneration with optional human\-in\-the\-loop review. Across 83 problems, the proposed pipeline achieves a 97.59% success rate \(81 correct solutions\), substantially outperforming Gemini 2.5 Pro's original 79.52% accuracy. This system extends LLM capabilities for multimodal engineering problem\-solving and supports the creation of high\-quality educational datasets and AI\-powered instructional tools.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2512.10159v1)
-
----
-
-
-## LiM\-YOLO: Less is More with Pyramid Level Shift and Normalized Auxiliary Branch for Ship Detection in Optical Remote Sensing Imagery / 
-
-发布日期：2025-12-10
-
-作者：Seon\-Hoon Kim
-
-摘要：Applying general\-purpose object detectors to ship detection in satellite imagery presents significant challenges due to the extreme scale disparity and morphological anisotropy of maritime targets. Standard architectures utilizing stride\-32 \(P5\) layers often fail to resolve narrow vessels, resulting in spatial feature dilution. In this work, we propose LiM\-YOLO, a specialized detector designed to resolve these domain\-specific conflicts. Based on a statistical analysis of ship scales, we introduce a Pyramid Level Shift Strategy that reconfigures the detection head to P2\-P4. This shift ensures compliance with Nyquist sampling criteria for small objects while eliminating the computational redundancy of deep layers. To further enhance training stability on high\-resolution inputs, we incorporate a Group Normalized Convolutional Block for Linear Projection \(GN\-CBLinear\), which mitigates gradient volatility in micro\-batch settings. Validated on SODA\-A, DOTA\-v1.5, FAIR1M\-v2.0, and ShipRSImageNet\-V1, LiM\-YOLO demonstrates superior detection accuracy and efficiency compared to state\-of\-the\-art models. The code is available at https://github.com/egshkim/LiM\-YOLO.
-
-中文摘要：
-
-
-代码链接：https://github.com/egshkim/LiM-YOLO.
-
-论文链接：[阅读更多](http://arxiv.org/abs/2512.09700v1)
-
----
-
-
-## Enhancing Small Object Detection with YOLO: A Novel Framework for Improved Accuracy and Efficiency / 
-
-发布日期：2025-12-08
-
-作者：Mahila Moghadami
-
-摘要：This paper investigates and develops methods for detecting small objects in large\-scale aerial images. Current approaches for detecting small objects in aerial images often involve image cropping and modifications to detector network architectures. Techniques such as sliding window cropping and architectural enhancements, including higher\-resolution feature maps and attention mechanisms, are commonly employed. Given the growing importance of aerial imagery in various critical and industrial applications, the need for robust frameworks for small object detection becomes imperative. To address this need, we adopted the base SW\-YOLO approach to enhance speed and accuracy in small object detection by refining cropping dimensions and overlap in sliding window usage and subsequently enhanced it through architectural modifications. we propose a novel model by modifying the base model architecture, including advanced feature extraction modules in the neck for feature map enhancement, integrating CBAM in the backbone to preserve spatial and channel information, and introducing a new head to boost small object detection accuracy. Finally, we compared our method with SAHI, one of the most powerful frameworks for processing large\-scale images, and CZDet, which is also based on image cropping, achieving significant improvements in accuracy. The proposed model achieves significant accuracy gains on the VisDrone2019 dataset, outperforming baseline YOLOv5L detection by a substantial margin. Specifically, the final proposed model elevates the mAP .5.5 accuracy on the VisDrone2019 dataset from the base accuracy of 35.5 achieved by the YOLOv5L detector to 61.2. Notably, the accuracy of CZDet, which is another classic method applied to this dataset, is 58.36. This research demonstrates a significant improvement, achieving an increase in accuracy from 35.5 to 61.2.
+摘要：This paper introduces a novel pipeline for generating large\-scale, highly realistic, and automatically labeled datasets for computer vision tasks in robotic environments. Our approach addresses the critical challenges of the domain gap between synthetic and real\-world imagery and the time\-consuming bottleneck of manual annotation. We leverage 3D Gaussian Splatting \(3DGS\) to create photorealistic representations of the operational environment and objects. These assets are then used in a game engine where physics simulations create natural arrangements. A novel, two\-pass rendering technique combines the realism of splats with a shadow map generated from proxy meshes. This map is then algorithmically composited with the image to add both physically plausible shadows and subtle highlights, significantly enhancing realism. Pixel\-perfect segmentation masks are generated automatically and formatted for direct use with object detection models like YOLO. Our experiments show that a hybrid training strategy, combining a small set of real images with a large volume of our synthetic data, yields the best detection and segmentation performance, confirming this as an optimal strategy for efficiently achieving robust and accurate models.
 
 中文摘要：
 
 
 代码链接：摘要中未找到代码链接。
 
-论文链接：[阅读更多](http://arxiv.org/abs/2512.07379v1)
+论文链接：[阅读更多](http://arxiv.org/abs/2512.13411v1)
 
 ---
 
 
-## Hierarchical Image\-Guided 3D Point Cloud Segmentation in Industrial Scenes via Multi\-View Bayesian Fusion / 
+## FID\-Net: A Feature\-Enhanced Deep Learning Network for Forest Infestation Detection / 
 
-发布日期：2025-12-07
+发布日期：2025-12-15
 
-作者：Yu Zhu
+作者：Yan Zhang
 
-摘要：Reliable 3D segmentation is critical for understanding complex scenes with dense layouts and multi\-scale objects, as commonly seen in industrial environments. In such scenarios, heavy occlusion weakens geometric boundaries between objects, and large differences in object scale will cause end\-to\-end models fail to capture both coarse and fine details accurately. Existing 3D point\-based methods require costly annotations, while image\-guided methods often suffer from semantic inconsistencies across views. To address these challenges, we propose a hierarchical image\-guided 3D segmentation framework that progressively refines segmentation from instance\-level to part\-level. Instance segmentation involves rendering a top\-view image and projecting SAM\-generated masks prompted by YOLO\-World back onto the 3D point cloud. Part\-level segmentation is subsequently performed by rendering multi\-view images of each instance obtained from the previous stage and applying the same 2D segmentation and back\-projection process at each view, followed by Bayesian updating fusion to ensure semantic consistency across views. Experiments on real\-world factory data demonstrate that our method effectively handles occlusion and structural complexity, achieving consistently high per\-class mIoU scores. Additional evaluations on public dataset confirm the generalization ability of our framework, highlighting its robustness, annotation efficiency, and adaptability to diverse 3D environments.
+摘要：Forest pests threaten ecosystem stability, requiring efficient monitoring. To overcome the limitations of traditional methods in large\-scale, fine\-grained detection, this study focuses on accurately identifying infected trees and analyzing infestation patterns. We propose FID\-Net, a deep learning model that detects pest\-affected trees from UAV visible\-light imagery and enables infestation analysis via three spatial metrics. Based on YOLOv8n, FID\-Net introduces a lightweight Feature Enhancement Module \(FEM\) to extract disease\-sensitive cues, an Adaptive Multi\-scale Feature Fusion Module \(AMFM\) to align and fuse dual\-branch features \(RGB and FEM\-enhanced\), and an Efficient Channel Attention \(ECA\) mechanism to enhance discriminative information efficiently. From detection results, we construct a pest situation analysis framework using: \(1\) Kernel Density Estimation to locate infection hotspots; \(2\) neighborhood evaluation to assess healthy trees' infection risk; \(3\) DBSCAN clustering to identify high\-density healthy clusters as priority protection zones. Experiments on UAV imagery from 32 forest plots in eastern Tianshan, China, show that FID\-Net achieves 86.10% precision, 75.44% recall, 82.29% mAP@0.5, and 64.30% mAP@0.5:0.95, outperforming mainstream YOLO models. Analysis confirms infected trees exhibit clear clustering, supporting targeted forest protection. FID\-Net enables accurate tree health discrimination and, combined with spatial metrics, provides reliable data for intelligent pest monitoring, early warning, and precise management.
 
 中文摘要：
 
 
 代码链接：摘要中未找到代码链接。
 
-论文链接：[阅读更多](http://arxiv.org/abs/2512.06882v1)
+论文链接：[阅读更多](http://arxiv.org/abs/2512.13104v1)
 
 ---
 
 
-## An Integrated System for WEEE Sorting Employing X\-ray Imaging, AI\-based Object Detection and Segmentation, and Delta Robot Manipulation / 
+## Adaptive Detector\-Verifier Framework for Zero\-Shot Polyp Detection in Open\-World Settings / 
 
-发布日期：2025-12-05
+发布日期：2025-12-13
 
-作者：Panagiotis Giannikos
+作者：Shengkai Xu
 
-摘要：Battery recycling is becoming increasingly critical due to the rapid growth in battery usage and the limited availability of natural resources. Moreover, as battery energy densities continue to rise, improper handling during recycling poses significant safety hazards, including potential fires at recycling facilities. Numerous systems have been proposed for battery detection and removal from WEEE recycling lines, including X\-ray and RGB\-based visual inspection methods, typically driven by AI\-powered object detection models \(e.g., Mask R\-CNN, YOLO, ResNets\). Despite advances in optimizing detection techniques and model modifications, a fully autonomous solution capable of accurately identifying and sorting batteries across diverse WEEEs types has yet to be realized. In response to these challenges, we present our novel approach which integrates a specialized X\-ray transmission dual energy imaging subsystem with advanced pre\-processing algorithms, enabling high\-contrast image reconstruction for effective differentiation of dense and thin materials in WEEE. Devices move along a conveyor belt through a high\-resolution X\-ray imaging system, where YOLO and U\-Net models precisely detect and segment battery\-containing items. An intelligent tracking and position estimation algorithm then guides a Delta robot equipped with a suction gripper to selectively extract and properly discard the targeted devices. The approach is validated in a photorealistic simulation environment developed in NVIDIA Isaac Sim and on the real setup.
+摘要：Polyp detectors trained on clean datasets often underperform in real\-world endoscopy, where illumination changes, motion blur, and occlusions degrade image quality. Existing approaches struggle with the domain gap between controlled laboratory conditions and clinical practice, where adverse imaging conditions are prevalent. In this work, we propose AdaptiveDetector, a novel two\-stage detector\-verifier framework comprising a YOLOv11 detector with a vision\-language model \(VLM\) verifier. The detector adaptively adjusts per\-frame confidence thresholds under VLM guidance, while the verifier is fine\-tuned with Group Relative Policy Optimization \(GRPO\) using an asymmetric, cost\-sensitive reward function specifically designed to discourage missed detections \-\- a critical clinical requirement. To enable realistic assessment under challenging conditions, we construct a comprehensive synthetic testbed by systematically degrading clean datasets with adverse conditions commonly encountered in clinical practice, providing a rigorous benchmark for zero\-shot evaluation. Extensive zero\-shot evaluation on synthetically degraded CVC\-ClinicDB and Kvasir\-SEG images demonstrates that our approach improves recall by 14 to 22 percentage points over YOLO alone, while precision remains within 0.7 points below to 1.7 points above the baseline. This combination of adaptive thresholding and cost\-sensitive reinforcement learning achieves clinically aligned, open\-world polyp detection with substantially fewer false negatives, thereby reducing the risk of missed precancerous polyps and improving patient outcomes.
 
 中文摘要：
 
 
 代码链接：摘要中未找到代码链接。
 
-论文链接：[阅读更多](http://arxiv.org/abs/2512.05599v1)
+论文链接：[阅读更多](http://arxiv.org/abs/2512.12492v1)
+
+---
+
+
+## TCLeaf\-Net: a transformer\-convolution framework with global\-local attention for robust in\-field lesion\-level plant leaf disease detection / 
+
+发布日期：2025-12-13
+
+作者：Zishen Song
+
+摘要：Timely and accurate detection of foliar diseases is vital for safeguarding crop growth and reducing yield losses. Yet, in real\-field conditions, cluttered backgrounds, domain shifts, and limited lesion\-level datasets hinder robust modeling. To address these challenges, we release Daylily\-Leaf, a paired lesion\-level dataset comprising 1,746 RGB images and 7,839 lesions captured under both ideal and in\-field conditions, and propose TCLeaf\-Net, a transformer\-convolution hybrid detector optimized for real\-field use. TCLeaf\-Net is designed to tackle three major challenges. To mitigate interference from complex backgrounds, the transformer\-convolution module \(TCM\) couples global context with locality\-preserving convolution to suppress non\-leaf regions. To reduce information loss during downsampling, the raw\-scale feature recalling and sampling \(RSFRS\) block combines bilinear resampling and convolution to preserve fine spatial detail. To handle variations in lesion scale and feature shifts, the deformable alignment block with FPN \(DFPN\) employs offset\-based alignment and multi\-receptive\-field perception to strengthen multi\-scale fusion. Experimental results show that on the in\-field split of the Daylily\-Leaf dataset, TCLeaf\-Net improves mAP@50 by 5.4 percentage points over the baseline model, reaching 78.2%, while reducing computation by 7.5 GFLOPs and GPU memory usage by 8.7%. Moreover, the model outperforms recent YOLO and RT\-DETR series in both precision and recall, and demonstrates strong performance on the PlantDoc, Tomato\-Leaf, and Rice\-Leaf datasets, validating its robustness and generalizability to other plant disease detection scenarios.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2512.12357v1)
+
+---
+
+
+## Cognitive\-YOLO: LLM\-Driven Architecture Synthesis from First Principles of Data for Object Detection / 
+
+发布日期：2025-12-13
+
+作者：Jiahao Zhao
+
+摘要：Designing high\-performance object detection architectures is a complex task, where traditional manual design is time\-consuming and labor\-intensive, and Neural Architecture Search \(NAS\) is computationally prohibitive. While recent approaches using Large Language Models \(LLMs\) show promise, they often function as iterative optimizers within a search loop, rather than generating architectures directly from a holistic understanding of the data. To address this gap, we propose Cognitive\-YOLO, a novel framework for LLM\-driven architecture synthesis that generates network configurations directly from the intrinsic characteristics of the dataset. Our method consists of three stages: first, an analysis module extracts key meta\-features \(e.g., object scale distribution and scene density\) from the target dataset; second, the LLM reasons upon these features, augmented with state\-of\-the\-art components retrieved via Retrieval\-Augmented Generation \(RAG\), to synthesize the architecture into a structured Neural Architecture Description Language \(NADL\); finally, a compiler instantiates this description into a deployable model. Extensive experiments on five diverse object detection datasets demonstrate that our proposed Cognitive\-YOLO consistently generates superior architectures, achieving highly competitive performance and demonstrating a superior performance\-per\-parameter trade\-off compared to strong baseline models across multiple benchmarks. Crucially, our ablation studies prove that the LLM's data\-driven reasoning is the primary driver of performance, demonstrating that a deep understanding of data "first principles" is more critical for achieving a superior architecture than simply retrieving SOTA components.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2512.12281v1)
 
 ---
 
