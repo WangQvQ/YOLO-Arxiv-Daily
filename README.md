@@ -1,6 +1,42 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## From YOLO to VLMs: Advancing Zero\-Shot and Few\-Shot Detection of Wastewater Treatment Plants Using Satellite Imagery in MENA Region / 
+
+发布日期：2025-12-16
+
+作者：Akila Premarathna
+
+摘要：In regions of the Middle East and North Africa \(MENA\), there is a high demand for wastewater treatment plants \(WWTPs\), crucial for sustainable water management. Precise identification of WWTPs from satellite images enables environmental monitoring. Traditional methods like YOLOv8 segmentation require extensive manual labeling. But studies indicate that vision\-language models \(VLMs\) are an efficient alternative to achieving equivalent or superior results through inherent reasoning and annotation. This study presents a structured methodology for VLM comparison, divided into zero\-shot and few\-shot streams specifically to identify WWTPs. The YOLOv8 was trained on a governmental dataset of 83,566 high\-resolution satellite images from Egypt, Saudi Arabia, and UAE: ~85% WWTPs \(positives\), 15% non\-WWTPs \(negatives\). Evaluated VLMs include LLaMA 3.2 Vision, Qwen 2.5 VL, DeepSeek\-VL2, Gemma 3, Gemini, and Pixtral 12B \(Mistral\), used to identify WWTP components such as circular/rectangular tanks, aeration basins and distinguish confounders via expert prompts producing JSON outputs with confidence and descriptions. The dataset comprises 1,207 validated WWTP locations \(198 UAE, 354 KSA, 655 Egypt\) and equal non\-WWTP sites from field/AI data, as 600mx600m Geo\-TIFF images \(Zoom 18, EPSG:4326\). Zero\-shot evaluations on WWTP images showed several VLMs out\-performing YOLOv8's true positive rate, with Gemma\-3 highest. Results confirm that VLMs, particularly with zero\-shot, can replace YOLOv8 for efficient, annotation\-free WWTP classification, enabling scalable remote sensing.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2512.14312v1)
+
+---
+
+
+## VajraV1 \-\- The most accurate Real Time Object Detector of the YOLO family / 
+
+发布日期：2025-12-15
+
+作者：Naman Balbir Singh Makkar
+
+摘要：Recent years have seen significant advances in real\-time object detection, with the release of YOLOv10, YOLO11, YOLOv12, and YOLOv13 between 2024 and 2025. This technical report presents the VajraV1 model architecture, which introduces architectural enhancements over existing YOLO\-based detectors. VajraV1 combines effective design choices from prior YOLO models to achieve state\-of\-the\-art accuracy among real\-time object detectors while maintaining competitive inference speed.   On the COCO validation set, VajraV1\-Nano achieves 44.3% mAP, outperforming YOLOv12\-N by 3.7% and YOLOv13\-N by 2.7% at latency competitive with YOLOv12\-N and YOLOv11\-N. VajraV1\-Small achieves 50.4% mAP, exceeding YOLOv12\-S and YOLOv13\-S by 2.4%. VajraV1\-Medium achieves 52.7% mAP, outperforming YOLOv12\-M by 0.2%. VajraV1\-Large achieves 53.7% mAP, surpassing YOLOv13\-L by 0.3%. VajraV1\-Xlarge achieves 56.2% mAP, outperforming all existing real\-time object detectors.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2512.13834v1)
+
+---
+
+
 ## Computer vision training dataset generation for robotic environments using Gaussian splatting / 
 
 发布日期：2025-12-15
@@ -37,56 +73,20 @@
 ---
 
 
-## Adaptive Detector\-Verifier Framework for Zero\-Shot Polyp Detection in Open\-World Settings / 
+## Human\-AI Collaboration Mechanism Study on AIGC Assisted Image Production for Special Coverage / 
 
-发布日期：2025-12-13
+发布日期：2025-12-14
 
-作者：Shengkai Xu
+作者：Yajie Yang
 
-摘要：Polyp detectors trained on clean datasets often underperform in real\-world endoscopy, where illumination changes, motion blur, and occlusions degrade image quality. Existing approaches struggle with the domain gap between controlled laboratory conditions and clinical practice, where adverse imaging conditions are prevalent. In this work, we propose AdaptiveDetector, a novel two\-stage detector\-verifier framework comprising a YOLOv11 detector with a vision\-language model \(VLM\) verifier. The detector adaptively adjusts per\-frame confidence thresholds under VLM guidance, while the verifier is fine\-tuned with Group Relative Policy Optimization \(GRPO\) using an asymmetric, cost\-sensitive reward function specifically designed to discourage missed detections \-\- a critical clinical requirement. To enable realistic assessment under challenging conditions, we construct a comprehensive synthetic testbed by systematically degrading clean datasets with adverse conditions commonly encountered in clinical practice, providing a rigorous benchmark for zero\-shot evaluation. Extensive zero\-shot evaluation on synthetically degraded CVC\-ClinicDB and Kvasir\-SEG images demonstrates that our approach improves recall by 14 to 22 percentage points over YOLO alone, while precision remains within 0.7 points below to 1.7 points above the baseline. This combination of adaptive thresholding and cost\-sensitive reinforcement learning achieves clinically aligned, open\-world polyp detection with substantially fewer false negatives, thereby reducing the risk of missed precancerous polyps and improving patient outcomes.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2512.12492v1)
-
----
-
-
-## TCLeaf\-Net: a transformer\-convolution framework with global\-local attention for robust in\-field lesion\-level plant leaf disease detection / 
-
-发布日期：2025-12-13
-
-作者：Zishen Song
-
-摘要：Timely and accurate detection of foliar diseases is vital for safeguarding crop growth and reducing yield losses. Yet, in real\-field conditions, cluttered backgrounds, domain shifts, and limited lesion\-level datasets hinder robust modeling. To address these challenges, we release Daylily\-Leaf, a paired lesion\-level dataset comprising 1,746 RGB images and 7,839 lesions captured under both ideal and in\-field conditions, and propose TCLeaf\-Net, a transformer\-convolution hybrid detector optimized for real\-field use. TCLeaf\-Net is designed to tackle three major challenges. To mitigate interference from complex backgrounds, the transformer\-convolution module \(TCM\) couples global context with locality\-preserving convolution to suppress non\-leaf regions. To reduce information loss during downsampling, the raw\-scale feature recalling and sampling \(RSFRS\) block combines bilinear resampling and convolution to preserve fine spatial detail. To handle variations in lesion scale and feature shifts, the deformable alignment block with FPN \(DFPN\) employs offset\-based alignment and multi\-receptive\-field perception to strengthen multi\-scale fusion. Experimental results show that on the in\-field split of the Daylily\-Leaf dataset, TCLeaf\-Net improves mAP@50 by 5.4 percentage points over the baseline model, reaching 78.2%, while reducing computation by 7.5 GFLOPs and GPU memory usage by 8.7%. Moreover, the model outperforms recent YOLO and RT\-DETR series in both precision and recall, and demonstrates strong performance on the PlantDoc, Tomato\-Leaf, and Rice\-Leaf datasets, validating its robustness and generalizability to other plant disease detection scenarios.
+摘要：Artificial Intelligence Generated Content \(AIGC\) assisting image production triggers controversy in journalism while attracting attention from media agencies. Key issues involve misinformation, authenticity, semantic fidelity, and interpretability. Most AIGC tools are opaque "black boxes," hindering the dual demands of content accuracy and semantic alignment and creating ethical, sociotechnical, and trust dilemmas. This paper explores pathways for controllable image production in journalism's special coverage and conducts two experiments with projects from China's media agency: \(1\) Experiment 1 tests cross\-platform adaptability via standardized prompts across three scenes, revealing disparities in semantic alignment, cultural specificity, and visual realism driven by training\-corpus bias and platform\-level filtering. \(2\) Experiment 2 builds a human\-in\-the\-loop modular pipeline combining high\-precision segmentation \(SAM, GroundingDINO\), semantic alignment \(BrushNet\), and style regulating \(Style\-LoRA, Prompt\-to\-Prompt\), ensuring editorial fidelity through CLIP\-based semantic scoring, NSFW/OCR/YOLO filtering, and verifiable content credentials. Traceable deployment preserves semantic representation. Consequently, we propose a human\-AI collaboration mechanism for AIGC assisted image production in special coverage and recommend evaluating Character Identity Stability \(CIS\), Cultural Expression Accuracy \(CEA\), and User\-Public Appropriateness \(U\-PA\).
 
 中文摘要：
 
 
 代码链接：摘要中未找到代码链接。
 
-论文链接：[阅读更多](http://arxiv.org/abs/2512.12357v1)
-
----
-
-
-## Cognitive\-YOLO: LLM\-Driven Architecture Synthesis from First Principles of Data for Object Detection / 
-
-发布日期：2025-12-13
-
-作者：Jiahao Zhao
-
-摘要：Designing high\-performance object detection architectures is a complex task, where traditional manual design is time\-consuming and labor\-intensive, and Neural Architecture Search \(NAS\) is computationally prohibitive. While recent approaches using Large Language Models \(LLMs\) show promise, they often function as iterative optimizers within a search loop, rather than generating architectures directly from a holistic understanding of the data. To address this gap, we propose Cognitive\-YOLO, a novel framework for LLM\-driven architecture synthesis that generates network configurations directly from the intrinsic characteristics of the dataset. Our method consists of three stages: first, an analysis module extracts key meta\-features \(e.g., object scale distribution and scene density\) from the target dataset; second, the LLM reasons upon these features, augmented with state\-of\-the\-art components retrieved via Retrieval\-Augmented Generation \(RAG\), to synthesize the architecture into a structured Neural Architecture Description Language \(NADL\); finally, a compiler instantiates this description into a deployable model. Extensive experiments on five diverse object detection datasets demonstrate that our proposed Cognitive\-YOLO consistently generates superior architectures, achieving highly competitive performance and demonstrating a superior performance\-per\-parameter trade\-off compared to strong baseline models across multiple benchmarks. Crucially, our ablation studies prove that the LLM's data\-driven reasoning is the primary driver of performance, demonstrating that a deep understanding of data "first principles" is more critical for achieving a superior architecture than simply retrieving SOTA components.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2512.12281v1)
+论文链接：[阅读更多](http://arxiv.org/abs/2512.13739v1)
 
 ---
 
