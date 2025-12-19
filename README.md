@@ -1,6 +1,42 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## YOLO11\-4K: An Efficient Architecture for Real\-Time Small Object Detection in 4K Panoramic Images / 
+
+发布日期：2025-12-18
+
+作者：Huma Hafeez
+
+摘要：The processing of omnidirectional 360\-degree images poses significant challenges for object detection due to inherent spatial distortions, wide fields of view, and ultra\-high\-resolution inputs. Conventional detectors such as YOLO are optimised for standard image sizes \(for example, 640x640 pixels\) and often struggle with the computational demands of 4K or higher\-resolution imagery typical of 360\-degree vision. To address these limitations, we introduce YOLO11\-4K, an efficient real\-time detection framework tailored for 4K panoramic images. The architecture incorporates a novel multi\-scale detection head with a P2 layer to improve sensitivity to small objects often missed at coarser scales, and a GhostConv\-based backbone to reduce computational complexity without sacrificing representational power. To enable evaluation, we manually annotated the CVIP360 dataset, generating 6,876 frame\-level bounding boxes and producing a publicly available, detection\-ready benchmark for 4K panoramic scenes. YOLO11\-4K achieves 0.95 mAP at 0.50 IoU with 28.3 milliseconds inference per frame, representing a 75 percent latency reduction compared to YOLO11 \(112.3 milliseconds\), while also improving accuracy \(mAP at 0.50 of 0.95 versus 0.908\). This balance of efficiency and precision enables robust object detection in expansive 360\-degree environments, making the framework suitable for real\-world high\-resolution panoramic applications. While this work focuses on 4K omnidirectional images, the approach is broadly applicable to high\-resolution detection tasks in autonomous navigation, surveillance, and augmented reality.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2512.16493v1)
+
+---
+
+
+## From Words to Wavelengths: VLMs for Few\-Shot Multispectral Object Detection / 
+
+发布日期：2025-12-17
+
+作者：Manuel Nkegoum
+
+摘要：Multispectral object detection is critical for safety\-sensitive applications such as autonomous driving and surveillance, where robust perception under diverse illumination conditions is essential. However, the limited availability of annotated multispectral data severely restricts the training of deep detectors. In such data\-scarce scenarios, textual class information can serve as a valuable source of semantic supervision. Motivated by the recent success of Vision\-Language Models \(VLMs\) in computer vision, we explore their potential for few\-shot multispectral object detection. Specifically, we adapt two representative VLM\-based detectors, Grounding DINO and YOLO\-World, to handle multispectral inputs and propose an effective mechanism to integrate text, visual and thermal modalities. Through extensive experiments on two popular multispectral image benchmarks, FLIR and M3FD, we demonstrate that VLM\-based detectors not only excel in few\-shot regimes, significantly outperforming specialized multispectral models trained with comparable data, but also achieve competitive or superior results under fully supervised settings. Our findings reveal that the semantic priors learned by large\-scale VLMs effectively transfer to unseen spectral modalities, ofFering a powerful pathway toward data\-efficient multispectral perception.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2512.15971v1)
+
+---
+
+
 ## From YOLO to VLMs: Advancing Zero\-Shot and Few\-Shot Detection of Wastewater Treatment Plants Using Satellite Imagery in MENA Region / 
 
 发布日期：2025-12-16
@@ -51,42 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2512.13411v1)
-
----
-
-
-## FID\-Net: A Feature\-Enhanced Deep Learning Network for Forest Infestation Detection / 
-
-发布日期：2025-12-15
-
-作者：Yan Zhang
-
-摘要：Forest pests threaten ecosystem stability, requiring efficient monitoring. To overcome the limitations of traditional methods in large\-scale, fine\-grained detection, this study focuses on accurately identifying infected trees and analyzing infestation patterns. We propose FID\-Net, a deep learning model that detects pest\-affected trees from UAV visible\-light imagery and enables infestation analysis via three spatial metrics. Based on YOLOv8n, FID\-Net introduces a lightweight Feature Enhancement Module \(FEM\) to extract disease\-sensitive cues, an Adaptive Multi\-scale Feature Fusion Module \(AMFM\) to align and fuse dual\-branch features \(RGB and FEM\-enhanced\), and an Efficient Channel Attention \(ECA\) mechanism to enhance discriminative information efficiently. From detection results, we construct a pest situation analysis framework using: \(1\) Kernel Density Estimation to locate infection hotspots; \(2\) neighborhood evaluation to assess healthy trees' infection risk; \(3\) DBSCAN clustering to identify high\-density healthy clusters as priority protection zones. Experiments on UAV imagery from 32 forest plots in eastern Tianshan, China, show that FID\-Net achieves 86.10% precision, 75.44% recall, 82.29% mAP@0.5, and 64.30% mAP@0.5:0.95, outperforming mainstream YOLO models. Analysis confirms infected trees exhibit clear clustering, supporting targeted forest protection. FID\-Net enables accurate tree health discrimination and, combined with spatial metrics, provides reliable data for intelligent pest monitoring, early warning, and precise management.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2512.13104v1)
-
----
-
-
-## Human\-AI Collaboration Mechanism Study on AIGC Assisted Image Production for Special Coverage / 
-
-发布日期：2025-12-14
-
-作者：Yajie Yang
-
-摘要：Artificial Intelligence Generated Content \(AIGC\) assisting image production triggers controversy in journalism while attracting attention from media agencies. Key issues involve misinformation, authenticity, semantic fidelity, and interpretability. Most AIGC tools are opaque "black boxes," hindering the dual demands of content accuracy and semantic alignment and creating ethical, sociotechnical, and trust dilemmas. This paper explores pathways for controllable image production in journalism's special coverage and conducts two experiments with projects from China's media agency: \(1\) Experiment 1 tests cross\-platform adaptability via standardized prompts across three scenes, revealing disparities in semantic alignment, cultural specificity, and visual realism driven by training\-corpus bias and platform\-level filtering. \(2\) Experiment 2 builds a human\-in\-the\-loop modular pipeline combining high\-precision segmentation \(SAM, GroundingDINO\), semantic alignment \(BrushNet\), and style regulating \(Style\-LoRA, Prompt\-to\-Prompt\), ensuring editorial fidelity through CLIP\-based semantic scoring, NSFW/OCR/YOLO filtering, and verifiable content credentials. Traceable deployment preserves semantic representation. Consequently, we propose a human\-AI collaboration mechanism for AIGC assisted image production in special coverage and recommend evaluating Character Identity Stability \(CIS\), Cultural Expression Accuracy \(CEA\), and User\-Public Appropriateness \(U\-PA\).
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2512.13739v1)
 
 ---
 
