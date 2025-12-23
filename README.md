@@ -1,6 +1,60 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Retrieving Objects from 3D Scenes with Box\-Guided Open\-Vocabulary Instance Segmentation / 
+
+发布日期：2025-12-22
+
+作者：Khanh Nguyen
+
+摘要：Locating and retrieving objects from scene\-level point clouds is a challenging problem with broad applications in robotics and augmented reality. This task is commonly formulated as open\-vocabulary 3D instance segmentation. Although recent methods demonstrate strong performance, they depend heavily on SAM and CLIP to generate and classify 3D instance masks from images accompanying the point cloud, leading to substantial computational overhead and slow processing that limit their deployment in real\-world settings. Open\-YOLO 3D alleviates this issue by using a real\-time 2D detector to classify class\-agnostic masks produced directly from the point cloud by a pretrained 3D segmenter, eliminating the need for SAM and CLIP and significantly reducing inference time. However, Open\-YOLO 3D often fails to generalize to object categories that appear infrequently in the 3D training data. In this paper, we propose a method that generates 3D instance masks for novel objects from RGB images guided by a 2D open\-vocabulary detector. Our approach inherits the 2D detector's ability to recognize novel objects while maintaining efficient classification, enabling fast and accurate retrieval of rare instances from open\-ended text queries. Our code will be made available at https://github.com/ndkhanh360/BoxOVIS.
+
+中文摘要：
+
+
+代码链接：https://github.com/ndkhanh360/BoxOVIS.
+
+论文链接：[阅读更多](http://arxiv.org/abs/2512.19088v1)
+
+---
+
+
+## Building UI/UX Dataset for Dark Pattern Detection and YOLOv12x\-based Real\-Time Object Recognition Detection System / 
+
+发布日期：2025-12-20
+
+作者：Se\-Young Jang
+
+摘要：With the accelerating pace of digital transformation and the widespread adoption of online platforms, both social and technical concerns regarding dark patterns\-user interface designs that undermine users' ability to make informed and rational choices\-have become increasingly prominent. As corporate online platforms grow more sophisticated in their design strategies, there is a pressing need for proactive and real\-time detection technologies that go beyond the predominantly reactive approaches employed by regulatory authorities. In this paper, we propose a visual dark pattern detection framework that improves both detection accuracy and real\-time performance. To this end, we constructed a proprietary visual object detection dataset by manually collecting 4,066 UI/UX screenshots containing dark patterns from 194 websites across six major industrial sectors in South Korea and abroad. The collected images were annotated with five representative UI components commonly associated with dark patterns: Button, Checkbox, Input Field, Pop\-up, and QR Code. This dataset has been publicly released to support further research and development in the field. To enable real\-time detection, this study adopted the YOLOv12x object detection model and applied transfer learning to optimize its performance for visual dark pattern recognition. Experimental results demonstrate that the proposed approach achieves a high detection accuracy of 92.8% in terms of mAP@50, while maintaining a real\-time inference speed of 40.5 frames per second \(FPS\), confirming its effectiveness for practical deployment in online environments. Furthermore, to facilitate future research and contribute to technological advancements, the dataset constructed in this study has been made publicly available at https://github.com/B4E2/B4E2\-DarkPattern\-YOLO\-DataSet.
+
+中文摘要：
+
+
+代码链接：https://github.com/B4E2/B4E2-DarkPattern-YOLO-DataSet.
+
+论文链接：[阅读更多](http://arxiv.org/abs/2512.18269v1)
+
+---
+
+
+## YolovN\-CBi: A Lightweight and Efficient Architecture for Real\-Time Detection of Small UAVs / 
+
+发布日期：2025-12-19
+
+作者：Ami Pandat
+
+摘要：Unmanned Aerial Vehicles, commonly known as, drones pose increasing risks in civilian and defense settings, demanding accurate and real\-time drone detection systems. However, detecting drones is challenging because of their small size, rapid movement, and low visual contrast. A modified architecture of YolovN called the YolovN\-CBi is proposed that incorporates the Convolutional Block Attention Module \(CBAM\) and the Bidirectional Feature Pyramid Network \(BiFPN\) to improve sensitivity to small object detections. A curated training dataset consisting of 28K images is created with various flying objects and a local test dataset is collected with 2500 images consisting of very small drone objects. The proposed architecture is evaluated on four benchmark datasets, along with the local test dataset. The baseline Yolov5 and the proposed Yolov5\-CBi architecture outperform newer Yolo versions, including Yolov8 and Yolov12, in the speed\-accuracy trade\-off for small object detection. Four other variants of the proposed CBi architecture are also proposed and evaluated, which vary in the placement and usage of CBAM and BiFPN. These variants are further distilled using knowledge distillation techniques for edge deployment, using a Yolov5m\-CBi teacher and a Yolov5n\-CBi student. The distilled model achieved a mA@P0.5:0.9 of 0.6573, representing a 6.51% improvement over the teacher's score of 0.6171, highlighting the effectiveness of the distillation process. The distilled model is 82.9% faster than the baseline model, making it more suitable for real\-time drone detection. These findings highlight the effectiveness of the proposed CBi architecture, together with the distilled lightweight models in advancing efficient and accurate real\-time detection of small UAVs.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2512.18046v1)
+
+---
+
+
 ## YOLO11\-4K: An Efficient Architecture for Real\-Time Small Object Detection in 4K Panoramic Images / 
 
 发布日期：2025-12-18
@@ -33,60 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2512.15971v1)
-
----
-
-
-## From YOLO to VLMs: Advancing Zero\-Shot and Few\-Shot Detection of Wastewater Treatment Plants Using Satellite Imagery in MENA Region / 
-
-发布日期：2025-12-16
-
-作者：Akila Premarathna
-
-摘要：In regions of the Middle East and North Africa \(MENA\), there is a high demand for wastewater treatment plants \(WWTPs\), crucial for sustainable water management. Precise identification of WWTPs from satellite images enables environmental monitoring. Traditional methods like YOLOv8 segmentation require extensive manual labeling. But studies indicate that vision\-language models \(VLMs\) are an efficient alternative to achieving equivalent or superior results through inherent reasoning and annotation. This study presents a structured methodology for VLM comparison, divided into zero\-shot and few\-shot streams specifically to identify WWTPs. The YOLOv8 was trained on a governmental dataset of 83,566 high\-resolution satellite images from Egypt, Saudi Arabia, and UAE: ~85% WWTPs \(positives\), 15% non\-WWTPs \(negatives\). Evaluated VLMs include LLaMA 3.2 Vision, Qwen 2.5 VL, DeepSeek\-VL2, Gemma 3, Gemini, and Pixtral 12B \(Mistral\), used to identify WWTP components such as circular/rectangular tanks, aeration basins and distinguish confounders via expert prompts producing JSON outputs with confidence and descriptions. The dataset comprises 1,207 validated WWTP locations \(198 UAE, 354 KSA, 655 Egypt\) and equal non\-WWTP sites from field/AI data, as 600mx600m Geo\-TIFF images \(Zoom 18, EPSG:4326\). Zero\-shot evaluations on WWTP images showed several VLMs out\-performing YOLOv8's true positive rate, with Gemma\-3 highest. Results confirm that VLMs, particularly with zero\-shot, can replace YOLOv8 for efficient, annotation\-free WWTP classification, enabling scalable remote sensing.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2512.14312v1)
-
----
-
-
-## VajraV1 \-\- The most accurate Real Time Object Detector of the YOLO family / 
-
-发布日期：2025-12-15
-
-作者：Naman Balbir Singh Makkar
-
-摘要：Recent years have seen significant advances in real\-time object detection, with the release of YOLOv10, YOLO11, YOLOv12, and YOLOv13 between 2024 and 2025. This technical report presents the VajraV1 model architecture, which introduces architectural enhancements over existing YOLO\-based detectors. VajraV1 combines effective design choices from prior YOLO models to achieve state\-of\-the\-art accuracy among real\-time object detectors while maintaining competitive inference speed.   On the COCO validation set, VajraV1\-Nano achieves 44.3% mAP, outperforming YOLOv12\-N by 3.7% and YOLOv13\-N by 2.7% at latency competitive with YOLOv12\-N and YOLOv11\-N. VajraV1\-Small achieves 50.4% mAP, exceeding YOLOv12\-S and YOLOv13\-S by 2.4%. VajraV1\-Medium achieves 52.7% mAP, outperforming YOLOv12\-M by 0.2%. VajraV1\-Large achieves 53.7% mAP, surpassing YOLOv13\-L by 0.3%. VajraV1\-Xlarge achieves 56.2% mAP, outperforming all existing real\-time object detectors.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2512.13834v1)
-
----
-
-
-## Computer vision training dataset generation for robotic environments using Gaussian splatting / 
-
-发布日期：2025-12-15
-
-作者：Patryk Niżeniec
-
-摘要：This paper introduces a novel pipeline for generating large\-scale, highly realistic, and automatically labeled datasets for computer vision tasks in robotic environments. Our approach addresses the critical challenges of the domain gap between synthetic and real\-world imagery and the time\-consuming bottleneck of manual annotation. We leverage 3D Gaussian Splatting \(3DGS\) to create photorealistic representations of the operational environment and objects. These assets are then used in a game engine where physics simulations create natural arrangements. A novel, two\-pass rendering technique combines the realism of splats with a shadow map generated from proxy meshes. This map is then algorithmically composited with the image to add both physically plausible shadows and subtle highlights, significantly enhancing realism. Pixel\-perfect segmentation masks are generated automatically and formatted for direct use with object detection models like YOLO. Our experiments show that a hybrid training strategy, combining a small set of real images with a large volume of our synthetic data, yields the best detection and segmentation performance, confirming this as an optimal strategy for efficiently achieving robust and accurate models.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2512.13411v1)
 
 ---
 
