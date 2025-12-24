@@ -1,6 +1,42 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Multi\-temporal Adaptive Red\-Green\-Blue and Long\-Wave Infrared Fusion for You Only Look Once\-Based Landmine Detection from Unmanned Aerial Systems / 
+
+发布日期：2025-12-23
+
+作者：James E. Gallagher
+
+摘要：Landmines remain a persistent humanitarian threat, with 110 million actively deployed mines across 60 countries, claiming 26,000 casualties annually. This research evaluates adaptive Red\-Green\-Blue \(RGB\) and Long\-Wave Infrared \(LWIR\) fusion for Unmanned Aerial Systems \(UAS\)\-based detection of surface\-laid landmines, leveraging the thermal contrast between the ordnance and the surrounding soil to enhance feature extraction. Using You Only Look Once \(YOLO\) architectures \(v8, v10, v11\) across 114 test images, generating 35,640 model\-condition evaluations, YOLOv11 achieved optimal performance \(86.8% mAP\), with 10 to 30% thermal fusion at 5 to 10m altitude identified as the optimal detection parameters. A complementary architectural comparison revealed that while RF\-DETR achieved the highest accuracy \(69.2% mAP\), followed by Faster R\-CNN \(67.6%\), YOLOv11 \(64.2%\), and RetinaNet \(50.2%\), YOLOv11 trained 17.7 times faster than the transformer\-based RF\-DETR \(41 minutes versus 12 hours\), presenting a critical accuracy\-efficiency tradeoff for operational deployment. Aggregated multi\-temporal training datasets outperformed season\-specific approaches by 1.8 to 9.6%, suggesting that models benefit from exposure to diverse thermal conditions. Anti\-Tank \(AT\) mines achieved 61.9% detection accuracy, compared with 19.2% for Anti\-Personnel \(AP\) mines, reflecting both the size differential and thermal\-mass differences between these ordnance classes. As this research examined surface\-laid mines where thermal contrast is maximized, future research should quantify thermal contrast effects for mines buried at varying depths across heterogeneous soil types.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2512.20487v1)
+
+---
+
+
+## Drift\-Corrected Monocular VIO and Perception\-Aware Planning for Autonomous Drone Racing / 
+
+发布日期：2025-12-23
+
+作者：Maulana Bisyir Azhari
+
+摘要：The Abu Dhabi Autonomous Racing League\(A2RL\) x Drone Champions League competition\(DCL\) requires teams to perform high\-speed autonomous drone racing using only a single camera and a low\-quality inertial measurement unit \-\- a minimal sensor set that mirrors expert human drone racing pilots. This sensor limitation makes the system susceptible to drift from Visual\-Inertial Odometry \(VIO\), particularly during long and fast flights with aggressive maneuvers. This paper presents the system developed for the championship, which achieved a competitive performance. Our approach corrected VIO drift by fusing its output with global position measurements derived from a YOLO\-based gate detector using a Kalman filter. A perception\-aware planner generated trajectories that balance speed with the need to keep gates visible for the perception system. The system demonstrated high performance, securing podium finishes across multiple categories: third place in the AI Grand Challenge with top speed of 43.2 km/h, second place in the AI Drag Race with over 59 km/h, and second place in the AI Multi\-Drone Race. We detail the complete architecture and present a performance analysis based on experimental data from the competition, contributing our insights on building a successful system for monocular vision\-based autonomous drone flight.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2512.20475v1)
+
+---
+
+
 ## Retrieving Objects from 3D Scenes with Box\-Guided Open\-Vocabulary Instance Segmentation / 
 
 发布日期：2025-12-22
@@ -51,42 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2512.18046v1)
-
----
-
-
-## YOLO11\-4K: An Efficient Architecture for Real\-Time Small Object Detection in 4K Panoramic Images / 
-
-发布日期：2025-12-18
-
-作者：Huma Hafeez
-
-摘要：The processing of omnidirectional 360\-degree images poses significant challenges for object detection due to inherent spatial distortions, wide fields of view, and ultra\-high\-resolution inputs. Conventional detectors such as YOLO are optimised for standard image sizes \(for example, 640x640 pixels\) and often struggle with the computational demands of 4K or higher\-resolution imagery typical of 360\-degree vision. To address these limitations, we introduce YOLO11\-4K, an efficient real\-time detection framework tailored for 4K panoramic images. The architecture incorporates a novel multi\-scale detection head with a P2 layer to improve sensitivity to small objects often missed at coarser scales, and a GhostConv\-based backbone to reduce computational complexity without sacrificing representational power. To enable evaluation, we manually annotated the CVIP360 dataset, generating 6,876 frame\-level bounding boxes and producing a publicly available, detection\-ready benchmark for 4K panoramic scenes. YOLO11\-4K achieves 0.95 mAP at 0.50 IoU with 28.3 milliseconds inference per frame, representing a 75 percent latency reduction compared to YOLO11 \(112.3 milliseconds\), while also improving accuracy \(mAP at 0.50 of 0.95 versus 0.908\). This balance of efficiency and precision enables robust object detection in expansive 360\-degree environments, making the framework suitable for real\-world high\-resolution panoramic applications. While this work focuses on 4K omnidirectional images, the approach is broadly applicable to high\-resolution detection tasks in autonomous navigation, surveillance, and augmented reality.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2512.16493v1)
-
----
-
-
-## From Words to Wavelengths: VLMs for Few\-Shot Multispectral Object Detection / 
-
-发布日期：2025-12-17
-
-作者：Manuel Nkegoum
-
-摘要：Multispectral object detection is critical for safety\-sensitive applications such as autonomous driving and surveillance, where robust perception under diverse illumination conditions is essential. However, the limited availability of annotated multispectral data severely restricts the training of deep detectors. In such data\-scarce scenarios, textual class information can serve as a valuable source of semantic supervision. Motivated by the recent success of Vision\-Language Models \(VLMs\) in computer vision, we explore their potential for few\-shot multispectral object detection. Specifically, we adapt two representative VLM\-based detectors, Grounding DINO and YOLO\-World, to handle multispectral inputs and propose an effective mechanism to integrate text, visual and thermal modalities. Through extensive experiments on two popular multispectral image benchmarks, FLIR and M3FD, we demonstrate that VLM\-based detectors not only excel in few\-shot regimes, significantly outperforming specialized multispectral models trained with comparable data, but also achieve competitive or superior results under fully supervised settings. Our findings reveal that the semantic priors learned by large\-scale VLMs effectively transfer to unseen spectral modalities, ofFering a powerful pathway toward data\-efficient multispectral perception.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2512.15971v1)
 
 ---
 
