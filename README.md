@@ -1,6 +1,24 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Lightweight framework for underground pipeline recognition and spatial localization based on multi\-view 2D GPR images / 
+
+发布日期：2025-12-24
+
+作者：Haotian Lv
+
+摘要：To address the issues of weak correlation between multi\-view features, low recognition accuracy of small\-scale targets, and insufficient robustness in complex scenarios in underground pipeline detection using 3D GPR, this paper proposes a 3D pipeline intelligent detection framework. First, based on a B/C/D\-Scan three\-view joint analysis strategy, a three\-dimensional pipeline three\-view feature evaluation method is established by cross\-validating forward simulation results obtained using FDTD methods with actual measurement data. Second, the DCO\-YOLO framework is proposed, which integrates DySample, CGLU, and OutlookAttention cross\-dimensional correlation mechanisms into the original YOLOv11 algorithm, significantly improving the small\-scale pipeline edge feature extraction capability. Furthermore, a 3D\-DIoU spatial feature matching algorithm is proposed, which integrates three\-dimensional geometric constraints and center distance penalty terms to achieve automated association of multi\-view annotations. The three\-view fusion strategy resolves inherent ambiguities in single\-view detection. Experiments based on real urban underground pipeline data show that the proposed method achieves accuracy, recall, and mean average precision of 96.2%, 93.3%, and 96.7%, respectively, in complex multi\-pipeline scenarios, which are 2.0%, 2.1%, and 0.9% higher than the baseline model. Ablation experiments validated the synergistic optimization effect of the dynamic feature enhancement module and Grad\-CAM\+\+ heatmap visualization demonstrated that the improved model significantly enhanced its ability to focus on pipeline geometric features. This study integrates deep learning optimization strategies with the physical characteristics of 3D GPR, offering an efficient and reliable novel technical framework for the intelligent recognition and localization of underground pipelines.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2512.20866v1)
+
+---
+
+
 ## Multi\-temporal Adaptive Red\-Green\-Blue and Long\-Wave Infrared Fusion for You Only Look Once\-Based Landmine Detection from Unmanned Aerial Systems / 
 
 发布日期：2025-12-23
@@ -69,24 +87,6 @@
 代码链接：https://github.com/B4E2/B4E2-DarkPattern-YOLO-DataSet.
 
 论文链接：[阅读更多](http://arxiv.org/abs/2512.18269v1)
-
----
-
-
-## YolovN\-CBi: A Lightweight and Efficient Architecture for Real\-Time Detection of Small UAVs / 
-
-发布日期：2025-12-19
-
-作者：Ami Pandat
-
-摘要：Unmanned Aerial Vehicles, commonly known as, drones pose increasing risks in civilian and defense settings, demanding accurate and real\-time drone detection systems. However, detecting drones is challenging because of their small size, rapid movement, and low visual contrast. A modified architecture of YolovN called the YolovN\-CBi is proposed that incorporates the Convolutional Block Attention Module \(CBAM\) and the Bidirectional Feature Pyramid Network \(BiFPN\) to improve sensitivity to small object detections. A curated training dataset consisting of 28K images is created with various flying objects and a local test dataset is collected with 2500 images consisting of very small drone objects. The proposed architecture is evaluated on four benchmark datasets, along with the local test dataset. The baseline Yolov5 and the proposed Yolov5\-CBi architecture outperform newer Yolo versions, including Yolov8 and Yolov12, in the speed\-accuracy trade\-off for small object detection. Four other variants of the proposed CBi architecture are also proposed and evaluated, which vary in the placement and usage of CBAM and BiFPN. These variants are further distilled using knowledge distillation techniques for edge deployment, using a Yolov5m\-CBi teacher and a Yolov5n\-CBi student. The distilled model achieved a mA@P0.5:0.9 of 0.6573, representing a 6.51% improvement over the teacher's score of 0.6171, highlighting the effectiveness of the distillation process. The distilled model is 82.9% faster than the baseline model, making it more suitable for real\-time drone detection. These findings highlight the effectiveness of the proposed CBi architecture, together with the distilled lightweight models in advancing efficient and accurate real\-time detection of small UAVs.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2512.18046v1)
 
 ---
 
