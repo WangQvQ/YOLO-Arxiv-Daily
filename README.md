@@ -1,6 +1,24 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Comparative Analysis of Deep Learning Models for Perception in Autonomous Vehicles / 
+
+发布日期：2025-12-25
+
+作者：Jalal Khan
+
+摘要：Recently, a plethora of machine learning \(ML\) and deep learning \(DL\) algorithms have been proposed to achieve the efficiency, safety, and reliability of autonomous vehicles \(AVs\). The AVs use a perception system to detect, localize, and identify other vehicles, pedestrians, and road signs to perform safe navigation and decision\-making. In this paper, we compare the performance of DL models, including YOLO\-NAS and YOLOv8, for a detection\-based perception task. We capture a custom dataset and experiment with both DL models using our custom dataset. Our analysis reveals that the YOLOv8s model saves 75% of training time compared to the YOLO\-NAS model. In addition, the YOLOv8s model \(83%\) outperforms the YOLO\-NAS model \(81%\) when the target is to achieve the highest object detection accuracy. These comparative analyses of these new emerging DL models will allow the relevant research community to understand the models' performance under real\-world use case scenarios.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2512.21673v1)
+
+---
+
+
 ## Lightweight framework for underground pipeline recognition and spatial localization based on multi\-view 2D GPR images / 
 
 发布日期：2025-12-24
@@ -69,24 +87,6 @@
 代码链接：https://github.com/ndkhanh360/BoxOVIS.
 
 论文链接：[阅读更多](http://arxiv.org/abs/2512.19088v1)
-
----
-
-
-## Building UI/UX Dataset for Dark Pattern Detection and YOLOv12x\-based Real\-Time Object Recognition Detection System / 
-
-发布日期：2025-12-20
-
-作者：Se\-Young Jang
-
-摘要：With the accelerating pace of digital transformation and the widespread adoption of online platforms, both social and technical concerns regarding dark patterns\-user interface designs that undermine users' ability to make informed and rational choices\-have become increasingly prominent. As corporate online platforms grow more sophisticated in their design strategies, there is a pressing need for proactive and real\-time detection technologies that go beyond the predominantly reactive approaches employed by regulatory authorities. In this paper, we propose a visual dark pattern detection framework that improves both detection accuracy and real\-time performance. To this end, we constructed a proprietary visual object detection dataset by manually collecting 4,066 UI/UX screenshots containing dark patterns from 194 websites across six major industrial sectors in South Korea and abroad. The collected images were annotated with five representative UI components commonly associated with dark patterns: Button, Checkbox, Input Field, Pop\-up, and QR Code. This dataset has been publicly released to support further research and development in the field. To enable real\-time detection, this study adopted the YOLOv12x object detection model and applied transfer learning to optimize its performance for visual dark pattern recognition. Experimental results demonstrate that the proposed approach achieves a high detection accuracy of 92.8% in terms of mAP@50, while maintaining a real\-time inference speed of 40.5 frames per second \(FPS\), confirming its effectiveness for practical deployment in online environments. Furthermore, to facilitate future research and contribute to technological advancements, the dataset constructed in this study has been made publicly available at https://github.com/B4E2/B4E2\-DarkPattern\-YOLO\-DataSet.
-
-中文摘要：
-
-
-代码链接：https://github.com/B4E2/B4E2-DarkPattern-YOLO-DataSet.
-
-论文链接：[阅读更多](http://arxiv.org/abs/2512.18269v1)
 
 ---
 
