@@ -1,6 +1,42 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## RoLID\-11K: A Dashcam Dataset for Small\-Object Roadside Litter Detection / 
+
+发布日期：2026-01-01
+
+作者：Tao Wu
+
+摘要：Roadside litter poses environmental, safety and economic challenges, yet current monitoring relies on labour\-intensive surveys and public reporting, providing limited spatial coverage. Existing vision datasets for litter detection focus on street\-level still images, aerial scenes or aquatic environments, and do not reflect the unique characteristics of dashcam footage, where litter appears extremely small, sparse and embedded in cluttered road\-verge backgrounds. We introduce RoLID\-11K, the first large\-scale dataset for roadside litter detection from dashcams, comprising over 11k annotated images spanning diverse UK driving conditions and exhibiting pronounced long\-tail and small\-object distributions. We benchmark a broad spectrum of modern detectors, from accuracy\-oriented transformer architectures to real\-time YOLO models, and analyse their strengths and limitations on this challenging task. Our results show that while CO\-DETR and related transformers achieve the best localisation accuracy, real\-time models remain constrained by coarse feature hierarchies. RoLID\-11K establishes a challenging benchmark for extreme small\-object detection in dynamic driving scenes and aims to support the development of scalable, low\-cost systems for roadside\-litter monitoring. The dataset is available at https://github.com/xq141839/RoLID\-11K.
+
+中文摘要：
+
+
+代码链接：https://github.com/xq141839/RoLID-11K.
+
+论文链接：[阅读更多](http://arxiv.org/abs/2601.00398v1)
+
+---
+
+
+## Application Research of a Deep Learning Model Integrating CycleGAN and YOLO in PCB Infrared Defect Detection / 
+
+发布日期：2026-01-01
+
+作者：Chao Yang
+
+摘要：This paper addresses the critical bottleneck of infrared \(IR\) data scarcity in Printed Circuit Board \(PCB\) defect detection by proposing a cross\-modal data augmentation framework integrating CycleGAN and YOLOv8. Unlike conventional methods relying on paired supervision, we leverage CycleGAN to perform unpaired image\-to\-image translation, mapping abundant visible\-light PCB images into the infrared domain. This generative process synthesizes high\-fidelity pseudo\-IR samples that preserve the structural semantics of defects while accurately simulating thermal distribution patterns. Subsequently, we construct a heterogeneous training strategy that fuses generated pseudo\-IR data with limited real IR samples to train a lightweight YOLOv8 detector. Experimental results demonstrate that this method effectively enhances feature learning under low\-data conditions. The augmented detector significantly outperforms models trained on limited real data alone and approaches the performance benchmarks of fully supervised training, proving the efficacy of pseudo\-IR synthesis as a robust augmentation strategy for industrial inspection.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2601.00237v1)
+
+---
+
+
 ## FireRescue: A UAV\-Based Dataset and Enhanced YOLO Model for Object Detection in Fire Rescue Scenes / 
 
 发布日期：2025-12-31
@@ -51,42 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2512.24411v1)
-
----
-
-
-## Kinematic\-Based Assessment of Surgical Actions in Microanastomosis / 
-
-发布日期：2025-12-30
-
-作者：Yan Meng
-
-摘要：Proficiency in microanastomosis is a critical surgical skill in neurosurgery, where the ability to precisely manipulate fine instruments is crucial to successful outcomes. These procedures require sustained attention, coordinated hand movements, and highly refined motor skills, underscoring the need for objective and systematic methods to evaluate and enhance microsurgical training. Conventional assessment approaches typically rely on expert raters supervising the procedures or reviewing surgical videos, which is an inherently subjective process prone to inter\-rater variability, inconsistency, and significant time investment. These limitations highlight the necessity for automated and scalable solutions. To address this challenge, we introduce a novel AI\-driven framework for automated action segmentation and performance assessment in microanastomosis procedures, designed to operate efficiently on edge computing platforms. The proposed system comprises three main components: \(1\) an object tip tracking and localization module based on YOLO and DeepSORT; \(2\) an action segmentation module leveraging self\-similarity matrix for action boundary detection and unsupervised clustering; and \(3\) a supervised classification module designed to evaluate surgical gesture proficiency. Experimental validation on a dataset of 58 expert\-rated microanastomosis videos demonstrates the effectiveness of our approach, achieving a frame\-level action segmentation accuracy of 92.4% and an overall skill classification accuracy of 85.5% in replicating expert evaluations. These findings demonstrate the potential of the proposed method to provide objective, real\-time feedback in microsurgical education, thereby enabling more standardized, data\-driven training protocols and advancing competency assessment in high\-stakes surgical environments.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2512.23942v1)
-
----
-
-
-## Detection Fire in Camera RGB\-NIR / 
-
-发布日期：2025-12-29
-
-作者：Nguyen Truong Khai
-
-摘要：Improving the accuracy of fire detection using infrared night vision cameras remains a challenging task. Previous studies have reported strong performance with popular detection models. For example, YOLOv7 achieved an mAP50\-95 of 0.51 using an input image size of 640 x 1280, RT\-DETR reached an mAP50\-95 of 0.65 with an image size of 640 x 640, and YOLOv9 obtained an mAP50\-95 of 0.598 at the same resolution. Despite these results, limitations in dataset construction continue to cause issues, particularly the frequent misclassification of bright artificial lights as fire.   This report presents three main contributions: an additional NIR dataset, a two\-stage detection model, and Patched\-YOLO. First, to address data scarcity, we explore and apply various data augmentation strategies for both the NIR dataset and the classification dataset. Second, to improve night\-time fire detection accuracy while reducing false positives caused by artificial lights, we propose a two\-stage pipeline combining YOLOv11 and EfficientNetV2\-B0. The proposed approach achieves higher detection accuracy compared to previous methods, particularly for night\-time fire detection. Third, to improve fire detection in RGB images, especially for small and distant objects, we introduce Patched\-YOLO, which enhances the model's detection capability through patch\-based processing. Further details of these contributions are discussed in the following sections.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2512.23594v1)
 
 ---
 
