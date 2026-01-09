@@ -1,6 +1,24 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Character Detection using YOLO for Writer Identification in multiple Medieval books / 
+
+发布日期：2026-01-08
+
+作者：Alessandra Scotto di Freca
+
+摘要：Paleography is the study of ancient and historical handwriting, its key objectives include the dating of manuscripts and understanding the evolution of writing. Estimating when a document was written and tracing the development of scripts and writing styles can be aided by identifying the individual scribes who contributed to a medieval manuscript. Although digital technologies have made significant progress in this field, the general problem remains unsolved and continues to pose open challenges. ... We previously proposed an approach focused on identifying specific letters or abbreviations that characterize each writer. In that study, we considered the letter "a", as it was widely present on all pages of text and highly distinctive, according to the suggestions of expert paleographers. We used template matching techniques to detect the occurrences of the character "a" on each page and the convolutional neural network \(CNN\) to attribute each instance to the correct scribe. Moving from the interesting results achieved from this previous system and being aware of the limitations of the template matching technique, which requires an appropriate threshold to work, we decided to experiment in the same framework with the use of the YOLO object detection model to identify the scribe who contributed to the writing of different medieval books. We considered the fifth version of YOLO to implement the YOLO object detection model, which completely substituted the template matching and CNN used in the previous work. The experimental results demonstrate that YOLO effectively extracts a greater number of letters considered, leading to a more accurate second\-stage classification. Furthermore, the YOLO confidence score provides a foundation for developing a system that applies a rejection threshold, enabling reliable writer identification even in unseen manuscripts.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2601.04834v1)
+
+---
+
+
 ## CT Scans As Video: Efficient Intracranial Hemorrhage Detection Using Multi\-Object Tracking / 
 
 发布日期：2026-01-05
@@ -69,24 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2512.24622v1)
-
----
-
-
-## Using Large Language Models To Translate Machine Results To Human Results / 
-
-发布日期：2025-12-30
-
-作者：Trishna Niraula
-
-摘要：Artificial intelligence \(AI\) has transformed medical imaging, with computer vision \(CV\) systems achieving state\-of\-the\-art performance in classification and detection tasks. However, these systems typically output structured predictions, leaving radiologists responsible for translating results into full narrative reports. Recent advances in large language models \(LLMs\), such as GPT\-4, offer new opportunities to bridge this gap by generating diagnostic narratives from structured findings. This study introduces a pipeline that integrates YOLOv5 and YOLOv8 for anomaly detection in chest X\-ray images with a large language model \(LLM\) to generate natural\-language radiology reports. The YOLO models produce bounding\-box predictions and class labels, which are then passed to the LLM to generate descriptive findings and clinical summaries. YOLOv5 and YOLOv8 are compared in terms of detection accuracy, inference latency, and the quality of generated text, as measured by cosine similarity to ground\-truth reports. Results show strong semantic similarity between AI and human reports, while human evaluation reveals GPT\-4 excels in clarity \(4.88/5\) but exhibits lower scores for natural writing flow \(2.81/5\), indicating that current systems achieve clinical accuracy but remain stylistically distinguishable from radiologist\-authored text.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2512.24518v1)
 
 ---
 
