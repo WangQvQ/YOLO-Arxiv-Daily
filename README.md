@@ -1,6 +1,24 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Billboard in Focus: Estimating Driver Gaze Duration from a Single Image / 
+
+发布日期：2026-01-11
+
+作者：Carlos Pizarroso
+
+摘要：Roadside billboards represent a central element of outdoor advertising, yet their presence may contribute to driver distraction and accident risk. This study introduces a fully automated pipeline for billboard detection and driver gaze duration estimation, aiming to evaluate billboard relevance without reliance on manual annotations or eye\-tracking devices. Our pipeline operates in two stages: \(1\) a YOLO\-based object detection model trained on Mapillary Vistas and fine\-tuned on BillboardLamac images achieved 94% mAP@50 in the billboard detection task \(2\) a classifier based on the detected bounding box positions and DINOv2 features. The proposed pipeline enables estimation of billboard driver gaze duration from individual frames. We show that our method is able to achieve 68.1% accuracy on BillboardLamac when considering individual frames. These results are further validated using images collected from Google Street View.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2601.07073v1)
+
+---
+
+
 ## Character Detection using YOLO for Writer Identification in multiple Medieval books / 
 
 发布日期：2026-01-08
@@ -69,24 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2601.00237v1)
-
----
-
-
-## FireRescue: A UAV\-Based Dataset and Enhanced YOLO Model for Object Detection in Fire Rescue Scenes / 
-
-发布日期：2025-12-31
-
-作者：Qingyu Xu
-
-摘要：Object detection in fire rescue scenarios is importance for command and decision\-making in firefighting operations. However, existing research still suffers from two main limitations. First, current work predominantly focuses on environments such as mountainous or forest areas, while paying insufficient attention to urban rescue scenes, which are more frequent and structurally complex. Second, existing detection systems include a limited number of classes, such as flames and smoke, and lack a comprehensive system covering key targets crucial for command decisions, such as fire trucks and firefighters. To address the above issues, this paper first constructs a new dataset named "FireRescue" for rescue command, which covers multiple rescue scenarios, including urban, mountainous, forest, and water areas, and contains eight key categories such as fire trucks and firefighters, with a total of 15,980 images and 32,000 bounding boxes. Secondly, to tackle the problems of inter\-class confusion and missed detection of small targets caused by chaotic scenes, diverse targets, and long\-distance shooting, this paper proposes an improved model named FRS\-YOLO. On the one hand, the model introduces a plug\-and\-play multidi\-mensional collaborative enhancement attention module, which enhances the discriminative representation of easily confused categories \(e.g., fire trucks vs. ordinary trucks\) through cross\-dimensional feature interaction. On the other hand, it integrates a dynamic feature sampler to strengthen high\-response foreground features, thereby mitigating the effects of smoke occlusion and background interference. Experimental results demonstrate that object detection in fire rescue scenarios is highly challenging, and the proposed method effectively improves the detection performance of YOLO series models in this context.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2512.24622v1)
 
 ---
 
