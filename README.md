@@ -1,6 +1,60 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Edge\-Optimized Multimodal Learning for UAV Video Understanding via BLIP\-2 / 
+
+发布日期：2026-01-13
+
+作者：Yizhan Feng
+
+摘要：The demand for real\-time visual understanding and interaction in complex scenarios is increasingly critical for unmanned aerial vehicles. However, a significant challenge arises from the contradiction between the high computational cost of large Vision language models and the limited computing resources available on UAV edge devices. To address this challenge, this paper proposes a lightweight multimodal task platform based on BLIP\-2, integrated with YOLO\-World and YOLOv8\-Seg models. This integration extends the multi\-task capabilities of BLIP\-2 for UAV applications with minimal adaptation and without requiring task\-specific fine\-tuning on drone data. Firstly, the deep integration of BLIP\-2 with YOLO models enables it to leverage the precise perceptual results of YOLO for fundamental tasks like object detection and instance segmentation, thereby facilitating deeper visual\-attention understanding and reasoning. Secondly, a content\-aware key frame sampling mechanism based on K\-Means clustering is designed, which incorporates intelligent frame selection and temporal feature concatenation. This equips the lightweight BLIP\-2 architecture with the capability to handle video\-level interactive tasks effectively. Thirdly, a unified prompt optimization scheme for multi\-task adaptation is implemented. This scheme strategically injects structured event logs from the YOLO models as contextual information into BLIP\-2's input. Combined with output constraints designed to filter out technical details, this approach effectively guides the model to generate accurate and contextually relevant outputs for various tasks.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2601.08408v1)
+
+---
+
+
+## YOLOBirDrone: Dataset for Bird vs Drone Detection and Classification and a YOLO based enhanced learning architecture / 
+
+发布日期：2026-01-13
+
+作者：Dapinder Kaur
+
+摘要：The use of aerial drones for commercial and defense applications has benefited in many ways and is therefore utilized in several different application domains. However, they are also increasingly used for targeted attacks, posing a significant safety challenge and necessitating the development of drone detection systems. Vision\-based drone detection systems currently have an accuracy limitation and struggle to distinguish between drones and birds, particularly when the birds are small in size. This research work proposes a novel YOLOBirDrone architecture that improves the detection and classification accuracy of birds and drones. YOLOBirDrone has different components, including an adaptive and extended layer aggregation \(AELAN\), a multi\-scale progressive dual attention module \(MPDA\), and a reverse MPDA \(RMPDA\) to preserve shape information and enrich features with local and global spatial and channel information. A large\-scale dataset, BirDrone, is also introduced in this article, which includes small and challenging objects for robust aerial object identification. Experimental results demonstrate an improvement in performance metrics through the proposed YOLOBirDrone architecture compared to other state\-of\-the\-art algorithms, with detection accuracy reaching approximately 85% across various scenarios.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2601.08319v1)
+
+---
+
+
+## Sesame Plant Segmentation Dataset: A YOLO Formatted Annotated Dataset / 
+
+发布日期：2026-01-12
+
+作者：Sunusi Ibrahim Muhammad
+
+摘要：This paper presents the Sesame Plant Segmentation Dataset, an open source annotated image dataset designed to support the development of artificial intelligence models for agricultural applications, with a specific focus on sesame plants. The dataset comprises 206 training images, 43 validation images, and 43 test images in YOLO compatible segmentation format, capturing sesame plants at early growth stages under varying environmental conditions. Data were collected using a high resolution mobile camera from farms in Jirdede, Daura Local Government Area, Katsina State, Nigeria, and annotated using the Segment Anything Model version 2 with farmer supervision. Unlike conventional bounding box datasets, this dataset employs pixel level segmentation to enable more precise detection and analysis of sesame plants in real world farm settings. Model evaluation using the Ultralytics YOLOv8 framework demonstrated strong performance for both detection and segmentation tasks. For bounding box detection, the model achieved a recall of 79 percent, precision of 79 percent, mean average precision at IoU 0.50 of 84 percent, and mean average precision from 0.50 to 0.95 of 58 percent. For segmentation, it achieved a recall of 82 percent, precision of 77 percent, mean average precision at IoU 0.50 of 84 percent, and mean average precision from 0.50 to 0.95 of 52 percent. The dataset represents a novel contribution to sesame focused agricultural vision datasets in Nigeria and supports applications such as plant monitoring, yield estimation, and agricultural research.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2601.07970v1)
+
+---
+
+
 ## Billboard in Focus: Estimating Driver Gaze Duration from a Single Image / 
 
 发布日期：2026-01-11
@@ -33,60 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2601.04834v1)
-
----
-
-
-## CT Scans As Video: Efficient Intracranial Hemorrhage Detection Using Multi\-Object Tracking / 
-
-发布日期：2026-01-05
-
-作者：Amirreza Parvahan
-
-摘要：Automated analysis of volumetric medical imaging on edge devices is severely constrained by the high memory and computational demands of 3D Convolutional Neural Networks \(CNNs\). This paper develops a lightweight computer vision framework that reconciles the efficiency of 2D detection with the necessity of 3D context by reformulating volumetric Computer Tomography \(CT\) data as sequential video streams. This video\-viewpoint paradigm is applied to the time\-sensitive task of Intracranial Hemorrhage \(ICH\) detection using the Hemorica dataset. To ensure operational efficiency, we benchmarked multiple generations of the YOLO architecture \(v8, v10, v11 and v12\) in their Nano configurations, selecting the version with the highest mAP@50 to serve as the slice\-level backbone. A ByteTrack algorithm is then introduced to enforce anatomical consistency across the $z$\-axis. To address the initialization lag inherent in video trackers, a hybrid inference strategy and a spatiotemporal consistency filter are proposed to distinguish true pathology from transient prediction noise. Experimental results on independent test data demonstrate that the proposed framework serves as a rigorous temporal validator, increasing detection Precision from 0.703 to 0.779 compared to the baseline 2D detector, while maintaining high sensitivity. By approximating 3D contextual reasoning at a fraction of the computational cost, this method provides a scalable solution for real\-time patient prioritization in resource\-constrained environments, such as mobile stroke units and IoT\-enabled remote clinics.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2601.02521v1)
-
----
-
-
-## RoLID\-11K: A Dashcam Dataset for Small\-Object Roadside Litter Detection / 
-
-发布日期：2026-01-01
-
-作者：Tao Wu
-
-摘要：Roadside litter poses environmental, safety and economic challenges, yet current monitoring relies on labour\-intensive surveys and public reporting, providing limited spatial coverage. Existing vision datasets for litter detection focus on street\-level still images, aerial scenes or aquatic environments, and do not reflect the unique characteristics of dashcam footage, where litter appears extremely small, sparse and embedded in cluttered road\-verge backgrounds. We introduce RoLID\-11K, the first large\-scale dataset for roadside litter detection from dashcams, comprising over 11k annotated images spanning diverse UK driving conditions and exhibiting pronounced long\-tail and small\-object distributions. We benchmark a broad spectrum of modern detectors, from accuracy\-oriented transformer architectures to real\-time YOLO models, and analyse their strengths and limitations on this challenging task. Our results show that while CO\-DETR and related transformers achieve the best localisation accuracy, real\-time models remain constrained by coarse feature hierarchies. RoLID\-11K establishes a challenging benchmark for extreme small\-object detection in dynamic driving scenes and aims to support the development of scalable, low\-cost systems for roadside\-litter monitoring. The dataset is available at https://github.com/xq141839/RoLID\-11K.
-
-中文摘要：
-
-
-代码链接：https://github.com/xq141839/RoLID-11K.
-
-论文链接：[阅读更多](http://arxiv.org/abs/2601.00398v1)
-
----
-
-
-## Application Research of a Deep Learning Model Integrating CycleGAN and YOLO in PCB Infrared Defect Detection / 
-
-发布日期：2026-01-01
-
-作者：Chao Yang
-
-摘要：This paper addresses the critical bottleneck of infrared \(IR\) data scarcity in Printed Circuit Board \(PCB\) defect detection by proposing a cross\-modal data augmentation framework integrating CycleGAN and YOLOv8. Unlike conventional methods relying on paired supervision, we leverage CycleGAN to perform unpaired image\-to\-image translation, mapping abundant visible\-light PCB images into the infrared domain. This generative process synthesizes high\-fidelity pseudo\-IR samples that preserve the structural semantics of defects while accurately simulating thermal distribution patterns. Subsequently, we construct a heterogeneous training strategy that fuses generated pseudo\-IR data with limited real IR samples to train a lightweight YOLOv8 detector. Experimental results demonstrate that this method effectively enhances feature learning under low\-data conditions. The augmented detector significantly outperforms models trained on limited real data alone and approaches the performance benchmarks of fully supervised training, proving the efficacy of pseudo\-IR synthesis as a robust augmentation strategy for industrial inspection.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2601.00237v1)
 
 ---
 
