@@ -1,6 +1,42 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## SME\-YOLO: A Real\-Time Detector for Tiny Defect Detection on PCB Surfaces / 
+
+发布日期：2026-01-16
+
+作者：Meng Han
+
+摘要：Surface defects on Printed Circuit Boards \(PCBs\) directly compromise product reliability and safety. However, achieving high\-precision detection is challenging because PCB defects are typically characterized by tiny sizes, high texture similarity, and uneven scale distributions. To address these challenges, this paper proposes a novel framework based on YOLOv11n, named SME\-YOLO \(Small\-target Multi\-scale Enhanced YOLO\). First, we employ the Normalized Wasserstein Distance Loss \(NWDLoss\). This metric effectively mitigates the sensitivity of Intersection over Union \(IoU\) to positional deviations in tiny objects. Second, the original upsampling module is replaced by the Efficient Upsampling Convolution Block \(EUCB\). By utilizing multi\-scale convolutions, the EUCB gradually recovers spatial resolution and enhances the preservation of edge and texture details for tiny defects. Finally, this paper proposes the Multi\-Scale Focused Attention \(MSFA\) module. Tailored to the specific spatial distribution of PCB defects, this module adaptively strengthens perception within key scale intervals, achieving efficient fusion of local fine\-grained features and global context information. Experimental results on the PKU\-PCB dataset demonstrate that SME\-YOLO achieves state\-of\-the\-art performance. Specifically, compared to the baseline YOLOv11n, SME\-YOLO improves mAP by 2.2% and Precision by 4%, validating the effectiveness of the proposed method.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2601.11402v1)
+
+---
+
+
+## SAMannot: A Memory\-Efficient, Local, Open\-source Framework for Interactive Video Instance Segmentation based on SAM2 / 
+
+发布日期：2026-01-16
+
+作者：Gergely Dinya
+
+摘要：Current research workflows for precise video segmentation are often forced into a compromise between labor\-intensive manual curation, costly commercial platforms, and/or privacy\-compromising cloud\-based services. The demand for high\-fidelity video instance segmentation in research is often hindered by the bottleneck of manual annotation and the privacy concerns of cloud\-based tools. We present SAMannot, an open\-source, local framework that integrates the Segment Anything Model 2 \(SAM2\) into a human\-in\-the\-loop workflow. To address the high resource requirements of foundation models, we modified the SAM2 dependency and implemented a processing layer that minimizes computational overhead and maximizes throughput, ensuring a highly responsive user interface. Key features include persistent instance identity management, an automated \`\`lock\-and\-refine'' workflow with barrier frames, and a mask\-skeletonization\-based auto\-prompting mechanism. SAMannot facilitates the generation of research\-ready datasets in YOLO and PNG formats alongside structured interaction logs. Verified through animal behavior tracking use\-cases and subsets of the LVOS and DAVIS benchmark datasets, the tool provides a scalable, private, and cost\-effective alternative to commercial platforms for complex video annotation tasks.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2601.11301v1)
+
+---
+
+
 ## Edge\-Optimized Multimodal Learning for UAV Video Understanding via BLIP\-2 / 
 
 发布日期：2026-01-13
@@ -51,42 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2601.07970v1)
-
----
-
-
-## Billboard in Focus: Estimating Driver Gaze Duration from a Single Image / 
-
-发布日期：2026-01-11
-
-作者：Carlos Pizarroso
-
-摘要：Roadside billboards represent a central element of outdoor advertising, yet their presence may contribute to driver distraction and accident risk. This study introduces a fully automated pipeline for billboard detection and driver gaze duration estimation, aiming to evaluate billboard relevance without reliance on manual annotations or eye\-tracking devices. Our pipeline operates in two stages: \(1\) a YOLO\-based object detection model trained on Mapillary Vistas and fine\-tuned on BillboardLamac images achieved 94% mAP@50 in the billboard detection task \(2\) a classifier based on the detected bounding box positions and DINOv2 features. The proposed pipeline enables estimation of billboard driver gaze duration from individual frames. We show that our method is able to achieve 68.1% accuracy on BillboardLamac when considering individual frames. These results are further validated using images collected from Google Street View.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2601.07073v1)
-
----
-
-
-## Character Detection using YOLO for Writer Identification in multiple Medieval books / 
-
-发布日期：2026-01-08
-
-作者：Alessandra Scotto di Freca
-
-摘要：Paleography is the study of ancient and historical handwriting, its key objectives include the dating of manuscripts and understanding the evolution of writing. Estimating when a document was written and tracing the development of scripts and writing styles can be aided by identifying the individual scribes who contributed to a medieval manuscript. Although digital technologies have made significant progress in this field, the general problem remains unsolved and continues to pose open challenges. ... We previously proposed an approach focused on identifying specific letters or abbreviations that characterize each writer. In that study, we considered the letter "a", as it was widely present on all pages of text and highly distinctive, according to the suggestions of expert paleographers. We used template matching techniques to detect the occurrences of the character "a" on each page and the convolutional neural network \(CNN\) to attribute each instance to the correct scribe. Moving from the interesting results achieved from this previous system and being aware of the limitations of the template matching technique, which requires an appropriate threshold to work, we decided to experiment in the same framework with the use of the YOLO object detection model to identify the scribe who contributed to the writing of different medieval books. We considered the fifth version of YOLO to implement the YOLO object detection model, which completely substituted the template matching and CNN used in the previous work. The experimental results demonstrate that YOLO effectively extracts a greater number of letters considered, leading to a more accurate second\-stage classification. Furthermore, the YOLO confidence score provides a foundation for developing a system that applies a rejection threshold, enabling reliable writer identification even in unseen manuscripts.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2601.04834v1)
 
 ---
 
