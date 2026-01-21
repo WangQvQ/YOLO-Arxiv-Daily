@@ -1,6 +1,42 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## YOLO26: An Analysis of NMS\-Free End to End Framework for Real\-Time Object Detection / 
+
+发布日期：2026-01-19
+
+作者：Sudip Chakrabarty
+
+摘要：The "You Only Look Once" \(YOLO\) framework has long served as the benchmark for real\-time object detection, yet traditional iterations \(YOLOv1 through YOLO11\) remain constrained by the latency and hyperparameter sensitivity of Non\-Maximum Suppression \(NMS\) post\-processing. This paper analyzes a comprehensive analysis of YOLO26, an architecture that fundamentally redefines this paradigm by eliminating NMS in favor of a native end\-to\-end learning strategy. This study examines the critical innovations that enable this transition, specifically the introduction of the MuSGD optimizer for stabilizing lightweight backbones, STAL for small\-target\-aware assignment, and ProgLoss for dynamic supervision. Through a systematic review of official performance benchmarks, the results demonstrate that YOLO26 establishes a new Pareto front, outperforming a comprehensive suite of predecessors and state\-of\-the\-art competitors \(including RTMDet and DAMO\-YOLO\) in both inference speed and detection accuracy. The analysis confirms that by decoupling representation learning from heuristic post\-processing, YOLOv26 successfully resolves the historical trade\-off between latency and precision, signaling the next evolutionary step in edge\-based computer vision.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2601.12882v1)
+
+---
+
+
+## A Multimodal Assistive System for Product Localization and Retrieval for People who are Blind or have Low Vision / 
+
+发布日期：2026-01-18
+
+作者：Ligao Ruan
+
+摘要：Shopping is a routine activity for sighted individuals, yet for people who are blind or have low vision \(pBLV\), locating and retrieving products in physical environments remains a challenge. This paper presents a multimodal wearable assistive system that integrates object detection with vision\-language models to support independent product or item retrieval, with the goal of enhancing users'autonomy and sense of agency. The system operates through three phases: product search, which identifies target products using YOLO\-World detection combined with embedding similarity and color histogram matching; product navigation, which provides spatialized sonification and VLM\-generated verbal descriptions to guide users toward the target; and product correction, which verifies whether the user has reached the correct product and provides corrective feedback when necessary. Technical evaluation demonstrated promising performance across all modules, with product detection achieving near\-perfect accuracy at close range and high accuracy when facing shelves within 1.5 m. VLM\-based navigation achieved up to 94.4% accuracy, and correction accuracy exceeded 86% under optimal model configurations. These results demonstrate the system's potential to address the last\-meter problem in assistive shopping. Future work will focus on user studies with pBLV participants and integration with multi\-scale navigation ecosystems.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2601.12486v1)
+
+---
+
+
 ## SME\-YOLO: A Real\-Time Detector for Tiny Defect Detection on PCB Surfaces / 
 
 发布日期：2026-01-16
@@ -32,61 +68,25 @@
 
 代码链接：摘要中未找到代码链接。
 
-论文链接：[阅读更多](http://arxiv.org/abs/2601.11301v1)
+论文链接：[阅读更多](http://arxiv.org/abs/2601.11301v2)
 
 ---
 
 
-## Edge\-Optimized Multimodal Learning for UAV Video Understanding via BLIP\-2 / 
+## UAV\-Based Infrastructure Inspections: A Literature Review and Proposed Framework for AEC\+FM / 
 
-发布日期：2026-01-13
+发布日期：2026-01-16
 
-作者：Yizhan Feng
+作者：Amir Farzin Nikkhah
 
-摘要：The demand for real\-time visual understanding and interaction in complex scenarios is increasingly critical for unmanned aerial vehicles. However, a significant challenge arises from the contradiction between the high computational cost of large Vision language models and the limited computing resources available on UAV edge devices. To address this challenge, this paper proposes a lightweight multimodal task platform based on BLIP\-2, integrated with YOLO\-World and YOLOv8\-Seg models. This integration extends the multi\-task capabilities of BLIP\-2 for UAV applications with minimal adaptation and without requiring task\-specific fine\-tuning on drone data. Firstly, the deep integration of BLIP\-2 with YOLO models enables it to leverage the precise perceptual results of YOLO for fundamental tasks like object detection and instance segmentation, thereby facilitating deeper visual\-attention understanding and reasoning. Secondly, a content\-aware key frame sampling mechanism based on K\-Means clustering is designed, which incorporates intelligent frame selection and temporal feature concatenation. This equips the lightweight BLIP\-2 architecture with the capability to handle video\-level interactive tasks effectively. Thirdly, a unified prompt optimization scheme for multi\-task adaptation is implemented. This scheme strategically injects structured event logs from the YOLO models as contextual information into BLIP\-2's input. Combined with output constraints designed to filter out technical details, this approach effectively guides the model to generate accurate and contextually relevant outputs for various tasks.
+摘要：Unmanned Aerial Vehicles \(UAVs\) are transforming infrastructure inspections in the Architecture, Engineering, Construction, and Facility Management \(AEC\+FM\) domain. By synthesizing insights from over 150 studies, this review paper highlights UAV\-based methodologies for data acquisition, photogrammetric modeling, defect detection, and decision\-making support. Key innovations include path optimization, thermal integration, and advanced machine learning \(ML\) models such as YOLO and Faster R\-CNN for anomaly detection. UAVs have demonstrated value in structural health monitoring \(SHM\), disaster response, urban infrastructure management, energy efficiency evaluations, and cultural heritage preservation. Despite these advancements, challenges in real\-time processing, multimodal data fusion, and generalizability remain. A proposed workflow framework, informed by literature and a case study, integrates RGB imagery, LiDAR, and thermal sensing with transformer\-based architectures to improve accuracy and reliability in detecting structural defects, thermal anomalies, and geometric inconsistencies. The proposed framework ensures precise and actionable insights by fusing multimodal data and dynamically adapting path planning for complex environments, presented as a comprehensive step\-by\-step guide to address these challenges effectively. This paper concludes with future research directions emphasizing lightweight AI models, adaptive flight planning, synthetic datasets, and richer modality fusion to streamline modern infrastructure inspections.
 
 中文摘要：
 
 
 代码链接：摘要中未找到代码链接。
 
-论文链接：[阅读更多](http://arxiv.org/abs/2601.08408v1)
-
----
-
-
-## YOLOBirDrone: Dataset for Bird vs Drone Detection and Classification and a YOLO based enhanced learning architecture / 
-
-发布日期：2026-01-13
-
-作者：Dapinder Kaur
-
-摘要：The use of aerial drones for commercial and defense applications has benefited in many ways and is therefore utilized in several different application domains. However, they are also increasingly used for targeted attacks, posing a significant safety challenge and necessitating the development of drone detection systems. Vision\-based drone detection systems currently have an accuracy limitation and struggle to distinguish between drones and birds, particularly when the birds are small in size. This research work proposes a novel YOLOBirDrone architecture that improves the detection and classification accuracy of birds and drones. YOLOBirDrone has different components, including an adaptive and extended layer aggregation \(AELAN\), a multi\-scale progressive dual attention module \(MPDA\), and a reverse MPDA \(RMPDA\) to preserve shape information and enrich features with local and global spatial and channel information. A large\-scale dataset, BirDrone, is also introduced in this article, which includes small and challenging objects for robust aerial object identification. Experimental results demonstrate an improvement in performance metrics through the proposed YOLOBirDrone architecture compared to other state\-of\-the\-art algorithms, with detection accuracy reaching approximately 85% across various scenarios.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2601.08319v1)
-
----
-
-
-## Sesame Plant Segmentation Dataset: A YOLO Formatted Annotated Dataset / 
-
-发布日期：2026-01-12
-
-作者：Sunusi Ibrahim Muhammad
-
-摘要：This paper presents the Sesame Plant Segmentation Dataset, an open source annotated image dataset designed to support the development of artificial intelligence models for agricultural applications, with a specific focus on sesame plants. The dataset comprises 206 training images, 43 validation images, and 43 test images in YOLO compatible segmentation format, capturing sesame plants at early growth stages under varying environmental conditions. Data were collected using a high resolution mobile camera from farms in Jirdede, Daura Local Government Area, Katsina State, Nigeria, and annotated using the Segment Anything Model version 2 with farmer supervision. Unlike conventional bounding box datasets, this dataset employs pixel level segmentation to enable more precise detection and analysis of sesame plants in real world farm settings. Model evaluation using the Ultralytics YOLOv8 framework demonstrated strong performance for both detection and segmentation tasks. For bounding box detection, the model achieved a recall of 79 percent, precision of 79 percent, mean average precision at IoU 0.50 of 84 percent, and mean average precision from 0.50 to 0.95 of 58 percent. For segmentation, it achieved a recall of 82 percent, precision of 77 percent, mean average precision at IoU 0.50 of 84 percent, and mean average precision from 0.50 to 0.95 of 52 percent. The dataset represents a novel contribution to sesame focused agricultural vision datasets in Nigeria and supports applications such as plant monitoring, yield estimation, and agricultural research.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2601.07970v1)
+论文链接：[阅读更多](http://arxiv.org/abs/2601.11665v1)
 
 ---
 
