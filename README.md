@@ -1,6 +1,24 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## HumanDiffusion: A Vision\-Based Diffusion Trajectory Planner with Human\-Conditioned Goals for Search and Rescue UAV / 
+
+发布日期：2026-01-21
+
+作者：Faryal Batool
+
+摘要：Reliable human\-\-robot collaboration in emergency scenarios requires autonomous systems that can detect humans, infer navigation goals, and operate safely in dynamic environments. This paper presents HumanDiffusion, a lightweight image\-conditioned diffusion planner that generates human\-aware navigation trajectories directly from RGB imagery. The system combines YOLO\-11\-\-based human detection with diffusion\-driven trajectory generation, enabling a quadrotor to approach a target person and deliver medical assistance without relying on prior maps or computationally intensive planning pipelines. Trajectories are predicted in pixel space, ensuring smooth motion and a consistent safety margin around humans. We evaluate HumanDiffusion in simulation and real\-world indoor mock\-disaster scenarios. On a 300\-sample test set, the model achieves a mean squared error of 0.02 in pixel\-space trajectory reconstruction. Real\-world experiments demonstrate an overall mission success rate of 80% across accident\-response and search\-and\-locate tasks with partial occlusions. These results indicate that human\-conditioned diffusion planning offers a practical and robust solution for human\-aware UAV navigation in time\-critical assistance settings.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2601.14973v1)
+
+---
+
+
 ## YOLO26: An Analysis of NMS\-Free End to End Framework for Real\-Time Object Detection / 
 
 发布日期：2026-01-19
@@ -69,24 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2601.11301v2)
-
----
-
-
-## UAV\-Based Infrastructure Inspections: A Literature Review and Proposed Framework for AEC\+FM / 
-
-发布日期：2026-01-16
-
-作者：Amir Farzin Nikkhah
-
-摘要：Unmanned Aerial Vehicles \(UAVs\) are transforming infrastructure inspections in the Architecture, Engineering, Construction, and Facility Management \(AEC\+FM\) domain. By synthesizing insights from over 150 studies, this review paper highlights UAV\-based methodologies for data acquisition, photogrammetric modeling, defect detection, and decision\-making support. Key innovations include path optimization, thermal integration, and advanced machine learning \(ML\) models such as YOLO and Faster R\-CNN for anomaly detection. UAVs have demonstrated value in structural health monitoring \(SHM\), disaster response, urban infrastructure management, energy efficiency evaluations, and cultural heritage preservation. Despite these advancements, challenges in real\-time processing, multimodal data fusion, and generalizability remain. A proposed workflow framework, informed by literature and a case study, integrates RGB imagery, LiDAR, and thermal sensing with transformer\-based architectures to improve accuracy and reliability in detecting structural defects, thermal anomalies, and geometric inconsistencies. The proposed framework ensures precise and actionable insights by fusing multimodal data and dynamically adapting path planning for complex environments, presented as a comprehensive step\-by\-step guide to address these challenges effectively. This paper concludes with future research directions emphasizing lightweight AI models, adaptive flight planning, synthetic datasets, and richer modality fusion to streamline modern infrastructure inspections.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2601.11665v1)
 
 ---
 
