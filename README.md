@@ -1,6 +1,24 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## The Latency Wall: Benchmarking Off\-the\-Shelf Emotion Recognition for Real\-Time Virtual Avatars / 
+
+发布日期：2026-01-22
+
+作者：Yarin Benyamin
+
+摘要：In the realm of Virtual Reality \(VR\) and Human\-Computer Interaction \(HCI\), real\-time emotion recognition shows promise for supporting individuals with Autism Spectrum Disorder \(ASD\) in improving social skills. This task requires a strict latency\-accuracy trade\-off, with motion\-to\-photon \(MTP\) latency kept below 140 ms to maintain contingency. However, most off\-the\-shelf Deep Learning models prioritize accuracy over the strict timing constraints of commodity hardware. As a first step toward accessible VR therapy, we benchmark State\-of\-the\-Art \(SOTA\) models for Zero\-Shot Facial Expression Recognition \(FER\) on virtual characters using the UIBVFED dataset. We evaluate Medium and Nano variants of YOLO \(v8, v11, and v12\) for face detection, alongside general\-purpose Vision Transformers including CLIP, SigLIP, and ViT\-FER.Our results on CPU\-only inference demonstrate that while face detection on stylized avatars is robust \(100% accuracy\), a "Latency Wall" exists in the classification stage. The YOLOv11n architecture offers the optimal balance for detection \(~54 ms\). However, general\-purpose Transformers like CLIP and SigLIP fail to achieve viable accuracy \(<23%\) or speed \(>150 ms\) for real\-time loops. This study highlights the necessity for lightweight, domain\-specific architectures to enable accessible, real\-time AI in therapeutic settings.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2601.15914v1)
+
+---
+
+
 ## HumanDiffusion: A Vision\-Based Diffusion Trajectory Planner with Human\-Conditioned Goals for Search and Rescue UAV / 
 
 发布日期：2026-01-21
@@ -69,24 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2601.11402v1)
-
----
-
-
-## SAMannot: A Memory\-Efficient, Local, Open\-source Framework for Interactive Video Instance Segmentation based on SAM2 / 
-
-发布日期：2026-01-16
-
-作者：Gergely Dinya
-
-摘要：Current research workflows for precise video segmentation are often forced into a compromise between labor\-intensive manual curation, costly commercial platforms, and/or privacy\-compromising cloud\-based services. The demand for high\-fidelity video instance segmentation in research is often hindered by the bottleneck of manual annotation and the privacy concerns of cloud\-based tools. We present SAMannot, an open\-source, local framework that integrates the Segment Anything Model 2 \(SAM2\) into a human\-in\-the\-loop workflow. To address the high resource requirements of foundation models, we modified the SAM2 dependency and implemented a processing layer that minimizes computational overhead and maximizes throughput, ensuring a highly responsive user interface. Key features include persistent instance identity management, an automated \`\`lock\-and\-refine'' workflow with barrier frames, and a mask\-skeletonization\-based auto\-prompting mechanism. SAMannot facilitates the generation of research\-ready datasets in YOLO and PNG formats alongside structured interaction logs. Verified through animal behavior tracking use\-cases and subsets of the LVOS and DAVIS benchmark datasets, the tool provides a scalable, private, and cost\-effective alternative to commercial platforms for complex video annotation tasks.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2601.11301v2)
 
 ---
 
