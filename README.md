@@ -25,14 +25,14 @@
 
 作者：Faryal Batool
 
-摘要：Reliable human\-\-robot collaboration in emergency scenarios requires autonomous systems that can detect humans, infer navigation goals, and operate safely in dynamic environments. This paper presents HumanDiffusion, a lightweight image\-conditioned diffusion planner that generates human\-aware navigation trajectories directly from RGB imagery. The system combines YOLO\-11\-\-based human detection with diffusion\-driven trajectory generation, enabling a quadrotor to approach a target person and deliver medical assistance without relying on prior maps or computationally intensive planning pipelines. Trajectories are predicted in pixel space, ensuring smooth motion and a consistent safety margin around humans. We evaluate HumanDiffusion in simulation and real\-world indoor mock\-disaster scenarios. On a 300\-sample test set, the model achieves a mean squared error of 0.02 in pixel\-space trajectory reconstruction. Real\-world experiments demonstrate an overall mission success rate of 80% across accident\-response and search\-and\-locate tasks with partial occlusions. These results indicate that human\-conditioned diffusion planning offers a practical and robust solution for human\-aware UAV navigation in time\-critical assistance settings.
+摘要：Reliable human\-\-robot collaboration in emergency scenarios requires autonomous systems that can detect humans, infer navigation goals, and operate safely in dynamic environments. This paper presents HumanDiffusion, a lightweight image\-conditioned diffusion planner that generates human\-aware navigation trajectories directly from RGB imagery. The system combines YOLO\-11 based human detection with diffusion\-driven trajectory generation, enabling a quadrotor to approach a target person and deliver medical assistance without relying on prior maps or computationally intensive planning pipelines. Trajectories are predicted in pixel space, ensuring smooth motion and a consistent safety margin around humans. We evaluate HumanDiffusion in simulation and real\-world indoor mock\-disaster scenarios. On a 300\-sample test set, the model achieves a mean squared error of 0.02 in pixel\-space trajectory reconstruction. Real\-world experiments demonstrate an overall mission success rate of 80% across accident\-response and search\-and\-locate tasks with partial occlusions. These results indicate that human\-conditioned diffusion planning offers a practical and robust solution for human\-aware UAV navigation in time\-critical assistance settings.
 
 中文摘要：
 
 
 代码链接：摘要中未找到代码链接。
 
-论文链接：[阅读更多](http://arxiv.org/abs/2601.14973v1)
+论文链接：[阅读更多](http://arxiv.org/abs/2601.14973v2)
 
 ---
 
