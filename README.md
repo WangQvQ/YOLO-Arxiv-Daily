@@ -1,6 +1,24 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## YOLO\-DS: Fine\-Grained Feature Decoupling via Dual\-Statistic Synergy Operator for Object Detection / 
+
+发布日期：2026-01-26
+
+作者：Lin Huang
+
+摘要：One\-stage object detection, particularly the YOLO series, strikes a favorable balance between accuracy and efficiency. However, existing YOLO detectors lack explicit modeling of heterogeneous object responses within shared feature channels, which limits further performance gains. To address this, we propose YOLO\-DS, a framework built around a novel Dual\-Statistic Synergy Operator \(DSO\). The DSO decouples object features by jointly modeling the channel\-wise mean and the peak\-to\-mean difference. Building upon the DSO, we design two lightweight gating modules: the Dual\-Statistic Synergy Gating \(DSG\) module for adaptive channel\-wise feature selection, and the Multi\-Path Segmented Gating \(MSG\) module for depth\-wise feature weighting. On the MS\-COCO benchmark, YOLO\-DS consistently outperforms YOLOv8 across five model scales \(N, S, M, L, X\), achieving AP gains of 1.1% to 1.7% with only a minimal increase in inference latency. Extensive visualization, ablation, and comparative studies validate the effectiveness of our approach, demonstrating its superior capability in discriminating heterogeneous objects with high efficiency.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2601.18172v1)
+
+---
+
+
 ## The Latency Wall: Benchmarking Off\-the\-Shelf Emotion Recognition for Real\-Time Virtual Avatars / 
 
 发布日期：2026-01-22
@@ -69,24 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2601.12486v1)
-
----
-
-
-## SME\-YOLO: A Real\-Time Detector for Tiny Defect Detection on PCB Surfaces / 
-
-发布日期：2026-01-16
-
-作者：Meng Han
-
-摘要：Surface defects on Printed Circuit Boards \(PCBs\) directly compromise product reliability and safety. However, achieving high\-precision detection is challenging because PCB defects are typically characterized by tiny sizes, high texture similarity, and uneven scale distributions. To address these challenges, this paper proposes a novel framework based on YOLOv11n, named SME\-YOLO \(Small\-target Multi\-scale Enhanced YOLO\). First, we employ the Normalized Wasserstein Distance Loss \(NWDLoss\). This metric effectively mitigates the sensitivity of Intersection over Union \(IoU\) to positional deviations in tiny objects. Second, the original upsampling module is replaced by the Efficient Upsampling Convolution Block \(EUCB\). By utilizing multi\-scale convolutions, the EUCB gradually recovers spatial resolution and enhances the preservation of edge and texture details for tiny defects. Finally, this paper proposes the Multi\-Scale Focused Attention \(MSFA\) module. Tailored to the specific spatial distribution of PCB defects, this module adaptively strengthens perception within key scale intervals, achieving efficient fusion of local fine\-grained features and global context information. Experimental results on the PKU\-PCB dataset demonstrate that SME\-YOLO achieves state\-of\-the\-art performance. Specifically, compared to the baseline YOLOv11n, SME\-YOLO improves mAP by 2.2% and Precision by 4%, validating the effectiveness of the proposed method.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2601.11402v1)
 
 ---
 
