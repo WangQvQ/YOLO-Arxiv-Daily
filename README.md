@@ -1,6 +1,24 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## VisGuardian: A Lightweight Group\-based Privacy Control Technique For Front Camera Data From AR Glasses in Home Environments / 
+
+发布日期：2026-01-27
+
+作者：Shuning Zhang
+
+摘要：Always\-on sensing of AI applications on AR glasses makes traditional permission techniques ill\-suited for context\-dependent visual data, especially within home environments. The home presents a highly challenging privacy context due to the high density of sensitive objects, and the frequent presence of non\-consenting family members, and the intimate nature of daily routines, making it a critical focus area for scalable privacy control mechanisms. Existing fine\-grained controls, while offering nuanced choices, are inefficient for managing multiple private objects. We propose VisGuardian, a fine\-grained content\-based visual permission technique for AR glasses. VisGuardian features a group\-based control mechanism that enables users to efficiently manage permissions for multiple private objects. VisGuardian detects objects using YOLO and adopts a pre\-classified schema to group them. By selecting a single object, users can efficiently obscure groups of related objects based on criteria including privacy sensitivity, object category, or spatial proximity. A technical evaluation shows VisGuardian achieves mAP50 of 0.6704 with only 14.0 ms latency and a 1.7% increase in battery consumption per hour. Furthermore, a user study \(N=24\) comparing VisGuardian to slider\-based and object\-based baselines found it to be significantly faster for setting permissions and was preferred by users for its efficiency, effectiveness, and ease of use.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2601.19502v1)
+
+---
+
+
 ## YOLO\-DS: Fine\-Grained Feature Decoupling via Dual\-Statistic Synergy Operator for Object Detection / 
 
 发布日期：2026-01-26
@@ -69,24 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2601.12882v1)
-
----
-
-
-## A Multimodal Assistive System for Product Localization and Retrieval for People who are Blind or have Low Vision / 
-
-发布日期：2026-01-18
-
-作者：Ligao Ruan
-
-摘要：Shopping is a routine activity for sighted individuals, yet for people who are blind or have low vision \(pBLV\), locating and retrieving products in physical environments remains a challenge. This paper presents a multimodal wearable assistive system that integrates object detection with vision\-language models to support independent product or item retrieval, with the goal of enhancing users'autonomy and sense of agency. The system operates through three phases: product search, which identifies target products using YOLO\-World detection combined with embedding similarity and color histogram matching; product navigation, which provides spatialized sonification and VLM\-generated verbal descriptions to guide users toward the target; and product correction, which verifies whether the user has reached the correct product and provides corrective feedback when necessary. Technical evaluation demonstrated promising performance across all modules, with product detection achieving near\-perfect accuracy at close range and high accuracy when facing shelves within 1.5 m. VLM\-based navigation achieved up to 94.4% accuracy, and correction accuracy exceeded 86% under optimal model configurations. These results demonstrate the system's potential to address the last\-meter problem in assistive shopping. Future work will focus on user studies with pBLV participants and integration with multi\-scale navigation ecosystems.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2601.12486v1)
 
 ---
 
