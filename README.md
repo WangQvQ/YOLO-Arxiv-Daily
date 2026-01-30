@@ -1,6 +1,42 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## BLO\-Inst: Bi\-Level Optimization Based Alignment of YOLO and SAM for Robust Instance Segmentation / 
+
+发布日期：2026-01-29
+
+作者：Li Zhang
+
+摘要：The Segment Anything Model has revolutionized image segmentation with its zero\-shot capabilities, yet its reliance on manual prompts hinders fully automated deployment. While integrating object detectors as prompt generators offers a pathway to automation, existing pipelines suffer from two fundamental limitations: objective mismatch, where detectors optimized for geometric localization do not correspond to the optimal prompting context required by SAM, and alignment overfitting in standard joint training, where the detector simply memorizes specific prompt adjustments for training samples rather than learning a generalizable policy. To bridge this gap, we introduce BLO\-Inst, a unified framework that aligns detection and segmentation objectives by bi\-level optimization. We formulate the alignment as a nested optimization problem over disjoint data splits. In the lower level, the SAM is fine\-tuned to maximize segmentation fidelity given the current detection proposals on a subset \($D\_1$\). In the upper level, the detector is updated to generate bounding boxes that explicitly minimize the validation loss of the fine\-tuned SAM on a separate subset \($D\_2$\). This effectively transforms the detector into a segmentation\-aware prompt generator, optimizing the bounding boxes not just for localization accuracy, but for downstream mask quality. Extensive experiments demonstrate that BLO\-Inst achieves superior performance, outperforming standard baselines on tasks in general and biomedical domains.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2601.22061v1)
+
+---
+
+
+## An AI Framework for Microanastomosis Motion Assessment / 
+
+发布日期：2026-01-28
+
+作者：Yan Meng
+
+摘要：Proficiency in microanastomosis is a fundamental competency across multiple microsurgical disciplines. These procedures demand exceptional precision and refined technical skills, making effective, standardized assessment methods essential. Traditionally, the evaluation of microsurgical techniques has relied heavily on the subjective judgment of expert raters. They are inherently constrained by limitations such as inter\-rater variability, lack of standardized evaluation criteria, susceptibility to cognitive bias, and the time\-intensive nature of manual review. These shortcomings underscore the urgent need for an objective, reliable, and automated system capable of assessing microsurgical performance with consistency and scalability. To bridge this gap, we propose a novel AI framework for the automated assessment of microanastomosis instrument handling skills. The system integrates four core components: \(1\) an instrument detection module based on the You Only Look Once \(YOLO\) architecture; \(2\) an instrument tracking module developed from Deep Simple Online and Realtime Tracking \(DeepSORT\); \(3\) an instrument tip localization module employing shape descriptors; and \(4\) a supervised classification module trained on expert\-labeled data to evaluate instrument handling proficiency. Experimental results demonstrate the effectiveness of the framework, achieving an instrument detection precision of 97%, with a mean Average Precision \(mAP\) of 96%, measured by Intersection over Union \(IoU\) thresholds ranging from 50% to 95% \(mAP50\-95\).
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2601.21120v1)
+
+---
+
+
 ## VisGuardian: A Lightweight Group\-based Privacy Control Technique For Front Camera Data From AR Glasses in Home Environments / 
 
 发布日期：2026-01-27
@@ -51,42 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2601.15914v1)
-
----
-
-
-## HumanDiffusion: A Vision\-Based Diffusion Trajectory Planner with Human\-Conditioned Goals for Search and Rescue UAV / 
-
-发布日期：2026-01-21
-
-作者：Faryal Batool
-
-摘要：Reliable human\-\-robot collaboration in emergency scenarios requires autonomous systems that can detect humans, infer navigation goals, and operate safely in dynamic environments. This paper presents HumanDiffusion, a lightweight image\-conditioned diffusion planner that generates human\-aware navigation trajectories directly from RGB imagery. The system combines YOLO\-11 based human detection with diffusion\-driven trajectory generation, enabling a quadrotor to approach a target person and deliver medical assistance without relying on prior maps or computationally intensive planning pipelines. Trajectories are predicted in pixel space, ensuring smooth motion and a consistent safety margin around humans. We evaluate HumanDiffusion in simulation and real\-world indoor mock\-disaster scenarios. On a 300\-sample test set, the model achieves a mean squared error of 0.02 in pixel\-space trajectory reconstruction. Real\-world experiments demonstrate an overall mission success rate of 80% across accident\-response and search\-and\-locate tasks with partial occlusions. These results indicate that human\-conditioned diffusion planning offers a practical and robust solution for human\-aware UAV navigation in time\-critical assistance settings.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2601.14973v2)
-
----
-
-
-## YOLO26: An Analysis of NMS\-Free End to End Framework for Real\-Time Object Detection / 
-
-发布日期：2026-01-19
-
-作者：Sudip Chakrabarty
-
-摘要：The "You Only Look Once" \(YOLO\) framework has long served as the benchmark for real\-time object detection, yet traditional iterations \(YOLOv1 through YOLO11\) remain constrained by the latency and hyperparameter sensitivity of Non\-Maximum Suppression \(NMS\) post\-processing. This paper analyzes a comprehensive analysis of YOLO26, an architecture that fundamentally redefines this paradigm by eliminating NMS in favor of a native end\-to\-end learning strategy. This study examines the critical innovations that enable this transition, specifically the introduction of the MuSGD optimizer for stabilizing lightweight backbones, STAL for small\-target\-aware assignment, and ProgLoss for dynamic supervision. Through a systematic review of official performance benchmarks, the results demonstrate that YOLO26 establishes a new Pareto front, outperforming a comprehensive suite of predecessors and state\-of\-the\-art competitors \(including RTMDet and DAMO\-YOLO\) in both inference speed and detection accuracy. The analysis confirms that by decoupling representation learning from heuristic post\-processing, YOLOv26 successfully resolves the historical trade\-off between latency and precision, signaling the next evolutionary step in edge\-based computer vision.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2601.12882v1)
 
 ---
 
