@@ -1,6 +1,60 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## User Prompting Strategies and Prompt Enhancement Methods for Open\-Set Object Detection in XR Environments / 
+
+发布日期：2026-01-30
+
+作者：Junfeng Lin
+
+摘要：Open\-set object detection \(OSOD\) localizes objects while identifying and rejecting unknown classes at inference. While recent OSOD models perform well on benchmarks, their behavior under realistic user prompting remains underexplored. In interactive XR settings, user\-generated prompts are often ambiguous, underspecified, or overly detailed. To study prompt\-conditioned robustness, we evaluate two OSOD models, GroundingDINO and YOLO\-E, on real\-world XR images and simulate diverse user prompting behaviors using vision\-language models. We consider four prompt types: standard, underdetailed, overdetailed, and pragmatically ambiguous, and examine the impact of two enhancement strategies on these prompts. Results show that both models exhibit stable performance under underdetailed and standard prompts, while they suffer degradation under ambiguous prompts. Overdetailed prompts primarily affect GroundingDINO. Prompt enhancement substantially improves robustness under ambiguity, yielding gains exceeding 55% mIoU and 41% average confidence. Based on the findings, we propose several prompting strategies and prompt enhancement methods for OSOD models in XR environments.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2601.23281v1)
+
+---
+
+
+## About an Automating Annotation Method for Robot Markers / 
+
+发布日期：2026-01-30
+
+作者：Wataru Uemura
+
+摘要：Factory automation has become increasingly important due to labor shortages, leading to the introduction of autonomous mobile robots for tasks such as material transportation. Markers are commonly used for robot self\-localization and object identification. In the RoboCup Logistics League \(RCLL\), ArUco markers are employed both for robot localization and for identifying processing modules. Conventional recognition relies on OpenCV\-based image processing, which detects black\-and\-white marker patterns. However, these methods often fail under noise, motion blur, defocus, or varying illumination conditions. Deep\-learning\-based recognition offers improved robustness under such conditions, but requires large amounts of annotated data. Annotation must typically be done manually, as the type and position of objects cannot be detected automatically, making dataset preparation a major bottleneck. In contrast, ArUco markers include built\-in recognition modules that provide both ID and positional information, enabling automatic annotation. This paper proposes an automated annotation method for training deep\-learning models on ArUco marker images. By leveraging marker detection results obtained from the ArUco module, the proposed approach eliminates the need for manual labeling. A YOLO\-based model is trained using the automatically annotated dataset, and its performance is evaluated under various conditions. Experimental results demonstrate that the proposed method improves recognition performance compared with conventional image\-processing techniques, particularly for images affected by blur or defocus. Automatic annotation also reduces human effort and ensures consistent labeling quality. Future work will investigate the relationship between confidence thresholds and recognition performance.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2601.22982v1)
+
+---
+
+
+## A Comparative Evaluation of Large Vision\-Language Models for 2D Object Detection under SOTIF Conditions / 
+
+发布日期：2026-01-30
+
+作者：Ji Zhou
+
+摘要：Reliable environmental perception remains one of the main obstacles for safe operation of automated vehicles. Safety of the Intended Functionality \(SOTIF\) concerns safety risks from perception insufficiencies, particularly under adverse conditions where conventional detectors often falter. While Large Vision\-Language Models \(LVLMs\) demonstrate promising semantic reasoning, their quantitative effectiveness for safety\-critical 2D object detection is underexplored. This paper presents a systematic evaluation of ten representative LVLMs using the PeSOTIF dataset, a benchmark specifically curated for long\-tail traffic scenarios and environmental degradations. Performance is quantitatively compared against the classical perception approach, a YOLO\-based detector. Experimental results reveal a critical trade\-off: top\-performing LVLMs \(e.g., Gemini 3, Doubao\) surpass the YOLO baseline in recall by over 25% in complex natural scenarios, exhibiting superior robustness to visual degradation. Conversely, the baseline retains an advantage in geometric precision for synthetic perturbations. These findings highlight the complementary strengths of semantic reasoning versus geometric regression, supporting the use of LVLMs as high\-level safety validators in SOTIF\-oriented automated driving systems.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2601.22830v1)
+
+---
+
+
 ## BLO\-Inst: Bi\-Level Optimization Based Alignment of YOLO and SAM for Robust Instance Segmentation / 
 
 发布日期：2026-01-29
@@ -33,60 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2601.21120v1)
-
----
-
-
-## VisGuardian: A Lightweight Group\-based Privacy Control Technique For Front Camera Data From AR Glasses in Home Environments / 
-
-发布日期：2026-01-27
-
-作者：Shuning Zhang
-
-摘要：Always\-on sensing of AI applications on AR glasses makes traditional permission techniques ill\-suited for context\-dependent visual data, especially within home environments. The home presents a highly challenging privacy context due to the high density of sensitive objects, and the frequent presence of non\-consenting family members, and the intimate nature of daily routines, making it a critical focus area for scalable privacy control mechanisms. Existing fine\-grained controls, while offering nuanced choices, are inefficient for managing multiple private objects. We propose VisGuardian, a fine\-grained content\-based visual permission technique for AR glasses. VisGuardian features a group\-based control mechanism that enables users to efficiently manage permissions for multiple private objects. VisGuardian detects objects using YOLO and adopts a pre\-classified schema to group them. By selecting a single object, users can efficiently obscure groups of related objects based on criteria including privacy sensitivity, object category, or spatial proximity. A technical evaluation shows VisGuardian achieves mAP50 of 0.6704 with only 14.0 ms latency and a 1.7% increase in battery consumption per hour. Furthermore, a user study \(N=24\) comparing VisGuardian to slider\-based and object\-based baselines found it to be significantly faster for setting permissions and was preferred by users for its efficiency, effectiveness, and ease of use.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2601.19502v1)
-
----
-
-
-## YOLO\-DS: Fine\-Grained Feature Decoupling via Dual\-Statistic Synergy Operator for Object Detection / 
-
-发布日期：2026-01-26
-
-作者：Lin Huang
-
-摘要：One\-stage object detection, particularly the YOLO series, strikes a favorable balance between accuracy and efficiency. However, existing YOLO detectors lack explicit modeling of heterogeneous object responses within shared feature channels, which limits further performance gains. To address this, we propose YOLO\-DS, a framework built around a novel Dual\-Statistic Synergy Operator \(DSO\). The DSO decouples object features by jointly modeling the channel\-wise mean and the peak\-to\-mean difference. Building upon the DSO, we design two lightweight gating modules: the Dual\-Statistic Synergy Gating \(DSG\) module for adaptive channel\-wise feature selection, and the Multi\-Path Segmented Gating \(MSG\) module for depth\-wise feature weighting. On the MS\-COCO benchmark, YOLO\-DS consistently outperforms YOLOv8 across five model scales \(N, S, M, L, X\), achieving AP gains of 1.1% to 1.7% with only a minimal increase in inference latency. Extensive visualization, ablation, and comparative studies validate the effectiveness of our approach, demonstrating its superior capability in discriminating heterogeneous objects with high efficiency.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2601.18172v1)
-
----
-
-
-## The Latency Wall: Benchmarking Off\-the\-Shelf Emotion Recognition for Real\-Time Virtual Avatars / 
-
-发布日期：2026-01-22
-
-作者：Yarin Benyamin
-
-摘要：In the realm of Virtual Reality \(VR\) and Human\-Computer Interaction \(HCI\), real\-time emotion recognition shows promise for supporting individuals with Autism Spectrum Disorder \(ASD\) in improving social skills. This task requires a strict latency\-accuracy trade\-off, with motion\-to\-photon \(MTP\) latency kept below 140 ms to maintain contingency. However, most off\-the\-shelf Deep Learning models prioritize accuracy over the strict timing constraints of commodity hardware. As a first step toward accessible VR therapy, we benchmark State\-of\-the\-Art \(SOTA\) models for Zero\-Shot Facial Expression Recognition \(FER\) on virtual characters using the UIBVFED dataset. We evaluate Medium and Nano variants of YOLO \(v8, v11, and v12\) for face detection, alongside general\-purpose Vision Transformers including CLIP, SigLIP, and ViT\-FER.Our results on CPU\-only inference demonstrate that while face detection on stylized avatars is robust \(100% accuracy\), a "Latency Wall" exists in the classification stage. The YOLOv11n architecture offers the optimal balance for detection \(~54 ms\). However, general\-purpose Transformers like CLIP and SigLIP fail to achieve viable accuracy \(<23%\) or speed \(>150 ms\) for real\-time loops. This study highlights the necessity for lightweight, domain\-specific architectures to enable accessible, real\-time AI in therapeutic settings.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2601.15914v1)
 
 ---
 
