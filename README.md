@@ -1,92 +1,92 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
-## User Prompting Strategies and Prompt Enhancement Methods for Open\-Set Object Detection in XR Environments / 
+## Real\-Time 2D LiDAR Object Detection Using Three\-Frame RGB Scan Encoding / 
+
+发布日期：2026-02-02
+
+作者：Soheil Behnam Roudsari
+
+摘要：Indoor service robots need perception that is robust, more privacy\-friendly than RGB video, and feasible on embedded hardware. We present a camera\-free 2D LiDAR object detection pipeline that encodes short\-term temporal context by stacking three consecutive scans as RGB channels, yielding a compact YOLOv8n input without occupancy\-grid construction while preserving angular structure and motion cues. Evaluated in Webots across 160 randomized indoor scenarios with strict scenario\-level holdout, the method achieves 98.4% mAP@0.5 \(0.778 mAP@0.5:0.95\) with 94.9% precision and 94.7% recall on four object classes. On a Raspberry Pi 5, it runs in real time with a mean post\-warm\-up end\-to\-end latency of 47.8ms per frame, including scan encoding and postprocessing. Relative to a closely related occupancy\-grid LiDAR\-YOLO pipeline reported on the same platform, the proposed representation is associated with substantially lower reported end\-to\-end latency. Although results are simulation\-based, they suggest that lightweight temporal encoding can enable accurate and real\-time LiDAR\-only detection for embedded indoor robotics without capturing RGB appearance.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2602.02167v1)
+
+---
+
+
+## Cross\-Modal Alignment and Fusion for RGB\-D Transmission\-Line Defect Detection / 
+
+发布日期：2026-02-02
+
+作者：Jiaming Cui
+
+摘要：Transmission line defect detection remains challenging for automated UAV inspection due to the dominance of small\-scale defects, complex backgrounds, and illumination variations. Existing RGB\-based detectors, despite recent progress, struggle to distinguish geometrically subtle defects from visually similar background structures under limited chromatic contrast. This paper proposes CMAFNet, a Cross\-Modal Alignment and Fusion Network that integrates RGB appearance and depth geometry through a principled purify\-then\-fuse paradigm. CMAFNet consists of a Semantic Recomposition Module that performs dictionary\-based feature purification via a learned codebook to suppress modality\-specific noise while preserving defect\-discriminative information, and a Contextual Semantic Integration Framework that captures global spatial dependencies using partial\-channel attention to enhance structural semantic reasoning. Position\-wise normalization within the purification stage enforces explicit reconstruction\-driven cross\-modal alignment, ensuring statistical compatibility between heterogeneous features prior to fusion. Extensive experiments on the TLRGBD benchmark, where 94.5% of instances are small objects, demonstrate that CMAFNet achieves 32.2% mAP@50 and 12.5% APs, outperforming the strongest baseline by 9.8 and 4.0 percentage points, respectively. A lightweight variant reaches 24.8% mAP50 at 228 FPS with only 4.9M parameters, surpassing all YOLO\-based detectors while matching transformer\-based methods at substantially lower computational cost.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2602.01696v1)
+
+---
+
+
+## Omni\-Judge: Can Omni\-LLMs Serve as Human\-Aligned Judges for Text\-Conditioned Audio\-Video Generation? / 
+
+发布日期：2026-02-02
+
+作者：Susan Liang
+
+摘要：State\-of\-the\-art text\-to\-video generation models such as Sora 2 and Veo 3 can now produce high\-fidelity videos with synchronized audio directly from a textual prompt, marking a new milestone in multi\-modal generation. However, evaluating such tri\-modal outputs remains an unsolved challenge. Human evaluation is reliable but costly and difficult to scale, while traditional automatic metrics, such as FVD, CLAP, and ViCLIP, focus on isolated modality pairs, struggle with complex prompts, and provide limited interpretability. Omni\-modal large language models \(omni\-LLMs\) present a promising alternative: they naturally process audio, video, and text, support rich reasoning, and offer interpretable chain\-of\-thought feedback. Driven by this, we introduce Omni\-Judge, a study assessing whether omni\-LLMs can serve as human\-aligned judges for text\-conditioned audio\-video generation. Across nine perceptual and alignment metrics, Omni\-Judge achieves correlation comparable to traditional metrics and excels on semantically demanding tasks such as audio\-text alignment, video\-text alignment, and audio\-video\-text coherence. It underperforms on high\-FPS perceptual metrics, including video quality and audio\-video synchronization, due to limited temporal resolution. Omni\-Judge provides interpretable explanations that expose semantic or physical inconsistencies, enabling practical downstream uses such as feedback\-based refinement. Our findings highlight both the potential and current limitations of omni\-LLMs as unified evaluators for multi\-modal generation.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2602.01623v1)
+
+---
+
+
+## Deep Learning\-Based Object Detection for Autonomous Vehicles: A Comparative Study of One\-Stage and Two\-Stage Detectors on Basic Traffic Objects / 
 
 发布日期：2026-01-30
 
-作者：Junfeng Lin
+作者：Bsher Karbouj
 
-摘要：Open\-set object detection \(OSOD\) localizes objects while identifying and rejecting unknown classes at inference. While recent OSOD models perform well on benchmarks, their behavior under realistic user prompting remains underexplored. In interactive XR settings, user\-generated prompts are often ambiguous, underspecified, or overly detailed. To study prompt\-conditioned robustness, we evaluate two OSOD models, GroundingDINO and YOLO\-E, on real\-world XR images and simulate diverse user prompting behaviors using vision\-language models. We consider four prompt types: standard, underdetailed, overdetailed, and pragmatically ambiguous, and examine the impact of two enhancement strategies on these prompts. Results show that both models exhibit stable performance under underdetailed and standard prompts, while they suffer degradation under ambiguous prompts. Overdetailed prompts primarily affect GroundingDINO. Prompt enhancement substantially improves robustness under ambiguity, yielding gains exceeding 55% mIoU and 41% average confidence. Based on the findings, we propose several prompting strategies and prompt enhancement methods for OSOD models in XR environments.
+摘要：Object detection is a crucial component in autonomous vehicle systems. It enables the vehicle to perceive and understand its environment by identifying and locating various objects around it. By utilizing advanced imaging and deep learning techniques, autonomous vehicle systems can rapidly and accurately identify objects based on their features. Different deep learning methods vary in their ability to accurately detect and classify objects in autonomous vehicle systems. Selecting the appropriate method significantly impacts system performance, robustness, and efficiency in real\-world driving scenarios. While several generic deep learning architectures like YOLO, SSD, and Faster R\-CNN have been proposed, guidance on their suitability for specific autonomous driving applications is often limited. The choice of method affects detection accuracy, processing speed, environmental robustness, sensor integration, scalability, and edge case handling. This study provides a comprehensive experimental analysis comparing two prominent object detection models: YOLOv5 \(a one\-stage detector\) and Faster R\-CNN \(a two\-stage detector\). Their performance is evaluated on a diverse dataset combining real and synthetic images, considering various metrics including mean Average Precision \(mAP\), recall, and inference speed. The findings reveal that YOLOv5 demonstrates superior performance in terms of mAP, recall, and training efficiency, particularly as dataset size and image resolution increase. However, Faster R\-CNN shows advantages in detecting small, distant objects and performs well in challenging lighting conditions. The models' behavior is also analyzed under different confidence thresholds and in various real\-world scenarios, providing insights into their applicability for autonomous driving systems.
 
 中文摘要：
 
 
 代码链接：摘要中未找到代码链接。
 
-论文链接：[阅读更多](http://arxiv.org/abs/2601.23281v1)
+论文链接：[阅读更多](http://arxiv.org/abs/2602.00385v1)
 
 ---
 
 
-## About an Automating Annotation Method for Robot Markers / 
+## On the Assessment of Sensitivity of Autonomous Vehicle Perception / 
 
 发布日期：2026-01-30
 
-作者：Wataru Uemura
+作者：Apostol Vassilev
 
-摘要：Factory automation has become increasingly important due to labor shortages, leading to the introduction of autonomous mobile robots for tasks such as material transportation. Markers are commonly used for robot self\-localization and object identification. In the RoboCup Logistics League \(RCLL\), ArUco markers are employed both for robot localization and for identifying processing modules. Conventional recognition relies on OpenCV\-based image processing, which detects black\-and\-white marker patterns. However, these methods often fail under noise, motion blur, defocus, or varying illumination conditions. Deep\-learning\-based recognition offers improved robustness under such conditions, but requires large amounts of annotated data. Annotation must typically be done manually, as the type and position of objects cannot be detected automatically, making dataset preparation a major bottleneck. In contrast, ArUco markers include built\-in recognition modules that provide both ID and positional information, enabling automatic annotation. This paper proposes an automated annotation method for training deep\-learning models on ArUco marker images. By leveraging marker detection results obtained from the ArUco module, the proposed approach eliminates the need for manual labeling. A YOLO\-based model is trained using the automatically annotated dataset, and its performance is evaluated under various conditions. Experimental results demonstrate that the proposed method improves recognition performance compared with conventional image\-processing techniques, particularly for images affected by blur or defocus. Automatic annotation also reduces human effort and ensures consistent labeling quality. Future work will investigate the relationship between confidence thresholds and recognition performance.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2601.22982v1)
-
----
-
-
-## A Comparative Evaluation of Large Vision\-Language Models for 2D Object Detection under SOTIF Conditions / 
-
-发布日期：2026-01-30
-
-作者：Ji Zhou
-
-摘要：Reliable environmental perception remains one of the main obstacles for safe operation of automated vehicles. Safety of the Intended Functionality \(SOTIF\) concerns safety risks from perception insufficiencies, particularly under adverse conditions where conventional detectors often falter. While Large Vision\-Language Models \(LVLMs\) demonstrate promising semantic reasoning, their quantitative effectiveness for safety\-critical 2D object detection is underexplored. This paper presents a systematic evaluation of ten representative LVLMs using the PeSOTIF dataset, a benchmark specifically curated for long\-tail traffic scenarios and environmental degradations. Performance is quantitatively compared against the classical perception approach, a YOLO\-based detector. Experimental results reveal a critical trade\-off: top\-performing LVLMs \(e.g., Gemini 3, Doubao\) surpass the YOLO baseline in recall by over 25% in complex natural scenarios, exhibiting superior robustness to visual degradation. Conversely, the baseline retains an advantage in geometric precision for synthetic perturbations. These findings highlight the complementary strengths of semantic reasoning versus geometric regression, supporting the use of LVLMs as high\-level safety validators in SOTIF\-oriented automated driving systems.
+摘要：The viability of automated driving is heavily dependent on the performance of perception systems to provide real\-time accurate and reliable information for robust decision\-making and maneuvers. These systems must perform reliably not only under ideal conditions, but also when challenged by natural and adversarial driving factors. Both of these types of interference can lead to perception errors and delays in detection and classification. Hence, it is essential to assess the robustness of the perception systems of automated vehicles \(AVs\) and explore strategies for making perception more reliable. We approach this problem by evaluating perception performance using predictive sensitivity quantification based on an ensemble of models, capturing model disagreement and inference variability across multiple models, under adverse driving scenarios in both simulated environments and real\-world conditions. A notional architecture for assessing perception performance is proposed. A perception assessment criterion is developed based on an AV's stopping distance at a stop sign on varying road surfaces, such as dry and wet asphalt, and vehicle speed. Five state\-of\-the\-art computer vision models are used, including YOLO \(v8\-v9\), DEtection TRansformer \(DETR50, DETR101\), Real\-Time DEtection TRansformer \(RT\-DETR\)in our experiments. Diminished lighting conditions, e.g., resulting from the presence of fog and low sun altitude, have the greatest impact on the performance of the perception models. Additionally, adversarial road conditions such as occlusions of roadway objects increase perception sensitivity and model performance drops when faced with a combination of adversarial road conditions and inclement weather conditions. Also, it is demonstrated that the greater the distance to a roadway object, the greater the impact on perception performance, hence diminished perception robustness.
 
 中文摘要：
 
 
 代码链接：摘要中未找到代码链接。
 
-论文链接：[阅读更多](http://arxiv.org/abs/2601.22830v1)
-
----
-
-
-## BLO\-Inst: Bi\-Level Optimization Based Alignment of YOLO and SAM for Robust Instance Segmentation / 
-
-发布日期：2026-01-29
-
-作者：Li Zhang
-
-摘要：The Segment Anything Model has revolutionized image segmentation with its zero\-shot capabilities, yet its reliance on manual prompts hinders fully automated deployment. While integrating object detectors as prompt generators offers a pathway to automation, existing pipelines suffer from two fundamental limitations: objective mismatch, where detectors optimized for geometric localization do not correspond to the optimal prompting context required by SAM, and alignment overfitting in standard joint training, where the detector simply memorizes specific prompt adjustments for training samples rather than learning a generalizable policy. To bridge this gap, we introduce BLO\-Inst, a unified framework that aligns detection and segmentation objectives by bi\-level optimization. We formulate the alignment as a nested optimization problem over disjoint data splits. In the lower level, the SAM is fine\-tuned to maximize segmentation fidelity given the current detection proposals on a subset \($D\_1$\). In the upper level, the detector is updated to generate bounding boxes that explicitly minimize the validation loss of the fine\-tuned SAM on a separate subset \($D\_2$\). This effectively transforms the detector into a segmentation\-aware prompt generator, optimizing the bounding boxes not just for localization accuracy, but for downstream mask quality. Extensive experiments demonstrate that BLO\-Inst achieves superior performance, outperforming standard baselines on tasks in general and biomedical domains.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2601.22061v1)
-
----
-
-
-## An AI Framework for Microanastomosis Motion Assessment / 
-
-发布日期：2026-01-28
-
-作者：Yan Meng
-
-摘要：Proficiency in microanastomosis is a fundamental competency across multiple microsurgical disciplines. These procedures demand exceptional precision and refined technical skills, making effective, standardized assessment methods essential. Traditionally, the evaluation of microsurgical techniques has relied heavily on the subjective judgment of expert raters. They are inherently constrained by limitations such as inter\-rater variability, lack of standardized evaluation criteria, susceptibility to cognitive bias, and the time\-intensive nature of manual review. These shortcomings underscore the urgent need for an objective, reliable, and automated system capable of assessing microsurgical performance with consistency and scalability. To bridge this gap, we propose a novel AI framework for the automated assessment of microanastomosis instrument handling skills. The system integrates four core components: \(1\) an instrument detection module based on the You Only Look Once \(YOLO\) architecture; \(2\) an instrument tracking module developed from Deep Simple Online and Realtime Tracking \(DeepSORT\); \(3\) an instrument tip localization module employing shape descriptors; and \(4\) a supervised classification module trained on expert\-labeled data to evaluate instrument handling proficiency. Experimental results demonstrate the effectiveness of the framework, achieving an instrument detection precision of 97%, with a mean Average Precision \(mAP\) of 96%, measured by Intersection over Union \(IoU\) thresholds ranging from 50% to 95% \(mAP50\-95\).
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2601.21120v1)
+论文链接：[阅读更多](http://arxiv.org/abs/2602.00314v1)
 
 ---
 
