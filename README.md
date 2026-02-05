@@ -1,6 +1,24 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## From Vision to Assistance: Gaze and Vision\-Enabled Adaptive Control for a Back\-Support Exoskeleton / 
+
+发布日期：2026-02-04
+
+作者：Alessandro Leanza
+
+摘要：Back\-support exoskeletons have been proposed to mitigate spinal loading in industrial handling, yet their effectiveness critically depends on timely and context\-aware assistance. Most existing approaches rely either on load\-estimation techniques \(e.g., EMG, IMU\) or on vision systems that do not directly inform control. In this work, we present a vision\-gated control framework for an active lumbar occupational exoskeleton that leverages egocentric vision with wearable gaze tracking. The proposed system integrates real\-time grasp detection from a first\-person YOLO\-based perception system, a finite\-state machine \(FSM\) for task progression, and a variable admittance controller to adapt torque delivery to both posture and object state. A user study with 15 participants performing stooping load lifting trials under three conditions \(no exoskeleton, exoskeleton without vision, exoskeleton with vision\) shows that vision\-gated assistance significantly reduces perceived physical demand and improves fluency, trust, and comfort. Quantitative analysis reveals earlier and stronger assistance when vision is enabled, while questionnaire results confirm user preference for the vision\-gated mode. These findings highlight the potential of egocentric vision to enhance the responsiveness, ergonomics, safety, and acceptance of back\-support exoskeletons.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2602.04648v1)
+
+---
+
+
 ## Real\-Time 2D LiDAR Object Detection Using Three\-Frame RGB Scan Encoding / 
 
 发布日期：2026-02-02
@@ -69,24 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2602.00385v1)
-
----
-
-
-## On the Assessment of Sensitivity of Autonomous Vehicle Perception / 
-
-发布日期：2026-01-30
-
-作者：Apostol Vassilev
-
-摘要：The viability of automated driving is heavily dependent on the performance of perception systems to provide real\-time accurate and reliable information for robust decision\-making and maneuvers. These systems must perform reliably not only under ideal conditions, but also when challenged by natural and adversarial driving factors. Both of these types of interference can lead to perception errors and delays in detection and classification. Hence, it is essential to assess the robustness of the perception systems of automated vehicles \(AVs\) and explore strategies for making perception more reliable. We approach this problem by evaluating perception performance using predictive sensitivity quantification based on an ensemble of models, capturing model disagreement and inference variability across multiple models, under adverse driving scenarios in both simulated environments and real\-world conditions. A notional architecture for assessing perception performance is proposed. A perception assessment criterion is developed based on an AV's stopping distance at a stop sign on varying road surfaces, such as dry and wet asphalt, and vehicle speed. Five state\-of\-the\-art computer vision models are used, including YOLO \(v8\-v9\), DEtection TRansformer \(DETR50, DETR101\), Real\-Time DEtection TRansformer \(RT\-DETR\)in our experiments. Diminished lighting conditions, e.g., resulting from the presence of fog and low sun altitude, have the greatest impact on the performance of the perception models. Additionally, adversarial road conditions such as occlusions of roadway objects increase perception sensitivity and model performance drops when faced with a combination of adversarial road conditions and inclement weather conditions. Also, it is demonstrated that the greater the distance to a roadway object, the greater the impact on perception performance, hence diminished perception robustness.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2602.00314v1)
 
 ---
 
