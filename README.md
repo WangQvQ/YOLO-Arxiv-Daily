@@ -1,6 +1,60 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Weak to Strong: VLM\-Based Pseudo\-Labeling as a Weakly Supervised Training Strategy in Multimodal Video\-based Hidden Emotion Understanding Tasks / 
+
+发布日期：2026-02-08
+
+作者：Yufei Wang
+
+摘要：To tackle the automatic recognition of "concealed emotions" in videos, this paper proposes a multimodal weak\-supervision framework and achieves state\-of\-the\-art results on the iMiGUE tennis\-interview dataset. First, YOLO 11x detects and crops human portraits frame\-by\-frame, and DINOv2\-Base extracts visual features from the cropped regions. Next, by integrating Chain\-of\-Thought and Reflection prompting \(CoT \+ Reflection\), Gemini 2.5 Pro automatically generates pseudo\-labels and reasoning texts that serve as weak supervision for downstream models. Subsequently, OpenPose produces 137\-dimensional key\-point sequences, augmented with inter\-frame offset features; the usual graph neural network backbone is simplified to an MLP to efficiently model the spatiotemporal relationships of the three key\-point streams. An ultra\-long\-sequence Transformer independently encodes both the image and key\-point sequences, and their representations are concatenated with BERT\-encoded interview transcripts. Each modality is first pre\-trained in isolation, then fine\-tuned jointly, with pseudo\-labeled samples merged into the training set for further gains. Experiments demonstrate that, despite severe class imbalance, the proposed approach lifts accuracy from under 0.6 in prior work to over 0.69, establishing a new public benchmark. The study also validates that an "MLP\-ified" key\-point backbone can match \- or even surpass \- GCN\-based counterparts in this task.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2602.08057v1)
+
+---
+
+
+## CA\-YOLO: Cross Attention Empowered YOLO for Biomimetic Localization / 
+
+发布日期：2026-02-07
+
+作者：Zhen Zhang
+
+摘要：In modern complex environments, achieving accurate and efficient target localization is essential in numerous fields. However, existing systems often face limitations in both accuracy and the ability to recognize small targets. In this study, we propose a bionic stabilized localization system based on CA\-YOLO, designed to enhance both target localization accuracy and small target recognition capabilities. Acting as the "brain" of the system, the target detection algorithm emulates the visual focusing mechanism of animals by integrating bionic modules into the YOLO backbone network. These modules include the introduction of a small target detection head and the development of a Characteristic Fusion Attention Mechanism \(CFAM\). Furthermore, drawing inspiration from the human Vestibulo\-Ocular Reflex \(VOR\), a bionic pan\-tilt tracking control strategy is developed, which incorporates central positioning, stability optimization, adaptive control coefficient adjustment, and an intelligent recapture function. The experimental results show that CA\-YOLO outperforms the original model on standard datasets \(COCO and VisDrone\), with average accuracy metrics improved by 3.94%and 4.90%, respectively.Further time\-sensitive target localization experiments validate the effectiveness and practicality of this bionic stabilized localization system.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2602.07523v1)
+
+---
+
+
+## PTB\-XL\-Image\-17K: A Large\-Scale Synthetic ECG Image Dataset with Comprehensive Ground Truth for Deep Learning\-Based Digitization / 
+
+发布日期：2026-02-07
+
+作者：Naqcho Ali Mehdi
+
+摘要：Electrocardiogram \(ECG\) digitization\-converting paper\-based or scanned ECG images back into time\-series signals\-is critical for leveraging decades of legacy clinical data in modern deep learning applications. However, progress has been hindered by the lack of large\-scale datasets providing both ECG images and their corresponding ground truth signals with comprehensive annotations. We introduce PTB\-XL\-Image\-17K, a complete synthetic ECG image dataset comprising 17,271 high\-quality 12\-lead ECG images generated from the PTB\-XL signal database. Our dataset uniquely provides five complementary data types per sample: \(1\) realistic ECG images with authentic grid patterns and annotations \(50% with visible grid, 50% without\), \(2\) pixel\-level segmentation masks, \(3\) ground truth time\-series signals, \(4\) bounding box annotations in YOLO format for both lead regions and lead name labels, and \(5\) comprehensive metadata including visual parameters and patient information. We present an open\-source Python framework enabling customizable dataset generation with controllable parameters including paper speed \(25/50 mm/s\), voltage scale \(5/10 mm/mV\), sampling rate \(500 Hz\), grid appearance \(4 colors\), and waveform characteristics. The dataset achieves 100% generation success rate with an average processing time of 1.35 seconds per sample. PTB\-XL\-Image\-17K addresses critical gaps in ECG digitization research by providing the first large\-scale resource supporting the complete pipeline: lead detection, waveform segmentation, and signal extraction with full ground truth for rigorous evaluation. The dataset, generation framework, and documentation are publicly available at https://github.com/naqchoalimehdi/PTB\-XL\-Image\-17K and https://doi.org/10.5281/zenodo.18197519.
+
+中文摘要：
+
+
+代码链接：https://github.com/naqchoalimehdi/PTB-XL-Image-17K，https://doi.org/10.5281/zenodo.18197519.
+
+论文链接：[阅读更多](http://arxiv.org/abs/2602.07446v1)
+
+---
+
+
 ## From Vision to Assistance: Gaze and Vision\-Enabled Adaptive Control for a Back\-Support Exoskeleton / 
 
 发布日期：2026-02-04
@@ -33,60 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2602.02167v1)
-
----
-
-
-## Cross\-Modal Alignment and Fusion for RGB\-D Transmission\-Line Defect Detection / 
-
-发布日期：2026-02-02
-
-作者：Jiaming Cui
-
-摘要：Transmission line defect detection remains challenging for automated UAV inspection due to the dominance of small\-scale defects, complex backgrounds, and illumination variations. Existing RGB\-based detectors, despite recent progress, struggle to distinguish geometrically subtle defects from visually similar background structures under limited chromatic contrast. This paper proposes CMAFNet, a Cross\-Modal Alignment and Fusion Network that integrates RGB appearance and depth geometry through a principled purify\-then\-fuse paradigm. CMAFNet consists of a Semantic Recomposition Module that performs dictionary\-based feature purification via a learned codebook to suppress modality\-specific noise while preserving defect\-discriminative information, and a Contextual Semantic Integration Framework that captures global spatial dependencies using partial\-channel attention to enhance structural semantic reasoning. Position\-wise normalization within the purification stage enforces explicit reconstruction\-driven cross\-modal alignment, ensuring statistical compatibility between heterogeneous features prior to fusion. Extensive experiments on the TLRGBD benchmark, where 94.5% of instances are small objects, demonstrate that CMAFNet achieves 32.2% mAP@50 and 12.5% APs, outperforming the strongest baseline by 9.8 and 4.0 percentage points, respectively. A lightweight variant reaches 24.8% mAP50 at 228 FPS with only 4.9M parameters, surpassing all YOLO\-based detectors while matching transformer\-based methods at substantially lower computational cost.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2602.01696v2)
-
----
-
-
-## Omni\-Judge: Can Omni\-LLMs Serve as Human\-Aligned Judges for Text\-Conditioned Audio\-Video Generation? / 
-
-发布日期：2026-02-02
-
-作者：Susan Liang
-
-摘要：State\-of\-the\-art text\-to\-video generation models such as Sora 2 and Veo 3 can now produce high\-fidelity videos with synchronized audio directly from a textual prompt, marking a new milestone in multi\-modal generation. However, evaluating such tri\-modal outputs remains an unsolved challenge. Human evaluation is reliable but costly and difficult to scale, while traditional automatic metrics, such as FVD, CLAP, and ViCLIP, focus on isolated modality pairs, struggle with complex prompts, and provide limited interpretability. Omni\-modal large language models \(omni\-LLMs\) present a promising alternative: they naturally process audio, video, and text, support rich reasoning, and offer interpretable chain\-of\-thought feedback. Driven by this, we introduce Omni\-Judge, a study assessing whether omni\-LLMs can serve as human\-aligned judges for text\-conditioned audio\-video generation. Across nine perceptual and alignment metrics, Omni\-Judge achieves correlation comparable to traditional metrics and excels on semantically demanding tasks such as audio\-text alignment, video\-text alignment, and audio\-video\-text coherence. It underperforms on high\-FPS perceptual metrics, including video quality and audio\-video synchronization, due to limited temporal resolution. Omni\-Judge provides interpretable explanations that expose semantic or physical inconsistencies, enabling practical downstream uses such as feedback\-based refinement. Our findings highlight both the potential and current limitations of omni\-LLMs as unified evaluators for multi\-modal generation.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2602.01623v1)
-
----
-
-
-## Deep Learning\-Based Object Detection for Autonomous Vehicles: A Comparative Study of One\-Stage and Two\-Stage Detectors on Basic Traffic Objects / 
-
-发布日期：2026-01-30
-
-作者：Bsher Karbouj
-
-摘要：Object detection is a crucial component in autonomous vehicle systems. It enables the vehicle to perceive and understand its environment by identifying and locating various objects around it. By utilizing advanced imaging and deep learning techniques, autonomous vehicle systems can rapidly and accurately identify objects based on their features. Different deep learning methods vary in their ability to accurately detect and classify objects in autonomous vehicle systems. Selecting the appropriate method significantly impacts system performance, robustness, and efficiency in real\-world driving scenarios. While several generic deep learning architectures like YOLO, SSD, and Faster R\-CNN have been proposed, guidance on their suitability for specific autonomous driving applications is often limited. The choice of method affects detection accuracy, processing speed, environmental robustness, sensor integration, scalability, and edge case handling. This study provides a comprehensive experimental analysis comparing two prominent object detection models: YOLOv5 \(a one\-stage detector\) and Faster R\-CNN \(a two\-stage detector\). Their performance is evaluated on a diverse dataset combining real and synthetic images, considering various metrics including mean Average Precision \(mAP\), recall, and inference speed. The findings reveal that YOLOv5 demonstrates superior performance in terms of mAP, recall, and training efficiency, particularly as dataset size and image resolution increase. However, Faster R\-CNN shows advantages in detecting small, distant objects and performs well in challenging lighting conditions. The models' behavior is also analyzed under different confidence thresholds and in various real\-world scenarios, providing insights into their applicability for autonomous driving systems.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2602.00385v1)
 
 ---
 
