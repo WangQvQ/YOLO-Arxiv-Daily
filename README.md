@@ -1,6 +1,24 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## A Scoping Review of Deep Learning for Urban Visual Pollution and Proposal of a Real\-Time Monitoring Framework with a Visual Pollution Index / 
+
+发布日期：2026-02-10
+
+作者：Mohammad Masudur Rahman
+
+摘要：Urban Visual Pollution \(UVP\) has emerged as a critical concern, yet research on automatic detection and application remains fragmented. This scoping review maps the existing deep learning\-based approaches for detecting, classifying, and designing a comprehensive application framework for visual pollution management. Following the PRISMA\-ScR guidelines, seven academic databases \(Scopus, Web of Science, IEEE Xplore, ACM DL, ScienceDirect, SpringerNatureLink, and Wiley\) were systematically searched and reviewed, and 26 articles were found. Most research focuses on specific pollutant categories and employs variations of YOLO, Faster R\-CNN, and EfficientDet architectures. Although several datasets exist, they are limited to specific areas and lack standardized taxonomies. Few studies integrate detection into real\-time application systems, yet they tend to be geographically skewed. We proposed a framework for monitoring visual pollution that integrates a visual pollution index to assess the severity of visual pollution for a certain area. This review highlights the need for a unified UVP management system that incorporates pollutant taxonomy, a cross\-city benchmark dataset, a generalized deep learning model, and an assessment index that supports sustainable urban aesthetics and enhances the well\-being of urban dwellers.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2602.09446v1)
+
+---
+
+
 ## Weak to Strong: VLM\-Based Pseudo\-Labeling as a Weakly Supervised Training Strategy in Multimodal Video\-based Hidden Emotion Understanding Tasks / 
 
 发布日期：2026-02-08
@@ -69,24 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2602.04648v1)
-
----
-
-
-## Real\-Time 2D LiDAR Object Detection Using Three\-Frame RGB Scan Encoding / 
-
-发布日期：2026-02-02
-
-作者：Soheil Behnam Roudsari
-
-摘要：Indoor service robots need perception that is robust, more privacy\-friendly than RGB video, and feasible on embedded hardware. We present a camera\-free 2D LiDAR object detection pipeline that encodes short\-term temporal context by stacking three consecutive scans as RGB channels, yielding a compact YOLOv8n input without occupancy\-grid construction while preserving angular structure and motion cues. Evaluated in Webots across 160 randomized indoor scenarios with strict scenario\-level holdout, the method achieves 98.4% mAP@0.5 \(0.778 mAP@0.5:0.95\) with 94.9% precision and 94.7% recall on four object classes. On a Raspberry Pi 5, it runs in real time with a mean post\-warm\-up end\-to\-end latency of 47.8ms per frame, including scan encoding and postprocessing. Relative to a closely related occupancy\-grid LiDAR\-YOLO pipeline reported on the same platform, the proposed representation is associated with substantially lower reported end\-to\-end latency. Although results are simulation\-based, they suggest that lightweight temporal encoding can enable accurate and real\-time LiDAR\-only detection for embedded indoor robotics without capturing RGB appearance.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2602.02167v1)
 
 ---
 
