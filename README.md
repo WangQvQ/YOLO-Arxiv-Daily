@@ -1,6 +1,42 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Robustness of Object Detection of Autonomous Vehicles in Adverse Weather Conditions / 
+
+发布日期：2026-02-13
+
+作者：Fox Pettersen
+
+摘要：As self\-driving technology advances toward widespread adoption, determining safe operational thresholds across varying environmental conditions becomes critical for public safety. This paper proposes a method for evaluating the robustness of object detection ML models in autonomous vehicles under adverse weather conditions. It employs data augmentation operators to generate synthetic data that simulates different severance degrees of the adverse operation conditions at progressive intensity levels to find the lowest intensity of the adverse conditions at which the object detection model fails. The robustness of the object detection model is measured by the average first failure coefficients \(AFFC\) over the input images in the benchmark. The paper reports an experiment with four object detection models: YOLOv5s, YOLOv11s, Faster R\-CNN, and Detectron2, utilising seven data augmentation operators that simulate weather conditions fog, rain, and snow, and lighting conditions of dark, bright, flaring, and shadow. The experiment data show that the method is feasible, effective, and efficient to evaluate and compare the robustness of object detection models in various adverse operation conditions. In particular, the Faster R\-CNN model achieved the highest robustness with an overall average AFFC of 71.9% over all seven adverse conditions, while YOLO variants showed the AFFC values of 43%. The method is also applied to assess the impact of model training that targets adverse operation conditions using synthetic data on model robustness. It is observed that such training can improve robustness in adverse conditions but may suffer from diminishing returns and forgetting phenomena \(i.e., decline in robustness\) if overtrained.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2602.12902v1)
+
+---
+
+
+## A Lightweight and Explainable DenseNet\-121 Framework for Grape Leaf Disease Classification / 
+
+发布日期：2026-02-12
+
+作者：Md. Ehsanul Haque
+
+摘要：Grapes are among the most economically and culturally significant fruits on a global scale, and table grapes and wine are produced in significant quantities in Europe and Asia. The production and quality of grapes are significantly impacted by grape diseases such as Bacterial Rot, Downy Mildew, and Powdery Mildew. Consequently, the sustainable management of a vineyard necessitates the early and precise identification of these diseases. Current automated methods, particularly those that are based on the YOLO framework, are often computationally costly and lack interpretability that makes them unsuitable for real\-world scenarios. This study proposes grape leaf disease classification using Optimized DenseNet 121. Domain\-specific preprocessing and extensive connectivity reveal disease\-relevant characteristics, including veins, edges, and lesions. An extensive comparison with baseline CNN models, including ResNet18, VGG16, AlexNet, and SqueezeNet, demonstrates that the proposed model exhibits superior performance. It achieves an accuracy of 99.27%, an F1 score of 99.28%, a specificity of 99.71%, and a Kappa of 98.86%, with an inference time of 9 seconds. The cross\-validation findings show a mean accuracy of 99.12%, indicating strength and generalizability across all classes. We also employ Grad\-CAM to highlight disease\-related regions to guarantee the model is highlighting physiologically relevant aspects and increase transparency and confidence. Model optimization reduces processing requirements for real\-time deployment, while transfer learning ensures consistency on smaller and unbalanced samples. An effective architecture, domain\-specific preprocessing, and interpretable outputs make the proposed framework scalable, precise, and computationally inexpensive for detecting grape leaf diseases.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2602.12484v1)
+
+---
+
+
 ## A Scoping Review of Deep Learning for Urban Visual Pollution and Proposal of a Real\-Time Monitoring Framework with a Visual Pollution Index / 
 
 发布日期：2026-02-10
@@ -51,42 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2602.07523v1)
-
----
-
-
-## PTB\-XL\-Image\-17K: A Large\-Scale Synthetic ECG Image Dataset with Comprehensive Ground Truth for Deep Learning\-Based Digitization / 
-
-发布日期：2026-02-07
-
-作者：Naqcho Ali Mehdi
-
-摘要：Electrocardiogram \(ECG\) digitization\-converting paper\-based or scanned ECG images back into time\-series signals\-is critical for leveraging decades of legacy clinical data in modern deep learning applications. However, progress has been hindered by the lack of large\-scale datasets providing both ECG images and their corresponding ground truth signals with comprehensive annotations. We introduce PTB\-XL\-Image\-17K, a complete synthetic ECG image dataset comprising 17,271 high\-quality 12\-lead ECG images generated from the PTB\-XL signal database. Our dataset uniquely provides five complementary data types per sample: \(1\) realistic ECG images with authentic grid patterns and annotations \(50% with visible grid, 50% without\), \(2\) pixel\-level segmentation masks, \(3\) ground truth time\-series signals, \(4\) bounding box annotations in YOLO format for both lead regions and lead name labels, and \(5\) comprehensive metadata including visual parameters and patient information. We present an open\-source Python framework enabling customizable dataset generation with controllable parameters including paper speed \(25/50 mm/s\), voltage scale \(5/10 mm/mV\), sampling rate \(500 Hz\), grid appearance \(4 colors\), and waveform characteristics. The dataset achieves 100% generation success rate with an average processing time of 1.35 seconds per sample. PTB\-XL\-Image\-17K addresses critical gaps in ECG digitization research by providing the first large\-scale resource supporting the complete pipeline: lead detection, waveform segmentation, and signal extraction with full ground truth for rigorous evaluation. The dataset, generation framework, and documentation are publicly available at https://github.com/naqchoalimehdi/PTB\-XL\-Image\-17K and https://doi.org/10.5281/zenodo.18197519.
-
-中文摘要：
-
-
-代码链接：https://github.com/naqchoalimehdi/PTB-XL-Image-17K，https://doi.org/10.5281/zenodo.18197519.
-
-论文链接：[阅读更多](http://arxiv.org/abs/2602.07446v1)
-
----
-
-
-## From Vision to Assistance: Gaze and Vision\-Enabled Adaptive Control for a Back\-Support Exoskeleton / 
-
-发布日期：2026-02-04
-
-作者：Alessandro Leanza
-
-摘要：Back\-support exoskeletons have been proposed to mitigate spinal loading in industrial handling, yet their effectiveness critically depends on timely and context\-aware assistance. Most existing approaches rely either on load\-estimation techniques \(e.g., EMG, IMU\) or on vision systems that do not directly inform control. In this work, we present a vision\-gated control framework for an active lumbar occupational exoskeleton that leverages egocentric vision with wearable gaze tracking. The proposed system integrates real\-time grasp detection from a first\-person YOLO\-based perception system, a finite\-state machine \(FSM\) for task progression, and a variable admittance controller to adapt torque delivery to both posture and object state. A user study with 15 participants performing stooping load lifting trials under three conditions \(no exoskeleton, exoskeleton without vision, exoskeleton with vision\) shows that vision\-gated assistance significantly reduces perceived physical demand and improves fluency, trust, and comfort. Quantitative analysis reveals earlier and stronger assistance when vision is enabled, while questionnaire results confirm user preference for the vision\-gated mode. These findings highlight the potential of egocentric vision to enhance the responsiveness, ergonomics, safety, and acceptance of back\-support exoskeletons.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2602.04648v1)
 
 ---
 
