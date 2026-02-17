@@ -1,6 +1,42 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## YOLO26: A Comprehensive Architecture Overview and Key Improvements / 
+
+发布日期：2026-02-16
+
+作者：Priyanto Hidayatullah
+
+摘要：You Only Look Once \(YOLO\) has been the prominent model for computer vision in deep learning for a decade. This study explores the novel aspects of YOLO26, the most recent version in the YOLO series. The elimination of Distribution Focal Loss \(DFL\), implementation of End\-to\-End NMS\-Free Inference, introduction of ProgLoss \+ Small\-Target\-Aware Label Assignment \(STAL\), and use of the MuSGD optimizer are the primary enhancements designed to improve inference speed, which is claimed to achieve a 43% boost in CPU mode. This is designed to allow YOLO26 to attain real\-time performance on edge devices or those without GPUs. Additionally, YOLO26 offers improvements in many computer vision tasks, including instance segmentation, pose estimation, and oriented bounding box \(OBB\) decoding. We aim for this effort to provide more value than just consolidating information already included in the existing technical documentation. Therefore, we performed a rigorous architectural investigation into YOLO26, mostly using the source code available in its GitHub repository and its official documentation. The authentic and detailed operational mechanisms of YOLO26 are inside the source code, which is seldom extracted by others. The YOLO26 architectural diagram is shown as the outcome of the investigation. This study is, to our knowledge, the first one presenting the CNN\-based YOLO26 architecture, which is the core of YOLO26. Our objective is to provide a precise architectural comprehension of YOLO26 for researchers and developers aspiring to enhance the YOLO model, ensuring it remains the leading deep learning model in computer vision.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2602.14582v1)
+
+---
+
+
+## Detection of On\-Ground Chestnuts Using Artificial Intelligence Toward Automated Picking / 
+
+发布日期：2026-02-15
+
+作者：Kaixuan Fang
+
+摘要：Traditional mechanized chestnut harvesting is too costly for small producers, non\-selective, and prone to damaging nuts. Accurate, reliable detection of chestnuts on the orchard floor is crucial for developing low\-cost, vision\-guided automated harvesting technology. However, developing a reliable chestnut detection system faces challenges in complex environments with shading, varying natural light conditions, and interference from weeds, fallen leaves, stones, and other foreign on\-ground objects, which have remained unaddressed. This study collected 319 images of chestnuts on the orchard floor, containing 6524 annotated chestnuts. A comprehensive set of 29 state\-of\-the\-art real\-time object detectors, including 14 in the YOLO \(v11\-13\) and 15 in the RT\-DETR \(v1\-v4\) families at varied model scales, was systematically evaluated through replicated modeling experiments for chestnut detection. Experimental results show that the YOLOv12m model achieves the best mAP@0.5 of 95.1% among all the evaluated models, while the RT\-DETRv2\-R101 was the most accurate variant among RT\-DETR models, with mAP@0.5 of 91.1%. In terms of mAP@\[0.5:0.95\], the YOLOv11x model achieved the best accuracy of 80.1%. All models demonstrate significant potential for real\-time chestnut detection, and YOLO models outperformed RT\-DETR models in terms of both detection accuracy and inference, making them better suited for on\-board deployment. Both the dataset and software programs in this study have been made publicly available at https://github.com/AgFood\-Sensing\-and\-Intelligence\-Lab/ChestnutDetection.
+
+中文摘要：
+
+
+代码链接：https://github.com/AgFood-Sensing-and-Intelligence-Lab/ChestnutDetection.
+
+论文链接：[阅读更多](http://arxiv.org/abs/2602.14140v1)
+
+---
+
+
 ## Robustness of Object Detection of Autonomous Vehicles in Adverse Weather Conditions / 
 
 发布日期：2026-02-13
@@ -51,42 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2602.09446v1)
-
----
-
-
-## Weak to Strong: VLM\-Based Pseudo\-Labeling as a Weakly Supervised Training Strategy in Multimodal Video\-based Hidden Emotion Understanding Tasks / 
-
-发布日期：2026-02-08
-
-作者：Yufei Wang
-
-摘要：To tackle the automatic recognition of "concealed emotions" in videos, this paper proposes a multimodal weak\-supervision framework and achieves state\-of\-the\-art results on the iMiGUE tennis\-interview dataset. First, YOLO 11x detects and crops human portraits frame\-by\-frame, and DINOv2\-Base extracts visual features from the cropped regions. Next, by integrating Chain\-of\-Thought and Reflection prompting \(CoT \+ Reflection\), Gemini 2.5 Pro automatically generates pseudo\-labels and reasoning texts that serve as weak supervision for downstream models. Subsequently, OpenPose produces 137\-dimensional key\-point sequences, augmented with inter\-frame offset features; the usual graph neural network backbone is simplified to an MLP to efficiently model the spatiotemporal relationships of the three key\-point streams. An ultra\-long\-sequence Transformer independently encodes both the image and key\-point sequences, and their representations are concatenated with BERT\-encoded interview transcripts. Each modality is first pre\-trained in isolation, then fine\-tuned jointly, with pseudo\-labeled samples merged into the training set for further gains. Experiments demonstrate that, despite severe class imbalance, the proposed approach lifts accuracy from under 0.6 in prior work to over 0.69, establishing a new public benchmark. The study also validates that an "MLP\-ified" key\-point backbone can match \- or even surpass \- GCN\-based counterparts in this task.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2602.08057v1)
-
----
-
-
-## CA\-YOLO: Cross Attention Empowered YOLO for Biomimetic Localization / 
-
-发布日期：2026-02-07
-
-作者：Zhen Zhang
-
-摘要：In modern complex environments, achieving accurate and efficient target localization is essential in numerous fields. However, existing systems often face limitations in both accuracy and the ability to recognize small targets. In this study, we propose a bionic stabilized localization system based on CA\-YOLO, designed to enhance both target localization accuracy and small target recognition capabilities. Acting as the "brain" of the system, the target detection algorithm emulates the visual focusing mechanism of animals by integrating bionic modules into the YOLO backbone network. These modules include the introduction of a small target detection head and the development of a Characteristic Fusion Attention Mechanism \(CFAM\). Furthermore, drawing inspiration from the human Vestibulo\-Ocular Reflex \(VOR\), a bionic pan\-tilt tracking control strategy is developed, which incorporates central positioning, stability optimization, adaptive control coefficient adjustment, and an intelligent recapture function. The experimental results show that CA\-YOLO outperforms the original model on standard datasets \(COCO and VisDrone\), with average accuracy metrics improved by 3.94%and 4.90%, respectively.Further time\-sensitive target localization experiments validate the effectiveness and practicality of this bionic stabilized localization system.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2602.07523v1)
 
 ---
 
