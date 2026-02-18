@@ -1,6 +1,42 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## A Novel Public Dataset for Strawberry \(Fragaria x ananassa\) Ripeness Detection and Comparative Evaluation of YOLO\-Based Models / 
+
+发布日期：2026-02-17
+
+作者：Mustafa Yurdakul
+
+摘要：The strawberry \(Fragaria x ananassa\), known worldwide for its economic value and nutritional richness, is a widely cultivated fruit. Determining the correct ripeness level during the harvest period is crucial for both preventing losses for producers and ensuring consumers receive a quality product. However, traditional methods, i.e., visual assessments alone, can be subjective and have a high margin of error. Therefore, computer\-assisted systems are needed. However, the scarcity of comprehensive datasets accessible to everyone in the literature makes it difficult to compare studies in this field. In this study, a new and publicly available strawberry ripeness dataset, consisting of 566 images and 1,201 labeled objects, prepared under variable light and environmental conditions in two different greenhouses in Turkey, is presented to the literature. Comparative tests conducted on the data set using YOLOv8, YOLOv9, and YOLO11\-based models showed that the highest precision value was 90.94% in the YOLOv9c model, while the highest recall value was 83.74% in the YOLO11s model. In terms of the general performance criterion mAP@50, YOLOv8s was the best performing model with a success rate of 86.09%. The results show that small and medium\-sized models work more balanced and efficiently on this type of dataset, while also establishing a fundamental reference point for smart agriculture applications.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2602.15656v1)
+
+---
+
+
+## Ground\-Truth Depth in Vision Language Models: Spatial Context Understanding in Conversational AI for XR\-Robotic Support in Emergency First Response / 
+
+发布日期：2026-02-16
+
+作者：Rodrigo Gutierrez Maquilon
+
+摘要：Large language models \(LLMs\) are increasingly used in emergency first response \(EFR\) applications to support situational awareness \(SA\) and decision\-making, yet most operate on text or 2D imagery and offer little support for core EFR SA competencies like spatial reasoning. We address this gap by evaluating a prototype that fuses robot\-mounted depth sensing and YOLO detection with a vision language model \(VLM\) capable of verbalizing metrically\-grounded distances of detected objects \(e.g., the chair is 3.02 meters away\). In a mixed\-reality toxic\-smoke scenario, participants estimated distances to a victim and an exit window under three conditions: video\-only, depth\-agnostic VLM, and depth\-augmented VLM. Depth\-augmentation improved objective accuracy and stability, e.g., the victim and window distance estimation error dropped, while raising situational awareness without increasing workload. Conversely, depth\- agnostic assistance increased workload and slightly worsened accuracy. We contribute to human SA augmentation by demonstrating that metrically grounded, object\-centric verbal information supports spatial reasoning in EFR and improves decision\-relevant judgments under time pressure.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2602.15237v1)
+
+---
+
+
 ## YOLO26: A Comprehensive Architecture Overview and Key Improvements / 
 
 发布日期：2026-02-16
@@ -51,42 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2602.12902v1)
-
----
-
-
-## A Lightweight and Explainable DenseNet\-121 Framework for Grape Leaf Disease Classification / 
-
-发布日期：2026-02-12
-
-作者：Md. Ehsanul Haque
-
-摘要：Grapes are among the most economically and culturally significant fruits on a global scale, and table grapes and wine are produced in significant quantities in Europe and Asia. The production and quality of grapes are significantly impacted by grape diseases such as Bacterial Rot, Downy Mildew, and Powdery Mildew. Consequently, the sustainable management of a vineyard necessitates the early and precise identification of these diseases. Current automated methods, particularly those that are based on the YOLO framework, are often computationally costly and lack interpretability that makes them unsuitable for real\-world scenarios. This study proposes grape leaf disease classification using Optimized DenseNet 121. Domain\-specific preprocessing and extensive connectivity reveal disease\-relevant characteristics, including veins, edges, and lesions. An extensive comparison with baseline CNN models, including ResNet18, VGG16, AlexNet, and SqueezeNet, demonstrates that the proposed model exhibits superior performance. It achieves an accuracy of 99.27%, an F1 score of 99.28%, a specificity of 99.71%, and a Kappa of 98.86%, with an inference time of 9 seconds. The cross\-validation findings show a mean accuracy of 99.12%, indicating strength and generalizability across all classes. We also employ Grad\-CAM to highlight disease\-related regions to guarantee the model is highlighting physiologically relevant aspects and increase transparency and confidence. Model optimization reduces processing requirements for real\-time deployment, while transfer learning ensures consistency on smaller and unbalanced samples. An effective architecture, domain\-specific preprocessing, and interpretable outputs make the proposed framework scalable, precise, and computationally inexpensive for detecting grape leaf diseases.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2602.12484v1)
-
----
-
-
-## A Scoping Review of Deep Learning for Urban Visual Pollution and Proposal of a Real\-Time Monitoring Framework with a Visual Pollution Index / 
-
-发布日期：2026-02-10
-
-作者：Mohammad Masudur Rahman
-
-摘要：Urban Visual Pollution \(UVP\) has emerged as a critical concern, yet research on automatic detection and application remains fragmented. This scoping review maps the existing deep learning\-based approaches for detecting, classifying, and designing a comprehensive application framework for visual pollution management. Following the PRISMA\-ScR guidelines, seven academic databases \(Scopus, Web of Science, IEEE Xplore, ACM DL, ScienceDirect, SpringerNatureLink, and Wiley\) were systematically searched and reviewed, and 26 articles were found. Most research focuses on specific pollutant categories and employs variations of YOLO, Faster R\-CNN, and EfficientDet architectures. Although several datasets exist, they are limited to specific areas and lack standardized taxonomies. Few studies integrate detection into real\-time application systems, yet they tend to be geographically skewed. We proposed a framework for monitoring visual pollution that integrates a visual pollution index to assess the severity of visual pollution for a certain area. This review highlights the need for a unified UVP management system that incorporates pollutant taxonomy, a cross\-city benchmark dataset, a generalized deep learning model, and an assessment index that supports sustainable urban aesthetics and enhances the well\-being of urban dwellers.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2602.09446v1)
 
 ---
 
