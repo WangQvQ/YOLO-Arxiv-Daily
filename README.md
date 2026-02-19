@@ -1,6 +1,42 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Automated Re\-Identification of Holstein\-Friesian Cattle in Dense Crowds / 
+
+发布日期：2026-02-17
+
+作者：Phoenix Yu
+
+摘要：Holstein\-Friesian detection and re\-identification \(Re\-ID\) methods capture individuals well when targets are spatially separate. However, existing approaches, including YOLO\-based species detection, break down when cows group closely together. This is particularly prevalent for species which have outline\-breaking coat patterns. To boost both effectiveness and transferability in this setting, we propose a new detect\-segment\-identify pipeline that leverages the Open\-Vocabulary Weight\-free Localisation and the Segment Anything models as pre\-processing stages alongside Re\-ID networks. To evaluate our approach, we publish a collection of nine days CCTV data filmed on a working dairy farm. Our methodology overcomes detection breakdown in dense animal groupings, resulting in a 98.93% accuracy. This significantly outperforms current oriented bounding box\-driven, as well as SAM species detection baselines with accuracy improvements of 47.52% and 27.13%, respectively. We show that unsupervised contrastive learning can build on this to yield 94.82% Re\-ID accuracy on our test data. Our work demonstrates that Re\-ID in crowded scenarios is both practical as well as reliable in working farm settings with no manual intervention. Code and dataset are provided for reproducibility.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2602.15962v1)
+
+---
+
+
+## A Study on Real\-time Object Detection using Deep Learning / 
+
+发布日期：2026-02-17
+
+作者：Ankita Bose
+
+摘要：Object detection has compelling applications over a range of domains, including human\-computer interfaces, security and video surveillance, navigation and road traffic monitoring, transportation systems, industrial automation healthcare, the world of Augmented Reality \(AR\) and Virtual Reality \(VR\), environment monitoring and activity identification. Applications of real time object detection in all these areas provide dynamic analysis of the visual information that helps in immediate decision making. Furthermore, advanced deep learning algorithms leverage the progress in the field of object detection providing more accurate and efficient solutions. There are some outstanding deep learning algorithms for object detection which includes, Faster R CNN\(Region\-based Convolutional Neural Network\),Mask R\-CNN, Cascade R\-CNN, YOLO \(You Only Look Once\), SSD \(Single Shot Multibox Detector\), RetinaNet etc. This article goes into great detail on how deep learning algorithms are used to enhance real time object recognition. It provides information on the different object detection models available, open benchmark datasets, and studies on the use of object detection models in a range of applications. Additionally, controlled studies are provided to compare various strategies and produce some illuminating findings. Last but not least, a number of encouraging challenges and approaches are offered as suggestions for further investigation in both relevant deep learning approaches and object recognition.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2602.15926v1)
+
+---
+
+
 ## A Novel Public Dataset for Strawberry \(Fragaria x ananassa\) Ripeness Detection and Comparative Evaluation of YOLO\-Based Models / 
 
 发布日期：2026-02-17
@@ -14,7 +50,7 @@
 
 代码链接：摘要中未找到代码链接。
 
-论文链接：[阅读更多](http://arxiv.org/abs/2602.15656v1)
+论文链接：[阅读更多](http://arxiv.org/abs/2602.15656v2)
 
 ---
 
@@ -51,42 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2602.14582v1)
-
----
-
-
-## Detection of On\-Ground Chestnuts Using Artificial Intelligence Toward Automated Picking / 
-
-发布日期：2026-02-15
-
-作者：Kaixuan Fang
-
-摘要：Traditional mechanized chestnut harvesting is too costly for small producers, non\-selective, and prone to damaging nuts. Accurate, reliable detection of chestnuts on the orchard floor is crucial for developing low\-cost, vision\-guided automated harvesting technology. However, developing a reliable chestnut detection system faces challenges in complex environments with shading, varying natural light conditions, and interference from weeds, fallen leaves, stones, and other foreign on\-ground objects, which have remained unaddressed. This study collected 319 images of chestnuts on the orchard floor, containing 6524 annotated chestnuts. A comprehensive set of 29 state\-of\-the\-art real\-time object detectors, including 14 in the YOLO \(v11\-13\) and 15 in the RT\-DETR \(v1\-v4\) families at varied model scales, was systematically evaluated through replicated modeling experiments for chestnut detection. Experimental results show that the YOLOv12m model achieves the best mAP@0.5 of 95.1% among all the evaluated models, while the RT\-DETRv2\-R101 was the most accurate variant among RT\-DETR models, with mAP@0.5 of 91.1%. In terms of mAP@\[0.5:0.95\], the YOLOv11x model achieved the best accuracy of 80.1%. All models demonstrate significant potential for real\-time chestnut detection, and YOLO models outperformed RT\-DETR models in terms of both detection accuracy and inference, making them better suited for on\-board deployment. Both the dataset and software programs in this study have been made publicly available at https://github.com/AgFood\-Sensing\-and\-Intelligence\-Lab/ChestnutDetection.
-
-中文摘要：
-
-
-代码链接：https://github.com/AgFood-Sensing-and-Intelligence-Lab/ChestnutDetection.
-
-论文链接：[阅读更多](http://arxiv.org/abs/2602.14140v1)
-
----
-
-
-## Robustness of Object Detection of Autonomous Vehicles in Adverse Weather Conditions / 
-
-发布日期：2026-02-13
-
-作者：Fox Pettersen
-
-摘要：As self\-driving technology advances toward widespread adoption, determining safe operational thresholds across varying environmental conditions becomes critical for public safety. This paper proposes a method for evaluating the robustness of object detection ML models in autonomous vehicles under adverse weather conditions. It employs data augmentation operators to generate synthetic data that simulates different severance degrees of the adverse operation conditions at progressive intensity levels to find the lowest intensity of the adverse conditions at which the object detection model fails. The robustness of the object detection model is measured by the average first failure coefficients \(AFFC\) over the input images in the benchmark. The paper reports an experiment with four object detection models: YOLOv5s, YOLOv11s, Faster R\-CNN, and Detectron2, utilising seven data augmentation operators that simulate weather conditions fog, rain, and snow, and lighting conditions of dark, bright, flaring, and shadow. The experiment data show that the method is feasible, effective, and efficient to evaluate and compare the robustness of object detection models in various adverse operation conditions. In particular, the Faster R\-CNN model achieved the highest robustness with an overall average AFFC of 71.9% over all seven adverse conditions, while YOLO variants showed the AFFC values of 43%. The method is also applied to assess the impact of model training that targets adverse operation conditions using synthetic data on model robustness. It is observed that such training can improve robustness in adverse conditions but may suffer from diminishing returns and forgetting phenomena \(i.e., decline in robustness\) if overtrained.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2602.12902v1)
 
 ---
 
