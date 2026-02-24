@@ -1,92 +1,92 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
-## Automated Re\-Identification of Holstein\-Friesian Cattle in Dense Crowds / 
+## A Text\-Guided Vision Model for Enhanced Recognition of Small Instances / 
 
-发布日期：2026-02-17
+发布日期：2026-02-23
 
-作者：Phoenix Yu
+作者：Hyun\-Ki Jung
 
-摘要：Holstein\-Friesian detection and re\-identification \(Re\-ID\) methods capture individuals well when targets are spatially separate. However, existing approaches, including YOLO\-based species detection, break down when cows group closely together. This is particularly prevalent for species which have outline\-breaking coat patterns. To boost both effectiveness and transferability in this setting, we propose a new detect\-segment\-identify pipeline that leverages the Open\-Vocabulary Weight\-free Localisation and the Segment Anything models as pre\-processing stages alongside Re\-ID networks. To evaluate our approach, we publish a collection of nine days CCTV data filmed on a working dairy farm. Our methodology overcomes detection breakdown in dense animal groupings, resulting in a 98.93% accuracy. This significantly outperforms current oriented bounding box\-driven, as well as SAM species detection baselines with accuracy improvements of 47.52% and 27.13%, respectively. We show that unsupervised contrastive learning can build on this to yield 94.82% Re\-ID accuracy on our test data. Our work demonstrates that Re\-ID in crowded scenarios is both practical as well as reliable in working farm settings with no manual intervention. Code and dataset are provided for reproducibility.
+摘要：As drone\-based object detection technology continues to evolve, the demand is shifting from merely detecting objects to enabling users to accurately identify specific targets. For example, users can input particular targets as prompts to precisely detect desired objects. To address this need, an efficient text\-guided object detection model has been developed to enhance the detection of small objects. Specifically, an improved version of the existing YOLO\-World model is introduced. The proposed method replaces the C2f layer in the YOLOv8 backbone with a C3k2 layer, enabling more precise representation of local features, particularly for small objects or those with clearly defined boundaries. Additionally, the proposed architecture improves processing speed and efficiency through parallel processing optimization, while also contributing to a more lightweight model design. Comparative experiments on the VisDrone dataset show that the proposed model outperforms the original YOLO\-World model, with precision increasing from 40.6% to 41.6%, recall from 30.8% to 31%, F1 score from 35% to 35.5%, and mAP@0.5 from 30.4% to 30.7%, confirming its enhanced accuracy. Furthermore, the model demonstrates superior lightweight performance, with the parameter count reduced from 4 million to 3.8 million and FLOPs decreasing from 15.7 billion to 15.2 billion. These results indicate that the proposed approach provides a practical and effective solution for precise object detection in drone\-based applications.
 
 中文摘要：
 
 
 代码链接：摘要中未找到代码链接。
 
-论文链接：[阅读更多](http://arxiv.org/abs/2602.15962v1)
+论文链接：[阅读更多](http://arxiv.org/abs/2602.19503v1)
 
 ---
 
 
-## A Study on Real\-time Object Detection using Deep Learning / 
+## TactEx: An Explainable Multimodal Robotic Interaction Framework for Human\-Like Touch and Hardness Estimation / 
 
-发布日期：2026-02-17
+发布日期：2026-02-21
 
-作者：Ankita Bose
+作者：Felix Verstraete
 
-摘要：Object detection has compelling applications over a range of domains, including human\-computer interfaces, security and video surveillance, navigation and road traffic monitoring, transportation systems, industrial automation healthcare, the world of Augmented Reality \(AR\) and Virtual Reality \(VR\), environment monitoring and activity identification. Applications of real time object detection in all these areas provide dynamic analysis of the visual information that helps in immediate decision making. Furthermore, advanced deep learning algorithms leverage the progress in the field of object detection providing more accurate and efficient solutions. There are some outstanding deep learning algorithms for object detection which includes, Faster R CNN\(Region\-based Convolutional Neural Network\),Mask R\-CNN, Cascade R\-CNN, YOLO \(You Only Look Once\), SSD \(Single Shot Multibox Detector\), RetinaNet etc. This article goes into great detail on how deep learning algorithms are used to enhance real time object recognition. It provides information on the different object detection models available, open benchmark datasets, and studies on the use of object detection models in a range of applications. Additionally, controlled studies are provided to compare various strategies and produce some illuminating findings. Last but not least, a number of encouraging challenges and approaches are offered as suggestions for further investigation in both relevant deep learning approaches and object recognition.
+摘要：Accurate perception of object hardness is essential for safe and dexterous contact\-rich robotic manipulation. Here, we present TactEx, an explainable multimodal robotic interaction framework that unifies vision, touch, and language for human\-like hardness estimation and interactive guidance. We evaluate TactEx on fruit\-ripeness assessment, a representative task that requires both tactile sensing and contextual understanding. The system fuses GelSight\-Mini tactile streams with RGB observations and language prompts. A ResNet50\+LSTM model estimates hardness from sequential tactile data, while a cross\-modal alignment module combines visual cues with guidance from a large language model \(LLM\). This explainable multimodal interface allows users to distinguish ripeness levels with statistically significant class separation \(p < 0.01 for all fruit pairs\). For touch placement, we compare YOLO with Grounded\-SAM \(GSAM\) and find GSAM to be more robust for fine\-grained segmentation and contact\-site selection. A lightweight LLM parses user instructions and produces grounded natural\-language explanations linked to the tactile outputs. In end\-to\-end evaluations, TactEx attains 90% task success on simple user queries and generalises to novel tasks without large\-scale tuning. These results highlight the promise of combining pretrained visual and tactile models with language grounding to advance explainable, human\-like touch perception and decision\-making in robotics.
 
 中文摘要：
 
 
 代码链接：摘要中未找到代码链接。
 
-论文链接：[阅读更多](http://arxiv.org/abs/2602.15926v1)
+论文链接：[阅读更多](http://arxiv.org/abs/2602.18967v1)
 
 ---
 
 
-## A Novel Public Dataset for Strawberry \(Fragaria x ananassa\) Ripeness Detection and Comparative Evaluation of YOLO\-Based Models / 
+## Depth\-Enhanced YOLO\-SAM2 Detection for Reliable Ballast Insufficiency Identification / 
 
-发布日期：2026-02-17
+发布日期：2026-02-21
 
-作者：Mustafa Yurdakul
+作者：Shiyu Liu
 
-摘要：The strawberry \(Fragaria x ananassa\), known worldwide for its economic value and nutritional richness, is a widely cultivated fruit. Determining the correct ripeness level during the harvest period is crucial for both preventing losses for producers and ensuring consumers receive a quality product. However, traditional methods, i.e., visual assessments alone, can be subjective and have a high margin of error. Therefore, computer\-assisted systems are needed. However, the scarcity of comprehensive datasets accessible to everyone in the literature makes it difficult to compare studies in this field. In this study, a new and publicly available strawberry ripeness dataset, consisting of 566 images and 1,201 labeled objects, prepared under variable light and environmental conditions in two different greenhouses in Turkey, is presented to the literature. Comparative tests conducted on the data set using YOLOv8, YOLOv9, and YOLO11\-based models showed that the highest precision value was 90.94% in the YOLOv9c model, while the highest recall value was 83.74% in the YOLO11s model. In terms of the general performance criterion mAP@50, YOLOv8s was the best performing model with a success rate of 86.09%. The results show that small and medium\-sized models work more balanced and efficiently on this type of dataset, while also establishing a fundamental reference point for smart agriculture applications.
+摘要：This paper presents a depth\-enhanced YOLO\-SAM2 framework for detecting ballast insufficiency in railway tracks using RGB\-D data. Although YOLOv8 provides reliable localization, the RGB\-only model shows limited safety performance, achieving high precision \(0.99\) but low recall \(0.49\) due to insufficient ballast, as it tends to over\-predict the sufficient class. To improve reliability, we incorporate depth\-based geometric analysis enabled by a sleeper\-aligned depth\-correction pipeline that compensates for RealSense spatial distortion using polynomial modeling, RANSAC, and temporal smoothing. SAM2 segmentation further refines region\-of\-interest masks, enabling accurate extraction of sleeper and ballast profiles for geometric classification.   Experiments on field\-collected top\-down RGB\-D data show that depth\-enhanced configurations substantially improve the detection of insufficient ballast. Depending on bounding\-box sampling \(AABB or RBB\) and geometric criteria, recall increases from 0.49 to as high as 0.80, and F1\-score improves from 0.66 to over 0.80. These results demonstrate that integrating depth correction with YOLO\-SAM2 yields a more robust and reliable approach for automated railway ballast inspection, particularly in visually ambiguous or safety\-critical scenarios.
 
 中文摘要：
 
 
 代码链接：摘要中未找到代码链接。
 
-论文链接：[阅读更多](http://arxiv.org/abs/2602.15656v2)
+论文链接：[阅读更多](http://arxiv.org/abs/2602.18961v1)
 
 ---
 
 
-## Ground\-Truth Depth in Vision Language Models: Spatial Context Understanding in Conversational AI for XR\-Robotic Support in Emergency First Response / 
+## BloomNet: Exploring Single vs. Multiple Object Annotation for Flower Recognition Using YOLO Variants / 
 
-发布日期：2026-02-16
+发布日期：2026-02-20
 
-作者：Rodrigo Gutierrez Maquilon
+作者：Safwat Nusrat
 
-摘要：Large language models \(LLMs\) are increasingly used in emergency first response \(EFR\) applications to support situational awareness \(SA\) and decision\-making, yet most operate on text or 2D imagery and offer little support for core EFR SA competencies like spatial reasoning. We address this gap by evaluating a prototype that fuses robot\-mounted depth sensing and YOLO detection with a vision language model \(VLM\) capable of verbalizing metrically\-grounded distances of detected objects \(e.g., the chair is 3.02 meters away\). In a mixed\-reality toxic\-smoke scenario, participants estimated distances to a victim and an exit window under three conditions: video\-only, depth\-agnostic VLM, and depth\-augmented VLM. Depth\-augmentation improved objective accuracy and stability, e.g., the victim and window distance estimation error dropped, while raising situational awareness without increasing workload. Conversely, depth\- agnostic assistance increased workload and slightly worsened accuracy. We contribute to human SA augmentation by demonstrating that metrically grounded, object\-centric verbal information supports spatial reasoning in EFR and improves decision\-relevant judgments under time pressure.
+摘要：Precise localization and recognition of flowers are crucial for advancing automated agriculture, particularly in plant phenotyping, crop estimation, and yield monitoring. This paper benchmarks several YOLO architectures such as YOLOv5s, YOLOv8n/s/m, and YOLOv12n for flower object detection under two annotation regimes: single\-image single\-bounding box \(SISBB\) and single\-image multiple\-bounding box \(SIMBB\). The FloralSix dataset, comprising 2,816 high\-resolution photos of six different flower species, is also introduced. It is annotated for both dense \(clustered\) and sparse \(isolated\) scenarios. The models were evaluated using Precision, Recall, and Mean Average Precision \(mAP\) at IoU thresholds of 0.5 \(mAP@0.5\) and 0.5\-0.95 \(mAP@0.5:0.95\). In SISBB, YOLOv8m \(SGD\) achieved the best results with Precision 0.956, Recall 0.951, mAP@0.5 0.978, and mAP@0.5:0.95 0.865, illustrating strong accuracy in detecting isolated flowers. With mAP@0.5 0.934 and mAP@0.5:0.95 0.752, YOLOv12n \(SGD\) outperformed the more complicated SIMBB scenario, proving robustness in dense, multi\-object detection. Results show how annotation density, IoU thresholds, and model size interact: recall\-optimized models perform better in crowded environments, whereas precision\-oriented models perform best in sparse scenarios. In both cases, the Stochastic Gradient Descent \(SGD\) optimizer consistently performed better than alternatives. These density\-sensitive sensors are helpful for non\-destructive crop analysis, growth tracking, robotic pollination, and stress evaluation.
 
 中文摘要：
 
 
 代码链接：摘要中未找到代码链接。
 
-论文链接：[阅读更多](http://arxiv.org/abs/2602.15237v1)
+论文链接：[阅读更多](http://arxiv.org/abs/2602.18585v1)
 
 ---
 
 
-## YOLO26: A Comprehensive Architecture Overview and Key Improvements / 
+## Do Generative Metrics Predict YOLO Performance? An Evaluation Across Models, Augmentation Ratios, and Dataset Complexity / 
 
-发布日期：2026-02-16
+发布日期：2026-02-20
 
-作者：Priyanto Hidayatullah
+作者：Vasile Marian
 
-摘要：You Only Look Once \(YOLO\) has been the prominent model for computer vision in deep learning for a decade. This study explores the novel aspects of YOLO26, the most recent version in the YOLO series. The elimination of Distribution Focal Loss \(DFL\), implementation of End\-to\-End NMS\-Free Inference, introduction of ProgLoss \+ Small\-Target\-Aware Label Assignment \(STAL\), and use of the MuSGD optimizer are the primary enhancements designed to improve inference speed, which is claimed to achieve a 43% boost in CPU mode. This is designed to allow YOLO26 to attain real\-time performance on edge devices or those without GPUs. Additionally, YOLO26 offers improvements in many computer vision tasks, including instance segmentation, pose estimation, and oriented bounding box \(OBB\) decoding. We aim for this effort to provide more value than just consolidating information already included in the existing technical documentation. Therefore, we performed a rigorous architectural investigation into YOLO26, mostly using the source code available in its GitHub repository and its official documentation. The authentic and detailed operational mechanisms of YOLO26 are inside the source code, which is seldom extracted by others. The YOLO26 architectural diagram is shown as the outcome of the investigation. This study is, to our knowledge, the first one presenting the CNN\-based YOLO26 architecture, which is the core of YOLO26. Our objective is to provide a precise architectural comprehension of YOLO26 for researchers and developers aspiring to enhance the YOLO model, ensuring it remains the leading deep learning model in computer vision.
+摘要：Synthetic images are increasingly used to augment object\-detection training sets, but reliably evaluating a synthetic dataset before training remains difficult: standard global generative metrics \(e.g., FID\) often do not predict downstream detection mAP. We present a controlled evaluation of synthetic augmentation for YOLOv11 across three single\-class detection regimes \-\- Traffic Signs \(sparse/near\-saturated\), Cityscapes Pedestrian \(dense/occlusion\-heavy\), and COCO PottedPlant \(multi\-instance/high\-variability\). We benchmark six GAN\-, diffusion\-, and hybrid\-based generators over augmentation ratios from 10% to 150% of the real training split, and train YOLOv11 both from scratch and with COCO\-pretrained initialization, evaluating on held\-out real test splits \(mAP@0.50:0.95\). For each dataset\-generator\-augmentation configuration, we compute pre\-training dataset metrics under a matched\-size bootstrap protocol, including \(i\) global feature\-space metrics in both Inception\-v3 and DINOv2 embeddings and \(ii\) object\-centric distribution distances over bounding\-box statistics. Synthetic augmentation yields substantial gains in the more challenging regimes \(up to \+7.6% and \+30.6% relative mAP in Pedestrian and PottedPlant, respectively\) but is marginal in Traffic Signs and under pretrained fine\-tuning. To separate metric signal from augmentation quantity, we report both raw and augmentation\-controlled \(residualized\) correlations with multiple\-testing correction, showing that metric\-performance alignment is strongly regime\-dependent and that many apparent raw associations weaken after controlling for augmentation level.
 
 中文摘要：
 
 
 代码链接：摘要中未找到代码链接。
 
-论文链接：[阅读更多](http://arxiv.org/abs/2602.14582v1)
+论文链接：[阅读更多](http://arxiv.org/abs/2602.18525v1)
 
 ---
 
