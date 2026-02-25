@@ -1,6 +1,24 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## EKF\-Based Depth Camera and Deep Learning Fusion for UAV\-Person Distance Estimation and Following in SAR Operations / 
+
+发布日期：2026-02-24
+
+作者：Luka Šiktar
+
+摘要：Search and rescue \(SAR\) operations require rapid responses to save lives or property. Unmanned Aerial Vehicles \(UAVs\) equipped with vision\-based systems support these missions through prior terrain investigation or real\-time assistance during the mission itself. Vision\-based UAV frameworks aid human search tasks by detecting and recognizing specific individuals, then tracking and following them while maintaining a safe distance. A key safety requirement for UAV following is the accurate estimation of the distance between camera and target object under real\-world conditions, achieved by fusing multiple image modalities. UAVs with deep learning\-based vision systems offer a new approach to the planning and execution of SAR operations. As part of the system for automatic people detection and face recognition using deep learning, in this paper we present the fusion of depth camera measurements and monocular camera\-to\-body distance estimation for robust tracking and following. Deep learning\-based filtering of depth camera data and estimation of camera\-to\-body distance from a monocular camera are achieved with YOLO\-pose, enabling real\-time fusion of depth information using the Extended Kalman Filter \(EKF\) algorithm. The proposed subsystem, designed for use in drones, estimates and measures the distance between the depth camera and the human body keypoints, to maintain the safe distance between the drone and the human target. Our system provides an accurate estimated distance, which has been validated against motion capture ground truth data. The system has been tested in real time indoors, where it reduces the average errors, root mean square error \(RMSE\) and standard deviations of distance estimation up to 15,3% in three tested scenarios.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2602.20958v1)
+
+---
+
+
 ## A Text\-Guided Vision Model for Enhanced Recognition of Small Instances / 
 
 发布日期：2026-02-23
@@ -69,24 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2602.18585v1)
-
----
-
-
-## Do Generative Metrics Predict YOLO Performance? An Evaluation Across Models, Augmentation Ratios, and Dataset Complexity / 
-
-发布日期：2026-02-20
-
-作者：Vasile Marian
-
-摘要：Synthetic images are increasingly used to augment object\-detection training sets, but reliably evaluating a synthetic dataset before training remains difficult: standard global generative metrics \(e.g., FID\) often do not predict downstream detection mAP. We present a controlled evaluation of synthetic augmentation for YOLOv11 across three single\-class detection regimes \-\- Traffic Signs \(sparse/near\-saturated\), Cityscapes Pedestrian \(dense/occlusion\-heavy\), and COCO PottedPlant \(multi\-instance/high\-variability\). We benchmark six GAN\-, diffusion\-, and hybrid\-based generators over augmentation ratios from 10% to 150% of the real training split, and train YOLOv11 both from scratch and with COCO\-pretrained initialization, evaluating on held\-out real test splits \(mAP@0.50:0.95\). For each dataset\-generator\-augmentation configuration, we compute pre\-training dataset metrics under a matched\-size bootstrap protocol, including \(i\) global feature\-space metrics in both Inception\-v3 and DINOv2 embeddings and \(ii\) object\-centric distribution distances over bounding\-box statistics. Synthetic augmentation yields substantial gains in the more challenging regimes \(up to \+7.6% and \+30.6% relative mAP in Pedestrian and PottedPlant, respectively\) but is marginal in Traffic Signs and under pretrained fine\-tuning. To separate metric signal from augmentation quantity, we report both raw and augmentation\-controlled \(residualized\) correlations with multiple\-testing correction, showing that metric\-performance alignment is strongly regime\-dependent and that many apparent raw associations weaken after controlling for augmentation level.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2602.18525v1)
 
 ---
 
