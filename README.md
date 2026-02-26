@@ -1,6 +1,42 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Towards Object Segmentation Mask Selection Using Specular Reflections / 
+
+发布日期：2026-02-25
+
+作者：Katja Kossira
+
+摘要：Specular reflections pose a significant challenge for object segmentation, as their sharp intensity transitions often mislead both conventional algorithms and deep learning based methods. However, as the specular reflection must lie on the surface of the object, this fact can be exploited to improve the segmentation masks. By identifying the largest region containing the reflection as the object, we derive a more accurate object mask without requiring specialized training data or model adaption. We evaluate our method on both synthetic and real world images and compare it against established and state\-of\-the\-art techniques including Otsu thresholding, YOLO, and SAM2. Compared to the best performing baseline SAM2, our approach achieves up to 26.7% improvement in IoU, 22.3% in DSC, and 9.7% in pixel accuracy. Qualitative evaluations on real world images further confirm the robustness and generalizability of the proposed approach.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2602.21777v1)
+
+---
+
+
+## DAGS\-SLAM: Dynamic\-Aware 3DGS SLAM via Spatiotemporal Motion Probability and Uncertainty\-Aware Scheduling / 
+
+发布日期：2026-02-25
+
+作者：Li Zhang
+
+摘要：Mobile robots and IoT devices demand real\-time localization and dense reconstruction under tight compute and energy budgets. While 3D Gaussian Splatting \(3DGS\) enables efficient dense SLAM, dynamic objects and occlusions still degrade tracking and mapping. Existing dynamic 3DGS\-SLAM often relies on heavy optical flow and per\-frame segmentation, which is costly for mobile deployment and brittle under challenging illumination. We present DAGS\-SLAM, a dynamic\-aware 3DGS\-SLAM system that maintains a spatiotemporal motion probability \(MP\) state per Gaussian and triggers semantics on demand via an uncertainty\-aware scheduler. DAGS\-SLAM fuses lightweight YOLO instance priors with geometric cues to estimate and temporally update MP, propagates MP to the front\-end for dynamic\-aware correspondence selection, and suppresses dynamic artifacts in the back\-end via MP\-guided optimization. Experiments on public dynamic RGB\-D benchmarks show improved reconstruction and robust tracking while sustaining real\-time throughput on a commodity GPU, demonstrating a practical speed\-accuracy tradeoff with reduced semantic invocations toward mobile deployment.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2602.21644v1)
+
+---
+
+
 ## EKF\-Based Depth Camera and Deep Learning Fusion for UAV\-Person Distance Estimation and Following in SAR Operations / 
 
 发布日期：2026-02-24
@@ -51,42 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2602.18967v1)
-
----
-
-
-## Depth\-Enhanced YOLO\-SAM2 Detection for Reliable Ballast Insufficiency Identification / 
-
-发布日期：2026-02-21
-
-作者：Shiyu Liu
-
-摘要：This paper presents a depth\-enhanced YOLO\-SAM2 framework for detecting ballast insufficiency in railway tracks using RGB\-D data. Although YOLOv8 provides reliable localization, the RGB\-only model shows limited safety performance, achieving high precision \(0.99\) but low recall \(0.49\) due to insufficient ballast, as it tends to over\-predict the sufficient class. To improve reliability, we incorporate depth\-based geometric analysis enabled by a sleeper\-aligned depth\-correction pipeline that compensates for RealSense spatial distortion using polynomial modeling, RANSAC, and temporal smoothing. SAM2 segmentation further refines region\-of\-interest masks, enabling accurate extraction of sleeper and ballast profiles for geometric classification.   Experiments on field\-collected top\-down RGB\-D data show that depth\-enhanced configurations substantially improve the detection of insufficient ballast. Depending on bounding\-box sampling \(AABB or RBB\) and geometric criteria, recall increases from 0.49 to as high as 0.80, and F1\-score improves from 0.66 to over 0.80. These results demonstrate that integrating depth correction with YOLO\-SAM2 yields a more robust and reliable approach for automated railway ballast inspection, particularly in visually ambiguous or safety\-critical scenarios.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2602.18961v1)
-
----
-
-
-## BloomNet: Exploring Single vs. Multiple Object Annotation for Flower Recognition Using YOLO Variants / 
-
-发布日期：2026-02-20
-
-作者：Safwat Nusrat
-
-摘要：Precise localization and recognition of flowers are crucial for advancing automated agriculture, particularly in plant phenotyping, crop estimation, and yield monitoring. This paper benchmarks several YOLO architectures such as YOLOv5s, YOLOv8n/s/m, and YOLOv12n for flower object detection under two annotation regimes: single\-image single\-bounding box \(SISBB\) and single\-image multiple\-bounding box \(SIMBB\). The FloralSix dataset, comprising 2,816 high\-resolution photos of six different flower species, is also introduced. It is annotated for both dense \(clustered\) and sparse \(isolated\) scenarios. The models were evaluated using Precision, Recall, and Mean Average Precision \(mAP\) at IoU thresholds of 0.5 \(mAP@0.5\) and 0.5\-0.95 \(mAP@0.5:0.95\). In SISBB, YOLOv8m \(SGD\) achieved the best results with Precision 0.956, Recall 0.951, mAP@0.5 0.978, and mAP@0.5:0.95 0.865, illustrating strong accuracy in detecting isolated flowers. With mAP@0.5 0.934 and mAP@0.5:0.95 0.752, YOLOv12n \(SGD\) outperformed the more complicated SIMBB scenario, proving robustness in dense, multi\-object detection. Results show how annotation density, IoU thresholds, and model size interact: recall\-optimized models perform better in crowded environments, whereas precision\-oriented models perform best in sparse scenarios. In both cases, the Stochastic Gradient Descent \(SGD\) optimizer consistently performed better than alternatives. These density\-sensitive sensors are helpful for non\-destructive crop analysis, growth tracking, robotic pollination, and stress evaluation.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2602.18585v1)
 
 ---
 
