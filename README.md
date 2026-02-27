@@ -1,6 +1,42 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## SPMamba\-YOLO: An Underwater Object Detection Network Based on Multi\-Scale Feature Enhancement and Global Context Modeling / 
+
+发布日期：2026-02-26
+
+作者：Guanghao Liao
+
+摘要：Underwater object detection is a critical yet challenging research problem owing to severe light attenuation, color distortion, background clutter, and the small scale of underwater targets. To address these challenges, we propose SPMamba\-YOLO, a novel underwater object detection network that integrates multi\-scale feature enhancement with global context modeling. Specifically, a Spatial Pyramid Pooling Enhanced Layer Aggregation Network \(SPPELAN\) module is introduced to strengthen multi\-scale feature aggregation and expand the receptive field, while a Pyramid Split Attention \(PSA\) mechanism enhances feature discrimination by emphasizing informative regions and suppressing background interference. In addition, a Mamba\-based state space modeling module is incorporated to efficiently capture long\-range dependencies and global contextual information, thereby improving detection robustness in complex underwater environments. Extensive experiments on the URPC2022 dataset demonstrate that SPMamba\-YOLO outperforms the YOLOv8n baseline by more than 4.9% in mAP@0.5, particularly for small and densely distributed underwater objects, while maintaining a favorable balance between detection accuracy and computational cost.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2602.22674v1)
+
+---
+
+
+## Don't let the information slip away / 
+
+发布日期：2026-02-26
+
+作者：Taozhe Li
+
+摘要：Real\-time object detection has advanced rapidly in recent years. The YOLO series of detectors is among the most well\-known CNN\-based object detection models and cannot be overlooked. The latest version, YOLOv26, was recently released, while YOLOv12 achieved state\-of\-the\-art \(SOTA\) performance with 55.2 mAP on the COCO val2017 dataset. Meanwhile, transformer\-based object detection models, also known as DEtection TRansformer \(DETR\), have demonstrated impressive performance. RT\-DETR is an outstanding model that outperformed the YOLO series in both speed and accuracy when it was released. Its successor, RT\-DETRv2, achieved 53.4 mAP on the COCO val2017 dataset. However, despite their remarkable performance, all these models let information to slip away. They primarily focus on the features of foreground objects while neglecting the contextual information provided by the background. We believe that background information can significantly aid object detection tasks. For example, cars are more likely to appear on roads rather than in offices, while wild animals are more likely to be found in forests or remote areas rather than on busy streets. To address this gap, we propose an object detection model called Association DETR, which achieves state\-of\-the\-art results compared to other object detection models on the COCO val2017 dataset.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2602.22595v1)
+
+---
+
+
 ## Towards Object Segmentation Mask Selection Using Specular Reflections / 
 
 发布日期：2026-02-25
@@ -51,42 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2602.20958v1)
-
----
-
-
-## A Text\-Guided Vision Model for Enhanced Recognition of Small Instances / 
-
-发布日期：2026-02-23
-
-作者：Hyun\-Ki Jung
-
-摘要：As drone\-based object detection technology continues to evolve, the demand is shifting from merely detecting objects to enabling users to accurately identify specific targets. For example, users can input particular targets as prompts to precisely detect desired objects. To address this need, an efficient text\-guided object detection model has been developed to enhance the detection of small objects. Specifically, an improved version of the existing YOLO\-World model is introduced. The proposed method replaces the C2f layer in the YOLOv8 backbone with a C3k2 layer, enabling more precise representation of local features, particularly for small objects or those with clearly defined boundaries. Additionally, the proposed architecture improves processing speed and efficiency through parallel processing optimization, while also contributing to a more lightweight model design. Comparative experiments on the VisDrone dataset show that the proposed model outperforms the original YOLO\-World model, with precision increasing from 40.6% to 41.6%, recall from 30.8% to 31%, F1 score from 35% to 35.5%, and mAP@0.5 from 30.4% to 30.7%, confirming its enhanced accuracy. Furthermore, the model demonstrates superior lightweight performance, with the parameter count reduced from 4 million to 3.8 million and FLOPs decreasing from 15.7 billion to 15.2 billion. These results indicate that the proposed approach provides a practical and effective solution for precise object detection in drone\-based applications.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2602.19503v1)
-
----
-
-
-## TactEx: An Explainable Multimodal Robotic Interaction Framework for Human\-Like Touch and Hardness Estimation / 
-
-发布日期：2026-02-21
-
-作者：Felix Verstraete
-
-摘要：Accurate perception of object hardness is essential for safe and dexterous contact\-rich robotic manipulation. Here, we present TactEx, an explainable multimodal robotic interaction framework that unifies vision, touch, and language for human\-like hardness estimation and interactive guidance. We evaluate TactEx on fruit\-ripeness assessment, a representative task that requires both tactile sensing and contextual understanding. The system fuses GelSight\-Mini tactile streams with RGB observations and language prompts. A ResNet50\+LSTM model estimates hardness from sequential tactile data, while a cross\-modal alignment module combines visual cues with guidance from a large language model \(LLM\). This explainable multimodal interface allows users to distinguish ripeness levels with statistically significant class separation \(p < 0.01 for all fruit pairs\). For touch placement, we compare YOLO with Grounded\-SAM \(GSAM\) and find GSAM to be more robust for fine\-grained segmentation and contact\-site selection. A lightweight LLM parses user instructions and produces grounded natural\-language explanations linked to the tactile outputs. In end\-to\-end evaluations, TactEx attains 90% task success on simple user queries and generalises to novel tasks without large\-scale tuning. These results highlight the promise of combining pretrained visual and tactile models with language grounding to advance explainable, human\-like touch perception and decision\-making in robotics.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2602.18967v1)
 
 ---
 
