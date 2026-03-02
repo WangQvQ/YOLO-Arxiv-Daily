@@ -1,6 +1,24 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Denoising\-Enhanced YOLO for Robust SAR Ship Detection / 
+
+发布日期：2026-02-27
+
+作者：Xiaojing Zhao
+
+摘要：With the rapid advancement of deep learning, synthetic aperture radar \(SAR\) imagery has become a key modality for ship detection. However, robust performance remains challenging in complex scenes, where clutter and speckle noise can induce false alarms and small targets are easily missed. To address these issues, we propose CPN\-YOLO, a high\-precision ship detection framework built upon YOLOv8 with three targeted improvements. First, we introduce a learnable large\-kernel denoising module for input pre\-processing, producing cleaner representations and more discriminative features across diverse ship types. Second, we design a feature extraction enhancement strategy based on the PPA attention mechanism to strengthen multi\-scale modeling and improve sensitivity to small ships. Third, we incorporate a Gaussian similarity loss derived from the normalized Wasserstein distance \(NWD\) to better measure similarity under complex bounding\-box distributions and improve generalization. Extensive experiments on HRSID and SSDD demonstrate the effectiveness of our method. On SSDD, CPN\-YOLO surpasses the YOLOv8 baseline, achieving 97.0% precision, 95.1% recall, and 98.9% mAP, and consistently outperforms other representative deep\-learning detectors in overall performance.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2602.23820v1)
+
+---
+
+
 ## SPMamba\-YOLO: An Underwater Object Detection Network Based on Multi\-Scale Feature Enhancement and Global Context Modeling / 
 
 发布日期：2026-02-26
@@ -32,7 +50,7 @@
 
 代码链接：摘要中未找到代码链接。
 
-论文链接：[阅读更多](http://arxiv.org/abs/2602.22595v1)
+论文链接：[阅读更多](http://arxiv.org/abs/2602.22595v2)
 
 ---
 
@@ -68,25 +86,7 @@
 
 代码链接：摘要中未找到代码链接。
 
-论文链接：[阅读更多](http://arxiv.org/abs/2602.21644v1)
-
----
-
-
-## EKF\-Based Depth Camera and Deep Learning Fusion for UAV\-Person Distance Estimation and Following in SAR Operations / 
-
-发布日期：2026-02-24
-
-作者：Luka Šiktar
-
-摘要：Search and rescue \(SAR\) operations require rapid responses to save lives or property. Unmanned Aerial Vehicles \(UAVs\) equipped with vision\-based systems support these missions through prior terrain investigation or real\-time assistance during the mission itself. Vision\-based UAV frameworks aid human search tasks by detecting and recognizing specific individuals, then tracking and following them while maintaining a safe distance. A key safety requirement for UAV following is the accurate estimation of the distance between camera and target object under real\-world conditions, achieved by fusing multiple image modalities. UAVs with deep learning\-based vision systems offer a new approach to the planning and execution of SAR operations. As part of the system for automatic people detection and face recognition using deep learning, in this paper we present the fusion of depth camera measurements and monocular camera\-to\-body distance estimation for robust tracking and following. Deep learning\-based filtering of depth camera data and estimation of camera\-to\-body distance from a monocular camera are achieved with YOLO\-pose, enabling real\-time fusion of depth information using the Extended Kalman Filter \(EKF\) algorithm. The proposed subsystem, designed for use in drones, estimates and measures the distance between the depth camera and the human body keypoints, to maintain the safe distance between the drone and the human target. Our system provides an accurate estimated distance, which has been validated against motion capture ground truth data. The system has been tested in real time indoors, where it reduces the average errors, root mean square error \(RMSE\) and standard deviations of distance estimation up to 15,3% in three tested scenarios.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2602.20958v1)
+论文链接：[阅读更多](http://arxiv.org/abs/2602.21644v2)
 
 ---
 
