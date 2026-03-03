@@ -1,6 +1,24 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Towards Khmer Scene Document Layout Detection / 
+
+发布日期：2026-02-28
+
+作者：Marry Kong
+
+摘要：While document layout analysis for Latin scripts has advanced significantly, driven by the advent of large multimodal models \(LMMs\), progress for the Khmer language remains constrained because of the scarcity of annotated training data. This gap is particularly acute for scene documents, where perspective distortions and complex backgrounds challenge traditional methods. Given the structural complexities of Khmer script, such as diacritics and multi\-layer character stacking, existing Latin\-based layout analysis models fail to accurately delineate semantic layout units, particularly for dense text regions \(e.g., list items\). In this paper, we present the first comprehensive study on Khmer scene document layout detection. We contribute a novel framework comprising three key elements: \(1\) a robust training and benchmarking dataset specifically for Khmer scene layouts; \(2\) an open\-source document augmentation tool capable of synthesizing realistic scene documents to scale training data; and \(3\) layout detection baselines utilizing YOLO\-based architectures with oriented bounding boxes \(OBB\) to handle geometric distortions. To foster further research in the Khmer document analysis and recognition \(DAR\) community, we release our models, code, and datasets in this gated repository \(in review\).
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2603.00707v1)
+
+---
+
+
 ## Denoising\-Enhanced YOLO for Robust SAR Ship Detection / 
 
 发布日期：2026-02-27
@@ -55,38 +73,20 @@
 ---
 
 
-## Towards Object Segmentation Mask Selection Using Specular Reflections / 
+## FujiView: Multimodal Late\-Fusion for Predicting Scenic Visibility / 
 
 发布日期：2026-02-25
 
-作者：Katja Kossira
+作者：Bryceton Bible
 
-摘要：Specular reflections pose a significant challenge for object segmentation, as their sharp intensity transitions often mislead both conventional algorithms and deep learning based methods. However, as the specular reflection must lie on the surface of the object, this fact can be exploited to improve the segmentation masks. By identifying the largest region containing the reflection as the object, we derive a more accurate object mask without requiring specialized training data or model adaption. We evaluate our method on both synthetic and real world images and compare it against established and state\-of\-the\-art techniques including Otsu thresholding, YOLO, and SAM2. Compared to the best performing baseline SAM2, our approach achieves up to 26.7% improvement in IoU, 22.3% in DSC, and 9.7% in pixel accuracy. Qualitative evaluations on real world images further confirm the robustness and generalizability of the proposed approach.
+摘要：Visibility of natural landmarks such as Mount Fuji is a defining factor in both tourism planning and visitor experience, yet it remains difficult to predict due to rapidly changing atmospheric conditions. We present FujiView, a multimodal learning framework and dataset for predicting scenic visibility by fusing webcam imagery with structured meteorological data. Our late\-fusion approach combines image\-derived class probabilities with numerical weather features to classify visibility into five categories. The dataset currently comprises over 100,000 webcam images paired with concurrent and forecasted weather conditions from more than 40 cameras around Mount Fuji, and continues to expand; it will be released to support further research in environmental forecasting. Experiments show that YOLO\-based vision features dominate short\-term horizons such as "nowcasting" and "samedaycasting", while weather\-driven forecasts increasingly take over as the primary predictive signal beyond $\+1$d. Late fusion consistently yields the highest overall accuracy, achieving ACC of approx 0.89 for same\-day prediction and up to 84% for next\-day forecasts. These results position Scenic Visibility Forecasting \(SVF\) as a new benchmark task for multimodal learning.
 
 中文摘要：
 
 
 代码链接：摘要中未找到代码链接。
 
-论文链接：[阅读更多](http://arxiv.org/abs/2602.21777v1)
-
----
-
-
-## DAGS\-SLAM: Dynamic\-Aware 3DGS SLAM via Spatiotemporal Motion Probability and Uncertainty\-Aware Scheduling / 
-
-发布日期：2026-02-25
-
-作者：Li Zhang
-
-摘要：Mobile robots and IoT devices demand real\-time localization and dense reconstruction under tight compute and energy budgets. While 3D Gaussian Splatting \(3DGS\) enables efficient dense SLAM, dynamic objects and occlusions still degrade tracking and mapping. Existing dynamic 3DGS\-SLAM often relies on heavy optical flow and per\-frame segmentation, which is costly for mobile deployment and brittle under challenging illumination. We present DAGS\-SLAM, a dynamic\-aware 3DGS\-SLAM system that maintains a spatiotemporal motion probability \(MP\) state per Gaussian and triggers semantics on demand via an uncertainty\-aware scheduler. DAGS\-SLAM fuses lightweight YOLO instance priors with geometric cues to estimate and temporally update MP, propagates MP to the front\-end for dynamic\-aware correspondence selection, and suppresses dynamic artifacts in the back\-end via MP\-guided optimization. Experiments on public dynamic RGB\-D benchmarks show improved reconstruction and robust tracking while sustaining real\-time throughput on a commodity GPU, demonstrating a practical speed\-accuracy tradeoff with reduced semantic invocations toward mobile deployment.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2602.21644v2)
+论文链接：[阅读更多](http://arxiv.org/abs/2603.00157v1)
 
 ---
 
