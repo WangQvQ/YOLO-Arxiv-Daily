@@ -1,6 +1,24 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## SEP\-YOLO: Fourier\-Domain Feature Representation for Transparent Object Instance Segmentation / 
+
+发布日期：2026-03-03
+
+作者：Fengming Zhang
+
+摘要：Transparent object instance segmentation presents significant challenges in computer vision, due to the inherent properties of transparent objects, including boundary blur, low contrast, and high dependence on background context. Existing methods often fail as they depend on strong appearance cues and clear boundaries. To address these limitations, we propose SEP\-YOLO, a novel framework that integrates a dual\-domain collaborative mechanism for transparent object instance segmentation. Our method incorporates a Frequency Domain Detail Enhancement Module, which separates and enhances weak highfrequency boundary components via learnable complex weights. We further design a multi\-scale spatial refinement stream, which consists of a Content\-Aware Alignment Neck and a Multi\-scale Gated Refinement Block, to ensure precise feature alignment and boundary localization in deep semantic features. We also provide high\-quality instance\-level annotations for the Trans10K dataset, filling the critical data gap in transparent object instance segmentation. Extensive experiments on the Trans10K and GVD datasets show that SEP\-YOLO achieves state\-of\-the\-art \(SOTA\) performance.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2603.02648v1)
+
+---
+
+
 ## Towards Khmer Scene Document Layout Detection / 
 
 发布日期：2026-02-28
@@ -69,24 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2602.22595v2)
-
----
-
-
-## FujiView: Multimodal Late\-Fusion for Predicting Scenic Visibility / 
-
-发布日期：2026-02-25
-
-作者：Bryceton Bible
-
-摘要：Visibility of natural landmarks such as Mount Fuji is a defining factor in both tourism planning and visitor experience, yet it remains difficult to predict due to rapidly changing atmospheric conditions. We present FujiView, a multimodal learning framework and dataset for predicting scenic visibility by fusing webcam imagery with structured meteorological data. Our late\-fusion approach combines image\-derived class probabilities with numerical weather features to classify visibility into five categories. The dataset currently comprises over 100,000 webcam images paired with concurrent and forecasted weather conditions from more than 40 cameras around Mount Fuji, and continues to expand; it will be released to support further research in environmental forecasting. Experiments show that YOLO\-based vision features dominate short\-term horizons such as "nowcasting" and "samedaycasting", while weather\-driven forecasts increasingly take over as the primary predictive signal beyond $\+1$d. Late fusion consistently yields the highest overall accuracy, achieving ACC of approx 0.89 for same\-day prediction and up to 84% for next\-day forecasts. These results position Scenic Visibility Forecasting \(SVF\) as a new benchmark task for multimodal learning.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2603.00157v1)
 
 ---
 
