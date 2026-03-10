@@ -1,92 +1,92 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
-## A 360\-degree Multi\-camera System for Blue Emergency Light Detection Using Color Attention RT\-DETR and the ABLDataset / 
+## ER\-Pose: Rethinking Keypoint\-Driven Representation Learning for Real\-Time Human Pose Estimation / 
 
-发布日期：2026-03-05
+发布日期：2026-03-09
 
-作者：Francisco Vacalebri\-Lloret
+作者：Nanjun Li
 
-摘要：This study presents an advanced system for detecting blue lights on emergency vehicles, developed using ABLDataset, a curated dataset that includes images of European emergency vehicles under various climatic and geographic conditions. The system employs a configuration of four fisheye cameras, each with a 180\-degree horizontal field of view, mounted on the sides of the vehicle. A calibration process enables the azimuthal localization of the detections. Additionally, a comparative analysis of major deep neural network algorithms was conducted, including YOLO \(v5, v8, and v10\), RetinaNet, Faster R\-CNN, and RT\-DETR. RT\-DETR was selected as the base model and enhanced through the incorporation of a color attention block, achieving an accuracy of 94.7 percent and a recall of 94.1 percent on the test set, with field test detections reaching up to 70 meters. Furthermore, the system estimates the approach angle of the emergency vehicle relative to the center of the car using geometric transformations. Designed for integration into a multimodal system that combines visual and acoustic data, this system has demonstrated high efficiency, offering a promising approach to enhancing Advanced Driver Assistance Systems \(ADAS\) and road safety.
+摘要：Single\-stage multi\-person pose estimation aims to jointly perform human localization and keypoint prediction within a unified framework, offering advantages in inference efficiency and architectural simplicity. Consequently, multi\-scale real\-time detection architectures, such as YOLO\-like models, are widely adopted for real\-time pose estimation. However, these approaches typically inherit a box\-driven modeling paradigm from object detection, in which pose estimation is implicitly constrained by bounding\-box supervision during training. This formulation introduces biases in sample assignment and feature representation, resulting in task misalignment and ultimately limiting pose estimation accuracy. In this work, we revisit box\-driven single\-stage pose estimation from a keypoint\-driven perspective and identify semantic conflicts among parallel objectives as a key source of performance degradation. To address this issue, we propose a keypoint\-driven learning paradigm that elevates pose estimation to a primary prediction objective. Specifically, we remove bounding\-box prediction and redesign the prediction head to better accommodate the high\-dimensional structured representations for pose estimation. We further introduce a keypoint\-driven dynamic sample assignment strategy to align training objectives with pose evaluation metrics, enabling dense supervision during training and efficient NMS\-free inference. In addition, we propose a smooth OKS\-based loss function to stabilize optimization in regression\-based pose estimation. Based on these designs, we develop a single\-stage multi\-person pose estimation framework, termed ER\-Pose. On MS COCO and CrowdPose, ER\-Pose\-n achieves AP improvements of 3.2/6.7 without pre\-training and 7.4/4.9 with pre\-training respectively compared with the baseline YOLO\-Pose. These improvements are achieved with fewer parameters and higher inference efficiency.
 
 中文摘要：
 
 
 代码链接：摘要中未找到代码链接。
 
-论文链接：[阅读更多](http://arxiv.org/abs/2603.05058v1)
+论文链接：[阅读更多](http://arxiv.org/abs/2603.08681v1)
 
 ---
 
 
-## Yolo\-Key\-6D: Single Stage Monocular 6D Pose Estimation with Keypoint Enhancements / 
+## Real\-Time Drone Detection in Event Cameras via Per\-Pixel Frequency Analysis / 
 
-发布日期：2026-03-04
+发布日期：2026-03-09
 
-作者：Kemal Alperen Çetiner
+作者：Michael Bezick
 
-摘要：Estimating the 6D pose of objects from a single RGB image is a critical task for robotics and extended reality applications. However, state\-of\-the\-art multi stage methods often suffer from high latency, making them unsuitable for real time use. In this paper, we present Yolo\-Key\-6D, a novel single stage, end\-to\-end framework for monocular 6D pose estimation designed for both speed and accuracy. Our approach enhances a YOLO based architecture by integrating an auxiliary head that regresses the 2D projections of an object's 3D bounding box corners. This keypoint detection task significantly improves the network's understanding of 3D geometry. For stable end\-to\-end training, we directly regress rotation using a continuous 9D representation projected to SO\(3\) via singular value decomposition. On the LINEMOD and LINEMOD\-Occluded benchmarks, YOLO\-Key\-6D achieves competitive accuracy scores of 96.24% and 69.41%, respectively, with the ADD\(\-S\) 0.1d metric, while proving itself to operate in real time. Our results demonstrate that a carefully designed single stage method can provide a practical and effective balance of performance and efficiency for real world deployment.
+摘要：Detecting fast\-moving objects, such as unmanned aerial vehicle \(UAV\), from event camera data is challenging due to the sparse, asynchronous nature of the input. Traditional Discrete Fourier Transforms \(DFT\) are effective at identifying periodic signals, such as spinning rotors, but they assume uniformly sampled data, which event cameras do not provide. We propose a novel per\-pixel temporal analysis framework using the Non\-uniform Discrete Fourier Transform \(NDFT\), which we call Drone Detection via Harmonic Fingerprinting \(DDHF\). Our method uses purely analytical techniques that identify the frequency signature of drone rotors, as characterized by frequency combs in their power spectra, enabling a tunable and generalizable algorithm that achieves accurate real\-time localization of UAV. We compare against a YOLO detector under equivalent conditions, demonstrating improvement in accuracy and latency across a difficult array of drone speeds, distances, and scenarios. DDHF achieves an average localization F1 score of 90.89% and average latency of 2.39ms per frame, while YOLO achieves an F1 score of 66.74% and requires 12.40ms per frame. Through utilization of purely analytic techniques, DDHF is quickly tuned on small data, easily interpretable, and achieves competitive accuracies and latencies to deep learning alternatives.
 
 中文摘要：
 
 
 代码链接：摘要中未找到代码链接。
 
-论文链接：[阅读更多](http://arxiv.org/abs/2603.03879v1)
+论文链接：[阅读更多](http://arxiv.org/abs/2603.08386v1)
 
 ---
 
 
-## Tracking Feral Horses in Aerial Video Using Oriented Bounding Boxes / 
+## Evaluating Synthetic Data for Baggage Trolley Detection in Airport Logistics / 
 
-发布日期：2026-03-04
+发布日期：2026-03-08
 
-作者：Saeko Takizawa
+作者：Abdeldjalil Taibi
 
-摘要：The social structures of group\-living animals such as feral horses are diverse and remain insufficiently understood, even within a single species. To investigate group dynamics, aerial videos are often utilized to track individuals and analyze their movement trajectories, which are essential for evaluating inter\-individual interactions and comparing social behaviors. Accurate individual tracking is therefore crucial. In multi\-animal tracking, axis\-aligned bounding boxes \(bboxes\) are widely used; however, for aerial top\-view footage of entire groups, their performance degrades due to complex backgrounds, small target sizes, high animal density, and varying body orientations. To address this issue, we employ oriented bounding boxes \(OBBs\), which include rotation angles and reduce unnecessary background. Nevertheless, current OBB detectors such as YOLO\-OBB restrict angles within a 180$^\{circ\}$ range, making it impossible to distinguish head from tail and often causing sudden 180$^\{circ\}$ flips across frames, which severely disrupts continuous tracking. To overcome this limitation, we propose a head\-orientation estimation method that crops OBB\-centered patches, applies three detectors \(head, tail, and head\-tail\), and determines the final label through IoU\-based majority voting. Experiments using 299 test images show that our method achieves 99.3% accuracy, outperforming individual models, demonstrating its effectiveness for robust OBB\-based tracking.
+摘要：Efficient luggage trolley management is critical for reducing congestion and ensuring asset availability in modern airports. Automated detection systems face two main challenges. First, strict security and privacy regulations limit large\-scale data collection. Second, existing public datasets lack the diversity, scale, and annotation quality needed to handle dense, overlapping trolley arrangements typical of real\-world operations.   To address these limitations, we introduce a synthetic data generation pipeline based on a high\-fidelity Digital Twin of Algiers International Airport using NVIDIA Omniverse. The pipeline produces richly annotated data with oriented bounding boxes, capturing complex trolley formations, including tightly nested chains. We evaluate YOLO\-OBB using five training strategies: real\-only, synthetic\-only, linear probing, full fine\-tuning, and mixed training. This allows us to assess how synthetic data can complement limited real\-world annotations.   Our results show that mixed training with synthetic data and only 40 percent of real annotations matches or exceeds the full real\-data baseline, achieving 0.94 mAP@50 and 0.77 mAP@50\-95, while reducing annotation effort by 25 to 35 percent. Multi\-seed experiments confirm strong reproducibility with a standard deviation below 0.01 on mAP@50, demonstrating the practical effectiveness of synthetic data for automated trolley detection.
 
 中文摘要：
 
 
 代码链接：摘要中未找到代码链接。
 
-论文链接：[阅读更多](http://arxiv.org/abs/2603.03604v1)
+论文链接：[阅读更多](http://arxiv.org/abs/2603.07645v1)
 
 ---
 
 
-## SEP\-YOLO: Fourier\-Domain Feature Representation for Transparent Object Instance Segmentation / 
+## A Lightweight Digital\-Twin\-Based Framework for Edge\-Assisted Vehicle Tracking and Collision Prediction / 
 
-发布日期：2026-03-03
+发布日期：2026-03-07
 
-作者：Fengming Zhang
+作者：Murat Arda Onsu
 
-摘要：Transparent object instance segmentation presents significant challenges in computer vision, due to the inherent properties of transparent objects, including boundary blur, low contrast, and high dependence on background context. Existing methods often fail as they depend on strong appearance cues and clear boundaries. To address these limitations, we propose SEP\-YOLO, a novel framework that integrates a dual\-domain collaborative mechanism for transparent object instance segmentation. Our method incorporates a Frequency Domain Detail Enhancement Module, which separates and enhances weak highfrequency boundary components via learnable complex weights. We further design a multi\-scale spatial refinement stream, which consists of a Content\-Aware Alignment Neck and a Multi\-scale Gated Refinement Block, to ensure precise feature alignment and boundary localization in deep semantic features. We also provide high\-quality instance\-level annotations for the Trans10K dataset, filling the critical data gap in transparent object instance segmentation. Extensive experiments on the Trans10K and GVD datasets show that SEP\-YOLO achieves state\-of\-the\-art \(SOTA\) performance.
+摘要：Vehicle tracking, motion estimation, and collision prediction are fundamental components of traffic safety and management in Intelligent Transportation Systems \(ITS\). Many recent approaches rely on computationally intensive prediction models, which limits their practical deployment on resource\-constrained edge devices. This paper presents a lightweight digital\-twin\-based framework for vehicle tracking and spatiotemporal collision prediction that relies solely on object detection, without requiring complex trajectory prediction networks. The framework is implemented and evaluated in Quanser Interactive Labs \(QLabs\), a high\-fidelity digital twin of an urban traffic environment that enables controlled and repeatable scenario generation. A YOLO\-based detector is deployed on simulated edge cameras to localize vehicles and extract frame\-level centroid trajectories. Offline path maps are constructed from multiple traversals and indexed using K\-D trees to support efficient online association between detected vehicles and road segments. During runtime, consistent vehicle identifiers are maintained, vehicle speed and direction are estimated from the temporal evolution of path indices, and future positions are predicted accordingly. Potential collisions are identified by analyzing both spatial proximity and temporal overlap of predicted future trajectories. Our experimental results across diverse simulated urban scenarios show that the proposed framework predicts approximately 88% of collision events prior to occurrence while maintaining low computational overhead suitable for edge deployment. Rather than introducing a computationally intensive prediction model, this work introduces a lightweight digital\-twin\-based solution for vehicle tracking and collision prediction, tailored for real\-time edge deployment in ITS.
 
 中文摘要：
 
 
 代码链接：摘要中未找到代码链接。
 
-论文链接：[阅读更多](http://arxiv.org/abs/2603.02648v1)
+论文链接：[阅读更多](http://arxiv.org/abs/2603.07338v1)
 
 ---
 
 
-## Towards Khmer Scene Document Layout Detection / 
+## OV\-DEIM: Real\-time DETR\-Style Open\-Vocabulary Object Detection with GridSynthetic Augmentation / 
 
-发布日期：2026-02-28
+发布日期：2026-03-07
 
-作者：Marry Kong
+作者：Leilei Wang
 
-摘要：While document layout analysis for Latin scripts has advanced significantly, driven by the advent of large multimodal models \(LMMs\), progress for the Khmer language remains constrained because of the scarcity of annotated training data. This gap is particularly acute for scene documents, where perspective distortions and complex backgrounds challenge traditional methods. Given the structural complexities of Khmer script, such as diacritics and multi\-layer character stacking, existing Latin\-based layout analysis models fail to accurately delineate semantic layout units, particularly for dense text regions \(e.g., list items\). In this paper, we present the first comprehensive study on Khmer scene document layout detection. We contribute a novel framework comprising three key elements: \(1\) a robust training and benchmarking dataset specifically for Khmer scene layouts; \(2\) an open\-source document augmentation tool capable of synthesizing realistic scene documents to scale training data; and \(3\) layout detection baselines utilizing YOLO\-based architectures with oriented bounding boxes \(OBB\) to handle geometric distortions. To foster further research in the Khmer document analysis and recognition \(DAR\) community, we release our models, code, and datasets in this gated repository \(in review\).
+摘要：Real\-time open\-vocabulary object detection \(OVOD\) is essential for practical deployment in dynamic environments, where models must recognize a large and evolving set of categories under strict latency constraints. Current real\-time OVOD methods are predominantly built upon YOLO\-style models. In contrast, real\-time DETR\-based methods still lag behind in terms of inference latency, model lightweightness, and overall performance. In this work, we present OV\-DEIM, an end\-to\-end DETR\-style open\-vocabulary detector built upon the recent DEIMv2 framework with integrated vision\-language modeling for efficient open\-vocabulary inference. We further introduce a simple query supplement strategy that improves Fixed AP without compromising inference speed. Beyond architectural improvements, we introduce GridSynthetic, a simple yet effective data augmentation strategy that composes multiple training samples into structured image grids. By exposing the model to richer object co\-occurrence patterns and spatial layouts within a single forward pass, GridSynthetic mitigates the negative impact of noisy localization signals on the classification loss and improves semantic discrimination, particularly for rare categories. Extensive experiments demonstrate that OV\-DEIM achieves state\-of\-the\-art performance on open\-vocabulary detection benchmarks, delivering superior efficiency and notable improvements on challenging rare categories. Code and pretrained models are available at https://github.com/wleilei/OV\-DEIM.
 
 中文摘要：
 
 
-代码链接：摘要中未找到代码链接。
+代码链接：https://github.com/wleilei/OV-DEIM.
 
-论文链接：[阅读更多](http://arxiv.org/abs/2603.00707v1)
+论文链接：[阅读更多](http://arxiv.org/abs/2603.07022v1)
 
 ---
 
