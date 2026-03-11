@@ -1,6 +1,42 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## The Patrologia Graeca Corpus: OCR, Annotation, and Open Release of Noisy Nineteenth\-Century Polytonic Greek Editions / 
+
+发布日期：2026-03-10
+
+作者：Chahan Vidal\-Gorène
+
+摘要：We present the Patrologia Graeca Corpus, the first large\-scale open OCR and linguistic resource for nineteenthcentury editions of Ancient Greek. The collection covers the remaining undigitized volumes of the Patrologia Graeca \(PG\), printed in complex bilingual \(Greek\-Latin\) layouts and characterized by highly degraded polytonic Greek typography. Through a dedicated pipeline combining YOLO\-based layout detection and CRNN\-based text recognition, we achieve a character error rate \(CER\) of 1.05% and a word error rate \(WER\) of 4.69%, largely outperforming existing OCR systems for polytonic Greek. The resulting corpus contains around six million lemmatized and part\-of\-speech tagged tokens, aligned with full OCR and layout annotations. Beyond its philological value, this corpus establishes a new benchmark for OCR on noisy polytonic Greek and provides training material for future models, including LLMs.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2603.09470v1)
+
+---
+
+
+## YOLO\-NAS\-Bench: A Surrogate Benchmark with Self\-Evolving Predictors for YOLO Architecture Search / 
+
+发布日期：2026-03-10
+
+作者：Zhe Li
+
+摘要：Neural Architecture Search \(NAS\) for object detection is severely bottlenecked by high evaluation cost, as fully training each candidate YOLO architecture on COCO demands days of GPU time. Meanwhile, existing NAS benchmarks largely target image classification, leaving the detection community without a comparable benchmark for NAS evaluation. To address this gap, we introduce YOLO\-NAS\-Bench, the first surrogate benchmark tailored to YOLO\-style detectors. YOLO\-NAS\-Bench defines a search space spanning channel width, block depth, and operator type across both backbone and neck, covering the core modules of YOLOv8 through YOLO12. We sample 1,000 architectures via random, stratified, and Latin Hypercube strategies, train them on COCO\-mini, and build a LightGBM surrogate predictor. To sharpen the predictor in the high\-performance regime most relevant to NAS, we propose a Self\-Evolving Mechanism that progressively aligns the predictor's training distribution with the high\-performance frontier, by using the predictor itself to discover and evaluate informative architectures in each iteration. This method grows the pool to 1,500 architectures and raises the ensemble predictor's R2 from 0.770 to 0.815 and Sparse Kendall Tau from 0.694 to 0.752, demonstrating strong predictive accuracy and ranking consistency. Using the final predictor as the fitness function for evolutionary search, we discover architectures that surpass all official YOLOv8\-YOLO12 baselines at comparable latency on COCO\-mini, confirming the predictor's discriminative power for top\-performing detection architectures.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2603.09405v1)
+
+---
+
+
 ## ER\-Pose: Rethinking Keypoint\-Driven Representation Learning for Real\-Time Human Pose Estimation / 
 
 发布日期：2026-03-09
@@ -51,42 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2603.07645v1)
-
----
-
-
-## A Lightweight Digital\-Twin\-Based Framework for Edge\-Assisted Vehicle Tracking and Collision Prediction / 
-
-发布日期：2026-03-07
-
-作者：Murat Arda Onsu
-
-摘要：Vehicle tracking, motion estimation, and collision prediction are fundamental components of traffic safety and management in Intelligent Transportation Systems \(ITS\). Many recent approaches rely on computationally intensive prediction models, which limits their practical deployment on resource\-constrained edge devices. This paper presents a lightweight digital\-twin\-based framework for vehicle tracking and spatiotemporal collision prediction that relies solely on object detection, without requiring complex trajectory prediction networks. The framework is implemented and evaluated in Quanser Interactive Labs \(QLabs\), a high\-fidelity digital twin of an urban traffic environment that enables controlled and repeatable scenario generation. A YOLO\-based detector is deployed on simulated edge cameras to localize vehicles and extract frame\-level centroid trajectories. Offline path maps are constructed from multiple traversals and indexed using K\-D trees to support efficient online association between detected vehicles and road segments. During runtime, consistent vehicle identifiers are maintained, vehicle speed and direction are estimated from the temporal evolution of path indices, and future positions are predicted accordingly. Potential collisions are identified by analyzing both spatial proximity and temporal overlap of predicted future trajectories. Our experimental results across diverse simulated urban scenarios show that the proposed framework predicts approximately 88% of collision events prior to occurrence while maintaining low computational overhead suitable for edge deployment. Rather than introducing a computationally intensive prediction model, this work introduces a lightweight digital\-twin\-based solution for vehicle tracking and collision prediction, tailored for real\-time edge deployment in ITS.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2603.07338v1)
-
----
-
-
-## OV\-DEIM: Real\-time DETR\-Style Open\-Vocabulary Object Detection with GridSynthetic Augmentation / 
-
-发布日期：2026-03-07
-
-作者：Leilei Wang
-
-摘要：Real\-time open\-vocabulary object detection \(OVOD\) is essential for practical deployment in dynamic environments, where models must recognize a large and evolving set of categories under strict latency constraints. Current real\-time OVOD methods are predominantly built upon YOLO\-style models. In contrast, real\-time DETR\-based methods still lag behind in terms of inference latency, model lightweightness, and overall performance. In this work, we present OV\-DEIM, an end\-to\-end DETR\-style open\-vocabulary detector built upon the recent DEIMv2 framework with integrated vision\-language modeling for efficient open\-vocabulary inference. We further introduce a simple query supplement strategy that improves Fixed AP without compromising inference speed. Beyond architectural improvements, we introduce GridSynthetic, a simple yet effective data augmentation strategy that composes multiple training samples into structured image grids. By exposing the model to richer object co\-occurrence patterns and spatial layouts within a single forward pass, GridSynthetic mitigates the negative impact of noisy localization signals on the classification loss and improves semantic discrimination, particularly for rare categories. Extensive experiments demonstrate that OV\-DEIM achieves state\-of\-the\-art performance on open\-vocabulary detection benchmarks, delivering superior efficiency and notable improvements on challenging rare categories. Code and pretrained models are available at https://github.com/wleilei/OV\-DEIM.
-
-中文摘要：
-
-
-代码链接：https://github.com/wleilei/OV-DEIM.
-
-论文链接：[阅读更多](http://arxiv.org/abs/2603.07022v1)
 
 ---
 
