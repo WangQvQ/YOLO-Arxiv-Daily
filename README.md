@@ -1,92 +1,92 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
-## The Patrologia Graeca Corpus: OCR, Annotation, and Open Release of Noisy Nineteenth\-Century Polytonic Greek Editions / 
+## COTONET: A custom cotton detection algorithm based on YOLO11 for stage of growth cotton boll detection / 
+
+发布日期：2026-03-12
+
+作者：Guillem González
+
+摘要：Cotton harvesting is a critical phase where cotton capsules are physically manipulated and can lead to fibre degradation. To maintain the highest quality, harvesting methods must emulate delicate manual grasping, to preserve cotton's intrinsic properties. Automating this process requires systems capable of recognising cotton capsules across various phenological stages. To address this challenge, we propose COTONET, an enhanced custom YOLO11 model tailored with attention mechanisms to improve the detection of difficult instances. The architecture incorporates gradients in non\-learnable operations to enhance shape and feature extraction. Key architectural modifications include: the replacement of convolutional blocks with Squeeze\-and\-Exitation blocks, a redesigned backbone integrating attention mechanisms, and the substitution of standard upsampling operations for Content Aware Reassembly of Features \(CARAFE\). Additionally, we integrate Simple Attention Modules \(SimAM\) for primary feature aggregation and Parallel Hybrid Attention Mechanisms \(PHAM\) for channel\-wise, spatial\-wise and coordinate\-wise attention in the downward neck path. This configuration offers increased flexibility and robustness for interpreting the complexity of cotton crop growth. COTONET aligns with small\-to\-medium YOLO models utilizing 7.6M parameters and 27.8 GFLOPS, making it suitable for low\-resource edge computing and mobile robotics. COTONET outperforms the standard YOLO baselines, achieving a mAP50 of 81.1% and a mAP50\-95 of 60.6%.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2603.11717v1)
+
+---
+
+
+## TornadoNet: Real\-Time Building Damage Detection with Ordinal Supervision / 
+
+发布日期：2026-03-12
+
+作者：Robinson Umeike
+
+摘要：We present TornadoNet, a comprehensive benchmark for automated street\-level building damage assessment evaluating how modern real\-time object detection architectures and ordinal\-aware supervision strategies perform under realistic post\-disaster conditions. TornadoNet provides the first controlled benchmark demonstrating how architectural design and loss formulation jointly influence multi\-level damage detection from street\-view imagery, delivering methodological insights and deployable tools for disaster response. Using 3,333 high\-resolution geotagged images and 8,890 annotated building instances from the 2021 Midwest tornado outbreak, we systematically compare CNN\-based detectors from the YOLO family against transformer\-based models \(RT\-DETR\) for multi\-level damage detection. Models are trained under standardized protocols using a five\-level damage classification framework based on IN\-CORE damage states, validated through expert cross\-annotation. Baseline experiments reveal complementary architectural strengths. CNN\-based YOLO models achieve highest detection accuracy and throughput, with larger variants reaching 46.05% mAP@0.5 at 66\-276 FPS on A100 GPUs. Transformer\-based RT\-DETR models exhibit stronger ordinal consistency, achieving 88.13% Ordinal Top\-1 Accuracy and MAOE of 0.65, indicating more reliable severity grading despite lower baseline mAP. To align supervision with the ordered nature of damage severity, we introduce soft ordinal classification targets and evaluate explicit ordinal\-distance penalties. RT\-DETR trained with calibrated ordinal supervision achieves 44.70% mAP@0.5, a 4.8 percentage\-point improvement, with gains in ordinal metrics \(91.15% Ordinal Top\-1 Accuracy, MAOE = 0.56\). These findings establish that ordinal\-aware supervision improves damage severity estimation when aligned with detector architecture. Model & Data: https://github.com/crumeike/TornadoNet
+
+中文摘要：
+
+
+代码链接：https://github.com/crumeike/TornadoNet
+
+论文链接：[阅读更多](http://arxiv.org/abs/2603.11557v1)
+
+---
+
+
+## GroundCount: Grounding Vision\-Language Models with Object Detection for Mitigating Counting Hallucinations / 
+
+发布日期：2026-03-11
+
+作者：Boyuan Chen
+
+摘要：Vision Language Models \(VLMs\) exhibit persistent hallucinations in counting tasks, with accuracy substantially lower than other visual reasoning tasks \(excluding sentiment\). This phenomenon persists even in state\-of\-the\-art reasoning\-capable VLMs. Conversely, CNN\-based object detection models \(ODMs\) such as YOLO excel at spatial localization and instance counting with minimal computational overhead. We propose GroundCount, a framework that augments VLMs with explicit spatial grounding from ODMs to mitigate counting hallucinations. In the best case, our prompt\-based augmentation strategy achieves 81.3% counting accuracy on the best\-performing model \(Ovis2.5\-2B\) \- a 6.6pp improvement \- while reducing inference time by 22% through elimination of hallucination\-driven reasoning loops for stronger models. We conduct comprehensive ablation studies demonstrating that positional encoding is a critical component, being beneficial for stronger models but detrimental for weaker ones. Confidence scores, by contrast, introduce noise for most architectures and their removal improves performance in four of five evaluated models. We further evaluate feature\-level fusion architectures, finding that explicit symbolic grounding via structured prompts outperforms implicit feature fusion despite sophisticated cross\-attention mechanisms. Our approach yields consistent improvements across four of five evaluated VLM architectures \(6.2\-\-7.5pp\), with one architecture exhibiting degraded performance due to incompatibility between its iterative reflection mechanisms and structured prompts. These results suggest that counting failures stem from fundamental spatial\-semantic integration limitations rather than architecture\-specific deficiencies, while highlighting the importance of architectural compatibility in augmentation strategies.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2603.10978v1)
+
+---
+
+
+## Phase\-Interface Instance Segmentation as a Visual Sensor for Laboratory Process Monitoring / 
+
+发布日期：2026-03-11
+
+作者：Mingyue Li
+
+摘要：Reliable visual monitoring of chemical experiments remains challenging in transparent glassware, where weak phase boundaries and optical artifacts degrade conventional segmentation. We formulate laboratory phenomena as the time evolution of phase interfaces and introduce the Chemical Transparent Glasses dataset 2.0 \(CTG 2.0\), a vessel\-aware benchmark with 3,668 images, 23 glassware categories, and five multiphase interface types for phase\-interface instance segmentation. Building on YOLO11m\-seg, we propose LGA\-RCM\-YOLO, which combines Local\-Global Attention \(LGA\) for robust semantic representation and a Rectangular Self\-Calibration Module \(RCM\) for boundary refinement of thin, elongated interfaces. On CTG 2.0, the proposed model achieves 84.4% AP@0.5 and 58.43% AP@0.5\-0.95, improving over the YOLO11m baseline by 6.42 and 8.75 AP points, respectively, while maintaining near real\-time inference \(13.67 FPS, RTX 3060\). An auxiliary color\-attribute head further labels liquid instances as colored or colorless with 98.71% precision and 98.32% recall. Finally, we demonstrate continuous process monitoring in separatory\-funnel phase separation and crystallization, showing that phase\-interface instance segmentation can serve as a practical visual sensor for laboratory automation.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2603.10782v1)
+
+---
+
+
+## A Robust Deep Learning Framework for Bangla License Plate Recognition Using YOLO and Vision\-Language OCR / 
 
 发布日期：2026-03-10
 
-作者：Chahan Vidal\-Gorène
+作者：Nayeb Hasin
 
-摘要：We present the Patrologia Graeca Corpus, the first large\-scale open OCR and linguistic resource for nineteenthcentury editions of Ancient Greek. The collection covers the remaining undigitized volumes of the Patrologia Graeca \(PG\), printed in complex bilingual \(Greek\-Latin\) layouts and characterized by highly degraded polytonic Greek typography. Through a dedicated pipeline combining YOLO\-based layout detection and CRNN\-based text recognition, we achieve a character error rate \(CER\) of 1.05% and a word error rate \(WER\) of 4.69%, largely outperforming existing OCR systems for polytonic Greek. The resulting corpus contains around six million lemmatized and part\-of\-speech tagged tokens, aligned with full OCR and layout annotations. Beyond its philological value, this corpus establishes a new benchmark for OCR on noisy polytonic Greek and provides training material for future models, including LLMs.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2603.09470v1)
-
----
-
-
-## YOLO\-NAS\-Bench: A Surrogate Benchmark with Self\-Evolving Predictors for YOLO Architecture Search / 
-
-发布日期：2026-03-10
-
-作者：Zhe Li
-
-摘要：Neural Architecture Search \(NAS\) for object detection is severely bottlenecked by high evaluation cost, as fully training each candidate YOLO architecture on COCO demands days of GPU time. Meanwhile, existing NAS benchmarks largely target image classification, leaving the detection community without a comparable benchmark for NAS evaluation. To address this gap, we introduce YOLO\-NAS\-Bench, the first surrogate benchmark tailored to YOLO\-style detectors. YOLO\-NAS\-Bench defines a search space spanning channel width, block depth, and operator type across both backbone and neck, covering the core modules of YOLOv8 through YOLO12. We sample 1,000 architectures via random, stratified, and Latin Hypercube strategies, train them on COCO\-mini, and build a LightGBM surrogate predictor. To sharpen the predictor in the high\-performance regime most relevant to NAS, we propose a Self\-Evolving Mechanism that progressively aligns the predictor's training distribution with the high\-performance frontier, by using the predictor itself to discover and evaluate informative architectures in each iteration. This method grows the pool to 1,500 architectures and raises the ensemble predictor's R2 from 0.770 to 0.815 and Sparse Kendall Tau from 0.694 to 0.752, demonstrating strong predictive accuracy and ranking consistency. Using the final predictor as the fitness function for evolutionary search, we discover architectures that surpass all official YOLOv8\-YOLO12 baselines at comparable latency on COCO\-mini, confirming the predictor's discriminative power for top\-performing detection architectures.
+摘要：An Automatic License Plate Recognition \(ALPR\) system constitutes a crucial element in an intelligent traffic management system. However, the detection of Bangla license plates remains challenging because of the complicated character scheme and uneven layouts. This paper presents a robust Bangla License Plate Recognition system that integrates a deep learning\-based object detection model for license plate localization with Optical Character Recognition for text extraction. Multiple object detection architectures, including U\-Net and several YOLO \(You Only Look Once\) variants, are compared for license plate localization. This study proposes a novel two\-stage adaptive training strategy built upon the YOLOv8 architecture to improve localization performance. The proposed approach outperforms the established models, achieving an accuracy of 97.83% and an Intersection over Union \(IoU\) of 91.3%. The text recognition problem is phrased as a sequence generation problem with a VisionEncoderDecoder architecture, with a combination of encoder\-decoders evaluated. It was demonstrated that the ViT \+ BanglaBERT model gives better results at the character level, with a Character Error Rate of 0.1323 and Word Error Rate of 0.1068. The proposed system also shows a consistent performance when tested on an external dataset that has been curated for this study purpose. The dataset offers completely different environment and lighting conditions compared to the training sample, indicating the robustness of the proposed framework. Overall, our proposed system provides a robust and reliable solution for Bangla license plate recognition and performs effectively across diverse real\-world scenarios, including variations in lighting, noise, and plate styles. These strengths make it well suited for deployment in intelligent transportation applications such as automated law enforcement and access control.
 
 中文摘要：
 
 
 代码链接：摘要中未找到代码链接。
 
-论文链接：[阅读更多](http://arxiv.org/abs/2603.09405v1)
-
----
-
-
-## ER\-Pose: Rethinking Keypoint\-Driven Representation Learning for Real\-Time Human Pose Estimation / 
-
-发布日期：2026-03-09
-
-作者：Nanjun Li
-
-摘要：Single\-stage multi\-person pose estimation aims to jointly perform human localization and keypoint prediction within a unified framework, offering advantages in inference efficiency and architectural simplicity. Consequently, multi\-scale real\-time detection architectures, such as YOLO\-like models, are widely adopted for real\-time pose estimation. However, these approaches typically inherit a box\-driven modeling paradigm from object detection, in which pose estimation is implicitly constrained by bounding\-box supervision during training. This formulation introduces biases in sample assignment and feature representation, resulting in task misalignment and ultimately limiting pose estimation accuracy. In this work, we revisit box\-driven single\-stage pose estimation from a keypoint\-driven perspective and identify semantic conflicts among parallel objectives as a key source of performance degradation. To address this issue, we propose a keypoint\-driven learning paradigm that elevates pose estimation to a primary prediction objective. Specifically, we remove bounding\-box prediction and redesign the prediction head to better accommodate the high\-dimensional structured representations for pose estimation. We further introduce a keypoint\-driven dynamic sample assignment strategy to align training objectives with pose evaluation metrics, enabling dense supervision during training and efficient NMS\-free inference. In addition, we propose a smooth OKS\-based loss function to stabilize optimization in regression\-based pose estimation. Based on these designs, we develop a single\-stage multi\-person pose estimation framework, termed ER\-Pose. On MS COCO and CrowdPose, ER\-Pose\-n achieves AP improvements of 3.2/6.7 without pre\-training and 7.4/4.9 with pre\-training respectively compared with the baseline YOLO\-Pose. These improvements are achieved with fewer parameters and higher inference efficiency.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2603.08681v1)
-
----
-
-
-## Real\-Time Drone Detection in Event Cameras via Per\-Pixel Frequency Analysis / 
-
-发布日期：2026-03-09
-
-作者：Michael Bezick
-
-摘要：Detecting fast\-moving objects, such as unmanned aerial vehicle \(UAV\), from event camera data is challenging due to the sparse, asynchronous nature of the input. Traditional Discrete Fourier Transforms \(DFT\) are effective at identifying periodic signals, such as spinning rotors, but they assume uniformly sampled data, which event cameras do not provide. We propose a novel per\-pixel temporal analysis framework using the Non\-uniform Discrete Fourier Transform \(NDFT\), which we call Drone Detection via Harmonic Fingerprinting \(DDHF\). Our method uses purely analytical techniques that identify the frequency signature of drone rotors, as characterized by frequency combs in their power spectra, enabling a tunable and generalizable algorithm that achieves accurate real\-time localization of UAV. We compare against a YOLO detector under equivalent conditions, demonstrating improvement in accuracy and latency across a difficult array of drone speeds, distances, and scenarios. DDHF achieves an average localization F1 score of 90.89% and average latency of 2.39ms per frame, while YOLO achieves an F1 score of 66.74% and requires 12.40ms per frame. Through utilization of purely analytic techniques, DDHF is quickly tuned on small data, easily interpretable, and achieves competitive accuracies and latencies to deep learning alternatives.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2603.08386v1)
-
----
-
-
-## Evaluating Synthetic Data for Baggage Trolley Detection in Airport Logistics / 
-
-发布日期：2026-03-08
-
-作者：Abdeldjalil Taibi
-
-摘要：Efficient luggage trolley management is critical for reducing congestion and ensuring asset availability in modern airports. Automated detection systems face two main challenges. First, strict security and privacy regulations limit large\-scale data collection. Second, existing public datasets lack the diversity, scale, and annotation quality needed to handle dense, overlapping trolley arrangements typical of real\-world operations.   To address these limitations, we introduce a synthetic data generation pipeline based on a high\-fidelity Digital Twin of Algiers International Airport using NVIDIA Omniverse. The pipeline produces richly annotated data with oriented bounding boxes, capturing complex trolley formations, including tightly nested chains. We evaluate YOLO\-OBB using five training strategies: real\-only, synthetic\-only, linear probing, full fine\-tuning, and mixed training. This allows us to assess how synthetic data can complement limited real\-world annotations.   Our results show that mixed training with synthetic data and only 40 percent of real annotations matches or exceeds the full real\-data baseline, achieving 0.94 mAP@50 and 0.77 mAP@50\-95, while reducing annotation effort by 25 to 35 percent. Multi\-seed experiments confirm strong reproducibility with a standard deviation below 0.01 on mAP@50, demonstrating the practical effectiveness of synthetic data for automated trolley detection.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2603.07645v1)
+论文链接：[阅读更多](http://arxiv.org/abs/2603.10267v1)
 
 ---
 
