@@ -1,92 +1,92 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
-## COTONET: A custom cotton detection algorithm based on YOLO11 for stage of growth cotton boll detection / 
+## Automatic Characterization of Mid\-latitude Multiple Ionospheric Plasma Structures from All\-sky Airglow Images using Deep Learning Technique / 
 
-发布日期：2026-03-12
+发布日期：2026-03-16
 
-作者：Guillem González
+作者：Jeevan Upadhyaya
 
-摘要：Cotton harvesting is a critical phase where cotton capsules are physically manipulated and can lead to fibre degradation. To maintain the highest quality, harvesting methods must emulate delicate manual grasping, to preserve cotton's intrinsic properties. Automating this process requires systems capable of recognising cotton capsules across various phenological stages. To address this challenge, we propose COTONET, an enhanced custom YOLO11 model tailored with attention mechanisms to improve the detection of difficult instances. The architecture incorporates gradients in non\-learnable operations to enhance shape and feature extraction. Key architectural modifications include: the replacement of convolutional blocks with Squeeze\-and\-Exitation blocks, a redesigned backbone integrating attention mechanisms, and the substitution of standard upsampling operations for Content Aware Reassembly of Features \(CARAFE\). Additionally, we integrate Simple Attention Modules \(SimAM\) for primary feature aggregation and Parallel Hybrid Attention Mechanisms \(PHAM\) for channel\-wise, spatial\-wise and coordinate\-wise attention in the downward neck path. This configuration offers increased flexibility and robustness for interpreting the complexity of cotton crop growth. COTONET aligns with small\-to\-medium YOLO models utilizing 7.6M parameters and 27.8 GFLOPS, making it suitable for low\-resource edge computing and mobile robotics. COTONET outperforms the standard YOLO baselines, achieving a mAP50 of 81.1% and a mAP50\-95 of 60.6%.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2603.11717v1)
-
----
-
-
-## TornadoNet: Real\-Time Building Damage Detection with Ordinal Supervision / 
-
-发布日期：2026-03-12
-
-作者：Robinson Umeike
-
-摘要：We present TornadoNet, a comprehensive benchmark for automated street\-level building damage assessment evaluating how modern real\-time object detection architectures and ordinal\-aware supervision strategies perform under realistic post\-disaster conditions. TornadoNet provides the first controlled benchmark demonstrating how architectural design and loss formulation jointly influence multi\-level damage detection from street\-view imagery, delivering methodological insights and deployable tools for disaster response. Using 3,333 high\-resolution geotagged images and 8,890 annotated building instances from the 2021 Midwest tornado outbreak, we systematically compare CNN\-based detectors from the YOLO family against transformer\-based models \(RT\-DETR\) for multi\-level damage detection. Models are trained under standardized protocols using a five\-level damage classification framework based on IN\-CORE damage states, validated through expert cross\-annotation. Baseline experiments reveal complementary architectural strengths. CNN\-based YOLO models achieve highest detection accuracy and throughput, with larger variants reaching 46.05% mAP@0.5 at 66\-276 FPS on A100 GPUs. Transformer\-based RT\-DETR models exhibit stronger ordinal consistency, achieving 88.13% Ordinal Top\-1 Accuracy and MAOE of 0.65, indicating more reliable severity grading despite lower baseline mAP. To align supervision with the ordered nature of damage severity, we introduce soft ordinal classification targets and evaluate explicit ordinal\-distance penalties. RT\-DETR trained with calibrated ordinal supervision achieves 44.70% mAP@0.5, a 4.8 percentage\-point improvement, with gains in ordinal metrics \(91.15% Ordinal Top\-1 Accuracy, MAOE = 0.56\). These findings establish that ordinal\-aware supervision improves damage severity estimation when aligned with detector architecture. Model & Data: https://github.com/crumeike/TornadoNet
-
-中文摘要：
-
-
-代码链接：https://github.com/crumeike/TornadoNet
-
-论文链接：[阅读更多](http://arxiv.org/abs/2603.11557v1)
-
----
-
-
-## GroundCount: Grounding Vision\-Language Models with Object Detection for Mitigating Counting Hallucinations / 
-
-发布日期：2026-03-11
-
-作者：Boyuan Chen
-
-摘要：Vision Language Models \(VLMs\) exhibit persistent hallucinations in counting tasks, with accuracy substantially lower than other visual reasoning tasks \(excluding sentiment\). This phenomenon persists even in state\-of\-the\-art reasoning\-capable VLMs. Conversely, CNN\-based object detection models \(ODMs\) such as YOLO excel at spatial localization and instance counting with minimal computational overhead. We propose GroundCount, a framework that augments VLMs with explicit spatial grounding from ODMs to mitigate counting hallucinations. In the best case, our prompt\-based augmentation strategy achieves 81.3% counting accuracy on the best\-performing model \(Ovis2.5\-2B\) \- a 6.6pp improvement \- while reducing inference time by 22% through elimination of hallucination\-driven reasoning loops for stronger models. We conduct comprehensive ablation studies demonstrating that positional encoding is a critical component, being beneficial for stronger models but detrimental for weaker ones. Confidence scores, by contrast, introduce noise for most architectures and their removal improves performance in four of five evaluated models. We further evaluate feature\-level fusion architectures, finding that explicit symbolic grounding via structured prompts outperforms implicit feature fusion despite sophisticated cross\-attention mechanisms. Our approach yields consistent improvements across four of five evaluated VLM architectures \(6.2\-\-7.5pp\), with one architecture exhibiting degraded performance due to incompatibility between its iterative reflection mechanisms and structured prompts. These results suggest that counting failures stem from fundamental spatial\-semantic integration limitations rather than architecture\-specific deficiencies, while highlighting the importance of architectural compatibility in augmentation strategies.
+摘要：The F\-region ionospheric plasma structures are propagating high and or low electron density regions in the Earth ionosphere. These plasma structures can be observed using ground based all\-sky airglow imagers which can capture faint airglow emissions originating from the F\-region of ionosphere. This study introduces a novel automatic method for determining the propagation parameters \(horizontal velocity and orientation\) of these multiple ionospheric plasma structures observed in O\(1D\) 630.0 nm all\-sky airglow images from Hanle, India located in the mid\-latitude region. We have used a deep learning\-based segmentation model called YOLOv8 \(You Only Look Once\) to localize and BoT\-SORT tracker to track individual mid\-latitude ionospheric plasma structures. Three different automatic algorithms are used to characterize the observed plasma structures utilizing the segmented outputs from the YOLO model. Finally, an additional quality control step is introduced that filters the results from the three automatic algorithms and generates a flag to retain the most reliable estimate. The results of the proposed fully automated pipeline are systematically compared with a previously developed semi\-automatic approach to assess the estimation efficacy. The automatic technique developed in this study is particularly valuable for all\-sky airglow imaging systems having large datasets, where manual intervention or semi\-automatic analysis is impractical.
 
 中文摘要：
 
 
 代码链接：摘要中未找到代码链接。
 
-论文链接：[阅读更多](http://arxiv.org/abs/2603.10978v1)
+论文链接：[阅读更多](http://arxiv.org/abs/2603.15333v1)
 
 ---
 
 
-## Phase\-Interface Instance Segmentation as a Visual Sensor for Laboratory Process Monitoring / 
+## Direct Object\-Level Reconstruction via Probabilistic Gaussian Splatting / 
 
-发布日期：2026-03-11
+发布日期：2026-03-15
 
-作者：Mingyue Li
+作者：Shuai Guo
 
-摘要：Reliable visual monitoring of chemical experiments remains challenging in transparent glassware, where weak phase boundaries and optical artifacts degrade conventional segmentation. We formulate laboratory phenomena as the time evolution of phase interfaces and introduce the Chemical Transparent Glasses dataset 2.0 \(CTG 2.0\), a vessel\-aware benchmark with 3,668 images, 23 glassware categories, and five multiphase interface types for phase\-interface instance segmentation. Building on YOLO11m\-seg, we propose LGA\-RCM\-YOLO, which combines Local\-Global Attention \(LGA\) for robust semantic representation and a Rectangular Self\-Calibration Module \(RCM\) for boundary refinement of thin, elongated interfaces. On CTG 2.0, the proposed model achieves 84.4% AP@0.5 and 58.43% AP@0.5\-0.95, improving over the YOLO11m baseline by 6.42 and 8.75 AP points, respectively, while maintaining near real\-time inference \(13.67 FPS, RTX 3060\). An auxiliary color\-attribute head further labels liquid instances as colored or colorless with 98.71% precision and 98.32% recall. Finally, we demonstrate continuous process monitoring in separatory\-funnel phase separation and crystallization, showing that phase\-interface instance segmentation can serve as a practical visual sensor for laboratory automation.
+摘要：Object\-level 3D reconstruction play important roles across domains such as cultural heritage digitization, industrial manufacturing, and virtual reality. However, existing Gaussian Splatting\-based approaches generally rely on full\-scene reconstruction, in which substantial redundant background information is introduced, leading to increased computational and storage overhead. To address this limitation, we propose an efficient single\-object 3D reconstruction method based on 2D Gaussian Splatting. By directly integrating foreground\-background probability cues into Gaussian primitives and dynamically pruning low\-probability Gaussians during training, the proposed method fundamentally focuses on an object of interest and improves the memory and computational efficiency. Our pipeline leverages probability masks generated by YOLO and SAM to supervise probabilistic Gaussian attributes, replacing binary masks with continuous probability values to mitigate boundary ambiguity. Additionally, we propose a dual\-stage filtering strategy for training's startup to suppress background Gaussians. And, during training, rendered probability masks are conversely employed to refine supervision and enhance boundary consistency across views. Experiments conducted on the MIP\-360, T&T, and NVOS datasets demonstrate that our method exhibits strong self\-correction capability in the presence of mask errors and achieves reconstruction quality comparable to standard 3DGS approaches, while requiring only approximately 1/10 of their Gaussian amount. These results validate the efficiency and robustness of our method for single\-object reconstruction and highlight its potential for applications requiring both high fidelity and computational efficiency.
 
 中文摘要：
 
 
 代码链接：摘要中未找到代码链接。
 
-论文链接：[阅读更多](http://arxiv.org/abs/2603.10782v1)
+论文链接：[阅读更多](http://arxiv.org/abs/2603.14316v1)
 
 ---
 
 
-## A Robust Deep Learning Framework for Bangla License Plate Recognition Using YOLO and Vision\-Language OCR / 
+## Dual\-Strategy Improvement of YOLOv11n for Multi\-Scale Object Detection in Remote Sensing Images / 
 
-发布日期：2026-03-10
+发布日期：2026-03-14
 
-作者：Nayeb Hasin
+作者：Shuaiyu Zhu
 
-摘要：An Automatic License Plate Recognition \(ALPR\) system constitutes a crucial element in an intelligent traffic management system. However, the detection of Bangla license plates remains challenging because of the complicated character scheme and uneven layouts. This paper presents a robust Bangla License Plate Recognition system that integrates a deep learning\-based object detection model for license plate localization with Optical Character Recognition for text extraction. Multiple object detection architectures, including U\-Net and several YOLO \(You Only Look Once\) variants, are compared for license plate localization. This study proposes a novel two\-stage adaptive training strategy built upon the YOLOv8 architecture to improve localization performance. The proposed approach outperforms the established models, achieving an accuracy of 97.83% and an Intersection over Union \(IoU\) of 91.3%. The text recognition problem is phrased as a sequence generation problem with a VisionEncoderDecoder architecture, with a combination of encoder\-decoders evaluated. It was demonstrated that the ViT \+ BanglaBERT model gives better results at the character level, with a Character Error Rate of 0.1323 and Word Error Rate of 0.1068. The proposed system also shows a consistent performance when tested on an external dataset that has been curated for this study purpose. The dataset offers completely different environment and lighting conditions compared to the training sample, indicating the robustness of the proposed framework. Overall, our proposed system provides a robust and reliable solution for Bangla license plate recognition and performs effectively across diverse real\-world scenarios, including variations in lighting, noise, and plate styles. These strengths make it well suited for deployment in intelligent transportation applications such as automated law enforcement and access control.
+摘要：Satellite remote sensing images pose significant challenges for object detection due to their high resolution, complex scenes, and large variations in target scales. To address the insufficient detection accuracy of the YOLOv11n model in remote sensing imagery, this paper proposes two improvement strategies. Method 1: \(a\) a Large Separable Kernel Attention \(LSKA\) mechanism is introduced into the backbone network to enhance feature extraction for small objects; \(b\) a Gold\-YOLO structure is incorporated into the neck network to achieve multi\-scale feature fusion, thereby improving the detection performance of objects at different scales. Method 2: \(a\) the Gold\-YOLO structure is also integrated into the neck network; \(b\) a MultiSEAMHead detection head is combined to further strengthen the representation and detection capability for small and multi\-scale objects. To verify the effectiveness of the proposed improvements, experiments are conducted on the DOTAv1 dataset. The results show that, while maintaining the lightweight advantage of the model, the proposed methods improve detection accuracy \(mAP@0.5\) by 1.3% and 1.8%, respectively, compared with the baseline YOLOv11n, demonstrating the effectiveness and practical value of the proposed approaches for object detection in remote sensing images.
 
 中文摘要：
 
 
 代码链接：摘要中未找到代码链接。
 
-论文链接：[阅读更多](http://arxiv.org/abs/2603.10267v1)
+论文链接：[阅读更多](http://arxiv.org/abs/2603.13879v1)
+
+---
+
+
+## Bodhi VLM: Privacy\-Alignment Modeling for Hierarchical Visual Representations in Vision Backbones and VLM Encoders via Bottom\-Up and Top\-Down Feature Search / 
+
+发布日期：2026-03-14
+
+作者：Bo Ma
+
+摘要：Learning systems that preserve privacy often inject noise into hierarchical visual representations; a central challenge is to emph\{model\} how such perturbations align with a declared privacy budget in a way that is interpretable and applicable across vision backbones and vision\-\-language models \(VLMs\). We propose emph\{Bodhi VLM\}, a emph\{privacy\-alignment modeling\} framework for emph\{hierarchical neural representations\}: it \(1\) links sensitive concepts to layer\-wise grouping via NCP and MDAV\-based clustering; \(2\) locates sensitive feature regions using bottom\-up \(BUA\) and top\-down \(TDA\) strategies over multi\-scale representations \(e.g., feature pyramids or vision\-encoder layers\); and \(3\) uses an Expectation\-Maximization Privacy Assessment \(EMPA\) module to produce an interpretable emph\{budget\-alignment signal\} by comparing the fitted sensitive\-feature distribution to an evaluator\-specified reference \(e.g., Laplace or Gaussian with scale $c/ε$\). The output is reference\-relative and is emph\{not\} a formal differential\-privacy estimator. We formalize BUA/TDA over hierarchical feature structures and validate the framework on object detectors \(YOLO, PPDPTS, DETR\) and on the emph\{visual encoders\} of VLMs \(CLIP, LLaVA, BLIP\). BUA and TDA yield comparable deviation trends; EMPA provides a stable alignment signal under the reported setups. We compare with generic discrepancy baselines \(Chi\-square, K\-L, MMD\) and with task\-relevant baselines \(MomentReg, NoiseMLE, Wass\-1\). Results are reported as mean$pm$std over multiple seeds with confidence intervals in the supplementary materials. This work contributes a learnable, interpretable modeling perspective for privacy\-aligned hierarchical representations rather than a post hoc audit only. Source code: href\{https://github.com/mabo1215/bodhi\-vlm.git\}\{Bodhi\-VLM GitHub repository\}
+
+中文摘要：
+
+
+代码链接：https://github.com/mabo1215/bodhi-vlm.git}{Bodhi-VLM
+
+论文链接：[阅读更多](http://arxiv.org/abs/2603.13728v1)
+
+---
+
+
+## Toward Scalable Co\-located Practical Learning: Assisting with Computer Vision and Multimodal Analytics / 
+
+发布日期：2026-03-14
+
+作者：Xinyu Li
+
+摘要：This study examined whether a single ceiling\-mounted camera could be used to capture fine\-grained learning behaviours in co\-located practical learning. In undergraduate nursing simulations, teachers first identified seven observable behaviour categories, which were then used to train a YOLO\-based detector. Video data were collected from 52 sessions, and analyses focused on Scenario A because it produced greater behavioural variation than Scenario B. Annotation reliability was high \(F1=0.933\). On the held\-out test set, the model achieved a precision of 0.789, a recall of 0.784, and an mAP@0.5 of 0.827. When only behaviour frequencies were compared, no robust differences were found between high\- and low\-performing groups. However, when behaviour labels were analysed together with spatial context, clear differences emerged in both task and collaboration performance. Higher\-performing teams showed more patient interaction in the primary work area, whereas lower\-performing teams showed more phone\-related activity and more activity in secondary areas. These findings suggest that behavioural data are more informative when interpreted together with where they occur. Overall, the study shows that a single\-camera computer vision approach can support the analysis of teamwork and task engagement in face\-to\-face practical learning without relying on wearable sensors.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2603.13679v1)
 
 ---
 
