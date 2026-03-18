@@ -1,6 +1,24 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Automated identification of Ichneumonoidea wasps via YOLO\-based deep learning: Integrating HiresCam for Explainable AI / 
+
+发布日期：2026-03-17
+
+作者：Joao Manoel Herrera Pinheiro
+
+摘要：Accurate taxonomic identification of parasitoid wasps within the superfamily Ichneumonoidea is essential for biodiversity assessment, ecological monitoring, and biological control programs. However, morphological similarity, small body size, and fine\-grained interspecific variation make manual identification labor\-intensive and expertise\-dependent. This study proposes a deep learning\-based framework for the automated identification of Ichneumonoidea wasps using a YOLO\-based architecture integrated with High\-Resolution Class Activation Mapping \(HiResCAM\) to enhance interpretability. The proposed system simultaneously identifies wasp families from high\-resolution images. The dataset comprises 3556 high\-resolution images of Hymenoptera specimens. The taxonomic distribution is primarily concentrated among the families Ichneumonidae \(n = 786\), Braconidae \(n = 648\), Apidae \(n = 466\), and Vespidae \(n = 460\). Extensive experiments were conducted using a curated dataset, with model performance evaluated through precision, recall, F1 score, and accuracy. The results demonstrate high accuracy of over 96 % and robust generalization across morphological variations. HiResCAM visualizations confirm that the model focuses on taxonomically relevant anatomical regions, such as wing venation, antennae segmentation, and metasomal structures, thereby validating the biological plausibility of the learned features. The integration of explainable AI techniques improves transparency and trustworthiness, making the system suitable for entomological research to accelerate biodiversity characterization in an under\-described parasitoid superfamily.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2603.16351v1)
+
+---
+
+
 ## Automatic Characterization of Mid\-latitude Multiple Ionospheric Plasma Structures from All\-sky Airglow Images using Deep Learning Technique / 
 
 发布日期：2026-03-16
@@ -69,24 +87,6 @@
 代码链接：https://github.com/mabo1215/bodhi-vlm.git}{Bodhi-VLM
 
 论文链接：[阅读更多](http://arxiv.org/abs/2603.13728v1)
-
----
-
-
-## Toward Scalable Co\-located Practical Learning: Assisting with Computer Vision and Multimodal Analytics / 
-
-发布日期：2026-03-14
-
-作者：Xinyu Li
-
-摘要：This study examined whether a single ceiling\-mounted camera could be used to capture fine\-grained learning behaviours in co\-located practical learning. In undergraduate nursing simulations, teachers first identified seven observable behaviour categories, which were then used to train a YOLO\-based detector. Video data were collected from 52 sessions, and analyses focused on Scenario A because it produced greater behavioural variation than Scenario B. Annotation reliability was high \(F1=0.933\). On the held\-out test set, the model achieved a precision of 0.789, a recall of 0.784, and an mAP@0.5 of 0.827. When only behaviour frequencies were compared, no robust differences were found between high\- and low\-performing groups. However, when behaviour labels were analysed together with spatial context, clear differences emerged in both task and collaboration performance. Higher\-performing teams showed more patient interaction in the primary work area, whereas lower\-performing teams showed more phone\-related activity and more activity in secondary areas. These findings suggest that behavioural data are more informative when interpreted together with where they occur. Overall, the study shows that a single\-camera computer vision approach can support the analysis of teamwork and task engagement in face\-to\-face practical learning without relying on wearable sensors.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2603.13679v1)
 
 ---
 
