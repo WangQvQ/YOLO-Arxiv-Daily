@@ -1,6 +1,24 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Does YOLO Really Need to See Every Training Image in Every Epoch? / 
+
+发布日期：2026-03-18
+
+作者：Xingxing Xie
+
+摘要：YOLO detectors are known for their fast inference speed, yet training them remains unexpectedly time\-consuming due to their exhaustive pipeline that processes every training image in every epoch, even when many images have already been sufficiently learned. This stands in clear contrast to the efficiency suggested by the \`\`You Only Look Once'' philosophy. This naturally raises an important question: textit\{Does YOLO really need to see every training image in every epoch?\} To explore this, we propose an Anti\-Forgetting Sampling Strategy \(AFSS\) that dynamically determines which images should be used and which can be skipped during each epoch, allowing the detector to learn more effectively and efficiently. Specifically, AFSS measures the learning sufficiency of each training image as the minimum of its detection recall and precision, and dynamically categorizes training images into easy, medium, or hard levels accordingly. Easy training images are sparsely resampled during training in a continuous review manner, with priority given to those that have not been used for a long time to reduce redundancy and prevent forgetting. Moderate training images are partially selected, prioritizing recently unused ones and randomly choosing the rest from unselected images to ensure coverage and prevent forgetting. Hard training images are fully sampled in every epoch to ensure sufficient learning. The learning sufficiency of each training image is periodically updated, enabling detectors to adaptively shift its focus toward the informative training images over time while progressively discarding redundant ones. On widely used natural image detection benchmarks \(MS COCO 2017 and PASCAL VOC 2007\) and remote sensing detection datasets \(DOTA\-v1.0 and DIOR\-R\), AFSS achieves more than $1.43times$ training speedup for YOLO\-series detectors while also improving accuracy.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2603.17684v1)
+
+---
+
+
 ## Automated identification of Ichneumonoidea wasps via YOLO\-based deep learning: Integrating HiresCam for Explainable AI / 
 
 发布日期：2026-03-17
@@ -55,38 +73,20 @@
 ---
 
 
-## Dual\-Strategy Improvement of YOLOv11n for Multi\-Scale Object Detection in Remote Sensing Images / 
+## TDMM\-LM: Bridging Facial Understanding and Animation via Language Models / 
 
 发布日期：2026-03-14
 
-作者：Shuaiyu Zhu
+作者：Luchuan Song
 
-摘要：Satellite remote sensing images pose significant challenges for object detection due to their high resolution, complex scenes, and large variations in target scales. To address the insufficient detection accuracy of the YOLOv11n model in remote sensing imagery, this paper proposes two improvement strategies. Method 1: \(a\) a Large Separable Kernel Attention \(LSKA\) mechanism is introduced into the backbone network to enhance feature extraction for small objects; \(b\) a Gold\-YOLO structure is incorporated into the neck network to achieve multi\-scale feature fusion, thereby improving the detection performance of objects at different scales. Method 2: \(a\) the Gold\-YOLO structure is also integrated into the neck network; \(b\) a MultiSEAMHead detection head is combined to further strengthen the representation and detection capability for small and multi\-scale objects. To verify the effectiveness of the proposed improvements, experiments are conducted on the DOTAv1 dataset. The results show that, while maintaining the lightweight advantage of the model, the proposed methods improve detection accuracy \(mAP@0.5\) by 1.3% and 1.8%, respectively, compared with the baseline YOLOv11n, demonstrating the effectiveness and practical value of the proposed approaches for object detection in remote sensing images.
+摘要：Text\-guided human body animation has advanced rapidly, yet facial animation lags due to the scarcity of well\-annotated, text\-paired facial corpora. To close this gap, we leverage foundation generative models to synthesize a large, balanced corpus of facial behavior. We design prompts suite covering emotions and head motions, generate about 80 hours of facial videos with multiple generators, and fit per\-frame 3D facial parameters, yielding large\-scale \(prompt and parameter\) pairs for training. Building on this dataset, we probe language models for bidirectional competence over facial motion via two complementary tasks: \(1\) Motion2Language: given a sequence of 3D facial parameters, the model produces natural\-language descriptions capturing content, style, and dynamics; and \(2\) Language2Motion: given a prompt, the model synthesizes the corresponding sequence of 3D facial parameters via quantized motion tokens for downstream animation. Extensive experiments show that in this setting language models can both interpret and synthesize facial motion with strong generalization. To best of our knowledge, this is the first work to cast facial\-parameter modeling as a language problem, establishing a unified path for text\-conditioned facial animation and motion understanding.
 
 中文摘要：
 
 
 代码链接：摘要中未找到代码链接。
 
-论文链接：[阅读更多](http://arxiv.org/abs/2603.13879v1)
-
----
-
-
-## Bodhi VLM: Privacy\-Alignment Modeling for Hierarchical Visual Representations in Vision Backbones and VLM Encoders via Bottom\-Up and Top\-Down Feature Search / 
-
-发布日期：2026-03-14
-
-作者：Bo Ma
-
-摘要：Learning systems that preserve privacy often inject noise into hierarchical visual representations; a central challenge is to emph\{model\} how such perturbations align with a declared privacy budget in a way that is interpretable and applicable across vision backbones and vision\-\-language models \(VLMs\). We propose emph\{Bodhi VLM\}, a emph\{privacy\-alignment modeling\} framework for emph\{hierarchical neural representations\}: it \(1\) links sensitive concepts to layer\-wise grouping via NCP and MDAV\-based clustering; \(2\) locates sensitive feature regions using bottom\-up \(BUA\) and top\-down \(TDA\) strategies over multi\-scale representations \(e.g., feature pyramids or vision\-encoder layers\); and \(3\) uses an Expectation\-Maximization Privacy Assessment \(EMPA\) module to produce an interpretable emph\{budget\-alignment signal\} by comparing the fitted sensitive\-feature distribution to an evaluator\-specified reference \(e.g., Laplace or Gaussian with scale $c/ε$\). The output is reference\-relative and is emph\{not\} a formal differential\-privacy estimator. We formalize BUA/TDA over hierarchical feature structures and validate the framework on object detectors \(YOLO, PPDPTS, DETR\) and on the emph\{visual encoders\} of VLMs \(CLIP, LLaVA, BLIP\). BUA and TDA yield comparable deviation trends; EMPA provides a stable alignment signal under the reported setups. We compare with generic discrepancy baselines \(Chi\-square, K\-L, MMD\) and with task\-relevant baselines \(MomentReg, NoiseMLE, Wass\-1\). Results are reported as mean$pm$std over multiple seeds with confidence intervals in the supplementary materials. This work contributes a learnable, interpretable modeling perspective for privacy\-aligned hierarchical representations rather than a post hoc audit only. Source code: href\{https://github.com/mabo1215/bodhi\-vlm.git\}\{Bodhi\-VLM GitHub repository\}
-
-中文摘要：
-
-
-代码链接：https://github.com/mabo1215/bodhi-vlm.git}{Bodhi-VLM
-
-论文链接：[阅读更多](http://arxiv.org/abs/2603.13728v1)
+论文链接：[阅读更多](http://arxiv.org/abs/2603.16936v1)
 
 ---
 
