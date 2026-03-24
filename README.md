@@ -1,6 +1,42 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## MS\-CustomNet: Controllable Multi\-Subject Customization with Hierarchical Relational Semantics / 
+
+发布日期：2026-03-22
+
+作者：Pengxiang Cai
+
+摘要：Diffusion\-based text\-to\-image generation has advanced significantly, yet customizing scenes with multiple distinct subjects while maintaining fine\-grained control over their interactions remains challenging. Existing methods often struggle to provide explicit user\-defined control over the compositional structure and precise spatial relationships between subjects. To address this, we introduce MS\-CustomNet, a novel framework for multi\-subject customization. MS\-CustomNet allows zero\-shot integration of multiple user\-provided objects and, crucially, empowers users to explicitly define these hierarchical arrangements and spatial placements within the generated image. Our approach ensures individual subject identity preservation while learning and enacting these user\-specified inter\-subject compositions. We also present the MSI dataset, derived from COCO, to facilitate training on such complex multi\-subject compositions. MS\-CustomNet offers enhanced, fine\-grained control over multi\-subject image generation. Our method achieves a DINO\-I score of 0.61 for identity preservation and a YOLO\-L score of 0.94 for positional control in multi\-subject customization tasks, demonstrating its superior capability in generating high\-fidelity images with precise, user\-directed multi\-subject compositions and spatial control.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2603.21136v1)
+
+---
+
+
+## Anatomical Prior\-Driven Framework for Autonomous Robotic Cardiac Ultrasound Standard View Acquisition / 
+
+发布日期：2026-03-22
+
+作者：Zhiyan Cao
+
+摘要：Cardiac ultrasound diagnosis is critical for cardiovascular disease assessment, but acquiring standard views remains highly operator\-dependent. Existing medical segmentation models often yield anatomically inconsistent results in images with poor textural differentiation between distinct feature classes, while autonomous probe adjustment methods either rely on simplistic heuristic rules or black\-box learning. To address these issues, our study proposed an anatomical prior \(AP\)\-driven framework integrating cardiac structure segmentation and autonomous probe adjustment for standard view acquisition. A YOLO\-based multi\-class segmentation model augmented by a spatial\-relation graph \(SRG\) module is designed to embed AP into the feature pyramid. Quantifiable anatomical features of standard views are extracted. Their priors are fitted to Gaussian distributions to construct probabilistic APs. The probe adjustment process of robotic ultrasound scanning is formalized as a reinforcement learning \(RL\) problem, with the RL state built from real\-time anatomical features and the reward reflecting the AP matching. Experiments validate the efficacy of the framework. The SRG\-YOLOv11s improves mAP50 by 11.3% and mIoU by 6.8% on the Special Case dataset, while the RL agent achieves a 92.5% success rate in simulation and 86.7% in phantom experiments.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2603.21134v1)
+
+---
+
+
 ## Can Large Multimodal Models Inspect Buildings? A Hierarchical Benchmark for Structural Pathology Reasoning / 
 
 发布日期：2026-03-20
@@ -51,42 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2603.19773v1)
-
----
-
-
-## EdgeCrafter: Compact ViTs for Edge Dense Prediction via Task\-Specialized Distillation / 
-
-发布日期：2026-03-19
-
-作者：Longfei Liu
-
-摘要：Deploying high\-performance dense prediction models on resource\-constrained edge devices remains challenging due to strict limits on computation and memory. In practice, lightweight systems for object detection, instance segmentation, and pose estimation are still dominated by CNN\-based architectures such as YOLO, while compact Vision Transformers \(ViTs\) often struggle to achieve similarly strong accuracy efficiency tradeoff, even with large scale pretraining. We argue that this gap is largely due to insufficient task specific representation learning in small scale ViTs, rather than an inherent mismatch between ViTs and edge dense prediction. To address this issue, we introduce EdgeCrafter, a unified compact ViT framework for edge dense prediction centered on ECDet, a detection model built from a distilled compact backbone and an edge\-friendly encoder decoder design. On the COCO dataset, ECDet\-S achieves 51.7 AP with fewer than 10M parameters using only COCO annotations. For instance segmentation, ECInsSeg achieves performance comparable to RF\-DETR while using substantially fewer parameters. For pose estimation, ECPose\-X reaches 74.8 AP, significantly outperforming YOLO26Pose\-X \(71.6 AP\) despite the latter's reliance on extensive Objects365 pretraining. These results show that compact ViTs, when paired with task\-specialized distillation and edge\-aware design, can be a practical and competitive option for edge dense prediction. Code is available at: https://intellindust\-ai\-lab.github.io/projects/EdgeCrafter/
-
-中文摘要：
-
-
-代码链接：https://intellindust-ai-lab.github.io/projects/EdgeCrafter/
-
-论文链接：[阅读更多](http://arxiv.org/abs/2603.18739v1)
-
----
-
-
-## HOMEY: Heuristic Object Masking with Enhanced YOLO for Property Insurance Risk Detection / 
-
-发布日期：2026-03-19
-
-作者：Teerapong Panboonyuen
-
-摘要：Automated property risk detection is a high\-impact yet underexplored frontier in computer vision with direct implications for real estate, underwriting, and insurance operations. We introduce HOMEY \(Heuristic Object Masking with Enhanced YOLO\), a novel detection framework that combines YOLO with a domain\-specific masking mechanism and a custom\-designed loss function. HOMEY is trained to detect 17 risk\-related property classes, including structural damages \(e.g., cracked foundations, roof issues\), maintenance neglect \(e.g., dead yards, overgrown bushes\), and liability hazards \(e.g., falling gutters, garbage, hazard signs\). Our approach introduces heuristic object masking to amplify weak signals in cluttered backgrounds and risk\-aware loss calibration to balance class skew and severity weighting. Experiments on real\-world property imagery demonstrate that HOMEY achieves superior detection accuracy and reliability compared to baseline YOLO models, while retaining fast inference. Beyond detection, HOMEY enables interpretable and cost\-efficient risk analysis, laying the foundation for scalable AI\-driven property insurance workflows.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2603.18502v1)
 
 ---
 
