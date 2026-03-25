@@ -1,6 +1,24 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Concept\-based explanations of Segmentation and Detection models in Natural Disaster Management / 
+
+发布日期：2026-03-24
+
+作者：Samar Heydari
+
+摘要：Deep learning models for flood and wildfire segmentation and object detection enable precise, real\-time disaster localization when deployed on embedded drone platforms. However, in natural disaster management, the lack of transparency in their decision\-making process hinders human trust required for emergency response. To address this, we present an explainability framework for understanding flood segmentation and car detection predictions on the widely used PIDNet and YOLO architectures. More specifically, we introduce a novel redistribution strategy that extends Layer\-wise Relevance Propagation \(LRP\) explanations for sigmoid\-gated element\-wise fusion layers. This extension allows LRP relevances to flow through the fusion modules of PIDNet, covering the entire computation graph back to the input image. Furthermore, we apply Prototypical Concept\-based Explanations \(PCX\) to provide both local and global explanations at the concept level, revealing which learned features drive the segmentation and detection of specific disaster semantic classes. Experiments on a publicly available flood dataset show that our framework provides reliable and interpretable explanations while maintaining near real\-time inference capabilities, rendering it suitable for deployment on resource\-constrained platforms, such as Unmanned Aerial Vehicles \(UAVs\).
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2603.23020v1)
+
+---
+
+
 ## MS\-CustomNet: Controllable Multi\-Subject Customization with Hierarchical Relational Semantics / 
 
 发布日期：2026-03-22
@@ -69,24 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2603.19830v1)
-
----
-
-
-## Template\-based Object Detection Using a Foundation Model / 
-
-发布日期：2026-03-20
-
-作者：Valentin Braeutigam
-
-摘要：Most currently used object detection methods are learning\-based, and can detect objects under varying appearances. Those models require training and a training dataset. We focus on use cases with less data variation, but the requirement of being free of generation of training data and training. Such a setup is for example desired in automatic testing of graphical interfaces during software development, especially for continuous integration testing. In our approach, we use segments from segmentation foundation models and combine them with a simple feature\-based classification method. This saves time and cost when changing the object to be searched or its design, as nothing has to be retrained and no dataset has to be created. We evaluate our method on the task of detecting and classifying icons in navigation maps, which is used to simplify and automate the testing of user interfaces in automotive industry. Our methods achieve results almost on par with learning\-based object detection methods like YOLO, without the need for training.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2603.19773v1)
 
 ---
 
