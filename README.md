@@ -1,6 +1,42 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Implementation of a Near\-Realtime Recording and Reporting System of Solar Radio Bursts / 
+
+发布日期：2026-03-26
+
+作者：Peijin Zhang
+
+摘要：Strong solar activity is often accompanied by a variety of radio bursts. These bursts are valuable diagnostics of coronal and heliospheric processes and also have potential applications in space weather monitoring and forecasting. However, space weather applications require low\-latency, high\-sensitivity radio burst recording and reporting capabilities, which have remained limited. In this work, we present the development of a near\-realtime radio burst recording and reporting system using the Owens Valley Radio Observatory Long Wavelength Array. The system directly clips data from a realtime buffer and streams them as a live radio dynamic spectrogram. These spectrograms are then processed by a deep\-learning\-based burst identification module for type III radio bursts. The identifier is based on a YOLO \(You Only Look Once\) architecture and is trained on synthetic type III radio bursts generated using a physics\-based model to achieve accurate and robust detection. This system enables continuous realtime radio spectrum streaming and automatic reporting of type III radio bursts within approximately 10 seconds of their occurrence.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2603.25446v1)
+
+---
+
+
+## SDD\-YOLO: A Small\-Target Detection Framework for Ground\-to\-Air Anti\-UAV Surveillance with Edge\-Efficient Deployment / 
+
+发布日期：2026-03-26
+
+作者：Pengyu Chen
+
+摘要：Detecting small unmanned aerial vehicles \(UAVs\) from a ground\-to\-air \(G2A\) perspective presents significant challenges, including extremely low pixel occupancy, cluttered aerial backgrounds, and strict real\-time constraints. Existing YOLO\-based detectors are primarily optimized for general object detection and often lack adequate feature resolution for sub\-pixel targets, while introducing complexities during deployment. In this paper, we propose SDD\-YOLO, a small\-target detection framework tailored for G2A anti\-UAV surveillance. To capture fine\-grained spatial details critical for micro\-targets, SDD\-YOLO introduces a P2 high\-resolution detection head operating at 4 times downsampling. Furthermore, we integrate the recent architectural advancements from YOLO26, including a DFL\-free, NMS\-free architecture for streamlined inference, and the MuSGD hybrid training strategy with ProgLoss and STAL, which substantially mitigates gradient oscillation on sparse small\-target signals. To support our evaluation, we construct DroneSOD\-30K, a large\-scale G2A dataset comprising approximately 30,000 annotated images covering diverse meteorological conditions. Experiments demonstrate that SDD\-YOLO\-n achieves a mAP@0.5 of 86.0% on DroneSOD\-30K, surpassing the YOLOv5n baseline by 7.8 percentage points. Extensive inference analysis shows our model attains 226 FPS on an NVIDIA RTX 5090 and 35 FPS on an Intel Xeon CPU, demonstrating exceptional efficiency for future edge deployment.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2603.25218v1)
+
+---
+
+
 ## Concept\-based explanations of Segmentation and Detection models in Natural Disaster Management / 
 
 发布日期：2026-03-24
@@ -51,42 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2603.21134v1)
-
----
-
-
-## Can Large Multimodal Models Inspect Buildings? A Hierarchical Benchmark for Structural Pathology Reasoning / 
-
-发布日期：2026-03-20
-
-作者：Hui Zhong
-
-摘要：Automated building facade inspection is a critical component of urban resilience and smart city maintenance. Traditionally, this field has relied on specialized discriminative models \(e.g., YOLO, Mask R\-CNN\) that excel at pixel\-level localization but are constrained to passive perception and worse generization without the visual understandng to interpret structural topology. Large Multimodal Models \(LMMs\) promise a paradigm shift toward active reasoning, yet their application in such high\-stakes engineering domains lacks rigorous evaluation standards. To bridge this gap, we introduce a human\-in\-the\-loop semi\-automated annotation framework, leveraging expert\-proposal verification to unify 12 fragmented datasets into a standardized, hierarchical ontology. Building on this foundation, we present textit\{DefectBench\}, the first multi\-dimensional benchmark designed to interrogate LMMs beyond basic semantic recognition. textit\{DefectBench\} evaluates 18 state\-of\-the\-art \(SOTA\) LMMs across three escalating cognitive dimensions: Semantic Perception, Spatial Localization, and Generative Geometry Segmentation. Extensive experiments reveal that while current LMMs demonstrate exceptional topological awareness and semantic understanding \(effectively diagnosing "what" and "how"\), they exhibit significant deficiencies in metric localization precision \("where"\). Crucially, however, we validate the viability of zero\-shot generative segmentation, showing that general\-purpose foundation models can rival specialized supervised networks without domain\-specific training. This work provides both a rigorous benchmarking standard and a high\-quality open\-source database, establishing a new baseline for the advancement of autonomous AI agents in civil engineering.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2603.20148v1)
-
----
-
-
-## Real\-Time Structural Detection for Indoor Navigation from 3D LiDAR Using Bird's\-Eye\-View Images / 
-
-发布日期：2026-03-20
-
-作者：Guanliang Li
-
-摘要：Efficient structural perception is essential for mapping and autonomous navigation on resource\-constrained robots. Existing 3D methods are computationally prohibitive, while traditional 2D geometric approaches lack robustness. This paper presents a lightweight, real\-time framework that projects 3D LiDAR data into 2D Bird's\-Eye\-View \(BEV\) images to enable efficient detection of structural elements relevant to mapping and navigation. Within this representation, we systematically evaluate several feature extraction strategies, including classical geometric techniques \(Hough Transform, RANSAC, and LSD\) and a deep learning detector based on YOLO\-OBB. The resulting detections are integrated through a spatiotemporal fusion module that improves stability and robustness across consecutive frames. Experiments conducted on a standard mobile robotic platform highlight clear performance trade\-offs. Classical methods such as Hough and LSD provide fast responses but exhibit strong sensitivity to noise, with LSD producing excessive segment fragmentation that leads to system congestion. RANSAC offers improved robustness but fails to meet real\-time constraints. In contrast, the YOLO\-OBB\-based approach achieves the best balance between robustness and computational efficiency, maintaining an end\-to\-end latency \(satisfying 10 Hz operation\) while effectively filtering cluttered observations in a low\-power single\-board computer \(SBC\) without using GPU acceleration. The main contribution of this work is a computationally efficient BEV\-based perception pipeline enabling reliable real\-time structural detection from 3D LiDAR on resource\-constrained robotic platforms that cannot rely on GPU\-intensive processing.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2603.19830v1)
 
 ---
 
