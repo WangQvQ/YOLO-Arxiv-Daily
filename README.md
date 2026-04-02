@@ -1,6 +1,24 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Fluently Lying: Adversarial Robustness Can Be Substrate\-Dependent / 
+
+发布日期：2026-04-01
+
+作者：Daye Kang
+
+摘要：The primary tools used to monitor and defend object detectors under adversarial attack assume that when accuracy degrades, detection count drops in tandem. This coupling was assumed, not measured. We report a counterexample observed on a single model: under standard PGD, EMS\-YOLO, a spiking neural network \(SNN\) object detector, retains more than 70% of its detections while mAP collapses from 0.528 to 0.042. We term this count\-preserving accuracy collapse Quality Corruption \(QC\), to distinguish it from the suppression that dominates untargeted evaluation. Across four SNN architectures and two threat models \(l\-infinity and l\-2\), QC appears only in one of the four detectors tested \(EMS\-YOLO\). On this model, all five standard defense components fail to detect or mitigate QC, suggesting the defense ecosystem may rely on a shared assumption calibrated on a single substrate. These results provide, to our knowledge, the first evidence that adversarial failure modes can be substrate\-dependent.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2604.00605v1)
+
+---
+
+
 ## AutoFormBench: Benchmark Dataset for Automating Form Understanding / 
 
 发布日期：2026-03-31
@@ -69,24 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2603.27207v1)
-
----
-
-
-## YOLO Object Detectors for Robotics \-\- a Comparative Study / 
-
-发布日期：2026-03-27
-
-作者：Patryk Niżeniec
-
-摘要：YOLO object detectors recently became a key component of vision systems in many domains. The family of available YOLO models consists of multiple versions, each in various variants. The research reported in this paper aims to validate the applicability of members of this family to detect objects located within the robot workspace. In our experiments, we used our custom dataset and the COCO2017 dataset. To test the robustness of investigated detectors, the images of these datasets were subject to distortions. The results of our experiments, including variations of training/testing configurations and models, may support the choice of the appropriate YOLO version for robotic vision tasks.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2603.27029v1)
 
 ---
 
