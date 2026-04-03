@@ -1,6 +1,24 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Deep Neural Network Based Roadwork Detection for Autonomous Driving / 
+
+发布日期：2026-04-02
+
+作者：Sebastian Wullrich
+
+摘要：Road construction sites create major challenges for both autonomous vehicles and human drivers due to their highly dynamic and heterogeneous nature. This paper presents a real\-time system that detects and localizes roadworks by combining a YOLO neural network with LiDAR data. The system identifies individual roadwork objects while driving, merges them into coherent construction sites and records their outlines in world coordinates. The model training was based on an adapted US dataset and a new dataset collected from test drives with a prototype vehicle in Berlin, Germany. Evaluations on real\-world road construction sites showed a localization accuracy below 0.5 m. The system can support traffic authorities with up\-to\-date roadwork data and could enable autonomous vehicles to navigate construction sites more safely in the future.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2604.02282v1)
+
+---
+
+
 ## Fluently Lying: Adversarial Robustness Can Be Substrate\-Dependent / 
 
 发布日期：2026-04-01
@@ -68,25 +86,7 @@
 
 代码链接：摘要中未找到代码链接。
 
-论文链接：[阅读更多](http://arxiv.org/abs/2603.27290v1)
-
----
-
-
-## Autonomous overtaking trajectory optimization using reinforcement learning and opponent pose estimation / 
-
-发布日期：2026-03-28
-
-作者：Matej Rene Cihlar
-
-摘要：Vehicle overtaking is one of the most complex driving maneuvers for autonomous vehicles. To achieve optimal autonomous overtaking, driving systems rely on multiple sensors that enable safe trajectory optimization and overtaking efficiency. This paper presents a reinforcement learning mechanism for multi\-agent autonomous racing environments, enabling overtaking trajectory optimization, based on LiDAR and depth image data. The developed reinforcement learning agent uses pre\-generated raceline data and sensor inputs to compute the steering angle and linear velocity for optimal overtaking. The system uses LiDAR with a 2D detection algorithm and a depth camera with YOLO\-based object detection to identify the vehicle to be overtaken and its pose. The LiDAR and the depth camera detection data are fused using a UKF for improved opponent pose estimation and trajectory optimization for overtaking in racing scenarios. The results show that the proposed algorithm successfully performs overtaking maneuvers in both simulation and real\-world experiments, with pose estimation RMSE of \(0.0816, 0.0531\) m in \(x, y\).
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2603.27207v1)
+论文链接：[阅读更多](http://arxiv.org/abs/2603.27290v2)
 
 ---
 
