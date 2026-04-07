@@ -1,6 +1,24 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## SARES\-DEIM: Sparse Mixture\-of\-Experts Meets DETR for Robust SAR Ship Detection / 
+
+发布日期：2026-04-05
+
+作者：Fenghao Song
+
+摘要：Ship detection in Synthetic Aperture Radar \(SAR\) imagery is fundamentally challenged by inherent coherent speckle noise, complex coastal clutter, and the prevalence of small\-scale targets. Conventional detectors, primarily designed for optical imagery, often exhibit limited robustness against SAR\-specific degradation and suffer from the loss of fine\-grained ship signatures during spatial downsampling. To address these limitations, we propose SARES\-DEIM, a domain\-aware detection framework grounded in the DEtection TRansformer \(DETR\) paradigm. Central to our approach is SARESMoE \(SAR\-aware Expert Selection Mixture\-of\-Experts\), a module leveraging a sparse gating mechanism to selectively route features toward specialized frequency and wavelet experts. This sparsely\-activated architecture effectively filters speckle noise and semantic clutter while maintaining high computational efficiency. Furthermore, we introduce the Space\-to\-Depth Enhancement Pyramid \(SDEP\) neck to preserve high\-resolution spatial cues from shallow stages, significantly improving the localization of small targets. Extensive experiments on two benchmark datasets demonstrate the superiority of SARES\-DEIM. Notably, on the challenging HRSID dataset, our model achieves a mAP50:95 of 76.4% and a mAP50 of 93.8%, outperforming state\-of\-the\-art YOLO\-series and specialized SAR detectors.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2604.04127v1)
+
+---
+
+
 ## Can VLMs Truly Forget? Benchmarking Training\-Free Visual Concept Unlearning / 
 
 发布日期：2026-04-03
@@ -15,6 +33,24 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2604.03114v1)
+
+---
+
+
+## YOLOv11 Demystified: A Practical Guide to High\-Performance Object Detection / 
+
+发布日期：2026-04-03
+
+作者：Nikhileswara Rao Sulake
+
+摘要：YOLOv11 is the latest iteration in the You Only Look Once \(YOLO\) series of real\-time object detectors, introducing novel architectural modules to improve feature extraction and small\-object detection. In this paper, we present a detailed analysis of YOLOv11, including its backbone, neck, and head components. The model key innovations, the C3K2 blocks, Spatial Pyramid Pooling \- Fast \(SPPF\), and C2PSA \(Cross Stage Partial with Spatial Attention\) modules enhance spatial feature processing while preserving speed. We compare YOLOv11 performance to prior YOLO versions on standard benchmarks, highlighting improvements in mean Average Precision \(mAP\) and inference speed. Our results demonstrate that YOLOv11 achieves superior accuracy without sacrificing real\-time capabilities, making it well\-suited for applications in autonomous driving, surveillance, and video analytics.This work formalizes YOLOv11 in a research context, providing a clear reference for future studies.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2604.03349v1)
 
 ---
 
@@ -37,56 +73,20 @@
 ---
 
 
-## Fluently Lying: Adversarial Robustness Can Be Substrate\-Dependent / 
+## Gaze to Insight: A Scalable AI Approach for Detecting Gaze Behaviours in Face\-to\-Face Collaborative Learning / 
 
 发布日期：2026-04-01
 
-作者：Daye Kang
+作者：Junyuan Liang
 
-摘要：The primary tools used to monitor and defend object detectors under adversarial attack assume that when accuracy degrades, detection count drops in tandem. This coupling was assumed, not measured. We report a counterexample observed on a single model: under standard PGD, EMS\-YOLO, a spiking neural network \(SNN\) object detector, retains more than 70% of its detections while mAP collapses from 0.528 to 0.042. We term this count\-preserving accuracy collapse Quality Corruption \(QC\), to distinguish it from the suppression that dominates untargeted evaluation. Across four SNN architectures and two threat models \(l\-infinity and l\-2\), QC appears only in one of the four detectors tested \(EMS\-YOLO\). On this model, all five standard defense components fail to detect or mitigate QC, suggesting the defense ecosystem may rely on a shared assumption calibrated on a single substrate. These results provide, to our knowledge, the first evidence that adversarial failure modes can be substrate\-dependent.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2604.00605v1)
-
----
-
-
-## AutoFormBench: Benchmark Dataset for Automating Form Understanding / 
-
-发布日期：2026-03-31
-
-作者：Gaurab Baral
-
-摘要：Automated processing of structured documents such as government forms, healthcare records, and enterprise invoices remains a persistent challenge due to the high degree of layout variability encountered in real\-world settings. This paper introduces AutoFormBench, a benchmark dataset of 407 annotated real\-world forms spanning government, healthcare, and enterprise domains, designed to train and evaluate form element detection models. We present a systematic comparison of classical OpenCV approaches and four YOLO architectures \(YOLOv8, YOLOv11, YOLOv26\-s, and YOLOv26\-l\) for localizing and classifying fillable form elements. specifically checkboxes, input lines, and text boxes across diverse PDF document types. YOLOv11 demonstrates consistently superior performance in both F1 score and Jaccard accuracy across all element classes and tolerance levels.
+摘要：Previous studies have illustrated the potential of analysing gaze behaviours in collaborative learning to provide educationally meaningful information for students to reflect on their learning. Over the past decades, machine learning approaches have been developed to automatically detect gaze behaviours from video data. Yet, since these approaches often require large amounts of labelled data for training, human annotation remains necessary. Additionally, researchers have questioned the cross\-configuration robustness of machine learning models developed, as training datasets often fail to encompass the full range of situations encountered in educational contexts. To address these challenges, this study proposes a scalable artificial intelligence approach that leverages pretrained and foundation models to automatically detect gaze behaviours in face\-to\-face collaborative learning contexts without requiring human\-annotated data. The approach utilises pretrained YOLO11 for person tracking, YOLOE\-26 with text\-prompt capability for education\-related object detection, and the Gaze\-LLE model for gaze target prediction. The results indicate that the proposed approach achieves an F1\-score of 0.829 in detecting students' gaze behaviours from video data, with strong performance for laptop\-directed gaze and peer\-directed gaze, yet weaker performance for other gaze targets. Furthermore, when compared to other supervised machine learning approaches, the proposed method demonstrates superior and more stable performance in complex contexts, highlighting its better cross\-configuration robustness. The implications of this approach for supporting students' collaborative learning in real\-world environments are also discussed.
 
 中文摘要：
 
 
 代码链接：摘要中未找到代码链接。
 
-论文链接：[阅读更多](http://arxiv.org/abs/2603.29832v1)
-
----
-
-
-## Sim\-to\-Real Fruit Detection Using Synthetic Data: Quantitative Evaluation and Embedded Deployment with Isaac Sim / 
-
-发布日期：2026-03-30
-
-作者：Martina Hutter\-Mironovova
-
-摘要：This study investigates the effectiveness of synthetic data for sim\-to\-real transfer in object detection under constrained data conditions and embedded deployment requirements. Synthetic datasets were generated in NVIDIA Isaac Sim and combined with limited real\-world fruit images to train YOLO\-based detection models under real\-only, synthetic\-only, and hybrid regimes. Performance was evaluated on two test datasets: an in\-domain dataset with conditions matching the training data and a domain shift dataset containing real fruit and different background conditions. Results show that models trained exclusively on real data achieve the highest accuracy, while synthetic\-only models exhibit reduced performance due to a domain gap. Hybrid training strategies significantly improve performance compared to synthetic\-only approaches and achieve results close to real\-only training while reducing the need for manual annotation. Under domain shift conditions, all models show performance degradation, with hybrid models providing improved robustness. The trained models were successfully deployed on a Jetson Orin NX using TensorRT optimization, achieving real\-time inference performance. The findings highlight that synthetic data is most effective when used in combination with real data and that deployment constraints must be considered alongside detection accuracy.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2603.28670v1)
+论文链接：[阅读更多](http://arxiv.org/abs/2604.03317v1)
 
 ---
 
