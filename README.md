@@ -1,6 +1,24 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## GLANCE: A Global\-Local Coordination Multi\-Agent Framework for Music\-Grounded Non\-Linear Video Editing / 
+
+发布日期：2026-04-06
+
+作者：Zihao Lin
+
+摘要：Music\-grounded mashup video creation is a challenging form of video non\-linear editing, where a system must compose a coherent timeline from large collections of source videos while aligning with music rhythm, user intent, story completeness, and long\-range structural constraints. Existing approaches typically rely on fixed pipelines or simplified retrieval\-and\-concatenation paradigms, limiting their ability to adapt to diverse prompts and heterogeneous source materials. In this paper, we present GLANCE, a global\-local coordination multi\-agent framework for music\-grounded nonlinear video editing. GLANCE adopts a bi\-loop architecture for better editing practice: an outer loop performs long\-horizon planning and task\-graph construction, and an inner loop adopts the "Observe\-Think\-Act\-Verify" flow for segment\-wise editing tasks and their refinements. To address the cross\-segment and global conflict emerging after subtimelines composition, we introduce a dedicated global\-local coordination mechanism with both preventive and corrective components, which includes a novelly designed context controller, conflict region decomposition module, and a bottom\-up dynamic negotiation mechanism. To support rigorous evaluation, we construct MVEBench, a new benchmark that factorizes editing difficulty along task type, prompt specificity, and music length, and propose an agent\-as\-a\-judge evaluation framework for scalable multi\-dimensional assessment. Experimental results show that GLANCE consistently outperforms prior research baselines and open\-source product baselines under the same backbone models. With GPT\-4o\-mini as the backbone, GLANCE improves over the strongest baseline by 33.2% and 15.6% on two task settings, respectively. Human evaluation further confirms the quality of the generated videos and validates the effectiveness of the proposed evaluation framework.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2604.05076v1)
+
+---
+
+
 ## SARES\-DEIM: Sparse Mixture\-of\-Experts Meets DETR for Robust SAR Ship Detection / 
 
 发布日期：2026-04-05
@@ -69,24 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2604.02282v1)
-
----
-
-
-## Gaze to Insight: A Scalable AI Approach for Detecting Gaze Behaviours in Face\-to\-Face Collaborative Learning / 
-
-发布日期：2026-04-01
-
-作者：Junyuan Liang
-
-摘要：Previous studies have illustrated the potential of analysing gaze behaviours in collaborative learning to provide educationally meaningful information for students to reflect on their learning. Over the past decades, machine learning approaches have been developed to automatically detect gaze behaviours from video data. Yet, since these approaches often require large amounts of labelled data for training, human annotation remains necessary. Additionally, researchers have questioned the cross\-configuration robustness of machine learning models developed, as training datasets often fail to encompass the full range of situations encountered in educational contexts. To address these challenges, this study proposes a scalable artificial intelligence approach that leverages pretrained and foundation models to automatically detect gaze behaviours in face\-to\-face collaborative learning contexts without requiring human\-annotated data. The approach utilises pretrained YOLO11 for person tracking, YOLOE\-26 with text\-prompt capability for education\-related object detection, and the Gaze\-LLE model for gaze target prediction. The results indicate that the proposed approach achieves an F1\-score of 0.829 in detecting students' gaze behaviours from video data, with strong performance for laptop\-directed gaze and peer\-directed gaze, yet weaker performance for other gaze targets. Furthermore, when compared to other supervised machine learning approaches, the proposed method demonstrates superior and more stable performance in complex contexts, highlighting its better cross\-configuration robustness. The implications of this approach for supporting students' collaborative learning in real\-world environments are also discussed.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2604.03317v1)
 
 ---
 
