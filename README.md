@@ -1,6 +1,24 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Your Agent Is Mine: Measuring Malicious Intermediary Attacks on the LLM Supply Chain / 
+
+发布日期：2026-04-09
+
+作者：Hanzhi Liu
+
+摘要：Large language model \(LLM\) agents increasingly rely on third\-party API routers to dispatch tool\-calling requests across multiple upstream providers. These routers operate as application\-layer proxies with full plaintext access to every in\-flight JSON payload, yet no provider enforces cryptographic integrity between client and upstream model. We present the first systematic study of this attack surface. We formalize a threat model for malicious LLM API routers and define two core attack classes, payload injection \(AC\-1\) and secret exfiltration \(AC\-2\), together with two adaptive evasion variants: dependency\-targeted injection \(AC\-1.a\) and conditional delivery \(AC\-1.b\). Across 28 paid routers purchased from Taobao, Xianyu, and Shopify\-hosted storefronts and 400 free routers collected from public communities, we find 1 paid and 8 free routers actively injecting malicious code, 2 deploying adaptive evasion triggers, 17 touching researcher\-owned AWS canary credentials, and 1 draining ETH from a researcher\-owned private key. Two poisoning studies further show that ostensibly benign routers can be pulled into the same attack surface: a leaked OpenAI key generates 100M GPT\-5.4 tokens and more than seven Codex sessions, while weakly configured decoys yield 2B billed tokens, 99 credentials across 440 Codex sessions, and 401 sessions already running in autonomous YOLO mode. We build Mine, a research proxy that implements all four attack classes against four public agent frameworks, and use it to evaluate three deployable client\-side defenses: a fail\-closed policy gate, response\-side anomaly screening, and append\-only transparency logging.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2604.08407v1)
+
+---
+
+
 ## GLANCE: A Global\-Local Coordination Multi\-Agent Framework for Music\-Grounded Non\-Linear Video Editing / 
 
 发布日期：2026-04-06
@@ -69,24 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2604.03349v1)
-
----
-
-
-## Deep Neural Network Based Roadwork Detection for Autonomous Driving / 
-
-发布日期：2026-04-02
-
-作者：Sebastian Wullrich
-
-摘要：Road construction sites create major challenges for both autonomous vehicles and human drivers due to their highly dynamic and heterogeneous nature. This paper presents a real\-time system that detects and localizes roadworks by combining a YOLO neural network with LiDAR data. The system identifies individual roadwork objects while driving, merges them into coherent construction sites and records their outlines in world coordinates. The model training was based on an adapted US dataset and a new dataset collected from test drives with a prototype vehicle in Berlin, Germany. Evaluations on real\-world road construction sites showed a localization accuracy below 0.5 m. The system can support traffic authorities with up\-to\-date roadwork data and could enable autonomous vehicles to navigate construction sites more safely in the future.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2604.02282v1)
 
 ---
 
