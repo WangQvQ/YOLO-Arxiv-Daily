@@ -1,6 +1,24 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## AI Driven Soccer Analysis Using Computer Vision / 
+
+发布日期：2026-04-09
+
+作者：Adrian Manchado
+
+摘要：Sport analysis is crucial for team performance since it provides actionable data that can inform coaching decisions, improve player performance, and enhance team strategies. To analyze more complex features from game footage, a computer vision model can be used to identify and track key entities from the field. We propose the use of an object detection and tracking system to predict player positioning throughout the game. To translate this to positioning in relation to the field dimensions, we use a point prediction model to identify key points on the field and combine these with known field dimensions to extract actual distances. For the player\-identification model, object detection models like YOLO and Faster R\-CNN are evaluated on the accuracy of our custom video footage using multiple different evaluation metrics. The goal is to identify the best model for object identification to obtain the most accurate results when paired with SAM2 \(Segment Anything Model 2\) for segmentation and tracking. For the key point detection model, we use a CNN model to find consistent locations in the soccer field. Through homography, the positions of points and objects in the camera perspective will be transformed to a real\-ground perspective. The segmented player masks from SAM2 are transformed from camera perspective to real\-world field coordinates through homography, regardless of camera angle or movement. The transformed real\-world coordinates can be used to calculate valuable tactical insights including player speed, distance covered, positioning heatmaps, and more complex team statistics, providing coaches and players with actionable performance data previously unavailable from standard video analysis.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2604.08722v1)
+
+---
+
+
 ## Your Agent Is Mine: Measuring Malicious Intermediary Attacks on the LLM Supply Chain / 
 
 发布日期：2026-04-09
@@ -69,24 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2604.03114v1)
-
----
-
-
-## YOLOv11 Demystified: A Practical Guide to High\-Performance Object Detection / 
-
-发布日期：2026-04-03
-
-作者：Nikhileswara Rao Sulake
-
-摘要：YOLOv11 is the latest iteration in the You Only Look Once \(YOLO\) series of real\-time object detectors, introducing novel architectural modules to improve feature extraction and small\-object detection. In this paper, we present a detailed analysis of YOLOv11, including its backbone, neck, and head components. The model key innovations, the C3K2 blocks, Spatial Pyramid Pooling \- Fast \(SPPF\), and C2PSA \(Cross Stage Partial with Spatial Attention\) modules enhance spatial feature processing while preserving speed. We compare YOLOv11 performance to prior YOLO versions on standard benchmarks, highlighting improvements in mean Average Precision \(mAP\) and inference speed. Our results demonstrate that YOLOv11 achieves superior accuracy without sacrificing real\-time capabilities, making it well\-suited for applications in autonomous driving, surveillance, and video analytics.This work formalizes YOLOv11 in a research context, providing a clear reference for future studies.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2604.03349v1)
 
 ---
 
