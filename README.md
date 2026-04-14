@@ -1,6 +1,60 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## BEM: Training\-Free Background Embedding Memory for False\-Positive Suppression in Real\-Time Fixed\-Background Camera / 
+
+发布日期：2026-04-13
+
+作者：Junwoo Park
+
+摘要：Pretrained detectors perform well on benchmarks but often suffer performance degradation in real\-world deployments due to distribution gaps between training data and target environments. COCO\-like benchmarks emphasize category diversity rather than instance density, causing detectors trained under per\-class sparsity to struggle in dense, single\- or few\-class scenes such as surveillance and traffic monitoring. In fixed\-camera environments, the quasi\-static background provides a stable, label\-free prior that can be exploited at inference to suppress spurious detections. To address the issue, we propose Background Embedding Memory \(BEM\), a lightweight, training\-free, weight\-frozen module that can be attached to pretrained detectors during inference. BEM estimates clean background embeddings, maintains a prototype memory, and re\-scores detection logits with an inverse\-similarity, rank\-weighted penalty, effectively reducing false positives while maintaining recall. Empirically, background\-frame cosine similarity correlates negatively with object count and positively with Precision\-Confidence AUC \(P\-AUC\), motivating its use as a training\-free control signal. Across YOLO and RT\-DETR families on LLVIP and simulated surveillance streams, BEM consistently reduces false positives while preserving real\-time performance. Our code is available at https://github.com/Leo\-Park1214/Background\-Embedding\-Memory.git
+
+中文摘要：
+
+
+代码链接：https://github.com/Leo-Park1214/Background-Embedding-Memory.git
+
+论文链接：[阅读更多](http://arxiv.org/abs/2604.11714v1)
+
+---
+
+
+## BLPR: Robust License Plate Recognition under Viewpoint and Illumination Variations via Confidence\-Driven VLM Fallback / 
+
+发布日期：2026-04-10
+
+作者：Guillermo Auza Banegas
+
+摘要：Robust license plate recognition in unconstrained environments remains a significant challenge, particularly in underrepresented regions with limited data availability and unique visual characteristics, such as Bolivia. Recognition accuracy in real\-world conditions is often degraded by factors such as illumination changes and viewpoint distortion. To address these challenges, we introduce BLPR, a novel deep learning\-based License Plate Detection and Recognition \(LPDR\) framework specifically designed for Bolivian license plates. The proposed system follows a two\-stage pipeline where a YOLO\-based detector is pretrained on synthetic data generated in Blender to simulate extreme perspectives and lighting conditions, and subsequently fine\-tuned on street\-level data collected in La Paz, Bolivia. Detected plates are geometrically rectified and passed to a character recognition model. To improve robustness under ambiguous scenarios, a lightweight vision\-language model \(Gemma3 4B\) is selectively triggered as a confidence\-based fallback mechanism. The proposed framework further leverages synthetic\-to\-real domain adaptation to improve robustness under diverse real\-world conditions. We also introduce the first publicly available Bolivian LPDR dataset, enabling evaluation under diverse viewpoint and illumination conditions. The system achieves a character\-level recognition accuracy of 89.6% on real\-world data, demonstrating its effectiveness for deployment in challenging urban environments. Our project is publicly available at https://github.com/EdwinTSalcedo/BLPR.
+
+中文摘要：
+
+
+代码链接：https://github.com/EdwinTSalcedo/BLPR.
+
+论文链接：[阅读更多](http://arxiv.org/abs/2604.09927v1)
+
+---
+
+
+## Does Your VFM Speak Plant? The Botanical Grammar of Vision Foundation Models for Object Detection / 
+
+发布日期：2026-04-10
+
+作者：Lars Lundqvist
+
+摘要：Vision foundation models \(VFMs\) offer the promise of zero\-shot object detection without task\-specific training data, yet their performance in complex agricultural scenes remains highly sensitive to text prompt construction. We present a systematic prompt optimization framework evaluating four open\-vocabulary detectors \-\- YOLO World, SAM3, Grounding DINO, and OWLv2 \-\- for cowpea flower and pod detection across synthetic and real field imagery. We decompose prompts into eight axes and conduct one\-factor\-at\-a\-time analysis followed by combinatorial optimization, revealing that models respond divergently to prompt structure: conditions that optimize one architecture can collapse another. Applying model\-specific combinatorial prompts yields substantial gains over a naive species\-name baseline, including \+0.357 mAP@0.5 for YOLO World and \+0.362 mAP@0.5 for OWLv2 on synthetic cowpea flower data. To evaluate cross\-task generalization, we use an LLM to translate the discovered axis structure to a morphologically distinct target \-\- cowpea pods \-\- and compare against prompting using the discovered optimal structures from synthetic flower data. Crucially, prompt structures optimized exclusively on synthetic data transfer effectively to real\-world fields: synthetic\-pipeline prompts match or exceed those discovered on labeled real data for the majority of model\-object combinations \(flower: 0.374 vs. 0.353 for YOLO World; pod: 0.429 vs. 0.371 for SAM3\). Our findings demonstrate that prompt engineering can substantially close the gap between zero\-shot VFMs and supervised detectors without requiring manual annotation, and that optimal prompts are model\-specific, non\-obvious, and transferable across domains.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2604.09920v1)
+
+---
+
+
 ## AI Driven Soccer Analysis Using Computer Vision / 
 
 发布日期：2026-04-09
@@ -33,60 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2604.08407v1)
-
----
-
-
-## GLANCE: A Global\-Local Coordination Multi\-Agent Framework for Music\-Grounded Non\-Linear Video Editing / 
-
-发布日期：2026-04-06
-
-作者：Zihao Lin
-
-摘要：Music\-grounded mashup video creation is a challenging form of video non\-linear editing, where a system must compose a coherent timeline from large collections of source videos while aligning with music rhythm, user intent, story completeness, and long\-range structural constraints. Existing approaches typically rely on fixed pipelines or simplified retrieval\-and\-concatenation paradigms, limiting their ability to adapt to diverse prompts and heterogeneous source materials. In this paper, we present GLANCE, a global\-local coordination multi\-agent framework for music\-grounded nonlinear video editing. GLANCE adopts a bi\-loop architecture for better editing practice: an outer loop performs long\-horizon planning and task\-graph construction, and an inner loop adopts the "Observe\-Think\-Act\-Verify" flow for segment\-wise editing tasks and their refinements. To address the cross\-segment and global conflict emerging after subtimelines composition, we introduce a dedicated global\-local coordination mechanism with both preventive and corrective components, which includes a novelly designed context controller, conflict region decomposition module, and a bottom\-up dynamic negotiation mechanism. To support rigorous evaluation, we construct MVEBench, a new benchmark that factorizes editing difficulty along task type, prompt specificity, and music length, and propose an agent\-as\-a\-judge evaluation framework for scalable multi\-dimensional assessment. Experimental results show that GLANCE consistently outperforms prior research baselines and open\-source product baselines under the same backbone models. With GPT\-4o\-mini as the backbone, GLANCE improves over the strongest baseline by 33.2% and 15.6% on two task settings, respectively. Human evaluation further confirms the quality of the generated videos and validates the effectiveness of the proposed evaluation framework.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2604.05076v1)
-
----
-
-
-## SARES\-DEIM: Sparse Mixture\-of\-Experts Meets DETR for Robust SAR Ship Detection / 
-
-发布日期：2026-04-05
-
-作者：Fenghao Song
-
-摘要：Ship detection in Synthetic Aperture Radar \(SAR\) imagery is fundamentally challenged by inherent coherent speckle noise, complex coastal clutter, and the prevalence of small\-scale targets. Conventional detectors, primarily designed for optical imagery, often exhibit limited robustness against SAR\-specific degradation and suffer from the loss of fine\-grained ship signatures during spatial downsampling. To address these limitations, we propose SARES\-DEIM, a domain\-aware detection framework grounded in the DEtection TRansformer \(DETR\) paradigm. Central to our approach is SARESMoE \(SAR\-aware Expert Selection Mixture\-of\-Experts\), a module leveraging a sparse gating mechanism to selectively route features toward specialized frequency and wavelet experts. This sparsely\-activated architecture effectively filters speckle noise and semantic clutter while maintaining high computational efficiency. Furthermore, we introduce the Space\-to\-Depth Enhancement Pyramid \(SDEP\) neck to preserve high\-resolution spatial cues from shallow stages, significantly improving the localization of small targets. Extensive experiments on two benchmark datasets demonstrate the superiority of SARES\-DEIM. Notably, on the challenging HRSID dataset, our model achieves a mAP50:95 of 76.4% and a mAP50 of 93.8%, outperforming state\-of\-the\-art YOLO\-series and specialized SAR detectors.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2604.04127v1)
-
----
-
-
-## Can VLMs Truly Forget? Benchmarking Training\-Free Visual Concept Unlearning / 
-
-发布日期：2026-04-03
-
-作者：Zhangyun Tan
-
-摘要：VLMs trained on web\-scale data retain sensitive and copyrighted visual concepts that deployment may require removing. Training\-based unlearning methods share a structural flaw: fine\-tuning on a narrow forget set degrades general capabilities before unlearning begins, making it impossible to attribute subsequent performance drops to the unlearning procedure itself. Training\-free approaches sidestep this by suppressing concepts through prompts or system instructions, but no rigorous benchmark exists for evaluating them on visual tasks.   We introduce VLM\-UnBench, the first benchmark for training\-free visual concept unlearning in VLMs. It covers four forgetting levels, 7 source datasets, and 11 concept axes, and pairs a three\-level probe taxonomy with five evaluation conditions to separate genuine forgetting from instruction compliance. Across 8 evaluation settings and 13 VLM configurations, realistic unlearning prompts leave forget accuracy near the no\-instruction baseline; meaningful reductions appear only under oracle conditions that disclose the target concept to the model. Object and scene concepts are the most resistant to suppression, and stronger instruction\-tuned models remain capable despite explicit forget instructions. These results expose a clear gap between prompt\-level suppression and true visual concept erasure.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2604.03114v1)
 
 ---
 
