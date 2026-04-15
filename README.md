@@ -1,6 +1,24 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Monte Carlo Stochastic Depth for Uncertainty Estimation in Deep Learning / 
+
+发布日期：2026-04-14
+
+作者：Adam T. Müller
+
+摘要：The deployment of deep neural networks in safety\-critical systems necessitates reliable and efficient uncertainty quantification \(UQ\). A practical and widespread strategy for UQ is repurposing stochastic regularizers as scalable approximate Bayesian inference methods, such as Monte Carlo Dropout \(MCD\) and MC\-DropBlock \(MCDB\). However, this paradigm remains under\-explored for Stochastic Depth \(SD\), a regularizer integral to the residual\-based backbones of most modern architectures. While prior work demonstrated its empirical promise for segmentation, a formal theoretical connection to Bayesian variational inference and a benchmark on complex, multi\-task problems like object detection are missing. In this paper, we first provide theoretical insights connecting Monte Carlo Stochastic Depth \(MCSD\) to principled approximate variational inference. We then present the first comprehensive empirical benchmark of MCSD against MCD and MCDB on state\-of\-the\-art detectors \(YOLO, RT\-DETR\) using the COCO and COCO\-O datasets. Our results position MCSD as a robust and computationally efficient method that achieves highly competitive predictive accuracy \(mAP\), notably yielding slight improvements in calibration \(ECE\) and uncertainty ranking \(AUARC\) compared to MCD. We thus establish MCSD as a theoretically\-grounded and empirically\-validated tool for efficient Bayesian approximation in modern deep learning.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2604.12719v1)
+
+---
+
+
 ## BEM: Training\-Free Background Embedding Memory for False\-Positive Suppression in Real\-Time Fixed\-Background Camera / 
 
 发布日期：2026-04-13
@@ -69,24 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2604.08722v1)
-
----
-
-
-## Your Agent Is Mine: Measuring Malicious Intermediary Attacks on the LLM Supply Chain / 
-
-发布日期：2026-04-09
-
-作者：Hanzhi Liu
-
-摘要：Large language model \(LLM\) agents increasingly rely on third\-party API routers to dispatch tool\-calling requests across multiple upstream providers. These routers operate as application\-layer proxies with full plaintext access to every in\-flight JSON payload, yet no provider enforces cryptographic integrity between client and upstream model. We present the first systematic study of this attack surface. We formalize a threat model for malicious LLM API routers and define two core attack classes, payload injection \(AC\-1\) and secret exfiltration \(AC\-2\), together with two adaptive evasion variants: dependency\-targeted injection \(AC\-1.a\) and conditional delivery \(AC\-1.b\). Across 28 paid routers purchased from Taobao, Xianyu, and Shopify\-hosted storefronts and 400 free routers collected from public communities, we find 1 paid and 8 free routers actively injecting malicious code, 2 deploying adaptive evasion triggers, 17 touching researcher\-owned AWS canary credentials, and 1 draining ETH from a researcher\-owned private key. Two poisoning studies further show that ostensibly benign routers can be pulled into the same attack surface: a leaked OpenAI key generates 100M GPT\-5.4 tokens and more than seven Codex sessions, while weakly configured decoys yield 2B billed tokens, 99 credentials across 440 Codex sessions, and 401 sessions already running in autonomous YOLO mode. We build Mine, a research proxy that implements all four attack classes against four public agent frameworks, and use it to evaluate three deployable client\-side defenses: a fail\-closed policy gate, response\-side anomaly screening, and append\-only transparency logging.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2604.08407v1)
 
 ---
 
