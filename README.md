@@ -1,6 +1,78 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## A Multi\-Stage Optimization Pipeline for Bethesda Cell Detection in Pap Smear Cytology / 
+
+发布日期：2026-04-15
+
+作者：Martin Amster
+
+摘要：Computer vision techniques have advanced significantly in recent years, finding diverse and impactful applications within the medical field. In this paper, we introduce a new framework for the detection of Bethesda cells in Pap smear images, developed for Track B of the Riva Cytology Challenge held in association with the International Symposium on Biomedical Imaging \(ISBI\). This work focuses on enhancing computer vision models for cell detection, with performance evaluated using the mAP50\-95 metric. We propose a solution based on an ensemble of YOLO and U\-Net architectures, followed by a refinement stage utilizing overlap removal techniques and a binary classifier. Our framework achieved second place with a mAP50\-95 score of 0.5909 in the competition. The implementation and source code are available at the following repository: github.com/martinamster/riva\-trackb
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2604.13939v1)
+
+---
+
+
+## Don't Let AI Agents YOLO Your Files: Shifting Information and Control to Filesystems for Agent Safety and Autonomy / 
+
+发布日期：2026-04-15
+
+作者：Shawn
+
+摘要：AI coding agents operate directly on users' filesystems, where they regularly corrupt data, delete files, and leak secrets. Current approaches force a tradeoff between safety and autonomy: unrestricted access risks harm, while frequent permission prompts burden users and block agents. To understand this problem, we conduct the first systematic study of agent filesystem misuse, analyzing 290 public reports across 13 frameworks. Our analysis reveals that today's agents have limited information about their filesystem effects and insufficient control over them. We therefore argue for shifting this information and control to the filesystem itself.   Based on this principle, we design YoloFS, an agent\-native filesystem with three techniques. Staging isolates all mutations before commit, giving users corrective control. Snapshots extend this control to agents, letting them detect and correct their own mistakes. Progressive permission provides users with preventive control by gating access with minimal interaction. To evaluate YoloFS, we introduce a new methodology that captures user\-agent\-filesystem interactions. On 11 tasks with hidden side effects, YoloFS enables agent self\-correction in 8 while keeping all effects staged and reviewable. On 112 routine tasks, YoloFS requires fewer user interactions while matching the baseline success rate.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2604.13536v1)
+
+---
+
+
+## Multi\-Agent Object Detection Framework Based on Raspberry Pi YOLO Detector and Slack\-Ollama Natural Language Interface / 
+
+发布日期：2026-04-14
+
+作者：Vladimir Kalušev
+
+摘要：The paper presents design and prototype implementation of an edge based object detection system within the new paradigm of AI agents orchestration. It goes beyond traditional design approaches by leveraging on LLM based natural language interface for system control and communication and practically demonstrates integration of all system components into a single resource constrained hardware platform. The method is based on the proposed multi\-agent object detection framework which tightly integrates different AI agents within the same task of providing object detection and tracking capabilities. The proposed design principles highlight the fast prototyping approach that is characteristic for transformational potential of generative AI systems, which are applied during both development and implementation stages. Instead of specialized communication and control interface, the system is made by using Slack channel chatbot agent and accompanying Ollama LLM reporting agent, which are both run locally on the same Raspberry Pi platform, alongside the dedicated YOLO based computer vision agent performing real time object detection and tracking. Agent orchestration is implemented through a specially designed event based message exchange subsystem, which represents an alternative to completely autonomous agent orchestration and control characteristic for contemporary LLM based frameworks like the recently proposed OpenClaw. Conducted experimental investigation provides valuable insights into limitations of the low cost testbed platforms in the design of completely centralized multi\-agent AI systems. The paper also discusses comparative differences between presented approach and the solution that would require additional cloud based external resources.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2604.13345v1)
+
+---
+
+
+## DroneScan\-YOLO: Redundancy\-Aware Lightweight Detection for Tiny Objects in UAV Imagery / 
+
+发布日期：2026-04-14
+
+作者：Yann V. Bellec
+
+摘要：Aerial object detection in UAV imagery presents unique challenges due to the high prevalence of tiny objects, adverse environmental conditions, and strict computational constraints. Standard YOLO\-based detectors fail to address these jointly: their minimum detection stride of 8 pixels renders sub\-32px objects nearly undetectable, their CIoU loss produces zero gradients for non\-overlapping tiny boxes, and their architectures contain significant filter redundancy. We propose DroneScan\-YOLO, a holistic system contribution that addresses these limitations through four coordinated design choices: \(1\) increased input resolution of 1280x1280 to maximize spatial detail for tiny objects, \(2\) RPA\-Block, a dynamic filter pruning mechanism based on lazy cosine\-similarity updates with a 10\-epoch warm\-up period, \(3\) MSFD, a lightweight P2 detection branch at stride 4 adding only 114,592 parameters \(\+1.1%\), and \(4\) SAL\-NWD, a hybrid loss combining Normalized Wasserstein Distance with size\-adaptive CIoU weighting, integrated into YOLOv8's TaskAligned assignment pipeline. Evaluated on VisDrone2019\-DET, DroneScan\-YOLO achieves 55.3% mAP@50 and 35.6% mAP@50\-95, outperforming the YOLOv8s baseline by \+16.6 and \+12.3 points respectively, improving recall from 0.374 to 0.518, and maintaining 96.7 FPS inference speed with only \+4.1% parameters. Gains are most pronounced on tiny object classes: bicycle AP@50 improves from 0.114 to 0.328 \(\+187%\), and awning\-tricycle from 0.156 to 0.237 \(\+52%\).
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2604.13278v1)
+
+---
+
+
 ## Monte Carlo Stochastic Depth for Uncertainty Estimation in Deep Learning / 
 
 发布日期：2026-04-14
@@ -15,78 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2604.12719v1)
-
----
-
-
-## BEM: Training\-Free Background Embedding Memory for False\-Positive Suppression in Real\-Time Fixed\-Background Camera / 
-
-发布日期：2026-04-13
-
-作者：Junwoo Park
-
-摘要：Pretrained detectors perform well on benchmarks but often suffer performance degradation in real\-world deployments due to distribution gaps between training data and target environments. COCO\-like benchmarks emphasize category diversity rather than instance density, causing detectors trained under per\-class sparsity to struggle in dense, single\- or few\-class scenes such as surveillance and traffic monitoring. In fixed\-camera environments, the quasi\-static background provides a stable, label\-free prior that can be exploited at inference to suppress spurious detections. To address the issue, we propose Background Embedding Memory \(BEM\), a lightweight, training\-free, weight\-frozen module that can be attached to pretrained detectors during inference. BEM estimates clean background embeddings, maintains a prototype memory, and re\-scores detection logits with an inverse\-similarity, rank\-weighted penalty, effectively reducing false positives while maintaining recall. Empirically, background\-frame cosine similarity correlates negatively with object count and positively with Precision\-Confidence AUC \(P\-AUC\), motivating its use as a training\-free control signal. Across YOLO and RT\-DETR families on LLVIP and simulated surveillance streams, BEM consistently reduces false positives while preserving real\-time performance. Our code is available at https://github.com/Leo\-Park1214/Background\-Embedding\-Memory.git
-
-中文摘要：
-
-
-代码链接：https://github.com/Leo-Park1214/Background-Embedding-Memory.git
-
-论文链接：[阅读更多](http://arxiv.org/abs/2604.11714v1)
-
----
-
-
-## BLPR: Robust License Plate Recognition under Viewpoint and Illumination Variations via Confidence\-Driven VLM Fallback / 
-
-发布日期：2026-04-10
-
-作者：Guillermo Auza Banegas
-
-摘要：Robust license plate recognition in unconstrained environments remains a significant challenge, particularly in underrepresented regions with limited data availability and unique visual characteristics, such as Bolivia. Recognition accuracy in real\-world conditions is often degraded by factors such as illumination changes and viewpoint distortion. To address these challenges, we introduce BLPR, a novel deep learning\-based License Plate Detection and Recognition \(LPDR\) framework specifically designed for Bolivian license plates. The proposed system follows a two\-stage pipeline where a YOLO\-based detector is pretrained on synthetic data generated in Blender to simulate extreme perspectives and lighting conditions, and subsequently fine\-tuned on street\-level data collected in La Paz, Bolivia. Detected plates are geometrically rectified and passed to a character recognition model. To improve robustness under ambiguous scenarios, a lightweight vision\-language model \(Gemma3 4B\) is selectively triggered as a confidence\-based fallback mechanism. The proposed framework further leverages synthetic\-to\-real domain adaptation to improve robustness under diverse real\-world conditions. We also introduce the first publicly available Bolivian LPDR dataset, enabling evaluation under diverse viewpoint and illumination conditions. The system achieves a character\-level recognition accuracy of 89.6% on real\-world data, demonstrating its effectiveness for deployment in challenging urban environments. Our project is publicly available at https://github.com/EdwinTSalcedo/BLPR.
-
-中文摘要：
-
-
-代码链接：https://github.com/EdwinTSalcedo/BLPR.
-
-论文链接：[阅读更多](http://arxiv.org/abs/2604.09927v1)
-
----
-
-
-## Does Your VFM Speak Plant? The Botanical Grammar of Vision Foundation Models for Object Detection / 
-
-发布日期：2026-04-10
-
-作者：Lars Lundqvist
-
-摘要：Vision foundation models \(VFMs\) offer the promise of zero\-shot object detection without task\-specific training data, yet their performance in complex agricultural scenes remains highly sensitive to text prompt construction. We present a systematic prompt optimization framework evaluating four open\-vocabulary detectors \-\- YOLO World, SAM3, Grounding DINO, and OWLv2 \-\- for cowpea flower and pod detection across synthetic and real field imagery. We decompose prompts into eight axes and conduct one\-factor\-at\-a\-time analysis followed by combinatorial optimization, revealing that models respond divergently to prompt structure: conditions that optimize one architecture can collapse another. Applying model\-specific combinatorial prompts yields substantial gains over a naive species\-name baseline, including \+0.357 mAP@0.5 for YOLO World and \+0.362 mAP@0.5 for OWLv2 on synthetic cowpea flower data. To evaluate cross\-task generalization, we use an LLM to translate the discovered axis structure to a morphologically distinct target \-\- cowpea pods \-\- and compare against prompting using the discovered optimal structures from synthetic flower data. Crucially, prompt structures optimized exclusively on synthetic data transfer effectively to real\-world fields: synthetic\-pipeline prompts match or exceed those discovered on labeled real data for the majority of model\-object combinations \(flower: 0.374 vs. 0.353 for YOLO World; pod: 0.429 vs. 0.371 for SAM3\). Our findings demonstrate that prompt engineering can substantially close the gap between zero\-shot VFMs and supervised detectors without requiring manual annotation, and that optimal prompts are model\-specific, non\-obvious, and transferable across domains.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2604.09920v1)
-
----
-
-
-## AI Driven Soccer Analysis Using Computer Vision / 
-
-发布日期：2026-04-09
-
-作者：Adrian Manchado
-
-摘要：Sport analysis is crucial for team performance since it provides actionable data that can inform coaching decisions, improve player performance, and enhance team strategies. To analyze more complex features from game footage, a computer vision model can be used to identify and track key entities from the field. We propose the use of an object detection and tracking system to predict player positioning throughout the game. To translate this to positioning in relation to the field dimensions, we use a point prediction model to identify key points on the field and combine these with known field dimensions to extract actual distances. For the player\-identification model, object detection models like YOLO and Faster R\-CNN are evaluated on the accuracy of our custom video footage using multiple different evaluation metrics. The goal is to identify the best model for object identification to obtain the most accurate results when paired with SAM2 \(Segment Anything Model 2\) for segmentation and tracking. For the key point detection model, we use a CNN model to find consistent locations in the soccer field. Through homography, the positions of points and objects in the camera perspective will be transformed to a real\-ground perspective. The segmented player masks from SAM2 are transformed from camera perspective to real\-world field coordinates through homography, regardless of camera angle or movement. The transformed real\-world coordinates can be used to calculate valuable tactical insights including player speed, distance covered, positioning heatmaps, and more complex team statistics, providing coaches and players with actionable performance data previously unavailable from standard video analysis.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2604.08722v1)
 
 ---
 
