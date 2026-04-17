@@ -1,6 +1,24 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Interpretable Human Activity Recognition for Subtle Robbery Detection in Surveillance Videos / 
+
+发布日期：2026-04-15
+
+作者：Bryan Jhoan Cazáres Leyva
+
+摘要：Non\-violent street robberies \(snatch\-and\-run\) are difficult to detect automatically because they are brief, subtle, and often indistinguishable from benign human interactions in unconstrained surveillance footage. This paper presents a hybrid, pose\-driven approach for detecting snatch\-and\-run events that combines real\-time perception with an interpretable classification stage suitable for edge deployment. The system uses a YOLO\-based pose estimator to extract body keypoints for each tracked person and computes kinematic and interaction features describing hand speed, arm extension, proximity, and relative motion between an aggressor\-victim pair. A Random Forest classifier is trained on these descriptors, and a temporal hysteresis filter is applied to stabilize frame\-level predictions and reduce spurious alarms. We evaluate the method on a staged dataset and on a disjoint test set collected from internet videos, demonstrating promising generalization across different scenes and camera viewpoints. Finally, we implement the complete pipeline on an NVIDIA Jetson Nano and report real\-time performance, supporting the feasibility of proactive, on\-device robbery detection.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2604.14329v1)
+
+---
+
+
 ## A Multi\-Stage Optimization Pipeline for Bethesda Cell Detection in Pap Smear Cytology / 
 
 发布日期：2026-04-15
@@ -23,7 +41,7 @@
 
 发布日期：2026-04-15
 
-作者：Shawn
+作者：Shawn Wanxiang Zhong
 
 摘要：AI coding agents operate directly on users' filesystems, where they regularly corrupt data, delete files, and leak secrets. Current approaches force a tradeoff between safety and autonomy: unrestricted access risks harm, while frequent permission prompts burden users and block agents. To understand this problem, we conduct the first systematic study of agent filesystem misuse, analyzing 290 public reports across 13 frameworks. Our analysis reveals that today's agents have limited information about their filesystem effects and insufficient control over them. We therefore argue for shifting this information and control to the filesystem itself.   Based on this principle, we design YoloFS, an agent\-native filesystem with three techniques. Staging isolates all mutations before commit, giving users corrective control. Snapshots extend this control to agents, letting them detect and correct their own mistakes. Progressive permission provides users with preventive control by gating access with minimal interaction. To evaluate YoloFS, we introduce a new methodology that captures user\-agent\-filesystem interactions. On 11 tasks with hidden side effects, YoloFS enables agent self\-correction in 8 while keeping all effects staged and reviewable. On 112 routine tasks, YoloFS requires fewer user interactions while matching the baseline success rate.
 
@@ -32,7 +50,7 @@
 
 代码链接：摘要中未找到代码链接。
 
-论文链接：[阅读更多](http://arxiv.org/abs/2604.13536v1)
+论文链接：[阅读更多](http://arxiv.org/abs/2604.13536v2)
 
 ---
 
@@ -69,24 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2604.13278v1)
-
----
-
-
-## Monte Carlo Stochastic Depth for Uncertainty Estimation in Deep Learning / 
-
-发布日期：2026-04-14
-
-作者：Adam T. Müller
-
-摘要：The deployment of deep neural networks in safety\-critical systems necessitates reliable and efficient uncertainty quantification \(UQ\). A practical and widespread strategy for UQ is repurposing stochastic regularizers as scalable approximate Bayesian inference methods, such as Monte Carlo Dropout \(MCD\) and MC\-DropBlock \(MCDB\). However, this paradigm remains under\-explored for Stochastic Depth \(SD\), a regularizer integral to the residual\-based backbones of most modern architectures. While prior work demonstrated its empirical promise for segmentation, a formal theoretical connection to Bayesian variational inference and a benchmark on complex, multi\-task problems like object detection are missing. In this paper, we first provide theoretical insights connecting Monte Carlo Stochastic Depth \(MCSD\) to principled approximate variational inference. We then present the first comprehensive empirical benchmark of MCSD against MCD and MCDB on state\-of\-the\-art detectors \(YOLO, RT\-DETR\) using the COCO and COCO\-O datasets. Our results position MCSD as a robust and computationally efficient method that achieves highly competitive predictive accuracy \(mAP\), notably yielding slight improvements in calibration \(ECE\) and uncertainty ranking \(AUARC\) compared to MCD. We thus establish MCSD as a theoretically\-grounded and empirically\-validated tool for efficient Bayesian approximation in modern deep learning.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2604.12719v1)
 
 ---
 
