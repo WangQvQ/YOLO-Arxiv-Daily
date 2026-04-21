@@ -1,6 +1,42 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Domain\-Specialized Object Detection via Model\-Level Mixtures of Experts / 
+
+发布日期：2026-04-20
+
+作者：Svetlana Pavlitska
+
+摘要：Mixture\-of\-Experts \(MoE\) models provide a structured approach to combining specialized neural networks and offer greater interpretability than conventional ensembles. While MoEs have been successfully applied to image classification and semantic segmentation, their use in object detection remains limited due to challenges in merging dense and structured predictions. In this work, we investigate model\-level mixtures of object detectors and analyze their suitability for improving performance and interpretability in object detection. We propose an MoE architecture that combines YOLO\-based detectors trained on semantically disjoint data subsets, with a learned gating network that dynamically weights expert contributions. We study different strategies for fusing detection outputs and for training the gating mechanism, including balancing losses to prevent expert collapse. Experiments on the BDD100K dataset demonstrate that the proposed MoE consistently outperforms standard ensemble approaches and provides insights into expert specialization across domains, highlighting model\-level MoEs as a viable alternative to traditional ensembling for object detection. Our code is available at https://github.com/KASTEL\-MobilityLab/mixtures\-of\-experts/.
+
+中文摘要：
+
+
+代码链接：https://github.com/KASTEL-MobilityLab/mixtures-of-experts/.
+
+论文链接：[阅读更多](http://arxiv.org/abs/2604.18256v1)
+
+---
+
+
+## Autonomous Unmanned Aircraft Systems for Enhanced Search and Rescue of Drowning Swimmers: Image\-Based Localization and Mission Simulation / 
+
+发布日期：2026-04-20
+
+作者：Sascha Emanuel Zell
+
+摘要：Drowning is an omnipresent risk associated with any activity on or in the water, and rescuing a drowning person is particularly challenging because of the time pressure, making a short response time important. Further complicating water rescue are unsupervised and extensive swimming areas, precise localization of the target, and the transport of rescue personnel. Technical innovations can provide a remedy: We propose an Unmanned Aircraft System \(UAS\), also known as a drone\-in\-a\-box system, consisting of a fleet of Unmanned Aerial Vehicles \(UAVs\) allocated to purpose\-built hangars near swimming areas. In an emergency, the UAS can be deployed in addition to Standard Rescue Operation \(SRO\) equipment to locate the distressed person early by performing a fully automated Search and Rescue \(S&R\) operation and dropping a flotation device. In this paper, we address automatically locating distressed swimmers using the image\-based object detection architecture You Only Look Once \(YOLO\). We present a dataset created for this application and outline the training process. We evaluate the performance of YOLO versions 3, 5, and 8 and architecture sizes \(nano, extra\-large\) using Mean Average Precision \(mAP\) metrics mAP@.5 and mAP@.5:.95. Furthermore, we present two Discrete\-Event Simulation \(DES\) approaches to simulate response times of SRO and UAS\-based water rescue. This enables estimation of time savings relative to SRO when selecting the UAS configuration \(type, number, and location of UAVs and hangars\). Computational experiments for a test area in the Lusatian Lake District, Germany, show that UAS assistance shortens response time. Even a small UAS with two hangars, each containing one UAV, reduces response time by a factor of five compared to SRO.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2604.18088v1)
+
+---
+
+
 ## Interpretable Human Activity Recognition for Subtle Robbery Detection in Surveillance Videos / 
 
 发布日期：2026-04-15
@@ -51,42 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2604.13536v2)
-
----
-
-
-## Multi\-Agent Object Detection Framework Based on Raspberry Pi YOLO Detector and Slack\-Ollama Natural Language Interface / 
-
-发布日期：2026-04-14
-
-作者：Vladimir Kalušev
-
-摘要：The paper presents design and prototype implementation of an edge based object detection system within the new paradigm of AI agents orchestration. It goes beyond traditional design approaches by leveraging on LLM based natural language interface for system control and communication and practically demonstrates integration of all system components into a single resource constrained hardware platform. The method is based on the proposed multi\-agent object detection framework which tightly integrates different AI agents within the same task of providing object detection and tracking capabilities. The proposed design principles highlight the fast prototyping approach that is characteristic for transformational potential of generative AI systems, which are applied during both development and implementation stages. Instead of specialized communication and control interface, the system is made by using Slack channel chatbot agent and accompanying Ollama LLM reporting agent, which are both run locally on the same Raspberry Pi platform, alongside the dedicated YOLO based computer vision agent performing real time object detection and tracking. Agent orchestration is implemented through a specially designed event based message exchange subsystem, which represents an alternative to completely autonomous agent orchestration and control characteristic for contemporary LLM based frameworks like the recently proposed OpenClaw. Conducted experimental investigation provides valuable insights into limitations of the low cost testbed platforms in the design of completely centralized multi\-agent AI systems. The paper also discusses comparative differences between presented approach and the solution that would require additional cloud based external resources.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2604.13345v1)
-
----
-
-
-## DroneScan\-YOLO: Redundancy\-Aware Lightweight Detection for Tiny Objects in UAV Imagery / 
-
-发布日期：2026-04-14
-
-作者：Yann V. Bellec
-
-摘要：Aerial object detection in UAV imagery presents unique challenges due to the high prevalence of tiny objects, adverse environmental conditions, and strict computational constraints. Standard YOLO\-based detectors fail to address these jointly: their minimum detection stride of 8 pixels renders sub\-32px objects nearly undetectable, their CIoU loss produces zero gradients for non\-overlapping tiny boxes, and their architectures contain significant filter redundancy. We propose DroneScan\-YOLO, a holistic system contribution that addresses these limitations through four coordinated design choices: \(1\) increased input resolution of 1280x1280 to maximize spatial detail for tiny objects, \(2\) RPA\-Block, a dynamic filter pruning mechanism based on lazy cosine\-similarity updates with a 10\-epoch warm\-up period, \(3\) MSFD, a lightweight P2 detection branch at stride 4 adding only 114,592 parameters \(\+1.1%\), and \(4\) SAL\-NWD, a hybrid loss combining Normalized Wasserstein Distance with size\-adaptive CIoU weighting, integrated into YOLOv8's TaskAligned assignment pipeline. Evaluated on VisDrone2019\-DET, DroneScan\-YOLO achieves 55.3% mAP@50 and 35.6% mAP@50\-95, outperforming the YOLOv8s baseline by \+16.6 and \+12.3 points respectively, improving recall from 0.374 to 0.518, and maintaining 96.7 FPS inference speed with only \+4.1% parameters. Gains are most pronounced on tiny object classes: bicycle AP@50 improves from 0.114 to 0.328 \(\+187%\), and awning\-tricycle from 0.156 to 0.237 \(\+52%\).
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2604.13278v1)
 
 ---
 
