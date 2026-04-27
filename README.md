@@ -1,6 +1,24 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## EgoMAGIC\- An Egocentric Video Field Medicine Dataset for Training Perception Algorithms / 
+
+发布日期：2026-04-23
+
+作者：Brian VanVoorst
+
+摘要：This paper introduces EgoMAGIC \(Medical Assistance, Guidance, Instruction, and Correction\), an egocentric medical activity dataset collected as part of DARPA's Perceptually\-enabled Task Guidance \(PTG\) program. This dataset comprises 3,355 videos of 50 medical tasks, with at least 50 labeled videos per task. The primary objective of the PTG program was to develop virtual assistants integrated into augmented reality headsets to assist users in performing complex tasks.   To encourage exploration and research using this dataset, the medical training data has been released along with an action detection challenge focused on eight medical tasks. The majority of the videos were recorded using a head\-mounted stereo camera with integrated audio. From this dataset, 40 YOLO models were trained using 1.95 million labels to detect 124 medical objects, providing a robust starting point for developers working on medical AI applications.   In addition to introducing the dataset, this paper presents baseline results on action detection for the eight selected medical tasks across three models, with the best\-performing method achieving average mAP 0.526. Although this paper primarily addresses action detection as the benchmark, the EgoMAGIC dataset is equally suitable for action recognition, object identification and detection, error detection, and other challenging computer vision tasks.   The dataset is accessible via zenodo.org \(DOI: 10.5281/zenodo.19239154\).
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2604.22036v1)
+
+---
+
+
 ## Proactive Detection of GUI Defects in Multi\-Window Scenarios via Multimodal Reasoning / 
 
 发布日期：2026-04-21
@@ -69,24 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2604.14329v1)
-
----
-
-
-## A Multi\-Stage Optimization Pipeline for Bethesda Cell Detection in Pap Smear Cytology / 
-
-发布日期：2026-04-15
-
-作者：Martin Amster
-
-摘要：Computer vision techniques have advanced significantly in recent years, finding diverse and impactful applications within the medical field. In this paper, we introduce a new framework for the detection of Bethesda cells in Pap smear images, developed for Track B of the Riva Cytology Challenge held in association with the International Symposium on Biomedical Imaging \(ISBI\). This work focuses on enhancing computer vision models for cell detection, with performance evaluated using the mAP50\-95 metric. We propose a solution based on an ensemble of YOLO and U\-Net architectures, followed by a refinement stage utilizing overlap removal techniques and a binary classifier. Our framework achieved second place with a mAP50\-95 score of 0.5909 in the competition. The implementation and source code are available at the following repository: github.com/martinamster/riva\-trackb
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2604.13939v1)
 
 ---
 
