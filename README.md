@@ -1,6 +1,42 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Compilation and Execution of an Embeddable YOLO\-NAS on the VTA / 
+
+发布日期：2026-04-27
+
+作者：Anthony Faure\-Gignoux
+
+摘要：Deploying complex Convolutional Neural Networks \(CNNs\) on FPGA\-based accelerators is a promising way forward for safety\-critical domains such as aeronautics. In a previous work, we have explored the Versatile Tensor Accelerator \(VTA\) and showed its suitability for avionic applications. For that, we developed an initial stand\-alone compiler designed with certification in mind. However, this compiler still suffers from some limitations that are overcome in this paper. The contributions consist in extending and fully automating the VTA compilation chain to allow complete CNN compilation and support larger CNNs \(which parameters do not fit in the on\-chip memory\). The effectiveness is demonstrated by the successful compilation and simulated execution of a YOLO\-NAS object detection model.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2604.24455v1)
+
+---
+
+
+## Resource\-Constrained UAV\-Based Weed Detection for Site\-Specific Management on Edge Devices / 
+
+发布日期：2026-04-25
+
+作者：Linyuan Wang
+
+摘要：Weeds compete with crops for light, water, and nutrients, reducing yield and crop quality. Efficient weed detection is essential for site\-specific weed management \(SSWM\). Although deep learning models have been deployed on UAV\-based edge systems, a systematic understanding of how different model architectures perform under real\-world resource constraints is still lacking. To address this gap, this study proposes a deployment\-oriented framework for real\-time UAV\-based weed detection on resource\-constrained edge platforms. The framework integrates UAV data acquisition, model development, and on\-device inference, with a focus on balancing detection accuracy and computational efficiency. A diverse set of state\-of\-the\-art object detection models is evaluated, including convolution\-based YOLO models \(v8\-v12\) and transformer\-based RT\-DETR models \(v1\-v2\). Experiments on three edge devices \(Jetson Orin Nano, Jetson AGX Xavier, and Jetson AGX Orin\) demonstrate clear trade\-offs between accuracy and inference latency across models and hardware configurations. Results show that high\-capacity models achieve up to 86.9% mAP50 but suffer from high latency, limiting real\-time deployment. In contrast, lightweight models achieve 66%\-71% mAP50 with significantly lower latency, enabling real\-time performance. Among all models, RT\-DETRv2\-R50\-M achieves competitive accuracy \(79% mAP50\) with improved efficiency, while YOLOv10n provides the fastest inference speed. YOLOv11s and RT\-DETRv2\-R50\-M offer the best balance between accuracy and speed, making them strong candidates for real\-time UAV deployment.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2604.23442v1)
+
+---
+
+
 ## EgoMAGIC\- An Egocentric Video Field Medicine Dataset for Training Perception Algorithms / 
 
 发布日期：2026-04-23
@@ -51,42 +87,6 @@
 代码链接：https://github.com/KASTEL-MobilityLab/mixtures-of-experts/.
 
 论文链接：[阅读更多](http://arxiv.org/abs/2604.18256v1)
-
----
-
-
-## Autonomous Unmanned Aircraft Systems for Enhanced Search and Rescue of Drowning Swimmers: Image\-Based Localization and Mission Simulation / 
-
-发布日期：2026-04-20
-
-作者：Sascha Emanuel Zell
-
-摘要：Drowning is an omnipresent risk associated with any activity on or in the water, and rescuing a drowning person is particularly challenging because of the time pressure, making a short response time important. Further complicating water rescue are unsupervised and extensive swimming areas, precise localization of the target, and the transport of rescue personnel. Technical innovations can provide a remedy: We propose an Unmanned Aircraft System \(UAS\), also known as a drone\-in\-a\-box system, consisting of a fleet of Unmanned Aerial Vehicles \(UAVs\) allocated to purpose\-built hangars near swimming areas. In an emergency, the UAS can be deployed in addition to Standard Rescue Operation \(SRO\) equipment to locate the distressed person early by performing a fully automated Search and Rescue \(S&R\) operation and dropping a flotation device. In this paper, we address automatically locating distressed swimmers using the image\-based object detection architecture You Only Look Once \(YOLO\). We present a dataset created for this application and outline the training process. We evaluate the performance of YOLO versions 3, 5, and 8 and architecture sizes \(nano, extra\-large\) using Mean Average Precision \(mAP\) metrics mAP@.5 and mAP@.5:.95. Furthermore, we present two Discrete\-Event Simulation \(DES\) approaches to simulate response times of SRO and UAS\-based water rescue. This enables estimation of time savings relative to SRO when selecting the UAS configuration \(type, number, and location of UAVs and hangars\). Computational experiments for a test area in the Lusatian Lake District, Germany, show that UAS assistance shortens response time. Even a small UAS with two hangars, each containing one UAV, reduces response time by a factor of five compared to SRO.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2604.18088v1)
-
----
-
-
-## Interpretable Human Activity Recognition for Subtle Robbery Detection in Surveillance Videos / 
-
-发布日期：2026-04-15
-
-作者：Bryan Jhoan Cazáres Leyva
-
-摘要：Non\-violent street robberies \(snatch\-and\-run\) are difficult to detect automatically because they are brief, subtle, and often indistinguishable from benign human interactions in unconstrained surveillance footage. This paper presents a hybrid, pose\-driven approach for detecting snatch\-and\-run events that combines real\-time perception with an interpretable classification stage suitable for edge deployment. The system uses a YOLO\-based pose estimator to extract body keypoints for each tracked person and computes kinematic and interaction features describing hand speed, arm extension, proximity, and relative motion between an aggressor\-victim pair. A Random Forest classifier is trained on these descriptors, and a temporal hysteresis filter is applied to stabilize frame\-level predictions and reduce spurious alarms. We evaluate the method on a staged dataset and on a disjoint test set collected from internet videos, demonstrating promising generalization across different scenes and camera viewpoints. Finally, we implement the complete pipeline on an NVIDIA Jetson Nano and report real\-time performance, supporting the feasibility of proactive, on\-device robbery detection.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2604.14329v1)
 
 ---
 
