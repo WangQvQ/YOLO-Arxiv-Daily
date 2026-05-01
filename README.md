@@ -1,6 +1,24 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## An Extended Evaluation Split for DeepSpaceYoloDataset / 
+
+发布日期：2026-04-30
+
+作者：Olivier Parisot
+
+摘要：Recent technological advances in astronomy, particularly the growing popularity of smart telescopes for the general public, make it possible to develop highly effective detection solutions that are accessible to a wide audience, rather than being reserved for major scientific observatories. Published in 2023, DeepSpaceYoloDataset is a collection of annotated images created to train YOLO\-based models for detecting Deep Sky Objects, particularly suited for Electronically Assisted Astronomy. In this paper, we present an update to DeepSpaceYoloDataset with the addition of a new split, test2026, designed to evaluate detection models with a greater diversity of images.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2604.27593v1)
+
+---
+
+
 ## Compilation and Execution of an Embeddable YOLO\-NAS on the VTA / 
 
 发布日期：2026-04-27
@@ -69,24 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2604.19081v1)
-
----
-
-
-## Domain\-Specialized Object Detection via Model\-Level Mixtures of Experts / 
-
-发布日期：2026-04-20
-
-作者：Svetlana Pavlitska
-
-摘要：Mixture\-of\-Experts \(MoE\) models provide a structured approach to combining specialized neural networks and offer greater interpretability than conventional ensembles. While MoEs have been successfully applied to image classification and semantic segmentation, their use in object detection remains limited due to challenges in merging dense and structured predictions. In this work, we investigate model\-level mixtures of object detectors and analyze their suitability for improving performance and interpretability in object detection. We propose an MoE architecture that combines YOLO\-based detectors trained on semantically disjoint data subsets, with a learned gating network that dynamically weights expert contributions. We study different strategies for fusing detection outputs and for training the gating mechanism, including balancing losses to prevent expert collapse. Experiments on the BDD100K dataset demonstrate that the proposed MoE consistently outperforms standard ensemble approaches and provides insights into expert specialization across domains, highlighting model\-level MoEs as a viable alternative to traditional ensembling for object detection. Our code is available at https://github.com/KASTEL\-MobilityLab/mixtures\-of\-experts/.
-
-中文摘要：
-
-
-代码链接：https://github.com/KASTEL-MobilityLab/mixtures-of-experts/.
-
-论文链接：[阅读更多](http://arxiv.org/abs/2604.18256v1)
 
 ---
 
