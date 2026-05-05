@@ -19,6 +19,24 @@
 ---
 
 
+## Comparative Evaluation of Convolutional and Transformer\-Based Detectors for Automated Weed Detection in Precision Agriculture / 
+
+发布日期：2026-04-29
+
+作者：Alcides Toledo Espinosa
+
+摘要：This paper presents a comparative evaluation of convolutional and transformer\-based object detection architectures for early weed detection in realistic scenarios. Representative models from each paradigm are considered, including YOLOv26\-nano, a recent variant of the YOLO family, and transformer\-based approaches such as RTDETR and RF\-DETR. Experiments were conducted on the GROUNDBASED\_ WEED dataset, allowing performance to be evaluated in terms of detection accuracy and computational efficiency using metrics such as precision, recall, average precision, and inference speed. The results highlight a clear trade\-off between efficiency and contextual modeling: CNN\-based detectors achieve high performance at a lower computational cost, while transformer\-based approaches offer better global context capture at the expense of higher resource demands. These results provide practical criteria for model selection in precision agriculture applications.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2605.00908v1)
+
+---
+
+
 ## Compilation and Execution of an Embeddable YOLO\-NAS on the VTA / 
 
 发布日期：2026-04-27
@@ -69,24 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2604.22036v1)
-
----
-
-
-## Proactive Detection of GUI Defects in Multi\-Window Scenarios via Multimodal Reasoning / 
-
-发布日期：2026-04-21
-
-作者：Xinyao Zhang
-
-摘要：Multi\-window mobile scenarios, such as split\-screen and foldable modes, make GUI display defects more likely by forcing applications to adapt to changing window sizes and dynamic layout reflow. Existing detection techniques are limited in two ways: they are largely passive, analyzing screenshots only after problematic states have been reached, and they are mainly designed for conventional full\-screen interfaces, making them less effective in multi\-window settings.We propose an end\-to\-end framework for GUI display defect detection in multi\-window mobile scenarios. The framework proactively triggers split\-screen, foldable, and window\-transition states during app exploration, uses Set\-of\-Mark \(SoM\) to align screenshots with widget\-level interface elements, and leverages multimodal large language models with chain\-of\-thought prompting to detect, localize, and explain display defects. We also construct a benchmark of GUI display defects using 50 real\-world Android applications.Experimental results show that multi\-window settings substantially increase the exposure of layout\-related defects, with text truncation increasing by 184% compared with conventional full\-screen settings. At the application level, our method detects 40 defect\-prone apps with a false positive rate of 10.00% and a false negative rate of 11.11%, outperforming OwlEye and YOLO\-based baselines. At the fine\-grained level, it achieves the best F1 score of 87.2% for widget occlusion detection.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2604.19081v1)
 
 ---
 
