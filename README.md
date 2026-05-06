@@ -1,6 +1,24 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## StreakMind: AI detection and analysis of satellite streaks in astronomical images with automated database integration / 
+
+发布日期：2026-05-05
+
+作者：Rafael Carrillo Navarro
+
+摘要：Artificial satellites and space debris increasingly contaminate astronomical images, affecting scientific surveys and producing large volumes of streaked exposures. Manual inspection is no longer feasible at scale, and reliable detection and characterisation of streaks has become essential for both data\-quality control and the monitoring of objects in Earth orbit. We present StreakMind, an automated pipeline designed to detect Near\-Earth Objects and satellite streaks in astronomical images, characterise their geometry, and cross\-identify them with known orbital objects. The system integrates all inference results into a structured database suitable for large surveys. A YOLO OBB model was trained on a hybrid dataset of 2335 images and applied to processed FITS frames. Geometric refinement, inter\-frame association, satellite cross\-identification, and Gaussian\-based confidence scoring were then used to produce final identifications stored in a relational database. Observations from La Sagra Observatory were used to develop and test the method. On the test set, the model achieved a precision of 94 percent and a recall of 97 percent. It reliably detected faint streaks, delivered consistent geometric reconstructions, and performed robust satellite cross\-identification. StreakMind demonstrates strong potential for large\-scale automated analysis of linear streaks produced by both Near\-Earth Objects and artificial satellites, contributing to space situational awareness.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2605.03429v1)
+
+---
+
+
 ## An Extended Evaluation Split for DeepSpaceYoloDataset / 
 
 发布日期：2026-04-30
@@ -69,24 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2604.23442v1)
-
----
-
-
-## EgoMAGIC\- An Egocentric Video Field Medicine Dataset for Training Perception Algorithms / 
-
-发布日期：2026-04-23
-
-作者：Brian VanVoorst
-
-摘要：This paper introduces EgoMAGIC \(Medical Assistance, Guidance, Instruction, and Correction\), an egocentric medical activity dataset collected as part of DARPA's Perceptually\-enabled Task Guidance \(PTG\) program. This dataset comprises 3,355 videos of 50 medical tasks, with at least 50 labeled videos per task. The primary objective of the PTG program was to develop virtual assistants integrated into augmented reality headsets to assist users in performing complex tasks.   To encourage exploration and research using this dataset, the medical training data has been released along with an action detection challenge focused on eight medical tasks. The majority of the videos were recorded using a head\-mounted stereo camera with integrated audio. From this dataset, 40 YOLO models were trained using 1.95 million labels to detect 124 medical objects, providing a robust starting point for developers working on medical AI applications.   In addition to introducing the dataset, this paper presents baseline results on action detection for the eight selected medical tasks across three models, with the best\-performing method achieving average mAP 0.526. Although this paper primarily addresses action detection as the benchmark, the EgoMAGIC dataset is equally suitable for action recognition, object identification and detection, error detection, and other challenging computer vision tasks.   The dataset is accessible via zenodo.org \(DOI: 10.5281/zenodo.19239154\).
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2604.22036v1)
 
 ---
 
