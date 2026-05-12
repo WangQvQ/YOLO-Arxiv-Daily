@@ -1,6 +1,42 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## A Marine Debris Detection Framework for Ocean Robots via Self\-Attention Enhancement and Feature Interaction Optimization / 
+
+发布日期：2026-05-08
+
+作者：Yuyang Li
+
+摘要：Marine debris detection for ocean robot is crucial for ecological protection, yet performance is often degraded by low\-quality images with blur, complex backgrounds, and small targets. To address these challenges, we propose YOLO\-MD, an enhanced YOLO\-based detection framework. A Dual\-Branch Convolutional Enhanced Self\-Attention \(DB\-CASA\) module is designed to strengthen spatial\-channel interactions, improving feature representation in degraded images. Additionally, a lightweight shift\-based operation is introduced to enhance fine\-grained feature extraction for objects of varying scales while maintaining parameter efficiency. We further propose SFG\-Loss to mitigate class imbalance and optimization instability via dynamic sample reweighting. Experiments on the UODM dataset demonstrate that YOLO\-MD achieves 0.875 precision, 0.822 F1\-score, and 0.849 mAP50, outperforming the latest state\-of\-the\-art methods. The effectiveness of this method has also been verified through real\-world robotic edge deployment experiments.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2605.07388v1)
+
+---
+
+
+## XiYOLO: Energy\-Aware Object Detection via Iterative Architecture Search and Scaling / 
+
+发布日期：2026-05-07
+
+作者：Tony Tran
+
+摘要：Object detection on heterogeneous edge devices must satisfy strict energy, latency, and memory constraints while still providing reliable perception for downstream autonomy. Existing energy\-aware NAS methods often target limited deployment settings, while real energy remains difficult to optimize because it is highly device\-dependent and costly to measure. We address these challenges with an energy\-adaptive framework that combines an energy\-aware XiResOFA search space, a two\-stage energy estimator, and iterative search to identify a single energy\-efficient base architecture. We then apply compound scaling to transform this base design into the XiYOLO family across deployment budgets, enabling interpretable accuracy\-energy tradeoffs under sparse hardware measurements. Experiments on PascalVOC, COCO, and real\-device deployment show that XiYOLO achieves a stronger energy\-accuracy tradeoff than YOLO baselines. On PascalVOC, the medium XiYOLO model reaches 86.15 mAP50 while reducing energy relative to YOLOv12m by 20.6% on GPU and 35.9% on NPU. On COCO, XiYOLO reduces energy relative to YOLOv12 by up to 53.7% on GPU and 51.6% on NPU at the small scale. The proposed two\-stage estimator also improves sample efficiency over a joint predictor under few\-shot adaptation with only 2\-20 target\-device samples.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2605.06927v1)
+
+---
+
+
 ## StreakMind: AI detection and analysis of satellite streaks in astronomical images with automated database integration / 
 
 发布日期：2026-05-05
@@ -51,42 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2605.00908v1)
-
----
-
-
-## Compilation and Execution of an Embeddable YOLO\-NAS on the VTA / 
-
-发布日期：2026-04-27
-
-作者：Anthony Faure\-Gignoux
-
-摘要：Deploying complex Convolutional Neural Networks \(CNNs\) on FPGA\-based accelerators is a promising way forward for safety\-critical domains such as aeronautics. In a previous work, we have explored the Versatile Tensor Accelerator \(VTA\) and showed its suitability for avionic applications. For that, we developed an initial stand\-alone compiler designed with certification in mind. However, this compiler still suffers from some limitations that are overcome in this paper. The contributions consist in extending and fully automating the VTA compilation chain to allow complete CNN compilation and support larger CNNs \(which parameters do not fit in the on\-chip memory\). The effectiveness is demonstrated by the successful compilation and simulated execution of a YOLO\-NAS object detection model.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2604.24455v1)
-
----
-
-
-## Resource\-Constrained UAV\-Based Weed Detection for Site\-Specific Management on Edge Devices / 
-
-发布日期：2026-04-25
-
-作者：Linyuan Wang
-
-摘要：Weeds compete with crops for light, water, and nutrients, reducing yield and crop quality. Efficient weed detection is essential for site\-specific weed management \(SSWM\). Although deep learning models have been deployed on UAV\-based edge systems, a systematic understanding of how different model architectures perform under real\-world resource constraints is still lacking. To address this gap, this study proposes a deployment\-oriented framework for real\-time UAV\-based weed detection on resource\-constrained edge platforms. The framework integrates UAV data acquisition, model development, and on\-device inference, with a focus on balancing detection accuracy and computational efficiency. A diverse set of state\-of\-the\-art object detection models is evaluated, including convolution\-based YOLO models \(v8\-v12\) and transformer\-based RT\-DETR models \(v1\-v2\). Experiments on three edge devices \(Jetson Orin Nano, Jetson AGX Xavier, and Jetson AGX Orin\) demonstrate clear trade\-offs between accuracy and inference latency across models and hardware configurations. Results show that high\-capacity models achieve up to 86.9% mAP50 but suffer from high latency, limiting real\-time deployment. In contrast, lightweight models achieve 66%\-71% mAP50 with significantly lower latency, enabling real\-time performance. Among all models, RT\-DETRv2\-R50\-M achieves competitive accuracy \(79% mAP50\) with improved efficiency, while YOLOv10n provides the fastest inference speed. YOLOv11s and RT\-DETRv2\-R50\-M offer the best balance between accuracy and speed, making them strong candidates for real\-time UAV deployment.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2604.23442v1)
 
 ---
 
