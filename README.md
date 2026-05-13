@@ -1,6 +1,24 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## AnyDepth\-DETR/\-YOLO: Any\-depth object detection with a single network / 
+
+发布日期：2026-05-10
+
+作者：Woochul Kang
+
+摘要：Modern object detectors are static, fixed\-depth networks optimized for a single operating point, requiring separate models for different deployment scenarios. We present an any\-depth detection framework that enables a single network to span a continuous range of accuracy\-\-efficiency trade\-offs by controlling depth at inference time without retraining. Each backbone and neck stage is divided into an essential path, which always executes, and a skippable refinement path; this decomposition preserves the full multi\-scale feature hierarchy at every depth configuration, unlike conventional early exiting that discards entire stages. To train such a network, jointly optimizing many sub\-networks of varying depth introduces conflicting gradient signals. We address this via self\-distillation between only the two extremes, with prediction\-level and feature\-level alignment losses that enforce stage\-wise modularity, ensuring the outputs of each stage remain compatible regardless of the paths taken. Instantiated on RT\-DETR and YOLOv12, our full\-depth configurations match or surpass their respective SOTA baselines with negligible parameter overhead, while the most efficient configurations achieve up to $1.82times$ speedup at a cost of only 2.0 AP, all from a single set of weights.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2605.09407v1)
+
+---
+
+
 ## A Marine Debris Detection Framework for Ocean Robots via Self\-Attention Enhancement and Feature Interaction Optimization / 
 
 发布日期：2026-05-08
@@ -37,6 +55,24 @@
 ---
 
 
+## Low\-Cost Stereo Vision for Robust 3D Positioning of Thin Radiata Pine Branches in Autonomous Drone Pruning / 
+
+发布日期：2026-05-06
+
+作者：Yida Lin
+
+摘要：Manual pruning of radiata pine, a species of major economic importance to New Zealand forestry, is hazardous, labour\-intensive, and increasingly constrained by workforce shortages. Existing autonomous pruning platforms typically rely on expensive sensors such as LiDAR and are limited to thick branches, which restricts their wider adoption. This paper investigates whether a single low\-cost stereo camera mounted on a drone can provide sufficiently accurate branch detection and three\-dimensional positioning to support autonomous pruning of branches as thin as 10 mm, thereby removing the need for auxiliary depth sensors. The proposed pipeline comprises two stages: branch segmentation and depth estimation. For segmentation, Mask R\-CNN variants and the YOLOv8 and YOLOv9 families are compared on a custom dataset of 71 stereo image pairs captured with a ZED Mini camera; YOLOv8 and YOLOv9 are selected as representative state\-of\-the\-art real\-time segmentors at the time of data collection, and the framework is designed to remain compatible with newer YOLO releases. For depth estimation, a traditional method \(SGBM with WLS filtering\) and deep\-learning\-based methods \(PSMNet, ACVNet, GWCNet, MobileStereoNet, RAFT\-Stereo, and NeRF\-Supervised Deep Stereo\) are evaluated, including cross\-dataset fine\-tuning experiments that expose the domain gap between urban driving benchmarks and natural forestry scenes. The main novelty of this work lies in coupling stereo segmentation with a centroid\-based triangulation algorithm and Median\-Absolute\-Deviation outlier rejection that converts a segmentation mask and disparity map into a single robust branch\-to\-camera distance, addressing the challenges of sparse texture, thin structures, and noisy disparity values typical of forest scenes. Qualitative evaluations at distances of 1\-2 m show that the learning\-based stereo methods produce more coherent depth es...
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2605.08213v1)
+
+---
+
+
 ## StreakMind: AI detection and analysis of satellite streaks in astronomical images with automated database integration / 
 
 发布日期：2026-05-05
@@ -51,42 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2605.03429v1)
-
----
-
-
-## An Extended Evaluation Split for DeepSpaceYoloDataset / 
-
-发布日期：2026-04-30
-
-作者：Olivier Parisot
-
-摘要：Recent technological advances in astronomy, particularly the growing popularity of smart telescopes for the general public, make it possible to develop highly effective detection solutions that are accessible to a wide audience, rather than being reserved for major scientific observatories. Published in 2023, DeepSpaceYoloDataset is a collection of annotated images created to train YOLO\-based models for detecting Deep Sky Objects, particularly suited for Electronically Assisted Astronomy. In this paper, we present an update to DeepSpaceYoloDataset with the addition of a new split, test2026, designed to evaluate detection models with a greater diversity of images.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2604.27593v1)
-
----
-
-
-## Comparative Evaluation of Convolutional and Transformer\-Based Detectors for Automated Weed Detection in Precision Agriculture / 
-
-发布日期：2026-04-29
-
-作者：Alcides Toledo Espinosa
-
-摘要：This paper presents a comparative evaluation of convolutional and transformer\-based object detection architectures for early weed detection in realistic scenarios. Representative models from each paradigm are considered, including YOLOv26\-nano, a recent variant of the YOLO family, and transformer\-based approaches such as RTDETR and RF\-DETR. Experiments were conducted on the GROUNDBASED\_ WEED dataset, allowing performance to be evaluated in terms of detection accuracy and computational efficiency using metrics such as precision, recall, average precision, and inference speed. The results highlight a clear trade\-off between efficiency and contextual modeling: CNN\-based detectors achieve high performance at a lower computational cost, while transformer\-based approaches offer better global context capture at the expense of higher resource demands. These results provide practical criteria for model selection in precision agriculture applications.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2605.00908v1)
 
 ---
 
