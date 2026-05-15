@@ -1,6 +1,78 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## TriBand\-BEV: Real\-Time LiDAR\-Only 3D Pedestrian Detection via Height\-Aware BEV and High\-Resolution Feature Fusion / 
+
+发布日期：2026-05-12
+
+作者：Mohammad Khoshkdahan
+
+摘要：Safe autonomous agents and mobile robots need fast real time 3D perception, especially for vulnerable road users \(VRUs\) such as pedestrians. We introduce a new bird's eye view \(BEV\) encoding, which maps the full 3D LiDAR point cloud into a light\-weight 2D BEV tensor with three height bands. We explicitly reformulate 3D detection as a 2D detection problem and then reconstruct 3D boxes from the BEV outputs. A single network detects cars, pedestrians, and cyclists in one pass. The backbone uses area attention at deep stages, a hierarchical bidirectional neck over P1 to P4 fuses context and detail, and the head predicts oriented boxes with distribution focal learning for side offsets and a rotated IoU loss. Training applies a small vertical re bin and a mild reflectance jitter in channel space to resist memorization. We use an interquartile range \(IQR\) filter to remove noisy and outlier LiDAR points during 3D reconstruction. On KITTI dataset, TriBand\-BEV attains 58.7/52.6/47.2 pedestrian BEV AP\(%\) for easy, moderate, and hard at 49 FPS on a single consumer GPU, surpassing Complex\-YOLO, with gains of \+12.6%, \+7.5%, and \+3.1%. Qualitative scenes show stable detection under occlusion. The pipeline is compact and ready for real time robotic deployment. Our source code is publicly available on GitHub.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2605.12220v1)
+
+---
+
+
+## BronchoLumen: Analysis of recent YOLO\-based architectures for real\-time bronchial orifice detection in video bronchoscopy / 
+
+发布日期：2026-05-12
+
+作者：Yongchao Li
+
+摘要：Bronchoscopy is routinely conducted in pulmonary clinics and intensive care units, but navigating the complex branching of the respiratory tract remains challenging. This paper introduces BronchoLumen, a real\-time YOLO\-based system for detecting bronchial orifices in video bronchoscopy, aiming to assist navigation and CAD systems. The paper investigates if bronchial orifices can be robustly detected across image domains using state\-of\-the\-art object detection and a limited set of public image data. The study includes the description and comparison of YOLOv8, a widely adopted architecture, and YOLOv12, a more recent architecture integrating attention\-based modules to improve spatial reasoning. Both models are trained and tested solely on publicly available datasets comprising different image domains. A comparison of both models is conducted based on the common metrics mAP@0.5 and mAP@0.5:0.9 with the latter emphasizing localization accuracy. For YOLOv8 we obtained a mAP@0.5 of 0.91 on an in\-domain and 0.68 on a cross\-domain test set. YOLOv12 achieved 0.84 and 0.68 respectively with slightly better localization accuracy with mAP@0.5:0.9 of 0.48 and 0.26 compared to YOLOv8 with 0.45 and 0.25. Challenges like motion blur and low contrast occasionally entailed uncertainties but the system demonstrated overall robustness in most scenarios. BronchoLumen is an open\-weight, YOLO\-based solution for bronchial orifice detection offering high accuracy and efficiency across multiple image domains. While the more recent YOLOv12 achieves better localization accuracy, we observed a slightly worse precision. The models have been made publicly available to foster further research in bronchoscopy navigation.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2605.11748v1)
+
+---
+
+
+## XWOD: A Real\-World Benchmark for Object Detection under Extreme Weather Conditions / 
+
+发布日期：2026-05-12
+
+作者：Chih\-Hsin Chen
+
+摘要：Autonomous driving and intelligent transportation systems remain vulnerable under extreme weather. The U.S. Federal Highway Administration reports that roughly 745,000 crashes and 3,800 fatalities per year are weather\-related, and recent regulatory investigations have examined failures of Level\-2/3 driving systems under reduced\-visibility conditions. However, datasets commonly used to evaluate weather robustness remain limited in scale, diversity, and realism. In this paper, we introduce XWOD \(Extreme Weather Object Detection\), a large\-scale real\-world traffic\-object detection benchmark containing 10,010 images and 42,924 bounding boxes across seven extreme weather conditions: rain, snow, fog, haze/sand/dust, flooding, tornado, and wildfire. The dataset covers six traffic\-object categories, including car, person, truck, motorcycle, bicycle, and bus. XWOD extends the weather taxonomy from one to seven conditions, and is the first to cover the emerging class of climate\-amplified hazards, such as flooding, tornado, and wildfire. To evaluate the quality of our data, we train standard YOLO\-family detectors on XWOD and test them zero\-shot on external weather benchmarks, achieving mAP$\_\{50\}$ scores of 63.00% on RTTS, 59.94% on DAWN, and 61.12% on WEDGE, compared with the corresponding published YOLO\-based baselines of 40.37%, 32.75%, and 45.41%, respectively, representing relative improvements of 56%, 83%, and 35%. These cross\-dataset results show that XWOD provides a strong source domain for learning weather\-robust traffic perception. We release the dataset, splits, baseline weights, and reproducible evaluation code under a research\-use license.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2605.11521v1)
+
+---
+
+
+## SEVO: Semantic\-Enhanced Virtual Observation for Robust VLA Manipulation via Active Illumination and Data\-Centric Collection / 
+
+发布日期：2026-05-11
+
+作者：Tianchonghui Fang
+
+摘要：Vision\-Language\-Action \(VLA\) and imitation\-learning policies trained via community toolchains on low\-cost hardware frequently fail when deployed outside the training environment. Existing evaluations, including the original ACT and SmolVLA benchmarks, demonstrate high success rates under controlled, fixed backgrounds, yet community practitioners report near\-zero transfer to new environments. We present SEVO \(Semantic\-Enhanced Virtual Observation\), a data\-centric approach that improves cross\-environment manipulation robustness without modifying the policy architecture. SEVO transforms the raw RGB camera stream through three mechanisms: \(1\) body\-fixed cameras whose combined fields of view cover the full manipulation workspace, \(2\) active red\-spectrum illumination that physically normalizes object appearance, and \(3\) real\-time YOLO segmentation overlay that provides a background\-invariant semantic cue. Critically, we show that a diversified data collection protocol \(systematically varying lighting, backgrounds, and distractors during teleoperation\) is the single most important factor for generalization. We target transparent water bottles, objects that visually blend with their surroundings, and select a simple pick\-and\-place task to enable hundreds of controlled real\-robot trials across two mobile platforms. The full pipeline achieves 95% grasp success with ACT and 83% with SmolVLA in the training environment, transferring to novel environments at 85% and 75%. Without SEVO, the same policies achieve only 75%/70% in training and collapse to 30\-35% in novel environments. Our results demonstrate that principled observation design and environmental diversity during data collection, not model scaling, enable low\-cost robots to operate reliably in everyday household environments.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2605.11114v1)
+
+---
+
+
 ## AnyDepth\-DETR/\-YOLO: Any\-depth object detection with a single network / 
 
 发布日期：2026-05-10
@@ -15,78 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2605.09407v1)
-
----
-
-
-## A Marine Debris Detection Framework for Ocean Robots via Self\-Attention Enhancement and Feature Interaction Optimization / 
-
-发布日期：2026-05-08
-
-作者：Yuyang Li
-
-摘要：Marine debris detection for ocean robot is crucial for ecological protection, yet performance is often degraded by low\-quality images with blur, complex backgrounds, and small targets. To address these challenges, we propose YOLO\-MD, an enhanced YOLO\-based detection framework. A Dual\-Branch Convolutional Enhanced Self\-Attention \(DB\-CASA\) module is designed to strengthen spatial\-channel interactions, improving feature representation in degraded images. Additionally, a lightweight shift\-based operation is introduced to enhance fine\-grained feature extraction for objects of varying scales while maintaining parameter efficiency. We further propose SFG\-Loss to mitigate class imbalance and optimization instability via dynamic sample reweighting. Experiments on the UODM dataset demonstrate that YOLO\-MD achieves 0.875 precision, 0.822 F1\-score, and 0.849 mAP50, outperforming the latest state\-of\-the\-art methods. The effectiveness of this method has also been verified through real\-world robotic edge deployment experiments.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2605.07388v1)
-
----
-
-
-## XiYOLO: Energy\-Aware Object Detection via Iterative Architecture Search and Scaling / 
-
-发布日期：2026-05-07
-
-作者：Tony Tran
-
-摘要：Object detection on heterogeneous edge devices must satisfy strict energy, latency, and memory constraints while still providing reliable perception for downstream autonomy. Existing energy\-aware NAS methods often target limited deployment settings, while real energy remains difficult to optimize because it is highly device\-dependent and costly to measure. We address these challenges with an energy\-adaptive framework that combines an energy\-aware XiResOFA search space, a two\-stage energy estimator, and iterative search to identify a single energy\-efficient base architecture. We then apply compound scaling to transform this base design into the XiYOLO family across deployment budgets, enabling interpretable accuracy\-energy tradeoffs under sparse hardware measurements. Experiments on PascalVOC, COCO, and real\-device deployment show that XiYOLO achieves a stronger energy\-accuracy tradeoff than YOLO baselines. On PascalVOC, the medium XiYOLO model reaches 86.15 mAP50 while reducing energy relative to YOLOv12m by 20.6% on GPU and 35.9% on NPU. On COCO, XiYOLO reduces energy relative to YOLOv12 by up to 53.7% on GPU and 51.6% on NPU at the small scale. The proposed two\-stage estimator also improves sample efficiency over a joint predictor under few\-shot adaptation with only 2\-20 target\-device samples.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2605.06927v1)
-
----
-
-
-## Low\-Cost Stereo Vision for Robust 3D Positioning of Thin Radiata Pine Branches in Autonomous Drone Pruning / 
-
-发布日期：2026-05-06
-
-作者：Yida Lin
-
-摘要：Manual pruning of radiata pine, a species of major economic importance to New Zealand forestry, is hazardous, labour\-intensive, and increasingly constrained by workforce shortages. Existing autonomous pruning platforms typically rely on expensive sensors such as LiDAR and are limited to thick branches, which restricts their wider adoption. This paper investigates whether a single low\-cost stereo camera mounted on a drone can provide sufficiently accurate branch detection and three\-dimensional positioning to support autonomous pruning of branches as thin as 10 mm, thereby removing the need for auxiliary depth sensors. The proposed pipeline comprises two stages: branch segmentation and depth estimation. For segmentation, Mask R\-CNN variants and the YOLOv8 and YOLOv9 families are compared on a custom dataset of 71 stereo image pairs captured with a ZED Mini camera; YOLOv8 and YOLOv9 are selected as representative state\-of\-the\-art real\-time segmentors at the time of data collection, and the framework is designed to remain compatible with newer YOLO releases. For depth estimation, a traditional method \(SGBM with WLS filtering\) and deep\-learning\-based methods \(PSMNet, ACVNet, GWCNet, MobileStereoNet, RAFT\-Stereo, and NeRF\-Supervised Deep Stereo\) are evaluated, including cross\-dataset fine\-tuning experiments that expose the domain gap between urban driving benchmarks and natural forestry scenes. The main novelty of this work lies in coupling stereo segmentation with a centroid\-based triangulation algorithm and Median\-Absolute\-Deviation outlier rejection that converts a segmentation mask and disparity map into a single robust branch\-to\-camera distance, addressing the challenges of sparse texture, thin structures, and noisy disparity values typical of forest scenes. Qualitative evaluations at distances of 1\-2 m show that the learning\-based stereo methods produce more coherent depth es...
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2605.08213v1)
-
----
-
-
-## StreakMind: AI detection and analysis of satellite streaks in astronomical images with automated database integration / 
-
-发布日期：2026-05-05
-
-作者：Rafael Carrillo Navarro
-
-摘要：Artificial satellites and space debris increasingly contaminate astronomical images, affecting scientific surveys and producing large volumes of streaked exposures. Manual inspection is no longer feasible at scale, and reliable detection and characterisation of streaks has become essential for both data\-quality control and the monitoring of objects in Earth orbit. We present StreakMind, an automated pipeline designed to detect Near\-Earth Objects and satellite streaks in astronomical images, characterise their geometry, and cross\-identify them with known orbital objects. The system integrates all inference results into a structured database suitable for large surveys. A YOLO OBB model was trained on a hybrid dataset of 2335 images and applied to processed FITS frames. Geometric refinement, inter\-frame association, satellite cross\-identification, and Gaussian\-based confidence scoring were then used to produce final identifications stored in a relational database. Observations from La Sagra Observatory were used to develop and test the method. On the test set, the model achieved a precision of 94 percent and a recall of 97 percent. It reliably detected faint streaks, delivered consistent geometric reconstructions, and performed robust satellite cross\-identification. StreakMind demonstrates strong potential for large\-scale automated analysis of linear streaks produced by both Near\-Earth Objects and artificial satellites, contributing to space situational awareness.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2605.03429v1)
 
 ---
 
