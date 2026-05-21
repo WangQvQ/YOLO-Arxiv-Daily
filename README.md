@@ -1,6 +1,24 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## A novel YOLO26\-MoE optimized by an LLM agent for insulator fault detection considering UAV images / 
+
+发布日期：2026-05-19
+
+作者：João Pedro Matos\-Carvalho
+
+摘要：The inspection of electrical power line insulators is essential for ensuring grid reliability and preventing failures caused by damaged or degraded insulation components. In recent years, Unmanned Aerial Vehicles \(UAVs\) combined with deep learning\-based vision systems have emerged as an effective solution for automating this process. However, insulator fault detection remains challenging due to small defect regions, heterogeneous fault patterns, complex backgrounds, and varying imaging conditions. To address these challenges, this paper proposes an optimized YOLO26\-MoE, a novel object detection architecture that integrates a sparse Mixture\-of\-Experts \(MoE\) module into the high\-resolution branch of the YOLO26 detector. The proposed modification enables adaptive feature refinement for subtle and diverse fault patterns while preserving the efficiency of a one\-stage detection framework. Hyperparameter optimization, final training, and evaluation were coordinated through a tool\-augmented Large Language Model \(LLM\) agent. The proposed model achieved 0.9900 mAP@0.5 and 0.9515 mAP@0.5:0.95, outperforming the latest YOLO versions. These results demonstrate that the proposed model provides an effective and reliable solution for UAV\-based insulator fault detection.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2605.19595v1)
+
+---
+
+
 ## You Only Landmark Once: Lightweight U\-Net Face Super Resolution with YOLO\-World Landmark Heatmaps / 
 
 发布日期：2026-05-13
@@ -69,24 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2605.11521v1)
-
----
-
-
-## SEVO: Semantic\-Enhanced Virtual Observation for Robust VLA Manipulation via Active Illumination and Data\-Centric Collection / 
-
-发布日期：2026-05-11
-
-作者：Tianchonghui Fang
-
-摘要：Vision\-Language\-Action \(VLA\) and imitation\-learning policies trained via community toolchains on low\-cost hardware frequently fail when deployed outside the training environment. Existing evaluations, including the original ACT and SmolVLA benchmarks, demonstrate high success rates under controlled, fixed backgrounds, yet community practitioners report near\-zero transfer to new environments. We present SEVO \(Semantic\-Enhanced Virtual Observation\), a data\-centric approach that improves cross\-environment manipulation robustness without modifying the policy architecture. SEVO transforms the raw RGB camera stream through three mechanisms: \(1\) body\-fixed cameras whose combined fields of view cover the full manipulation workspace, \(2\) active red\-spectrum illumination that physically normalizes object appearance, and \(3\) real\-time YOLO segmentation overlay that provides a background\-invariant semantic cue. Critically, we show that a diversified data collection protocol \(systematically varying lighting, backgrounds, and distractors during teleoperation\) is the single most important factor for generalization. We target transparent water bottles, objects that visually blend with their surroundings, and select a simple pick\-and\-place task to enable hundreds of controlled real\-robot trials across two mobile platforms. The full pipeline achieves 95% grasp success with ACT and 83% with SmolVLA in the training environment, transferring to novel environments at 85% and 75%. Without SEVO, the same policies achieve only 75%/70% in training and collapse to 30\-35% in novel environments. Our results demonstrate that principled observation design and environmental diversity during data collection, not model scaling, enable low\-cost robots to operate reliably in everyday household environments.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2605.11114v1)
 
 ---
 
