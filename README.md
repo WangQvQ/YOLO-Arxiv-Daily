@@ -1,6 +1,42 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## GSA\-YOLO: A High\-Efficiency Framework via Structured Sparsity and Adaptive Knowledge Distillation for Real\-Time X\-ray Security Inspection / 
+
+发布日期：2026-05-20
+
+作者：Jiahao Kong
+
+摘要：X\-ray security inspection requires accurate real\-time detection of prohibited items, but existing models often struggle to balance the challenges of severe occlusion, complex clutter, and strict speed requirements. To overcome these challenges, this paper proposes GSA\-YOLO, a novel lightweight framework built upon the YOLOv8n architecture, specifically engineered to enhance detection robustness and inference efficiency. GSA\-YOLO strategically integrates structured sparsity and adaptive knowledge transfer through three core components: Group Lasso \(GL\) applied to the network neck for robust feature extraction; Sparse Structure Selection \(SSS\) applied to the detection head for significant model slimming; and an Adaptive Knowledge Distillation \(Ada\-KD\) mechanism for comprehensive accuracy recovery. This integrated approach synergistically enhances feature representation while pruning redundant channels, maximizing model efficiency without sacrificing performance. Rigorous evaluations on the HiXray and PIDray datasets confirm GSA\-YOLO's comprehensive capability, achieving a leading inference speed of 189.62 FPS, accompanied by a reduction in computational cost from 8.7G to 8.0G. Crucially, GSA\-YOLO secures mAP50:95 results of 0.531 and 0.679 on HiXray and PIDray, demonstrating 2.4% and 1.8% improvements over the baseline, respectively. Compared to other models, GSA\-YOLO exhibits enhanced accuracy while maintaining computational efficiency, making it a promising solution for practical X\-ray security inspection.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2605.20669v1)
+
+---
+
+
+## LER\-YOLO: Reliability\-Aware Expert Routing for Misaligned RGB\-Infrared UAV Detection / 
+
+发布日期：2026-05-20
+
+作者：Liming Hou
+
+摘要：Detecting small unmanned aerial vehicles from RGB\-infrared remote\-sensing pairs remains challenging due to tiny target scale, cluttered backgrounds, and spatial misalignment between heterogeneous sensors. Existing bimodal detectors often align or fuse features without assessing the reliability of local cross\-sensor correspondence, allowing mismatch artifacts to propagate into the detection head. To address this issue, we propose LER\-YOLO, a reliability\-aware sparse mixture\-of\-experts framework for misaligned RGB\-infrared UAV detection. LER\-YOLO first introduces an Uncertainty\-Aware Target Alignment module that resamples visible features toward the infrared reference and estimates a spatial reliability map. This reliability prior is then used by a Reliability\-Guided Sparse MoE Fusion module to adaptively select k experts from RGB\-dominant, infrared\-dominant, and interactive fusion experts, enabling trustworthy cross\-modal interaction while suppressing unreliable fusion. Experiments on the public MBU benchmark under a YOLOv5s\-family protocol show that LER\-YOLO achieves 89.7\+/\-0.2% AP50 over three independent seeds, with a best result of 89.9%. Extensive ablations, parameter\-matched comparisons, synthetic\-shift evaluations, and complexity analysis demonstrate that the gains mainly come from reliability\-guided expert routing rather than increased model capacity.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2605.20667v1)
+
+---
+
+
 ## A novel YOLO26\-MoE optimized by an LLM agent for insulator fault detection considering UAV images / 
 
 发布日期：2026-05-19
@@ -37,56 +73,20 @@
 ---
 
 
-## TriBand\-BEV: Real\-Time LiDAR\-Only 3D Pedestrian Detection via Height\-Aware BEV and High\-Resolution Feature Fusion / 
+## Exact Linear Attention / 
 
-发布日期：2026-05-12
+发布日期：2026-05-13
 
-作者：Mohammad Khoshkdahan
+作者：Weinuo Ou
 
-摘要：Safe autonomous agents and mobile robots need fast real time 3D perception, especially for vulnerable road users \(VRUs\) such as pedestrians. We introduce a new bird's eye view \(BEV\) encoding, which maps the full 3D LiDAR point cloud into a light\-weight 2D BEV tensor with three height bands. We explicitly reformulate 3D detection as a 2D detection problem and then reconstruct 3D boxes from the BEV outputs. A single network detects cars, pedestrians, and cyclists in one pass. The backbone uses area attention at deep stages, a hierarchical bidirectional neck over P1 to P4 fuses context and detail, and the head predicts oriented boxes with distribution focal learning for side offsets and a rotated IoU loss. Training applies a small vertical re bin and a mild reflectance jitter in channel space to resist memorization. We use an interquartile range \(IQR\) filter to remove noisy and outlier LiDAR points during 3D reconstruction. On KITTI dataset, TriBand\-BEV attains 58.7/52.6/47.2 pedestrian BEV AP\(%\) for easy, moderate, and hard at 49 FPS on a single consumer GPU, surpassing Complex\-YOLO, with gains of \+12.6%, \+7.5%, and \+3.1%. Qualitative scenes show stable detection under occlusion. The pipeline is compact and ready for real time robotic deployment. Our source code is publicly available on GitHub.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2605.12220v1)
-
----
-
-
-## BronchoLumen: Analysis of recent YOLO\-based architectures for real\-time bronchial orifice detection in video bronchoscopy / 
-
-发布日期：2026-05-12
-
-作者：Yongchao Li
-
-摘要：Bronchoscopy is routinely conducted in pulmonary clinics and intensive care units, but navigating the complex branching of the respiratory tract remains challenging. This paper introduces BronchoLumen, a real\-time YOLO\-based system for detecting bronchial orifices in video bronchoscopy, aiming to assist navigation and CAD systems. The paper investigates if bronchial orifices can be robustly detected across image domains using state\-of\-the\-art object detection and a limited set of public image data. The study includes the description and comparison of YOLOv8, a widely adopted architecture, and YOLOv12, a more recent architecture integrating attention\-based modules to improve spatial reasoning. Both models are trained and tested solely on publicly available datasets comprising different image domains. A comparison of both models is conducted based on the common metrics mAP@0.5 and mAP@0.5:0.9 with the latter emphasizing localization accuracy. For YOLOv8 we obtained a mAP@0.5 of 0.91 on an in\-domain and 0.68 on a cross\-domain test set. YOLOv12 achieved 0.84 and 0.68 respectively with slightly better localization accuracy with mAP@0.5:0.9 of 0.48 and 0.26 compared to YOLOv8 with 0.45 and 0.25. Challenges like motion blur and low contrast occasionally entailed uncertainties but the system demonstrated overall robustness in most scenarios. BronchoLumen is an open\-weight, YOLO\-based solution for bronchial orifice detection offering high accuracy and efficiency across multiple image domains. While the more recent YOLOv12 achieves better localization accuracy, we observed a slightly worse precision. The models have been made publicly available to foster further research in bronchoscopy navigation.
+摘要：This paper introduces Exact Linear Attention \(ELA\), a mechanism that achieves linear computational complexity for Transformer attention by exploiting the exact decomposition property of kernel functions, thereby eliminating approximation error. We identify and address two key limitations of prior linear attention \-\- gradient explosion and token attention dilution \-\- by imposing kernel constraints that ensure non\-negativity, discriminability, and geometric interpretability. Several kernel functions are proposed, including the Hadamard Exp Kernel, Summation Squared Euclidean Distance Kernel, and Subtraction Squared Euclidean Distance Kernel, each tailored for specific attention behaviors.   Beyond the core attention formulation, the paper presents three engineering innovations: \(1\) a Hyper\-Link structure that replaces traditional residual connections to mitigate gradient degradation; \(2\) a Memory Lobe module based on bidirectional linear attention, which captures "transformation flow" across layers to implement qualitative memory and an implicit reinforcement learning paradigm; and \(3\) a routing\-score\-based bias mechanism for Mixture\-of\-Experts \(MoE\) to improve interpretability and semantic alignment.   Experimental results demonstrate that ELA achieves up to 6x faster decoding speed and 75% reduction in KV cache memory usage compared to full attention, while maintaining comparable or superior training performance. The proposed memory module accelerates convergence and enhances generalization. Furthermore, we extend the linear attention principle to vision models, yielding YOLO\-LAT, which attains up to 4.3x GPU inference speedup and 7.9x parameter reduction with competitive detection accuracy. These results underline the broad applicability of exact linear attention for scaling Transformer models to ultra\-long sequences and efficient visual tasks.
 
 中文摘要：
 
 
 代码链接：摘要中未找到代码链接。
 
-论文链接：[阅读更多](http://arxiv.org/abs/2605.11748v1)
-
----
-
-
-## XWOD: A Real\-World Benchmark for Object Detection under Extreme Weather Conditions / 
-
-发布日期：2026-05-12
-
-作者：Chih\-Hsin Chen
-
-摘要：Autonomous driving and intelligent transportation systems remain vulnerable under extreme weather. The U.S. Federal Highway Administration reports that roughly 745,000 crashes and 3,800 fatalities per year are weather\-related, and recent regulatory investigations have examined failures of Level\-2/3 driving systems under reduced\-visibility conditions. However, datasets commonly used to evaluate weather robustness remain limited in scale, diversity, and realism. In this paper, we introduce XWOD \(Extreme Weather Object Detection\), a large\-scale real\-world traffic\-object detection benchmark containing 10,010 images and 42,924 bounding boxes across seven extreme weather conditions: rain, snow, fog, haze/sand/dust, flooding, tornado, and wildfire. The dataset covers six traffic\-object categories, including car, person, truck, motorcycle, bicycle, and bus. XWOD extends the weather taxonomy from one to seven conditions, and is the first to cover the emerging class of climate\-amplified hazards, such as flooding, tornado, and wildfire. To evaluate the quality of our data, we train standard YOLO\-family detectors on XWOD and test them zero\-shot on external weather benchmarks, achieving mAP$\_\{50\}$ scores of 63.00% on RTTS, 59.94% on DAWN, and 61.12% on WEDGE, compared with the corresponding published YOLO\-based baselines of 40.37%, 32.75%, and 45.41%, respectively, representing relative improvements of 56%, 83%, and 35%. These cross\-dataset results show that XWOD provides a strong source domain for learning weather\-robust traffic perception. We release the dataset, splits, baseline weights, and reproducible evaluation code under a research\-use license.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2605.11521v1)
+论文链接：[阅读更多](http://arxiv.org/abs/2605.18848v2)
 
 ---
 
