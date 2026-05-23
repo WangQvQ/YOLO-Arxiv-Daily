@@ -1,6 +1,24 @@
 # 每日从arXiv中获取最新YOLO相关论文
 
 
+## Dual\-Integrated Low\-Latency Single\-Lens Infrared Computational Imaging for Object Detection / 
+
+发布日期：2026-05-21
+
+作者：Xuquan Wang
+
+摘要：Computational imaging enables compact infrared systems, but deep\-learning pipelines that combine image reconstruction and object detection often introduce substantial inference latency. Most existing acceleration strategies compress the reconstruction network while overlooking physical priors from the optical path, leaving a trade\-off between accuracy and speed. We present Physics\-aware Dual\-Integrated Network \(PDI\-Net\), a low\-latency framework that integrates infrared reconstruction with object detection and further embeds optical priors into the learning process. PDI\-Net uses a supervised U\-Net during training, while a semi\-U\-Net encoder shares features directly with a YOLO\-based detector during inference, avoiding full image reconstruction. To bridge the gap between fidelity\-oriented reconstruction features and detection\-oriented semantics, we introduce a physics\-aware large\-small bridge \(PALS\-Bridge\), which uses field\-dependent point spread function priors to adaptively modulate multiscale convolutional branches. A physics\-informed optical degradation simulation pipeline is also developed for training and validation. The method is deployed on a single\-lens infrared camera, reducing system weight by about 50% compared with traditional multi\-lens designs. On the M3FD benchmark under low\-SNR conditions, PDI\-Net reduces inference time by 84.06% compared with the Rec\+Det with pruning strategy while improving mAP@0.5:0.95 by 5.07%. These results demonstrate compact, low\-latency computational infrared imaging for real\-time object detection on resource\-constrained platforms.
+
+中文摘要：
+
+
+代码链接：摘要中未找到代码链接。
+
+论文链接：[阅读更多](http://arxiv.org/abs/2605.21964v1)
+
+---
+
+
 ## GSA\-YOLO: A High\-Efficiency Framework via Structured Sparsity and Adaptive Knowledge Distillation for Real\-Time X\-ray Security Inspection / 
 
 发布日期：2026-05-20
@@ -69,24 +87,6 @@
 代码链接：摘要中未找到代码链接。
 
 论文链接：[阅读更多](http://arxiv.org/abs/2605.14166v1)
-
----
-
-
-## Exact Linear Attention / 
-
-发布日期：2026-05-13
-
-作者：Weinuo Ou
-
-摘要：This paper introduces Exact Linear Attention \(ELA\), a mechanism that achieves linear computational complexity for Transformer attention by exploiting the exact decomposition property of kernel functions, thereby eliminating approximation error. We identify and address two key limitations of prior linear attention \-\- gradient explosion and token attention dilution \-\- by imposing kernel constraints that ensure non\-negativity, discriminability, and geometric interpretability. Several kernel functions are proposed, including the Hadamard Exp Kernel, Summation Squared Euclidean Distance Kernel, and Subtraction Squared Euclidean Distance Kernel, each tailored for specific attention behaviors.   Beyond the core attention formulation, the paper presents three engineering innovations: \(1\) a Hyper\-Link structure that replaces traditional residual connections to mitigate gradient degradation; \(2\) a Memory Lobe module based on bidirectional linear attention, which captures "transformation flow" across layers to implement qualitative memory and an implicit reinforcement learning paradigm; and \(3\) a routing\-score\-based bias mechanism for Mixture\-of\-Experts \(MoE\) to improve interpretability and semantic alignment.   Experimental results demonstrate that ELA achieves up to 6x faster decoding speed and 75% reduction in KV cache memory usage compared to full attention, while maintaining comparable or superior training performance. The proposed memory module accelerates convergence and enhances generalization. Furthermore, we extend the linear attention principle to vision models, yielding YOLO\-LAT, which attains up to 4.3x GPU inference speedup and 7.9x parameter reduction with competitive detection accuracy. These results underline the broad applicability of exact linear attention for scaling Transformer models to ultra\-long sequences and efficient visual tasks.
-
-中文摘要：
-
-
-代码链接：摘要中未找到代码链接。
-
-论文链接：[阅读更多](http://arxiv.org/abs/2605.18848v2)
 
 ---
 
