@@ -3,6 +3,7 @@ import argparse
 import requests
 import re
 import os
+import time
 
 import arxiv
 
@@ -50,8 +51,23 @@ def escape_markdown(text):
     return re.sub(r'URLPROTOCOL(https?://)', r'\g<1>', text)
 
 
+def _fetch_results(client, search, max_retries=5):
+    """带指数退避重试的结果获取器，处理 arXiv API 429 限流"""
+    for attempt in range(max_retries):
+        try:
+            return list(client.results(search))
+        except arxiv.HTTPError as e:
+            if e.status_code == 429 and attempt < max_retries - 1:
+                wait = 2 ** (attempt + 2)  # 4, 8, 16, 32 秒
+                print(f"arXiv API 限流 (429)，等待 {wait} 秒后重试 ({attempt + 1}/{max_retries})...")
+                time.sleep(wait)
+            else:
+                raise
+    return []
+
+
 def save_papers_to_md_file(query="YOLO", max_results=5, filename="README.md"):
-    client = arxiv.Client()
+    client = arxiv.Client(delay_seconds=3.0, num_retries=3)
     search = arxiv.Search(query=query, max_results=max_results, sort_by=arxiv.SortCriterion.SubmittedDate)
 
     md_content = [
@@ -73,7 +89,8 @@ def save_papers_to_md_file(query="YOLO", max_results=5, filename="README.md"):
         ""
     ]
 
-    for i, result in enumerate(client.results(search), 1):
+    max_retries = 5
+    for i, result in enumerate(_fetch_results(client, search, max_retries), 1):
         urls_in_abstract = re.findall(r'(https?://[^\s]+)', result.summary)
         code_links = "，".join(urls_in_abstract) if urls_in_abstract else None
 
