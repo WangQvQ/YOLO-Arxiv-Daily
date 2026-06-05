@@ -7,6 +7,22 @@ import time
 
 import arxiv
 
+
+def _fetch_results(client, search, max_retries=3, initial_delay=5.0):
+    """带指数退避重试的 arXiv 查询"""
+    for attempt in range(max_retries):
+        try:
+            return list(client.results(search))
+        except Exception as e:
+            # arxiv.HTTPError 的属性因版本而异，统一用字符串匹配判断 429
+            is_429 = "429" in str(e)
+            if is_429 and attempt < max_retries - 1:
+                delay = initial_delay * (2 ** attempt)
+                print(f"arXiv API 返回 429，第 {attempt + 1} 次重试，等待 {delay:.0f} 秒...")
+                time.sleep(delay)
+            else:
+                raise
+
 XIAOMI_API_BASE = "https://token-plan-cn.xiaomimimo.com/v1"
 XIAOMI_API_KEY = os.getenv('API_KEY')
 XIAOMI_MODEL = "mimo-v2.5"
@@ -89,8 +105,7 @@ def save_papers_to_md_file(query="YOLO", max_results=5, filename="README.md"):
         ""
     ]
 
-    max_retries = 5
-    for i, result in enumerate(_fetch_results(client, search, max_retries), 1):
+    for i, result in enumerate(_fetch_results(client, search), 1):
         urls_in_abstract = re.findall(r'(https?://[^\s]+)', result.summary)
         code_links = "，".join(urls_in_abstract) if urls_in_abstract else None
 
