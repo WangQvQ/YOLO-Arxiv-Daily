@@ -14,95 +14,99 @@
 
 ## 📑 论文列表
 
-> ### 1. LiftNav: Path Planning via Semantic Lifting in TSDF\-Guided Gaussian Splatting
-> **🔹 中文标题：** LiftNav：基于TSDF引导高斯喷溅的语义提升路径规划
+> ### 1. HYolo: An Intelligent IoT\-Based Object Detection System Using Hypergraph Learning
+> **🔹 中文标题：** HYolo：一种基于智能物联网的超图学习目标检测系统
 >
 > | 属性 | 内容 |
 > |:---:|:---|
-> | 📅 发布日期 | 2026-05-29 |
-> | 👤 作者 | Hannah Schieber |
+> | 📅 发布日期 | 2026-06-03 |
+> | 👤 作者 | Isha Abid |
 >
 > **📄 英文摘要：**
-> Autonomous robots in unknown indoor environments require both reliable collision avoidance and object\-level understanding. Classical representations such as TSDF support safe planning but lack semantics, while photorealistic methods like Gaussian Splatting \(GS\) provide rich appearance yet suffer from soft geometry, limiting precise obstacle avoidance. We present LiftNav, a hybrid navigation framework built on GSFusion's TSDF\+GS dual map, augmented with a real\-time pipeline of YOLO\-based detection, TSDF\-based 3D lifting, and B\-spline trajectory optimization. This design enables flexible semantic navigation without dense 3D embeddings. We further introduce a hinge\-loss\-based collision penalty that improves trajectory smoothness and safety. We evaluate our approach in a simulation using the Replica dataset. Compared against a state\-of\-the\-art radiance field baseline we show a 100% feasibility rate and shorter trajectories.
+> This paper presents HYolo, an intelligent IoT\-based object detection framework that integrates hypergraph learning into the YOLO architecture. Traditional YOLO\-based object detection models primarily capture pairwise feature interactions and may fail to model complex high\-order relationships among objects and contextual features. To address this limitation, HYolo incorporates hypergraph learning to capture richer contextual dependencies and improve object representation. Experimental evaluation on the COCO dataset demonstrates significant performance improvements over baseline YOLO models. The proposed approach achieves approximately 12% improvement in mAP@50 while enhancing overall detection accuracy and robustness. By modeling high\-order feature relationships, HYolo provides improved contextual understanding and more reliable object detection performance in IoT\-based environments. The results indicate that integrating hypergraph learning into object detection pipelines offers a promising direction for intelligent and context\-aware IoT vision systems.
 >
 > **📝 中文摘要：**
-> 在未知室内环境中的自主机器人既需要可靠的避障能力，也需要对物体层面的理解能力。传统表示方法如TSDF支持安全规划但缺乏语义信息，而高保真视觉方法如高斯溅射（GS）虽提供丰富外观信息却存在几何模糊性，限制了精确避障。本文提出LiftNav混合导航框架，基于GSFusion的TSDF+GS双地图构建，通过集成基于YOLO的检测、TSDF三维提升和B样条轨迹优化的实时处理流程，实现无需密集三维嵌入的灵活语义导航。我们进一步引入基于铰链损失的碰撞惩罚机制，以提升轨迹平滑性与安全性。通过Replica数据集仿真实验验证，相较于最新辐射场基线方法，本方法实现了100%可行率与更短的轨迹路径。
+> 本文提出HYolo——一种基于物联网的智能目标检测框架，该框架将超图学习整合到YOLO架构中。传统基于YOLO的目标检测模型主要捕捉成对特征交互，难以建模目标与上下文特征间的复杂高阶关系。为突破这一局限，HYolo通过引入超图学习来捕获更丰富的上下文依赖关系，从而增强目标表征能力。在COCO数据集上的实验评估表明，相比基线YOLO模型，该方法在mAP@50指标上实现了约12%的显著提升，同时增强了整体检测精度与鲁棒性。通过建模高阶特征关系，HYolo在基于物联网的环境中提供了更优的上下文理解能力与更可靠的目标检测性能。研究结果证实，将超图学习整合至目标检测流程中，为构建智能且具有上下文感知能力的物联网视觉系统提供了极具前景的发展方向。
 >
-> 🔗 [阅读论文](http://arxiv.org/abs/2605.31376v1)
+> 🔗 [阅读论文](http://arxiv.org/abs/2606.04345v1)
 
 ---
 
-> ### 2. Intra\-YOLO: A Small Object Detection Model for Caries and Molar\-Incisor Hypomineralization in Intraoral Photography Based on Transfer Learning with Reinforcement Learning
-> **🔹 中文标题：** 基于迁移学习与强化学习的口腔摄影龋齿及磨牙-切牙釉质发育不全小型目标检测模型：Intra-YOLO
+> ### 2. Ultralytics YOLO26: Unified Real\-Time End\-to\-End Vision Models
+> **🔹 中文标题：** Ultralytics YOLO26：统一实时端到端视觉模型
 >
 > | 属性 | 内容 |
 > |:---:|:---|
-> | 📅 发布日期 | 2026-05-27 |
-> | 👤 作者 | Po\-Lun Chwang |
+> | 📅 发布日期 | 2026-06-02 |
+> | 👤 作者 | Glenn Jocher |
 >
 > **📄 英文摘要：**
-> This study developed a computer\-aided diagnosis \(CAD\) system for detecting caries and molar\-incisor hypomineralization \(MIH\) in intraoral photographs. These lesions share similar appearances, making clinical differentiation challenging, especially given their small size and variability in imaging conditions.
+> Real\-time vision demands models that are accurate, efficient, and simple to deploy across diverse hardware. The YOLO family has become widely deployed for this reason, yet most YOLO detectors still rely on non\-maximum suppression at inference, carry heavy detection heads due to Distribution Focal Loss, require long training schedules, and can leave the smallest objects without positive label assignments. We present Ultralytics YOLO26, a unified real\-time vision model family that addresses these limitations through coordinated architecture and training advances. YOLO26 uses a dual\-head design for native NMS\-free end\-to\-end inference and removes DFL entirely, yielding a lighter head with unconstrained regression range. Its training pipeline combines MuSGD, a hybrid Muon\-SGD optimizer adapted from large language model training; Progressive Loss, which shifts supervision toward the inference\-time head; and STAL, a label assignment strategy that guarantees positive coverage for small objects. Beyond detection, YOLO26 introduces task\-specific head and loss designs for instance segmentation, pose estimation, and oriented detection, producing consistent gains across tasks and scales. The family spans five scales \(n/s/m/l/x\) and supports detection, instance segmentation, pose estimation, classification, and oriented detection in a single pipeline, with an open\-vocabulary extension, YOLOE\-26, for text\-, visual\-, and prompt\-free inference. Across all scales, YOLO26 achieves 40.9\-57.5 mAP on COCO at 1.7\-11.8 ms T4 TensorRT latency, advancing the accuracy\-latency Pareto front over prior real\-time detectors, while YOLOE\-26x reaches 40.6 AP on LVIS minival under text prompting. Code and models are available at https://github.com/ultralytics/ultralytics.
 >
 > **📝 中文摘要：**
-> 本研究开发了一种计算机辅助诊断系统，用于在口内照片中检测龋齿和磨牙切牙矿化不全症。这两种病变形态相似，临床鉴别困难，尤其是考虑到其病灶尺寸较小且拍摄条件存在差异。
+> 实时视觉需要模型具备高准确性、高效率以及跨硬件的易部署性。YOLO系列因此得到广泛应用，但现有的YOLO检测器在推理时大多仍依赖非极大值抑制，因分布焦点损失而具有沉重的检测头，需要较长的训练周期，且可能遗漏最小目标的正标签分配。
+
+本文提出Ultralytics YOLO26——一个通过架构与训练协同优化来突破上述局限的统一实时视觉模型家族。YOLO26采用双检测头设计实现原生无NMS端到端推理，并完全移除分布焦点损失，从而构建出回归范围无约束的轻量化检测头。其训练流程整合三项创新：改编自大语言模型训练的混合优化器MuSGD（Muon-SGD）、将监督重心向推理时检测头倾斜的渐进式损失，以及确保小目标正样本覆盖的标签分配策略STAL。
+
+除检测任务外，YOLO26还引入针对实例分割、姿态估计和旋转检测的任务专用头与损失函数设计，在不同任务和尺度上均实现稳定性能提升。该模型家族涵盖五种规模（n/s/m/l/x），支持检测、实例分割、姿态估计、分类和旋转检测的统一流水线，并通过开放词表扩展YOLOE-26实现文本无关、视觉无关和无提示推理。在COCO数据集上，所有规模模型以1.7-11.8毫秒（T4 TensorRT延迟）实现40.9-57.5 mAP，在精度-延迟帕累托前沿超越现有实时检测器；而YOLOE-26x在LVIS minival数据集上达到40.6 AP（文本提示条件下）。代码与模型已发布于https://github.com/ultralytics/ultralytics。
 >
-> 🔗 [阅读论文](http://arxiv.org/abs/2605.28157v1)
+> **💻 代码链接：** https://github.com/ultralytics/ultralytics.
+>
+> 🔗 [阅读论文](http://arxiv.org/abs/2606.03748v1)
 
 ---
 
-> ### 3. PlayClass: Automated Play Behaviour Classification in Poultry
-> **🔹 中文标题：** PlayClass：家禽自动玩耍行为分类
+> ### 3. Detecting Pen\-In\-Air States from Video: A Proof\-of\-Concept Toward Complementary Handwriting Analysis
+> **🔹 中文标题：** 通过视频检测悬空笔状态：一种面向互补性手写分析的概念验证
 >
 > | 属性 | 内容 |
 > |:---:|:---|
-> | 📅 发布日期 | 2026-05-26 |
-> | 👤 作者 | Prince Ravi Leow |
+> | 📅 发布日期 | 2026-06-01 |
+> | 👤 作者 | Lauren Sismeiro |
 >
 > **📄 英文摘要：**
-> Automated monitoring of animal welfare has largely targeted negative indicators, leaving positive welfare behaviours such as play underexplored. To address this gap, we present PlayClass, a pipeline for play\-behaviour classification in poultry from top\-down pen video. The pipeline leverages long\-duration tracking with SAM 3 via YOLO\-guided chunk boundaries to minimise identity errors in point\-based prompting, and frozen embeddings from image and video foundation models for play action classification. Although handcrafted motion features from tracked masks alone achieved competitive accuracy, V\-JEPA 2.1 consistently outperformed all other backbones across model scales, reaching 77.0 macro\-averaged F$\_1$ when combined with handcrafted features. Despite this result, the dataset remains challenging due to play sub\-types sharing similar kinematic profiles with non\-play and inter\-bird occlusion. Overall, our work provides encouraging evidence towards automated frameworks for play behaviour classification in poultry.
+> Dynamic aspects of handwriting are critical for assessing developmental disorders such as dysgraphia and are typically captured using digitizing tablets. However, tablet\-based sensing restricts analysis of Pen\-Up behavior to a short proximity range above the writing surface, potentially missing high\-lift in\-air movements. As a proof of concept, we investigate whether top\-view video can provide a complementary source of information for inferring pen\-contact states without relying on tablet proximity sensing. We propose an interpretable hybrid pipeline combining pen\-tip tracking using a YOLO\-based detector with kinematic feature extraction and machine learning classification. A pilot dataset of diverse handwriting videos was manually annotated at the frame level and evaluation used a Leave\-One\-Video\-Out \(LOVO\) protocol. The method achieved reliable event\-level detection of Pen\-Up segments, with an F\_2 score up to 0.805, consistent with the emphasis on recall in a screening\-oriented setting. These results support the feasibility of video\-based Pen\-Up detection as a low\-cost and non\-intrusive complement to digitizing tablets, and provide a foundation for future large\-scale studies.
 >
 > **📝 中文摘要：**
-> 动物福利自动监控长期以负面指标为主导，对游戏等积极福利行为的研究尚存空白。为填补这一缺口，我们推出PlayClass——一种基于俯视圈舍视频的禽类游戏行为分类流程。该流程通过YOLO引导的分段边界，结合SAM 3实现长期追踪，以降低基于点提示的身份识别误差，并利用图像与视频基础模型的冻结嵌入进行游戏动作分类。尽管仅从追踪掩膜提取的人工设计运动特征已能达到具有竞争力的准确率，但V-JEPA 2.1在不同模型规模下始终优于其他骨干网络，当其与人工设计特征结合时，宏观平均F1值达到77.0。尽管取得此成果，由于游戏子类型与非游戏行为具有相似的运动学特征，且存在个体间遮挡，该数据集仍具挑战性。总体而言，我们的研究为禽类游戏行为分类的自动化框架构建提供了积极证据。
+> 书写动态特征对于评估书写障碍等发育性疾病至关重要，通常通过数字化书写板进行采集。然而基于书写板的感知技术将抬笔行为分析限制在书写表面上方的短距离范围内，可能遗漏高幅度的空中运笔动作。作为概念验证，本研究探究顶视视频能否在不依赖书写板邻近感知的情况下，为推断笔触状态提供补充信息源。我们提出一种可解释的混合处理流程，结合基于YOLO的笔尖追踪检测器与运动特征提取及机器学习分类器。通过人工标注的多视角书写视频数据集进行帧级别标注，采用留一视频交叉验证法进行评估。该方法实现了可靠的抬笔片段事件级检测，F2分数最高达0.805，这与筛查场景中对召回率的重视相一致。研究结果表明，基于视频的抬笔检测技术可作为数字化书写板低成本、非侵入性的补充手段，并为未来大规模研究奠定了基础。
 >
-> 🔗 [阅读论文](http://arxiv.org/abs/2605.27304v1)
+> 🔗 [阅读论文](http://arxiv.org/abs/2606.02342v1)
 
 ---
 
-> ### 4. Small Object Detection in Industrial Recycling: A New Dataset and YOLO Performance Evaluation
-> **🔹 中文标题：** 工业回收中的小目标检测：新型数据集与YOLO性能评估
+> ### 4. Collaborative Space Object Detection with Multi\-Satellite Viewpoints in LEO Constellations
+> **🔹 中文标题：** 低地球轨道星座中基于多卫星视角的协同空间目标检测
 >
 > | 属性 | 内容 |
 > |:---:|:---|
-> | 📅 发布日期 | 2026-05-26 |
-> | 👤 作者 | Oussama Messai |
+> | 📅 发布日期 | 2026-06-01 |
+> | 👤 作者 | Xingyu Qu |
 >
 > **📄 英文摘要：**
-> In this paper, we address the problem of detecting small, dense, and overlapping objects, a major challenge in computer vision. Our focus is on reviewing proposed methods based on deep learning supervised approaches. We provide a detailed comparison of these systems on a new dataset of more than 10k images and 120k instances, highlighting their performance, accuracy, and computational efficiency in the industrial recycling process use case. Through this comparative analysis, we identify the most reliable systems currently available and the specific challenges they are designed to tackle. Furthermore, we explore the benefits of data augmentation and synthetic images. Based on our analysis, we also propose potential future directions and innovative solutions that could enhance the effectiveness of small, dense and overlapped object detection systems. The scope of our investigations encompasses object detection, length measurement, and anomaly detection within the context of the recycling process. The anomaly detection strategy is robust against variations in image resolution and zoom levels, ensuring reliable performance in industrial applications. The repository of the proposed dataset, methods and evaluation codes can be found at: https://github.com/o\-messai/SDOOD
+> With the growing number of satellites in low Earth orbit \(LEO\) constellations, the near\-Earth space environment has become increasingly congested, making space object detection \(SOD\) a pressing challenge for space safety and sustainability. To mitigate collision risks and ensure the continuity of space operations, SOD systems must deliver fast and accurate detection under stringent onboard constraints. In this paper, we investigate the potential of multi\-viewpoint observation fusion within a deep learning \(DL\) framework to enhance SOD performance. We design a practical multi\-view pipeline and several input representations for feeding multi\-view data into YOLO\-based detectors. Our experiments show that using multi\-view inputs is feasible in most cases and typically produces better results for mAP50 and mAP50\-95. For example, in model YOLOv9\-m, single\-view compared to a three\-view fused RGB setting, mAP50 increases from 0.638 to 0.732, while mAP50\-95 improves from 0.227 to 0.276. Compared with the single\-view setting, the best three\-view grayscale configuration improves mAP50 by 36.3% and mAP50\-95 by 46.5%. These findings establish multi\-view fusion as a viable and effective strategy for SOD, with broad implications for space situational awareness in LEO constellation deployments.
 >
 > **📝 中文摘要：**
-> 本文针对小尺寸、高密度且重叠物体的检测难题展开研究，该问题在计算机视觉领域具有显著挑战性。研究重点聚焦于对基于深度学习监督方法的现有技术进行系统综述。通过在包含超过1万张图像及12万标注实例的新型数据集上开展对比实验，我们深入分析了各类检测系统在工业回收场景下的性能表现、检测精度与计算效率。基于比较分析结果，我们识别出当前最具可靠性的检测系统及其针对性解决的具体技术挑战，并进一步探讨了数据增强与合成图像技术的应用价值。在理论分析基础上，本文提出了提升小尺寸、高密度重叠物体检测系统效能的潜在研究方向与创新方案。研究范围涵盖回收流程中的物体检测、尺寸测量及异常检测，其中异常检测策略具有抗图像分辨率与缩放尺度变化的能力，可确保工业应用中的稳定性能。所提出的数据集、检测方法及评估代码库可通过以下链接获取：https://github.com/o-messai/SDOOD
+> 随着低地球轨道（LEO）卫星星座数量的持续增长，近地空间环境日益拥挤，使得空间目标检测（SOD）成为航天安全与可持续发展面临的紧迫挑战。为降低碰撞风险并保障空间任务的延续性，空间目标检测系统必须在严格的星载设备约束下实现快速精准的探测。本文研究了在深度学习（DL）框架内融合多视角观测数据以提升空间目标检测性能的可行性。我们设计了一套实用的多视角处理流程，并提出多种输入表示方法，用于将多视角数据馈送至基于YOLO的检测器。实验结果表明，在多数场景下采用多视角输入具有可行性，且能显著提升mAP50与mAP50-95指标：以YOLOv9-m模型为例，与单视角输入相比，三视角融合RGB配置使mAP50从0.638提升至0.732，mAP50-95从0.227提升至0.276；最优三视角灰度配置相比单视角设置，分别实现mAP50与mAP50-95指标36.3%和46.5%的性能提升。这些研究结果证实多视角融合是实现空间目标检测的有效策略，对低轨卫星星座的空间态势感知具有重要应用价值。
 >
-> **💻 代码链接：** https://github.com/o-messai/SDOOD
->
-> 🔗 [阅读论文](http://arxiv.org/abs/2605.26884v1)
+> 🔗 [阅读论文](http://arxiv.org/abs/2606.01895v1)
 
 ---
 
-> ### 5. Pixel\-Level Pavement Distress Assessment Using Instance Segmentation
-> **🔹 中文标题：** 基于实例分割的像素级路面病害评估
+> ### 5. Hierarchically Decoupled Mixture\-of\-Experts for Robust Traffic Sign Recognition in Complex Driving Scenarios
+> **🔹 中文标题：** 分层解耦混合专家模型在复杂驾驶场景中的鲁棒交通标志识别
 >
 > | 属性 | 内容 |
 > |:---:|:---|
-> | 📅 发布日期 | 2026-05-25 |
-> | 👤 作者 | Logan Dewick |
+> | 📅 发布日期 | 2026-06-01 |
+> | 👤 作者 | Mingxiao Wang |
 >
 > **📄 英文摘要：**
-> Automated pavement distress assessment requires more than image\-level classification or coarse bounding box detection, demanding precise localization of thin, branching, and irregular cracks to achieve the geometric precision necessary for maintenance\-relevant quantification. This paper presents a vision\-based pavement distress analysis system based on Mask R\-CNN instance segmentation and evaluates it on UWGB\-StreetCrack, a custom field\-collected roadway image dataset acquired with a vehicle\-mounted smartphone and manually annotated with polygon labels for longitudinal cracks, transverse cracks, alligator cracks, and potholes. Five Detectron2\-based Mask R\-CNN backbone variants were considered under a consistent fine\-tuning protocol. The best\-performing model, Mask R\-CNN with a ResNet\-101 FPN backbone, achieved 84.23% precision, 90.04% recall, and an F1 score of 87.04% under the project\-specific bounding\-box matching protocol. The same model produced an aggregate predicted crack\-area fraction of 2.164%, closely matching the 2.170% ground\-truth crack\-area fraction. To contextualize the segmentation system against a detector\-oriented alternative, a CSPDarknet53\-based YOLO detector was also adapted and retrained on the dataset, reaching 27.5% precision and 20.7% recall on the validation protocol. The results show that instance segmentation is a practical direction for field pavement imagery and aggregate crack\-area estimation, while also exposing open challenges in annotation consistency, class imbalance, confounder rejection, and mask\-level benchmarking.
+> Traffic sign detection is a fundamental component of environmental perception in autonomous driving and intelligent transportation systems. However, most existing detectors rely on static inference with globally shared parameters, limiting their ability to adapt to diverse and unstructured traffic scenarios. As a result, a single static model often struggles to simultaneously handle both clear near\-range samples and challenging conditions such as distant small targets or adverse weather environments. To address this limitation, we propose CBDES MoE TSR, a hierarchically decoupled heterogeneous mixture\-of\-experts\(MoE\) framework for traffic sign recognition. The proposed framework departs from the conventional globally shared parameter paradigm by introducing a heterogeneous You Only Look Once \(YOLO\) expert pool together with a lightweight gating network, enabling an image\-level dynamic routing mechanism. Based on the semantic characteristics of the input image, the gating module selectively activates the most suitable expert model from the expert pool, enabling a shift from fixed parameter fitting to on\-demand dynamic representation. This design enhances feature extraction capability for specific scenarios while maintaining controlled inference overhead. Experimental results demonstrate that the proposed method achieves a remarkable balance between detection accuracy and efficiency on the composite traffic sign dataset. Specifically, our method attains an mAP50\-95 of 76.8%, yielding a 2.3% improvement over the baseline method \(74.5%\) while simultaneously reducing computational overhead by approximately 39.4%. These findings robustly validate the effectiveness of the proposed approach.
 >
 > **📝 中文摘要：**
-> 路面病害的自动化评估不仅需要图像级分类或粗边界框检测，更要求精确定位细长、分支状且形态不规则的裂缝，以满足养护量化所需的几何精度。本文提出一种基于Mask R-CNN实例分割的视觉化路面病害分析系统，并在定制采集的道路图像数据集UWGB-StreetCrack上进行评估。该数据集通过车载智能手机采集现场图像，对纵向裂缝、横向裂缝、网状裂缝及坑洼进行多边形标注。在统一微调框架下，对比了五种基于Detectron2的Mask R-CNN骨干网络变体。其中采用ResNet-101 FPN骨干网络的Mask R-CNN模型表现最优，在项目特定边界框匹配协议中达到84.23%精确率、90.04%召回率和87.04%的F1分数。该模型预测的裂缝面积占比为2.164%，与真实值2.170%高度吻合。为对比检测器方案，本文还采用基于CSPDarknet53的YOLO检测器在相同数据集上重新训练，其在验证协议中仅达到27.5%精确率和20.7%召回率。研究表明，实例分割技术是处理现场路面图像与整体裂缝面积估算的实用方向，同时也揭示了标注一致性、类别不平衡、干扰因素排除及掩膜级评估基准构建等待解难题。
+> 交通标志检测是自动驾驶与智能交通系统中环境感知的基础组成部分。然而，现有大多数检测器依赖全局共享参数的静态推理，限制了其适应多样化、非结构化交通场景的能力。单一静态模型往往难以同时处理清晰的近距样本，以及远距离小目标或恶劣天气等复杂环境下的挑战性场景。为解决这一局限，本文提出CBDES MoE TSR——一种面向交通标志识别的层级解耦异构混合专家模型框架。该框架突破传统全局共享参数范式，引入异构YOLO专家池与轻量化门控网络，构建图像级动态路由机制。根据输入图像的语义特征，门控模块可从专家池中选择性激活最适合的专家模型，从而实现从固定参数拟合到按需动态表征的转变。此设计在保持可控推理开销的同时，增强了特定场景的特征提取能力。实验结果表明，所提方法在复合交通标志数据集上实现了检测精度与效率的显著平衡。具体而言，该方法在mAP50-95指标上达到76.8%，较基线方法（74.5%）提升2.3个百分点，同时计算开销降低约39.4%。这些发现充分验证了所提方法的有效性。
 >
-> 🔗 [阅读论文](http://arxiv.org/abs/2605.26095v1)
+> 🔗 [阅读论文](http://arxiv.org/abs/2606.01822v1)
 
 ---
 
