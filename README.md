@@ -14,8 +14,26 @@
 
 ## 📑 论文列表
 
-> ### 1. Attention\-Guided Autoencoder Fusion for Insulator Defect Detection Using UAV Transmission\-Line Imaging
-> **🔹 中文标题：** 基于无人机输电线路成像的注意力引导自编码器融合绝缘子缺陷检测
+> ### 1. Feasibility to detect rapid change and disappearance of seagrass: Lessons from nearly 80 years of vegetation change in the Ako, Seto Inland Sea, Japan
+> **🔹 中文标题：** 探测海草快速变化与消亡的可行性：来自日本濑户内海Ako地区近80年植被变迁的启示
+>
+> | 属性 | 内容 |
+> |:---:|:---|
+> | 📅 发布日期 | 2026-06-06 |
+> | 👤 作者 | Takehisa Yamakita |
+>
+> **📄 英文摘要：**
+> This study analyses the Ako tidal flat in the Seto Inland Sea, Japan, where nearly all Zostera marina disappeared within a single year in 2025. Using aerial photographs from the 1940s onward, high\-resolution satellite imagery, GRUS images \(2.5\-5 m\), and monthly Sentinel\-2 composites \(10 m\), we reconstructed approximately 80 years of seagrass distribution. YOLO\-based segmentation using deep learning achieved high accuracy \(overall accuracy >= 0.9\) across these datasets; although species could not be discriminated, the models captured the major temporal dynamics in vegetation area. The long\-term mean seagrass area was 6.8 ha, but values fluctuated widely, from 3.5 ha in 1974 to 41.3 ha in 1989 except 0.2 ha in 2025. Sentinel\-2 composites from 2019 to 2026 revealed clear seasonality, with vegetation increasing in early summer and declining from autumn. In 2025, however, the area decreased sharply after summer and remained anomalously low throughout the winter of 2025\-2026. Our results, indicating that the 2025 event was not a normal fluctuation but a rapid ecosystem shift involving the loss of the dominant canopy\-forming species, most plausibly driven by regionally elevated summer water temperatures. The findings also have implications for seagrass Essential Ocean Variables \(EOVs\) and the State of Nature \(SoN\) metrics used in TNFD\-aligned nature\-related disclosures. Unlike forests, seagrass meadows require finer temporal resolution because both pronounced seasonality and abrupt collapse strongly influence area\-based indicators. Therefore, in addition to previously noted issues such as species\-level classification accuracy, we recommend that \(1\) baselines be defined over the longest available record and justified ecologically, \(2\) seasonal standardization be applied before inter\-annual comparisons, and \(3\) years with extreme area anomalies be flagged rather than used as reference points.
+>
+> **📝 中文摘要：**
+> 本研究分析了日本濑户内海英虞湾潮间带的大叶藻消失现象——该区域近95%的大叶藻在2025年内完全消失。通过融合20世纪40年代以来的航拍照片、高分辨率卫星影像、GRUS影像（分辨率2.5-5米）及月度哨兵2号合成影像（分辨率10米），我们重建了约80年的海草分布演变。基于深度学习的YOLO目标检测算法在所有数据集中均实现高精度识别（总体精度≥0.9），虽无法区分海草种类，但能有效捕捉植被面积的时空动态。研究发现该区域海草长期平均面积为6.8公顷，但年际波动剧烈：从1974年的3.5公顷到1989年的41.3公顷，直至2025年骤降至0.2公顷。哨兵2号数据显示2019-2026年间存在显著季节性规律——初夏植被扩张，秋季开始衰退。然而2025年夏季后面积锐减，且在2025-2026年冬季持续维持异常低值。结果表明2025年的突变并非正常生态波动，而是以冠层优势种消失为特征的快速生态系统转型，最可能驱动因素是区域性夏季水温异常升高。该发现对与自然相关财务披露（TNFD）框架下的海草海洋关键变量（EOVs）和自然状况（SoN）指标具有重要启示：与森林生态系统不同，海草草甸需更高时间分辨率监测，因为显著的季节性特征和突发性衰退均会强烈影响基于面积的评估指标。因此，除物种分类精度等已知问题外，我们建议：(1)基于可获取的最长历史记录定义生态基准线并提供生态学依据；(2)年度比较前需进行季节性标准化处理；(3)标记极端异常年份而非将其用作参考基准。
+>
+> 🔗 [阅读论文](http://arxiv.org/abs/2606.07949v1)
+
+---
+
+> ### 2. Attention\-Guided Autoencoder Fusion for Insulator Defect Detection Using UAV Transmission\-Line Imaging
+> **🔹 中文标题：** 基于无人机输电线路成像的注意力引导自编码器融合绝缘子缺陷检测方法
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -26,13 +44,49 @@
 > Automated defect detection in high\-voltage transmission\-line insulators remains challenging due to severe class imbalance, large scale variation, and the small spatial extent of defect instances in Unmanned Aerial Vehicle \(UAV\) imagery. To address these challenges, this paper proposes AE\-YOLO, an Attention\-Guided AutoEncoder\-Enhanced YOLO framework for robust insulator defect detection. The architecture integrates lightweight bottleneck autoencoders within a Feature Pyramid Network\-Path Aggregation Network \(FPN\-PAN\) neck. This preserves anomaly\-sensitive information during multi\-scale feature fusion. Convolutional Block Attention Modules \(CBAM\) are used throughout the backbone, enhancing feature discrimination and suppressing background interference. The framework also introduces a variance\-maximizing autoencoder regularization strategy, which encourages diverse, defect\-discriminative latent representations. The network trains using a unified objective that combines focal loss, Complete IoU \(CIoU\) loss, and autoencoder regularization to address foreground\-background imbalance and improve localization accuracy. During inference, Weighted Boxes Fusion \(WBF\) combines predictions from YOLOv8, YOLOv10, and YOLO11. An autoencoder\-guided confidence boosting mechanism improves sensitivity to rare defect categories. Experiments on the Insulator\-Defect Detection dataset show that AE\-YOLO with an EfficientNetV2 backbone achieves 95.10 percent mAP at 0.5, 96.40 percent precision, and 93.80 percent recall. This performance surpasses the strongest YOLO\-family baseline by 5.0 points in mAP at 0.5 and 6.7 points in recall. These results confirm the effectiveness and adaptability of the framework. The model is a practical and scalable solution for UAV\-based transmission\-line inspection and defect monitoring.
 >
 > **📝 中文摘要：**
-> 针对无人机影像中高压输电线路绝缘子缺陷检测存在的类别不平衡严重、尺度差异大及缺陷实例空间范围小等挑战，本文提出一种注意力引导的自编码器增强型YOLO框架。该框架在特征金字塔网络-路径聚合网络颈部架构中集成轻量级瓶颈自编码器，在多尺度特征融合过程中保留异常敏感信息。骨干网络全程采用卷积块注意力模块，增强特征判别能力并抑制背景干扰。同时引入方差最大化自编码器正则化策略，鼓励模型学习多样化且具有缺陷判别性的潜在表征。网络采用融合焦点损失、完整交并比损失与自编码器正则化的统一目标函数进行训练，以解决前景背景不平衡问题并提升定位精度。推理阶段采用加权框融合技术聚合YOLOv8、YOLOv10及YOLO11的预测结果，通过自编码器引导的置信度增强机制提升稀有缺陷类别的检测敏感性。在绝缘子缺陷检测数据集上的实验表明，采用EfficientNetV2骨干网络的AE-YOLO模型在0.5阈值下平均精度均值达95.10%，精确率为96.40%，召回率为93.80%。该性能较最优YOLO系列基线模型分别提升5.0个百分点（mAP@0.5）和6.7个百分点（召回率），验证了框架的有效性与适应性。该模型为基于无人机的输电线路巡检与缺陷监测提供了实用且可扩展的解决方案。
+> 高压输电线路绝缘子的自动缺陷检测仍具挑战性，原因在于无人机图像中存在严重的类别不平衡、巨大的尺度变化以及缺陷实例空间占比小等问题。为应对这些挑战，本文提出AE-YOLO——一种注意力引导的自编码器增强型YOLO框架，用于实现鲁棒的绝缘子缺陷检测。该架构在特征金字塔网络-路径聚合网络（FPN-PAN）颈部结构中整合了轻量级瓶颈自编码器，在多尺度特征融合过程中保留了异常敏感信息。主干网络全程采用卷积块注意力模块（CBAM），增强了特征判别能力并抑制背景干扰。框架还引入了最大化方差自编码器正则化策略，以促进多样化且具有缺陷判别性的潜在表征。网络采用统一目标函数进行训练，结合焦点损失、完整交并比损失与自编码器正则化，以解决前景-背景不平衡问题并提升定位精度。推理阶段采用加权框融合方法，整合来自YOLOv8、YOLOv10和YOLO11的预测结果。自编码器引导的置信度增强机制提升了模型对稀有缺陷类别的敏感性。绝缘子缺陷检测数据集上的实验表明，采用EfficientNetV2主干网络的AE-YOLO在0.5交并比阈值下达到95.10%的mAP值、96.40%的精确率和93.80%的召回率。该性能在0.5交并比阈值下mAP超越最强YOLO系列基线5.0个百分点，召回率提升6.7个百分点。这些结果证实了该框架的有效性与适应性，为无人机输电线路巡检与缺陷监测提供了实用且可扩展的解决方案。
 >
 > 🔗 [阅读论文](http://arxiv.org/abs/2606.06536v1)
 
 ---
 
-> ### 2. HYolo: An Intelligent IoT\-Based Object Detection System Using Hypergraph Learning
+> ### 3. PereStruct: Multimodal Semantic Assembly for Robust Historical Document Parsing
+> **🔹 中文标题：** PereStruct：面向鲁棒历史文档解析的多模态语义组装方法
+>
+> | 属性 | 内容 |
+> |:---:|:---|
+> | 📅 发布日期 | 2026-06-03 |
+> | 👤 作者 | Maksim Shandybo |
+>
+> **📄 英文摘要：**
+> Parsing historical documents with complex, non\-standard layouts remains a fundamental bottleneck in large\-scale archival digitization. Unlike modern typography, historical newspapers exhibit severe physical degradation and highly irregular page structures that confound even state\-of\-the\-art vision\-language models, presenting severe out\-of\-distribution challenges. We address this gap with an automated pipeline specifically designed for parsing historical newspapers, documents characterized by particularly intricate multi\-column layouts. Our approach combines a fine\-tuned YOLO architecture for layout analysis and block detection, trained on 1,426 fully human\-annotated scanned pages, with a novel semantic assembly module that reconstructs articles by jointly modeling lexical\-semantic similarity via TF\-IDF, visual embeddings from our fine\-tuned YOLO, and geometric layout constraints. This multi\-modal integration yields state\-of\-the\-art performance, achieving an F1 score of 0.904 on block\-to\-article mapping. Notably, end\-to\-end evaluation against vision\-language models \(Qwen3.6\-35B\-A3B and Qwen3.6\-Plus\) demonstrates that PereStruct achieves substantially higher fidelity \(BLEU approximately 0.96 vs 0.34\), validating that modular architectures excel where generic VLMs fail on complex historical layouts. To support reproducibility and advance research in this domain, we release both the training corpus of 599 annotated pages and a curated PereStruct benchmark of 93 pages with expert\-verified ground\-truth block\-to\-article mappings. This framework establishes a robust foundation for high\-fidelity digitization and semantic reconstruction of complex archival materials.
+>
+> **📝 中文摘要：**
+> 解析具有复杂非标准版式的历史文献仍是大规模档案数字化的根本瓶颈。与现代排版不同，历史报纸存在严重的物理损毁和极不规则的页面结构，这些难题即使最先进的视觉-语言模型也难以应对，呈现出严峻的分布外挑战。为此，我们开发了专为解析历史报纸设计的自动化流程，针对具有复杂多栏版式的文献进行处理。该方法将基于1426页全人工标注扫描件训练的微调YOLO架构（用于版面分析与版块检测），与创新的语义组装模块相结合，该模块通过联合建模TF-IDF词频语义相似度、微调YOLO的视觉嵌入信息以及几何版面约束来重构文章。这种多模态融合实现了最先进性能，在版块到文章的映射任务中F1分数达0.904。值得注意的是，通过与视觉-语言模型（Qwen3.6-35B-A3B和Qwen3.6-Plus）的端到端评估对比表明，PereStruct系统具有显著更高的保真度（BLEU值约0.96 vs 0.34），验证了模块化架构在处理复杂历史版式时优于通用视觉-语言模型的卓越性能。为支持该领域的可复现研究，我们公开了包含599页标注数据的训练语料，以及经专家验证的版块到文章映射基准测试集（93页精选页面）。本框架为复杂档案材料的高保真数字化与语义重构奠定了坚实基础。
+>
+> 🔗 [阅读论文](http://arxiv.org/abs/2606.07661v1)
+
+---
+
+> ### 4. Real\-Time Industrial Defect Detection on Edge Hardware Using Fine\-Tuned YOLOv8: A Systematic Benchmark on the NEU Surface Defect Database and MVTec AD with Automotive & Battery Manufacturing Extensions
+> **🔹 中文标题：** 基于微调YOLOv8的边缘硬件实时工业缺陷检测：在NEU表面缺陷数据库与MVTec AD上的系统性基准测试及汽车与电池制造扩展
+>
+> | 属性 | 内容 |
+> |:---:|:---|
+> | 📅 发布日期 | 2026-06-03 |
+> | 👤 作者 | Emmanuel Ezeji Somtochukwu |
+>
+> **📄 英文摘要：**
+> Automated surface defect detection is critical for ensuring rigorous quality control in high\-speed manufacturing environments. While deep learning models offer remarkable accuracy, deploying them on resource\-constrained edge hardware without introducing significant latency remains a persistent challenge. This paper presents Industrial\-YOLO, an edge\-optimized framework built upon a fine\-tuned YOLOv8 architecture specifically engineered for real\-time industrial defect detection. We conduct a systematic benchmark utilizing the NEU surface defect database for steel sheets and the MVTec AD dataset, supplemented with custom automotive manufacturing extensions representing real\-world structural anomalies \(scratches, pits, and inclusions\). To bridge the gap between algorithmic complexity and edge hardware constraints, target\-specific optimizations are introduced via TensorRT and OpenVINO acceleration engines. Experimental results demonstrate that Industrial\-YOLO achieves a high\-velocity inference speed exceeding 120 FPS on the NVIDIA Jetson Orin platform while maintaining an exceptional mean Average Precision \(mAP\) of 98.5%. The proposed framework showcases highly robust, zero\-latency performance when deployed directly onto an active automotive assembly line, offering a scalable blueprint for next\-generation automated optical inspection \(AOI\) systems.
+>
+> **📝 中文摘要：**
+> 表面缺陷自动检测对于确保高速制造环境下的严格质量控制至关重要。尽管深度学习模型具有卓越的准确性，但如何在资源受限的边缘硬件上部署这些模型且不引入显著延迟，仍然是一个持续存在的挑战。本文提出Industrial-YOLO框架——一个基于YOLOv8架构精细调优构建、专为实时工业缺陷检测设计的边缘优化框架。我们利用NEU钢板表面缺陷数据库和MVTec AD数据集进行系统性基准测试，并补充了代表真实世界结构异常（划痕、凹坑和夹杂物）的定制汽车制造扩展数据。为弥合算法复杂性与边缘硬件限制之间的差距，通过TensorRT和OpenVINO加速引擎引入了针对特定目标的优化方案。实验结果表明，Industrial-YOLO在NVIDIA Jetson Orin平台上实现了超过120 FPS的高速推理速度，同时保持了98.5%的卓越平均精度均值。该框架在直接部署到实际汽车装配线时展现出高度稳健的零延迟性能，为新一代自动光学检测系统提供了可扩展的蓝图。
+>
+> 🔗 [阅读论文](http://arxiv.org/abs/2606.07659v1)
+
+---
+
+> ### 5. HYolo: An Intelligent IoT\-Based Object Detection System Using Hypergraph Learning
 > **🔹 中文标题：** HYolo：基于超图学习的物联网智能目标检测系统
 >
 > | 属性 | 内容 |
@@ -44,65 +98,9 @@
 > This paper presents HYolo, an intelligent IoT\-based object detection framework that integrates hypergraph learning into the YOLO architecture. Traditional YOLO\-based object detection models primarily capture pairwise feature interactions and may fail to model complex high\-order relationships among objects and contextual features. To address this limitation, HYolo incorporates hypergraph learning to capture richer contextual dependencies and improve object representation. Experimental evaluation on the COCO dataset demonstrates significant performance improvements over baseline YOLO models. The proposed approach achieves approximately 12% improvement in mAP@50 while enhancing overall detection accuracy and robustness. By modeling high\-order feature relationships, HYolo provides improved contextual understanding and more reliable object detection performance in IoT\-based environments. The results indicate that integrating hypergraph learning into object detection pipelines offers a promising direction for intelligent and context\-aware IoT vision systems.
 >
 > **📝 中文摘要：**
-> 本文提出HYolo——一种基于物联网的智能目标检测框架，该框架将超图学习集成到YOLO架构中。传统基于YOLO的目标检测模型主要捕捉成对特征交互，可能无法有效建模目标与上下文特征间的复杂高阶关系。为解决这一局限，HYolo引入超图学习机制以捕获更丰富的上下文依赖关系，从而增强目标表征能力。在COCO数据集上的实验评估表明，该模型相比基线YOLO模型实现了显著的性能提升：mAP@50指标提升约12%，同时整体检测精度与鲁棒性均得到增强。通过建模高阶特征关系，HYolo在基于物联网的环境中提供了更优的上下文理解能力和更可靠的目标检测性能。研究结果表明，将超图学习集成到目标检测流程中，为智能感知物联网视觉系统的发展提供了极具前景的研究方向。
+> 本文提出HYolo，一种基于物联网的智能目标检测框架，将超图学习整合至YOLO架构中。传统基于YOLO的目标检测模型主要捕捉成对特征交互，难以建模目标与上下文特征间的复杂高阶关系。为解决这一局限，HYolo引入超图学习以捕捉更丰富的上下文依赖关系，从而优化目标表征能力。在COCO数据集上的实验评估表明，该框架相比基线YOLO模型实现了显著性能提升：在mAP@50指标上获得约12%的提升，同时增强了整体检测精度与鲁棒性。通过建模高阶特征关系，HYolo在基于物联网的环境中提供了更优的上下文理解能力与更可靠的目标检测性能。研究结果表明，将超图学习整合至目标检测流程，为智能且具备上下文感知能力的物联网视觉系统开辟了极具潜力的发展方向。
 >
 > 🔗 [阅读论文](http://arxiv.org/abs/2606.04345v1)
-
----
-
-> ### 3. Ultralytics YOLO26: Unified Real\-Time End\-to\-End Vision Models
-> **🔹 中文标题：** Ultralytics YOLO26：统一实时端到端视觉模型
->
-> | 属性 | 内容 |
-> |:---:|:---|
-> | 📅 发布日期 | 2026-06-02 |
-> | 👤 作者 | Glenn Jocher |
->
-> **📄 英文摘要：**
-> Real\-time vision demands models that are accurate, efficient, and simple to deploy across diverse hardware. The YOLO family has become widely deployed for this reason, yet most YOLO detectors still rely on non\-maximum suppression at inference, carry heavy detection heads due to Distribution Focal Loss, require long training schedules, and can leave the smallest objects without positive label assignments. We present Ultralytics YOLO26, a unified real\-time vision model family that addresses these limitations through coordinated architecture and training advances. YOLO26 uses a dual\-head design for native NMS\-free end\-to\-end inference and removes DFL entirely, yielding a lighter head with unconstrained regression range. Its training pipeline combines MuSGD, a hybrid Muon\-SGD optimizer adapted from large language model training; Progressive Loss, which shifts supervision toward the inference\-time head; and STAL, a label assignment strategy that guarantees positive coverage for small objects. Beyond detection, YOLO26 introduces task\-specific head and loss designs for instance segmentation, pose estimation, and oriented detection, producing consistent gains across tasks and scales. The family spans five scales \(n/s/m/l/x\) and supports detection, instance segmentation, pose estimation, classification, and oriented detection in a single pipeline, with an open\-vocabulary extension, YOLOE\-26, for text\-, visual\-, and prompt\-free inference. Across all scales, YOLO26 achieves 40.9\-57.5 mAP on COCO at 1.7\-11.8 ms T4 TensorRT latency, advancing the accuracy\-latency Pareto front over prior real\-time detectors, while YOLOE\-26x reaches 40.6 AP on LVIS minival under text prompting. Code and models are available at https://github.com/ultralytics/ultralytics.
->
-> **📝 中文摘要：**
-> 实时视觉要求模型具备高精度、高效率和跨硬件易部署的特性。YOLO系列模型因满足这些需求而得到广泛应用，但现有YOLO检测器在推理阶段仍普遍依赖非极大值抑制算法、因分布式焦点损失而需采用厚重的检测头、需要冗长的训练周期，且可能遗漏最小目标的正标签分配。我们提出Ultralytics YOLO26——一个通过协同架构与训练创新解决上述局限的统一实时视觉模型家族。YOLO26采用双头设计实现原生无NMS的端到端推理，并彻底移除分布式焦点损失，从而构建出更轻量化且具有无约束回归范围的检测头。其训练流程融合了三大创新：适应大语言模型训练的混合Muon-SGD优化器（MuSGD）、将监督重心转向推理阶段检测头的渐进式损失（Progressive Loss），以及确保小目标正样本覆盖的STAL标签分配策略。在检测任务之外，YOLO26还为实例分割、姿态估计和旋转目标检测设计了专用检测头与损失函数，在各任务与模型尺度上均实现一致性性能提升。该模型家族提供五种规模（n/s/m/l/x），在单一流程中支持检测、实例分割、姿态估计、分类和旋转目标检测任务，并配备支持文本/视觉/无提示推理的开放词汇扩展模块YOLOE-26。全系列模型在COCO数据集上达到40.9-57.5 mAP的精度（T4 TensorRT推理延迟仅1.7-11.8毫秒），在精度-延迟帕累托前沿显著超越现有实时检测器，其中YOLOE-26x在LVIS minival数据集上通过文本提示达到40.6 AP。代码与模型已开源：https://github.com/ultralytics/ultralytics。
->
-> **💻 代码链接：** https://github.com/ultralytics/ultralytics.
->
-> 🔗 [阅读论文](http://arxiv.org/abs/2606.03748v1)
-
----
-
-> ### 4. Detecting Pen\-In\-Air States from Video: A Proof\-of\-Concept Toward Complementary Handwriting Analysis
-> **🔹 中文标题：** 基于视频的悬空笔状态检测：实现互补性笔迹分析的概念验证
->
-> | 属性 | 内容 |
-> |:---:|:---|
-> | 📅 发布日期 | 2026-06-01 |
-> | 👤 作者 | Lauren Sismeiro |
->
-> **📄 英文摘要：**
-> Dynamic aspects of handwriting are critical for assessing developmental disorders such as dysgraphia and are typically captured using digitizing tablets. However, tablet\-based sensing restricts analysis of Pen\-Up behavior to a short proximity range above the writing surface, potentially missing high\-lift in\-air movements. As a proof of concept, we investigate whether top\-view video can provide a complementary source of information for inferring pen\-contact states without relying on tablet proximity sensing. We propose an interpretable hybrid pipeline combining pen\-tip tracking using a YOLO\-based detector with kinematic feature extraction and machine learning classification. A pilot dataset of diverse handwriting videos was manually annotated at the frame level and evaluation used a Leave\-One\-Video\-Out \(LOVO\) protocol. The method achieved reliable event\-level detection of Pen\-Up segments, with an F\_2 score up to 0.805, consistent with the emphasis on recall in a screening\-oriented setting. These results support the feasibility of video\-based Pen\-Up detection as a low\-cost and non\-intrusive complement to digitizing tablets, and provide a foundation for future large\-scale studies.
->
-> **📝 中文摘要：**
-> 书写动态特征对评估书写障碍等发育性疾病至关重要，通常通过数字化书写板进行捕捉。然而，基于书写板的传感技术将提笔行为的分析局限于书写表面上方的短距离范围，可能遗漏高位抬起的空中运笔轨迹。为验证概念可行性，本研究探究顶视角视频能否在不依赖书写板邻近传感的前提下，为推断笔尖接触状态提供补充信息。我们提出一种可解释的混合处理流程，结合基于YOLO检测器的笔尖追踪、运动特征提取与机器学习分类。通过人工标注的多样化手写视频初步数据集实现逐帧标注，并采用留一视频法进行评估。该方法在提笔片段检测中达到了可靠水平，F_2分数最高达0.805，符合筛查场景对召回率的侧重。结果表明，基于视频的提笔检测技术作为低成本、非侵入式的书写板补充方案具有可行性，为未来大规模研究奠定了基础。
->
-> 🔗 [阅读论文](http://arxiv.org/abs/2606.02342v1)
-
----
-
-> ### 5. Collaborative Space Object Detection with Multi\-Satellite Viewpoints in LEO Constellations
-> **🔹 中文标题：** 基于多卫星视角的低轨星座协作式空间目标检测
->
-> | 属性 | 内容 |
-> |:---:|:---|
-> | 📅 发布日期 | 2026-06-01 |
-> | 👤 作者 | Xingyu Qu |
->
-> **📄 英文摘要：**
-> With the growing number of satellites in low Earth orbit \(LEO\) constellations, the near\-Earth space environment has become increasingly congested, making space object detection \(SOD\) a pressing challenge for space safety and sustainability. To mitigate collision risks and ensure the continuity of space operations, SOD systems must deliver fast and accurate detection under stringent onboard constraints. In this paper, we investigate the potential of multi\-viewpoint observation fusion within a deep learning \(DL\) framework to enhance SOD performance. We design a practical multi\-view pipeline and several input representations for feeding multi\-view data into YOLO\-based detectors. Our experiments show that using multi\-view inputs is feasible in most cases and typically produces better results for mAP50 and mAP50\-95. For example, in model YOLOv9\-m, single\-view compared to a three\-view fused RGB setting, mAP50 increases from 0.638 to 0.732, while mAP50\-95 improves from 0.227 to 0.276. Compared with the single\-view setting, the best three\-view grayscale configuration improves mAP50 by 36.3% and mAP50\-95 by 46.5%. These findings establish multi\-view fusion as a viable and effective strategy for SOD, with broad implications for space situational awareness in LEO constellation deployments.
->
-> **📝 中文摘要：**
-> 随着低轨卫星星座中卫星数量持续增加，近地空间环境日益拥挤，使得空间目标检测成为保障太空安全与可持续发展的紧迫挑战。为降低碰撞风险并确保空间作业连续性，空间目标检测系统必须在严格的星载设备限制下实现快速精准的探测。本文研究在深度学习框架内融合多视角观测以提升空间目标检测性能的潜力。我们设计了一套实用的多视角处理流程，并开发了多种输入表示方法，将多视角数据有效输入基于YOLO的检测网络。实验表明：多视角输入在大多数情况下具有可行性，通常能在mAP50和mAP50-95指标上取得更优表现。以YOLOv9-m模型为例，相比单视角输入，三视角融合RGB设置使mAP50从0.638提升至0.732，mAP50-95从0.227提升至0.276。与单视角配置相比，最优三视角灰度配置使mAP50提升36.3%，mAP50-95提升46.5%。这些发现证实了多视角融合作为空间目标检测策略的可行性与有效性，对低轨卫星星座的空间态势感知具有重要启示意义。
->
-> 🔗 [阅读论文](http://arxiv.org/abs/2606.01895v1)
 
 ---
 
