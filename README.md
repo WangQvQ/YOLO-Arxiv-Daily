@@ -14,8 +14,28 @@
 
 ## 📑 论文列表
 
-> ### 1. MOSAIC: Mobile Object Segmentation under Adverse Imaging Conditions for Rapid L\-PBF Keyhole Behavior Characterization
-> **🔹 中文标题：** MOSAIC：面向恶劣成像条件的移动目标分割技术——用于快速表征激光粉末床熔融匙孔行为
+> ### 1. SPARK: Low Latency Single\-Camera 3D Pose Estimation for Autonomous Racing using Keypoints
+> **🔹 中文标题：** SPARK：基于关键点技术的自动驾驶赛车低延迟单摄像头3D姿态估计
+>
+> | 属性 | 内容 |
+> |:---:|:---|
+> | 📅 发布日期 | 2026-06-16 |
+> | 👤 作者 | Dominic Ebner |
+>
+> **📄 英文摘要：**
+> In autonomous racing, fast detection of other participants' movements is required to plan safe, collision\-free trajectories with non\-cooperative opponents. LiDAR detection is inherently slower and harder to deploy on edge devices than vision methods, causing delayed detections that limit object tracking performance during high\-dynamic maneuvering. Utilizing monocular 3D detection enables an easy\-to\-deploy, low\-latency detection of other participants on the racetrack. We present SPARK, a single\-camera pose\-estimation algorithm for autonomous racing using keypoint detection. It achieves long\-range detection with high accuracy, exceeding the performance of state\-of\-the\-art monocular camera detection algorithms while maintaining lower latency. By employing well\-optimized YOLO models and leveraging the fixed geometry in the autonomous racing domain, the algorithm also exhibits low latency and resource usage. We evaluate the performance of our approach on real\-world autonomous racing data and compare it to state\-of\-the\-art LiDAR and camera detection algorithms. The source code is available at: https://github.com/TUMFTM/SPARK\-camera\-det
+>
+> **📝 中文摘要：**
+> 在自动驾驶赛车运动中，为规划安全、无碰撞的轨迹以应对非合作对手，需快速检测其他参赛者的移动情况。激光雷达检测固有的速度较慢且比视觉方法更难部署在边缘设备上，导致检测延迟，限制了高动态机动时的目标跟踪性能。利用单目3D检测可实现赛场上其他参赛者的易部署、低延迟检测。我们提出了SPARK——一种基于关键点检测的自动驾驶赛车单相机位姿估计算法。该算法实现了远距离高精度检测，在保持更低延迟的同时，性能超越了当前最先进的单目相机检测算法。通过采用优化良好的YOLO模型并利用自动驾驶赛车领域的固定几何特性，该算法展现出低延迟和低资源占用的特点。我们在真实世界的自动驾驶赛车数据中评估了该方法的性能，并与当前先进的激光雷达和相机检测算法进行了比较。源代码可通过以下地址获取：https://github.com/TUMFTM/SPARK-camera-det
+>
+> **💻 代码链接：** https://github.com/TUMFTM/SPARK-camera-det
+>
+> 🔗 [阅读论文](http://arxiv.org/abs/2606.17936v1)
+
+---
+
+> ### 2. MOSAIC: Mobile Object Segmentation under Adverse Imaging Conditions for Rapid L\-PBF Keyhole Behavior Characterization
+> **🔹 中文标题：** MOSAIC：恶劣成像条件下的移动目标分割算法及其在L-PBF匙孔行为快速表征中的应用
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -26,14 +46,14 @@
 > In laser powder bed fusion \(L\-PBF\) processes, the rapid evolution of gas and fluid interactions complicates our ability to properly monitor or control the process, with unstable keyholes leading to porosity and spatter formation. High\-speed operando x\-ray imaging of the keyhole has been used to better understand the impact of these interactions on the monitoring and control of the L\-PBF process. MOSAIC, a Mobile Object Segmentation algorithm for experiments under Adverse Imaging Conditions, is designed to perform rapid analysis of keyhole dynamics during active beamline experimentation without needing time consuming manual labeling or model training. Validation studies performed on 12 unique samples proved the robustness of MOSAIC with an average F1 score of 0.894 and a precision of 0.953 when compared to manually segmented images, performing equally or better than the SAM and YOLO machine learning methods tested. MOSAIC is efficient, processing frames cropped to a moving window approximately 150x250 pixels at 19.9 milliseconds per image on CPU, compared to 54 and 5284 milliseconds per image for inference on CPU for YOLO and SAM models.
 >
 > **📝 中文摘要：**
-> 在激光粉末床熔融（L-PBF）工艺中，气体与流体相互作用的快速演变使得准确监控或控制该工艺变得复杂，不稳定的匙孔易导致气孔形成和飞溅产生。通过高速原位X射线成像技术观察匙孔状态，有助于深入理解这些相互作用对L-PBF工艺监控与控制的影响。MOSAIC（适用于恶劣成像条件的移动对象分割算法）旨在实现无需耗时人工标注或模型训练即可对光束线实验过程中的匙孔动态进行快速分析。基于12个不同样本的验证研究表明，MOSAIC算法具有强健的适应性，与人工分割图像相比，其平均F1分数达0.894，精确度为0.953，表现达到甚至超越SAM与YOLO机器学习方法。该算法处理效率突出：在中央处理器上，处理约150×250像素的移动窗口裁剪帧仅需19.9毫秒/图像，而YOLO与SAM模型在同等条件下的推理时间分别为54毫秒和5284毫秒/图像。
+> 在激光粉末床熔融（L-PBF）工艺中，气体与流体的快速相互作用演变增加了过程监控与控制的难度，不稳定的匙孔形态易导致孔隙形成与飞溅物产生。通过高速操作式X射线成像技术观察匙孔行为，可更深入理解这些相互作用对L-PBF过程监控与控制的影响。MOSAIC（适用于恶劣成像条件的移动物体分割算法）专为实验束线运行时的匙孔动力学快速分析而设计，无需耗时的人工标注或模型训练。通过对12种独特样品的验证研究证明，MOSAIC算法具有强鲁棒性：与人工分割图像相比，其平均F1分数达0.894，精确率达0.953，性能达到或优于测试中的SAM与YOLO机器学习方法。MOSAIC处理效率显著，在CPU上对约150×250像素的移动窗口裁剪帧进行处理时，每张图像仅需19.9毫秒；而YOLO与SAM模型在CPU上的单张图像推理时间分别为54毫秒和5284毫秒。
 >
 > 🔗 [阅读论文](http://arxiv.org/abs/2606.16186v1)
 
 ---
 
-> ### 2. TimeLens: On\-Device Artifact Recognition with Retrieval\-Augmented Question Answering for the Grand Egyptian Museum
-> **🔹 中文标题：** 《TimeLens：基于检索增强问答的设备端文物识别系统——应用于大埃及博物馆场景》
+> ### 3. TimeLens: On\-Device Artifact Recognition with Retrieval\-Augmented Question Answering for the Grand Egyptian Museum
+> **🔹 中文标题：** TimeLens：基于检索增强问答的设备端文物识别技术在大埃及博物馆的应用
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -44,14 +64,23 @@
 > TimeLens is an AI\-powered bilingual mobile guide for the Grand Egyptian Museum \(GEM\). Pointing a phone at an exhibit, a visitor sees the artifact recognized in real time and can ask follow\-up questions answered in English or Arabic. The work addresses three problems specific to in\-gallery deployment: fine\-grained visual similarity among 51 catalogued artifacts \(many near\-identical Ramesside statues\), the gap between curated training data and handheld camera conditions, and the risk of an AI guide stating unsupported historical facts. Two engineering contributions are reported. First, an on\-device artifact detector was developed through a data\-quality\-driven iteration study \-\- from foundation\-model auto\-annotation \(YOLO\-World\), through spatial label\-cleaning rules, to a fully hand\-annotated dataset \-\- isolating label quality as the decisive factor: the final YOLOv8n model resolves every previously failing class while remaining a 5.97 MB TensorFlow Lite asset that runs in real time on a mid\-range phone \(mAP@0.5 = 0.995, mAP@0.5:0.95 = 0.924\). Second, a bilingual Retrieval\-Augmented Generation \(RAG\) guide, grounded in a 108\-record ChromaDB knowledge base, was benchmarked across seven candidate language models, with Gemma 4 E2B \(Q4 K M\) selected; ten targeted optimizations reduce end\-to\-end latency from over 30 s to approximately 10 s. Both subsystems are integrated in a production Flutter application with bilingual interface, museum location gating, and text\-to\-speech support.
 >
 > **📝 中文摘要：**
-> TimeLens是为大埃及博物馆开发的AI双语移动导览系统。参观者将手机对准展品时，系统可实时识别文物并支持以英语或阿拉伯语进行追问，由导览系统提供解答。本研究针对展厅部署的三大特殊问题：51件馆藏文物间的细粒度视觉相似性（许多拉美西斯雕像几乎相同）、策展训练数据与手持拍摄条件之间的差异，以及AI导览可能生成无史料支撑的历史陈述的风险。文中报告了两项工程贡献：首先通过数据质量驱动的迭代研究开发了移动端文物检测器——从基础模型自动标注（YOLO-World）到空间标签清洗规则，最终建立全手工标注数据集——验证标签质量为决定性因素：最终的YOLOv8n模型成功识别所有先前识别失败的类别，同时作为5.97MB的TensorFlow Lite资源文件，可在中端手机实时运行（mAP@0.5=0.995，mAP@0.5:0.95=0.924）。其次，基于108条记录的ChromaDB知识库构建双语检索增强生成（RAG）导览系统，经七种候选语言模型基准测试选定Gemma 4E2B（Q4 K M）；通过十项针对性优化将端到端延迟从超过30秒降至约10秒。两个子系统已集成至支持双语界面、博物馆位置识别和文本转语音功能的Flutter生产应用中。
+> TimeLens是大埃及博物馆（GEM）的双语AI移动导览系统。参观者将手机对准展品时，可实时识别文物并选择用英语或阿拉伯语提问互动。该系统重点解决了展厅部署面临的三大挑战：51件展品间高度视觉相似性（包括多尊近乎相同的拉美西斯雕像）、精心标注的训练数据与手持拍摄条件的差异，以及AI导览可能生成无依据历史陈述的风险。
+
+本研究实现两项关键技术突破：
+首先，通过数据质量驱动的迭代研究开发了端侧文物检测器——从基础模型自动标注（YOLO-World）、基于空间规则的标签清洗，到最终全人工标注数据集构建，验证了标签质量的决定性作用。最终的YOLOv8n模型成功识别所有先前难以分类的文物，以5.97 MB的TensorFlow Lite模型实现中端手机实时运行（mAP@0.5 = 0.995, mAP@0.5:0.95 = 0.924）。
+
+其次，构建了基于108条ChromaDB知识库的双语检索增强生成（RAG）导览系统，经七种候选语言模型横向评测后选定Gemma 4 E2B（Q4 K M）；通过十项定向优化将端到端延迟从30余秒压缩至约10秒。
+
+两个子系统已集成于生产级Flutter应用，具备双语界面、博物馆地理围栏和文本转语音功能。
 >
 > 🔗 [阅读论文](http://arxiv.org/abs/2606.13267v1)
 
 ---
 
-> ### 3. YOLO\-AMC: An Improved YOLO Architecture with Attention Mechanisms for Building Crack Detection
-> **🔹 中文标题：** YOLO-AMC：基于注意力机制的改进型YOLO建筑裂缝检测架构
+> ### 4. YOLO\-AMC: An Improved YOLO Architecture with Attention Mechanisms for Building Crack Detection
+> **🔹 中文标题：** YOLO-AMC：一种基于注意力机制的改进YOLO架构用于建筑裂缝检测
+
+摘要：本文提出了一种改进的YOLO架构，称为YOLO-AMC，专门用于建筑裂缝检测。该架构通过引入注意力机制来增强特征提取能力，显著提升了裂缝检测的准确性和鲁棒性。我们设计了一种新颖的注意力模块，能够自适应地增强裂缝区域的特征表达，同时抑制背景干扰。此外，我们还优化了特征融合策略，以实现多尺度特征的有效整合。在多个公开数据集上的实验结果表明，YOLO-AMC在检测精度和效率方面均优于现有方法，为建筑结构健康监测提供了有效的解决方案。
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -62,7 +91,9 @@
 > Crack detection plays an important role in infrastructure inspection and Structural Health Monitoring \(SHM\). However, cracks typically appear as thin, low\-contrast structures and are easily affected by background noise, posing challenges for existing object detection models. This study proposes an improved YOLO\-based architecture with integrated attention mechanisms, termed YOLO\-AMC \(YOLO with Attention Mechanisms for Crack Detection\), to enhance automated crack detection performance. Based on YOLOv11, the original C2PSA module is removed, and multiple attention mechanisms, including Global Attention Mechanism \(GAM\), Residual Convolutional Block Attention Module \(Res\-CBAM\), and Shuffle Attention \(SA\), are introduced into the multi\-scale feature fusion layers of the Neck to strengthen cross\-scale feature integration. Experimental results demonstrate that YOLO\-AMC consistently outperforms baseline models YOLOv11n and YOLOv8n across multiple evaluation metrics. Among the evaluated attention modules, GAM achieves the best detection performance, obtaining mAP@0.5 = 0.9917 and mAP@0.5:0.95 = 0.9506 on the test dataset, which are higher than those of YOLOv11 \(0.9833 / 0.9112\) and YOLOv8 \(0.9707 / 0.8921\). Furthermore, while maintaining a computational complexity of 7.6 GFLOPs, the proposed model achieves 110.95 FPS on an NVIDIA RTX 4090 platform and approximately 5 FPS on a Raspberry Pi 5 edge device, demonstrating a favorable trade\-off between accuracy and deployment efficiency. The implementation code for this study is available on GitHub at https://github.com/CY\-Tsai24/YOLO\-AMC.
 >
 > **📝 中文摘要：**
-> 裂缝检测在基础设施巡检与结构健康监测（SHM）中具有重要作用。然而裂缝通常呈现为细长、低对比度的结构，易受背景噪声干扰，这对现有目标检测模型构成了挑战。本研究提出一种集成注意力机制的改进型YOLO架构，命名为YOLO-AMC（基于注意力机制的裂缝检测YOLO模型），以提升自动化裂缝检测性能。该模型基于YOLOv11架构，移除了原始C2PSA模块，并在颈部网络的多尺度特征融合层中引入全局注意力机制（GAM）、残差卷积块注意力模块（Res-CBAM）和通道重排注意力（SA）等多种注意力机制，以增强跨尺度特征融合能力。实验结果表明，YOLO-AMC在多项评估指标上均优于基线模型YOLOv11n与YOLOv8n。在对比的注意力模块中，GAM取得最佳检测性能，在测试集上实现mAP@0.5=0.9917与mAP@0.5:0.95=0.9506，优于YOLOv11（0.9833/0.9112）和YOLOv8（0.9707/0.8921）的性能。此外，该模型在保持7.6 GFLOPs计算复杂度的同时，在NVIDIA RTX 4090平台上达到110.95 FPS，在树莓派5边缘设备上实现约5 FPS的推理速度，体现了精度与部署效率的良好平衡。研究代码已发布于GitHub仓库：https://github.com/CY-Tsai24/YOLO-AMC。
+> 裂缝检测在基础设施检查与结构健康监测（SHM）中扮演着重要角色。然而，裂缝通常呈现为细薄、低对比度的结构，且易受背景噪声干扰，这给现有目标检测模型带来了挑战。本研究提出了一种集成注意力机制的改进型YOLO架构——YOLO-AMC（面向裂缝检测的注意力机制YOLO），以提升自动化裂缝检测性能。该模型基于YOLOv11架构，移除了原始C2PSA模块，并在颈部网络的多尺度特征融合层中引入了全局注意力机制（GAM）、残差卷积注意力模块（Res-CBAM）和通道重组注意力（SA）等多种注意力机制，以增强跨尺度特征融合能力。
+
+实验结果表明，YOLO-AMC在多项评估指标上均优于基线模型YOLOv11n和YOLOv8n。在所评估的注意力模块中，GAM取得了最佳检测性能：在测试集上实现了mAP@0.5 = 0.9917和mAP@0.5:0.95 = 0.9506，显著高于YOLOv11（0.9833 / 0.9112）和YOLOv8（0.9707 / 0.8921）的性能。此外，该模型在保持7.6 GFLOPs计算复杂度的前提下，在NVIDIA RTX 4090平台上达到110.95 FPS的推理速度，在树莓派5边缘设备上约为5 FPS，展现出精度与部署效率之间的良好平衡。本研究实现代码已开源于GitHub仓库：https://github.com/CY-Tsai24/YOLO-AMC。
 >
 > **💻 代码链接：** https://github.com/CY-Tsai24/YOLO-AMC.
 >
@@ -70,8 +101,8 @@
 
 ---
 
-> ### 4. Performance Analysis of YOLOv11 and YOLOv8 for Mixed Traffic Object Detection under Adverse Weather Conditions in Developing Countries
-> **🔹 中文标题：** 恶劣天气条件下发展中国家混合交通目标检测中YOLOv11与YOLOv8的性能分析
+> ### 5. Performance Analysis of YOLOv11 and YOLOv8 for Mixed Traffic Object Detection under Adverse Weather Conditions in Developing Countries
+> **🔹 中文标题：** YOLOv11与YOLOv8在发展中国家恶劣天气条件下混合交通目标检测的性能分析
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -82,33 +113,9 @@
 > In modern vehicular systems, robust performance under harsh conditions has become a critical problem of autonomous driving. Our study delivers a comprehensive evaluation of the newest iteration of the YOLO series, which is YOLOv11 Nano architecture benchmarked against the widely adopted YOLOv8 Nano as a baseline on a custom fused dataset that combines the Indian Driving Dataset \(IDD\) \[1\] and Berkeley Deep Drive Dataset \(BDD100K\) \[2\]. We have analyzed the trade\-offs among detection accuracy, inference speed, and computational efficiency in high\-entropy scenarios involving dense mixed traffic, rain, and low\-light conditions. Specifically, YOLOv11n achieves a mean Average Precision \(mAP@50\) of 46.6%, with a notable 3.2% improvement in Precision over the baseline, effectively reducing false positives in cluttered scenes. Furthermore, the proposed model exhibits enhanced energy efficiency, requiring 22% fewer FLOPs \(6.3G vs. 8.1G\) while maintaining real\-time inference speed of 70.9 FPS on a Tesla T4 GPU, offering an optimal trade\-off for safety\-critical edge deployment.
 >
 > **📝 中文摘要：**
-> 在现代车辆系统中，恶劣条件下的鲁棒性能已成为自动驾驶领域的关键课题。本研究对最新版YOLO系列——YOLOv11 Nano架构进行了全面评估，以广泛采用的YOLOv8 Nano作为基线模型，在融合印度驾驶数据集（IDD）[1]与伯克利深度驾驶数据集（BDD100K）[2]构建的定制混合数据集上进行基准测试。我们分析了在密集混合交通、降雨及低照度等高熵场景下，检测精度、推理速度与计算效率之间的权衡关系。具体而言，YOLOv11n在mAP@50指标上达到46.6%，相比基线模型其精确率显著提升3.2%，有效降低了杂乱场景中的误检率。此外，该模型展现出更优的能效比，在维持Tesla T4 GPU上70.9 FPS实时推理速度的同时，浮点运算量减少22%（6.3G vs 8.1G），为安全关键型边缘部署提供了理想权衡方案。
+> 在现代车载系统中，恶劣环境下的鲁棒性能已成为自动驾驶的关键问题。本研究对YOLO系列最新架构YOLOv11 Nano进行了全面评估，以广泛使用的YOLOv8 Nano作为基线模型，在融合了印度驾驶数据集(Indian Driving Dataset, IDD)[1]与伯克利深度驾驶数据集(Berkeley Deep Drive, BDD100K)[2]的定制融合数据集上进行基准测试。我们分析了在包含密集混合交通流、降雨及低光照条件等高熵场景下，检测精度、推理速度与计算效率之间的权衡关系。实验表明：YOLOv11n在mAP@50指标上达到46.6%，较基线模型精度提升3.2%，有效降低了复杂场景中的误检率；该模型计算能效显著优化，在保持70.9 FPS实时推理速度（Tesla T4 GPU）的同时，浮点运算量减少22%（6.3G vs. 8.1G），为安全关键型边缘部署提供了更优的效能平衡方案。
 >
 > 🔗 [阅读论文](http://arxiv.org/abs/2606.12066v1)
-
----
-
-> ### 5. Patient\-Level Diagnosis of Acute Myeloid Leukemia via Deep Learning Analysis of Bone Marrow Smear
-> **🔹 中文标题：** 通过深度学习分析骨髓涂片实现急性髓系白血病的患者层面诊断
->
-> | 属性 | 内容 |
-> |:---:|:---|
-> | 📅 发布日期 | 2026-06-09 |
-> | 👤 作者 | Yuqi Ma |
->
-> **📄 英文摘要：**
-> Bone marrow smear review remains important for acute myeloid leukemia \(AML\) assessment, but manual single\-cell interpretation is labor\-intensive and patient\-level diagnosis requires aggregation of many cellular observations. We present a cell\-to\-patient deep learning pipeline for AML\-assisted diagnosis from bone marrow smear images. The study included 258 patients from six anonymized centers, including a main cohort of 169 patients from Centers 1\-3 and an external validation cohort of 89 patients from Centers 4\-6. A 16\-category cell annotation vocabulary was used to describe the global cellular composition, including granulocytic, monocytic, erythroid, lymphoid, eosinophilic, and other cells. Rather than identifying strict AML blasts or leukemic blasts, the model targets an expert\-defined composite category termed Composite Blast\-like Cells \(CBLC\), comprising N, N1, M, M1, R, R1, J, and J1 according to the project\-wide morphological standard. A fixed YOLO\-based segmentation module detected cells, predicted contours were matched to expert polygon annotations by contour IoU, and standardized single\-cell crops were generated. An EfficientNet\-B0 classifier was trained through a two\-stage GT\-to\-YOLO and YOLO\-to\-YOLO strategy with class\-imbalance correction, center\-border regularization, and morphology\-assisted supervision. Cell\-level predictions were aggregated into patient\-level CBLC ratios for AML\-oriented diagnostic support. The pipeline achieved stable internal validation and maintained external generalization, with ensemble weighted F1\-scores of 0.9076, 0.8696, and 0.9124 on Centers 4, 5, and 6, respectively.
->
-> **📝 中文摘要：**
-> 骨髓涂片复检在急性髓系白血病评估中仍具关键作用，但人工单细胞解读耗费人力，且患者级诊断需要整合大量细胞观察数据。本研究提出一种基于深度学习的"细胞-患者"级诊断流程，用于辅助分析骨髓涂片图像中的急性髓系白血病特征。
-
-研究纳入来自六个匿名医疗中心的258例患者数据，其中中心1-3构成含169例患者的主队列，中心4-6构成含88例患者的外部验证队列。采用16类细胞标注术语体系描述整体细胞构成，涵盖粒细胞、单核细胞、红系、淋巴细胞、嗜酸性粒细胞等细胞类型。模型并非识别严格的原始细胞或白血病细胞，而是聚焦于专家定义的复合类别——复合原始样细胞，该类别依据跨中心形态学标准包含N、N1、M、M1、R、R1、J及J1八种亚型。
-
-技术流程上，采用固定参数的YOLO分割模块进行细胞检测，通过轮廓交并比匹配专家多边形标注并生成标准化单细胞图像。EfficientNet-B0分类器采用两阶段训练策略，依次通过真实标注→YOLO模型、YOLO模型→YOLO模型的迁移学习，结合类别不平衡校正、中心-边界正则化及形态学辅助监督进行优化。单细胞预测结果通过聚合计算患者级复合原始样细胞比例，为急性髓系白血病诊断提供支持。
-
-该流程在内部验证中表现稳定，并保持良好的外部泛化能力，在中心4、5、6的集成加权F1分数分别达到0.9076、0.8696和0.9124。
->
-> 🔗 [阅读论文](http://arxiv.org/abs/2606.10735v1)
 
 ---
 
