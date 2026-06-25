@@ -14,97 +14,97 @@
 
 ## 📑 论文列表
 
-> ### 1. SPARK: Low Latency Single\-Camera 3D Pose Estimation for Autonomous Racing using Keypoints
-> **🔹 中文标题：** SPARK：基于关键点的低延迟单摄像头自动驾驶赛车三维姿态估计
+> ### 1. Application of Machine Learning for the Identification of 2D Colloidal Assemblies: A Case Study on Particles of Distinct Shapes
+> **🔹 中文标题：** 基于机器学习的二维胶体组装识别：不同形状粒子的案例研究
 >
 > | 属性 | 内容 |
 > |:---:|:---|
-> | 📅 发布日期 | 2026-06-16 |
-> | 👤 作者 | Dominic Ebner |
+> | 📅 发布日期 | 2026-06-22 |
+> | 👤 作者 | L. T. Khusainova |
 >
 > **📄 英文摘要：**
-> In autonomous racing, fast detection of other participants' movements is required to plan safe, collision\-free trajectories with non\-cooperative opponents. LiDAR detection is inherently slower and harder to deploy on edge devices than vision methods, causing delayed detections that limit object tracking performance during high\-dynamic maneuvering. Utilizing monocular 3D detection enables an easy\-to\-deploy, low\-latency detection of other participants on the racetrack. We present SPARK, a single\-camera pose\-estimation algorithm for autonomous racing using keypoint detection. It achieves long\-range detection with high accuracy, exceeding the performance of state\-of\-the\-art monocular camera detection algorithms while maintaining lower latency. By employing well\-optimized YOLO models and leveraging the fixed geometry in the autonomous racing domain, the algorithm also exhibits low latency and resource usage. We evaluate the performance of our approach on real\-world autonomous racing data and compare it to state\-of\-the\-art LiDAR and camera detection algorithms. The source code is available at: https://github.com/TUMFTM/SPARK\-camera\-det
+> This work addresses the problem of identifying colloidal monolayer assemblies using particles of various shapes \(two\-dimensional coatings\): spheres, ellipsoids, cuboids, and rods. The following classification of assemblies is considered: isolated particles, dimers, chains, clusters, and loops. The YOLO model was chosen as the identification method. Synthetic datasets were prepared for each of the four particle shapes to train the models. The paper discusses the application of models trained on synthetic data to experimental images. An analysis was carried out on the feasibility of using such models for recognizing configurations in real images. While recognition on artificial images is nearly perfect, tests on experimental images showed a significant deviation. The average error across all particle types was 43.1%, but a considerable spread in values is observed: from 20% for spheres to 58.5% for cuboids, indicating the algorithm's selective sensitivity to object geometry. The created datasets and trained models are freely available for use. The corresponding modules have been integrated into the previously developed information system \(https://isanm.space/\). To further improve prediction results, it is necessary to prepare datasets based on experimental images.
 >
 > **📝 中文摘要：**
-> 在自主赛车场景中，快速检测其他参赛者的运动轨迹对于规划安全、无碰撞路径至关重要，尤其是应对非合作对手时。相较于视觉方案，激光雷达检测本身存在延迟更高、边缘设备部署难度大等问题，导致高动态机动过程中目标跟踪性能受限。采用单目3D检测技术能够实现赛道其他参赛者的低延迟、易部署感知方案。本文提出SPARK——一种基于关键点检测的单目位姿估计算法，专为自主赛车设计。该算法在保持更低延迟的同时，实现了高精度远距离检测，性能超越当前最先进的单目视觉检测算法。通过优化YOLO模型并结合自主赛车场景的固定几何约束，该算法展现出低延迟与低资源消耗的优势。我们在真实自主赛车数据集上评估了该算法性能，并与最先进的激光雷达及视觉检测算法进行对比分析。项目源代码已开源：https://github.com/TUMFTM/SPARK-camera-det
+> 本研究针对采用不同形状粒子（二维涂层）识别胶体单层组装体的问题展开，涉及球形、椭球形、长方体及棒状粒子，并将组装体分类为：孤立粒子、二聚体、链状结构、团簇和环状结构。研究采用YOLO模型作为识别方法，为四种粒子形状分别构建合成数据集以训练模型。论文探讨了基于合成数据训练模型在实验图像中的应用，并分析了该模型用于识别真实图像构型的可行性。虽然在人工图像上的识别近乎完美，但实验图像测试显示显著偏差：所有粒子类型的平均误差为43.1%，且数值分布差异明显——球体误差为20%，长方体误差达58.5%，表明算法对物体几何形状具有选择性敏感度。所构建的数据集与训练模型已开放获取，相应模块已集成至前期开发的信息系统（https://isanm.space/）。为进一步提升预测效果，需基于实验图像构建数据集。
 >
-> **💻 代码链接：** https://github.com/TUMFTM/SPARK-camera-det
+> **💻 代码链接：** https://isanm.space/).
 >
-> 🔗 [阅读论文](http://arxiv.org/abs/2606.17936v1)
+> 🔗 [阅读论文](http://arxiv.org/abs/2606.23639v1)
 
 ---
 
-> ### 2. Budget\-Aware Adaptive Adversarial Patches for Black\-Box Object Detection
-> **🔹 中文标题：** 预算自适应对抗性补丁用于黑盒目标检测
+> ### 2. Fursee: Hybrid YOLO\-DINOv3 Framework for Fursuit Identity Retrieval and Clustering
+> **🔹 中文标题：** Fursee：用于兽装身份检索与聚类的混合YOLO-DINOv3框架
 >
 > | 属性 | 内容 |
 > |:---:|:---|
-> | 📅 发布日期 | 2026-06-16 |
-> | 👤 作者 | Pedram MohajerAnsari |
+> | 📅 发布日期 | 2026-06-22 |
+> | 👤 作者 | Jundi Wu |
 >
 > **📄 英文摘要：**
-> Adversarial patches pose a practical threat to modern object detectors. Prior work shows vulnerability, but three gaps limit actionable insight: \(i\) few emph\{score\-based black\-box\} attacks emph\{jointly\} optimize patch emph\{location, texture, and size\} under tight query budgets; \(ii\) success is rarely tied to the patch's emph\{visual footprint\}; and \(iii\) evaluations often conflate EOT robustness with plain\-view suppression. We present method\{\}, a query\-efficient, budget\-adaptive black\-box attack that couples a lightweight emph\{Contextual Thompson\-Sampling\} placer with NES\-style pixel updates, growing the patch only when progress stalls. Reporting is anchored by a emph\{strict plain\-image\} suppression test; EOT is audited but never used as a substitute for success, and optional appearance/printability weights expose strength\-\-visibility trade\-offs. Across YOLOv5, Faster R\-CNN, and YOLOS, method\{\} achieves strong suppression on CNN\-based detectors and substantial suppression on the transformer\-based detector, using compact patches and exposing clear query\-\-footprint trade\-offs relative to fixed\-size and heuristic baselines. A print\-\-capture pilot further shows transfer across unseen physical objects and viewpoints.
+> Global furry conventions produce massive fursuit photographs, while manual sorting brings heavy labor costs and calls for automatic identity retrieval and clustering solutions. General multimodal models lack dedicated optimization for complex fursuit scenes, and no public benchmark dataset exists for this task. To fill this gap, we build a specialized fursuit image dataset and present a three\-stage hybrid pipeline Fursee for fursuit identity retrieval and clustering. First, YOLO detects and crops high\-resolution fursuit head patches to improve localization of small and overlapping targets. Second, ArcFace optimizes DINOv3 embeddings to enlarge angular separation between different identities on the feature hypersphere. Third, DBSCAN performs unsupervised clustering, with silhouette\-coefficient\-driven search automatically selecting optimal hyperparameters rather than fixed manual radius. Retrieval and clustering experiments verify that our pipeline outperforms mainstream multimodal models including GPT5.5, Claude Opus 4.8 and Qwen3.7\-Plus on all evaluation metrics, achieving competitive performance for fursuit head retrieval and grouping.
 >
 > **📝 中文摘要：**
-> 对抗性补丁对现代目标检测器构成切实威胁。现有研究虽已揭示其脆弱性，但三个关键缺口限制了实际洞察：（i）鲜有基于评分的黑箱攻击能在严苛查询预算下，同步优化补丁的位置、纹理与尺寸；（ii）攻击成功率很少与补丁的视觉影响范围关联；（iii）评估常将期望变换鲁棒性与正面视角抑制性混为一谈。本研究提出method{}——一种查询高效、预算自适应的黑箱攻击方法，该方法将轻量化上下文汤普森采样定位器与神经进化策略风格的像素更新机制相结合，仅在进展停滞时扩展补丁尺寸。评估体系以严格正面图像抑制测试为核心基准，对期望变换进行审计但绝不作为成功标准替代，同时提供可选的外观/可打印性权重以揭示强度-可见性权衡关系。在YOLOv5、Faster R-CNN与YOLOS上的实验表明，method{}能利用紧凑补丁对基于卷积神经网络的检测器实现强效抑制，对基于Transformer的检测器也能达到显著抑制效果，相比固定尺寸与启发式基线方法呈现出清晰的查询-影响范围权衡曲线。打印-采集实验进一步验证了该方法在未见物理对象与视角间的迁移能力。
+> 全球兽装展会产出海量兽装照片，而人工分类带来沉重劳动成本，亟需开发自动身份检索与聚类方案。现有通用多模态模型缺乏针对复杂兽装场景的专项优化，且该领域尚无公开基准数据集。为填补这一空白，我们构建了专用兽装图像数据集，并提出三阶段混合流程Fursee，用于兽装身份检索与聚类。首先，YOLO检测并裁剪高分辨率兽装头部区域，提升小型重叠目标的定位精度；其次，ArcFace优化DINOv3嵌入向量，扩大特征超球面上不同身份的角间距；最后，DBSCAN进行无监督聚类，通过轮廓系数驱动搜索自动选择最优超参数，避免固定手动半径设定。检索与聚类实验表明，该流程在所有评估指标上均优于GPT5.5、Claude Opus 4.8和Qwen3.7-Plus等主流多模态模型，在兽装头部检索与分组任务中展现出优异性能。
 >
-> 🔗 [阅读论文](http://arxiv.org/abs/2606.18318v1)
+> 🔗 [阅读论文](http://arxiv.org/abs/2606.22872v1)
 
 ---
 
-> ### 3. MOSAIC: Mobile Object Segmentation under Adverse Imaging Conditions for Rapid L\-PBF Keyhole Behavior Characterization
-> **🔹 中文标题：** MOSAIC：用于快速L-PBF匙孔行为表征的恶劣成像条件下移动物体分割技术
+> ### 3. NegAS: Negative Label Guided Attention and Scoring for Out\-of\-Distribution Object Detection with Vision\-Language Models
+> **🔹 中文标题：** NegAS：基于负标签引导的视觉-语言模型分布外目标检测注意力与评分机制
 >
 > | 属性 | 内容 |
 > |:---:|:---|
-> | 📅 发布日期 | 2026-06-15 |
-> | 👤 作者 | Garrett Mathesen |
+> | 📅 发布日期 | 2026-06-21 |
+> | 👤 作者 | Yingjie Zhang |
 >
 > **📄 英文摘要：**
-> In laser powder bed fusion \(L\-PBF\) processes, the rapid evolution of gas and fluid interactions complicates our ability to properly monitor or control the process, with unstable keyholes leading to porosity and spatter formation. High\-speed operando x\-ray imaging of the keyhole has been used to better understand the impact of these interactions on the monitoring and control of the L\-PBF process. MOSAIC, a Mobile Object Segmentation algorithm for experiments under Adverse Imaging Conditions, is designed to perform rapid analysis of keyhole dynamics during active beamline experimentation without needing time consuming manual labeling or model training. Validation studies performed on 12 unique samples proved the robustness of MOSAIC with an average F1 score of 0.894 and a precision of 0.953 when compared to manually segmented images, performing equally or better than the SAM and YOLO machine learning methods tested. MOSAIC is efficient, processing frames cropped to a moving window approximately 150x250 pixels at 19.9 milliseconds per image on CPU, compared to 54 and 5284 milliseconds per image for inference on CPU for YOLO and SAM models.
+> Out\-of\-Distribution \(OOD\) detection is essential for ensuring the robustness and reliability of object detection systems deployed in safety\-critical applications. While prior research has mainly focused on uni\-modal detectors or vision\-language model \(VLM\) based classifiers, the potential of VLM\-based object detectors in OOD scenarios remains underexplored. In this work, we take the first step toward building OOD object detection methods upon VLMs. We identify two challenges specific to VLM detectors: \(i\) their text\-guided attention enhances foreground with ID labels but treats background uniformly, leaving potential OOD regions unexploited for separating in\-distribution \(ID\) from OOD instances; and \(ii\) their sigmoid\-based multi\-label outputs are incompatible with softmax\-based OOD scores, calling for scoring functions consistent with VLM probabilistic outputs. Hence, we introduce Negative Label Guided Attention and Scoring \(NegAS\). To address \(i\), we propose a negative label guided attention module \(NegA\), where LLM\-generated, visually\-similar but semantically\-different negative labels are used to guide attention toward potential OOD background regions. To address \(ii\), we introduce a novel sigmoid\-based OOD scoring function \(NegS\) that leverages both ID and negative labels, producing strong responses for ID instances and suppressed responses for OOD ones. Extensive experiments demonstrate that our approach improves OOD detection performance by a large margin while maintaining ID accuracy, e.g., reducing the FPR95 by 11.4% on the COCO dataset and 25.5% on the OpenImages dataset compared to the baseline model. While initially designed for dense VLM detectors like YOLO\-World, we successfully adapt NegAS to Grounding DINO, a query\-based VLM transformer and achieve significant improvements, demonstrating the generalizability of our framework.
 >
 > **📝 中文摘要：**
-> 在激光粉末床熔融（L-PBF）工艺中，气体与流体相互作用的快速演变过程增加了工艺监测与控制的难度，而不稳定的匙孔结构会导致孔隙和飞溅现象。通过对匙孔进行高速原位X射线成像，能够深入理解这些相互作用对L-PBF工艺监测与控制的影响。MOSAIC（Mobile Object Segmentation algorithm for experiments under Adverse Imaging Conditions）是一种面向恶劣成像条件实验的移动目标分割算法，旨在无需耗时的人工标注或模型训练，即可在线束实验过程中对匙孔动力学进行快速分析。在12个独立样品上的验证研究表明，MOSAIC具有优异的鲁棒性：与人工分割图像相比，其平均F1值达到0.894，精度达到0.953，性能与测试的SAM和YOLO机器学习方法持平或更优。该算法效率显著：在CPU上处理约150×250像素的移动窗口裁剪帧时，处理速度达19.9毫秒/帧；相比之下，YOLO与SAM模型在CPU上进行推理分别需要54毫秒和5284毫秒。
+> 分布外（OOD）检测对于确保部署在安全关键应用中的目标检测系统的鲁棒性和可靠性至关重要。以往研究主要集中于单模态检测器或基于视觉语言模型（VLM）的分类器，而VLM目标检测器在OOD场景中的潜力仍待深入探索。本研究首次尝试基于VLM构建OOD目标检测方法。我们发现VLM检测器面临两个特定挑战：（i）其文本引导注意力机制会增强带有ID标签的前景区域，但对背景区域处理方式单一，未能有效利用潜在OOD区域来区分分布内（ID）与OOD样本；（ii）其基于Sigmoid的多标签输出机制与基于Softmax的OOD评分函数不兼容，亟需与VLM概率输出相匹配的评分函数。
+
+为此，我们提出负标签引导注意力与评分（NegAS）框架。针对挑战（i），设计了负标签引导注意力模块（NegA），利用大语言模型生成的视觉相似但语义相异的负标签，引导注意力聚焦于潜在OOD背景区域。针对挑战（ii），提出新型基于Sigmoid的OOD评分函数（NegS），该函数同时利用ID标签与负标签，对ID样本产生强响应，对OOD样本产生抑制响应。大量实验表明，该方法在显著提升OOD检测性能的同时保持了ID检测精度——例如相比基线模型，在COCO数据集上将FPR95降低11.4%，在OpenImages数据集上降低25.5%。该方法虽最初面向YOLO-World等密集型VLM检测器设计，但我们成功将其迁移至基于查询的VLM Transformer架构Grounding DINO，并取得显著性能提升，验证了本框架的广泛适用性。
 >
-> 🔗 [阅读论文](http://arxiv.org/abs/2606.16186v1)
+> 🔗 [阅读论文](http://arxiv.org/abs/2606.22537v1)
 
 ---
 
-> ### 4. TimeLens: On\-Device Artifact Recognition with Retrieval\-Augmented Question Answering for the Grand Egyptian Museum
-> **🔹 中文标题：** TimeLens：基于设备端文物识别与检索增强问答系统在大埃及博物馆的应用
+> ### 4. A Smart Classroom Behavior Analysis Framework with a New Highly Congested Classroom Dataset
+> **🔹 中文标题：** 基于新高密度教室数据集的智能教室行为分析框架
 >
 > | 属性 | 内容 |
 > |:---:|:---|
-> | 📅 发布日期 | 2026-06-11 |
-> | 👤 作者 | Rawan Hesham |
+> | 📅 发布日期 | 2026-06-19 |
+> | 👤 作者 | Wei Xu |
 >
 > **📄 英文摘要：**
-> TimeLens is an AI\-powered bilingual mobile guide for the Grand Egyptian Museum \(GEM\). Pointing a phone at an exhibit, a visitor sees the artifact recognized in real time and can ask follow\-up questions answered in English or Arabic. The work addresses three problems specific to in\-gallery deployment: fine\-grained visual similarity among 51 catalogued artifacts \(many near\-identical Ramesside statues\), the gap between curated training data and handheld camera conditions, and the risk of an AI guide stating unsupported historical facts. Two engineering contributions are reported. First, an on\-device artifact detector was developed through a data\-quality\-driven iteration study \-\- from foundation\-model auto\-annotation \(YOLO\-World\), through spatial label\-cleaning rules, to a fully hand\-annotated dataset \-\- isolating label quality as the decisive factor: the final YOLOv8n model resolves every previously failing class while remaining a 5.97 MB TensorFlow Lite asset that runs in real time on a mid\-range phone \(mAP@0.5 = 0.995, mAP@0.5:0.95 = 0.924\). Second, a bilingual Retrieval\-Augmented Generation \(RAG\) guide, grounded in a 108\-record ChromaDB knowledge base, was benchmarked across seven candidate language models, with Gemma 4 E2B \(Q4 K M\) selected; ten targeted optimizations reduce end\-to\-end latency from over 30 s to approximately 10 s. Both subsystems are integrated in a production Flutter application with bilingual interface, museum location gating, and text\-to\-speech support.
+> Student behavior detection is important for intelligent classroom analysis but remains challenging in large\-class scenarios due to dense instance co\-occurrence, asymmetric occlusion, depth\-wise scale variation, and fine\-grained semantic degradation in distant targets. Existing classroom behavior datasets and general\-purpose detectors are insufficient to characterize and address these challenges. This paper constructs the Highly Congested Classroom Behavior \(HCCB\) dataset, containing 50,229 student behavior instances across seven categories: reading, writing, heads up, sleeping, looking around, bowing head, and using phone. HCCB provides a challenging benchmark that integrates dense distributions, severe occlusion, scale variation, and fine\-grained behavioral semantics. To address these issues, we propose ODER\-HSFNet, a YOLO\-based detection framework tailored to highly crowded classrooms. At its core, ODER\-HSFNet introduces three task\-specific innovations: the Occlusion\-aware Deformable Edge Rectifier \(ODER\), which strengthens boundary evidence under occlusion; the Hypergraph\-State Spatial Fusion \(HSSF\) module, which integrates local structure enhancement, state\-space contextual modeling, and high\-order relation aggregation; and the Occlusion\-Calibrated Detection Head \(OCDetect\), which suppresses low\-quality Pre\-NMS candidates and reduces false positives from occlusion boundaries and neighboring instances. Experiments on two classroom behavior detection datasets show that ODER\-HSFNet outperforms mainstream YOLO\-series methods, achieving 60.60%/80.12% mAP50:95/mAP50 on HCCB and 57.36%/74.65% on SCB\-D3\-S. Ablation studies further verify the effectiveness of the proposed design for highly crowded classroom behavior detection.
 >
 > **📝 中文摘要：**
-> TimeLens是为大埃及博物馆开发的AI驱动双语移动导览系统。游客将手机对准展品时，可实时识别文物并获取支持英语或阿拉伯语交互的后续问答服务。该系统专门解决展厅场景中的三大挑战：51件馆藏文物间高度相似的视觉特征（许多拉美西斯王朝雕像几乎完全一致）、策展级训练数据与手持设备拍摄条件之间的差距，以及AI导览提供未经证实的历史信息的风险。研究实现了两项工程突破：第一，通过数据质量驱动的迭代研究开发了端侧文物检测器——从基础模型自动标注（YOLO-World）、空间标签清洗规则到全人工标注数据集——最终确定标签质量是决定性因素：最终部署的YOLOv8n模型可识别所有曾识别失败的类别，同时作为仅5.97MB的TensorFlow Lite模型能在中端手机实时运行（mAP@0.5 = 0.995，mAP@0.5:0.95 = 0.924）。第二，基于包含108条记录的ChromaDB知识库构建双语检索增强生成导览系统，经七种候选语言模型基准测试后选用Gemma 4 E2B（Q4 K M）；通过十项定向优化将端到端延迟从30余秒缩短至约10秒。两个子系统已集成至具备双语界面、博物馆位置围栏及文本转语音功能的Flutter生产应用中。
+> 学生行为检测对智慧课堂分析至关重要，但在大班教学场景中，由于密集实例共现、非对称遮挡、深度尺度变化以及远距离目标细粒度语义退化等问题，仍面临严峻挑战。现有课堂行为数据集与通用检测器难以有效刻画并解决这些挑战。本文构建了高密度课堂行为数据集，包含阅读、书写、抬头、睡觉、左顾右盼、低头、使用手机七类共50,229个学生行为实例。HCCB数据集整合了密集分布、严重遮挡、尺度变化及细粒度行为语义等挑战特性，为研究提供基准测试平台。针对上述问题，本文提出基于YOLO架构的遮挡感知超图空间融合网络，其核心创新包含三个任务导向模块：遮挡感知可变形边缘修正器用于强化遮挡条件下的边界证据；超图状态空间融合模块通过局部结构增强、状态空间上下文建模与高阶关系聚合实现特征融合；遮挡校准检测头则能抑制低质量预NMS候选框，减少遮挡边界与相邻实例引发的误检。在两组课堂行为检测数据集上的实验表明，该网络性能超越主流YOLO系列方法，在HCCB数据集上达到60.60%/80.12%的mAP50:95/mAP50，在SCB-D3-S数据集上达到57.36%/74.65%。消融实验进一步验证了所提设计对高密度课堂行为检测的有效性。
 >
-> 🔗 [阅读论文](http://arxiv.org/abs/2606.13267v1)
+> 🔗 [阅读论文](http://arxiv.org/abs/2606.21568v1)
 
 ---
 
-> ### 5. YOLO\-AMC: An Improved YOLO Architecture with Attention Mechanisms for Building Crack Detection
-> **🔹 中文标题：** YOLO-AMC：一种融合注意力机制的改进YOLO架构用于建筑裂缝检测
+> ### 5. NeoLoc\-68: End\-to\-end 68\-point neonatal facial landmark localisation in neonatal clinical environments
+> **🔹 中文标题：** NeoLoc-68：新生儿临床环境下的端到端68点面部关键点定位系统
 >
 > | 属性 | 内容 |
 > |:---:|:---|
-> | 📅 发布日期 | 2026-06-11 |
-> | 👤 作者 | Ching\-Yu Tsai |
+> | 📅 发布日期 | 2026-06-18 |
+> | 👤 作者 | Abdullah Bin\-Obaid |
 >
 > **📄 英文摘要：**
-> Crack detection plays an important role in infrastructure inspection and Structural Health Monitoring \(SHM\). However, cracks typically appear as thin, low\-contrast structures and are easily affected by background noise, posing challenges for existing object detection models. This study proposes an improved YOLO\-based architecture with integrated attention mechanisms, termed YOLO\-AMC \(YOLO with Attention Mechanisms for Crack Detection\), to enhance automated crack detection performance. Based on YOLOv11, the original C2PSA module is removed, and multiple attention mechanisms, including Global Attention Mechanism \(GAM\), Residual Convolutional Block Attention Module \(Res\-CBAM\), and Shuffle Attention \(SA\), are introduced into the multi\-scale feature fusion layers of the Neck to strengthen cross\-scale feature integration. Experimental results demonstrate that YOLO\-AMC consistently outperforms baseline models YOLOv11n and YOLOv8n across multiple evaluation metrics. Among the evaluated attention modules, GAM achieves the best detection performance, obtaining mAP@0.5 = 0.9917 and mAP@0.5:0.95 = 0.9506 on the test dataset, which are higher than those of YOLOv11 \(0.9833 / 0.9112\) and YOLOv8 \(0.9707 / 0.8921\). Furthermore, while maintaining a computational complexity of 7.6 GFLOPs, the proposed model achieves 110.95 FPS on an NVIDIA RTX 4090 platform and approximately 5 FPS on a Raspberry Pi 5 edge device, demonstrating a favorable trade\-off between accuracy and deployment efficiency. The implementation code for this study is available on GitHub at https://github.com/CY\-Tsai24/YOLO\-AMC.
+> Facial landmark localisation is a prerequisite for developing automated, non\-contact neonatal pain assessment methods. Clinicians use pain scales to judge the severity of pain, many of which rely on facial expression. However, facial landmark detectors trained on adult faces perform poorly in neonatal clinical environments due to frequent occlusions caused by medical equipment, varied head poses, and challenging imaging conditions, including motion blur triggered by sudden pain\-related movements. We propose an end\-to\-end facial landmark detector capable of predicting 68 landmarks on neonatal faces in clinical environments. We combined 37,459 single\-face images from 11 public datasets, standardised to 68\-point markup, with 1,123 manually annotated frames from a neonatal research dataset \(totalling over 76,000 landmarks\). A YOLO\-based keypoint model was adapted to regress the facial landmarks, initialised with weights from a pretrained neonatal face detector. On public datasets, our proposed model achieved state\-of\-the\-art performance: Normalised Mean Error \(NME\) = 5.37, Failure Rate \(FR\) = 12.5%, Area Under the Cumulative Error Curve \(AUC\) at AUC0.08 = 38.00% and AUC0.1 = 48.70%. On the clinical neonatal test set, before fine\-tuning, the model achieved the lowest Detection Failure Rate \(DFR\) = 5.3% among all baselines and showed strong generalisation. After fine\-tuning, performance improved further to NME = 6.36, FR = 22.30%, DFR = 1.77%, AUC0.08 = 29.24% and AUC0.1 = 40.25%. To the best of our knowledge, this represents the first end\-to\-end 68\-point neonatal facial landmark detection model. With further dataset expansion and refinement, it could support downstream tasks in neonatal health monitoring and pain\-related facial analysis.
 >
 > **📝 中文摘要：**
-> 裂缝检测在基础设施检测和结构健康监测中发挥着重要作用。然而，裂缝通常呈现为细薄的低对比度结构，且易受背景噪声干扰，这对现有目标检测模型构成了挑战。本研究提出一种基于改进YOLO架构并融合注意力机制的模型，命名为YOLO-AMC（用于裂缝检测的注意力机制增强YOLO模型），以提升裂缝自动化检测性能。基于YOLOv11架构，本研究移除了原有的C2PSA模块，并在颈部网络的多尺度特征融合层中引入了全局注意力机制、残差卷积块注意力模块及通道重排注意力等多种注意力机制，以增强跨尺度特征融合能力。实验结果表明，YOLO-AMC模型在多项评估指标上均优于基准模型YOLOv11n与YOLOv8n。在所评估的注意力模块中，全局注意力机制取得了最佳检测性能，在测试集上获得mAP@0.5=0.9917和mAP@0.5:0.95=0.9506，显著高于YOLOv11（0.9833/0.9112）和YOLOv8（0.9707/0.8921）。此外，该模型在保持7.6 GFLOPs计算复杂度的同时，在NVIDIA RTX 4090平台上达到110.95 FPS的推理速度，在树莓派5边缘设备上亦可实现约5 FPS的运行效率，展现出精度与部署效率的良好平衡。本研究实现代码已开源于GitHub平台：https://github.com/CY-Tsai24/YOLO-AMC。
+> 面部关键点定位是实现自动化、非接触式新生儿疼痛评估方法的先决条件。临床医生使用疼痛量表来判断疼痛程度，其中许多量表依赖面部表情。然而，基于成人面部训练的关键点检测器在新生儿临床环境中表现不佳，原因包括医疗设备造成的频繁遮挡、多样的头部姿态以及具有挑战性的成像条件（如疼痛引发突然动作导致的运动模糊）。我们提出了一种端到端的面部关键点检测器，能够在临床环境中预测新生儿面部的68个关键点。我们整合了来自11个公开数据集的37,459张单人脸图像（标准化为68点标注），以及来自新生儿研究数据集的1,123帧手动标注帧（总计超过76,000个关键点）。该模型基于YOLO关键点架构进行适配以回归面部关键点，并使用预训练的新生儿面部检测器权重初始化。在公开数据集上，我们提出的模型实现了最先进的性能：归一化平均误差（NME）=5.37，失败率（FR）=12.5%，累积误差曲线下面积（AUC）在AUC0.08处为38.00%和AUC0.1处为48.70%。在临床新生儿测试集上，微调前模型在所有基线中取得了最低的检测失败率（DFR）=5.3%，并表现出强大的泛化能力。微调后性能进一步提升至NME=6.36，FR=22.30%，DFR=1.77%，AUC0.08=29.24%和AUC0.1=40.25%。据我们所知，这是首个端到端的68点新生儿面部关键点检测模型。随着数据集的进一步扩展和优化，该模型有望支持新生儿健康监测和疼痛相关面部分析的下游任务。
 >
-> **💻 代码链接：** https://github.com/CY-Tsai24/YOLO-AMC.
->
-> 🔗 [阅读论文](http://arxiv.org/abs/2606.12958v1)
+> 🔗 [阅读论文](http://arxiv.org/abs/2606.20823v1)
 
 ---
 
