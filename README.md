@@ -14,7 +14,35 @@
 
 ## 📑 论文列表
 
-> ### 1. Image\-Domain Tilt Constrained Distributed Fusion for Maneuvering UAV Tracking with Multi\-Camera Electro\-Optical Observations
+> ### 1. Evaluating Vision\-Language Models as a Zero\-Shot Learning Alternative to You Only Look Once and Optical Character Recognition for Nigerian License Plate Recognition
+>
+> | 属性 | 内容 |
+> |:---:|:---|
+> | 📅 发布日期 | 2026-07-02 |
+> | 👤 作者 | Ismail Ismail Tijjani |
+>
+> **📄 英文摘要：**
+> License Plate Recognition \(LPR\) systems are critical tools in traffic monitoring, security enforcement, and urban mobility management. Traditional LPR systems often rely on a multi\-stage pipeline involving object detection using You Only Look Once \(YOLO\) and Optical Character Recognition \(OCR\), which suffer from limitations such as high resource demands, poor performance in unstructured environments, and the need for large annotated datasets. This study explores the potential of Vision\-Language Models \(VLMs\) as a unified, zeroshot learning solution for Nigerian license plate recognition. Using a curated dataset of 88 challenging real\-world images collected in Nigeria, we evaluate five selected VLMs: Gemini 2.0 Flash Exp \(Google DeepMind\), Qwen2.5\-VL\-7B\-Instruct \(Alibaba\), GPT\-4o \(OpenAI\), Claude 4 Sonnet \(Anthropic\), and Llama 3.2 Vision 90b \(Meta\). Results based on Character Error Rate \(CER\) reveal that Gemini and Qwen significantly outperform other models in both accuracy and robustness, on the challenging image scenarios. This work highlights the practical advantages of VLMs over YOLO\+OCR, questions the claims by model providers, and compares the performances of the VLMs.
+>
+> 🔗 [阅读论文](http://arxiv.org/abs/2607.02025v1)
+
+---
+
+> ### 2. Computer Vision for Wildlife Monitoring: Detecting Brown Howler Monkeys using YOLO
+>
+> | 属性 | 内容 |
+> |:---:|:---|
+> | 📅 发布日期 | 2026-07-01 |
+> | 👤 作者 | Gabriel Ferri Schneider |
+>
+> **📄 英文摘要：**
+> Urban expansion threatens global biodiversity, especially affecting arboreal species due to the fragmentation of forest habitats. The movement of arboreal species across disjointed forest patches increases mortality risk and, thus, compromises their conservation. In this context, the installation of canopy bridges can be a viable strategy; yet continuous monitoring of their use by arboreal species is essential for ensuring their effectiveness, typically carried out with the aid of camera traps. However, this method often produces false\-positive images that demand time from conservationists for review. In this context, computer vision algorithms can optimize the task of detecting target species using the canopy bridges. In this study, we explored the automatic detection of brown howler monkeys \(Alouatta guariba\) in videos obtained by camera traps. Given the need for a large number of annotated images of the target animals to train the algorithms, we tested the incorporation of auxiliary data to improve detection models, fine\-tuning the YOLOv10 framework using varying proportions of them. The improvement of these automatic detection techniques contributes to conservation efforts, by providing automatic tools to monitor solutions that minimize the impact of human interference in animals habitats.
+>
+> 🔗 [阅读论文](http://arxiv.org/abs/2607.01396v1)
+
+---
+
+> ### 3. Image\-Domain Tilt Constrained Distributed Fusion for Maneuvering UAV Tracking with Multi\-Camera Electro\-Optical Observations
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -28,7 +56,7 @@
 
 ---
 
-> ### 2. Semantic\-Guided Reading Order Reconstruction in Historical Armenian Newspapers with LLMs
+> ### 4. Semantic\-Guided Reading Order Reconstruction in Historical Armenian Newspapers with LLMs
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -42,7 +70,7 @@
 
 ---
 
-> ### 3. Real\-Time Source\-Free Object Detection
+> ### 5. Real\-Time Source\-Free Object Detection
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -55,36 +83,6 @@
 > **💻 代码链接：** https://github.com/Sairam13001/RT-SFOD/
 >
 > 🔗 [阅读论文](http://arxiv.org/abs/2606.31834v1)
-
----
-
-> ### 4. Temporal Preservation over Processing: Diagnosing and Designing Spatiotemporal Single\-Stage Video Detectors
->
-> | 属性 | 内容 |
-> |:---:|:---|
-> | 📅 发布日期 | 2026-06-30 |
-> | 👤 作者 | Karam Tomotaki\-Dawoud |
->
-> **📄 英文摘要：**
-> Single\-stage video object detectors are increasingly deployed in time\-critical applications, yet it remains unclear whether these models genuinely reason over temporal context or merely exploit a single informative frame\-a gap hidden by standard metrics, which reward correct predictions regardless of how they are reached. We address this from two complementary directions: first, we propose TemporalLens, a model\-agnostic diagnostic framework probing temporal dependence through controlled perturbations, structured occlusions, temporal shuffling, redundancy injection, and resolution degradation, revealing whether a detector actually uses information across time. Applied to stacked\-frame 2D detectors and our YOLO\-3D architecture, it exposes behavioural differences invisible to mAP: stacked 2D models collapse when the target frame is removed, while spatiotemporal models recover predictions from earlier frames, a signature of real temporal reliance. Second, we detail YOLO\-3D, a modular real\-time spatiotemporal detector built on YOLOv8, and show that simply preserving temporal depth through the backbone is the dominant performance driver \(\+3.7 pp mAP@50 at 32 frames averaged across scales\). Together, the diagnostics and architecture turn "does this detector reason over time?" into a measurable, actionable question.
->
-> 🔗 [阅读论文](http://arxiv.org/abs/2606.31421v1)
-
----
-
-> ### 5. Character Recognition of Nepali Number Plate
->
-> | 属性 | 内容 |
-> |:---:|:---|
-> | 📅 发布日期 | 2026-06-27 |
-> | 👤 作者 | Satyasa Khadka |
->
-> **📄 英文摘要：**
-> This paper presents a robust Automatic Number Plate Recognition \(ANPR\) system tailored for Nepali license plates written in Devanagari script. In this paper, a pipelined model was used that integrates YOLO\-based models for license plate and character detection, followed by a CNN classifier trained on 34 Devanagari characters. Two publicly available data sets were used that incorporate diverse lighting, fonts, and structural variations. Data augmentation and additional training on embossed plates enhanced the generalizability of the model. The system achieved a recognition accuracy of up to 93%, demonstrating strong performance under real\-world conditions and providing a scalable solution for traffic management in Nepal. Code: https://github.com/Satyasakhadka/Nepali\-NumberPlate\-Character\-Recognition
->
-> **💻 代码链接：** https://github.com/Satyasakhadka/Nepali-NumberPlate-Character-Recognition
->
-> 🔗 [阅读论文](http://arxiv.org/abs/2606.28946v1)
 
 ---
 
