@@ -70,19 +70,17 @@
 
 ---
 
-> ### 5. Real\-Time Source\-Free Object Detection
+> ### 5. Classroom Behavior Monitoring with YOLO An Empirical Study in Higher Education Settings
 >
 > | 属性 | 内容 |
 > |:---:|:---|
 > | 📅 发布日期 | 2026-06-30 |
-> | 👤 作者 | Sairam VCR |
+> | 👤 作者 | Sinh Vu Trong |
 >
 > **📄 英文摘要：**
-> Real\-world detectors for autonomous driving, surveillance, and robotics must handle domain\-shifts under strict latency and memory constraints, yet existing source\-free object detection \(SFOD\) methods rely on heavyweight architectures that prioritize accuracy alone. We show this trade\-off is unnecessary: building on YOLOv10, an NMS\-free dual\-head detector, we achieve state\-of\-the\-art adaptation accuracy while being faster and more compact. We observe that directly applying vanilla mean\-teacher self\-training to dual\-head detectors leads to suboptimal adaptation performance due to two key factors. First, simple pseudo\-label generation strategies, such as using a single head or directly combining high\-confidence predictions from both heads, yield suboptimal supervision under domain\-shift. We propose DHF \(Dual\-Head Pseudo\-Label Fusion\) which selectively admits one\-to\-one \(O2O\) and one\-to\-many \(O2M\) head predictions, preserving precision and recovering missed objects. Second, we observe domain\-shift collapses multi\-scale feature discriminability. We propose the use of our MARD \(Multi\-scale Adaptive Representation Diversification\) loss which mitigates this by enforcing detection\-aware variance and covariance constraints on multi\-scale feature maps. Both modules are training\-time only, leaving inference unchanged. Across domain\-shift benchmarks, our method, RT\-SFOD yields 1.4 to 3.5% mAP gains, 1.3$times$ higher throughput, with $sim$2$times$ fewer parameters than prior state\-of\-the\-art SFOD methods, thus advancing the Pareto frontier of the speed\-accuracy\-model size trade\-off. We report main results with YOLOv10, and demonstrate generalizability with additional YOLO\- and DETR\-based dual\-head detectors. Code is available here: https://github.com/Sairam13001/RT\-SFOD/
+> Classroom behavior monitoring plays a vital role in evaluating student engagement and improving teaching effectiveness. Traditional observation methods remain subjective and lack scalability. This study introduces a real\-world dataset of classroom videos collected at the Banking Academy of Vietnam \(BAV\-Classroom dataset\), annotated with nine distinctive behavioral categories. State\-of\-the\-art Computer Vision models were evaluated and compared, with YOLOv11 achieving the best performance. Experimental results indicate that students' concentration often decreases notably during the final part of lectures, highlighting challenges in sustaining engagement. Our findings demonstrate the feasibility of applying computer vision for automated classroom monitoring, providing valuable insights for academic quality management.
 >
-> **💻 代码链接：** https://github.com/Sairam13001/RT-SFOD/
->
-> 🔗 [阅读论文](http://arxiv.org/abs/2606.31834v1)
+> 🔗 [阅读论文](http://arxiv.org/abs/2607.02580v1)
 
 ---
 
