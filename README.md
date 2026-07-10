@@ -14,7 +14,21 @@
 
 ## 📑 论文列表
 
-> ### 1. Evaluating Vision\-Language Models as a Zero\-Shot Learning Alternative to You Only Look Once and Optical Character Recognition for Nigerian License Plate Recognition
+> ### 1. HAJJv2\-CrowdCount: Zero\-Shot Benchmark for Dense Crowd Counting
+>
+> | 属性 | 内容 |
+> |:---:|:---|
+> | 📅 发布日期 | 2026-07-08 |
+> | 👤 作者 | Reem AlYabis |
+>
+> **📄 英文摘要：**
+> Automated crowd counting in Hajj video is difficult not because current models lack capacity, but because the footage violates the assumptions those models were built on: cameras observe the crowd from steep, near\-vertical angles, individuals occlude one another extensively, and a single frame can contain well over a thousand people. Benchmarks that test crowd counting in such an environment are either private or not detailed per second. We revisit the HAJJv2 dataset and contribute HAJJv2\-CrowdCount: per\-second human\-annotated crowd counts for its testing videos. Using these annotations, we benchmark three recent zero\-shot counting paradigms: an open\-vocabulary detector \(YOLO\-World\), a point\-based counter \(APGCC\), and a promptable segmentation\-based counter \(SAM3Count\). SAM3Count attains the lowest overall mean absolute error \(MAE 70.4, 95% CI 56.0\-86.1\), ahead of YOLO\-World \(92.0\) and APGCC \(152.9\). This ordering reverses, however, in the regime most relevant to deployment: on the densest frames, the detection\- and segmentation\-based counters both degrade sharply \(MAE exceeding 300\), while the point\-based counter degrades far more gracefully \(MAE 114.9\). This inversion is decision\-relevant for Hajj crowd management, where reliable counts are needed most precisely in the densest and most occluded scenes. The annotations are released to support reproduction and extension of these results.
+>
+> 🔗 [阅读论文](http://arxiv.org/abs/2607.07322v1)
+
+---
+
+> ### 2. Evaluating Vision\-Language Models as a Zero\-Shot Learning Alternative to You Only Look Once and Optical Character Recognition for Nigerian License Plate Recognition
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -28,7 +42,7 @@
 
 ---
 
-> ### 2. Computer Vision for Wildlife Monitoring: Detecting Brown Howler Monkeys using YOLO
+> ### 3. Computer Vision for Wildlife Monitoring: Detecting Brown Howler Monkeys using YOLO
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -42,7 +56,7 @@
 
 ---
 
-> ### 3. Image\-Domain Tilt Constrained Distributed Fusion for Maneuvering UAV Tracking with Multi\-Camera Electro\-Optical Observations
+> ### 4. Image\-Domain Tilt Constrained Distributed Fusion for Maneuvering UAV Tracking with Multi\-Camera Electro\-Optical Observations
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -56,7 +70,7 @@
 
 ---
 
-> ### 4. Semantic\-Guided Reading Order Reconstruction in Historical Armenian Newspapers with LLMs
+> ### 5. Semantic\-Guided Reading Order Reconstruction in Historical Armenian Newspapers with LLMs
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -67,20 +81,6 @@
 > This paper addresses reading order reconstruction in historical Armenian newspapers, which combine complex layouts with limited language resources. We introduce a new annotated dataset of 66 pages and compare geometric heuristics, YOLO\-based layout parsing, an end\-to\-end document model ECLAIR, and a hybrid method combining semantic zone detection with a generative LLM. Our hybrid method achieves the lowest error rates of all evaluated approaches, reducing ordering errors by up to 76% over the strongest geometric baseline, and remains robust in multi\-page settings and under noisy OCR. Rather than targeting production the method is designed as a data bootstrapping strategy enabling rapid annotation in highly under\-resourced scenarios. Alongside the dataset, we release a specialized Tesseract OCR model for historical Armenian print.
 >
 > 🔗 [阅读论文](http://arxiv.org/abs/2607.00596v1)
-
----
-
-> ### 5. Classroom Behavior Monitoring with YOLO An Empirical Study in Higher Education Settings
->
-> | 属性 | 内容 |
-> |:---:|:---|
-> | 📅 发布日期 | 2026-06-30 |
-> | 👤 作者 | Sinh Vu Trong |
->
-> **📄 英文摘要：**
-> Classroom behavior monitoring plays a vital role in evaluating student engagement and improving teaching effectiveness. Traditional observation methods remain subjective and lack scalability. This study introduces a real\-world dataset of classroom videos collected at the Banking Academy of Vietnam \(BAV\-Classroom dataset\), annotated with nine distinctive behavioral categories. State\-of\-the\-art Computer Vision models were evaluated and compared, with YOLOv11 achieving the best performance. Experimental results indicate that students' concentration often decreases notably during the final part of lectures, highlighting challenges in sustaining engagement. Our findings demonstrate the feasibility of applying computer vision for automated classroom monitoring, providing valuable insights for academic quality management.
->
-> 🔗 [阅读论文](http://arxiv.org/abs/2607.02580v1)
 
 ---
 
