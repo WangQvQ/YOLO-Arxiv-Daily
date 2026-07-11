@@ -14,7 +14,21 @@
 
 ## 📑 论文列表
 
-> ### 1. HAJJv2\-CrowdCount: Zero\-Shot Benchmark for Dense Crowd Counting
+> ### 1. LDFE: Laplacian Decoupled Feature Enhancement Block for Dual\-Stream CNN\-based RGB\-IR Object Detection
+>
+> | 属性 | 内容 |
+> |:---:|:---|
+> | 📅 发布日期 | 2026-07-09 |
+> | 👤 作者 | Wenhao Dong |
+>
+> **📄 英文摘要：**
+> The complementary information between RGB and IR images can significantly enhance object detection performance under extreme conditions. Existing methods prefer dual\-stream CNN backbones built upon YOLO for feature extraction and focus on the design of feature fusion. In this paper, we introduce the Laplacian Decoupled Feature Enhancement block \(LDFE\) to fuse features from different stages of the dual\-stream CNN backbone. By design, LDFE simultaneously considers the characteristics of modalities and structures for feature fusion by employing global\-local decomposition, denoising, fusion, and reconstruction, sequentially. The LDFE first separates features into global and local components based on Laplacian Pyramid, and then performs denoising and fusion based on Global State Space Enhancement module \(GS2E\) and Local Convolutional Correlation Enhancement module \(LC2E\) separately. Specifically, the GS2E conducts a two\-branch architecture for the main and auxiliary modalities. It dynamically suppresses noise in the main modality through cross\-modal attention derived from the auxiliary modality, while employing a State Space Model to capture long\-range dependencies within the global feature representations of the main modality. To obtain bidirectional interaction, the two modalities systematically alternate their main/auxiliary roles. Moreover, the LC2E suppresses noise in local features and leverages spatial and channel dimension along with triple convolution to extract fine\-grained details for fusion. These innovative designs achieve a significant performance improvement, with mAP surpassing the SOTA methods 6.2%, 3.7%, 4.7%, 2.3%, 4.1% and 2.0% on M3FD, DroneVehicle, LLVIP, FLIR\-Aligned, KAIST and VEDAI datasets,respectively.
+>
+> 🔗 [阅读论文](http://arxiv.org/abs/2607.08076v1)
+
+---
+
+> ### 2. HAJJv2\-CrowdCount: Zero\-Shot Benchmark for Dense Crowd Counting
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -28,7 +42,7 @@
 
 ---
 
-> ### 2. Evaluating Vision\-Language Models as a Zero\-Shot Learning Alternative to You Only Look Once and Optical Character Recognition for Nigerian License Plate Recognition
+> ### 3. Evaluating Vision\-Language Models as a Zero\-Shot Learning Alternative to You Only Look Once and Optical Character Recognition for Nigerian License Plate Recognition
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -42,7 +56,7 @@
 
 ---
 
-> ### 3. Computer Vision for Wildlife Monitoring: Detecting Brown Howler Monkeys using YOLO
+> ### 4. Computer Vision for Wildlife Monitoring: Detecting Brown Howler Monkeys using YOLO
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -56,7 +70,7 @@
 
 ---
 
-> ### 4. Image\-Domain Tilt Constrained Distributed Fusion for Maneuvering UAV Tracking with Multi\-Camera Electro\-Optical Observations
+> ### 5. Image\-Domain Tilt Constrained Distributed Fusion for Maneuvering UAV Tracking with Multi\-Camera Electro\-Optical Observations
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -67,20 +81,6 @@
 > Short\-horizon prediction is essential for electro\-optical UAV tracking, especially when the target is small, maneuvering, or intermittently observed. Image center, line\-of\-sight, and range measurements provide direct constraints on target position, but their constraints on acceleration are weak. As a result, prediction can lag during aggressive maneuvers.   This paper proposes an image\-domain tilt constrained distributed fusion method for maneuvering UAV tracking. The method uses the apparent roll and pitch of a rotorcraft target in the image as low\-level maneuver cues. A weak\-prior auto\-labeling pipeline first generates oriented bounding box and image\-domain tilt labels from synchronized video, gimbal IMU, and UAV IMU data. A YOLO\-OBB detector is then trained to provide online target position and tilt measurements. The front\-end Python implementation is publicly available at github.com/ShineMinxing/PythonYOLO.   In the fusion stage, the UAV state is modeled by position, velocity, and acceleration. Image\-domain roll and pitch are introduced as acceleration\-related pseudo\-observations. For distributed tracking, one mobile gimbal camera and two fixed ground cameras are fused asynchronously. Camera attitude error states are augmented into the filter to absorb extrinsic drift and cross\-camera systematic inconsistency. A Mahalanobis gate with time\-since\-last\-valid covariance widening is used to reject false detections and handle dropouts.   In simulation, adding roll/pitch observations reduces the prediction RMSE from 1.991 m to 0.821 m and decreases the cumulative prediction error by 60.75%. In real distributed experiments, a self\-consistency evaluation shows an 18.10% reduction in cumulative prediction error. The results show that image\-domain tilt can provide useful acceleration constraints for robust short\-horizon UAV prediction.
 >
 > 🔗 [阅读论文](http://arxiv.org/abs/2607.01008v1)
-
----
-
-> ### 5. Semantic\-Guided Reading Order Reconstruction in Historical Armenian Newspapers with LLMs
->
-> | 属性 | 内容 |
-> |:---:|:---|
-> | 📅 发布日期 | 2026-07-01 |
-> | 👤 作者 | Chahan Vidal\-Gorène |
->
-> **📄 英文摘要：**
-> This paper addresses reading order reconstruction in historical Armenian newspapers, which combine complex layouts with limited language resources. We introduce a new annotated dataset of 66 pages and compare geometric heuristics, YOLO\-based layout parsing, an end\-to\-end document model ECLAIR, and a hybrid method combining semantic zone detection with a generative LLM. Our hybrid method achieves the lowest error rates of all evaluated approaches, reducing ordering errors by up to 76% over the strongest geometric baseline, and remains robust in multi\-page settings and under noisy OCR. Rather than targeting production the method is designed as a data bootstrapping strategy enabling rapid annotation in highly under\-resourced scenarios. Alongside the dataset, we release a specialized Tesseract OCR model for historical Armenian print.
->
-> 🔗 [阅读论文](http://arxiv.org/abs/2607.00596v1)
 
 ---
 
