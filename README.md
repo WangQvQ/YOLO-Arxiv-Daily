@@ -14,7 +14,21 @@
 
 ## 📑 论文列表
 
-> ### 1. LDFE: Laplacian Decoupled Feature Enhancement Block for Dual\-Stream CNN\-based RGB\-IR Object Detection
+> ### 1. REMIND: RE\-Identification with Memory for INDoor Navigation
+>
+> | 属性 | 内容 |
+> |:---:|:---|
+> | 📅 发布日期 | 2026-07-10 |
+> | 👤 作者 | Pablo Diaz\-Pereda |
+>
+> **📄 英文摘要：**
+> Mobile robots operating indoors must re\-identify previously observed objects after long temporal gaps, significant viewpoint changes, and severe illumination variations. This remains a challenging problem: multi\-object tracking methods are optimized for short\-term association of pedestrians and vehicles at video rates, person and vehicle re\-identification approaches lack persistent memory mechanisms, and state\-of\-the\-art video object segmentation techniques rely on reactive distractor filtering rather than enforcing global identity consistency.   To address these limitations, we present REMIND, an online tracker designed for long\-term multi\-object re\-identification of generic indoor objects from monocular RGB imagery, requiring neither camera pose nor depth. Motivated by evidence from visual cognition that humans rely on accumulated appearance familiarity and spatial context rather than explicit self\-localization, REMIND combines frozen DINOv3 features with a dual\-bank multi\-prototype appearance memory, part\- and background\-level descriptors, a neighbour\-context reasoning module exploiting spatial co\-occurrence, and joint Hungarian assignment with ambiguity\-aware safeguards. On a purpose\-built indoor dataset featuring controlled revisits and dense same\-class clutter, REMIND reaches 90.35% IDF1, nearly 20 points above a state\-of\-the\-art video object segmentation baseline and more than 36 above a strong tracking\-by\-detection baseline. On ScanNet\+\+, it attains the highest IDF1 in every setting but one, end\-to\-end detection over all scenes, where the tracking\-by\-detection baseline is marginally ahead while REMIND still associates and recovers identities more accurately; it also completes every scene, whereas the video object segmentation baseline exhausts GPU memory on 66.9% under YOLO detections. The complete system, evaluation framework, and dataset are publicly released.
+>
+> 🔗 [阅读论文](http://arxiv.org/abs/2607.09267v1)
+
+---
+
+> ### 2. LDFE: Laplacian Decoupled Feature Enhancement Block for Dual\-Stream CNN\-based RGB\-IR Object Detection
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -28,7 +42,7 @@
 
 ---
 
-> ### 2. HAJJv2\-CrowdCount: Zero\-Shot Benchmark for Dense Crowd Counting
+> ### 3. HAJJv2\-CrowdCount: Zero\-Shot Benchmark for Dense Crowd Counting
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -42,7 +56,7 @@
 
 ---
 
-> ### 3. Evaluating Vision\-Language Models as a Zero\-Shot Learning Alternative to You Only Look Once and Optical Character Recognition for Nigerian License Plate Recognition
+> ### 4. Evaluating Vision\-Language Models as a Zero\-Shot Learning Alternative to You Only Look Once and Optical Character Recognition for Nigerian License Plate Recognition
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -56,7 +70,7 @@
 
 ---
 
-> ### 4. Computer Vision for Wildlife Monitoring: Detecting Brown Howler Monkeys using YOLO
+> ### 5. Computer Vision for Wildlife Monitoring: Detecting Brown Howler Monkeys using YOLO
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -67,20 +81,6 @@
 > Urban expansion threatens global biodiversity, especially affecting arboreal species due to the fragmentation of forest habitats. The movement of arboreal species across disjointed forest patches increases mortality risk and, thus, compromises their conservation. In this context, the installation of canopy bridges can be a viable strategy; yet continuous monitoring of their use by arboreal species is essential for ensuring their effectiveness, typically carried out with the aid of camera traps. However, this method often produces false\-positive images that demand time from conservationists for review. In this context, computer vision algorithms can optimize the task of detecting target species using the canopy bridges. In this study, we explored the automatic detection of brown howler monkeys \(Alouatta guariba\) in videos obtained by camera traps. Given the need for a large number of annotated images of the target animals to train the algorithms, we tested the incorporation of auxiliary data to improve detection models, fine\-tuning the YOLOv10 framework using varying proportions of them. The improvement of these automatic detection techniques contributes to conservation efforts, by providing automatic tools to monitor solutions that minimize the impact of human interference in animals habitats.
 >
 > 🔗 [阅读论文](http://arxiv.org/abs/2607.01396v1)
-
----
-
-> ### 5. Image\-Domain Tilt Constrained Distributed Fusion for Maneuvering UAV Tracking with Multi\-Camera Electro\-Optical Observations
->
-> | 属性 | 内容 |
-> |:---:|:---|
-> | 📅 发布日期 | 2026-07-01 |
-> | 👤 作者 | Minxing Sun |
->
-> **📄 英文摘要：**
-> Short\-horizon prediction is essential for electro\-optical UAV tracking, especially when the target is small, maneuvering, or intermittently observed. Image center, line\-of\-sight, and range measurements provide direct constraints on target position, but their constraints on acceleration are weak. As a result, prediction can lag during aggressive maneuvers.   This paper proposes an image\-domain tilt constrained distributed fusion method for maneuvering UAV tracking. The method uses the apparent roll and pitch of a rotorcraft target in the image as low\-level maneuver cues. A weak\-prior auto\-labeling pipeline first generates oriented bounding box and image\-domain tilt labels from synchronized video, gimbal IMU, and UAV IMU data. A YOLO\-OBB detector is then trained to provide online target position and tilt measurements. The front\-end Python implementation is publicly available at github.com/ShineMinxing/PythonYOLO.   In the fusion stage, the UAV state is modeled by position, velocity, and acceleration. Image\-domain roll and pitch are introduced as acceleration\-related pseudo\-observations. For distributed tracking, one mobile gimbal camera and two fixed ground cameras are fused asynchronously. Camera attitude error states are augmented into the filter to absorb extrinsic drift and cross\-camera systematic inconsistency. A Mahalanobis gate with time\-since\-last\-valid covariance widening is used to reject false detections and handle dropouts.   In simulation, adding roll/pitch observations reduces the prediction RMSE from 1.991 m to 0.821 m and decreases the cumulative prediction error by 60.75%. In real distributed experiments, a self\-consistency evaluation shows an 18.10% reduction in cumulative prediction error. The results show that image\-domain tilt can provide useful acceleration constraints for robust short\-horizon UAV prediction.
->
-> 🔗 [阅读论文](http://arxiv.org/abs/2607.01008v1)
 
 ---
 
