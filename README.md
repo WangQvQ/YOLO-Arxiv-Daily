@@ -14,7 +14,37 @@
 
 ## 📑 论文列表
 
-> ### 1. REMIND: RE\-Identification with Memory for INDoor Navigation
+> ### 1. MicroCharNet: Less is More for License Plate Character Detection
+>
+> | 属性 | 内容 |
+> |:---:|:---|
+> | 📅 发布日期 | 2026-07-13 |
+> | 👤 作者 | Huy Che |
+>
+> **📄 英文摘要：**
+> License plate character detection is a crucial component of intelligent transportation systems, where high accuracy and computational efficiency are required for real\-time deployment. Although recent deep learning\-based methods have substantially improved detection performance, many high\-accuracy models rely on large\-scale architectures that incur substantial computational overhead, limiting their applicability to resource\-constrained devices. In this paper, we propose MicroCharNet, an ultra\-lightweight model specifically designed for license plate character detection. The proposed architecture employs a compact backbone composed of C2f blocks, integrated with CoordAtt module to enhance feature extraction while preserving spatial information. A lightweight C3k2\-based neck fuses multi\-level features, followed by a single\-level anchor\-free detection head that enables end\-to\-end prediction. Experiments conducted on the UFPR\-ALPR dataset demonstrate that MicroCharNet achieves competitive detection accuracy with only 0.08M parameters and 0.096 GFLOPs, while outperforming several recent YOLO\-based baselines. Hardware\-level evaluations further confirm its efficiency for real\-time deployment on edge devices. These results indicate that carefully designed ultra\-lightweight architectures can effectively balance accuracy and efficiency in license plate character detection. The source code is available at https://github.com/chequanghuy/MicroCharNet.
+>
+> **💻 代码链接：** https://github.com/chequanghuy/MicroCharNet.
+>
+> 🔗 [阅读论文](http://arxiv.org/abs/2607.11830v1)
+
+---
+
+> ### 2. Confidence Scores in Open\-Vocabulary Detection Are a Biased Mixture of Scale and Semantics
+>
+> | 属性 | 内容 |
+> |:---:|:---|
+> | 📅 发布日期 | 2026-07-13 |
+> | 👤 作者 | Yi Tang Soon |
+>
+> **📄 英文摘要：**
+> Foundation models such as CLIP have enabled open\-vocabulary object detectors that generalise to novel categories via vision\-language similarity. However, the confidence scores these detectors produce are not reliable localization probability estimates: they conflate visual scale and semantic query specificity with the true detection signal. Through controlled experiments on COCO across three foundation\-model\-based detectors \(GroundingDINO, OWL\-ViT, YOLO\-World\), with the scale\-bias finding further replicated on LVIS \(1,203 categories\) using GroundingDINO, we show that s=cos\(v,t\) is a biased mixture of two effects. Scale bias \(alpha = \+0.064, r = 0.579, p = 1.29 x 10^\-58\) systematically inflates scores for large objects. Semantic bias \(beta = \-0.705, p = 5.23 x 10^\-41\) suppresses scores for generic queries. Both biases are structurally inevitable from CLIP's image\-level pretraining. Threshold adjustment cannot remove them: oracle per\-scale thresholding yields Delta F1 = \+0.001 for small objects versus \+0.102 for large. A parameter\-free temperature scaling correction improves small\-object Recall@10 by 19.6% \(p < 0.01\) without retraining. This comes at a modest, measurable cost to pooled\-ranking precision, so the bias is partially, not freely, reversible at inference time. These findings reveal a fundamental limitation of adapting image\-level foundation models to region\-level detection tasks.
+>
+> 🔗 [阅读论文](http://arxiv.org/abs/2607.10993v1)
+
+---
+
+> ### 3. REMIND: RE\-Identification with Memory for INDoor Navigation
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -28,7 +58,7 @@
 
 ---
 
-> ### 2. LDFE: Laplacian Decoupled Feature Enhancement Block for Dual\-Stream CNN\-based RGB\-IR Object Detection
+> ### 4. LDFE: Laplacian Decoupled Feature Enhancement Block for Dual\-Stream CNN\-based RGB\-IR Object Detection
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -42,7 +72,7 @@
 
 ---
 
-> ### 3. HAJJv2\-CrowdCount: Zero\-Shot Benchmark for Dense Crowd Counting
+> ### 5. HAJJv2\-CrowdCount: Zero\-Shot Benchmark for Dense Crowd Counting
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -53,34 +83,6 @@
 > Automated crowd counting in Hajj video is difficult not because current models lack capacity, but because the footage violates the assumptions those models were built on: cameras observe the crowd from steep, near\-vertical angles, individuals occlude one another extensively, and a single frame can contain well over a thousand people. Benchmarks that test crowd counting in such an environment are either private or not detailed per second. We revisit the HAJJv2 dataset and contribute HAJJv2\-CrowdCount: per\-second human\-annotated crowd counts for its testing videos. Using these annotations, we benchmark three recent zero\-shot counting paradigms: an open\-vocabulary detector \(YOLO\-World\), a point\-based counter \(APGCC\), and a promptable segmentation\-based counter \(SAM3Count\). SAM3Count attains the lowest overall mean absolute error \(MAE 70.4, 95% CI 56.0\-86.1\), ahead of YOLO\-World \(92.0\) and APGCC \(152.9\). This ordering reverses, however, in the regime most relevant to deployment: on the densest frames, the detection\- and segmentation\-based counters both degrade sharply \(MAE exceeding 300\), while the point\-based counter degrades far more gracefully \(MAE 114.9\). This inversion is decision\-relevant for Hajj crowd management, where reliable counts are needed most precisely in the densest and most occluded scenes. The annotations are released to support reproduction and extension of these results.
 >
 > 🔗 [阅读论文](http://arxiv.org/abs/2607.07322v1)
-
----
-
-> ### 4. Evaluating Vision\-Language Models as a Zero\-Shot Learning Alternative to You Only Look Once and Optical Character Recognition for Nigerian License Plate Recognition
->
-> | 属性 | 内容 |
-> |:---:|:---|
-> | 📅 发布日期 | 2026-07-02 |
-> | 👤 作者 | Ismail Ismail Tijjani |
->
-> **📄 英文摘要：**
-> License Plate Recognition \(LPR\) systems are critical tools in traffic monitoring, security enforcement, and urban mobility management. Traditional LPR systems often rely on a multi\-stage pipeline involving object detection using You Only Look Once \(YOLO\) and Optical Character Recognition \(OCR\), which suffer from limitations such as high resource demands, poor performance in unstructured environments, and the need for large annotated datasets. This study explores the potential of Vision\-Language Models \(VLMs\) as a unified, zeroshot learning solution for Nigerian license plate recognition. Using a curated dataset of 88 challenging real\-world images collected in Nigeria, we evaluate five selected VLMs: Gemini 2.0 Flash Exp \(Google DeepMind\), Qwen2.5\-VL\-7B\-Instruct \(Alibaba\), GPT\-4o \(OpenAI\), Claude 4 Sonnet \(Anthropic\), and Llama 3.2 Vision 90b \(Meta\). Results based on Character Error Rate \(CER\) reveal that Gemini and Qwen significantly outperform other models in both accuracy and robustness, on the challenging image scenarios. This work highlights the practical advantages of VLMs over YOLO\+OCR, questions the claims by model providers, and compares the performances of the VLMs.
->
-> 🔗 [阅读论文](http://arxiv.org/abs/2607.02025v1)
-
----
-
-> ### 5. Computer Vision for Wildlife Monitoring: Detecting Brown Howler Monkeys using YOLO
->
-> | 属性 | 内容 |
-> |:---:|:---|
-> | 📅 发布日期 | 2026-07-01 |
-> | 👤 作者 | Gabriel Ferri Schneider |
->
-> **📄 英文摘要：**
-> Urban expansion threatens global biodiversity, especially affecting arboreal species due to the fragmentation of forest habitats. The movement of arboreal species across disjointed forest patches increases mortality risk and, thus, compromises their conservation. In this context, the installation of canopy bridges can be a viable strategy; yet continuous monitoring of their use by arboreal species is essential for ensuring their effectiveness, typically carried out with the aid of camera traps. However, this method often produces false\-positive images that demand time from conservationists for review. In this context, computer vision algorithms can optimize the task of detecting target species using the canopy bridges. In this study, we explored the automatic detection of brown howler monkeys \(Alouatta guariba\) in videos obtained by camera traps. Given the need for a large number of annotated images of the target animals to train the algorithms, we tested the incorporation of auxiliary data to improve detection models, fine\-tuning the YOLOv10 framework using varying proportions of them. The improvement of these automatic detection techniques contributes to conservation efforts, by providing automatic tools to monitor solutions that minimize the impact of human interference in animals habitats.
->
-> 🔗 [阅读论文](http://arxiv.org/abs/2607.01396v1)
 
 ---
 
