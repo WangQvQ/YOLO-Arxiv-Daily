@@ -8,21 +8,6 @@ import time
 import arxiv
 
 
-def _fetch_results(client, search, max_retries=3, initial_delay=5.0):
-    """带指数退避重试的 arXiv 查询"""
-    for attempt in range(max_retries):
-        try:
-            return list(client.results(search))
-        except Exception as e:
-            # arxiv.HTTPError 的属性因版本而异，统一用字符串匹配判断 429
-            is_429 = "429" in str(e)
-            if is_429 and attempt < max_retries - 1:
-                delay = initial_delay * (2 ** attempt)
-                print(f"arXiv API 返回 429，第 {attempt + 1} 次重试，等待 {delay:.0f} 秒...")
-                time.sleep(delay)
-            else:
-                raise
-
 XIAOMI_API_BASE = "https://token-plan-cn.xiaomimimo.com/v1"
 XIAOMI_API_KEY = os.getenv('API_KEY')
 XIAOMI_MODEL = "mimo-v2.5"
@@ -67,19 +52,21 @@ def escape_markdown(text):
     return re.sub(r'URLPROTOCOL(https?://)', r'\g<1>', text)
 
 
-def _fetch_results(client, search, max_retries=5):
+def _fetch_results(client, search, max_retries=5, initial_delay=60.0):
     """带指数退避重试的结果获取器，处理 arXiv API 429 限流"""
     for attempt in range(max_retries):
         try:
             return list(client.results(search))
         except arxiv.HTTPError as e:
-            if e.status_code == 429 and attempt < max_retries - 1:
-                wait = 2 ** (attempt + 2)  # 4, 8, 16, 32 秒
-                print(f"arXiv API 限流 (429)，等待 {wait} 秒后重试 ({attempt + 1}/{max_retries})...")
-                time.sleep(wait)
-            else:
+            if e.status != 429 or attempt == max_retries - 1:
                 raise
-    return []
+
+            delay = initial_delay * (2 ** attempt)
+            print(
+                f"arXiv API 限流 (429)，等待 {delay:.0f} 秒后重试 "
+                f"({attempt + 1}/{max_retries})..."
+            )
+            time.sleep(delay)
 
 
 def save_papers_to_md_file(query="YOLO", max_results=5, filename="README.md"):
