@@ -14,7 +14,63 @@
 
 ## 📑 论文列表
 
-> ### 1. AEGIS: Assay\-Aware Protocol Validation and Runtime Monitoring for Open\-Source Liquid Handling Robots
+> ### 1. Optimization of sim\-to\-real transfer in the humanoid robot NICO
+>
+> | 属性 | 内容 |
+> |:---:|:---|
+> | 📅 发布日期 | 2026-07-20 |
+> | 👤 作者 | Juraj Gavura |
+>
+> **📄 英文摘要：**
+> Robotic grasping requires accurate coordination between visual perception, object localization, inverse kinematics, and hand control. However, when movements planned in simulation are executed on a physical robot, the sim\-to\-real gap can cause small positioning errors that prevent successful grasping. In our previous work, we introduced a low\-cost haptic calibration method that improved 2D reaching accuracy of the humanoid robot NICO. In this paper, we extend this approach from reaching to tabletop object grasping by adding YOLO\-based object and hand detection, stereo vision\-based localization using the robot's built\-in low\-resolution fisheye cameras, and task\-specific corrections for grasp execution. Together, these components form a novel calibration\-based grasping pipeline that does not require RGB\-D cameras, motion capture, or external tracking systems. We also implemented a visual feedback model that aligns the robot hand with the detected object before grasping. Our results show that the fully nonlinear calibration model achieved the best performance inside the calibrated area, while the visual feedback model achieved the highest overall grasping success across the full tabletop workspace.
+>
+> 🔗 [阅读论文](http://arxiv.org/abs/2607.18210v1)
+
+---
+
+> ### 2. Toward Optimal Adenovirus Detection Using YOLO26
+>
+> | 属性 | 内容 |
+> |:---:|:---|
+> | 📅 发布日期 | 2026-07-20 |
+> | 👤 作者 | Olivier Rukundo |
+>
+> **📄 英文摘要：**
+> This study systematically benchmarks different data augmentation setups across YOLO26 model size variants to determine the most effective setup for adenovirus detection in TEM images. The benchmarked setups include NAS, GAS, GMAS and DAS, all evaluated under identical training conditions. The adenovirus dataset, selected from the published TEM virus dataset, was re\-annotated by leveraging adenovirus particle positions to generate YOLO\-compatible bounding box annotations. The experimental results demonstrated the impact of the benchmarked data augmentation setups on adenovirus detection with YOLO26 and indicated the most effective data augmentation setup.
+>
+> 🔗 [阅读论文](http://arxiv.org/abs/2607.17799v1)
+
+---
+
+> ### 3. Attention from Above: A Multimodal Model for Drone\-Based Object Localization
+>
+> | 属性 | 内容 |
+> |:---:|:---|
+> | 📅 发布日期 | 2026-07-20 |
+> | 👤 作者 | Hyun\-Ki Jung |
+>
+> **📄 英文摘要：**
+> Drone\-based object detection technology has advanced rapidly, becoming increasingly sophisticated and efficient. Recently, research trends have expanded beyond the detection of predefined objects toward the identification of specified target objects. For example, desired targets can be specified through textual prompts, enabling accurate detection of objects of interest. To address this demand, this paper proposes an efficient multimodal\-based object detection model aimed at improving small object detection performance. The proposed method is built upon the YOLO\-World framework and replaces the C2f layers used in the YOLOv8 backbone with attention\-based A2C2f layers. This modification enables more precise representation of local features, particularly for small objects or objects with well\-defined boundaries. In addition, the incorporation of attention mechanisms and parallel processing structures significantly enhances the model's computational accuracy. Comparative experiments conducted on the VisDrone dataset demonstrate that the proposed model outperforms the original YOLO\-World model. Specifically, precision increases from 43.0% to 45.1%, recall from 32.8% to 35.0%, the F1 score from 37.2% to 39.4%, mAP@0.5 from 32.5% to 35.2%, and mAP@0.5\-0.95 from 18.5% to 19.9%, confirming a substantial improvement in detection accuracy. These results verify that the proposed approach provides an effective and highly accurate solution for object detection in drone\-based image and video application environments.
+>
+> 🔗 [阅读论文](http://arxiv.org/abs/2607.17669v1)
+
+---
+
+> ### 4. AdvSerial: Physical Adversarial Attacks on Infrastructure\-mounted Pedestrian Detectors via Semantic Feature Suppression
+>
+> | 属性 | 内容 |
+> |:---:|:---|
+> | 📅 发布日期 | 2026-07-19 |
+> | 👤 作者 | Yuanhao Huang |
+>
+> **📄 英文摘要：**
+> AI\-based visual perception systems are increasingly deployed in infrastructure surveillance, including roadside monitoring units, highway cameras, and smart\-city pedestrian management systems. The security vulnerability of these systems to physical adversarial attacks poses a direct threat to the reliable operation of transportation infrastructure. We propose AdvSerial, a dynamic 2D\-\-3D joint optimization framework for generating continuous high\-angle physical adversarial patches against pedestrian detectors in infrastructure\-based scenarios. We UV\-map a boundary\-aware quilted texture onto 3D garments, combine 2D digital attacks with 3D sparse\- and continuous\-frame rendering, and explicitly suppress person\-specific semantic features while enforcing temporal continuity. A Feature Smooth Quilting strategy reduces visible patch boundaries and bounds cross\-seam feature discontinuities. A serial\-frame loss encourages long uninterrupted sequences of detection failures. In physical world experiments, AdvSerial achieves a 74.8% attack success rate on YOLO\-v5 and degrades mean detection confidence from 84.30% to 39.38%. Experiments spanning eight detectors with different architectures demonstrate strong transferability. Notably, it achieves an $89.71%$ attack success rate on YOLO\-v2 and resists both patch\-detection defenses \(NapGuard\) and 3D\-temporal perception \(Sparse4D\-v3\). The results reveal persistent, temporally consistent failure modes under high\-angle surveillance, and motivate the design of motion\-aware and 3D\-aware defenses for security\-critical infrastructure deployments.
+>
+> 🔗 [阅读论文](http://arxiv.org/abs/2607.17069v1)
+
+---
+
+> ### 5. AEGIS: Assay\-Aware Protocol Validation and Runtime Monitoring for Open\-Source Liquid Handling Robots
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -25,66 +81,6 @@
 > Self\-driving laboratories increasingly rely on low\-cost liquid handlers such as the Opentrons OT\-2, which ship without the pressure\-based aspiration monitoring of Hamilton or Tecan systems and are typically run open\-loop. Two failure modes go undetected: protocols that are syntactically valid but violate assay\-specific invariants \(e.g., tip reuse between a PCR template and a no\-template control\), and physical execution failures \(partial dispense, air bubbles, missing tips\) at runtime. We present AEGIS, a two\-layer guardian for both. Layer 1 pairs a curated machine\-readable assay rule database with an LLM that reasons over OT\-2 Python code, reaching an adjusted F1 of 0.97 on a 24\-protocol benchmark across five assay families and beating rules\-only and LLM\-only ablations across five backends; a free open\-weight model ties the best proprietary one, so no paid API is required. Layer 2 fits a PCA world model to YOLO\-cropped four\-frame pipette trajectories; under a leakage\-free leave\-one\-plate\-out evaluation it reaches average precision 0.89 and operating\-point F1 0.71 \(AUROC 0.80\), a deployment\-faithful number that matches the live demonstration, and we characterize the small\-pipette \(p20\) resolution limit \(F1 0.47\). A live demonstration on a physical OT\-2 \(five replicates per condition\) catches planted no\-tip failures deterministically and partial dispense on coloured dyes, with an always\-VLM self\-vote gate lifting partial\-dispense recall to 5/5; transparent water is a principled limit of any front\-view\-only monitor, which AEGIS surfaces as low\-confidence VLM reasoning rather than a wrong verdict. Cascade triage holds VLM cost near $1.63 per plate versus $10.33 for an always\-VLM baseline. AEGIS is open source and, to our knowledge, the first system to unify pre\-flight assay\-aware validation with runtime visual monitoring for an open\-source liquid handler.
 >
 > 🔗 [阅读论文](http://arxiv.org/abs/2607.15620v1)
-
----
-
-> ### 2. Towards Hierarchical Structure Understanding of Newspaper Images
->
-> | 属性 | 内容 |
-> |:---:|:---|
-> | 📅 发布日期 | 2026-07-16 |
-> | 👤 作者 | William Mocaër |
->
-> **📄 英文摘要：**
-> Understanding newspaper images remains a challenging task due to their complex, nested hierarchical structures and dense, heterogeneous layouts. In this paper, we explore two complementary approaches for newspaper structure understanding. First, we present a modular bottom\-up pipeline that combines state\-of\-the\-art open\-source models: YOLO for layout detection, LayoutReader for reading order prediction, and a custom algorithm for article segmentation. This approach leverages existing robust components while maintaining flexibility and interpretability. Second, we introduce Tiramisu \(Tiered Transformers for Hierarchical Structure Understanding\), a novel end\-to\-end transformer\-based architecture that explicitly models document hierarchy through an iterative tiered process. Tiramisu performs section and article separation, block localization, semantic categorization, and reading order prediction using highly parallelized attention mechanisms. Finally, we release Finlam La Liberté, a new dataset designed specifically for evaluating hierarchical information retrieval in historical newspapers. Experimental results demonstrate the effectiveness of both approaches in reconstructing complex newspaper hierarchies, with comparative analysis highlighting their respective strengths for scalable document digitization. The Tiramisu training code, including the synthetic newspaper generator, is available at https://git.litislab.fr/tiramisu/tiramisu\-newspaper\-articles\-extractor.
->
-> **💻 代码链接：** https://git.litislab.fr/tiramisu/tiramisu-newspaper-articles-extractor.
->
-> 🔗 [阅读论文](http://arxiv.org/abs/2607.15082v1)
-
----
-
-> ### 3. An Intelligent\-Cloud Edge Multimodal Interaction System for Robots
->
-> | 属性 | 内容 |
-> |:---:|:---|
-> | 📅 发布日期 | 2026-07-16 |
-> | 👤 作者 | Zihan Guo |
->
-> **📄 英文摘要：**
-> Robust human\-robot interaction in complex environments requires accurate gesture perception, semantic scene understanding, and reliable task planning under limited onboard computing resources. This paper presents a cloud\-edge multimodal interaction framework that integrates an enhanced YOLO\-based gesture detector with coordinated large language model \(LLM\) and vision\-language model \(VLM\) agents. The proposed detector, incorporates the Convolutional Block Attention Module \(CBAM\) into the neck and replaces the baseline bounding\-box regression objective with Distance\-IoU \(DIoU\) loss. These modifications improve feature discrimination and localization for small or partially occluded gestures in complex backgrounds. The cloud layer performs gesture detection, scene understanding, multimodal fusion, and action planning, whereas the TonyPi robot locally handles data acquisition, communication, action execution, and feedback. Experiments on a public gesture dataset and a custom dataset show that YOLO\-DC achieves precision values of 98.9% and 95.0%, with mAP@0.5 values of 90.7% and 92.7%, respectively. System\-level evaluation yields success rates of 95%, 88%, and 82% for single\-action, composite\-action, and vision\-dependent tasks. A 30 participant evaluation yields an overall mean satisfaction score of 3.69 out of 5. These results demonstrate the feasibility of combining refined gesture detection with multimodal agents for resource\-constrained robotic interaction.
->
-> 🔗 [阅读论文](http://arxiv.org/abs/2607.14675v1)
-
----
-
-> ### 4. Cotton\-SF YOLO: Learning Structural and Frequency Cues for Early Cotton Square Detection in Complex Field Environments
->
-> | 属性 | 内容 |
-> |:---:|:---|
-> | 📅 发布日期 | 2026-07-16 |
-> | 👤 作者 | Chengjia Zhang |
->
-> **📄 英文摘要：**
-> Cotton squares are important phenotypic indicators of the early reproductive growth of cotton, and automatic field detection of cotton squares provides an important basis for cotton growth monitoring and precision cultivation management. However, early cotton square detection in complex field environments remains insufficiently explored, as cotton squares are small, frequently occluded, easily blurred, subject to illumination variations, and exhibit low contrast against surrounding cotton leaves. To address these challenges, we propose a task\-oriented framework based on YOLO26m, named Cotton\-SF YOLO, for cotton square detection under natural field conditions. To improve the perception of small and irregular cotton square boundaries, we introduce Dynamic Snake Convolution into the detector, enabling adaptive extraction of deformable edge features. Furthermore, a frequency\-domain feature modulation module is designed by incorporating spectral enhancement into the C2f structure, which recalibrate frequency\-domain representations and strengthen discriminative edge and texture cues while reducing interference from complex cotton leaf backgrounds. Trained and evaluated on our newly constructed and annotated field dataset with manually annotated cotton squares, the proposed model achieves mAP$\_\{50\}$, mAP$\_\{50:95\}$, and recall values of 0.8196, 0.4942, and 0.7939, improving over the baseline YOLO26m by 1.25%, 3.45%, and 2.96%, respectively. Ablation experiments and visualization demonstrate that the best performance is achieved with the complementary effects of structural and frequency cues.
->
-> 🔗 [阅读论文](http://arxiv.org/abs/2607.14445v1)
-
----
-
-> ### 5. C\-Norm: Cell\-Distribution Normalization Enables Precision Recognition of Medical\-Cell Image
->
-> | 属性 | 内容 |
-> |:---:|:---|
-> | 📅 发布日期 | 2026-07-14 |
-> | 👤 作者 | Yang Qianl |
->
-> **📄 英文摘要：**
-> ThinPrep Cytologic Test \(TCT\) enables early cervical cancer screening, but manual reading is time\-consuming and yields inconsistent diagnostic results among cytopathologists. Existing AI detection models perform poorly under real clinical conditions, primarily restricted by two key constraints: unbalanced spatial distribution of cell populations in TCT slides, and limited high\-quality annotated cytology data relying on professional pathologist labeling. To address these limitations, we propose a Cell\-Distribution Normalization \(C\-Norm\) method. By decoupling abnormal and normal cells from the original TCT images and re\-synthesizing them, this method ensures a uniform distribution of cell populations, thereby mitigating generalization degradation caused by distribution bias. Building upon this, we integrate the YOLOv12 framework with a DINOv3 module. This hybrid architecture leverages the advanced detection capability of YOLO models and the superior feature representations of DINOv3 to capture subtle morphological nuances essential for precise recognition of TCT images. Extensive experiments demonstrate that our proposed method achieves state\-of\-the\-art performance, significantly outperforming mainstream detection algorithms. The complete implementation is available at: https://github.com/ddw2AIGROUP2CQUPT/Cell\-Norm
->
-> **💻 代码链接：** https://github.com/ddw2AIGROUP2CQUPT/Cell-Norm
->
-> 🔗 [阅读论文](http://arxiv.org/abs/2607.13116v1)
 
 ---
 
