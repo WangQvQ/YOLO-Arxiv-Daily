@@ -14,7 +14,21 @@
 
 ## 📑 论文列表
 
-> ### 1. Towards Hierarchical Structure Understanding of Newspaper Images
+> ### 1. AEGIS: Assay\-Aware Protocol Validation and Runtime Monitoring for Open\-Source Liquid Handling Robots
+>
+> | 属性 | 内容 |
+> |:---:|:---|
+> | 📅 发布日期 | 2026-07-17 |
+> | 👤 作者 | Priyanka V. Setty |
+>
+> **📄 英文摘要：**
+> Self\-driving laboratories increasingly rely on low\-cost liquid handlers such as the Opentrons OT\-2, which ship without the pressure\-based aspiration monitoring of Hamilton or Tecan systems and are typically run open\-loop. Two failure modes go undetected: protocols that are syntactically valid but violate assay\-specific invariants \(e.g., tip reuse between a PCR template and a no\-template control\), and physical execution failures \(partial dispense, air bubbles, missing tips\) at runtime. We present AEGIS, a two\-layer guardian for both. Layer 1 pairs a curated machine\-readable assay rule database with an LLM that reasons over OT\-2 Python code, reaching an adjusted F1 of 0.97 on a 24\-protocol benchmark across five assay families and beating rules\-only and LLM\-only ablations across five backends; a free open\-weight model ties the best proprietary one, so no paid API is required. Layer 2 fits a PCA world model to YOLO\-cropped four\-frame pipette trajectories; under a leakage\-free leave\-one\-plate\-out evaluation it reaches average precision 0.89 and operating\-point F1 0.71 \(AUROC 0.80\), a deployment\-faithful number that matches the live demonstration, and we characterize the small\-pipette \(p20\) resolution limit \(F1 0.47\). A live demonstration on a physical OT\-2 \(five replicates per condition\) catches planted no\-tip failures deterministically and partial dispense on coloured dyes, with an always\-VLM self\-vote gate lifting partial\-dispense recall to 5/5; transparent water is a principled limit of any front\-view\-only monitor, which AEGIS surfaces as low\-confidence VLM reasoning rather than a wrong verdict. Cascade triage holds VLM cost near $1.63 per plate versus $10.33 for an always\-VLM baseline. AEGIS is open source and, to our knowledge, the first system to unify pre\-flight assay\-aware validation with runtime visual monitoring for an open\-source liquid handler.
+>
+> 🔗 [阅读论文](http://arxiv.org/abs/2607.15620v1)
+
+---
+
+> ### 2. Towards Hierarchical Structure Understanding of Newspaper Images
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -30,7 +44,7 @@
 
 ---
 
-> ### 2. An Intelligent\-Cloud Edge Multimodal Interaction System for Robots
+> ### 3. An Intelligent\-Cloud Edge Multimodal Interaction System for Robots
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -44,7 +58,7 @@
 
 ---
 
-> ### 3. Cotton\-SF YOLO: Learning Structural and Frequency Cues for Early Cotton Square Detection in Complex Field Environments
+> ### 4. Cotton\-SF YOLO: Learning Structural and Frequency Cues for Early Cotton Square Detection in Complex Field Environments
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -58,7 +72,7 @@
 
 ---
 
-> ### 4. C\-Norm: Cell\-Distribution Normalization Enables Precision Recognition of Medical\-Cell Image
+> ### 5. C\-Norm: Cell\-Distribution Normalization Enables Precision Recognition of Medical\-Cell Image
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -71,20 +85,6 @@
 > **💻 代码链接：** https://github.com/ddw2AIGROUP2CQUPT/Cell-Norm
 >
 > 🔗 [阅读论文](http://arxiv.org/abs/2607.13116v1)
-
----
-
-> ### 5. Autonomous Tracking and Terminal Guidance of Moving Targets for Fixed\-Wing UAVs
->
-> | 属性 | 内容 |
-> |:---:|:---|
-> | 📅 发布日期 | 2026-07-14 |
-> | 👤 作者 | Wei\-Hao Liou |
->
-> **📄 英文摘要：**
-> This study introduces a unified control framework for fixed\-wing unmanned aerial vehicles \(UAVs\) fitted with a pan\-tilt \(PT\) camera, intended to perform an end\-to\-end mission spanning from initial target detection to accurate terminal engagement. The proposed system employs a three\-phase strategy: a vision\-based target acquisition phase, an NMPC\-based tracking phase, and a terminal guidance phase. During tracking, the framework uses an Unscented Kalman Filter \(UKF\) to fuse YOLO\-based visual detections with inertial measurements, enabling robust target state estimation under unknown dynamics. To ensure reliable visual contact, we introduce a constraint\-aware Nonlinear Model Predictive Control \(NMPC\) strategy that incorporates Control Barrier Functions \(CBFs\) to explicitly prevent UAV self\-occlusion \-\- a common limitation in fixed\-wing tracking. Upon satisfying terminal engagement conditions, the system seamlessly transitions control to a quaternion\-based Biased Proportional Navigation Guidance \(BPNG\) law, enforcing precise impact angle constraints. High\-fidelity simulations demonstrate that the framework achieves stable, robust tracking and accurate terminal interception while strictly respecting the vehicle's dynamic limits and camera field\-of\-view constraints.
->
-> 🔗 [阅读论文](http://arxiv.org/abs/2607.12801v1)
 
 ---
 
