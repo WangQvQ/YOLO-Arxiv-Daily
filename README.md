@@ -14,7 +14,49 @@
 
 ## 📑 论文列表
 
-> ### 1. Optimization of sim\-to\-real transfer in the humanoid robot NICO
+> ### 1. Real\-Time EEG Cap Electrode Detection for Guided Point\-of\-Care Placement
+>
+> | 属性 | 内容 |
+> |:---:|:---|
+> | 📅 发布日期 | 2026-07-22 |
+> | 👤 作者 | William Lehn\-Schiøler |
+>
+> **📄 英文摘要：**
+> We present a two\-stage vision system that detects EEG cap electrodes in a live webcam stream and validates their anatomical placement in real time. A single\-class YOLO detector localises electrodes; a geometric stage assigns each detection to a named 10\-20 role from facial landmarks. Evaluating under subject\-disjoint leave\-one\-subject\-out \(LOSO\) cross\-validation across five subjects wearing the clinically\-validated Small/Medium/Large caps, the detector attains mAP@.5 = 0.94 \+/\- 0.07 across five held\-out folds \(0.96 pooled\). A dedicated leave\-one\-cap\-out axis, holding out every frame of a cap regardless of subject, leaves Medium and Large mAP@.5 within 0.01 of LOSO \(0.97, 0.97\) while Small drops to 0.72 \+/\- 0.28, a gap confounded with subject familiarity rather than cap style. Geometric augmentation \(rotation, perspective, mixup\) improves in\-plane\-roll robustness and temporal\-electrode recall at no inference cost, and a landmark\-driven head crop extends the usable distance range, lifting mAP@.5 from 0.23 to 0.45 at 0.6 x apparent scale. A compact mobile\-candidate backbone \(YOLOv10n\) keeps the detector at real\-time throughput \(19 FPS\) on a commodity CPU at 640 px.
+>
+> 🔗 [阅读论文](http://arxiv.org/abs/2607.20142v1)
+
+---
+
+> ### 2. TargetFinder: Detecting Widgets from Pixels on Desktop Interfaces
+>
+> | 属性 | 内容 |
+> |:---:|:---|
+> | 📅 发布日期 | 2026-07-22 |
+> | 👤 作者 | Ahmed Ben Akouche |
+>
+> **📄 英文摘要：**
+> ''Target\-aware'' pointing techniques, like Bubble Cursor or Semantic Pointing, outperform traditional pointing by leveraging knowledge of target locations. Yet the lack of application\-agnostic widget geometry information limits their adoption across the desktop. We present TargetFinder, a computer vision\-based system for real\-time detection of GUI widgets. TargetFinder leverages several fine\-tuned YOLO networks trained on a new dataset of 520 annotated desktop screenshots \(~38,000 annotations\) spanning Windows, macOS, Ubuntu, and web interfaces. TargetFinder uses lightweight screen monitoring and low\-latency detection, achieving millisecond responsiveness suitable for interactive use. Evaluations show that TargetFinder outperforms the baseline methods \(OmniParser and REMAUI\), while system\-wide implementations of Bubble Cursor and Semantic Pointing demonstrate the feasibility of deploying universal target\-aware techniques that work across applications. We release the dataset, models, annotation tool, and an open\-source library for research and applications.
+>
+> 🔗 [阅读论文](http://arxiv.org/abs/2607.19907v1)
+
+---
+
+> ### 3. PRISM\-DR: Per\-lesion Retinal Inference with Specialist Models for Diabetic Retinopathy
+>
+> | 属性 | 内容 |
+> |:---:|:---|
+> | 📅 发布日期 | 2026-07-22 |
+> | 👤 作者 | Zübeyr Özeren |
+>
+> **📄 英文摘要：**
+> Diabetic retinopathy is a leading cause of preventable blindness; its early lesions are small, low contrast, and easily missed in manual screening. Most automated detectors handle the four non\-proliferative DR lesions: microaneurysms, hemorrhages, hard exudates, and soft exudates, with a single multi\-class model, even though these lesions differ sharply in size, color, morphology, and prevalence, so a shared model favors common, easy classes over rare, difficult ones. We present PRISM\-DR, a lesion\-specific pipeline that trains one single\-class detector per lesion, each with its own configuration. From a raw fundus image, the pipeline applies region of interest cropping, fundus\-specific preprocessing, four parallel YOLO detectors, tiling, per\-lesion ensembling of five cross\-validation folds, and an inter\-lesion suppression step that resolves overlaps by physical lesion size and clinical priority rather than confidence. Per lesion, the best of five YOLO generations is selected, and augmentation is tuned by Bayesian optimization. Trained on IDRiD with stratified five\-fold cross\-validation, the system reaches a test mAP50 of 0.527 and F1 of 0.529, highest AP50 on hard exudates with 0.561. Without fine\-tuning, the models transfer well where the imaging scale is close to IDRiD and degrade as field of view and resolution depart. These modest absolute results reflect a small single\-source training set and a difficult task; however, treating each lesion as a separate detection problem is a practical alternative to a single multi\-class model.
+>
+> 🔗 [阅读论文](http://arxiv.org/abs/2607.19864v1)
+
+---
+
+> ### 4. Optimization of sim\-to\-real transfer in the humanoid robot NICO
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -28,7 +70,7 @@
 
 ---
 
-> ### 2. Toward Optimal Adenovirus Detection Using YOLO26
+> ### 5. Toward Optimal Adenovirus Detection Using YOLO26
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -39,48 +81,6 @@
 > This study systematically benchmarks different data augmentation setups across YOLO26 model size variants to determine the most effective setup for adenovirus detection in TEM images. The benchmarked setups include NAS, GAS, GMAS and DAS, all evaluated under identical training conditions. The adenovirus dataset, selected from the published TEM virus dataset, was re\-annotated by leveraging adenovirus particle positions to generate YOLO\-compatible bounding box annotations. The experimental results demonstrated the impact of the benchmarked data augmentation setups on adenovirus detection with YOLO26 and indicated the most effective data augmentation setup.
 >
 > 🔗 [阅读论文](http://arxiv.org/abs/2607.17799v1)
-
----
-
-> ### 3. Attention from Above: A Multimodal Model for Drone\-Based Object Localization
->
-> | 属性 | 内容 |
-> |:---:|:---|
-> | 📅 发布日期 | 2026-07-20 |
-> | 👤 作者 | Hyun\-Ki Jung |
->
-> **📄 英文摘要：**
-> Drone\-based object detection technology has advanced rapidly, becoming increasingly sophisticated and efficient. Recently, research trends have expanded beyond the detection of predefined objects toward the identification of specified target objects. For example, desired targets can be specified through textual prompts, enabling accurate detection of objects of interest. To address this demand, this paper proposes an efficient multimodal\-based object detection model aimed at improving small object detection performance. The proposed method is built upon the YOLO\-World framework and replaces the C2f layers used in the YOLOv8 backbone with attention\-based A2C2f layers. This modification enables more precise representation of local features, particularly for small objects or objects with well\-defined boundaries. In addition, the incorporation of attention mechanisms and parallel processing structures significantly enhances the model's computational accuracy. Comparative experiments conducted on the VisDrone dataset demonstrate that the proposed model outperforms the original YOLO\-World model. Specifically, precision increases from 43.0% to 45.1%, recall from 32.8% to 35.0%, the F1 score from 37.2% to 39.4%, mAP@0.5 from 32.5% to 35.2%, and mAP@0.5\-0.95 from 18.5% to 19.9%, confirming a substantial improvement in detection accuracy. These results verify that the proposed approach provides an effective and highly accurate solution for object detection in drone\-based image and video application environments.
->
-> 🔗 [阅读论文](http://arxiv.org/abs/2607.17669v1)
-
----
-
-> ### 4. AdvSerial: Physical Adversarial Attacks on Infrastructure\-mounted Pedestrian Detectors via Semantic Feature Suppression
->
-> | 属性 | 内容 |
-> |:---:|:---|
-> | 📅 发布日期 | 2026-07-19 |
-> | 👤 作者 | Yuanhao Huang |
->
-> **📄 英文摘要：**
-> AI\-based visual perception systems are increasingly deployed in infrastructure surveillance, including roadside monitoring units, highway cameras, and smart\-city pedestrian management systems. The security vulnerability of these systems to physical adversarial attacks poses a direct threat to the reliable operation of transportation infrastructure. We propose AdvSerial, a dynamic 2D\-\-3D joint optimization framework for generating continuous high\-angle physical adversarial patches against pedestrian detectors in infrastructure\-based scenarios. We UV\-map a boundary\-aware quilted texture onto 3D garments, combine 2D digital attacks with 3D sparse\- and continuous\-frame rendering, and explicitly suppress person\-specific semantic features while enforcing temporal continuity. A Feature Smooth Quilting strategy reduces visible patch boundaries and bounds cross\-seam feature discontinuities. A serial\-frame loss encourages long uninterrupted sequences of detection failures. In physical world experiments, AdvSerial achieves a 74.8% attack success rate on YOLO\-v5 and degrades mean detection confidence from 84.30% to 39.38%. Experiments spanning eight detectors with different architectures demonstrate strong transferability. Notably, it achieves an $89.71%$ attack success rate on YOLO\-v2 and resists both patch\-detection defenses \(NapGuard\) and 3D\-temporal perception \(Sparse4D\-v3\). The results reveal persistent, temporally consistent failure modes under high\-angle surveillance, and motivate the design of motion\-aware and 3D\-aware defenses for security\-critical infrastructure deployments.
->
-> 🔗 [阅读论文](http://arxiv.org/abs/2607.17069v1)
-
----
-
-> ### 5. AEGIS: Assay\-Aware Protocol Validation and Runtime Monitoring for Open\-Source Liquid Handling Robots
->
-> | 属性 | 内容 |
-> |:---:|:---|
-> | 📅 发布日期 | 2026-07-17 |
-> | 👤 作者 | Priyanka V. Setty |
->
-> **📄 英文摘要：**
-> Self\-driving laboratories increasingly rely on low\-cost liquid handlers such as the Opentrons OT\-2, which ship without the pressure\-based aspiration monitoring of Hamilton or Tecan systems and are typically run open\-loop. Two failure modes go undetected: protocols that are syntactically valid but violate assay\-specific invariants \(e.g., tip reuse between a PCR template and a no\-template control\), and physical execution failures \(partial dispense, air bubbles, missing tips\) at runtime. We present AEGIS, a two\-layer guardian for both. Layer 1 pairs a curated machine\-readable assay rule database with an LLM that reasons over OT\-2 Python code, reaching an adjusted F1 of 0.97 on a 24\-protocol benchmark across five assay families and beating rules\-only and LLM\-only ablations across five backends; a free open\-weight model ties the best proprietary one, so no paid API is required. Layer 2 fits a PCA world model to YOLO\-cropped four\-frame pipette trajectories; under a leakage\-free leave\-one\-plate\-out evaluation it reaches average precision 0.89 and operating\-point F1 0.71 \(AUROC 0.80\), a deployment\-faithful number that matches the live demonstration, and we characterize the small\-pipette \(p20\) resolution limit \(F1 0.47\). A live demonstration on a physical OT\-2 \(five replicates per condition\) catches planted no\-tip failures deterministically and partial dispense on coloured dyes, with an always\-VLM self\-vote gate lifting partial\-dispense recall to 5/5; transparent water is a principled limit of any front\-view\-only monitor, which AEGIS surfaces as low\-confidence VLM reasoning rather than a wrong verdict. Cascade triage holds VLM cost near $1.63 per plate versus $10.33 for an always\-VLM baseline. AEGIS is open source and, to our knowledge, the first system to unify pre\-flight assay\-aware validation with runtime visual monitoring for an open\-source liquid handler.
->
-> 🔗 [阅读论文](http://arxiv.org/abs/2607.15620v1)
 
 ---
 
