@@ -14,7 +14,21 @@
 
 ## 📑 论文列表
 
-> ### 1. Real\-Time EEG Cap Electrode Detection for Guided Point\-of\-Care Placement
+> ### 1. Synthetic data generation framework for quality control automation in gravure printing
+>
+> | 属性 | 内容 |
+> |:---:|:---|
+> | 📅 发布日期 | 2026-07-23 |
+> | 👤 作者 | Korota Arsène Coulibaly |
+>
+> **📄 英文摘要：**
+> Quality control in printing, particularly in rotogravure printing, still depends on slow, costly, and subjective manual inspection. Automated surface defect detection is critical for maintaining high\-quality standards in rotogravure printing. Deep learning models give prospects for automation. However, training robust deep learning models, such as YOLO or Vision Transformers, is heavily hindered by the extreme scarcity of real\-world industrial defects images. To overcome this limitation, this paper introduces a novel synthetic data generation framework tailored for rotogravure printing quality control. The proposed pipeline automatically generates high\-fidelity images of specific printing defects \(creases, streaks, misregistration, etc.\) and outputs corresponding bounding boxes and annotations. To validate the framework, a synthetic dataset of 7533 images was generated and used to train the state\-of\-the\-art object\-detection model RFDETR. Experimental results demonstrate that the model trained on our synthetic data achieves a Mean Average Precision \(mAP\) of 80.9% on real industrial testing samples. This framework provides a zero\-cost, rapid\-deployment solution for automating defect inspection in printing lines without requiring massive manual data collection.
+>
+> 🔗 [阅读论文](http://arxiv.org/abs/2607.21577v1)
+
+---
+
+> ### 2. Real\-Time EEG Cap Electrode Detection for Guided Point\-of\-Care Placement
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -28,7 +42,7 @@
 
 ---
 
-> ### 2. TargetFinder: Detecting Widgets from Pixels on Desktop Interfaces
+> ### 3. TargetFinder: Detecting Widgets from Pixels on Desktop Interfaces
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -42,7 +56,7 @@
 
 ---
 
-> ### 3. PRISM\-DR: Per\-lesion Retinal Inference with Specialist Models for Diabetic Retinopathy
+> ### 4. PRISM\-DR: Per\-lesion Retinal Inference with Specialist Models for Diabetic Retinopathy
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -56,7 +70,7 @@
 
 ---
 
-> ### 4. Optimization of sim\-to\-real transfer in the humanoid robot NICO
+> ### 5. Optimization of sim\-to\-real transfer in the humanoid robot NICO
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -67,20 +81,6 @@
 > Robotic grasping requires accurate coordination between visual perception, object localization, inverse kinematics, and hand control. However, when movements planned in simulation are executed on a physical robot, the sim\-to\-real gap can cause small positioning errors that prevent successful grasping. In our previous work, we introduced a low\-cost haptic calibration method that improved 2D reaching accuracy of the humanoid robot NICO. In this paper, we extend this approach from reaching to tabletop object grasping by adding YOLO\-based object and hand detection, stereo vision\-based localization using the robot's built\-in low\-resolution fisheye cameras, and task\-specific corrections for grasp execution. Together, these components form a novel calibration\-based grasping pipeline that does not require RGB\-D cameras, motion capture, or external tracking systems. We also implemented a visual feedback model that aligns the robot hand with the detected object before grasping. Our results show that the fully nonlinear calibration model achieved the best performance inside the calibrated area, while the visual feedback model achieved the highest overall grasping success across the full tabletop workspace.
 >
 > 🔗 [阅读论文](http://arxiv.org/abs/2607.18210v1)
-
----
-
-> ### 5. Toward Optimal Adenovirus Detection Using YOLO26
->
-> | 属性 | 内容 |
-> |:---:|:---|
-> | 📅 发布日期 | 2026-07-20 |
-> | 👤 作者 | Olivier Rukundo |
->
-> **📄 英文摘要：**
-> This study systematically benchmarks different data augmentation setups across YOLO26 model size variants to determine the most effective setup for adenovirus detection in TEM images. The benchmarked setups include NAS, GAS, GMAS and DAS, all evaluated under identical training conditions. The adenovirus dataset, selected from the published TEM virus dataset, was re\-annotated by leveraging adenovirus particle positions to generate YOLO\-compatible bounding box annotations. The experimental results demonstrated the impact of the benchmarked data augmentation setups on adenovirus detection with YOLO26 and indicated the most effective data augmentation setup.
->
-> 🔗 [阅读论文](http://arxiv.org/abs/2607.17799v1)
 
 ---
 
