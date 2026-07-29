@@ -14,7 +14,21 @@
 
 ## 📑 论文列表
 
-> ### 1. Synthetic data generation framework for quality control automation in gravure printing
+> ### 1. Small\-Pollinator Detection in Cluttered Field Video
+>
+> | 属性 | 内容 |
+> |:---:|:---|
+> | 📅 发布日期 | 2026-07-24 |
+> | 👤 作者 | Onur Onal |
+>
+> **📄 英文摘要：**
+> Detecting pollinators in field video is challenging: targets are small, visually similar, and observed against cluttered vegetation under blur and occlusion. We present a systematic empirical study of small\-pollinator detection under a practical single\-GPU compute budget. Using the BuzzSpot challenge dataset, we compare YOLO and RF\-DETR models across input resolutions and evaluate sliced inference, class\-gated fusion, size\-routed ensembling, and post\-hoc temporal processing. RF\-DETR Large at 1344\-pixel resolution achieved our best hidden\-test result, reaching 0.405 mAP50:95 and outperforming the 1120\-pixel model \(0.379\) and the best single\-model YOLO26m baseline \(0.366\). The strongest gains came from adopting RF\-DETR and increasing its input resolution, indicating that detector choice and input resolution were more effective levers than added inference\-time complexity; the resolution gain was strongest for small objects and the rarer bumblebee and moth classes. Sliced\-inference fusion, size\-routed ensembling, and warm\-started 1536\-pixel continuation did not surpass this result, while post\-hoc temporal processing did not improve the leaked diagnostic evaluation. Error analysis identified bee\-hoverfly discrimination as the clearest remaining bottleneck: neighboring frames rarely supplied correctly classified hoverfly evidence for post\-hoc correction. These findings motivate learned feature\-level temporal aggregation before the final classification decision.
+>
+> 🔗 [阅读论文](http://arxiv.org/abs/2607.22913v1)
+
+---
+
+> ### 2. Synthetic data generation framework for quality control automation in gravure printing
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -28,7 +42,7 @@
 
 ---
 
-> ### 2. Real\-Time EEG Cap Electrode Detection for Guided Point\-of\-Care Placement
+> ### 3. Real\-Time EEG Cap Electrode Detection for Guided Point\-of\-Care Placement
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -42,7 +56,7 @@
 
 ---
 
-> ### 3. TargetFinder: Detecting Widgets from Pixels on Desktop Interfaces
+> ### 4. TargetFinder: Detecting Widgets from Pixels on Desktop Interfaces
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -56,7 +70,7 @@
 
 ---
 
-> ### 4. PRISM\-DR: Per\-lesion Retinal Inference with Specialist Models for Diabetic Retinopathy
+> ### 5. PRISM\-DR: Per\-lesion Retinal Inference with Specialist Models for Diabetic Retinopathy
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -67,20 +81,6 @@
 > Diabetic retinopathy is a leading cause of preventable blindness; its early lesions are small, low contrast, and easily missed in manual screening. Most automated detectors handle the four non\-proliferative DR lesions: microaneurysms, hemorrhages, hard exudates, and soft exudates, with a single multi\-class model, even though these lesions differ sharply in size, color, morphology, and prevalence, so a shared model favors common, easy classes over rare, difficult ones. We present PRISM\-DR, a lesion\-specific pipeline that trains one single\-class detector per lesion, each with its own configuration. From a raw fundus image, the pipeline applies region of interest cropping, fundus\-specific preprocessing, four parallel YOLO detectors, tiling, per\-lesion ensembling of five cross\-validation folds, and an inter\-lesion suppression step that resolves overlaps by physical lesion size and clinical priority rather than confidence. Per lesion, the best of five YOLO generations is selected, and augmentation is tuned by Bayesian optimization. Trained on IDRiD with stratified five\-fold cross\-validation, the system reaches a test mAP50 of 0.527 and F1 of 0.529, highest AP50 on hard exudates with 0.561. Without fine\-tuning, the models transfer well where the imaging scale is close to IDRiD and degrade as field of view and resolution depart. These modest absolute results reflect a small single\-source training set and a difficult task; however, treating each lesion as a separate detection problem is a practical alternative to a single multi\-class model.
 >
 > 🔗 [阅读论文](http://arxiv.org/abs/2607.19864v1)
-
----
-
-> ### 5. Optimization of sim\-to\-real transfer in the humanoid robot NICO
->
-> | 属性 | 内容 |
-> |:---:|:---|
-> | 📅 发布日期 | 2026-07-20 |
-> | 👤 作者 | Juraj Gavura |
->
-> **📄 英文摘要：**
-> Robotic grasping requires accurate coordination between visual perception, object localization, inverse kinematics, and hand control. However, when movements planned in simulation are executed on a physical robot, the sim\-to\-real gap can cause small positioning errors that prevent successful grasping. In our previous work, we introduced a low\-cost haptic calibration method that improved 2D reaching accuracy of the humanoid robot NICO. In this paper, we extend this approach from reaching to tabletop object grasping by adding YOLO\-based object and hand detection, stereo vision\-based localization using the robot's built\-in low\-resolution fisheye cameras, and task\-specific corrections for grasp execution. Together, these components form a novel calibration\-based grasping pipeline that does not require RGB\-D cameras, motion capture, or external tracking systems. We also implemented a visual feedback model that aligns the robot hand with the detected object before grasping. Our results show that the fully nonlinear calibration model achieved the best performance inside the calibrated area, while the visual feedback model achieved the highest overall grasping success across the full tabletop workspace.
->
-> 🔗 [阅读论文](http://arxiv.org/abs/2607.18210v1)
 
 ---
 
