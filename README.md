@@ -14,7 +14,35 @@
 
 ## 📑 论文列表
 
-> ### 1. Small\-Pollinator Detection in Cluttered Field Video
+> ### 1. Reading Legends on Ancient Coins: An Object Detection Approach for Character Recognition on a Novel Roman Republican Dataset
+>
+> | 属性 | 内容 |
+> |:---:|:---|
+> | 📅 发布日期 | 2026-07-28 |
+> | 👤 作者 | Hafeez Anwar |
+>
+> **📄 英文摘要：**
+> When it comes to the proper classification of ancient coins with respect to their time and issuer, the textual inscriptions on these coins, also known as legends, are of paramount importance. These legends consist of alphabets or characters still used in English. This paper addresses image based character recognition on ancient Roman Republican coins via a deep learning based object detection strategy. However, legends on these coins pose high variation due to non\-uniform placement, primitive inscription techniques, and wear and tear. Additional challenges include inconsistent imaging conditions such as illumination, orientation, and scale. To accommodate these, we gathered a novel large\-scale dataset of 5,654 Roman Republican coin images, manually annotated with 21 character labels, totaling 38,808 annotations. For recognition, we use You Only Look Once \(YOLO\) variants: YOLOv3, v4, v5, v7, and v8. YOLOv7\-Large achieves the best mAP50 of 90.4%, followed by YOLOv7\-Extended and YOLOv7\-xl with 90.2% and 90.1%, respectively.
+>
+> 🔗 [阅读论文](http://arxiv.org/abs/2607.25455v1)
+
+---
+
+> ### 2. Construction of entropy satisfying Active Flux\-type methods
+>
+> | 属性 | 内容 |
+> |:---:|:---|
+> | 📅 发布日期 | 2026-07-27 |
+> | 👤 作者 | Remi Abgrall |
+>
+> **📄 英文摘要：**
+> This paper is devoted to the analysis of the entropy stability properties of Active Fluxyolo\{\-type\} scheme for a hyperbolic system equipped with one entropy inequality. This type of scheme evolves two sets of degrees of freedom: point values that are chosen on the boundary of the elements that cover the computational domain, and the average of the solution in these elements. We show that the only thing to do is to get an entropy inequality for the average values, the point values degrees of freedom do not play any role. We construct a monolithic scheme which is bound preserving of cite\{BP\_Pampa\_VEM\}, non oscillatory following cite\{PampaDG\}, and entropy diminishing. The entropy condition is implemented in Tadmor's frameworkcite\{TadmorEntropy\}, i.e. for the semi\-discrete scheme only. The scheme is tested on the Kurganov\-Popov\-Petrova test case cite\{KPP\} which is known to yolo\{be\} sensitive to the satisfaction of an entropy inequality. We show that our entropy correction is effective: if we do not activate the bound\-preserving nor the non oscillatory condition, we get the correct solution with some spurious wiggles, as expected. Though the development, implementation and tests are done with the triangle version of the scheme, the same method can be used for polygonal meshes, following cite\{BP\_Pampa\_VEM\}.
+>
+> 🔗 [阅读论文](http://arxiv.org/abs/2607.25111v1)
+
+---
+
+> ### 3. Small\-Pollinator Detection in Cluttered Field Video
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -28,7 +56,7 @@
 
 ---
 
-> ### 2. Synthetic data generation framework for quality control automation in gravure printing
+> ### 4. Synthetic data generation framework for quality control automation in gravure printing
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -42,7 +70,7 @@
 
 ---
 
-> ### 3. Real\-Time EEG Cap Electrode Detection for Guided Point\-of\-Care Placement
+> ### 5. Real\-Time EEG Cap Electrode Detection for Guided Point\-of\-Care Placement
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -53,34 +81,6 @@
 > We present a two\-stage vision system that detects EEG cap electrodes in a live webcam stream and validates their anatomical placement in real time. A single\-class YOLO detector localises electrodes; a geometric stage assigns each detection to a named 10\-20 role from facial landmarks. Evaluating under subject\-disjoint leave\-one\-subject\-out \(LOSO\) cross\-validation across five subjects wearing the clinically\-validated Small/Medium/Large caps, the detector attains mAP@.5 = 0.94 \+/\- 0.07 across five held\-out folds \(0.96 pooled\). A dedicated leave\-one\-cap\-out axis, holding out every frame of a cap regardless of subject, leaves Medium and Large mAP@.5 within 0.01 of LOSO \(0.97, 0.97\) while Small drops to 0.72 \+/\- 0.28, a gap confounded with subject familiarity rather than cap style. Geometric augmentation \(rotation, perspective, mixup\) improves in\-plane\-roll robustness and temporal\-electrode recall at no inference cost, and a landmark\-driven head crop extends the usable distance range, lifting mAP@.5 from 0.23 to 0.45 at 0.6 x apparent scale. A compact mobile\-candidate backbone \(YOLOv10n\) keeps the detector at real\-time throughput \(19 FPS\) on a commodity CPU at 640 px.
 >
 > 🔗 [阅读论文](http://arxiv.org/abs/2607.20142v1)
-
----
-
-> ### 4. TargetFinder: Detecting Widgets from Pixels on Desktop Interfaces
->
-> | 属性 | 内容 |
-> |:---:|:---|
-> | 📅 发布日期 | 2026-07-22 |
-> | 👤 作者 | Ahmed Ben Akouche |
->
-> **📄 英文摘要：**
-> ''Target\-aware'' pointing techniques, like Bubble Cursor or Semantic Pointing, outperform traditional pointing by leveraging knowledge of target locations. Yet the lack of application\-agnostic widget geometry information limits their adoption across the desktop. We present TargetFinder, a computer vision\-based system for real\-time detection of GUI widgets. TargetFinder leverages several fine\-tuned YOLO networks trained on a new dataset of 520 annotated desktop screenshots \(~38,000 annotations\) spanning Windows, macOS, Ubuntu, and web interfaces. TargetFinder uses lightweight screen monitoring and low\-latency detection, achieving millisecond responsiveness suitable for interactive use. Evaluations show that TargetFinder outperforms the baseline methods \(OmniParser and REMAUI\), while system\-wide implementations of Bubble Cursor and Semantic Pointing demonstrate the feasibility of deploying universal target\-aware techniques that work across applications. We release the dataset, models, annotation tool, and an open\-source library for research and applications.
->
-> 🔗 [阅读论文](http://arxiv.org/abs/2607.19907v1)
-
----
-
-> ### 5. PRISM\-DR: Per\-lesion Retinal Inference with Specialist Models for Diabetic Retinopathy
->
-> | 属性 | 内容 |
-> |:---:|:---|
-> | 📅 发布日期 | 2026-07-22 |
-> | 👤 作者 | Zübeyr Özeren |
->
-> **📄 英文摘要：**
-> Diabetic retinopathy is a leading cause of preventable blindness; its early lesions are small, low contrast, and easily missed in manual screening. Most automated detectors handle the four non\-proliferative DR lesions: microaneurysms, hemorrhages, hard exudates, and soft exudates, with a single multi\-class model, even though these lesions differ sharply in size, color, morphology, and prevalence, so a shared model favors common, easy classes over rare, difficult ones. We present PRISM\-DR, a lesion\-specific pipeline that trains one single\-class detector per lesion, each with its own configuration. From a raw fundus image, the pipeline applies region of interest cropping, fundus\-specific preprocessing, four parallel YOLO detectors, tiling, per\-lesion ensembling of five cross\-validation folds, and an inter\-lesion suppression step that resolves overlaps by physical lesion size and clinical priority rather than confidence. Per lesion, the best of five YOLO generations is selected, and augmentation is tuned by Bayesian optimization. Trained on IDRiD with stratified five\-fold cross\-validation, the system reaches a test mAP50 of 0.527 and F1 of 0.529, highest AP50 on hard exudates with 0.561. Without fine\-tuning, the models transfer well where the imaging scale is close to IDRiD and degrade as field of view and resolution depart. These modest absolute results reflect a small single\-source training set and a difficult task; however, treating each lesion as a separate detection problem is a practical alternative to a single multi\-class model.
->
-> 🔗 [阅读论文](http://arxiv.org/abs/2607.19864v1)
 
 ---
 
