@@ -66,7 +66,7 @@
 > **📄 英文摘要：**
 > This paper is devoted to the analysis of the entropy stability properties of Active Fluxyolo\{\-type\} scheme for a hyperbolic system equipped with one entropy inequality. This type of scheme evolves two sets of degrees of freedom: point values that are chosen on the boundary of the elements that cover the computational domain, and the average of the solution in these elements. We show that the only thing to do is to get an entropy inequality for the average values, the point values degrees of freedom do not play any role. We construct a monolithic scheme which is bound preserving of cite\{BP\_Pampa\_VEM\}, non oscillatory following cite\{PampaDG\}, and entropy diminishing. The entropy condition is implemented in Tadmor's frameworkcite\{TadmorEntropy\}, i.e. for the semi\-discrete scheme only. The scheme is tested on the Kurganov\-Popov\-Petrova test case cite\{KPP\} which is known to yolo\{be\} sensitive to the satisfaction of an entropy inequality. We show that our entropy correction is effective: if we do not activate the bound\-preserving nor the non oscillatory condition, we get the correct solution with some spurious wiggles, as expected. Though the development, implementation and tests are done with the triangle version of the scheme, the same method can be used for polygonal meshes, following cite\{BP\_Pampa\_VEM\}.
 >
-> 🔗 [阅读论文](http://arxiv.org/abs/2607.25111v1)
+> 🔗 [阅读论文](http://arxiv.org/abs/2607.25111v2)
 
 ---
 
