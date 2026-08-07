@@ -14,73 +14,75 @@
 
 ## 📑 论文列表
 
-> ### 1. SAT\-Edge\-Agent: Hardware\-in\-the\-Loop Edge\-Agent Orchestration for Onboard Satellite Intelligence
+> ### 1. From Transparent Labware Segmentation to Collision Avoidance: A Real\-Time Edge\-Aware Perception Pipeline
+>
+> | 属性 | 内容 |
+> |:---:|:---|
+> | 📅 发布日期 | 2026-08-05 |
+> | 👤 作者 | Shijun Ding |
+>
+> **📄 英文摘要：**
+> This paper presents an edge\-aware instance segmentation framework that enables real\-time robotic collision avoidance with transparent laboratory glassware using purely visual perception. Transparent vessels defy conventional segmentation due to refraction, specular reflection, and the absence of stable interior texture, yet their boundary contours remain comparatively reliable visual cues. Exploiting this observation, we augment a one\-stage real\-time instance segmentation backbone with a lightweight edge\-detection branch, edge\-guided attention fusion, and a parameter\-free SimAM module, and further construct LabGlass\-IS, a 3485\-image, 21\-category instance segmentation dataset of real laboratory glassware. The enhanced model achieves the highest Boundary F\-score of 97.80 among compared methods, outperforming the YOLO\-prompted FastSAM framework by 18.93 BF points. Furthermore, it maintains an inference speed of 7.1ms per frame and requires only 2.85% of the parameters of the closest accuracy competitor. Multi\-view triangulation of mask centroids further provides 3D positions for conservative bounding\-volume collision constraints. Real\-robot trials achieve a 93.3% collision avoidance success rate, indicating the feasibility of the proposed perception\-to\-action pipeline for robot collision avoidance among fragile transparent objects. Our code is available at https://github.com/havishamy/TransYOLO\_3D. Our video is available at https://havishamy.github.io/paper\-videos/.
+>
+> **💻 代码链接：** https://github.com/havishamy/TransYOLO_3D.，https://havishamy.github.io/paper-videos/.
+>
+> 🔗 [阅读论文](http://arxiv.org/abs/2608.04769v1)
+
+---
+
+> ### 2. Simile Understanding in Text\-to\-Image Models: An Evaluation Framework
+>
+> | 属性 | 内容 |
+> |:---:|:---|
+> | 📅 发布日期 | 2026-08-05 |
+> | 👤 作者 | Luecheng Wang |
+>
+> **📄 英文摘要：**
+> Similes provide a compact and expressive way to describe visual characteristics in text prompts. Recent text\-to\-image models \(t2i models\) can produce visually compelling outputs from simile prompts, yet even frontier models frequently misinterpret the metaphorical vehicle and confuse it with the object. These systematic failures reveal a gap between figurative language and object\-level visual grounding in t2i models. To investigate this issue, we propose a scalable evaluation framework for simile understanding. Our framework includes \(1\) a controlled simile dataset in which metaphorical vehicles are drawn from a predefined set of object\-detectable categories and combined with diverse templates, \(2\) automatic grounding metrics based on YOLO \(You Only Look Once\) detection, and \(3\) text encoder layer analysis using Diffusion Lens to track how metaphorical vehicles emerge during generation. Experiments across architecturally diverse t2i models reveal consistent literalization failure patterns. We further discuss potential mitigation strategies for improving simile grounding in t2i models.
+>
+> 🔗 [阅读论文](http://arxiv.org/abs/2608.04750v1)
+
+---
+
+> ### 3. NeuroAdaptTrainer: A Fiji/ImageJ Plugin for YOLO\-Based Neuron Segmentation, InteractiveCorrection and Transfer Learning
+>
+> | 属性 | 内容 |
+> |:---:|:---|
+> | 📅 发布日期 | 2026-08-05 |
+> | 👤 作者 | Daniela Eraso\-Casas |
+>
+> **📄 英文摘要：**
+> Neuron counting and segmentation in microscopy images of neuronal cultures is a routine and time\-consuming task in neuroscience research, traditionally performed through manual inspection or semi\-automatic tools. We present NeuroAdaptTrainer, an open\-source Fiji/ImageJ plugin that integrates a YOLO instance\-segmentation model directly into the microscopist's workflow. The plugin allows a user to run automatic neuron detection on a single image or a batch of images, manually correct the resulting detections from within Fiji, and use those corrections to adapt the model to new imaging conditions via transfer learning. A built\-in external validation module allows the base and adapted models to be compared quantitatively on a held\-out annotated set. NeuroAdaptTrainer lowers the barrier for non\-specialist users to benefit from deep\-learning\-based segmentation while keeping expert supervision at the center of the workflow.
+>
+> 🔗 [阅读论文](http://arxiv.org/abs/2608.05226v1)
+
+---
+
+> ### 4. YOLO\-PVC: 2D\-to\-3D Consolidation of Slice\-wise Detections for Volumetric Liver Tumor Localization in MRI
+>
+> | 属性 | 内容 |
+> |:---:|:---|
+> | 📅 发布日期 | 2026-08-05 |
+> | 👤 作者 | Talha Waqas |
+>
+> **📄 英文摘要：**
+> Slice\-wise 2D object detectors are increasingly applied to volumetric data due to their computational efficiency and scalability, yet they often yield fragmented and unstable predictions along the depth axis. We propose YOLO\-PVC, a lightweight and model\-agnostic framework for 2D\-to\-3D consolidation of slice\-wise detections. The method enforces depth continuity, aggregates bounding box coordinates using robust percentile statistics, and further refines axial extent through a lightweight MLP\-based calibration module. Unlike naïve stacking or averaging strategies, YOLO\-PVC explicitly addresses missing detections and outlier slices along the depth dimension. Experiments on 3D liver MRI volumes across three tumor categories demonstrate consistent improvements over multiple aggregation baselines. The heuristic PVC achieves an overall $mathrm\{IoU\}\_\{3D\}$ of $0.665$, while the calibrated variant further improves performance to $0.710$, with high planar overlap \($mathrm\{BEV IoU\} approx 0.78$\). These results demonstrate that structured geometric consolidation provides an effective and practical solution for volumetric liver tumor localization in clinical MRI.
+>
+> 🔗 [阅读论文](http://arxiv.org/abs/2608.04642v1)
+
+---
+
+> ### 5. Interpretable Fuzzy Inference for UAV Target Tracking Using Bounding\-Box Geometry
 >
 > | 属性 | 内容 |
 > |:---:|:---|
 > | 📅 发布日期 | 2026-08-04 |
-> | 👤 作者 | Longji He |
+> | 👤 作者 | Reza Ahmari |
 >
 > **📄 英文摘要：**
-> Onboard satellite intelligence requires a task layer that translates mission intent into local tool calls, exposes execution state, and returns machine\-consumable artifacts under communication and power constraints. We present SAT\-Edge\-Agent, a hardware\-in\-the\-loop \(HIL\) edge\-agent system deployed on a commercial off\-the\-shelf ARM\-based heterogeneous edge system\-on\-chip. A browser workspace and FastAPI agent coordinate a local OpenAI\-compatible language service with a project\-internal YOLO\-style oriented\-object\-detection endpoint that returns FAIR1M metadata\-backed structured results. Two fixed FAIR1M workloads, one single\-image and one serial two\-image request, were repeated 20 times each and completed 20/20 attempts. Mean Full\-Agent latency was 29.353 s and 60.937 s, with empirical P95 values of 31.166 s and 66.882 s. Mean detector time was 861.386 ms and 1510.920 ms, only 2.93% and 2.48% of the corresponding Full\-Agent means. Profiling indicates that most visible latency occurs outside detector execution. Mean CPU utilization was 20.761% and 20.482%. A 200\-ms NPU\-load field averaged 100% for both workloads, but it represents a shared\-accelerator software field rather than detector\-only occupancy or calibrated utilization. The public evidence package provides sanitized request\-level records, redacted JSON, normalized SSE examples, and scripts reproducing the reported statistics. These results establish a reproducible HIL boundary for observable satellite edge\-agent orchestration, but do not establish detector accuracy, a new geolocation method, calibrated energy efficiency, or flight readiness.
+> Vision\-based guidance of unmanned aerial vehicles \(UAVs\) toward unmanned ground vehicles \(UGVs\) supports cooperative aerial\-\-ground robotics, but reliable continuous yaw estimation from onboard vision remains challenging because of sensing uncertainty, limited computation, and the need for interpretable control. Existing deep\-learning and geometric\-reconstruction approaches often require large datasets, external localization, or complex modeling assumptions, reducing transparency and deployment suitability on resource\-constrained platforms. We present an interpretable fuzzy\-inference framework that generates continuous yaw commands from low\-dimensional features extracted from YOLO boxes: target centroid location, area, and aspect ratio. No explicit geometric modeling is required. A Mamdani fuzzy system serves as an interpretable baseline using a shoulder\-\-triangle\-\-shoulder input partition. It is followed by a first\-order Takagi\-\-Sugeno model with three antecedent membership terms per input, whose parameters are derived from training\-set quantiles, yielding a compact 27\-rule structure. Evaluation uses 6\{,\}169 labeled samples from a VICON motion\-capture environment. Across five randomized train\-\-test splits, the Takagi\-\-Sugeno model achieves a test\-set mean absolute error of $0.140^circ pm 0.003^circ$, a root mean squared error of $0.200^circ pm 0.008^circ$, and a maximum absolute error of $1.254^circ pm 0.121^circ$. Within\-threshold accuracies are $99.676% pm 0.270%$ for $pm1^circ$ and $100.000% pm 0.000%$ for both $pm3^circ$ and $pm5^circ$. Directional consistency between image\-plane horizontal displacement and predicted yaw sign reaches $90.254% pm 0.612%$. These results show that the framework is transparent, data\-efficient, computationally lightweight, and suitable for real\-time vision\-based UAV guidance toward mobile ground targets.
 >
-> 🔗 [阅读论文](http://arxiv.org/abs/2608.03728v1)
-
----
-
-> ### 2. Fast Object Removal Attacks on Safety\-Critical Video\-based Perception Systems
->
-> | 属性 | 内容 |
-> |:---:|:---|
-> | 📅 发布日期 | 2026-08-03 |
-> | 👤 作者 | Mohammad Imtiaz Hasan |
->
-> **📄 英文摘要：**
-> By leveraging data from video\-based perception systems, intelligent transportation systems \(ITS\) support safety\-critical applications that improve road safety. However, adversaries may manipulate video frames to compromise downstream perception modules, causing failures in safety\-critical functions and increasing risks to vulnerable road users. This paper presents a novel attack model and an end\-to\-end framework for near\-real\-time targeted object removal attack on a video\-based safety\-critical system. The end\-to\-end attack pipeline consists of four stages: localizing targets in each frame, retrieving coherent patches from earlier frames, blending them using context\-aware alpha compositing, and reconstructing attacked frames. Experiments at an intersection on the South Carolina Connected Vehicle Testbed \(SC\-CVT\) show that reconstructed frames have high global similarity to the originals, with frame\-level Peak Signal to Noise Ratio \(PSNR\) above 40 dB and Structural Similarity Index Measure \(SSIM\) above 0.996. Using the YOLO\-based detector, the attack reduces object detections by up to 97.59% and achieves a frame\-level attack success rate of 94.48%. Across the evaluated detectors and frame resolutions, the mean execution time ranges from 0.074 to 0.172 seconds per frame on GPU hardware, indicating near\-real\-time performance in testing. The forensic evaluation using several pretrained tamper\-detection models shows limited ability to distinguish reconstructed from authentic frames. The findings suggest that video\-based perception is vulnerable to stealthy object removal attacks that can degrade the performance of safety\-critical applications by reducing object detectability. These findings can help develop mitigation strategies against adversarial object removal attacks that threaten safety\-critical applications, such as vision\-based pedestrian safety systems.
->
-> 🔗 [阅读论文](http://arxiv.org/abs/2608.02806v1)
-
----
-
-> ### 3. Extended KAFR: A kinematic\-adaptive paradigm for the efficient analysis of surgical video
->
-> | 属性 | 内容 |
-> |:---:|:---|
-> | 📅 发布日期 | 2026-08-02 |
-> | 👤 作者 | Huu Phong Nguyen |
->
-> **📄 英文摘要：**
-> Artificial Intelligence is increasingly applied to surgical video analysis for phase segmentation, skill assessment, and workflow optimization. A key challenge is the length of surgical recordings, often one to several hours, creating substantial computational burden. We previously developed Kinematics\-Adaptive Frame Recognition \(KAFR\) for robotic surgery, showing that tracking tool motion effectively identifies informative frames while filtering redundant content. However, laparoscopic surgery introduces additional challenges: manual camera control causes frequent motion artifacts, and image quality is generally lower than robotic systems. This study evaluates whether KAFR generalizes to laparoscopic surgery using the Cholec80 benchmark, comprising 80 laparoscopic cholecystectomy procedures annotated for seven surgical phases. KAFR operates in three stages: a fine\-tuned YOLO model detects and segments surgical tools; frames are adaptively selected based on tool displacement or velocity variation; and an X3D model classifies selected frames into surgical phases. KAFR achieved a 91.0% F1 score using only 0.58% of frames for phase classification, representing an approximately seven\-fold reduction compared to typical 4% frame sampling, while maintaining performance comparable to LoViT \(90.2%\) and Trans\-SVNet \(89.7%\). These results demonstrate that kinematics\-based frame selection transfers effectively to the challenging laparoscopic environment.
->
-> 🔗 [阅读论文](http://arxiv.org/abs/2608.01058v1)
-
----
-
-> ### 4. MDWD: A Street\-Level Dataset for Municipal Solid Waste Detection in Dense Urban Environments
->
-> | 属性 | 内容 |
-> |:---:|:---|
-> | 📅 发布日期 | 2026-07-31 |
-> | 👤 作者 | Andrea Filiberto Lucas |
->
-> **📄 英文摘要：**
-> Automated visual monitoring of urban environments is a growing Computer Vision research area, but municipal solid waste detection remains under\-represented in dedicated benchmark resources. Existing waste\-related datasets predominantly address individual litter detection, aerial imagery, or image\-level classification, and none simultaneously provide street\-level imagery, instance\-level localization, and categorization of domestic waste streams within a structured municipal collection context. This paper introduces the Maltese Domestic Waste Dataset \(MDWD\), a street\-level benchmark comprising 3,697 high\-resolution images and 11,461 manually annotated instances across five domestic waste categories representative of Malta's municipal collection system. The dataset captures substantial variation in location, illumination, object scale, occlusion, and urban context. To establish reproducible baselines, a cross\-architecture benchmark is conducted across multiple generations of the YOLO family and a transformer\-based detector. On the test set, RF\-DETR\-M achieves the strongest overall performance with an mAP50 of 94.49% and an F1\-score of 93.56%, whilst smaller\-capacity variants maintain competitive accuracy at substantially reduced parameter counts. These results indicate that MDWD supports effective training across both compact real\-time detectors and transformer\-based models, establishing a benchmark for future research in vision\-based municipal waste monitoring.
->
-> 🔗 [阅读论文](http://arxiv.org/abs/2608.00257v1)
-
----
-
-> ### 5. Explainable and Resource\-Efficient Spatial Reasoning in Multimodal LLMs for Decision\-Critical Applications
->
-> | 属性 | 内容 |
-> |:---:|:---|
-> | 📅 发布日期 | 2026-07-29 |
-> | 👤 作者 | Piyush Jain |
->
-> **📄 英文摘要：**
-> As Multimodal Large Language Models \(MLLMs\) are increasingly deployed in decision\-critical pipelines such as robotics, embodied AI, and safety monitoring, the opacity of their spatial judgments limits operator trust and auditability. MLLMs demonstrate strong reasoning but often struggle with fine\-grained spatial understanding and object hallucination. Prior work, ByDeWay, introduced Layered\-Depth\-Based Prompting \(LDP\), a training\-free framework that mitigates hallucinations by structuring prompts using monocular depth estimation. However, coarse depth layering falls short in resolving object\-to\-object spatial relationships within the same geometric plane, such as projective \("left of", "above"\) and topological \("inside", "touching"\) relations. We propose ByDeWay\-V2, which integrates explicit spatial relational context alongside depth cues, expressed as human\-readable predicates that serve as auditable evidence for downstream decision support. Using an open\-vocabulary object detector \(YOLO\-World\-L\), our framework computes pairwise geometric relations between detected objects and injects them as structured spatial predicates into the MLLM prompt, bridging 3D scene depth and 2D spatial semantics without any training. We evaluate ByDeWay\-V2 on the Visual Spatial Reasoning \(VSR\) and BLINK benchmarks across multiple MLLMs, with hallucination grounding assessed via POPE. On the BLINK spatial subset, ByDeWay\-V2 achieves a 46 percent relative F1 improvement over LDP for Qwen2.5\-VL, and recovers BLIP\-Base's spatial reasoning on VSR from near\-random performance to a competitive F1 of 0.53. Our lightest configuration operates under a strict 40\-token context budget on CPU, showing the framework's suitability for resource\-constrained, real\-time decision\-support settings.
->
-> 🔗 [阅读论文](http://arxiv.org/abs/2607.27145v1)
+> 🔗 [阅读论文](http://arxiv.org/abs/2608.04121v1)
 
 ---
 
