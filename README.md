@@ -14,7 +14,35 @@
 
 ## 📑 论文列表
 
-> ### 1. From Transparent Labware Segmentation to Collision Avoidance: A Real\-Time Edge\-Aware Perception Pipeline
+> ### 1. SkySeaLand: A Wide\-Format Satellite Transportation Benchmark with an Ultra\-Lightweight Detection Baseline
+>
+> | 属性 | 内容 |
+> |:---:|:---|
+> | 📅 发布日期 | 2026-08-07 |
+> | 👤 作者 | Md. Zahid Hasan Riad |
+>
+> **📄 英文摘要：**
+> Satellite object detection is challenged by small targets and wide\-format scenes that lose detail under standard square\-input resizing. We introduce SkySeaLand, a public dataset of 1,307 high\-resolution satellite images and 19,101 verified bounding boxes across airplane, boat, car, and ship classes in terrestrial and maritime scenes. Native COCO and YOLO annotations are provided. The collection is dominated by large source images and wide scene geometry: 84.5 percent exceed 3,836 pixels on the longest side and 73.1 percent are near a 3:1 aspect ratio. We evaluate twelve detectors from the YOLO, RT\-DETR, DETR, and Faster R\-CNN families using a common split and COCO metrics. The tested YOLO and RT\-DETR variants obtain 84.4\-\-88.2 mAP50, with no consistent accuracy gain from larger parameter counts under the reported model\-specific recipes. We also report SkyDet, a 1.22 M parameter anchor\-free baseline that obtains 60.5 mAP50 and 24.32 mAP50\-95 in a 4.90 MB footprint, with 13.74 ms latency \(72.8 FPS\) on a Tesla T4. SkySeaLand provides a compact benchmark for mixed land\-\-maritime transportation detection, while SkyDet establishes a documented low\-footprint reference rather than a state\-of\-the\-art accuracy claim.
+>
+> 🔗 [阅读论文](http://arxiv.org/abs/2608.07382v1)
+
+---
+
+> ### 2. YOLO\-PEFT: Parameter\-Efficient Fine\-Tuning on YOLO Family
+>
+> | 属性 | 内容 |
+> |:---:|:---|
+> | 📅 发布日期 | 2026-08-07 |
+> | 👤 作者 | Xu Lin |
+>
+> **📄 英文摘要：**
+> Generic parameter\-efficient fine\-tuning \(PEFT\) methods transferred from language models can fail silently on real\-time detectors, whose heterogeneous operators and detection\-specific components impose placement constraints absent from regular Transformer stacks. We propose YOLO\-PEFT, a structure\-aware framework that formulates adapter placement as an auditable constraint\-planning problem. Given a detector graph, a PEFT request, and a resource budget, YOLO\-PEFT assigns operator and semantic roles, evaluates explicit operator\-validity, detector\-semantic, graph\-interface, and deployment predicates, records a reason code for each excluded module, and either emits a budgeted target\-module plan or returns Refuse before training. Under the official VOC07\+12 trainval\-to\-VOC07 test protocol, planner\-selected RS\-LoRA reaches 0.7138 and 0.7307 mAP50\-95 on YOLO11s and YOLO12s, respectively, compared with 0.6428 and 0.6662 for Full\-SFT. On RT\-DETR\-L, all seven evaluated LoRA\-family configurations cross the predefined catastrophic threshold, supporting a calibrated Refuse\-to\-Full\-SFT decision within the evaluated coverage. A controlled YOLO11 audit further shows that LoRA reduces peak training memory by 43.9 percent, although training takes 1.72 times longer. Within the evaluated detector families, placement policies, and calibration coverage, YOLO\-PEFT replaces manual target\-module trial and error with explicit, inspectable planning while preserving verified train\-save\-merge\-export paths; refusal on unseen detector architectures remains an open validation problem. Project Page: github.com/Tencent/YOLO\-Master
+>
+> 🔗 [阅读论文](http://arxiv.org/abs/2608.07051v1)
+
+---
+
+> ### 3. From Transparent Labware Segmentation to Collision Avoidance: A Real\-Time Edge\-Aware Perception Pipeline
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -30,7 +58,7 @@
 
 ---
 
-> ### 2. Simile Understanding in Text\-to\-Image Models: An Evaluation Framework
+> ### 4. Simile Understanding in Text\-to\-Image Models: An Evaluation Framework
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -44,7 +72,7 @@
 
 ---
 
-> ### 3. NeuroAdaptTrainer: A Fiji/ImageJ Plugin for YOLO\-Based Neuron Segmentation, InteractiveCorrection and Transfer Learning
+> ### 5. NeuroAdaptTrainer: A Fiji/ImageJ Plugin for YOLO\-Based Neuron Segmentation, InteractiveCorrection and Transfer Learning
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -55,34 +83,6 @@
 > Neuron counting and segmentation in microscopy images of neuronal cultures is a routine and time\-consuming task in neuroscience research, traditionally performed through manual inspection or semi\-automatic tools. We present NeuroAdaptTrainer, an open\-source Fiji/ImageJ plugin that integrates a YOLO instance\-segmentation model directly into the microscopist's workflow. The plugin allows a user to run automatic neuron detection on a single image or a batch of images, manually correct the resulting detections from within Fiji, and use those corrections to adapt the model to new imaging conditions via transfer learning. A built\-in external validation module allows the base and adapted models to be compared quantitatively on a held\-out annotated set. NeuroAdaptTrainer lowers the barrier for non\-specialist users to benefit from deep\-learning\-based segmentation while keeping expert supervision at the center of the workflow.
 >
 > 🔗 [阅读论文](http://arxiv.org/abs/2608.05226v1)
-
----
-
-> ### 4. YOLO\-PVC: 2D\-to\-3D Consolidation of Slice\-wise Detections for Volumetric Liver Tumor Localization in MRI
->
-> | 属性 | 内容 |
-> |:---:|:---|
-> | 📅 发布日期 | 2026-08-05 |
-> | 👤 作者 | Talha Waqas |
->
-> **📄 英文摘要：**
-> Slice\-wise 2D object detectors are increasingly applied to volumetric data due to their computational efficiency and scalability, yet they often yield fragmented and unstable predictions along the depth axis. We propose YOLO\-PVC, a lightweight and model\-agnostic framework for 2D\-to\-3D consolidation of slice\-wise detections. The method enforces depth continuity, aggregates bounding box coordinates using robust percentile statistics, and further refines axial extent through a lightweight MLP\-based calibration module. Unlike naïve stacking or averaging strategies, YOLO\-PVC explicitly addresses missing detections and outlier slices along the depth dimension. Experiments on 3D liver MRI volumes across three tumor categories demonstrate consistent improvements over multiple aggregation baselines. The heuristic PVC achieves an overall $mathrm\{IoU\}\_\{3D\}$ of $0.665$, while the calibrated variant further improves performance to $0.710$, with high planar overlap \($mathrm\{BEV IoU\} approx 0.78$\). These results demonstrate that structured geometric consolidation provides an effective and practical solution for volumetric liver tumor localization in clinical MRI.
->
-> 🔗 [阅读论文](http://arxiv.org/abs/2608.04642v1)
-
----
-
-> ### 5. Interpretable Fuzzy Inference for UAV Target Tracking Using Bounding\-Box Geometry
->
-> | 属性 | 内容 |
-> |:---:|:---|
-> | 📅 发布日期 | 2026-08-04 |
-> | 👤 作者 | Reza Ahmari |
->
-> **📄 英文摘要：**
-> Vision\-based guidance of unmanned aerial vehicles \(UAVs\) toward unmanned ground vehicles \(UGVs\) supports cooperative aerial\-\-ground robotics, but reliable continuous yaw estimation from onboard vision remains challenging because of sensing uncertainty, limited computation, and the need for interpretable control. Existing deep\-learning and geometric\-reconstruction approaches often require large datasets, external localization, or complex modeling assumptions, reducing transparency and deployment suitability on resource\-constrained platforms. We present an interpretable fuzzy\-inference framework that generates continuous yaw commands from low\-dimensional features extracted from YOLO boxes: target centroid location, area, and aspect ratio. No explicit geometric modeling is required. A Mamdani fuzzy system serves as an interpretable baseline using a shoulder\-\-triangle\-\-shoulder input partition. It is followed by a first\-order Takagi\-\-Sugeno model with three antecedent membership terms per input, whose parameters are derived from training\-set quantiles, yielding a compact 27\-rule structure. Evaluation uses 6\{,\}169 labeled samples from a VICON motion\-capture environment. Across five randomized train\-\-test splits, the Takagi\-\-Sugeno model achieves a test\-set mean absolute error of $0.140^circ pm 0.003^circ$, a root mean squared error of $0.200^circ pm 0.008^circ$, and a maximum absolute error of $1.254^circ pm 0.121^circ$. Within\-threshold accuracies are $99.676% pm 0.270%$ for $pm1^circ$ and $100.000% pm 0.000%$ for both $pm3^circ$ and $pm5^circ$. Directional consistency between image\-plane horizontal displacement and predicted yaw sign reaches $90.254% pm 0.612%$. These results show that the framework is transparent, data\-efficient, computationally lightweight, and suitable for real\-time vision\-based UAV guidance toward mobile ground targets.
->
-> 🔗 [阅读论文](http://arxiv.org/abs/2608.04121v1)
 
 ---
 
