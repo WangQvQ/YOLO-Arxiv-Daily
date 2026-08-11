@@ -14,7 +14,21 @@
 
 ## 📑 论文列表
 
-> ### 1. SkySeaLand: A Wide\-Format Satellite Transportation Benchmark with an Ultra\-Lightweight Detection Baseline
+> ### 1. TriView\-YOLO: Early Multi\-View Fusion for Ground Penetrating Radar Cavity Detection in Soft, High\-Water\-Content Soils
+>
+> | 属性 | 内容 |
+> |:---:|:---|
+> | 📅 发布日期 | 2026-08-10 |
+> | 👤 作者 | Suphawut Thawinutchokaudom |
+>
+> **📄 英文摘要：**
+> Automated detection of subsurface cavities from Ground Penetrating Radar \(GPR\) is most difficult in soft, high\-water\-content ground, where conductive, water\-saturated soil attenuates the signal and degrades cavity reflections, yet this is also the condition under which cavities most readily form. This paper proposes TriView\-YOLO, a multi\-view YOLOv12 detector for road cavity screening in such ground. Three co\-registered views \(longitudinal B\-scan, horizontal C\-scan, and cross\-section B\-scan\) form a 9\-channel input fused by a TripleInputConv layer that replaces the YOLOv12 stem; the rest of the network is unchanged, and bounding boxes are required on the longitudinal view only. Training used 1,600 expert\-verified field samples, principally metropolitan road surveys of Bangkok, Thailand, acquired with a vehicle\-mounted multichannel three\-dimensional GPR mobile mapping system, with surveys over the firmer subgrades of Japan added to training and validation only. The test set comes exclusively from the Bangkok surveys, over soft marine clay with 80\-140% water content and a water table at 1\-2 m depth, a ground condition for which no dedicated deep learning cavity\-detection evaluation has been reported. On this unaugmented, field\-only test set, split randomly within surveys, the proposed model attains mAP50 of 0.558 \+/\- 0.028 over three seeds at 23.6 GFLOPs and 3.1 ms per image. Ablations show that removing the auxiliary views lowers mAP50 and recall, whereas public and synthetic training images, DINOv3 features, larger model scale, and COCO pretraining bring no gain.
+>
+> 🔗 [阅读论文](http://arxiv.org/abs/2608.09522v1)
+
+---
+
+> ### 2. SkySeaLand: A Wide\-Format Satellite Transportation Benchmark with an Ultra\-Lightweight Detection Baseline
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -28,7 +42,7 @@
 
 ---
 
-> ### 2. YOLO\-PEFT: Parameter\-Efficient Fine\-Tuning on YOLO Family
+> ### 3. YOLO\-PEFT: Parameter\-Efficient Fine\-Tuning on YOLO Family
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -42,7 +56,7 @@
 
 ---
 
-> ### 3. From Transparent Labware Segmentation to Collision Avoidance: A Real\-Time Edge\-Aware Perception Pipeline
+> ### 4. From Transparent Labware Segmentation to Collision Avoidance: A Real\-Time Edge\-Aware Perception Pipeline
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -58,7 +72,7 @@
 
 ---
 
-> ### 4. Simile Understanding in Text\-to\-Image Models: An Evaluation Framework
+> ### 5. Simile Understanding in Text\-to\-Image Models: An Evaluation Framework
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -69,20 +83,6 @@
 > Similes provide a compact and expressive way to describe visual characteristics in text prompts. Recent text\-to\-image models \(t2i models\) can produce visually compelling outputs from simile prompts, yet even frontier models frequently misinterpret the metaphorical vehicle and confuse it with the object. These systematic failures reveal a gap between figurative language and object\-level visual grounding in t2i models. To investigate this issue, we propose a scalable evaluation framework for simile understanding. Our framework includes \(1\) a controlled simile dataset in which metaphorical vehicles are drawn from a predefined set of object\-detectable categories and combined with diverse templates, \(2\) automatic grounding metrics based on YOLO \(You Only Look Once\) detection, and \(3\) text encoder layer analysis using Diffusion Lens to track how metaphorical vehicles emerge during generation. Experiments across architecturally diverse t2i models reveal consistent literalization failure patterns. We further discuss potential mitigation strategies for improving simile grounding in t2i models.
 >
 > 🔗 [阅读论文](http://arxiv.org/abs/2608.04750v1)
-
----
-
-> ### 5. NeuroAdaptTrainer: A Fiji/ImageJ Plugin for YOLO\-Based Neuron Segmentation, InteractiveCorrection and Transfer Learning
->
-> | 属性 | 内容 |
-> |:---:|:---|
-> | 📅 发布日期 | 2026-08-05 |
-> | 👤 作者 | Daniela Eraso\-Casas |
->
-> **📄 英文摘要：**
-> Neuron counting and segmentation in microscopy images of neuronal cultures is a routine and time\-consuming task in neuroscience research, traditionally performed through manual inspection or semi\-automatic tools. We present NeuroAdaptTrainer, an open\-source Fiji/ImageJ plugin that integrates a YOLO instance\-segmentation model directly into the microscopist's workflow. The plugin allows a user to run automatic neuron detection on a single image or a batch of images, manually correct the resulting detections from within Fiji, and use those corrections to adapt the model to new imaging conditions via transfer learning. A built\-in external validation module allows the base and adapted models to be compared quantitatively on a held\-out annotated set. NeuroAdaptTrainer lowers the barrier for non\-specialist users to benefit from deep\-learning\-based segmentation while keeping expert supervision at the center of the workflow.
->
-> 🔗 [阅读论文](http://arxiv.org/abs/2608.05226v1)
 
 ---
 
