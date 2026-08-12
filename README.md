@@ -14,7 +14,35 @@
 
 ## 📑 论文列表
 
-> ### 1. TriView\-YOLO: Early Multi\-View Fusion for Ground Penetrating Radar Cavity Detection in Soft, High\-Water\-Content Soils
+> ### 1. A Comparative Evaluation of Deep Learning Object Detection Models on a Real\-World Multi\-Plant Dataset from Africa
+>
+> | 属性 | 内容 |
+> |:---:|:---|
+> | 📅 发布日期 | 2026-08-11 |
+> | 👤 作者 | Ismail Ismail Tijjani |
+>
+> **📄 英文摘要：**
+> The application of computer vision in agriculture has shown significant potential for improving crop monitoring and precision farming. However, many existing approaches rely on controlled datasets that do not adequately represent realworld farming conditions, particularly in underrepresented regions such as Africa. This study presents a comparative evaluation of six object detection models YOLOv5, YOLOv8, YOLO11, YOLO26, Faster R\-CNN, and RT\-DETR using a real\-world dataset, AgriAISeg 1 , collected manually from Nigerian farms. AgriAISeg comprises 3,382 images of sesame, cabbage, and tomato crops captured under varying environmental conditions, including changes in illumination, occlusion, and viewing perspectives. Models were trained, and performance was assessed using precision, recall, mAP@0.5, and mAP@0.5:0.95. The results show that RT\-DETR achieved the highest overall performance with a precision of 0.768 and mAP@0.5:0.95 of 0.624, while YOLOv8 and YOLO11 also demonstrated strong and consistent performance. In contrast, Faster R\-CNN recorded significantly lower accuracy, with an overall mAP@0.5 of 0.466, indicating reduced effectiveness under complex field conditions. In addition, YOLO\-based models exhibited superior training efficiency compared to Faster R\-CNN.These findings demonstrate that modern one\-stage and transformer\-based detectors provide more reliable and efficient solutions for plant detection in realworld agricultural environments.
+>
+> 🔗 [阅读论文](http://arxiv.org/abs/2608.11053v1)
+
+---
+
+> ### 2. MammoMix: Leveraging Mixture of Experts for Robust Mammogram Breast Detection
+>
+> | 属性 | 内容 |
+> |:---:|:---|
+> | 📅 发布日期 | 2026-08-11 |
+> | 👤 作者 | Dinh Tan Nguyen |
+>
+> **📄 英文摘要：**
+> Breast lesion detection in mammography remains a challenging task due to variations in image quality, lesion appearance, and population demographics across datasets. While current object detectors such as YOLO and DETR achieve strong results on individual datasets, their performance often degrades when trained on or applied across heterogeneous sources. To address this, we propose MammoMix, a novel framework based on Mixture\-of\-Experts \(MoE\) paradigm for robust and generalizable lesion detection. In MammoMix, each expert model is trained on a specific domain, allowing it to specialize in distinct characteristics of its source data. A gating mechanism adaptively weighs contributions from each expert based on input image, combining their outputs to enable domain\-adaptive inference. To improve reliability, we further incorporate a calibration module, MoCAE, which adjusts confidence scores to reflect true predictive uncertainty. We evaluate MammoMix on 3 public mammography datasets: CSAW, DDSM, and DMID, covering diverse clinical settings. Results show that MammoMix outperforms baseline detectors in both average precision and reliability, particularly on datasets with greater variability. Our findings demonstrate that expert specialization and calibrated ensemble fusion significantly enhance model generalization and robustness. MammoMix offers a promising step toward dependable AI\-assisted breast cancer screening across real\-world clinical domains.
+>
+> 🔗 [阅读论文](http://arxiv.org/abs/2608.10437v1)
+
+---
+
+> ### 3. TriView\-YOLO: Early Multi\-View Fusion for Ground Penetrating Radar Cavity Detection in Soft, High\-Water\-Content Soils
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -28,7 +56,7 @@
 
 ---
 
-> ### 2. SkySeaLand: A Wide\-Format Satellite Transportation Benchmark with an Ultra\-Lightweight Detection Baseline
+> ### 4. SkySeaLand: A Wide\-Format Satellite Transportation Benchmark with an Ultra\-Lightweight Detection Baseline
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -42,7 +70,7 @@
 
 ---
 
-> ### 3. YOLO\-PEFT: Parameter\-Efficient Fine\-Tuning on YOLO Family
+> ### 5. YOLO\-PEFT: Parameter\-Efficient Fine\-Tuning on YOLO Family
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -53,36 +81,6 @@
 > Generic parameter\-efficient fine\-tuning \(PEFT\) methods transferred from language models can fail silently on real\-time detectors, whose heterogeneous operators and detection\-specific components impose placement constraints absent from regular Transformer stacks. We propose YOLO\-PEFT, a structure\-aware framework that formulates adapter placement as an auditable constraint\-planning problem. Given a detector graph, a PEFT request, and a resource budget, YOLO\-PEFT assigns operator and semantic roles, evaluates explicit operator\-validity, detector\-semantic, graph\-interface, and deployment predicates, records a reason code for each excluded module, and either emits a budgeted target\-module plan or returns Refuse before training. Under the official VOC07\+12 trainval\-to\-VOC07 test protocol, planner\-selected RS\-LoRA reaches 0.7138 and 0.7307 mAP50\-95 on YOLO11s and YOLO12s, respectively, compared with 0.6428 and 0.6662 for Full\-SFT. On RT\-DETR\-L, all seven evaluated LoRA\-family configurations cross the predefined catastrophic threshold, supporting a calibrated Refuse\-to\-Full\-SFT decision within the evaluated coverage. A controlled YOLO11 audit further shows that LoRA reduces peak training memory by 43.9 percent, although training takes 1.72 times longer. Within the evaluated detector families, placement policies, and calibration coverage, YOLO\-PEFT replaces manual target\-module trial and error with explicit, inspectable planning while preserving verified train\-save\-merge\-export paths; refusal on unseen detector architectures remains an open validation problem. Project Page: github.com/Tencent/YOLO\-Master
 >
 > 🔗 [阅读论文](http://arxiv.org/abs/2608.07051v1)
-
----
-
-> ### 4. From Transparent Labware Segmentation to Collision Avoidance: A Real\-Time Edge\-Aware Perception Pipeline
->
-> | 属性 | 内容 |
-> |:---:|:---|
-> | 📅 发布日期 | 2026-08-05 |
-> | 👤 作者 | Shijun Ding |
->
-> **📄 英文摘要：**
-> This paper presents an edge\-aware instance segmentation framework that enables real\-time robotic collision avoidance with transparent laboratory glassware using purely visual perception. Transparent vessels defy conventional segmentation due to refraction, specular reflection, and the absence of stable interior texture, yet their boundary contours remain comparatively reliable visual cues. Exploiting this observation, we augment a one\-stage real\-time instance segmentation backbone with a lightweight edge\-detection branch, edge\-guided attention fusion, and a parameter\-free SimAM module, and further construct LabGlass\-IS, a 3485\-image, 21\-category instance segmentation dataset of real laboratory glassware. The enhanced model achieves the highest Boundary F\-score of 97.80 among compared methods, outperforming the YOLO\-prompted FastSAM framework by 18.93 BF points. Furthermore, it maintains an inference speed of 7.1ms per frame and requires only 2.85% of the parameters of the closest accuracy competitor. Multi\-view triangulation of mask centroids further provides 3D positions for conservative bounding\-volume collision constraints. Real\-robot trials achieve a 93.3% collision avoidance success rate, indicating the feasibility of the proposed perception\-to\-action pipeline for robot collision avoidance among fragile transparent objects. Our code is available at https://github.com/havishamy/TransYOLO\_3D. Our video is available at https://havishamy.github.io/paper\-videos/.
->
-> **💻 代码链接：** https://github.com/havishamy/TransYOLO_3D.，https://havishamy.github.io/paper-videos/.
->
-> 🔗 [阅读论文](http://arxiv.org/abs/2608.04769v1)
-
----
-
-> ### 5. Simile Understanding in Text\-to\-Image Models: An Evaluation Framework
->
-> | 属性 | 内容 |
-> |:---:|:---|
-> | 📅 发布日期 | 2026-08-05 |
-> | 👤 作者 | Luecheng Wang |
->
-> **📄 英文摘要：**
-> Similes provide a compact and expressive way to describe visual characteristics in text prompts. Recent text\-to\-image models \(t2i models\) can produce visually compelling outputs from simile prompts, yet even frontier models frequently misinterpret the metaphorical vehicle and confuse it with the object. These systematic failures reveal a gap between figurative language and object\-level visual grounding in t2i models. To investigate this issue, we propose a scalable evaluation framework for simile understanding. Our framework includes \(1\) a controlled simile dataset in which metaphorical vehicles are drawn from a predefined set of object\-detectable categories and combined with diverse templates, \(2\) automatic grounding metrics based on YOLO \(You Only Look Once\) detection, and \(3\) text encoder layer analysis using Diffusion Lens to track how metaphorical vehicles emerge during generation. Experiments across architecturally diverse t2i models reveal consistent literalization failure patterns. We further discuss potential mitigation strategies for improving simile grounding in t2i models.
->
-> 🔗 [阅读论文](http://arxiv.org/abs/2608.04750v1)
 
 ---
 
