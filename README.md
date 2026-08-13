@@ -14,7 +14,35 @@
 
 ## 📑 论文列表
 
-> ### 1. A Comparative Evaluation of Deep Learning Object Detection Models on a Real\-World Multi\-Plant Dataset from Africa
+> ### 1. Do Not Forget the Obvious \- RISC: A Risk\-Informed Slice\-Coverage Protocol for Safe Autonomous Driving
+>
+> | 属性 | 内容 |
+> |:---:|:---|
+> | 📅 发布日期 | 2026-08-12 |
+> | 👤 作者 | Fabian Hüger |
+>
+> **📄 英文摘要：**
+> Aggregate metrics may not fully reflect performance in insufficiently examined high\-risk driving conditions. We propose RISC \(Risk\-Informed Slice Coverage\), a practical protocol for risk\-guided stress testing and coverage\-qualified evaluation. Risk\-guided stress testing directs a finite audit budget toward risk\-relevant sub\-datasets, called risk slices, while coverage\-qualified evaluation reports results together with explicit statements about which slices are sufficiently or insufficiently covered. The protocol translates safety concerns into machine\-readable risk slices, uses lightweight signals to tag candidate data, selects a compact audit set by risk, and qualifies the results using coverage evidence. An LLM can optionally support this process by surfacing relevant but potentially overlooked conditions during test planning, thereby helping engineers not to forget the obvious. RISC is model\-agnostic and can be applied to perception modules, driving models, and other autonomous\-driving subsystems. We instantiate the protocol for monocular pedestrian perception using 1,000 frames from the Zenseact Open Dataset, image statistics, and a YOLO\-based detector proxy. In this proof\-of\-concept study, risk\-guided selection increases critical failure discovery from 34.0% under random sampling to 98.5%. RISC provides a lightweight, assurance\-oriented evaluation layer that complements scenario categorization, coverage assessment, and broader testing\-and\-verification workflows.
+>
+> 🔗 [阅读论文](http://arxiv.org/abs/2608.12051v1)
+
+---
+
+> ### 2. A Hybrid Framework of Vision Transformer and Gated Recurrent Unit for Detection of Mosquito Diseases
+>
+> | 属性 | 内容 |
+> |:---:|:---|
+> | 📅 发布日期 | 2026-08-12 |
+> | 👤 作者 | Danial Sharifrazi |
+>
+> **📄 英文摘要：**
+> Identifying dengue virus\-infected mosquitoes from control mosquitoes is a major challenge in analyzing mosquito locomotion behavior due to the small size and complexity of the video background. Conventional AI methods are often unable to extract accurate features from video frames and produce erroneous features. In this study, a three\-step framework is introduced: first, mosquitoes are identified and the background is removed using the YOLO 11M model, then visual features are extracted using the Vision Transformer \(ViT\), and finally the videos are classified with a convolutional GRU \(ConvGRU\) classifier. A comparative analysis of different models, including Recurrent Neural Network \(RNN\), Long Short\-Term Memory \(LSTM\), Gated Recurrent Unit \(GRU\), and their convolutional versions showed that the ConvGRU model achieved the best performance; it achieved 88.88% accuracy, 84.45% precision, 82.82% recall, and 82.81% F1 score. These results demonstrate that combining convolutional models with sequence\-based networks, especially in the ConvGRU model, allows the simultaneous extraction of precise spatial features and long\-term temporal dependencies from mosquito movements. Finally, the proposed framework provides a reliable solution for analyzing mosquito behavior in complex environments.
+>
+> 🔗 [阅读论文](http://arxiv.org/abs/2608.11582v1)
+
+---
+
+> ### 3. A Comparative Evaluation of Deep Learning Object Detection Models on a Real\-World Multi\-Plant Dataset from Africa
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -28,7 +56,7 @@
 
 ---
 
-> ### 2. MammoMix: Leveraging Mixture of Experts for Robust Mammogram Breast Detection
+> ### 4. MammoMix: Leveraging Mixture of Experts for Robust Mammogram Breast Detection
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -42,7 +70,7 @@
 
 ---
 
-> ### 3. TriView\-YOLO: Early Multi\-View Fusion for Ground Penetrating Radar Cavity Detection in Soft, High\-Water\-Content Soils
+> ### 5. TriView\-YOLO: Early Multi\-View Fusion for Ground Penetrating Radar Cavity Detection in Soft, High\-Water\-Content Soils
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -53,34 +81,6 @@
 > Automated detection of subsurface cavities from Ground Penetrating Radar \(GPR\) is most difficult in soft, high\-water\-content ground, where conductive, water\-saturated soil attenuates the signal and degrades cavity reflections, yet this is also the condition under which cavities most readily form. This paper proposes TriView\-YOLO, a multi\-view YOLOv12 detector for road cavity screening in such ground. Three co\-registered views \(longitudinal B\-scan, horizontal C\-scan, and cross\-section B\-scan\) form a 9\-channel input fused by a TripleInputConv layer that replaces the YOLOv12 stem; the rest of the network is unchanged, and bounding boxes are required on the longitudinal view only. Training used 1,600 expert\-verified field samples, principally metropolitan road surveys of Bangkok, Thailand, acquired with a vehicle\-mounted multichannel three\-dimensional GPR mobile mapping system, with surveys over the firmer subgrades of Japan added to training and validation only. The test set comes exclusively from the Bangkok surveys, over soft marine clay with 80\-140% water content and a water table at 1\-2 m depth, a ground condition for which no dedicated deep learning cavity\-detection evaluation has been reported. On this unaugmented, field\-only test set, split randomly within surveys, the proposed model attains mAP50 of 0.558 \+/\- 0.028 over three seeds at 23.6 GFLOPs and 3.1 ms per image. Ablations show that removing the auxiliary views lowers mAP50 and recall, whereas public and synthetic training images, DINOv3 features, larger model scale, and COCO pretraining bring no gain.
 >
 > 🔗 [阅读论文](http://arxiv.org/abs/2608.09522v1)
-
----
-
-> ### 4. SkySeaLand: A Wide\-Format Satellite Transportation Benchmark with an Ultra\-Lightweight Detection Baseline
->
-> | 属性 | 内容 |
-> |:---:|:---|
-> | 📅 发布日期 | 2026-08-07 |
-> | 👤 作者 | Md. Zahid Hasan Riad |
->
-> **📄 英文摘要：**
-> Satellite object detection is challenged by small targets and wide\-format scenes that lose detail under standard square\-input resizing. We introduce SkySeaLand, a public dataset of 1,307 high\-resolution satellite images and 19,101 verified bounding boxes across airplane, boat, car, and ship classes in terrestrial and maritime scenes. Native COCO and YOLO annotations are provided. The collection is dominated by large source images and wide scene geometry: 84.5 percent exceed 3,836 pixels on the longest side and 73.1 percent are near a 3:1 aspect ratio. We evaluate twelve detectors from the YOLO, RT\-DETR, DETR, and Faster R\-CNN families using a common split and COCO metrics. The tested YOLO and RT\-DETR variants obtain 84.4\-\-88.2 mAP50, with no consistent accuracy gain from larger parameter counts under the reported model\-specific recipes. We also report SkyDet, a 1.22 M parameter anchor\-free baseline that obtains 60.5 mAP50 and 24.32 mAP50\-95 in a 4.90 MB footprint, with 13.74 ms latency \(72.8 FPS\) on a Tesla T4. SkySeaLand provides a compact benchmark for mixed land\-\-maritime transportation detection, while SkyDet establishes a documented low\-footprint reference rather than a state\-of\-the\-art accuracy claim.
->
-> 🔗 [阅读论文](http://arxiv.org/abs/2608.07382v1)
-
----
-
-> ### 5. YOLO\-PEFT: Parameter\-Efficient Fine\-Tuning on YOLO Family
->
-> | 属性 | 内容 |
-> |:---:|:---|
-> | 📅 发布日期 | 2026-08-07 |
-> | 👤 作者 | Xu Lin |
->
-> **📄 英文摘要：**
-> Generic parameter\-efficient fine\-tuning \(PEFT\) methods transferred from language models can fail silently on real\-time detectors, whose heterogeneous operators and detection\-specific components impose placement constraints absent from regular Transformer stacks. We propose YOLO\-PEFT, a structure\-aware framework that formulates adapter placement as an auditable constraint\-planning problem. Given a detector graph, a PEFT request, and a resource budget, YOLO\-PEFT assigns operator and semantic roles, evaluates explicit operator\-validity, detector\-semantic, graph\-interface, and deployment predicates, records a reason code for each excluded module, and either emits a budgeted target\-module plan or returns Refuse before training. Under the official VOC07\+12 trainval\-to\-VOC07 test protocol, planner\-selected RS\-LoRA reaches 0.7138 and 0.7307 mAP50\-95 on YOLO11s and YOLO12s, respectively, compared with 0.6428 and 0.6662 for Full\-SFT. On RT\-DETR\-L, all seven evaluated LoRA\-family configurations cross the predefined catastrophic threshold, supporting a calibrated Refuse\-to\-Full\-SFT decision within the evaluated coverage. A controlled YOLO11 audit further shows that LoRA reduces peak training memory by 43.9 percent, although training takes 1.72 times longer. Within the evaluated detector families, placement policies, and calibration coverage, YOLO\-PEFT replaces manual target\-module trial and error with explicit, inspectable planning while preserving verified train\-save\-merge\-export paths; refusal on unseen detector architectures remains an open validation problem. Project Page: github.com/Tencent/YOLO\-Master
->
-> 🔗 [阅读论文](http://arxiv.org/abs/2608.07051v1)
 
 ---
 
