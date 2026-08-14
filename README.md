@@ -14,7 +14,21 @@
 
 ## 📑 论文列表
 
-> ### 1. Do Not Forget the Obvious \- RISC: A Risk\-Informed Slice\-Coverage Protocol for Safe Autonomous Driving
+> ### 1. The Role of Natural Language Understanding in Multimodal Video\-Based Dengue Diagnosis
+>
+> | 属性 | 内容 |
+> |:---:|:---|
+> | 📅 发布日期 | 2026-08-13 |
+> | 👤 作者 | Danial Sharifrazi |
+>
+> **📄 英文摘要：**
+> Detecting infection\-related behavioral changes in mosquitoes from video data is challenging because mosquitoes are small, move rapidly and irregularly, and are affected by environmental factors such as background, lighting, and shadows, which can make reliable feature extraction difficult. In this study, a YOLO\- and Contrastive Language\-Image Pre\-training \(CLIP\)\-based vision\-language framework is proposed to classify mosquito flight frames of uninfected and Dengue virus serotype 2 \(DENV2\)\-infected mosquitoes. First, YOLO is used to isolate mosquito regions from the background. Then, visual features extracted from video frames are aligned with biologically meaningful textual prompts in a shared embedding space. The multimodal model was fine\-tuned using supervised bidirectional contrastive learning and evaluated through frame\-level image\-text similarity\-based classification. The results show that the proposed method achieved 98.54% accuracy and 99.91% sensitivity at the frame level. After temporal aggregation of frame\-level information, the model achieved complete video\-level performance. The ablation results showed that fine\-tuning and CLIP\-based representations were essential for this domain, while the textual branch provided semantic image\-text alignment rather than an accuracy advantage over the vision\-only model. These findings suggest that vision\-language models can provide a useful framework for analyzing infection\-related biological behaviors from video data.
+>
+> 🔗 [阅读论文](http://arxiv.org/abs/2608.12677v1)
+
+---
+
+> ### 2. Do Not Forget the Obvious \- RISC: A Risk\-Informed Slice\-Coverage Protocol for Safe Autonomous Driving
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -28,7 +42,7 @@
 
 ---
 
-> ### 2. A Hybrid Framework of Vision Transformer and Gated Recurrent Unit for Detection of Mosquito Diseases
+> ### 3. A Hybrid Framework of Vision Transformer and Gated Recurrent Unit for Detection of Mosquito Diseases
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -42,7 +56,7 @@
 
 ---
 
-> ### 3. A Comparative Evaluation of Deep Learning Object Detection Models on a Real\-World Multi\-Plant Dataset from Africa
+> ### 4. A Comparative Evaluation of Deep Learning Object Detection Models on a Real\-World Multi\-Plant Dataset from Africa
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -56,7 +70,7 @@
 
 ---
 
-> ### 4. MammoMix: Leveraging Mixture of Experts for Robust Mammogram Breast Detection
+> ### 5. MammoMix: Leveraging Mixture of Experts for Robust Mammogram Breast Detection
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -67,20 +81,6 @@
 > Breast lesion detection in mammography remains a challenging task due to variations in image quality, lesion appearance, and population demographics across datasets. While current object detectors such as YOLO and DETR achieve strong results on individual datasets, their performance often degrades when trained on or applied across heterogeneous sources. To address this, we propose MammoMix, a novel framework based on Mixture\-of\-Experts \(MoE\) paradigm for robust and generalizable lesion detection. In MammoMix, each expert model is trained on a specific domain, allowing it to specialize in distinct characteristics of its source data. A gating mechanism adaptively weighs contributions from each expert based on input image, combining their outputs to enable domain\-adaptive inference. To improve reliability, we further incorporate a calibration module, MoCAE, which adjusts confidence scores to reflect true predictive uncertainty. We evaluate MammoMix on 3 public mammography datasets: CSAW, DDSM, and DMID, covering diverse clinical settings. Results show that MammoMix outperforms baseline detectors in both average precision and reliability, particularly on datasets with greater variability. Our findings demonstrate that expert specialization and calibrated ensemble fusion significantly enhance model generalization and robustness. MammoMix offers a promising step toward dependable AI\-assisted breast cancer screening across real\-world clinical domains.
 >
 > 🔗 [阅读论文](http://arxiv.org/abs/2608.10437v1)
-
----
-
-> ### 5. TriView\-YOLO: Early Multi\-View Fusion for Ground Penetrating Radar Cavity Detection in Soft, High\-Water\-Content Soils
->
-> | 属性 | 内容 |
-> |:---:|:---|
-> | 📅 发布日期 | 2026-08-10 |
-> | 👤 作者 | Suphawut Thawinutchokaudom |
->
-> **📄 英文摘要：**
-> Automated detection of subsurface cavities from Ground Penetrating Radar \(GPR\) is most difficult in soft, high\-water\-content ground, where conductive, water\-saturated soil attenuates the signal and degrades cavity reflections, yet this is also the condition under which cavities most readily form. This paper proposes TriView\-YOLO, a multi\-view YOLOv12 detector for road cavity screening in such ground. Three co\-registered views \(longitudinal B\-scan, horizontal C\-scan, and cross\-section B\-scan\) form a 9\-channel input fused by a TripleInputConv layer that replaces the YOLOv12 stem; the rest of the network is unchanged, and bounding boxes are required on the longitudinal view only. Training used 1,600 expert\-verified field samples, principally metropolitan road surveys of Bangkok, Thailand, acquired with a vehicle\-mounted multichannel three\-dimensional GPR mobile mapping system, with surveys over the firmer subgrades of Japan added to training and validation only. The test set comes exclusively from the Bangkok surveys, over soft marine clay with 80\-140% water content and a water table at 1\-2 m depth, a ground condition for which no dedicated deep learning cavity\-detection evaluation has been reported. On this unaugmented, field\-only test set, split randomly within surveys, the proposed model attains mAP50 of 0.558 \+/\- 0.028 over three seeds at 23.6 GFLOPs and 3.1 ms per image. Ablations show that removing the auxiliary views lowers mAP50 and recall, whereas public and synthetic training images, DINOv3 features, larger model scale, and COCO pretraining bring no gain.
->
-> 🔗 [阅读论文](http://arxiv.org/abs/2608.09522v1)
 
 ---
 
