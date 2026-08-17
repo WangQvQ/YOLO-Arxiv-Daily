@@ -14,7 +14,21 @@
 
 ## 📑 论文列表
 
-> ### 1. The Role of Natural Language Understanding in Multimodal Video\-Based Dengue Diagnosis
+> ### 1. LightTeaNet: A Weakly Supervised Lightweight CNN for Multi\-Label Tea Leaf Disease Detection and Localization
+>
+> | 属性 | 内容 |
+> |:---:|:---|
+> | 📅 发布日期 | 2026-08-14 |
+> | 👤 作者 | Naif Haider Chowdhury |
+>
+> **📄 英文摘要：**
+> Tea is known as an important crop in many parts of South and Southeast Asia, yet the production of tea is still hampered by the multiple diseases that decrease the quantity and quality. Traditional methods of inspection, which are manual, are not consistent, labor\-intensive, and depend on extensive monitoring. This paper introduces a lightweight convolutional neural network \(CNN\) designed for weakly supervised multi\-label classification and disease localization in tea leaves called LightTeaNet. LightTeaNet learns directly from image\-level labels and employs Class Activation Mapping \(CAM\) to localize disease\-affected regions automatically, unlike conventional object detection models such as YOLO, which require extensive bounding box annotations. For Parameter efficiency, the network integrates Depthwise Separable Convolutions, and for enhanced feature discrimination, it integrates Channel Attention. LightTeaNet has achieved a Precision of 0.9615, a Recall of 0.8772, and an F1\-score of 0.9179, while it shows mAP@0.50=0.1810 without any manual annotations, which delivers a competitive localization performance in the experimental results. These results validate the model as an interpretable as well as a resource\-efficient framework for intelligent disease monitoring in agriculture.
+>
+> 🔗 [阅读论文](http://arxiv.org/abs/2608.14178v1)
+
+---
+
+> ### 2. The Role of Natural Language Understanding in Multimodal Video\-Based Dengue Diagnosis
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -28,7 +42,7 @@
 
 ---
 
-> ### 2. Do Not Forget the Obvious \- RISC: A Risk\-Informed Slice\-Coverage Protocol for Safe Autonomous Driving
+> ### 3. Do Not Forget the Obvious \- RISC: A Risk\-Informed Slice\-Coverage Protocol for Safe Autonomous Driving
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -42,7 +56,7 @@
 
 ---
 
-> ### 3. A Hybrid Framework of Vision Transformer and Gated Recurrent Unit for Detection of Mosquito Diseases
+> ### 4. A Hybrid Framework of Vision Transformer and Gated Recurrent Unit for Detection of Mosquito Diseases
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -56,7 +70,7 @@
 
 ---
 
-> ### 4. A Comparative Evaluation of Deep Learning Object Detection Models on a Real\-World Multi\-Plant Dataset from Africa
+> ### 5. A Comparative Evaluation of Deep Learning Object Detection Models on a Real\-World Multi\-Plant Dataset from Africa
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -67,20 +81,6 @@
 > The application of computer vision in agriculture has shown significant potential for improving crop monitoring and precision farming. However, many existing approaches rely on controlled datasets that do not adequately represent realworld farming conditions, particularly in underrepresented regions such as Africa. This study presents a comparative evaluation of six object detection models YOLOv5, YOLOv8, YOLO11, YOLO26, Faster R\-CNN, and RT\-DETR using a real\-world dataset, AgriAISeg 1 , collected manually from Nigerian farms. AgriAISeg comprises 3,382 images of sesame, cabbage, and tomato crops captured under varying environmental conditions, including changes in illumination, occlusion, and viewing perspectives. Models were trained, and performance was assessed using precision, recall, mAP@0.5, and mAP@0.5:0.95. The results show that RT\-DETR achieved the highest overall performance with a precision of 0.768 and mAP@0.5:0.95 of 0.624, while YOLOv8 and YOLO11 also demonstrated strong and consistent performance. In contrast, Faster R\-CNN recorded significantly lower accuracy, with an overall mAP@0.5 of 0.466, indicating reduced effectiveness under complex field conditions. In addition, YOLO\-based models exhibited superior training efficiency compared to Faster R\-CNN.These findings demonstrate that modern one\-stage and transformer\-based detectors provide more reliable and efficient solutions for plant detection in realworld agricultural environments.
 >
 > 🔗 [阅读论文](http://arxiv.org/abs/2608.11053v1)
-
----
-
-> ### 5. MammoMix: Leveraging Mixture of Experts for Robust Mammogram Breast Detection
->
-> | 属性 | 内容 |
-> |:---:|:---|
-> | 📅 发布日期 | 2026-08-11 |
-> | 👤 作者 | Dinh Tan Nguyen |
->
-> **📄 英文摘要：**
-> Breast lesion detection in mammography remains a challenging task due to variations in image quality, lesion appearance, and population demographics across datasets. While current object detectors such as YOLO and DETR achieve strong results on individual datasets, their performance often degrades when trained on or applied across heterogeneous sources. To address this, we propose MammoMix, a novel framework based on Mixture\-of\-Experts \(MoE\) paradigm for robust and generalizable lesion detection. In MammoMix, each expert model is trained on a specific domain, allowing it to specialize in distinct characteristics of its source data. A gating mechanism adaptively weighs contributions from each expert based on input image, combining their outputs to enable domain\-adaptive inference. To improve reliability, we further incorporate a calibration module, MoCAE, which adjusts confidence scores to reflect true predictive uncertainty. We evaluate MammoMix on 3 public mammography datasets: CSAW, DDSM, and DMID, covering diverse clinical settings. Results show that MammoMix outperforms baseline detectors in both average precision and reliability, particularly on datasets with greater variability. Our findings demonstrate that expert specialization and calibrated ensemble fusion significantly enhance model generalization and robustness. MammoMix offers a promising step toward dependable AI\-assisted breast cancer screening across real\-world clinical domains.
->
-> 🔗 [阅读论文](http://arxiv.org/abs/2608.10437v1)
 
 ---
 
