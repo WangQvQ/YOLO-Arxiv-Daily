@@ -14,7 +14,49 @@
 
 ## 📑 论文列表
 
-> ### 1. LightTeaNet: A Weakly Supervised Lightweight CNN for Multi\-Label Tea Leaf Disease Detection and Localization
+> ### 1. Calibration\-Free Vehicle Speed Estimation: A Monocular Keypoint\-Template Approach
+>
+> | 属性 | 内容 |
+> |:---:|:---|
+> | 📅 发布日期 | 2026-08-17 |
+> | 👤 作者 | Gaofeng Su |
+>
+> **📄 英文摘要：**
+> This paper proposes a calibration\-free framework for reliably and effectively estimating vehicle speeds from monocular videos, without relying on roadway features, camera calibration, or roadway\-feature\-based reference objects. The proposed framework estimates vehicle speeds using a 36\-keypoint vehicle template and a homography matrix updated at each frame. A YOLO\-based keypoint detection module is trained on diverse datasets, and two estimation strategies are compared: keypoint\-only tracking and warped optical flow with dense spatial aggregation. Speed is estimated by projecting displacements into metric space using the homography, with validation conducted on over 400 video clips from roadside and overhead datasets, covering speeds from 30 to 100 mph. The method achieves reliable speed estimation on the VS13 and BrnoCompSpeed datasets, with the warped optical flow method delivering MAEs of 15.0% and 9.7%, respectively, and 77.9% and 93.1% of estimates falling within \+/\-20% error. After applying a 10% trim to remove edge\-of\-frame outliers, performance improves to MAEs of 11.7% and 7.6%, with within\-\+/\-20% accuracy increasing to 85.3% and 95.4%. This work addresses key limitations of existing vision\-based approaches and enables low\-cost and efficient speed enforcement using portable devices such as dashcams and smartphones, thereby supporting citizen\-based enforcement programs for traffic safety.
+>
+> 🔗 [阅读论文](http://arxiv.org/abs/2608.16785v1)
+
+---
+
+> ### 2. Beyond Clear Skies: Synthetic Seasonal and Weather Variations for Real\-World Drone Detection
+>
+> | 属性 | 内容 |
+> |:---:|:---|
+> | 📅 发布日期 | 2026-08-17 |
+> | 👤 作者 | Tamara R. Lenhard |
+>
+> **📄 英文摘要：**
+> Reliable drone detection under real\-world deployment conditions requires training data that spans the full operational design domain, including adverse weather and seasonal appearance variation. However, acquiring and annotating such data at scale remains highly resource\-intensive, as adverse\-weather conditions are inherently difficult to control, reproduce, and sample systematically. Existing datasets therefore typically provide only limited coverage of such conditions. Conversely, synthetic data offers a scalable alternative: environmental variation becomes controllable, while modern game\-engine\-based pipelines provide realistic rendering and automatic annotations. Leveraging this potential, we introduce SynDroneVision\-Weather \(SDV\-W\), an systematic extension of SynDroneVision \(SDV\) targeting adverse\-weather and seasonal domain shifts in urban drone detection. SDV\-W comprises 55,187 annotated high\-resolution images from three urban environments, rendered across three seasonal configurations and diverse weather conditions, including rain, snow, and fog at multiple severity levels. By preserving SDV's scene and trajectory configuration, SDV\-W enables matched clean\-adverse comparisons and quantification of condition\-specific detector degradation. Across representative YOLO models and real\-world datasets, we show that SDV\-W improves detector reliability under adverse appearance shifts, reduces missed detections and false alarms, and is most effective as a complement to general\-purpose synthetic drone\-detection data. SDV\-W will be publicly released upon paper acceptance.
+>
+> 🔗 [阅读论文](http://arxiv.org/abs/2608.16191v1)
+
+---
+
+> ### 3. MITE\-Net: SWaP\-Optimized 4K Video Tiny Target Perception for Embodied Edge SAR
+>
+> | 属性 | 内容 |
+> |:---:|:---|
+> | 📅 发布日期 | 2026-08-16 |
+> | 👤 作者 | Mingshuo Xu |
+>
+> **📄 英文摘要：**
+> Real\-time tiny target perception in high\-resolution imagery is critical for embodied Search\-and\-Rescue \(SAR\) missions. However, strict Size, Weight, and Power \(SWaP\) constraints on edge devices like UAVs create a bottleneck: traditional image downsampling causes severe feature loss, while slice\-based processing incurs prohibitive latency. To address this gap, this paper introduces a comprehensive framework encompassing a novel architecture, specialized datasets, and hardware\-level benchmarks. First, we propose MITE\-Net, a SWaP\-optimized cascaded architecture, which couples a bio\-inspired, learning\-free Tiny Target Motion\-Based Region Proposal Network \(TTM\-RPN\) with a sub\-0.14M\-parameter R\-CNN\-like head. Second, to standardize 4K tiny target evaluation, we construct the SAR\-Tiny Datasets by relabeling two challenging UAV datasets: SeaDroneSee\-Tiny \(dynamic maritime scenes, tiny targets predominantly of 64\-256 pixels \) and UAVID\-Tiny \(cluttered urban scenes, extremely tiny targets, less than 64 pixels\). Third, we benchmark against state\-of\-the\-art YOLO models on an edge device, NVIDIA Jetson AGX Xavier, where MITE\-Net directly processes 4K maritime imagery, achieving a 100% search success rate at 30.33 FPS. Consuming merely 3.19 W \(9.51 FPS/W\), MITE\-Net vastly outperforms YOLO baselines in target recall and energy efficiency. Conversely, UAVID\-Tiny evaluations expose a compound structural limitation: the learning\-free bionic front\-end struggles against urban backgrounds, while the ultra\-lightweight head lacks representational capacity for complex features. Ultimately, this work delivers an efficient onboard perception paradigm and a rigorous baseline guiding future end\-to\-end SAR architectures.
+>
+> 🔗 [阅读论文](http://arxiv.org/abs/2608.15830v1)
+
+---
+
+> ### 4. LightTeaNet: A Weakly Supervised Lightweight CNN for Multi\-Label Tea Leaf Disease Detection and Localization
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -28,7 +70,7 @@
 
 ---
 
-> ### 2. The Role of Natural Language Understanding in Multimodal Video\-Based Dengue Diagnosis
+> ### 5. The Role of Natural Language Understanding in Multimodal Video\-Based Dengue Diagnosis
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -39,48 +81,6 @@
 > Detecting infection\-related behavioral changes in mosquitoes from video data is challenging because mosquitoes are small, move rapidly and irregularly, and are affected by environmental factors such as background, lighting, and shadows, which can make reliable feature extraction difficult. In this study, a YOLO\- and Contrastive Language\-Image Pre\-training \(CLIP\)\-based vision\-language framework is proposed to classify mosquito flight frames of uninfected and Dengue virus serotype 2 \(DENV2\)\-infected mosquitoes. First, YOLO is used to isolate mosquito regions from the background. Then, visual features extracted from video frames are aligned with biologically meaningful textual prompts in a shared embedding space. The multimodal model was fine\-tuned using supervised bidirectional contrastive learning and evaluated through frame\-level image\-text similarity\-based classification. The results show that the proposed method achieved 98.54% accuracy and 99.91% sensitivity at the frame level. After temporal aggregation of frame\-level information, the model achieved complete video\-level performance. The ablation results showed that fine\-tuning and CLIP\-based representations were essential for this domain, while the textual branch provided semantic image\-text alignment rather than an accuracy advantage over the vision\-only model. These findings suggest that vision\-language models can provide a useful framework for analyzing infection\-related biological behaviors from video data.
 >
 > 🔗 [阅读论文](http://arxiv.org/abs/2608.12677v1)
-
----
-
-> ### 3. Do Not Forget the Obvious \- RISC: A Risk\-Informed Slice\-Coverage Protocol for Safe Autonomous Driving
->
-> | 属性 | 内容 |
-> |:---:|:---|
-> | 📅 发布日期 | 2026-08-12 |
-> | 👤 作者 | Fabian Hüger |
->
-> **📄 英文摘要：**
-> Aggregate metrics may not fully reflect performance in insufficiently examined high\-risk driving conditions. We propose RISC \(Risk\-Informed Slice Coverage\), a practical protocol for risk\-guided stress testing and coverage\-qualified evaluation. Risk\-guided stress testing directs a finite audit budget toward risk\-relevant sub\-datasets, called risk slices, while coverage\-qualified evaluation reports results together with explicit statements about which slices are sufficiently or insufficiently covered. The protocol translates safety concerns into machine\-readable risk slices, uses lightweight signals to tag candidate data, selects a compact audit set by risk, and qualifies the results using coverage evidence. An LLM can optionally support this process by surfacing relevant but potentially overlooked conditions during test planning, thereby helping engineers not to forget the obvious. RISC is model\-agnostic and can be applied to perception modules, driving models, and other autonomous\-driving subsystems. We instantiate the protocol for monocular pedestrian perception using 1,000 frames from the Zenseact Open Dataset, image statistics, and a YOLO\-based detector proxy. In this proof\-of\-concept study, risk\-guided selection increases critical failure discovery from 34.0% under random sampling to 98.5%. RISC provides a lightweight, assurance\-oriented evaluation layer that complements scenario categorization, coverage assessment, and broader testing\-and\-verification workflows.
->
-> 🔗 [阅读论文](http://arxiv.org/abs/2608.12051v1)
-
----
-
-> ### 4. A Hybrid Framework of Vision Transformer and Gated Recurrent Unit for Detection of Mosquito Diseases
->
-> | 属性 | 内容 |
-> |:---:|:---|
-> | 📅 发布日期 | 2026-08-12 |
-> | 👤 作者 | Danial Sharifrazi |
->
-> **📄 英文摘要：**
-> Identifying dengue virus\-infected mosquitoes from control mosquitoes is a major challenge in analyzing mosquito locomotion behavior due to the small size and complexity of the video background. Conventional AI methods are often unable to extract accurate features from video frames and produce erroneous features. In this study, a three\-step framework is introduced: first, mosquitoes are identified and the background is removed using the YOLO 11M model, then visual features are extracted using the Vision Transformer \(ViT\), and finally the videos are classified with a convolutional GRU \(ConvGRU\) classifier. A comparative analysis of different models, including Recurrent Neural Network \(RNN\), Long Short\-Term Memory \(LSTM\), Gated Recurrent Unit \(GRU\), and their convolutional versions showed that the ConvGRU model achieved the best performance; it achieved 88.88% accuracy, 84.45% precision, 82.82% recall, and 82.81% F1 score. These results demonstrate that combining convolutional models with sequence\-based networks, especially in the ConvGRU model, allows the simultaneous extraction of precise spatial features and long\-term temporal dependencies from mosquito movements. Finally, the proposed framework provides a reliable solution for analyzing mosquito behavior in complex environments.
->
-> 🔗 [阅读论文](http://arxiv.org/abs/2608.11582v1)
-
----
-
-> ### 5. A Comparative Evaluation of Deep Learning Object Detection Models on a Real\-World Multi\-Plant Dataset from Africa
->
-> | 属性 | 内容 |
-> |:---:|:---|
-> | 📅 发布日期 | 2026-08-11 |
-> | 👤 作者 | Ismail Ismail Tijjani |
->
-> **📄 英文摘要：**
-> The application of computer vision in agriculture has shown significant potential for improving crop monitoring and precision farming. However, many existing approaches rely on controlled datasets that do not adequately represent realworld farming conditions, particularly in underrepresented regions such as Africa. This study presents a comparative evaluation of six object detection models YOLOv5, YOLOv8, YOLO11, YOLO26, Faster R\-CNN, and RT\-DETR using a real\-world dataset, AgriAISeg 1 , collected manually from Nigerian farms. AgriAISeg comprises 3,382 images of sesame, cabbage, and tomato crops captured under varying environmental conditions, including changes in illumination, occlusion, and viewing perspectives. Models were trained, and performance was assessed using precision, recall, mAP@0.5, and mAP@0.5:0.95. The results show that RT\-DETR achieved the highest overall performance with a precision of 0.768 and mAP@0.5:0.95 of 0.624, while YOLOv8 and YOLO11 also demonstrated strong and consistent performance. In contrast, Faster R\-CNN recorded significantly lower accuracy, with an overall mAP@0.5 of 0.466, indicating reduced effectiveness under complex field conditions. In addition, YOLO\-based models exhibited superior training efficiency compared to Faster R\-CNN.These findings demonstrate that modern one\-stage and transformer\-based detectors provide more reliable and efficient solutions for plant detection in realworld agricultural environments.
->
-> 🔗 [阅读论文](http://arxiv.org/abs/2608.11053v1)
 
 ---
 
