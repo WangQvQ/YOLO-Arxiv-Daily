@@ -14,7 +14,35 @@
 
 ## 📑 论文列表
 
-> ### 1. Calibration\-Free Vehicle Speed Estimation: A Monocular Keypoint\-Template Approach
+> ### 1. Comparative Study of Out\-of\-the\-Box Technology for Automatic Target Detection and Recognition
+>
+> | 属性 | 内容 |
+> |:---:|:---|
+> | 📅 发布日期 | 2026-08-18 |
+> | 👤 作者 | Alma M. Liezenga |
+>
+> **📄 英文摘要：**
+> Automatic Target Detection and Recognition \(ATD/R\) is critical for military decision support and \(semi\-\)autonomous operations. Recent advances in object detection and artificial intelligence \(AI\) significantly boosted the potential performance of ATD/R. However, the scarcity of publicly available military datasets limits the application of these systems. As a solution, this paper explores the use of publicly available models and civilian datasets to achieve reasonable performance in military contexts. We benchmark several state\-of\-the\-art models, including six iterations of the YOLO series and two variations on the DETR framework, on a newly acquired military relevant dataset. This dataset features military vehicles and challenging circumstances, including various degrees of occlusions and small targets. The out\-of\-the\-box version of each model is validated alongside a version finetuned on the VisDrone dataset. This dataset features small objects, an Air\-to\-Ground \(A2G\) perspective and relevant classes, potentially generalizing to our military ATD/R task. We compare the performance of the models using mAP@0.5 and mAP@0.5:0.95, across A2G and Ground\-to\-Ground \(G2G\) perspective, target size and model size, giving insight into the real\-time capabilities of models. Our main findings are: \(1\) bigger models outperform smaller models, \(2\) DETR\-based models show promising results compared to the YOLO series,\(3\) fine\-tuning models on an out\-of\-domain A2G dataset, improves their A2G performance and slightly improves their performance on small objects, but \(4\) all models still struggle with detecting small objects in an A2G scenario. We conclude that, despite recent advances in object detection, in\-domain training is still crucial for creating capable ATD/R systems.
+>
+> 🔗 [阅读论文](http://arxiv.org/abs/2608.17917v1)
+
+---
+
+> ### 2. Continuity\-Driven Representation Learning for Industrial Defect Detection
+>
+> | 属性 | 内容 |
+> |:---:|:---|
+> | 📅 发布日期 | 2026-08-18 |
+> | 👤 作者 | Minjong Kim |
+>
+> **📄 英文摘要：**
+> Industrial defect detection differs from natural\-image object detection because inspection images are captured under controlled conditions and contain large normal\-dominant regions with repetitive structures. Defects therefore appear as localized disruptions of otherwise predictable patterns, while conventional detectors rely mainly on sparse bounding\-box supervision, resulting in weakly constrained normal\-region representations. We propose a continuity\-driven representation regularization framework that exploits normal\-dominant regions as dense auxiliary supervision. The framework introduces two detector\-agnostic objectives: Multi\-Continuity Loss, which combines 1D patch\-sequence prediction and 2D masked spatial prediction, and Differencing Loss, which regularizes first\-order feature variation and second\-order curvature between neighboring patch embeddings. Both objectives are applied with box\-derived region weighting to stabilize normal\-region representations while preserving defect\-related discontinuities.   Experiments on two real\-world industrial datasets and the public NEU\-DET benchmark, using six detector architectures including YOLO\-family models, MambaYOLO, and DETR, demonstrate consistent improvements over native detector baselines. In the full\-data setting, the proposed regularizers improve average mAP@0.5:0.95 by up to 3.49 percentage points on Industrial Metal, 5.38 percentage points on MEA, and 5.03 percentage points on NEU\-DET. Under limited\-data conditions, the gains become more pronounced, with Differencing Loss achieving improvements of up to 21.07 percentage points in mAP@0.5 and 8.23 percentage points in mAP@0.5:0.95 on NEU\-DET using only 25% of the training data. These results suggest that continuity\-driven regularization provides an effective prior for improving industrial defect detection, particularly when annotated data are scarce.
+>
+> 🔗 [阅读论文](http://arxiv.org/abs/2608.17362v1)
+
+---
+
+> ### 3. Calibration\-Free Vehicle Speed Estimation: A Monocular Keypoint\-Template Approach
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -28,7 +56,7 @@
 
 ---
 
-> ### 2. Beyond Clear Skies: Synthetic Seasonal and Weather Variations for Real\-World Drone Detection
+> ### 4. Beyond Clear Skies: Synthetic Seasonal and Weather Variations for Real\-World Drone Detection
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -42,7 +70,7 @@
 
 ---
 
-> ### 3. MITE\-Net: SWaP\-Optimized 4K Video Tiny Target Perception for Embodied Edge SAR
+> ### 5. MITE\-Net: SWaP\-Optimized 4K Video Tiny Target Perception for Embodied Edge SAR
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -53,34 +81,6 @@
 > Real\-time tiny target perception in high\-resolution imagery is critical for embodied Search\-and\-Rescue \(SAR\) missions. However, strict Size, Weight, and Power \(SWaP\) constraints on edge devices like UAVs create a bottleneck: traditional image downsampling causes severe feature loss, while slice\-based processing incurs prohibitive latency. To address this gap, this paper introduces a comprehensive framework encompassing a novel architecture, specialized datasets, and hardware\-level benchmarks. First, we propose MITE\-Net, a SWaP\-optimized cascaded architecture, which couples a bio\-inspired, learning\-free Tiny Target Motion\-Based Region Proposal Network \(TTM\-RPN\) with a sub\-0.14M\-parameter R\-CNN\-like head. Second, to standardize 4K tiny target evaluation, we construct the SAR\-Tiny Datasets by relabeling two challenging UAV datasets: SeaDroneSee\-Tiny \(dynamic maritime scenes, tiny targets predominantly of 64\-256 pixels \) and UAVID\-Tiny \(cluttered urban scenes, extremely tiny targets, less than 64 pixels\). Third, we benchmark against state\-of\-the\-art YOLO models on an edge device, NVIDIA Jetson AGX Xavier, where MITE\-Net directly processes 4K maritime imagery, achieving a 100% search success rate at 30.33 FPS. Consuming merely 3.19 W \(9.51 FPS/W\), MITE\-Net vastly outperforms YOLO baselines in target recall and energy efficiency. Conversely, UAVID\-Tiny evaluations expose a compound structural limitation: the learning\-free bionic front\-end struggles against urban backgrounds, while the ultra\-lightweight head lacks representational capacity for complex features. Ultimately, this work delivers an efficient onboard perception paradigm and a rigorous baseline guiding future end\-to\-end SAR architectures.
 >
 > 🔗 [阅读论文](http://arxiv.org/abs/2608.15830v1)
-
----
-
-> ### 4. LightTeaNet: A Weakly Supervised Lightweight CNN for Multi\-Label Tea Leaf Disease Detection and Localization
->
-> | 属性 | 内容 |
-> |:---:|:---|
-> | 📅 发布日期 | 2026-08-14 |
-> | 👤 作者 | Naif Haider Chowdhury |
->
-> **📄 英文摘要：**
-> Tea is known as an important crop in many parts of South and Southeast Asia, yet the production of tea is still hampered by the multiple diseases that decrease the quantity and quality. Traditional methods of inspection, which are manual, are not consistent, labor\-intensive, and depend on extensive monitoring. This paper introduces a lightweight convolutional neural network \(CNN\) designed for weakly supervised multi\-label classification and disease localization in tea leaves called LightTeaNet. LightTeaNet learns directly from image\-level labels and employs Class Activation Mapping \(CAM\) to localize disease\-affected regions automatically, unlike conventional object detection models such as YOLO, which require extensive bounding box annotations. For Parameter efficiency, the network integrates Depthwise Separable Convolutions, and for enhanced feature discrimination, it integrates Channel Attention. LightTeaNet has achieved a Precision of 0.9615, a Recall of 0.8772, and an F1\-score of 0.9179, while it shows mAP@0.50=0.1810 without any manual annotations, which delivers a competitive localization performance in the experimental results. These results validate the model as an interpretable as well as a resource\-efficient framework for intelligent disease monitoring in agriculture.
->
-> 🔗 [阅读论文](http://arxiv.org/abs/2608.14178v1)
-
----
-
-> ### 5. The Role of Natural Language Understanding in Multimodal Video\-Based Dengue Diagnosis
->
-> | 属性 | 内容 |
-> |:---:|:---|
-> | 📅 发布日期 | 2026-08-13 |
-> | 👤 作者 | Danial Sharifrazi |
->
-> **📄 英文摘要：**
-> Detecting infection\-related behavioral changes in mosquitoes from video data is challenging because mosquitoes are small, move rapidly and irregularly, and are affected by environmental factors such as background, lighting, and shadows, which can make reliable feature extraction difficult. In this study, a YOLO\- and Contrastive Language\-Image Pre\-training \(CLIP\)\-based vision\-language framework is proposed to classify mosquito flight frames of uninfected and Dengue virus serotype 2 \(DENV2\)\-infected mosquitoes. First, YOLO is used to isolate mosquito regions from the background. Then, visual features extracted from video frames are aligned with biologically meaningful textual prompts in a shared embedding space. The multimodal model was fine\-tuned using supervised bidirectional contrastive learning and evaluated through frame\-level image\-text similarity\-based classification. The results show that the proposed method achieved 98.54% accuracy and 99.91% sensitivity at the frame level. After temporal aggregation of frame\-level information, the model achieved complete video\-level performance. The ablation results showed that fine\-tuning and CLIP\-based representations were essential for this domain, while the textual branch provided semantic image\-text alignment rather than an accuracy advantage over the vision\-only model. These findings suggest that vision\-language models can provide a useful framework for analyzing infection\-related biological behaviors from video data.
->
-> 🔗 [阅读论文](http://arxiv.org/abs/2608.12677v1)
 
 ---
 
