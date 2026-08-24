@@ -14,7 +14,21 @@
 
 ## 📑 论文列表
 
-> ### 1. Comparative Study of Out\-of\-the\-Box Technology for Automatic Target Detection and Recognition
+> ### 1. A Modular Agent for Reliable and Auditable Spatial Relation Verification in CT Scans
+>
+> | 属性 | 内容 |
+> |:---:|:---|
+> | 📅 发布日期 | 2026-08-21 |
+> | 👤 作者 | Simon Vincent Abel |
+>
+> **📄 英文摘要：**
+> Reliable spatial understanding is an important prerequisite for future medical vision\-language systems that aim to support radiological report generation and structured image understanding. While modern vision\-language models \(VLMs\) show promising performance on many medical imaging tasks, recent evidence suggests they remain weak in controlled spatial reasoning and often fail to reliably ground spatial relations in image evidence. Given that radiological reasoning hinges on understanding the relative positions of anatomical structures and findings, this spatial weakness poses risks to diagnostic accuracy. We present a modular medical imaging agent for binary spatial relation verification in axial CT slices. Instead of directly predicting spatial answers end\-to\-end, the system decomposes the task into explicit stages: language parsing, anatomical localization, and deterministic geometric verification. Natural\-language queries are converted into structured relation tuples, queried organs are localized with a YOLO\-based detector, and the final spatial decision is computed from object centers using deterministic geometric rules. We evaluate the approach on the held\-out MIRP spatial QA benchmark and compare it against representative end\-to\-end VLM baselines. The best\-performing hybrid configuration reaches 94.1% accuracy and 94.2% F1, outperforming direct Qwen2\-VL prompting by 42.5 percentage points in accuracy, while preserving interpretable intermediate representations and auditable reasoning stages. The results suggest that explicit modular spatial verification can serve as a promising building block for future report\-oriented medical imaging agents.
+>
+> 🔗 [阅读论文](http://arxiv.org/abs/2608.21140v1)
+
+---
+
+> ### 2. Comparative Study of Out\-of\-the\-Box Technology for Automatic Target Detection and Recognition
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -28,7 +42,7 @@
 
 ---
 
-> ### 2. Continuity\-Driven Representation Learning for Industrial Defect Detection
+> ### 3. Continuity\-Driven Representation Learning for Industrial Defect Detection
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -42,7 +56,7 @@
 
 ---
 
-> ### 3. Calibration\-Free Vehicle Speed Estimation: A Monocular Keypoint\-Template Approach
+> ### 4. Calibration\-Free Vehicle Speed Estimation: A Monocular Keypoint\-Template Approach
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -56,7 +70,7 @@
 
 ---
 
-> ### 4. Beyond Clear Skies: Synthetic Seasonal and Weather Variations for Real\-World Drone Detection
+> ### 5. Beyond Clear Skies: Synthetic Seasonal and Weather Variations for Real\-World Drone Detection
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -67,20 +81,6 @@
 > Reliable drone detection under real\-world deployment conditions requires training data that spans the full operational design domain, including adverse weather and seasonal appearance variation. However, acquiring and annotating such data at scale remains highly resource\-intensive, as adverse\-weather conditions are inherently difficult to control, reproduce, and sample systematically. Existing datasets therefore typically provide only limited coverage of such conditions. Conversely, synthetic data offers a scalable alternative: environmental variation becomes controllable, while modern game\-engine\-based pipelines provide realistic rendering and automatic annotations. Leveraging this potential, we introduce SynDroneVision\-Weather \(SDV\-W\), an systematic extension of SynDroneVision \(SDV\) targeting adverse\-weather and seasonal domain shifts in urban drone detection. SDV\-W comprises 55,187 annotated high\-resolution images from three urban environments, rendered across three seasonal configurations and diverse weather conditions, including rain, snow, and fog at multiple severity levels. By preserving SDV's scene and trajectory configuration, SDV\-W enables matched clean\-adverse comparisons and quantification of condition\-specific detector degradation. Across representative YOLO models and real\-world datasets, we show that SDV\-W improves detector reliability under adverse appearance shifts, reduces missed detections and false alarms, and is most effective as a complement to general\-purpose synthetic drone\-detection data. SDV\-W will be publicly released upon paper acceptance.
 >
 > 🔗 [阅读论文](http://arxiv.org/abs/2608.16191v1)
-
----
-
-> ### 5. MITE\-Net: SWaP\-Optimized 4K Video Tiny Target Perception for Embodied Edge SAR
->
-> | 属性 | 内容 |
-> |:---:|:---|
-> | 📅 发布日期 | 2026-08-16 |
-> | 👤 作者 | Mingshuo Xu |
->
-> **📄 英文摘要：**
-> Real\-time tiny target perception in high\-resolution imagery is critical for embodied Search\-and\-Rescue \(SAR\) missions. However, strict Size, Weight, and Power \(SWaP\) constraints on edge devices like UAVs create a bottleneck: traditional image downsampling causes severe feature loss, while slice\-based processing incurs prohibitive latency. To address this gap, this paper introduces a comprehensive framework encompassing a novel architecture, specialized datasets, and hardware\-level benchmarks. First, we propose MITE\-Net, a SWaP\-optimized cascaded architecture, which couples a bio\-inspired, learning\-free Tiny Target Motion\-Based Region Proposal Network \(TTM\-RPN\) with a sub\-0.14M\-parameter R\-CNN\-like head. Second, to standardize 4K tiny target evaluation, we construct the SAR\-Tiny Datasets by relabeling two challenging UAV datasets: SeaDroneSee\-Tiny \(dynamic maritime scenes, tiny targets predominantly of 64\-256 pixels \) and UAVID\-Tiny \(cluttered urban scenes, extremely tiny targets, less than 64 pixels\). Third, we benchmark against state\-of\-the\-art YOLO models on an edge device, NVIDIA Jetson AGX Xavier, where MITE\-Net directly processes 4K maritime imagery, achieving a 100% search success rate at 30.33 FPS. Consuming merely 3.19 W \(9.51 FPS/W\), MITE\-Net vastly outperforms YOLO baselines in target recall and energy efficiency. Conversely, UAVID\-Tiny evaluations expose a compound structural limitation: the learning\-free bionic front\-end struggles against urban backgrounds, while the ultra\-lightweight head lacks representational capacity for complex features. Ultimately, this work delivers an efficient onboard perception paradigm and a rigorous baseline guiding future end\-to\-end SAR architectures.
->
-> 🔗 [阅读论文](http://arxiv.org/abs/2608.15830v1)
 
 ---
 
