@@ -14,7 +14,21 @@
 
 ## 📑 论文列表
 
-> ### 1. A Modular Agent for Reliable and Auditable Spatial Relation Verification in CT Scans
+> ### 1. Spiking Neural Networks for Energy\-Efficient Object Detection in Forward\-Looking Sonar Imagery
+>
+> | 属性 | 内容 |
+> |:---:|:---|
+> | 📅 发布日期 | 2026-08-22 |
+> | 👤 作者 | Gwenevere Frank |
+>
+> **📄 英文摘要：**
+> Autonomous underwater vehicles \(AUVs\) are increasingly important tools in industries ranging from research, to energy, to defense. AUVs are power\-constrained platforms operating in remote environments with fixed battery capacities, where propulsion competes with compute and sensors for power over lengthy mission durations. AUVs frequently operate in dark or turbid waters where optical sensing is of limited value, and rely on sonar as their primary sensing modality. Convolutional neural networks \(CNNs\) are the state\-of\-the\-art solution for object detection in forward\-looking sonar imagery, but are energy expensive \(e.g. YOLOv8m: 322 mJ/inference\). Spiking neural networks \(SNNs\) rely on binary spike activations and thus sparse accumulate\-only operations, allowing them to be remarkably energy efficient, particularly when paired with dedicated neuromorphic hardware. The sparse, high\-contrast structure of forward\-looking sonar \(FLS\) returns is structurally matched to spike coding in a way that optical imagery is not. No prior work has assessed the suitability of SNNs for object detection in FLS imagery. SpikeYOLO, a fully spiking network trained with surrogate gradients, was benchmarked against state\-of\-the\-art CNN baselines on three FLS object detection datasets. Key results: SpikeYOLO T=2 achieves 3.3$times$ lower theoretical compute energy on UATD \(97 vs 322 mJ\) at competitive accuracy \(0.529 mAP@0.5:0.95 vs. YOLOv8m's 0.575\); SpikeYOLO matches YOLOv8m on mAP@0.5 and outperforms YOLO\-SONAR and Fast R\-CNN baselines on the sparse Marine\-Debris\-FLS dataset at 4.4$times$ lower energy; SpikeYOLO demonstrates superior robustness to multiplicative speckle noise \(3.0% degradation at $σ\{=\}0.4$ vs. 8.9% for YOLOv8m\), outperforming YOLOv8m outright at $σ\{=\}0.6$, directly relevant to real\-world FLS deployment.
+>
+> 🔗 [阅读论文](http://arxiv.org/abs/2608.22072v1)
+
+---
+
+> ### 2. A Modular Agent for Reliable and Auditable Spatial Relation Verification in CT Scans
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -28,7 +42,21 @@
 
 ---
 
-> ### 2. Comparative Study of Out\-of\-the\-Box Technology for Automatic Target Detection and Recognition
+> ### 3. Radio Galaxies detection and characterization using deep learning techniques
+>
+> | 属性 | 内容 |
+> |:---:|:---|
+> | 📅 发布日期 | 2026-08-21 |
+> | 👤 作者 | Sanjay Khatik |
+>
+> **📄 英文摘要：**
+> Future radio telescopes will generate data volumes that are increasingly difficult to analyse using traditional statistical methods, motivating the adoption of machine\-learning techniques. In this work, we present YOLO\-Chars \(YOLO\-based Detection and Characterisation of Radio Sources\), a two\-stage deep\-learning framework for the automated detection and characterisation of radio galaxies in survey images. The framework is developed and evaluated using the Square Kilometre Array Science Data Challenge 1 \(SKA SDC1\) dataset. In the first stage, customised YOLO\-based multi\-scale detection models are used to localise compact and extended sources across large sky maps. In the second stage, a dedicated source\-characterisation network estimates the physical properties of the detected sources. We focus on three key parameters: flux density, angular size, and position angle. Our results show that YOLO\-Chars achieves competitive detection and characterisation performance on the SKA SDC1 benchmark, demonstrating its potential as a scalable framework for next\-generation radio continuum surveys.
+>
+> 🔗 [阅读论文](http://arxiv.org/abs/2608.21474v1)
+
+---
+
+> ### 4. Comparative Study of Out\-of\-the\-Box Technology for Automatic Target Detection and Recognition
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -42,7 +70,7 @@
 
 ---
 
-> ### 3. Continuity\-Driven Representation Learning for Industrial Defect Detection
+> ### 5. Continuity\-Driven Representation Learning for Industrial Defect Detection
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -53,34 +81,6 @@
 > Industrial defect detection differs from natural\-image object detection because inspection images are captured under controlled conditions and contain large normal\-dominant regions with repetitive structures. Defects therefore appear as localized disruptions of otherwise predictable patterns, while conventional detectors rely mainly on sparse bounding\-box supervision, resulting in weakly constrained normal\-region representations. We propose a continuity\-driven representation regularization framework that exploits normal\-dominant regions as dense auxiliary supervision. The framework introduces two detector\-agnostic objectives: Multi\-Continuity Loss, which combines 1D patch\-sequence prediction and 2D masked spatial prediction, and Differencing Loss, which regularizes first\-order feature variation and second\-order curvature between neighboring patch embeddings. Both objectives are applied with box\-derived region weighting to stabilize normal\-region representations while preserving defect\-related discontinuities.   Experiments on two real\-world industrial datasets and the public NEU\-DET benchmark, using six detector architectures including YOLO\-family models, MambaYOLO, and DETR, demonstrate consistent improvements over native detector baselines. In the full\-data setting, the proposed regularizers improve average mAP@0.5:0.95 by up to 3.49 percentage points on Industrial Metal, 5.38 percentage points on MEA, and 5.03 percentage points on NEU\-DET. Under limited\-data conditions, the gains become more pronounced, with Differencing Loss achieving improvements of up to 21.07 percentage points in mAP@0.5 and 8.23 percentage points in mAP@0.5:0.95 on NEU\-DET using only 25% of the training data. These results suggest that continuity\-driven regularization provides an effective prior for improving industrial defect detection, particularly when annotated data are scarce.
 >
 > 🔗 [阅读论文](http://arxiv.org/abs/2608.17362v1)
-
----
-
-> ### 4. Calibration\-Free Vehicle Speed Estimation: A Monocular Keypoint\-Template Approach
->
-> | 属性 | 内容 |
-> |:---:|:---|
-> | 📅 发布日期 | 2026-08-17 |
-> | 👤 作者 | Gaofeng Su |
->
-> **📄 英文摘要：**
-> This paper proposes a calibration\-free framework for reliably and effectively estimating vehicle speeds from monocular videos, without relying on roadway features, camera calibration, or roadway\-feature\-based reference objects. The proposed framework estimates vehicle speeds using a 36\-keypoint vehicle template and a homography matrix updated at each frame. A YOLO\-based keypoint detection module is trained on diverse datasets, and two estimation strategies are compared: keypoint\-only tracking and warped optical flow with dense spatial aggregation. Speed is estimated by projecting displacements into metric space using the homography, with validation conducted on over 400 video clips from roadside and overhead datasets, covering speeds from 30 to 100 mph. The method achieves reliable speed estimation on the VS13 and BrnoCompSpeed datasets, with the warped optical flow method delivering MAEs of 15.0% and 9.7%, respectively, and 77.9% and 93.1% of estimates falling within \+/\-20% error. After applying a 10% trim to remove edge\-of\-frame outliers, performance improves to MAEs of 11.7% and 7.6%, with within\-\+/\-20% accuracy increasing to 85.3% and 95.4%. This work addresses key limitations of existing vision\-based approaches and enables low\-cost and efficient speed enforcement using portable devices such as dashcams and smartphones, thereby supporting citizen\-based enforcement programs for traffic safety.
->
-> 🔗 [阅读论文](http://arxiv.org/abs/2608.16785v1)
-
----
-
-> ### 5. Beyond Clear Skies: Synthetic Seasonal and Weather Variations for Real\-World Drone Detection
->
-> | 属性 | 内容 |
-> |:---:|:---|
-> | 📅 发布日期 | 2026-08-17 |
-> | 👤 作者 | Tamara R. Lenhard |
->
-> **📄 英文摘要：**
-> Reliable drone detection under real\-world deployment conditions requires training data that spans the full operational design domain, including adverse weather and seasonal appearance variation. However, acquiring and annotating such data at scale remains highly resource\-intensive, as adverse\-weather conditions are inherently difficult to control, reproduce, and sample systematically. Existing datasets therefore typically provide only limited coverage of such conditions. Conversely, synthetic data offers a scalable alternative: environmental variation becomes controllable, while modern game\-engine\-based pipelines provide realistic rendering and automatic annotations. Leveraging this potential, we introduce SynDroneVision\-Weather \(SDV\-W\), an systematic extension of SynDroneVision \(SDV\) targeting adverse\-weather and seasonal domain shifts in urban drone detection. SDV\-W comprises 55,187 annotated high\-resolution images from three urban environments, rendered across three seasonal configurations and diverse weather conditions, including rain, snow, and fog at multiple severity levels. By preserving SDV's scene and trajectory configuration, SDV\-W enables matched clean\-adverse comparisons and quantification of condition\-specific detector degradation. Across representative YOLO models and real\-world datasets, we show that SDV\-W improves detector reliability under adverse appearance shifts, reduces missed detections and false alarms, and is most effective as a complement to general\-purpose synthetic drone\-detection data. SDV\-W will be publicly released upon paper acceptance.
->
-> 🔗 [阅读论文](http://arxiv.org/abs/2608.16191v1)
 
 ---
 
