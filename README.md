@@ -14,7 +14,51 @@
 
 ## 📑 论文列表
 
-> ### 1. Spiking Neural Networks for Energy\-Efficient Object Detection in Forward\-Looking Sonar Imagery
+> ### 1. Lowering the Barrier to AI\-Driven Inspection: A No\-Code Workflow for Automated Structural Defect Detection
+>
+> | 属性 | 内容 |
+> |:---:|:---|
+> | 📅 发布日期 | 2026-08-25 |
+> | 👤 作者 | Michael Holm |
+>
+> **📄 英文摘要：**
+> Structural health monitoring \(SHM\) is essential in modern engineering, providing data for condition\-based maintenance, lifecycle assessment, and predictive decision\-making. Traditionally, SHM relied on visual inspection to detect defects such as cracks and deformations. Early computer vision \(CV\) methods, including thresholding, edge detection, and handcrafted features, aimed to automate this process but were highly sensitive to noise, imaging variations, and multiscale defects, limiting their reliability.   Recent advances in machine learning, particularly convolutional neural networks \(CNNs\) and You Only Look Once \(YOLO\), have improved defect detection accuracy and enabled real\-time analysis. However, adoption in SHM remains limited due to technical barriers such as data labeling, model training, and deployment, which typically require programming expertise.   To address this gap, we introduce YOLOEZ, an open\-source, GUI\-based tool for end\-to\-end YOLO model application. YOLOEZ integrates data labeling, training, and inference into a single interface, enabling high\-performance model development without code while supporting reproducible workflows.   Evaluation against existing software and classical image processing demonstrates that YOLOEZ not only outperforms traditional methods across most detection metrics, but also lowers adoption barriers present in other modern CV tools. By combining accuracy with accessibility, YOLOEZ facilitates wider use of AI\-driven monitoring for predictive maintenance, digital twins, and intelligent structural systems.
+>
+> 🔗 [阅读论文](http://arxiv.org/abs/2608.25176v1)
+
+---
+
+> ### 2. Decoupling candidate dual AGN from chance superpositions in the GOTHIC survey via a deep\-learning framework
+>
+> | 属性 | 内容 |
+> |:---:|:---|
+> | 📅 发布日期 | 2026-08-25 |
+> | 👤 作者 | Bhavesh Mukheja |
+>
+> **📄 英文摘要：**
+> Dual active galactic nuclei \(DAGN\) mark a critical phase in the evolution of merging galaxies and the pairing of supermassive black holes, yet they remain difficult to identify in large imaging surveys because of projection effects and limited spatial resolution. Compact foreground stars and unresolved substructure can mimic dual nuclei through chance superposition, complicating automated detection. We revisit the 46,061 galaxies flagged but rejected as DAGN candidates by the GOTHIC pipeline, primarily because the two nuclei fell within the SDSS fibre aperture or exceeded its separation threshold. We train a supervised deep\-learning framework based on the YOLOv11 oriented\-bounding\-box architecture on annotated SDSS imaging to separate genuine dual nuclei from foreground stellar contaminants and other spurious alignments. The final model attains a validation precision of 0.919, recall of 0.905, and $F\_1$ of 0.912 for the dual\-nuclei class, and yields 29,605 dual\-nucleus candidates after removing star\-dominated and blended detections. Structured visual inspection indicates that $54.5$\-\-$62%$ are consistent with genuine dual nuclei, implying $sim\(1.4$\-\-$1.8\)times10^\{4\}$ plausible systems. Cross\-calibrating the YOLO separation against the deterministic GOTHIC centroid measurement and restricting to the compact regime \($d le 6.87''$\) gives a conservative subset of $sim 13\{,\}672$ candidates, reaching calibrated separations of $sim 0.56''$. Spectroscopy of the most compact \($le 1$~kpc\) systems shows they are dominated by passive, absorption\-line galaxies with no resolved double\-peaked emission, so confirmation requires higher\-resolution follow\-up. The catalogue is a statistically refined list of candidates, not confirmed DAGN. Nonetheless, deep\-learning detection substantially reduces contamination and expands the plausible DAGN census.
+>
+> 🔗 [阅读论文](http://arxiv.org/abs/2608.24164v1)
+
+---
+
+> ### 3. Cross\-Generation Optimization of YOLOv26, YOLOv11, and YOLOv8 for Fine\-Grained Small\-Object Detection and Instance Segmentation in Complex Orchards
+>
+> | 属性 | 内容 |
+> |:---:|:---|
+> | 📅 发布日期 | 2026-08-23 |
+> | 👤 作者 | Ranjan Sapkota |
+>
+> **📄 英文摘要：**
+> Small\-object detection and instance segmentation remain challenging in orchard environments because of green\-on\-green similarity, occlusion, and limited pixel representation of fine fruit anatomy. This study presents a cross\-generation benchmark of Ultralytics YOLOv8, YOLOv11, and YOLOv26 for detecting and segmenting apple fruitlet, calyx, and peduncle structures for robotic orchard perception. Five model scales \(n, s, m, l, and x\) were evaluated under conventional 640 x 640 and small\-object focused 960 x 960 training configurations, yielding 30 experiments. Increasing model capacity did not consistently improve accuracy. YOLOv11s\-960 achieved the highest observed mask mAP@50:95 \(0.402\) and box mAP@50:95 \(0.426\), while YOLOv26s\-960 achieved comparable values of 0.397 and 0.425 with only 10.37 M parameters and 34.1 GFLOPs. Peduncle remained the most challenging class. Overall, compact\-to\-moderate YOLO models with small\-object\-focused training provided favorable accuracy efficiency trade\-offs, establishing a practical benchmark for fine\-grained agricultural robotics and orchard perception. Github Link: https://github.com/rnjnspkt/Optimizing\-and\-Comparing\-Ultralytics\-YOLOv26\-YOLOv11\-and\-YOLOv8\-for\-Small\-Object\-Detection\-and\-Seg
+>
+> **💻 代码链接：** https://github.com/rnjnspkt/Optimizing-and-Comparing-Ultralytics-YOLOv26-YOLOv11-and-YOLOv8-for-Small-Object-Detection-and-Seg
+>
+> 🔗 [阅读论文](http://arxiv.org/abs/2608.23636v1)
+
+---
+
+> ### 4. Spiking Neural Networks for Energy\-Efficient Object Detection in Forward\-Looking Sonar Imagery
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -28,7 +72,7 @@
 
 ---
 
-> ### 2. A Modular Agent for Reliable and Auditable Spatial Relation Verification in CT Scans
+> ### 5. A Modular Agent for Reliable and Auditable Spatial Relation Verification in CT Scans
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -39,48 +83,6 @@
 > Reliable spatial understanding is an important prerequisite for future medical vision\-language systems that aim to support radiological report generation and structured image understanding. While modern vision\-language models \(VLMs\) show promising performance on many medical imaging tasks, recent evidence suggests they remain weak in controlled spatial reasoning and often fail to reliably ground spatial relations in image evidence. Given that radiological reasoning hinges on understanding the relative positions of anatomical structures and findings, this spatial weakness poses risks to diagnostic accuracy. We present a modular medical imaging agent for binary spatial relation verification in axial CT slices. Instead of directly predicting spatial answers end\-to\-end, the system decomposes the task into explicit stages: language parsing, anatomical localization, and deterministic geometric verification. Natural\-language queries are converted into structured relation tuples, queried organs are localized with a YOLO\-based detector, and the final spatial decision is computed from object centers using deterministic geometric rules. We evaluate the approach on the held\-out MIRP spatial QA benchmark and compare it against representative end\-to\-end VLM baselines. The best\-performing hybrid configuration reaches 94.1% accuracy and 94.2% F1, outperforming direct Qwen2\-VL prompting by 42.5 percentage points in accuracy, while preserving interpretable intermediate representations and auditable reasoning stages. The results suggest that explicit modular spatial verification can serve as a promising building block for future report\-oriented medical imaging agents.
 >
 > 🔗 [阅读论文](http://arxiv.org/abs/2608.21140v1)
-
----
-
-> ### 3. Radio Galaxies detection and characterization using deep learning techniques
->
-> | 属性 | 内容 |
-> |:---:|:---|
-> | 📅 发布日期 | 2026-08-21 |
-> | 👤 作者 | Sanjay Khatik |
->
-> **📄 英文摘要：**
-> Future radio telescopes will generate data volumes that are increasingly difficult to analyse using traditional statistical methods, motivating the adoption of machine\-learning techniques. In this work, we present YOLO\-Chars \(YOLO\-based Detection and Characterisation of Radio Sources\), a two\-stage deep\-learning framework for the automated detection and characterisation of radio galaxies in survey images. The framework is developed and evaluated using the Square Kilometre Array Science Data Challenge 1 \(SKA SDC1\) dataset. In the first stage, customised YOLO\-based multi\-scale detection models are used to localise compact and extended sources across large sky maps. In the second stage, a dedicated source\-characterisation network estimates the physical properties of the detected sources. We focus on three key parameters: flux density, angular size, and position angle. Our results show that YOLO\-Chars achieves competitive detection and characterisation performance on the SKA SDC1 benchmark, demonstrating its potential as a scalable framework for next\-generation radio continuum surveys.
->
-> 🔗 [阅读论文](http://arxiv.org/abs/2608.21474v1)
-
----
-
-> ### 4. Comparative Study of Out\-of\-the\-Box Technology for Automatic Target Detection and Recognition
->
-> | 属性 | 内容 |
-> |:---:|:---|
-> | 📅 发布日期 | 2026-08-18 |
-> | 👤 作者 | Alma M. Liezenga |
->
-> **📄 英文摘要：**
-> Automatic Target Detection and Recognition \(ATD/R\) is critical for military decision support and \(semi\-\)autonomous operations. Recent advances in object detection and artificial intelligence \(AI\) significantly boosted the potential performance of ATD/R. However, the scarcity of publicly available military datasets limits the application of these systems. As a solution, this paper explores the use of publicly available models and civilian datasets to achieve reasonable performance in military contexts. We benchmark several state\-of\-the\-art models, including six iterations of the YOLO series and two variations on the DETR framework, on a newly acquired military relevant dataset. This dataset features military vehicles and challenging circumstances, including various degrees of occlusions and small targets. The out\-of\-the\-box version of each model is validated alongside a version finetuned on the VisDrone dataset. This dataset features small objects, an Air\-to\-Ground \(A2G\) perspective and relevant classes, potentially generalizing to our military ATD/R task. We compare the performance of the models using mAP@0.5 and mAP@0.5:0.95, across A2G and Ground\-to\-Ground \(G2G\) perspective, target size and model size, giving insight into the real\-time capabilities of models. Our main findings are: \(1\) bigger models outperform smaller models, \(2\) DETR\-based models show promising results compared to the YOLO series,\(3\) fine\-tuning models on an out\-of\-domain A2G dataset, improves their A2G performance and slightly improves their performance on small objects, but \(4\) all models still struggle with detecting small objects in an A2G scenario. We conclude that, despite recent advances in object detection, in\-domain training is still crucial for creating capable ATD/R systems.
->
-> 🔗 [阅读论文](http://arxiv.org/abs/2608.17917v1)
-
----
-
-> ### 5. Continuity\-Driven Representation Learning for Industrial Defect Detection
->
-> | 属性 | 内容 |
-> |:---:|:---|
-> | 📅 发布日期 | 2026-08-18 |
-> | 👤 作者 | Minjong Kim |
->
-> **📄 英文摘要：**
-> Industrial defect detection differs from natural\-image object detection because inspection images are captured under controlled conditions and contain large normal\-dominant regions with repetitive structures. Defects therefore appear as localized disruptions of otherwise predictable patterns, while conventional detectors rely mainly on sparse bounding\-box supervision, resulting in weakly constrained normal\-region representations. We propose a continuity\-driven representation regularization framework that exploits normal\-dominant regions as dense auxiliary supervision. The framework introduces two detector\-agnostic objectives: Multi\-Continuity Loss, which combines 1D patch\-sequence prediction and 2D masked spatial prediction, and Differencing Loss, which regularizes first\-order feature variation and second\-order curvature between neighboring patch embeddings. Both objectives are applied with box\-derived region weighting to stabilize normal\-region representations while preserving defect\-related discontinuities.   Experiments on two real\-world industrial datasets and the public NEU\-DET benchmark, using six detector architectures including YOLO\-family models, MambaYOLO, and DETR, demonstrate consistent improvements over native detector baselines. In the full\-data setting, the proposed regularizers improve average mAP@0.5:0.95 by up to 3.49 percentage points on Industrial Metal, 5.38 percentage points on MEA, and 5.03 percentage points on NEU\-DET. Under limited\-data conditions, the gains become more pronounced, with Differencing Loss achieving improvements of up to 21.07 percentage points in mAP@0.5 and 8.23 percentage points in mAP@0.5:0.95 on NEU\-DET using only 25% of the training data. These results suggest that continuity\-driven regularization provides an effective prior for improving industrial defect detection, particularly when annotated data are scarce.
->
-> 🔗 [阅读论文](http://arxiv.org/abs/2608.17362v1)
 
 ---
 
