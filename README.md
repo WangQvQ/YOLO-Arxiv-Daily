@@ -14,7 +14,37 @@
 
 ## 📑 论文列表
 
-> ### 1. Lowering the Barrier to AI\-Driven Inspection: A No\-Code Workflow for Automated Structural Defect Detection
+> ### 1. CF\-YOLO: Context\-Aware Feature Refinement for Camouflaged Industrial Micro\-Defect Detection
+>
+> | 属性 | 内容 |
+> |:---:|:---|
+> | 📅 发布日期 | 2026-08-28 |
+> | 👤 作者 | Xinda Yu |
+>
+> **📄 英文摘要：**
+> Automated detection of surface micro\-defects on industrial components, such as copper tubes, is critically important for quality assurance but remains challenging due to the minute scale of anomalies and their visual camouflage against complex backgrounds. These factors lead to weak feature representations and high rates of false positives and missed detections. To address these issues, we propose a novel real\-time detection framework designed for efficient context perception and feature refinement. Our method integrates a Context\-Perception Aggregation Module \(CPAM\), which synergises large\-kernel perception for macro\-texture context and small\-kernel aggregation for sharp boundary delineation, effectively breaking the background camouflage. Furthermore, a Feature Additive Refinement Module \(FARM\) employs a linear\-complexity additive token mixer to globally verify and refine the representation of fine\-grained anomalies, suppressing noise\-induced errors. To support research in this domain, we introduce the Copper Tube Defect Dataset \(CTDD\), a manually annotated benchmark containing 1,847 images and 4,898 boundingbox defect instances from copper\-tube inspection scenarios. Extensive experiments demonstrate that our detector achieves strong and consistent performance on CTDD, outperforming representative baseline detectors, including YOLOv11, by 2.2% in mAP@50 and 3.9% in Precision while maintaining real\-time inference speed. This work provides a robust and efficient solution for high\-precision industrial inspection, bridging the gap between contextual understanding and detailed feature analysis. Our code and model are available at: https://github.com/Yu\-Xinda/CFYOLO\-Context\-Aware\-Feature\-Refinement\-for\-Camouflaged\-Industrial\-Micro\-Defect\-Detection
+>
+> **💻 代码链接：** https://github.com/Yu-Xinda/CFYOLO-Context-Aware-Feature-Refinement-for-Camouflaged-Industrial-Micro-Defect-Detection
+>
+> 🔗 [阅读论文](http://arxiv.org/abs/2608.28070v1)
+
+---
+
+> ### 2. Depth\-Aware Pothole Detection Using YOLO and RT\-DETR at the Edge
+>
+> | 属性 | 内容 |
+> |:---:|:---|
+> | 📅 发布日期 | 2026-08-27 |
+> | 👤 作者 | Md Monjurul Ahsan Prodhan |
+>
+> **📄 英文摘要：**
+> Pothole detection and its severity measurement is still an important challenges in urban infrastructure management, where late maintenance directly contributes to vehicle damage, road accidents, and escalating repair costs. Existing automated approaches depend on 2D RGB images and cannot measure physical depth of potholes. In this paper, we present a depthaware pothole detection framework and then compare five architectures: YOLOv8n, YOLOv8nSeg, YOLOv9t, RTDETRL, and RTDETRX for RGB\-D sensor fusion\-based detection and automated depth measurement. A custom offline augmentation pipeline is used here to simulate adverse road monitoring conditions. All models are trained on the PothRGBD dataset with an 80% training and 20% validation split and evaluated using Precision, Recall, mAP@50, and mAP@50\_95. Before measuring the depth data, all depth maps are corrected for camera tilt using RANSAC ground\-plane orthorectification and all zero\-valued sensor pixels are cast to NaN before any statistic is computed. YOLOv8nSeg achieves the highest mAP@50 of 0.9556 and mAP@50\_95 of 0.6758 with the most accurate depth estimate of 2.96 cm with the pixel\-precise Dseg algorithm. YOLOv8n achieves the fastest inference at 3.6ms. RTDETRX achieves the highest detection confidence at 92.70%. An important finding is that even after full RANSAC orthorectification, bounding box models overestimate pothole depth by 0.16 to 0.21 cm compared to pixel precise segmentation masks. This confirms that the pavement inclusion bias is structural rather than a calibration artifact.
+>
+> 🔗 [阅读论文](http://arxiv.org/abs/2608.27633v1)
+
+---
+
+> ### 3. Lowering the Barrier to AI\-Driven Inspection: A No\-Code Workflow for Automated Structural Defect Detection
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -28,7 +58,7 @@
 
 ---
 
-> ### 2. Decoupling candidate dual AGN from chance superpositions in the GOTHIC survey via a deep\-learning framework
+> ### 4. Decoupling candidate dual AGN from chance superpositions in the GOTHIC survey via a deep\-learning framework
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -42,7 +72,7 @@
 
 ---
 
-> ### 3. Cross\-Generation Optimization of YOLOv26, YOLOv11, and YOLOv8 for Fine\-Grained Small\-Object Detection and Instance Segmentation in Complex Orchards
+> ### 5. Cross\-Generation Optimization of YOLOv26, YOLOv11, and YOLOv8 for Fine\-Grained Small\-Object Detection and Instance Segmentation in Complex Orchards
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -55,34 +85,6 @@
 > **💻 代码链接：** https://github.com/rnjnspkt/Optimizing-and-Comparing-Ultralytics-YOLOv26-YOLOv11-and-YOLOv8-for-Small-Object-Detection-and-Seg
 >
 > 🔗 [阅读论文](http://arxiv.org/abs/2608.23636v1)
-
----
-
-> ### 4. Spiking Neural Networks for Energy\-Efficient Object Detection in Forward\-Looking Sonar Imagery
->
-> | 属性 | 内容 |
-> |:---:|:---|
-> | 📅 发布日期 | 2026-08-22 |
-> | 👤 作者 | Gwenevere Frank |
->
-> **📄 英文摘要：**
-> Autonomous underwater vehicles \(AUVs\) are increasingly important tools in industries ranging from research, to energy, to defense. AUVs are power\-constrained platforms operating in remote environments with fixed battery capacities, where propulsion competes with compute and sensors for power over lengthy mission durations. AUVs frequently operate in dark or turbid waters where optical sensing is of limited value, and rely on sonar as their primary sensing modality. Convolutional neural networks \(CNNs\) are the state\-of\-the\-art solution for object detection in forward\-looking sonar imagery, but are energy expensive \(e.g. YOLOv8m: 322 mJ/inference\). Spiking neural networks \(SNNs\) rely on binary spike activations and thus sparse accumulate\-only operations, allowing them to be remarkably energy efficient, particularly when paired with dedicated neuromorphic hardware. The sparse, high\-contrast structure of forward\-looking sonar \(FLS\) returns is structurally matched to spike coding in a way that optical imagery is not. No prior work has assessed the suitability of SNNs for object detection in FLS imagery. SpikeYOLO, a fully spiking network trained with surrogate gradients, was benchmarked against state\-of\-the\-art CNN baselines on three FLS object detection datasets. Key results: SpikeYOLO T=2 achieves 3.3$times$ lower theoretical compute energy on UATD \(97 vs 322 mJ\) at competitive accuracy \(0.529 mAP@0.5:0.95 vs. YOLOv8m's 0.575\); SpikeYOLO matches YOLOv8m on mAP@0.5 and outperforms YOLO\-SONAR and Fast R\-CNN baselines on the sparse Marine\-Debris\-FLS dataset at 4.4$times$ lower energy; SpikeYOLO demonstrates superior robustness to multiplicative speckle noise \(3.0% degradation at $σ\{=\}0.4$ vs. 8.9% for YOLOv8m\), outperforming YOLOv8m outright at $σ\{=\}0.6$, directly relevant to real\-world FLS deployment.
->
-> 🔗 [阅读论文](http://arxiv.org/abs/2608.22072v1)
-
----
-
-> ### 5. A Modular Agent for Reliable and Auditable Spatial Relation Verification in CT Scans
->
-> | 属性 | 内容 |
-> |:---:|:---|
-> | 📅 发布日期 | 2026-08-21 |
-> | 👤 作者 | Simon Vincent Abel |
->
-> **📄 英文摘要：**
-> Reliable spatial understanding is an important prerequisite for future medical vision\-language systems that aim to support radiological report generation and structured image understanding. While modern vision\-language models \(VLMs\) show promising performance on many medical imaging tasks, recent evidence suggests they remain weak in controlled spatial reasoning and often fail to reliably ground spatial relations in image evidence. Given that radiological reasoning hinges on understanding the relative positions of anatomical structures and findings, this spatial weakness poses risks to diagnostic accuracy. We present a modular medical imaging agent for binary spatial relation verification in axial CT slices. Instead of directly predicting spatial answers end\-to\-end, the system decomposes the task into explicit stages: language parsing, anatomical localization, and deterministic geometric verification. Natural\-language queries are converted into structured relation tuples, queried organs are localized with a YOLO\-based detector, and the final spatial decision is computed from object centers using deterministic geometric rules. We evaluate the approach on the held\-out MIRP spatial QA benchmark and compare it against representative end\-to\-end VLM baselines. The best\-performing hybrid configuration reaches 94.1% accuracy and 94.2% F1, outperforming direct Qwen2\-VL prompting by 42.5 percentage points in accuracy, while preserving interpretable intermediate representations and auditable reasoning stages. The results suggest that explicit modular spatial verification can serve as a promising building block for future report\-oriented medical imaging agents.
->
-> 🔗 [阅读论文](http://arxiv.org/abs/2608.21140v1)
 
 ---
 
