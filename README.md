@@ -14,7 +14,35 @@
 
 ## 📑 论文列表
 
-> ### 1. CF\-YOLO: Context\-Aware Feature Refinement for Camouflaged Industrial Micro\-Defect Detection
+> ### 1. Real\-Time Video Anomaly Detection Using YOLO Pose Estimation and CLIP\-Based Semantic Scoring
+>
+> | 属性 | 内容 |
+> |:---:|:---|
+> | 📅 发布日期 | 2026-08-31 |
+> | 👤 作者 | Vanodhya G. Warnasooriya |
+>
+> **📄 英文摘要：**
+> We propose a lightweight two\-stage framework for real\-time video anomaly detection. The first stage employs YOLO v11n\-pose to detect persons and extract seventeen skeletal keypoints in a single forward pass. The second stage encodes each cropped person region through CLIP ViT\-B/32 and computes cosine similarity against predefined textual descriptions of anomalous behaviors. This architecture eliminates the need for optical flow, standalone pose estimators, and density\-based scoring modules. Experiments on CUHK Avenue, ShanghaiTech Campus, and a custom indoor dataset collected at Chulalongkorn University demonstrate an end\-to\-end throughput of approximately 51 FPS on an NVIDIA Titan XP GPU, a 3.36x speedup over the multi\-feature baseline, while maintaining frame\-level AUROC values of 89.26%, 70.26%, and 84.13%, respectively.
+>
+> 🔗 [阅读论文](http://arxiv.org/abs/2608.31074v1)
+
+---
+
+> ### 2. SynCrash: A Multi\-Stage Pipeline for Zero\-Shot Accident Detection and Localization in Traffic Surveillance Video
+>
+> | 属性 | 内容 |
+> |:---:|:---|
+> | 📅 发布日期 | 2026-08-30 |
+> | 👤 作者 | Arkya Jyoti Bagchi |
+>
+> **📄 英文摘要：**
+> We present SynCrash, a multi\-stage pipeline for zero\-shot accident detection, spatial localization, and collision\-type classification in fixed\-view CCTV surveillance video. Our approach addresses the ACCIDENT at CVPR 2026 Challenge, which requires predicting when an accident occurs, where in the frame the impact happens, and what type of collision it is, all without access to labeled real\-world training data. The pipeline operates in three decoupled stages: \(1\) Temporal localization via a VideoMAEv2\-giant backbone fine\-tuned on CARLA\-based synthetic clips with metadata\-aware embeddings and dense sliding\-window inference; \(2\) Spatial localization using YOLO for object detection combined with a physics\-informed hybrid heuristic that leverages bounding\-box overlap and trajectory\-based reasoning to predict the impact point; and \(3\) Collision\-type classification using a lightweight rule\-based strategy derived from the number and configuration of detected vehicles. The key insight is that temporal understanding benefits from supervised fine\-tuning on synthetic data, whereas spatial understanding is better served by pretrained object detectors and physics priors that transfer naturally across domains.
+>
+> 🔗 [阅读论文](http://arxiv.org/abs/2608.29759v1)
+
+---
+
+> ### 3. CF\-YOLO: Context\-Aware Feature Refinement for Camouflaged Industrial Micro\-Defect Detection
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -30,7 +58,7 @@
 
 ---
 
-> ### 2. Depth\-Aware Pothole Detection Using YOLO and RT\-DETR at the Edge
+> ### 4. Depth\-Aware Pothole Detection Using YOLO and RT\-DETR at the Edge
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -44,7 +72,7 @@
 
 ---
 
-> ### 3. Lowering the Barrier to AI\-Driven Inspection: A No\-Code Workflow for Automated Structural Defect Detection
+> ### 5. Lowering the Barrier to AI\-Driven Inspection: A No\-Code Workflow for Automated Structural Defect Detection
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -55,36 +83,6 @@
 > Structural health monitoring \(SHM\) is essential in modern engineering, providing data for condition\-based maintenance, lifecycle assessment, and predictive decision\-making. Traditionally, SHM relied on visual inspection to detect defects such as cracks and deformations. Early computer vision \(CV\) methods, including thresholding, edge detection, and handcrafted features, aimed to automate this process but were highly sensitive to noise, imaging variations, and multiscale defects, limiting their reliability.   Recent advances in machine learning, particularly convolutional neural networks \(CNNs\) and You Only Look Once \(YOLO\), have improved defect detection accuracy and enabled real\-time analysis. However, adoption in SHM remains limited due to technical barriers such as data labeling, model training, and deployment, which typically require programming expertise.   To address this gap, we introduce YOLOEZ, an open\-source, GUI\-based tool for end\-to\-end YOLO model application. YOLOEZ integrates data labeling, training, and inference into a single interface, enabling high\-performance model development without code while supporting reproducible workflows.   Evaluation against existing software and classical image processing demonstrates that YOLOEZ not only outperforms traditional methods across most detection metrics, but also lowers adoption barriers present in other modern CV tools. By combining accuracy with accessibility, YOLOEZ facilitates wider use of AI\-driven monitoring for predictive maintenance, digital twins, and intelligent structural systems.
 >
 > 🔗 [阅读论文](http://arxiv.org/abs/2608.25176v1)
-
----
-
-> ### 4. Decoupling candidate dual AGN from chance superpositions in the GOTHIC survey via a deep\-learning framework
->
-> | 属性 | 内容 |
-> |:---:|:---|
-> | 📅 发布日期 | 2026-08-25 |
-> | 👤 作者 | Bhavesh Mukheja |
->
-> **📄 英文摘要：**
-> Dual active galactic nuclei \(DAGN\) mark a critical phase in the evolution of merging galaxies and the pairing of supermassive black holes, yet they remain difficult to identify in large imaging surveys because of projection effects and limited spatial resolution. Compact foreground stars and unresolved substructure can mimic dual nuclei through chance superposition, complicating automated detection. We revisit the 46,061 galaxies flagged but rejected as DAGN candidates by the GOTHIC pipeline, primarily because the two nuclei fell within the SDSS fibre aperture or exceeded its separation threshold. We train a supervised deep\-learning framework based on the YOLOv11 oriented\-bounding\-box architecture on annotated SDSS imaging to separate genuine dual nuclei from foreground stellar contaminants and other spurious alignments. The final model attains a validation precision of 0.919, recall of 0.905, and $F\_1$ of 0.912 for the dual\-nuclei class, and yields 29,605 dual\-nucleus candidates after removing star\-dominated and blended detections. Structured visual inspection indicates that $54.5$\-\-$62%$ are consistent with genuine dual nuclei, implying $sim\(1.4$\-\-$1.8\)times10^\{4\}$ plausible systems. Cross\-calibrating the YOLO separation against the deterministic GOTHIC centroid measurement and restricting to the compact regime \($d le 6.87''$\) gives a conservative subset of $sim 13\{,\}672$ candidates, reaching calibrated separations of $sim 0.56''$. Spectroscopy of the most compact \($le 1$~kpc\) systems shows they are dominated by passive, absorption\-line galaxies with no resolved double\-peaked emission, so confirmation requires higher\-resolution follow\-up. The catalogue is a statistically refined list of candidates, not confirmed DAGN. Nonetheless, deep\-learning detection substantially reduces contamination and expands the plausible DAGN census.
->
-> 🔗 [阅读论文](http://arxiv.org/abs/2608.24164v1)
-
----
-
-> ### 5. Cross\-Generation Optimization of YOLOv26, YOLOv11, and YOLOv8 for Fine\-Grained Small\-Object Detection and Instance Segmentation in Complex Orchards
->
-> | 属性 | 内容 |
-> |:---:|:---|
-> | 📅 发布日期 | 2026-08-23 |
-> | 👤 作者 | Ranjan Sapkota |
->
-> **📄 英文摘要：**
-> Small\-object detection and instance segmentation remain challenging in orchard environments because of green\-on\-green similarity, occlusion, and limited pixel representation of fine fruit anatomy. This study presents a cross\-generation benchmark of Ultralytics YOLOv8, YOLOv11, and YOLOv26 for detecting and segmenting apple fruitlet, calyx, and peduncle structures for robotic orchard perception. Five model scales \(n, s, m, l, and x\) were evaluated under conventional 640 x 640 and small\-object focused 960 x 960 training configurations, yielding 30 experiments. Increasing model capacity did not consistently improve accuracy. YOLOv11s\-960 achieved the highest observed mask mAP@50:95 \(0.402\) and box mAP@50:95 \(0.426\), while YOLOv26s\-960 achieved comparable values of 0.397 and 0.425 with only 10.37 M parameters and 34.1 GFLOPs. Peduncle remained the most challenging class. Overall, compact\-to\-moderate YOLO models with small\-object\-focused training provided favorable accuracy efficiency trade\-offs, establishing a practical benchmark for fine\-grained agricultural robotics and orchard perception. Github Link: https://github.com/rnjnspkt/Optimizing\-and\-Comparing\-Ultralytics\-YOLOv26\-YOLOv11\-and\-YOLOv8\-for\-Small\-Object\-Detection\-and\-Seg
->
-> **💻 代码链接：** https://github.com/rnjnspkt/Optimizing-and-Comparing-Ultralytics-YOLOv26-YOLOv11-and-YOLOv8-for-Small-Object-Detection-and-Seg
->
-> 🔗 [阅读论文](http://arxiv.org/abs/2608.23636v1)
 
 ---
 
