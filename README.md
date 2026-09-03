@@ -14,7 +14,51 @@
 
 ## 📑 论文列表
 
-> ### 1. Real\-Time Video Anomaly Detection Using YOLO Pose Estimation and CLIP\-Based Semantic Scoring
+> ### 1. Hardware\-Accelerated Instance Segmentation for Resource\-Constrained Space Robotics with Criticality Analysis
+>
+> | 属性 | 内容 |
+> |:---:|:---|
+> | 📅 发布日期 | 2026-09-02 |
+> | 👤 作者 | Siddhant Shete |
+>
+> **📄 英文摘要：**
+> Autonomous lunar missions require real\-time per\- ception under three coupled constraints: extreme low\-light conditions, limited onboard compute, and radiation\-induced hardware faults that can silently corrupt inference. We present a deployment\-oriented instance segmentation framework for resource\-constrained lunar robotics that jointly addresses quan\- tization calibration and system\-level fault exposure under strict compute constraints. First, we introduce Activation Variance Informative Sampling \(AVIS\), a label\-free calibration strategy that deterministically selects calibration samples based on activation variance statistics. Second, we deploy a YOLO\-based segmentation model on a Deep Learning Processor Unit \(DPU\) with architectural modifications that reduce CPU fallback paths and enable statically compiled execution with bounded latency in low\-lighting conditions. We further introduce a software\-level criticality analysis to estimate fault exposure and guide mitigation under radiation\-constrained operation. On a lunar micro\-rover platform, AVIS with bias correction recovers 69.8% of quantization\-induced accuracy loss while achieving 309 ms inference latency and 5.7 W power consumption. Targeted mitigation reduces global criticality by 31.7%. The results demonstrate an integrated approach and a blueprint for a reliable and safe AI perception framework under space deployment constraints.
+>
+> 🔗 [阅读论文](http://arxiv.org/abs/2609.02219v1)
+
+---
+
+> ### 2. DESA\-TTA: Dynamic EMA and Source Anchoring for Test\-Time Adaptation
+>
+> | 属性 | 内容 |
+> |:---:|:---|
+> | 📅 发布日期 | 2026-09-01 |
+> | 👤 作者 | Atif Belal |
+>
+> **📄 英文摘要：**
+> Vision\-language object detectors \(VLODs\) achieve strong zero\-shot performance but remain vulnerable to distribution shifts during deployment. Mean\-teacher methods for test\-time adaptation \(TTA\) can improve robustness by updating a student model using teacher\-generated pseudo\-labels. However, mean\-teacher TTA is highly sensitive to the choice of a fixed exponential moving average \(EMA\) coefficient for teacher updates, and repeated optimization with noisy pseudo\-labels can cause cumulative student drift. We propose Dynamic EMA and Source Anchoring for TTA \(DESA\-TTA\), a low\-overhead method that jointly regulates teacher updates and student drift through dynamic temporal averaging and source anchoring. Dynamic temporal averaging estimates teacher uncertainty from pseudo\-label confidence and box density and uses it to select a sample\-wise EMA coefficient within bounds determined by teacher parameter drift. Source anchoring partially restores the updated student parameters toward their pretrained values, with the anchoring strength increasing according to student drift. Experiments across diverse distribution shifts and two VLOD architectures show consistent improvements over existing TTA methods. On VOC\-C, DESA\-TTA improves AP$\_\{50\}$ by 14.5 points over zero\-shot inference while achieving 55% higher inference throughput than the previous state\-of\-the\-art TTA method for YOLO\-World. Our code: https://github.com/imatif17/DESA\-TTA
+>
+> **💻 代码链接：** https://github.com/imatif17/DESA-TTA
+>
+> 🔗 [阅读论文](http://arxiv.org/abs/2609.01795v1)
+
+---
+
+> ### 3. Vision\-Based Leader\-Follower Formation Control for Cooperative UAVs in GPS\-Degraded Environments
+>
+> | 属性 | 内容 |
+> |:---:|:---|
+> | 📅 发布日期 | 2026-09-01 |
+> | 👤 作者 | Deekshitha Angadi |
+>
+> **📄 英文摘要：**
+> Cooperation in multi\-UAV systems requires reliable relative perception so that follower vehicles can maintain formation and continue their mission safely even when absolute positioning sensors degrade or fail. This paper presents a vision\-based cooperative formation framework running on a follower UAV that uses a front\-facing RGB\-D camera to detect, track, and localize a leader UAV in real\-time. A lightweight YOLO\-based detector is trained on a dedicated drone dataset and deployed onboard to predict leader bounding boxes, which are then fused with depth information via a pinhole camera model to estimate the leader's relative pose. These estimates provide a leader\-follower position controller and can also be used as a backup when GPS or external localization is unavailable. This framework is implemented as a set of ROS nodes and evaluated in a physics\-based multi\-UAV simulation built on XTDrone, with sensor noise and communication dropouts. We evaluate detection accuracy, runtime, and formation\-keeping error under nominal conditions and under simulated failures of the positioning sensors. The results show that the proposed framework maintains stable leader\-follower formations with reasonable computational cost and provides a practical basis for extending vision\-based cooperative formation control to real\-world multi\-UAV systems.
+>
+> 🔗 [阅读论文](http://arxiv.org/abs/2609.01420v1)
+
+---
+
+> ### 4. Real\-Time Video Anomaly Detection Using YOLO Pose Estimation and CLIP\-Based Semantic Scoring
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -28,7 +72,7 @@
 
 ---
 
-> ### 2. SynCrash: A Multi\-Stage Pipeline for Zero\-Shot Accident Detection and Localization in Traffic Surveillance Video
+> ### 5. SynCrash: A Multi\-Stage Pipeline for Zero\-Shot Accident Detection and Localization in Traffic Surveillance Video
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -39,50 +83,6 @@
 > We present SynCrash, a multi\-stage pipeline for zero\-shot accident detection, spatial localization, and collision\-type classification in fixed\-view CCTV surveillance video. Our approach addresses the ACCIDENT at CVPR 2026 Challenge, which requires predicting when an accident occurs, where in the frame the impact happens, and what type of collision it is, all without access to labeled real\-world training data. The pipeline operates in three decoupled stages: \(1\) Temporal localization via a VideoMAEv2\-giant backbone fine\-tuned on CARLA\-based synthetic clips with metadata\-aware embeddings and dense sliding\-window inference; \(2\) Spatial localization using YOLO for object detection combined with a physics\-informed hybrid heuristic that leverages bounding\-box overlap and trajectory\-based reasoning to predict the impact point; and \(3\) Collision\-type classification using a lightweight rule\-based strategy derived from the number and configuration of detected vehicles. The key insight is that temporal understanding benefits from supervised fine\-tuning on synthetic data, whereas spatial understanding is better served by pretrained object detectors and physics priors that transfer naturally across domains.
 >
 > 🔗 [阅读论文](http://arxiv.org/abs/2608.29759v1)
-
----
-
-> ### 3. CF\-YOLO: Context\-Aware Feature Refinement for Camouflaged Industrial Micro\-Defect Detection
->
-> | 属性 | 内容 |
-> |:---:|:---|
-> | 📅 发布日期 | 2026-08-28 |
-> | 👤 作者 | Xinda Yu |
->
-> **📄 英文摘要：**
-> Automated detection of surface micro\-defects on industrial components, such as copper tubes, is critically important for quality assurance but remains challenging due to the minute scale of anomalies and their visual camouflage against complex backgrounds. These factors lead to weak feature representations and high rates of false positives and missed detections. To address these issues, we propose a novel real\-time detection framework designed for efficient context perception and feature refinement. Our method integrates a Context\-Perception Aggregation Module \(CPAM\), which synergises large\-kernel perception for macro\-texture context and small\-kernel aggregation for sharp boundary delineation, effectively breaking the background camouflage. Furthermore, a Feature Additive Refinement Module \(FARM\) employs a linear\-complexity additive token mixer to globally verify and refine the representation of fine\-grained anomalies, suppressing noise\-induced errors. To support research in this domain, we introduce the Copper Tube Defect Dataset \(CTDD\), a manually annotated benchmark containing 1,847 images and 4,898 boundingbox defect instances from copper\-tube inspection scenarios. Extensive experiments demonstrate that our detector achieves strong and consistent performance on CTDD, outperforming representative baseline detectors, including YOLOv11, by 2.2% in mAP@50 and 3.9% in Precision while maintaining real\-time inference speed. This work provides a robust and efficient solution for high\-precision industrial inspection, bridging the gap between contextual understanding and detailed feature analysis. Our code and model are available at: https://github.com/Yu\-Xinda/CFYOLO\-Context\-Aware\-Feature\-Refinement\-for\-Camouflaged\-Industrial\-Micro\-Defect\-Detection
->
-> **💻 代码链接：** https://github.com/Yu-Xinda/CFYOLO-Context-Aware-Feature-Refinement-for-Camouflaged-Industrial-Micro-Defect-Detection
->
-> 🔗 [阅读论文](http://arxiv.org/abs/2608.28070v1)
-
----
-
-> ### 4. Depth\-Aware Pothole Detection Using YOLO and RT\-DETR at the Edge
->
-> | 属性 | 内容 |
-> |:---:|:---|
-> | 📅 发布日期 | 2026-08-27 |
-> | 👤 作者 | Md Monjurul Ahsan Prodhan |
->
-> **📄 英文摘要：**
-> Pothole detection and its severity measurement is still an important challenges in urban infrastructure management, where late maintenance directly contributes to vehicle damage, road accidents, and escalating repair costs. Existing automated approaches depend on 2D RGB images and cannot measure physical depth of potholes. In this paper, we present a depthaware pothole detection framework and then compare five architectures: YOLOv8n, YOLOv8nSeg, YOLOv9t, RTDETRL, and RTDETRX for RGB\-D sensor fusion\-based detection and automated depth measurement. A custom offline augmentation pipeline is used here to simulate adverse road monitoring conditions. All models are trained on the PothRGBD dataset with an 80% training and 20% validation split and evaluated using Precision, Recall, mAP@50, and mAP@50\_95. Before measuring the depth data, all depth maps are corrected for camera tilt using RANSAC ground\-plane orthorectification and all zero\-valued sensor pixels are cast to NaN before any statistic is computed. YOLOv8nSeg achieves the highest mAP@50 of 0.9556 and mAP@50\_95 of 0.6758 with the most accurate depth estimate of 2.96 cm with the pixel\-precise Dseg algorithm. YOLOv8n achieves the fastest inference at 3.6ms. RTDETRX achieves the highest detection confidence at 92.70%. An important finding is that even after full RANSAC orthorectification, bounding box models overestimate pothole depth by 0.16 to 0.21 cm compared to pixel precise segmentation masks. This confirms that the pavement inclusion bias is structural rather than a calibration artifact.
->
-> 🔗 [阅读论文](http://arxiv.org/abs/2608.27633v1)
-
----
-
-> ### 5. Lowering the Barrier to AI\-Driven Inspection: A No\-Code Workflow for Automated Structural Defect Detection
->
-> | 属性 | 内容 |
-> |:---:|:---|
-> | 📅 发布日期 | 2026-08-25 |
-> | 👤 作者 | Michael Holm |
->
-> **📄 英文摘要：**
-> Structural health monitoring \(SHM\) is essential in modern engineering, providing data for condition\-based maintenance, lifecycle assessment, and predictive decision\-making. Traditionally, SHM relied on visual inspection to detect defects such as cracks and deformations. Early computer vision \(CV\) methods, including thresholding, edge detection, and handcrafted features, aimed to automate this process but were highly sensitive to noise, imaging variations, and multiscale defects, limiting their reliability.   Recent advances in machine learning, particularly convolutional neural networks \(CNNs\) and You Only Look Once \(YOLO\), have improved defect detection accuracy and enabled real\-time analysis. However, adoption in SHM remains limited due to technical barriers such as data labeling, model training, and deployment, which typically require programming expertise.   To address this gap, we introduce YOLOEZ, an open\-source, GUI\-based tool for end\-to\-end YOLO model application. YOLOEZ integrates data labeling, training, and inference into a single interface, enabling high\-performance model development without code while supporting reproducible workflows.   Evaluation against existing software and classical image processing demonstrates that YOLOEZ not only outperforms traditional methods across most detection metrics, but also lowers adoption barriers present in other modern CV tools. By combining accuracy with accessibility, YOLOEZ facilitates wider use of AI\-driven monitoring for predictive maintenance, digital twins, and intelligent structural systems.
->
-> 🔗 [阅读论文](http://arxiv.org/abs/2608.25176v1)
 
 ---
 
