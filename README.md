@@ -14,7 +14,21 @@
 
 ## 📑 论文列表
 
-> ### 1. Hardware\-Accelerated Instance Segmentation for Resource\-Constrained Space Robotics with Criticality Analysis
+> ### 1. Development of a Humanoid Robot Prototype for Multimodal Human\-Robot Interaction
+>
+> | 属性 | 内容 |
+> |:---:|:---|
+> | 📅 发布日期 | 2026-09-04 |
+> | 👤 作者 | Thang Tran Viet |
+>
+> **📄 英文摘要：**
+> Human\-robot interaction \(HRI\) enables intuitive and intelligent collaboration between humans and robots in real\-world environments. This paper introduces a humanoid robot prototype designed as a flexible testbed for developing and integrating artificial intelligence \(AI\) modules in HRI tasks. The system features a 12 degree\-of\-freedom \(DOFs\) dual\-arm mechanism and a 2 DOFs head with an expressive LCD screen to express facial emotions. All hardware components are controlled by a custom\-designed controller board with real\-time AI processing supported by an onboard Jetson module. The system incorporates three AI modules: \(1\) gesture recognition using MediaPipe Pose and an LSTM classifier, \(2\) object detection with YOLO and 3D localization, and \(3\) voice\-command processing through speech recognition and large language model\(LLM\)\-based semantic parsing. The platform is validated through experiments on positioning accuracy, with results showing average manipulation errors of approximately 1.83 cm. To demonstrate its versatility, experimental results show over 90% task accuracy, with gesture recognition reaching 96%, speech recognition reaching 92%. The results confirm the effectiveness of the proposed system as a reproducible and accessible humanoid platform for research and prototyping in HRI.
+>
+> 🔗 [阅读论文](http://arxiv.org/abs/2609.05361v1)
+
+---
+
+> ### 2. Hardware\-Accelerated Instance Segmentation for Resource\-Constrained Space Robotics with Criticality Analysis
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -28,7 +42,7 @@
 
 ---
 
-> ### 2. DESA\-TTA: Dynamic EMA and Source Anchoring for Test\-Time Adaptation
+> ### 3. DESA\-TTA: Dynamic EMA and Source Anchoring for Test\-Time Adaptation
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -44,7 +58,7 @@
 
 ---
 
-> ### 3. Vision\-Based Leader\-Follower Formation Control for Cooperative UAVs in GPS\-Degraded Environments
+> ### 4. Vision\-Based Leader\-Follower Formation Control for Cooperative UAVs in GPS\-Degraded Environments
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -58,7 +72,7 @@
 
 ---
 
-> ### 4. Real\-Time Video Anomaly Detection Using YOLO Pose Estimation and CLIP\-Based Semantic Scoring
+> ### 5. Real\-Time Video Anomaly Detection Using YOLO Pose Estimation and CLIP\-Based Semantic Scoring
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -69,20 +83,6 @@
 > We propose a lightweight two\-stage framework for real\-time video anomaly detection. The first stage employs YOLO v11n\-pose to detect persons and extract seventeen skeletal keypoints in a single forward pass. The second stage encodes each cropped person region through CLIP ViT\-B/32 and computes cosine similarity against predefined textual descriptions of anomalous behaviors. This architecture eliminates the need for optical flow, standalone pose estimators, and density\-based scoring modules. Experiments on CUHK Avenue, ShanghaiTech Campus, and a custom indoor dataset collected at Chulalongkorn University demonstrate an end\-to\-end throughput of approximately 51 FPS on an NVIDIA Titan XP GPU, a 3.36x speedup over the multi\-feature baseline, while maintaining frame\-level AUROC values of 89.26%, 70.26%, and 84.13%, respectively.
 >
 > 🔗 [阅读论文](http://arxiv.org/abs/2608.31074v1)
-
----
-
-> ### 5. SynCrash: A Multi\-Stage Pipeline for Zero\-Shot Accident Detection and Localization in Traffic Surveillance Video
->
-> | 属性 | 内容 |
-> |:---:|:---|
-> | 📅 发布日期 | 2026-08-30 |
-> | 👤 作者 | Arkya Jyoti Bagchi |
->
-> **📄 英文摘要：**
-> We present SynCrash, a multi\-stage pipeline for zero\-shot accident detection, spatial localization, and collision\-type classification in fixed\-view CCTV surveillance video. Our approach addresses the ACCIDENT at CVPR 2026 Challenge, which requires predicting when an accident occurs, where in the frame the impact happens, and what type of collision it is, all without access to labeled real\-world training data. The pipeline operates in three decoupled stages: \(1\) Temporal localization via a VideoMAEv2\-giant backbone fine\-tuned on CARLA\-based synthetic clips with metadata\-aware embeddings and dense sliding\-window inference; \(2\) Spatial localization using YOLO for object detection combined with a physics\-informed hybrid heuristic that leverages bounding\-box overlap and trajectory\-based reasoning to predict the impact point; and \(3\) Collision\-type classification using a lightweight rule\-based strategy derived from the number and configuration of detected vehicles. The key insight is that temporal understanding benefits from supervised fine\-tuning on synthetic data, whereas spatial understanding is better served by pretrained object detectors and physics priors that transfer naturally across domains.
->
-> 🔗 [阅读论文](http://arxiv.org/abs/2608.29759v1)
 
 ---
 
