@@ -14,7 +14,21 @@
 
 ## 📑 论文列表
 
-> ### 1. Development of a Humanoid Robot Prototype for Multimodal Human\-Robot Interaction
+> ### 1. A Cloud\-Based Hybrid Model for Real\-Time Detection of BRTA\-Approved Licence Plates Using YOLO Tiny and Haar Cascade
+>
+> | 属性 | 内容 |
+> |:---:|:---|
+> | 📅 发布日期 | 2026-09-06 |
+> | 👤 作者 | Debashis Kar Suvra |
+>
+> **📄 英文摘要：**
+> Accurate vehicle license plate detection is essential for applications such as intelligent transportation systems, toll collection, parking management, and law enforcement. In Bangladesh, this task presents distinct challenges due to the complexity of localized license plates and environmental factors like lighting, occlusion, motion blur, and obstructions such as dirt or mud. These challenges often render conventional methods ineffective. This paper introduces a novel hybrid approach, combining the YOLO Tiny deep learning model with the Haar\-Cascade classifier, for enhanced detection and localization of Bengali license plates. A key innovation of our system is the integration of a dynamic retraining pipeline, which allows the model to adapt to evolving real\-world conditions. This retraining mechanism significantly boosts performance in low\-confidence scenarios by continuously improving the model's accuracy as new data is encountered. Additionally, a publicly accessible dataset of BRTA\-compliant license plates, captured under diverse and challenging conditions, has been developed to support this approach. Experimental results demonstrate that our approach not only achieves superior detection accuracy and computational efficiency over conventional models but also ensures consistent performance in resource\-constrained environments, particularly in Bangladesh.
+>
+> 🔗 [阅读论文](http://arxiv.org/abs/2609.06507v1)
+
+---
+
+> ### 2. Development of a Humanoid Robot Prototype for Multimodal Human\-Robot Interaction
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -28,7 +42,7 @@
 
 ---
 
-> ### 2. Hardware\-Accelerated Instance Segmentation for Resource\-Constrained Space Robotics with Criticality Analysis
+> ### 3. Hardware\-Accelerated Instance Segmentation for Resource\-Constrained Space Robotics with Criticality Analysis
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -42,7 +56,7 @@
 
 ---
 
-> ### 3. DESA\-TTA: Dynamic EMA and Source Anchoring for Test\-Time Adaptation
+> ### 4. DESA\-TTA: Dynamic EMA and Source Anchoring for Test\-Time Adaptation
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -58,7 +72,7 @@
 
 ---
 
-> ### 4. Vision\-Based Leader\-Follower Formation Control for Cooperative UAVs in GPS\-Degraded Environments
+> ### 5. Vision\-Based Leader\-Follower Formation Control for Cooperative UAVs in GPS\-Degraded Environments
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -69,20 +83,6 @@
 > Cooperation in multi\-UAV systems requires reliable relative perception so that follower vehicles can maintain formation and continue their mission safely even when absolute positioning sensors degrade or fail. This paper presents a vision\-based cooperative formation framework running on a follower UAV that uses a front\-facing RGB\-D camera to detect, track, and localize a leader UAV in real\-time. A lightweight YOLO\-based detector is trained on a dedicated drone dataset and deployed onboard to predict leader bounding boxes, which are then fused with depth information via a pinhole camera model to estimate the leader's relative pose. These estimates provide a leader\-follower position controller and can also be used as a backup when GPS or external localization is unavailable. This framework is implemented as a set of ROS nodes and evaluated in a physics\-based multi\-UAV simulation built on XTDrone, with sensor noise and communication dropouts. We evaluate detection accuracy, runtime, and formation\-keeping error under nominal conditions and under simulated failures of the positioning sensors. The results show that the proposed framework maintains stable leader\-follower formations with reasonable computational cost and provides a practical basis for extending vision\-based cooperative formation control to real\-world multi\-UAV systems.
 >
 > 🔗 [阅读论文](http://arxiv.org/abs/2609.01420v1)
-
----
-
-> ### 5. Real\-Time Video Anomaly Detection Using YOLO Pose Estimation and CLIP\-Based Semantic Scoring
->
-> | 属性 | 内容 |
-> |:---:|:---|
-> | 📅 发布日期 | 2026-08-31 |
-> | 👤 作者 | Vanodhya G. Warnasooriya |
->
-> **📄 英文摘要：**
-> We propose a lightweight two\-stage framework for real\-time video anomaly detection. The first stage employs YOLO v11n\-pose to detect persons and extract seventeen skeletal keypoints in a single forward pass. The second stage encodes each cropped person region through CLIP ViT\-B/32 and computes cosine similarity against predefined textual descriptions of anomalous behaviors. This architecture eliminates the need for optical flow, standalone pose estimators, and density\-based scoring modules. Experiments on CUHK Avenue, ShanghaiTech Campus, and a custom indoor dataset collected at Chulalongkorn University demonstrate an end\-to\-end throughput of approximately 51 FPS on an NVIDIA Titan XP GPU, a 3.36x speedup over the multi\-feature baseline, while maintaining frame\-level AUROC values of 89.26%, 70.26%, and 84.13%, respectively.
->
-> 🔗 [阅读论文](http://arxiv.org/abs/2608.31074v1)
 
 ---
 
