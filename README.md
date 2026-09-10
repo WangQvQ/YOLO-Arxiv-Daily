@@ -14,7 +14,21 @@
 
 ## 📑 论文列表
 
-> ### 1. A Cloud\-Based Hybrid Model for Real\-Time Detection of BRTA\-Approved Licence Plates Using YOLO Tiny and Haar Cascade
+> ### 1. NEO\-BENCH: A New Multi\-Source Benchmark for Generalizable Astronomical Streak Detection
+>
+> | 属性 | 内容 |
+> |:---:|:---|
+> | 📅 发布日期 | 2026-09-06 |
+> | 👤 作者 | Jiayou He |
+>
+> **📄 英文摘要：**
+> Near\-Earth Objects \(NEOs\) can appear as faint streaks in long\-exposure astronomical images. Detecting these streaks across diverse observatories requires methods that remain reliable despite differences in image quality, orientation, sky background, and noise. However, existing detectors are commonly evaluated using data from only one source, providing limited evidence of cross\-source generalization.   We introduce NEO\-Bench, a multi\-source benchmark containing 8,376 images from five astronomical\-image datasets. The sources include the Hubble Space Telescope, a Stellina smart telescope, the United Arab Emirates Meteor Monitoring Network, a TETRA1 telescope using a Celestron C14 with Fastar, and the Roboflow Asteroid dataset. We converted the data to a common YOLO format, audited a sample of labels, and defined within\-source and leave\-one\-source\-out evaluation protocols. We evaluated four approaches: Hough, Radon, Gaussian PSF, and YOLO26L.   Leave\-one\-source\-out F1 decreased in 14 of 20 image\-level method\-source pairs and 13 of 20 IoU@0.50 localization pairs. Across the datasets categorized as medium or hard, F1 decreased in 11 of 12 image\-level pairs and 9 of 12 localization pairs. These results show that cross\-source performance remains inconsistent and that reliable generalization across astronomical imaging sources remains an open challenge. The benchmark, code, and data are publicly available.
+>
+> 🔗 [阅读论文](http://arxiv.org/abs/2609.06774v1)
+
+---
+
+> ### 2. A Cloud\-Based Hybrid Model for Real\-Time Detection of BRTA\-Approved Licence Plates Using YOLO Tiny and Haar Cascade
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -28,7 +42,7 @@
 
 ---
 
-> ### 2. Development of a Humanoid Robot Prototype for Multimodal Human\-Robot Interaction
+> ### 3. Development of a Humanoid Robot Prototype for Multimodal Human\-Robot Interaction
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -42,7 +56,7 @@
 
 ---
 
-> ### 3. Hardware\-Accelerated Instance Segmentation for Resource\-Constrained Space Robotics with Criticality Analysis
+> ### 4. Hardware\-Accelerated Instance Segmentation for Resource\-Constrained Space Robotics with Criticality Analysis
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -56,7 +70,7 @@
 
 ---
 
-> ### 4. DESA\-TTA: Dynamic EMA and Source Anchoring for Test\-Time Adaptation
+> ### 5. DESA\-TTA: Dynamic EMA and Source Anchoring for Test\-Time Adaptation
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -69,20 +83,6 @@
 > **💻 代码链接：** https://github.com/imatif17/DESA-TTA
 >
 > 🔗 [阅读论文](http://arxiv.org/abs/2609.01795v1)
-
----
-
-> ### 5. Vision\-Based Leader\-Follower Formation Control for Cooperative UAVs in GPS\-Degraded Environments
->
-> | 属性 | 内容 |
-> |:---:|:---|
-> | 📅 发布日期 | 2026-09-01 |
-> | 👤 作者 | Deekshitha Angadi |
->
-> **📄 英文摘要：**
-> Cooperation in multi\-UAV systems requires reliable relative perception so that follower vehicles can maintain formation and continue their mission safely even when absolute positioning sensors degrade or fail. This paper presents a vision\-based cooperative formation framework running on a follower UAV that uses a front\-facing RGB\-D camera to detect, track, and localize a leader UAV in real\-time. A lightweight YOLO\-based detector is trained on a dedicated drone dataset and deployed onboard to predict leader bounding boxes, which are then fused with depth information via a pinhole camera model to estimate the leader's relative pose. These estimates provide a leader\-follower position controller and can also be used as a backup when GPS or external localization is unavailable. This framework is implemented as a set of ROS nodes and evaluated in a physics\-based multi\-UAV simulation built on XTDrone, with sensor noise and communication dropouts. We evaluate detection accuracy, runtime, and formation\-keeping error under nominal conditions and under simulated failures of the positioning sensors. The results show that the proposed framework maintains stable leader\-follower formations with reasonable computational cost and provides a practical basis for extending vision\-based cooperative formation control to real\-world multi\-UAV systems.
->
-> 🔗 [阅读论文](http://arxiv.org/abs/2609.01420v1)
 
 ---
 
