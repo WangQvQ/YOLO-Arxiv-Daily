@@ -14,7 +14,35 @@
 
 ## 📑 论文列表
 
-> ### 1. NEO\-BENCH: A New Multi\-Source Benchmark for Generalizable Astronomical Streak Detection
+> ### 1. ScopeMamba\-YOLO: Widening the Perceptual Scope Inward and Outward for Small Object Detection in Remote Sensing Imagery
+>
+> | 属性 | 内容 |
+> |:---:|:---|
+> | 📅 发布日期 | 2026-09-09 |
+> | 👤 作者 | Junjie Fan |
+>
+> **📄 英文摘要：**
+> Small object detection in unmanned aerial vehicle \(UAV\) and remote sensing imagery requires preserving high\-resolution detail while modeling long\-range context. Adding a stride\-4 detection level and removing the stride\-32 stage benefits tiny targets but weakens peripheral spatial support, whereas directly inserting selective scanning into the main feature path can interfere with weak local cues. We propose ScopeMamba\-YOLO, built around an off\-path, zero\-gated selective\-scanning principle that decouples contextual modeling from the convolutional stream. The principle is instantiated by a Cascaded Global\-Context Module \(CGCM\) in the backbone and a Selective\-Scan PAN \(SS\-PAN\) in the neck. An Adaptive Multi\-scale Strip \(AMS\) Block reduces the cost of high\-resolution feature extraction, while a Scale\-Adaptive DFL \(SA\-DFL\) head reallocates distributional support and regression capacity across scales with only 0.008M additional parameters. Controlled experiments show that matched main\-path selective scanning reduces mAP50 by 0.98 pp, whereas off\-path CGCM improves the final configuration by 0.67 pp over the three\-seed no\-CGCM mean; operator controls indicate that this gain is not explained by auxiliary branch capacity alone. ERF analysis further shows that the complete context pathway increases the peripheral energy ratio from 0.008 to 0.090 at stride 8. On VisDrone\-2019, ScopeMamba\-S achieves 50.8% mAP50 with 3.57M parameters, exceeding YOLOv8s by 10.8 pp while using 32% of its parameters; ScopeMamba\-M reaches 52.6% mAP50 with 6.48M parameters. Consistent improvements are also observed on AI\-TOD, especially for very\-tiny and tiny objects.
+>
+> 🔗 [阅读论文](http://arxiv.org/abs/2609.10156v1)
+
+---
+
+> ### 2. Vague2Detect: Handling Ambiguous Prompts in Knowledge\-Based Open\-World Detection
+>
+> | 属性 | 内容 |
+> |:---:|:---|
+> | 📅 发布日期 | 2026-09-09 |
+> | 👤 作者 | Ibrohimjon Muminov |
+>
+> **📄 英文摘要：**
+> Real\-world detectors must often interpret functional or ambiguous prompts, yet conventional models such as YOLO remain restricted to fixed class lists. Even open\-vocabulary models like YOLO\-World frequently misalign vague language with the intended objects. Building on our prior work Commonsense\-Guided Open\-World Object Detection Using LLMs and Visual\-Semantic Matching, we address YOLO\-World's limitations in grounding task\-driven queries. We propose Vague2Detect, a hybrid pipeline in which a fine\-tuned Sentence\-BERT retrieves candidates from a structured household Knowledge Base \(KB\), and YOLO\-World verifies their presence in the image. For prompts outside the KB, a large language model \(GPT\-3.5\-turbo\) generates candidate descriptions, dynamically expanding the KB to cover novel concepts. On a benchmark of household scenes using custom images and an Open Images V7 subset, YOLO\-World alone achieves only 32% Vague Prompt Success Rate \(VPSR\), the ability to map ambiguous queries to correct detections. In contrast, Vague2Detect improves performance to 61% VPSR with high precision, and up to 85% when augmented with GPT fallback.
+>
+> 🔗 [阅读论文](http://arxiv.org/abs/2609.09949v1)
+
+---
+
+> ### 3. NEO\-BENCH: A New Multi\-Source Benchmark for Generalizable Astronomical Streak Detection
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -28,7 +56,7 @@
 
 ---
 
-> ### 2. A Cloud\-Based Hybrid Model for Real\-Time Detection of BRTA\-Approved Licence Plates Using YOLO Tiny and Haar Cascade
+> ### 4. A Cloud\-Based Hybrid Model for Real\-Time Detection of BRTA\-Approved Licence Plates Using YOLO Tiny and Haar Cascade
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -42,7 +70,7 @@
 
 ---
 
-> ### 3. Development of a Humanoid Robot Prototype for Multimodal Human\-Robot Interaction
+> ### 5. Development of a Humanoid Robot Prototype for Multimodal Human\-Robot Interaction
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -53,36 +81,6 @@
 > Human\-robot interaction \(HRI\) enables intuitive and intelligent collaboration between humans and robots in real\-world environments. This paper introduces a humanoid robot prototype designed as a flexible testbed for developing and integrating artificial intelligence \(AI\) modules in HRI tasks. The system features a 12 degree\-of\-freedom \(DOFs\) dual\-arm mechanism and a 2 DOFs head with an expressive LCD screen to express facial emotions. All hardware components are controlled by a custom\-designed controller board with real\-time AI processing supported by an onboard Jetson module. The system incorporates three AI modules: \(1\) gesture recognition using MediaPipe Pose and an LSTM classifier, \(2\) object detection with YOLO and 3D localization, and \(3\) voice\-command processing through speech recognition and large language model\(LLM\)\-based semantic parsing. The platform is validated through experiments on positioning accuracy, with results showing average manipulation errors of approximately 1.83 cm. To demonstrate its versatility, experimental results show over 90% task accuracy, with gesture recognition reaching 96%, speech recognition reaching 92%. The results confirm the effectiveness of the proposed system as a reproducible and accessible humanoid platform for research and prototyping in HRI.
 >
 > 🔗 [阅读论文](http://arxiv.org/abs/2609.05361v1)
-
----
-
-> ### 4. Hardware\-Accelerated Instance Segmentation for Resource\-Constrained Space Robotics with Criticality Analysis
->
-> | 属性 | 内容 |
-> |:---:|:---|
-> | 📅 发布日期 | 2026-09-02 |
-> | 👤 作者 | Siddhant Shete |
->
-> **📄 英文摘要：**
-> Autonomous lunar missions require real\-time per\- ception under three coupled constraints: extreme low\-light conditions, limited onboard compute, and radiation\-induced hardware faults that can silently corrupt inference. We present a deployment\-oriented instance segmentation framework for resource\-constrained lunar robotics that jointly addresses quan\- tization calibration and system\-level fault exposure under strict compute constraints. First, we introduce Activation Variance Informative Sampling \(AVIS\), a label\-free calibration strategy that deterministically selects calibration samples based on activation variance statistics. Second, we deploy a YOLO\-based segmentation model on a Deep Learning Processor Unit \(DPU\) with architectural modifications that reduce CPU fallback paths and enable statically compiled execution with bounded latency in low\-lighting conditions. We further introduce a software\-level criticality analysis to estimate fault exposure and guide mitigation under radiation\-constrained operation. On a lunar micro\-rover platform, AVIS with bias correction recovers 69.8% of quantization\-induced accuracy loss while achieving 309 ms inference latency and 5.7 W power consumption. Targeted mitigation reduces global criticality by 31.7%. The results demonstrate an integrated approach and a blueprint for a reliable and safe AI perception framework under space deployment constraints.
->
-> 🔗 [阅读论文](http://arxiv.org/abs/2609.02219v1)
-
----
-
-> ### 5. DESA\-TTA: Dynamic EMA and Source Anchoring for Test\-Time Adaptation
->
-> | 属性 | 内容 |
-> |:---:|:---|
-> | 📅 发布日期 | 2026-09-01 |
-> | 👤 作者 | Atif Belal |
->
-> **📄 英文摘要：**
-> Vision\-language object detectors \(VLODs\) achieve strong zero\-shot performance but remain vulnerable to distribution shifts during deployment. Mean\-teacher methods for test\-time adaptation \(TTA\) can improve robustness by updating a student model using teacher\-generated pseudo\-labels. However, mean\-teacher TTA is highly sensitive to the choice of a fixed exponential moving average \(EMA\) coefficient for teacher updates, and repeated optimization with noisy pseudo\-labels can cause cumulative student drift. We propose Dynamic EMA and Source Anchoring for TTA \(DESA\-TTA\), a low\-overhead method that jointly regulates teacher updates and student drift through dynamic temporal averaging and source anchoring. Dynamic temporal averaging estimates teacher uncertainty from pseudo\-label confidence and box density and uses it to select a sample\-wise EMA coefficient within bounds determined by teacher parameter drift. Source anchoring partially restores the updated student parameters toward their pretrained values, with the anchoring strength increasing according to student drift. Experiments across diverse distribution shifts and two VLOD architectures show consistent improvements over existing TTA methods. On VOC\-C, DESA\-TTA improves AP$\_\{50\}$ by 14.5 points over zero\-shot inference while achieving 55% higher inference throughput than the previous state\-of\-the\-art TTA method for YOLO\-World. Our code: https://github.com/imatif17/DESA\-TTA
->
-> **💻 代码链接：** https://github.com/imatif17/DESA-TTA
->
-> 🔗 [阅读论文](http://arxiv.org/abs/2609.01795v1)
 
 ---
 
