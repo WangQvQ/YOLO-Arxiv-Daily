@@ -14,7 +14,35 @@
 
 ## 📑 论文列表
 
-> ### 1. BVB: Benchmarking Agentic Video Understanding via Programmatic Reconstruction in Blender
+> ### 1. From Pixels to Semantics: Edge AI for UAV\-Based Critical Infrastructure Inspection
+>
+> | 属性 | 内容 |
+> |:---:|:---|
+> | 📅 发布日期 | 2026-09-16 |
+> | 👤 作者 | Reza Farahani |
+>
+> **📄 英文摘要：**
+> Critical infrastructure assets such as bridges, tunnels, dams, and power line networks require timely and scalable inspection. While conventional manual inspection remains costly and hazardous, unmanned aerial vehicle \(UAV\)\-based inspection has emerged as an efficient alternative for monitoring difficult\-to\-access structures. Existing UAV inspection pipelines have evolved from cloud\-centric offline processing toward edge\-based perception using lightweight object detectors such as YOLO for real\- time defect localization. This article explores the transition toward fully edge\-native semantic inspection powered by lightweight vision language models \(VLMs\), where UAVs move beyond object detection toward contextual structural understanding. It categorizes existing UAV inspection architectures, identifies their key system challenges and architectural requirements, and experimentally assesses the feasibility of semantic edge intelligence on NVIDIA Jetson UAV\-class hardware using the COCO\-Bridge dataset. The evaluation integrates a fine\-tuned YOLO\-26M for object localization and a lightweight SmolVLM\-256 for semantic reasoning. Finally, it outlines future directions toward agentic, autonomous, trustworthy, and collaborative semantic UAV inspection across the edge\-cloud continuum.
+>
+> 🔗 [阅读论文](http://arxiv.org/abs/2609.18448v1)
+
+---
+
+> ### 2. BrainFocus: EEG\-Guided ROI Selection for Efficient Vision\-Language Models
+>
+> | 属性 | 内容 |
+> |:---:|:---|
+> | 📅 发布日期 | 2026-09-15 |
+> | 👤 作者 | Yihui Peng |
+>
+> **📄 英文摘要：**
+> Vision\-language models \(VLMs\) achieve strong visual question answering \(VQA\) performance, but processing large cluttered images is computationally expensive when only a small region is relevant. Electroencephalography \(EEG\) signals, which capture human neural responses to visual stimuli, can provide a human\-derived semantic cue about the region of interest \(ROI\). However, EEG\-guided visual category decoding remains imperfect, making direct ROI routing unreliable. In this work, we propose BrainFocus, a reliable EEG\-guided efficient VLM framework for VQA. An EEG classifier predicts a target category, and a YOLO detector localizes the matching ROI. The VLM receives the cropped ROI only when both predictions pass confidence thresholds; otherwise, it processes the full image. For evaluation, we build on EEG\-ImageNet to construct a 40\-class benchmark comprising generated cluttered images and real object\-centric images, with target\-ROI annotations and 600 English visual question\-answer pairs. Across Qwen3.5\-VL 2B, 4B, and 9B models, BrainFocus improves VQA accuracy by 4.14\-9.87 percentage points \(pp\) on cluttered scenes while reducing input tokens and total tokens by 23.2%\-39.4% and 23.2%\-39.3%, and end\-to\-end floating\-point operations \(FLOPs\) by 23.2%\-39.5%. These results demonstrate that EEG can guide efficient VLM inference even when its semantic decoding is imperfect.
+>
+> 🔗 [阅读论文](http://arxiv.org/abs/2609.17443v1)
+
+---
+
+> ### 3. BVB: Benchmarking Agentic Video Understanding via Programmatic Reconstruction in Blender
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -28,7 +56,7 @@
 
 ---
 
-> ### 2. SpermYOLO: A Coordinated YOLO\-Based Detector for Accurate and Efficient Sperm and Impurity Detection in Microscopic Images
+> ### 4. SpermYOLO: A Coordinated YOLO\-Based Detector for Accurate and Efficient Sperm and Impurity Detection in Microscopic Images
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -42,7 +70,7 @@
 
 ---
 
-> ### 3. Quantum\-Gated LiteSSD: A Parameter\-Efficient Lightweight Hybrid Quantum\-Classical Framework for Forward\-Looking Sonar Object Detection
+> ### 5. Quantum\-Gated LiteSSD: A Parameter\-Efficient Lightweight Hybrid Quantum\-Classical Framework for Forward\-Looking Sonar Object Detection
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -53,34 +81,6 @@
 > Forward\-looking sonar object detection is essential for underwater perception, yet deployment on embedded platforms requires highly compact models. To address this challenge, we explore quantum computing and introduce Quantum\-Gated LiteSSD, a parameter\-efficient hybrid quantum\-\-classical detector that reformulates QuCNet\-style multi\-circuit quantum processing as an identity\-centered channel\-gating mechanism for spatial feature modulation. Experiments on the Marine Debris Watertank dataset and UATD forward\-looking sonar benchmarks demonstrate an effective parameter\-\-accuracy trade\-off. The proposed detector achieves 90.84% $mathrm\{mAP\}\_\{50\}$ on Watertank with approximately $62times$ fewer parameters than YOLO26s and $164.3times$ fewer parameters than SSD\-VGG16. On UATD, the model achieves 70.37% $mathrm\{mAP\}\_\{50\}$ with only 0.150M parameters, making it approximately $4.1times$ smaller than SSGA\-YOLO while retaining meaningful multi\-class detection capability.
 >
 > 🔗 [阅读论文](http://arxiv.org/abs/2609.14025v1)
-
----
-
-> ### 4. ScopeMamba\-YOLO: Widening the Perceptual Scope Inward and Outward for Small Object Detection in Remote Sensing Imagery
->
-> | 属性 | 内容 |
-> |:---:|:---|
-> | 📅 发布日期 | 2026-09-09 |
-> | 👤 作者 | Junjie Fan |
->
-> **📄 英文摘要：**
-> Small object detection in unmanned aerial vehicle \(UAV\) and remote sensing imagery requires preserving high\-resolution detail while modeling long\-range context. Adding a stride\-4 detection level and removing the stride\-32 stage benefits tiny targets but weakens peripheral spatial support, whereas directly inserting selective scanning into the main feature path can interfere with weak local cues. We propose ScopeMamba\-YOLO, built around an off\-path, zero\-gated selective\-scanning principle that decouples contextual modeling from the convolutional stream. The principle is instantiated by a Cascaded Global\-Context Module \(CGCM\) in the backbone and a Selective\-Scan PAN \(SS\-PAN\) in the neck. An Adaptive Multi\-scale Strip \(AMS\) Block reduces the cost of high\-resolution feature extraction, while a Scale\-Adaptive DFL \(SA\-DFL\) head reallocates distributional support and regression capacity across scales with only 0.008M additional parameters. Controlled experiments show that matched main\-path selective scanning reduces mAP50 by 0.98 pp, whereas off\-path CGCM improves the final configuration by 0.67 pp over the three\-seed no\-CGCM mean; operator controls indicate that this gain is not explained by auxiliary branch capacity alone. ERF analysis further shows that the complete context pathway increases the peripheral energy ratio from 0.008 to 0.090 at stride 8. On VisDrone\-2019, ScopeMamba\-S achieves 50.8% mAP50 with 3.57M parameters, exceeding YOLOv8s by 10.8 pp while using 32% of its parameters; ScopeMamba\-M reaches 52.6% mAP50 with 6.48M parameters. Consistent improvements are also observed on AI\-TOD, especially for very\-tiny and tiny objects.
->
-> 🔗 [阅读论文](http://arxiv.org/abs/2609.10156v1)
-
----
-
-> ### 5. Vague2Detect: Handling Ambiguous Prompts in Knowledge\-Based Open\-World Detection
->
-> | 属性 | 内容 |
-> |:---:|:---|
-> | 📅 发布日期 | 2026-09-09 |
-> | 👤 作者 | Ibrohimjon Muminov |
->
-> **📄 英文摘要：**
-> Real\-world detectors must often interpret functional or ambiguous prompts, yet conventional models such as YOLO remain restricted to fixed class lists. Even open\-vocabulary models like YOLO\-World frequently misalign vague language with the intended objects. Building on our prior work Commonsense\-Guided Open\-World Object Detection Using LLMs and Visual\-Semantic Matching, we address YOLO\-World's limitations in grounding task\-driven queries. We propose Vague2Detect, a hybrid pipeline in which a fine\-tuned Sentence\-BERT retrieves candidates from a structured household Knowledge Base \(KB\), and YOLO\-World verifies their presence in the image. For prompts outside the KB, a large language model \(GPT\-3.5\-turbo\) generates candidate descriptions, dynamically expanding the KB to cover novel concepts. On a benchmark of household scenes using custom images and an Open Images V7 subset, YOLO\-World alone achieves only 32% Vague Prompt Success Rate \(VPSR\), the ability to map ambiguous queries to correct detections. In contrast, Vague2Detect improves performance to 61% VPSR with high precision, and up to 85% when augmented with GPT fallback.
->
-> 🔗 [阅读论文](http://arxiv.org/abs/2609.09949v1)
 
 ---
 
