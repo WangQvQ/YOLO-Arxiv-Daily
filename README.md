@@ -14,7 +14,35 @@
 
 ## 📑 论文列表
 
-> ### 1. From Pixels to Semantics: Edge AI for UAV\-Based Critical Infrastructure Inspection
+> ### 1. HDMamba\-YOLO: Efficient State\-Space Perception and Local Spatial Reconstruction for UAV Small Object
+>
+> | 属性 | 内容 |
+> |:---:|:---|
+> | 📅 发布日期 | 2026-09-19 |
+> | 👤 作者 | Linduo Wei |
+>
+> **📄 英文摘要：**
+> Small\-object detection in UAV imagery is challenged by weak visual evidence, ambiguous boundaries, dense object distributions, and complex backgrounds. Effective detection therefore requires long\-range contextual information for target\-background discrimination while preserving explicit local two\-dimensional structures for accurate localization. These requirements arise at different stages of the detection pipeline and are not naturally addressed by a uniform feature\-processing strategy. We propose Hybrid Dual\-domain Mamba\-YOLO \(HDMamba\-YOLO\), a stage\-wise heterogeneous SSM\-CNN detector organized according to a perception\-reconstruction\-alignment\-interaction rationale. EfficientVMamba\-based EVSS establishes long\-range contextual perception in the backbone, while PhasePatchMerging2D provides phase\-aware hierarchical transitions. DST\-Wrapper and Native C3k2\-ASSAF then perform perception\-to\-reconstruction transition and repeated local two\-dimensional reconstruction during FPN/PAN aggregation. DySample provides content\-adaptive cross\-scale resampling, while OS\-CVTIA introduces macro\-micro interaction and task\-specific modulation for localization and classification. On VisDrone2019, HDMamba\-YOLO\-B achieves 42.737% mAP50 and 25.713% mAP50:95 with 10.042M parameters and 29.879 corrected GFLOPs. HDMamba\-YOLO\-Lite achieves 41.140% mAP50 and 24.741% mAP50:95 with 5.344M parameters. Under the unified AI\-TOD evaluation protocol, HDMamba\-YOLO\-B obtains 21.621% AP and 47.881% AP50. Controlled ablations further support the stage\-wise allocation of state\-space perception, convolutional reconstruction, dynamic alignment, and task interaction for UAV small\-object detection.
+>
+> 🔗 [阅读论文](http://arxiv.org/abs/2609.23061v1)
+
+---
+
+> ### 2. Towards Robust Classroom Attendance: A Comprehensive Evaluation of Face Detection and Recognition Models
+>
+> | 属性 | 内容 |
+> |:---:|:---|
+> | 📅 发布日期 | 2026-09-19 |
+> | 👤 作者 | Himani Trivedi |
+>
+> **📄 英文摘要：**
+> Manual attendance methods, such as paper or register\-based systems, take a lot of time, can lead to errors, and are easy to falsify. Face recognition is more reliable, but it frequently struggles in classrooms because lighting and other conditions can vary. Face recognition datasets are designed for regulated environments and do not capture the actual challenges found in classrooms. To address this, a new face detection and recognition dataset, the Visage Face dataset, comprising 16,234 face samples, is proposed for the task of face detection and recognition. The photos are taken from different angles and under varying lighting conditions, with students showing a range of expressions, and some faces partly covered to reflect real\-life situations. A YOLO\-based system is used to detect faces and tested seven advanced face recognition models with thirteen configurations: LVFace, QCFace, FaceLiVTv2, TopoFR, EdgeFace, TransFace, and GhostFaceNets. Of these, FaceLiVTv2\-M performed best, with 99.75% Top\-1/Top\-5 accuracy and an inference time of 6.459 ms. These results show that the Visage Face Dataset is a realistic and challenging benchmark for face recognition in classroom attendance.
+>
+> 🔗 [阅读论文](http://arxiv.org/abs/2609.22750v1)
+
+---
+
+> ### 3. From Pixels to Semantics: Edge AI for UAV\-Based Critical Infrastructure Inspection
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -28,7 +56,7 @@
 
 ---
 
-> ### 2. BrainFocus: EEG\-Guided ROI Selection for Efficient Vision\-Language Models
+> ### 4. BrainFocus: EEG\-Guided ROI Selection for Efficient Vision\-Language Models
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -42,7 +70,7 @@
 
 ---
 
-> ### 3. BVB: Benchmarking Agentic Video Understanding via Programmatic Reconstruction in Blender
+> ### 5. BVB: Benchmarking Agentic Video Understanding via Programmatic Reconstruction in Blender
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -53,34 +81,6 @@
 > Multimodal agents can create complex videos in software such as Blender by coding without relying on diffusion models. Yet video understanding benchmarks still evaluate models mainly through question answering. If an agent truly understands a video, it can reconstruct it programmatically. We introduce BVB, Blender\-VideoBench, a benchmark that tests this ability by asking agents to reconstruct real\-world videos as animated Blender scenes. To ensure fair comparison, each agent programs the reconstruction through a lightweight harness, Mini\-BVB, in an identical sandbox under a shared cost limit. The benchmark renders each reconstruction from its animated camera and evaluates it on two axes: \(1\) Dual VQA measures how many spatiotemporal facts the reconstruction preserves. \(2\) Latent Similarity measures how closely the reconstruction matches the source video perceptually. Our overall score, a square\-root mean, favors balanced performance. We evaluate 51 configurations from 10 model families and analyze semantic retention, perceptual similarity, reasoning effort, and cost. The best model reaches 88.6 Latent Similarity but retains only 53.7% of the source\-correct spatiotemporal answers. Additional reasoning improves visual similarity but does not close this gap in factual accuracy. In a blind study with 15 raters and five configurations, Latent Similarity correlates strongly with human preference. These results show that programmatic reconstruction is a viable test of agentic video understanding, and that semantic retention remains the main challenge.
 >
 > 🔗 [阅读论文](http://arxiv.org/abs/2609.15478v1)
-
----
-
-> ### 4. SpermYOLO: A Coordinated YOLO\-Based Detector for Accurate and Efficient Sperm and Impurity Detection in Microscopic Images
->
-> | 属性 | 内容 |
-> |:---:|:---|
-> | 📅 发布日期 | 2026-09-13 |
-> | 👤 作者 | Shengqi Chen |
->
-> **📄 英文摘要：**
-> Accurate sperm detection is essential for computer\-assisted semen analysis, yet it remains challenging in microscopic images due to dense distributions, visually similar artifacts, and sperm\-like impurities. In this paper, we propose SpermYOLO, a coordinated and compact YOLOv11\-derived framework for joint sperm and impurity detection in microscopic images. SpermYOLO introduces four architectural improvements: C3k2\-IDB for channel\-wise discriminative feature extraction, D2SEM for spatial\-\-spectral semantic enhancement, MFM for adaptive multi\-scale feature fusion, and the DESD Head for detail\-enhanced shared prediction. Experiments on the SVIA semen microscopic imaging benchmark show that SpermYOLO achieves 97.2% sperm AP and 75.4% impurity AP, outperforming generic detectors, dedicated sperm detection models, and improved YOLO variants. Compared with the baseline model, SpermYOLO improves sperm AP, impurity AP, $mathrm\{mAP\}\_\{50\}$, and $mathrm\{mAP\}\_\{50:95\}$ by 1.6, 10.0, 5.8, and 2.7 percentage points, respectively, while preserving a lightweight model scale. Cross\-scene evaluation on the SDTB testicular\-biopsy microscopy benchmark shows that SpermYOLO remains effective with extremely small sperm targets and complex tissue backgrounds, achieving the highest $mathrm\{mAP\}\_\{50\}$ and $mathrm\{mAP\}\_\{50:95\}$ of 74.8% and 31.2%, respectively. Ablation studies and qualitative analyses further support these improvements by demonstrating the contributions of the proposed modules and showing more focused feature response patterns than the baseline model. These findings suggest that SpermYOLO is an effective and efficient approach for sperm detection in challenging microscopic imaging scenarios.
->
-> 🔗 [阅读论文](http://arxiv.org/abs/2609.14278v1)
-
----
-
-> ### 5. Quantum\-Gated LiteSSD: A Parameter\-Efficient Lightweight Hybrid Quantum\-Classical Framework for Forward\-Looking Sonar Object Detection
->
-> | 属性 | 内容 |
-> |:---:|:---|
-> | 📅 发布日期 | 2026-09-12 |
-> | 👤 作者 | Niloy Kumar Mondal |
->
-> **📄 英文摘要：**
-> Forward\-looking sonar object detection is essential for underwater perception, yet deployment on embedded platforms requires highly compact models. To address this challenge, we explore quantum computing and introduce Quantum\-Gated LiteSSD, a parameter\-efficient hybrid quantum\-\-classical detector that reformulates QuCNet\-style multi\-circuit quantum processing as an identity\-centered channel\-gating mechanism for spatial feature modulation. Experiments on the Marine Debris Watertank dataset and UATD forward\-looking sonar benchmarks demonstrate an effective parameter\-\-accuracy trade\-off. The proposed detector achieves 90.84% $mathrm\{mAP\}\_\{50\}$ on Watertank with approximately $62times$ fewer parameters than YOLO26s and $164.3times$ fewer parameters than SSD\-VGG16. On UATD, the model achieves 70.37% $mathrm\{mAP\}\_\{50\}$ with only 0.150M parameters, making it approximately $4.1times$ smaller than SSGA\-YOLO while retaining meaningful multi\-class detection capability.
->
-> 🔗 [阅读论文](http://arxiv.org/abs/2609.14025v1)
 
 ---
 
