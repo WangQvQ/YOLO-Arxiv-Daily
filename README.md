@@ -14,7 +14,63 @@
 
 ## 📑 论文列表
 
-> ### 1. HDMamba\-YOLO: Efficient State\-Space Perception and Local Spatial Reconstruction for UAV Small Object
+> ### 1. mbariml: a curation pipeline for turning deep\-sea imagery and video into object\-detection training data
+>
+> | 属性 | 内容 |
+> |:---:|:---|
+> | 📅 发布日期 | 2026-09-21 |
+> | 👤 作者 | Lonny Lundsten |
+>
+> **📄 英文摘要：**
+> Training data quantity and quality greatly affect object detection model performance, regardless of model architecture. When using object detection models on video and images from the deep sea, in which the objects of interest, primarily organisms, are sparse, faint, and hard to identify, incremental improvements to object detector performance may require an iterative approach to data labeling and management. This paper presents mbariml, a python\-based video and image analysis pipeline built around the data labeling management process. mbariml uses an Ultralytics YOLO detection model, runs it over still images or video, stores every detection as a reviewable region of interest, groups those regions by visual similarity so that a human can accept or reject them in bulk, and exports the result as training data, statistics, image sidecars, and additional metadata. The human review stage is the centre of the design: an annotator can validate, relabel, resize, delete, and draw entirely new localizations, and every one of those edits is written back to the same database the detector wrote to. Video receives particular attention: the software treats each tracker\-produced track as a provisional observation and selects one representative frame instead of retaining every detection in the track. We describe the pipeline stage by stage, including the operational middle\-third heuristic used for track observation selection.
+>
+> 🔗 [阅读论文](http://arxiv.org/abs/2609.25500v1)
+
+---
+
+> ### 2. NPU Accelerator: Quantized Real\-Time Vehicle Detection on PYNQ\-Z1 Using FINN
+>
+> | 属性 | 内容 |
+> |:---:|:---|
+> | 📅 发布日期 | 2026-09-21 |
+> | 👤 作者 | Daniel Gutierrez |
+>
+> **📄 英文摘要：**
+> This paper presents the design, optimization, implementation, and on\-board validation of a neural processing unit \(NPU\) accelerator for real\-time vehicle detection on the resource\-constrained Xilinx Zynq XC7Z020 device of the PYNQ\-Z1 board. The work follows a hardware/software co\-design methodology that combines quantization\-aware training \(QAT\), lightweight YOLO\-derived detectors, Brevitas/QONNX model export, FINN dataflow compilation, Vivado implementation, and physical benchmarking on the target board. Four simultaneous engineering requirements define successful deployment: throughput above 30 frames/s \(FPS\), energy efficiency above 7 FPS/W, programmable\-logic \(PL\) hardware latency below 50 ms, and Pascal VOC detection accuracy above 0.55 mAP@0.5. The design space includes LP\-YOLO and LP\-YOLO Slim variants, a custom YOLOv3\-tiny reference, 4\-bit and mixed low\-bit quantization, 320$times$320 and 256$times$256 inputs, manual and automatic FIFO sizing, and programmable\-logic clocks from 100 to 200 MHz. The final LP\-YOLO Slim configuration uses a 256$times$256 input, w2a4 quantization, and a 142.86 MHz PL clock. With batch 100 it reaches 35.66 FPS at 2.91 W, corresponding to 12.25 FPS/W, while measured PL latency is 45.11 ms and VOC mAP@0.5 is 0.594. This is the only evaluated configuration for which the supplied measurements satisfy all four requirements simultaneously. The results show that low\-bit QAT, architectural slimming, FINN folding and FIFO optimization, and moderate clock scaling can jointly provide a practical real\-time detector on a small Zynq FPGA.
+>
+> 🔗 [阅读论文](http://arxiv.org/abs/2609.24757v1)
+
+---
+
+> ### 3. Ev\-YOLO: Uncertainty\-Aware Object Detection via a Unified Evidential Formulation
+>
+> | 属性 | 内容 |
+> |:---:|:---|
+> | 📅 发布日期 | 2026-09-21 |
+> | 👤 作者 | Simon Barbarit\-Gaboriau |
+>
+> **📄 英文摘要：**
+> Reliable uncertainty estimation is essential for deploying object detectors in autonomous systems operating in uncertain environments. Evidential Deep Learning \(EDL\) provides a principled framework for uncertainty\-aware classification by representing network outputs as evidence and interpreting predictions through subjective logic. However, existing evidential object detectors typically combine evidential classification with regression uncertainty models that do not share the same theoretical foundation. In this work, we propose an evidential version of YOLOv8 in which both classification and bounding\-box regression are formulated within a common evidential framework. Our approach exploits YOLOv8's distribution\-based bounding\-box representation, allowing the evidential formulation to be applied not only to classification but also to localisation. As a result, both tasks produce belief, uncertainty, and probability estimates that can be interpreted within the Dempster\-\-Shafer framework. Experiments on KITTI, MUSES, and nuScenes show that the resulting detector remains broadly competitive with standard YOLOv8 in terms of detection accuracy while providing a localisation uncertainty that effectively discriminates between correct and erroneous detections. Moreover, this uncertainty becomes increasingly discriminative under domain shift.
+>
+> 🔗 [阅读论文](http://arxiv.org/abs/2609.24668v1)
+
+---
+
+> ### 4. Infectious Bovine Pinkeye Detection Using Computer Vision and Imbalance\-Aware Learning
+>
+> | 属性 | 内容 |
+> |:---:|:---|
+> | 📅 发布日期 | 2026-09-20 |
+> | 👤 作者 | Michael Abalo |
+>
+> **📄 英文摘要：**
+> Infectious bovine pinkeye is a contagious ocular disease that adversely affects cattle health, welfare, and agricultural productivity. Conventional diagnosis relies primarily on clinical observation, which can be subjective, time\-consuming, and difficult to implement efficiently in large herds or remote settings. This study evaluated and compared You Only Look Once \(YOLO\) v11 and YOLOv26 for automated bovine pinkeye classification and investigated the effects of class\-balancing strategies on model performance. Five variants \(n, s, m, l, and x\) of each architecture were trained and evaluated using the original imbalanced dataset, Random Minority Oversampling \(RMO\), and an adapted Synthetic Minority Oversampling Technique \(SMOTE\). Both YOLOv11 and YOLOv26 demonstrated strong classification performance, although the effects of class balancing varied across model variants. For YOLOv11, RMO\-s achieved an accuracy of 0.99, a macro F1\-score of 0.98, and a true positive rate \(TPR\) of 1.00, with no false\-negative classifications. RMO\-m also achieved a TPR of 1.00 with no false negatives. For YOLOv26, the original l, RMO\-m, and RMO\-l variants each achieved an accuracy of 0.99 and a macro F1\-score of 0.98, with RMO\-l attaining a TPR of 1.00 and no false negatives. Overall, RMO generally provided greater improvements in minority\-class detection than adapted SMOTE, whereas the strong performance of the original YOLOv26\-l demonstrates that oversampling was not necessary for all model variants. These findings demonstrate the potential of YOLOv11 and YOLOv26 for automated detection of bovine pinkeye and support further evaluation for livestock health monitoring.
+>
+> 🔗 [阅读论文](http://arxiv.org/abs/2609.23714v1)
+
+---
+
+> ### 5. HDMamba\-YOLO: Efficient State\-Space Perception and Local Spatial Reconstruction for UAV Small Object
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -25,62 +81,6 @@
 > Small\-object detection in UAV imagery is challenged by weak visual evidence, ambiguous boundaries, dense object distributions, and complex backgrounds. Effective detection therefore requires long\-range contextual information for target\-background discrimination while preserving explicit local two\-dimensional structures for accurate localization. These requirements arise at different stages of the detection pipeline and are not naturally addressed by a uniform feature\-processing strategy. We propose Hybrid Dual\-domain Mamba\-YOLO \(HDMamba\-YOLO\), a stage\-wise heterogeneous SSM\-CNN detector organized according to a perception\-reconstruction\-alignment\-interaction rationale. EfficientVMamba\-based EVSS establishes long\-range contextual perception in the backbone, while PhasePatchMerging2D provides phase\-aware hierarchical transitions. DST\-Wrapper and Native C3k2\-ASSAF then perform perception\-to\-reconstruction transition and repeated local two\-dimensional reconstruction during FPN/PAN aggregation. DySample provides content\-adaptive cross\-scale resampling, while OS\-CVTIA introduces macro\-micro interaction and task\-specific modulation for localization and classification. On VisDrone2019, HDMamba\-YOLO\-B achieves 42.737% mAP50 and 25.713% mAP50:95 with 10.042M parameters and 29.879 corrected GFLOPs. HDMamba\-YOLO\-Lite achieves 41.140% mAP50 and 24.741% mAP50:95 with 5.344M parameters. Under the unified AI\-TOD evaluation protocol, HDMamba\-YOLO\-B obtains 21.621% AP and 47.881% AP50. Controlled ablations further support the stage\-wise allocation of state\-space perception, convolutional reconstruction, dynamic alignment, and task interaction for UAV small\-object detection.
 >
 > 🔗 [阅读论文](http://arxiv.org/abs/2609.23061v1)
-
----
-
-> ### 2. Towards Robust Classroom Attendance: A Comprehensive Evaluation of Face Detection and Recognition Models
->
-> | 属性 | 内容 |
-> |:---:|:---|
-> | 📅 发布日期 | 2026-09-19 |
-> | 👤 作者 | Himani Trivedi |
->
-> **📄 英文摘要：**
-> Manual attendance methods, such as paper or register\-based systems, take a lot of time, can lead to errors, and are easy to falsify. Face recognition is more reliable, but it frequently struggles in classrooms because lighting and other conditions can vary. Face recognition datasets are designed for regulated environments and do not capture the actual challenges found in classrooms. To address this, a new face detection and recognition dataset, the Visage Face dataset, comprising 16,234 face samples, is proposed for the task of face detection and recognition. The photos are taken from different angles and under varying lighting conditions, with students showing a range of expressions, and some faces partly covered to reflect real\-life situations. A YOLO\-based system is used to detect faces and tested seven advanced face recognition models with thirteen configurations: LVFace, QCFace, FaceLiVTv2, TopoFR, EdgeFace, TransFace, and GhostFaceNets. Of these, FaceLiVTv2\-M performed best, with 99.75% Top\-1/Top\-5 accuracy and an inference time of 6.459 ms. These results show that the Visage Face Dataset is a realistic and challenging benchmark for face recognition in classroom attendance.
->
-> 🔗 [阅读论文](http://arxiv.org/abs/2609.22750v1)
-
----
-
-> ### 3. From Pixels to Semantics: Edge AI for UAV\-Based Critical Infrastructure Inspection
->
-> | 属性 | 内容 |
-> |:---:|:---|
-> | 📅 发布日期 | 2026-09-16 |
-> | 👤 作者 | Reza Farahani |
->
-> **📄 英文摘要：**
-> Critical infrastructure assets such as bridges, tunnels, dams, and power line networks require timely and scalable inspection. While conventional manual inspection remains costly and hazardous, unmanned aerial vehicle \(UAV\)\-based inspection has emerged as an efficient alternative for monitoring difficult\-to\-access structures. Existing UAV inspection pipelines have evolved from cloud\-centric offline processing toward edge\-based perception using lightweight object detectors such as YOLO for real\- time defect localization. This article explores the transition toward fully edge\-native semantic inspection powered by lightweight vision language models \(VLMs\), where UAVs move beyond object detection toward contextual structural understanding. It categorizes existing UAV inspection architectures, identifies their key system challenges and architectural requirements, and experimentally assesses the feasibility of semantic edge intelligence on NVIDIA Jetson UAV\-class hardware using the COCO\-Bridge dataset. The evaluation integrates a fine\-tuned YOLO\-26M for object localization and a lightweight SmolVLM\-256 for semantic reasoning. Finally, it outlines future directions toward agentic, autonomous, trustworthy, and collaborative semantic UAV inspection across the edge\-cloud continuum.
->
-> 🔗 [阅读论文](http://arxiv.org/abs/2609.18448v1)
-
----
-
-> ### 4. BrainFocus: EEG\-Guided ROI Selection for Efficient Vision\-Language Models
->
-> | 属性 | 内容 |
-> |:---:|:---|
-> | 📅 发布日期 | 2026-09-15 |
-> | 👤 作者 | Yihui Peng |
->
-> **📄 英文摘要：**
-> Vision\-language models \(VLMs\) achieve strong visual question answering \(VQA\) performance, but processing large cluttered images is computationally expensive when only a small region is relevant. Electroencephalography \(EEG\) signals, which capture human neural responses to visual stimuli, can provide a human\-derived semantic cue about the region of interest \(ROI\). However, EEG\-guided visual category decoding remains imperfect, making direct ROI routing unreliable. In this work, we propose BrainFocus, a reliable EEG\-guided efficient VLM framework for VQA. An EEG classifier predicts a target category, and a YOLO detector localizes the matching ROI. The VLM receives the cropped ROI only when both predictions pass confidence thresholds; otherwise, it processes the full image. For evaluation, we build on EEG\-ImageNet to construct a 40\-class benchmark comprising generated cluttered images and real object\-centric images, with target\-ROI annotations and 600 English visual question\-answer pairs. Across Qwen3.5\-VL 2B, 4B, and 9B models, BrainFocus improves VQA accuracy by 4.14\-9.87 percentage points \(pp\) on cluttered scenes while reducing input tokens and total tokens by 23.2%\-39.4% and 23.2%\-39.3%, and end\-to\-end floating\-point operations \(FLOPs\) by 23.2%\-39.5%. These results demonstrate that EEG can guide efficient VLM inference even when its semantic decoding is imperfect.
->
-> 🔗 [阅读论文](http://arxiv.org/abs/2609.17443v1)
-
----
-
-> ### 5. BVB: Benchmarking Agentic Video Understanding via Programmatic Reconstruction in Blender
->
-> | 属性 | 内容 |
-> |:---:|:---|
-> | 📅 发布日期 | 2026-09-14 |
-> | 👤 作者 | Yolo Y. Tang |
->
-> **📄 英文摘要：**
-> Multimodal agents can create complex videos in software such as Blender by coding without relying on diffusion models. Yet video understanding benchmarks still evaluate models mainly through question answering. If an agent truly understands a video, it can reconstruct it programmatically. We introduce BVB, Blender\-VideoBench, a benchmark that tests this ability by asking agents to reconstruct real\-world videos as animated Blender scenes. To ensure fair comparison, each agent programs the reconstruction through a lightweight harness, Mini\-BVB, in an identical sandbox under a shared cost limit. The benchmark renders each reconstruction from its animated camera and evaluates it on two axes: \(1\) Dual VQA measures how many spatiotemporal facts the reconstruction preserves. \(2\) Latent Similarity measures how closely the reconstruction matches the source video perceptually. Our overall score, a square\-root mean, favors balanced performance. We evaluate 51 configurations from 10 model families and analyze semantic retention, perceptual similarity, reasoning effort, and cost. The best model reaches 88.6 Latent Similarity but retains only 53.7% of the source\-correct spatiotemporal answers. Additional reasoning improves visual similarity but does not close this gap in factual accuracy. In a blind study with 15 raters and five configurations, Latent Similarity correlates strongly with human preference. These results show that programmatic reconstruction is a viable test of agentic video understanding, and that semantic retention remains the main challenge.
->
-> 🔗 [阅读论文](http://arxiv.org/abs/2609.15478v1)
 
 ---
 
