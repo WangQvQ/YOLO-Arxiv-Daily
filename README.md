@@ -14,7 +14,21 @@
 
 ## 📑 论文列表
 
-> ### 1. A 3D Pose\-Based Ensemble Framework for Cricket Shot Classification and Automated Biomechanical Analysis
+> ### 1. Integrating Local Detail and Global Context: A Dual\-Input Multi\-Task Learning Framework for Bone Tumor Diagnosis
+>
+> | 属性 | 内容 |
+> |:---:|:---|
+> | 📅 发布日期 | 2026-09-23 |
+> | 👤 作者 | S. M. Nasif Uddin |
+>
+> **📄 英文摘要：**
+> Primary bone tumors are rare but clinically aggressive neoplasms whose diagnosis from radiographs is challenged by heterogeneous morphology, subtle lesion margins, and overlapping bone structures. To address the limitations of existing single\-view models, we present a dual\-input, multi\-task learning framework that, to our knowledge, is the first to apply bidirectional cross\-modal attention between a lesion crop and the full radiograph for joint segmentation and subtype classification. Using the multi\-institutional Bone Tumor X\-ray Radiograph Dataset \(BTXRD, n=3,746\), we employ a YOLO\-based detector to generate regions of interest, which are paired with full images as inputs to a dual\-stream DenseNet121 architecture. Features are integrated via a novel cross\-modal attention fusion strategy, refined by Hierarchical Multi\-scale Feature Fusion, effectively balancing fine\-grained lesion detail with global anatomical context. Evaluated on a held\-out patient\-level test split, the model demonstrates superior performance over single\-input baselines, achieving an overall Dice Similarity Coefficient of 0.896 and a macro\-averaged classification F1\-score of 0.928. Notably, the system exhibits exceptional sensitivity for malignant osteosarcoma \(AUC 0.999\), validating the potential of dual\-stream context modeling to support radiologists in accurate, early decision\-making.
+>
+> 🔗 [阅读论文](http://arxiv.org/abs/2609.28732v1)
+
+---
+
+> ### 2. A 3D Pose\-Based Ensemble Framework for Cricket Shot Classification and Automated Biomechanical Analysis
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -28,7 +42,7 @@
 
 ---
 
-> ### 2. mbariml: a curation pipeline for turning deep\-sea imagery and video into object\-detection training data
+> ### 3. mbariml: a curation pipeline for turning deep\-sea imagery and video into object\-detection training data
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -42,7 +56,7 @@
 
 ---
 
-> ### 3. NPU Accelerator: Quantized Real\-Time Vehicle Detection on PYNQ\-Z1 Using FINN
+> ### 4. NPU Accelerator: Quantized Real\-Time Vehicle Detection on PYNQ\-Z1 Using FINN
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -56,7 +70,7 @@
 
 ---
 
-> ### 4. Ev\-YOLO: Uncertainty\-Aware Object Detection via a Unified Evidential Formulation
+> ### 5. Ev\-YOLO: Uncertainty\-Aware Object Detection via a Unified Evidential Formulation
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -67,20 +81,6 @@
 > Reliable uncertainty estimation is essential for deploying object detectors in autonomous systems operating in uncertain environments. Evidential Deep Learning \(EDL\) provides a principled framework for uncertainty\-aware classification by representing network outputs as evidence and interpreting predictions through subjective logic. However, existing evidential object detectors typically combine evidential classification with regression uncertainty models that do not share the same theoretical foundation. In this work, we propose an evidential version of YOLOv8 in which both classification and bounding\-box regression are formulated within a common evidential framework. Our approach exploits YOLOv8's distribution\-based bounding\-box representation, allowing the evidential formulation to be applied not only to classification but also to localisation. As a result, both tasks produce belief, uncertainty, and probability estimates that can be interpreted within the Dempster\-\-Shafer framework. Experiments on KITTI, MUSES, and nuScenes show that the resulting detector remains broadly competitive with standard YOLOv8 in terms of detection accuracy while providing a localisation uncertainty that effectively discriminates between correct and erroneous detections. Moreover, this uncertainty becomes increasingly discriminative under domain shift.
 >
 > 🔗 [阅读论文](http://arxiv.org/abs/2609.24668v1)
-
----
-
-> ### 5. Infectious Bovine Pinkeye Detection Using Computer Vision and Imbalance\-Aware Learning
->
-> | 属性 | 内容 |
-> |:---:|:---|
-> | 📅 发布日期 | 2026-09-20 |
-> | 👤 作者 | Michael Abalo |
->
-> **📄 英文摘要：**
-> Infectious bovine pinkeye is a contagious ocular disease that adversely affects cattle health, welfare, and agricultural productivity. Conventional diagnosis relies primarily on clinical observation, which can be subjective, time\-consuming, and difficult to implement efficiently in large herds or remote settings. This study evaluated and compared You Only Look Once \(YOLO\) v11 and YOLOv26 for automated bovine pinkeye classification and investigated the effects of class\-balancing strategies on model performance. Five variants \(n, s, m, l, and x\) of each architecture were trained and evaluated using the original imbalanced dataset, Random Minority Oversampling \(RMO\), and an adapted Synthetic Minority Oversampling Technique \(SMOTE\). Both YOLOv11 and YOLOv26 demonstrated strong classification performance, although the effects of class balancing varied across model variants. For YOLOv11, RMO\-s achieved an accuracy of 0.99, a macro F1\-score of 0.98, and a true positive rate \(TPR\) of 1.00, with no false\-negative classifications. RMO\-m also achieved a TPR of 1.00 with no false negatives. For YOLOv26, the original l, RMO\-m, and RMO\-l variants each achieved an accuracy of 0.99 and a macro F1\-score of 0.98, with RMO\-l attaining a TPR of 1.00 and no false negatives. Overall, RMO generally provided greater improvements in minority\-class detection than adapted SMOTE, whereas the strong performance of the original YOLOv26\-l demonstrates that oversampling was not necessary for all model variants. These findings demonstrate the potential of YOLOv11 and YOLOv26 for automated detection of bovine pinkeye and support further evaluation for livestock health monitoring.
->
-> 🔗 [阅读论文](http://arxiv.org/abs/2609.23714v1)
 
 ---
 
