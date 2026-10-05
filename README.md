@@ -14,7 +14,21 @@
 
 ## 📑 论文列表
 
-> ### 1. HandAnthro: Automated Hand Anthropometry from a Single Image
+> ### 1. BeeWhere: Segmenting Bumble Bee Colonies to Quantify Behavioral Effects
+>
+> | 属性 | 内容 |
+> |:---:|:---|
+> | 📅 发布日期 | 2026-10-02 |
+> | 👤 作者 | Roberta Hunt |
+>
+> **📄 英文摘要：**
+> Social bees are important pollinators that support biodiversity and crop pollination globally and serve as important model systems for collective behavior, but scalable measurement of individual\- and colony\-level behavior remains difficult in dense, occluded nest environments. Existing monitoring workflows use fiducial tags \(e.g., ArUco\) to preserve individual identity, yet tag\-based tracking can fail when markers are obscured and provide limited information about body extent, spatial context, and untagged individuals. We present BeeWhere, an AI\-assisted annotation and analysis workflow that combines ArUco detections with deep\-learnt instance segmentations to quantify bumble bee behavior from high\-resolution colony images and videos. Using bumble bee \(Bombus impatiens\) microcolonies as a test case, we annotate 483 frames containing 8,443 bee instances. We additionally annotate pollen balls, nest structures, and chamber boundaries, and train YOLO instance segmentation models for downstream behavioral analysis. Instance segmentations enable quantification of important behavioral metrics based on body contours, including nearest\-neighbor distance, proximity to nest structures, spatial occupancy within the nest, and detection counts over time. We apply the BeeWhere models to tag\-based tracking in an exploratory validation study assessing the behavioral impacts of neonicotinoid pesticide exposure. BeeWhere increased detection rates compared to tag\-based tracking, particularly when bees were partially obscured or under challenging imaging conditions, and also captured treatment\-associated changes in bee spatial organization not captured using tag\-based tracking alone. These results suggest that instance segmentation can complement fiducial\-marker tracking by recovering behaviorally meaningful signals under challenging colony conditions.
+>
+> 🔗 [阅读论文](http://arxiv.org/abs/2610.03051v1)
+
+---
+
+> ### 2. HandAnthro: Automated Hand Anthropometry from a Single Image
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -28,7 +42,7 @@
 
 ---
 
-> ### 2. ByteTraX: Enhancing the ByteTrack Architecture with Optimised Thresholding
+> ### 3. ByteTraX: Enhancing the ByteTrack Architecture with Optimised Thresholding
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -42,7 +56,7 @@
 
 ---
 
-> ### 3. A Multi\-Dataset Benchmark of YOLO\-Based Weed Detection in Precision Agriculture
+> ### 4. A Multi\-Dataset Benchmark of YOLO\-Based Weed Detection in Precision Agriculture
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -56,7 +70,7 @@
 
 ---
 
-> ### 4. Synthetic Thermal Image Generation for Real\-Time Animal Detection Under Low\-Visibility Conditions
+> ### 5. Synthetic Thermal Image Generation for Real\-Time Animal Detection Under Low\-Visibility Conditions
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -67,20 +81,6 @@
 > Wildlife\-vehicle collisions remain a significant road safety concern, particularly during nighttime and low\-visibility conditions when RGB\-based perception systems are often unreliable. Thermal imaging offers a promising alternative for detecting animals under poor illumination. However, the limited availability of annotated infrared animal datasets restricts the development of robust deep learning\-based detection models. This paper investigates synthetic thermal image generation as a scalable approach for real\-time animal detection under low\-visibility conditions. A subset of 514 annotated visible\-spectrum animal images from the NTLNP dataset is translated into synthetic thermal representations using CycleGAN\-Turbo, while a limited real thermal dataset of 60 images is expanded through thermal\-focused augmentation. Multiple object detection architectures, including YOLOv8, YOLOv9, YOLOv10, and RT\-DETR, are trained independently on synthetic and real thermal datasets and evaluated using precision, recall, mAP@0.5, mAP@0.5:0.95, model size, and inference latency. Experimental results show that synthetic thermal images provide competitive detection performance, with RT\-DETR achieving the highest synthetic\-data mAP@0.5 of 0.9613. Models trained on augmented real thermal data achieve the strongest overall performance, with YOLOv10s obtaining 0.9879 mAP@0.5 and 0.9571 mAP@0.5:0.95. Computational analysis further indicates that lightweight YOLO variants provide favorable inference latency, supporting their potential for real\-time deployment. These findings demonstrate that synthetic thermal imagery can reduce dependence on scarce infrared datasets and support the development of efficient animal detection systems for future vehicle\-mounted wildlife collision mitigation applications.
 >
 > 🔗 [阅读论文](http://arxiv.org/abs/2609.32944v1)
-
----
-
-> ### 5. Attribution Gaps in Zero\-Training LLM\+OVOD Pipelines: A Fine\-Grained Analysis of the CAAP\-\-SNAP Discrepancy
->
-> | 属性 | 内容 |
-> |:---:|:---|
-> | 📅 发布日期 | 2026-09-26 |
-> | 👤 作者 | Yu\-Feng Yen |
->
-> **📄 英文摘要：**
-> LAOD and similar zero\-training LLM\+open\-vocabulary\-detector \(OVOD\) pipelines score two things separately: class\-agnostic localization accuracy \(CAAP\) and semantic naming accuracy \(SNAP\). The two consistently diverge, and nobody has asked why. This paper asks why, on the full 5,000\-image COCO\-Val split \(27,273 detections\) rather than the small subset the original work evaluated on. Object visual complexity turns out not to be the driver \-\- small and occluded objects are, if anything, localized better than large ones. Vocabulary novelty is: once the LLM's wording falls outside the detector's native category set, localization accuracy falls from 80.9% to 31.6%. That drop is not spread evenly across unfamiliar phrasing, though. Almost all of it comes from cases where the novel wording actually names a different object than the one COCO annotated \(true synonyms still score 89.3%; semantically unrelated "noise" labels score 12.0%\). A closer look at a further failure subset tells a similar story: 78\-88% of what looks like complete localization failure is really the model correctly finding a real object that COCO's non\-exhaustive 80\-category scheme simply never labeled, not hallucination. Swap the detector backbone \(YOLO\-World for Grounding DINO\) or the LLM \(Gemma\-3 for Qwen2.5\-VL\) and both the effect and its rough size hold up, so this looks like a general property of the pipeline family rather than a quirk of one model pairing. The upshot is that a large share of the apparent CAAP\-\-SNAP gap traces back to closed\-category annotation limits rather than a real grounding failure, which matters for how we detect hallucination, analyze failure modes, and design evaluation for grounded multimodal systems meant to work in the open world.
->
-> 🔗 [阅读论文](http://arxiv.org/abs/2609.32567v1)
 
 ---
 
