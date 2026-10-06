@@ -14,7 +14,21 @@
 
 ## 📑 论文列表
 
-> ### 1. BeeWhere: Segmenting Bumble Bee Colonies to Quantify Behavioral Effects
+> ### 1. Vision\-enabled detection of safety helmet compliance in construction zones
+>
+> | 属性 | 内容 |
+> |:---:|:---|
+> | 📅 发布日期 | 2026-10-05 |
+> | 👤 作者 | Tri Nhut Do\* |
+>
+> **📄 英文摘要：**
+> In the rapidly evolving field of construction management, worker safety remains a top priority. This paper introduces an innovative vision\-based system for real\-time detection of helmet compliance, specifically designed for construction sites, utilizing advanced computer vision techniques and machine learning algorithms within the YOLO \(you only look once\) framework. Our system leverages high\-resolution video feeds from strategically positioned cameras to monitor adherence to safety regulations regarding helmet usage. By employing deep learning methodologies, the system effectively identifies individuals not wearing helmets, thereby significantly mitigating the risk of head injuries among workers. Our training and validation results revealed an impressive precision exceeding 97% at mAP@0.5 for both helmeted and non\-helmeted individuals. Furthermore, our experiments demonstrate exceptional detection accuracy, demonstrating the system's resilience under varying lighting conditions and diverse worker movements. The consistent decrease in loss and improvement in metrics throughout training validates the effectiveness of the YOLOv8 model in enhancing recognition performance. The implications of this research extend beyond mere regulatory compliance, opening avenues for innovative applications in occupational safety management. This study highlights the critical role of technology in protecting lives and lays the groundwork for future advancements in smart construction environments.
+>
+> 🔗 [阅读论文](http://arxiv.org/abs/2610.05756v1)
+
+---
+
+> ### 2. BeeWhere: Segmenting Bumble Bee Colonies to Quantify Behavioral Effects
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -28,7 +42,7 @@
 
 ---
 
-> ### 2. HandAnthro: Automated Hand Anthropometry from a Single Image
+> ### 3. HandAnthro: Automated Hand Anthropometry from a Single Image
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -42,7 +56,7 @@
 
 ---
 
-> ### 3. ByteTraX: Enhancing the ByteTrack Architecture with Optimised Thresholding
+> ### 4. ByteTraX: Enhancing the ByteTrack Architecture with Optimised Thresholding
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -56,7 +70,7 @@
 
 ---
 
-> ### 4. A Multi\-Dataset Benchmark of YOLO\-Based Weed Detection in Precision Agriculture
+> ### 5. A Multi\-Dataset Benchmark of YOLO\-Based Weed Detection in Precision Agriculture
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -67,20 +81,6 @@
 > Weed detection is an important component of precision agriculture, enabling site\-specific weed management and reducing unnecessary herbicide use. Although deep learning methods have achieved strong results for crop and weed detection, many studies rely on single\-dataset evaluation, making it difficult to assess robustness across different agricultural domains. This paper presents a multi\-dataset benchmark of deep object detectors for weed detection in precision agriculture, with a focused evaluation of YOLO26 models. We evaluate nano, small, and medium variants on seven public weed\-detection datasets covering different crops, weed species, field conditions, acquisition setups, and annotation protocols. The models are compared in terms of detection accuracy, model complexity, inference latency, FPS, and model size. In addition to in\-dataset evaluation, we investigate cross\-domain generalization using a unified one\-class weed setup and evaluate multi\-source training using the combined training subsets from all datasets. The results show that YOLO26 achieves strong in\-dataset performance, with YOLO26m obtaining the highest average accuracy and YOLO26s providing the best practical accuracy\-efficiency trade\-off. However, cross\-domain performance decreases substantially, with YOLO26s dropping from an average in\-domain mAP$\_\{50:95\}$ of 0.603 to 0.148 in the off\-domain setting. Multi\-source training improves performance on several datasets, but does not fully eliminate domain shift. Overall, the benchmark highlights the importance of dataset diversity, domain similarity, and target\-domain adaptation for robust weed detection in real\-world precision agriculture applications.
 >
 > 🔗 [阅读论文](http://arxiv.org/abs/2609.33991v1)
-
----
-
-> ### 5. Synthetic Thermal Image Generation for Real\-Time Animal Detection Under Low\-Visibility Conditions
->
-> | 属性 | 内容 |
-> |:---:|:---|
-> | 📅 发布日期 | 2026-09-26 |
-> | 👤 作者 | James Momoh |
->
-> **📄 英文摘要：**
-> Wildlife\-vehicle collisions remain a significant road safety concern, particularly during nighttime and low\-visibility conditions when RGB\-based perception systems are often unreliable. Thermal imaging offers a promising alternative for detecting animals under poor illumination. However, the limited availability of annotated infrared animal datasets restricts the development of robust deep learning\-based detection models. This paper investigates synthetic thermal image generation as a scalable approach for real\-time animal detection under low\-visibility conditions. A subset of 514 annotated visible\-spectrum animal images from the NTLNP dataset is translated into synthetic thermal representations using CycleGAN\-Turbo, while a limited real thermal dataset of 60 images is expanded through thermal\-focused augmentation. Multiple object detection architectures, including YOLOv8, YOLOv9, YOLOv10, and RT\-DETR, are trained independently on synthetic and real thermal datasets and evaluated using precision, recall, mAP@0.5, mAP@0.5:0.95, model size, and inference latency. Experimental results show that synthetic thermal images provide competitive detection performance, with RT\-DETR achieving the highest synthetic\-data mAP@0.5 of 0.9613. Models trained on augmented real thermal data achieve the strongest overall performance, with YOLOv10s obtaining 0.9879 mAP@0.5 and 0.9571 mAP@0.5:0.95. Computational analysis further indicates that lightweight YOLO variants provide favorable inference latency, supporting their potential for real\-time deployment. These findings demonstrate that synthetic thermal imagery can reduce dependence on scarce infrared datasets and support the development of efficient animal detection systems for future vehicle\-mounted wildlife collision mitigation applications.
->
-> 🔗 [阅读论文](http://arxiv.org/abs/2609.32944v1)
 
 ---
 
