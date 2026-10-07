@@ -14,7 +14,49 @@
 
 ## 📑 论文列表
 
-> ### 1. Vision\-enabled detection of safety helmet compliance in construction zones
+> ### 1. Post\-Training Semantic Lifting for 3D Gaussian Splatting: Separating Detector, Lifting and Representation Error
+>
+> | 属性 | 内容 |
+> |:---:|:---|
+> | 📅 发布日期 | 2026-10-06 |
+> | 👤 作者 | Iván Verdugo Guerra |
+>
+> **📄 英文摘要：**
+> The same Gaussian of a 3D Gaussian Splatting model is seen from many views, and these views do not always agree on the class it belongs to. The Gaussian may be occluded in some of them, and the confidence of the detector is not the same from one view to another. The ground truth, on the other hand, is given as an annotated mesh, because two training runs do not produce the same Gaussians. In this work, we propose a post\-training lifting method that works with one target class at a time and combines the information coming from all the views. Target and non\-target evidence are accumulated simultaneously, weighted by the visibility of each Gaussian in each view. After that, the Gaussians are filtered with two thresholds: a main threshold $β$ selects the high\-confidence seeds, and a lower one $γβ$ adds the connected components around them. For the evaluation, the labels are transferred from the Gaussians to the mesh vertices that are both visible and annotated. With this design, we can separate three sources of error: the 2D detector, the lifting and the transfer between representations. The thresholds and the transfer operator are chosen on seven Replica validation scenes, and the method is evaluated on ten held\-out ScanNet\+\+ scenes with the same values for every scene and class. The mean mIoU on the validation scenes was 0.93 with masks from the dataset annotations and 0.65 with YOLO masks, and on the ScanNet\+\+ test scenes it was 0.80 and 0.54. Compared with thresholding the evidence per view, as a previous version of the method did, the fraction improves the test mIoU by 0.24 and makes it possible to use a single threshold for all the classes and scenes of both datasets. Finally, the error analysis shows that most of the remaining error comes from the detector.
+>
+> 🔗 [阅读论文](http://arxiv.org/abs/2610.08756v1)
+
+---
+
+> ### 2. Towards benchmarking Western Bluebird detection in the wild
+>
+> | 属性 | 内容 |
+> |:---:|:---|
+> | 📅 发布日期 | 2026-10-06 |
+> | 👤 作者 | Estela Monserrat Arriaga Santana |
+>
+> **📄 英文摘要：**
+> Bird monitoring in natural environments is challenging due to the small size of some species of birds relative to the scene, background clutter, variability in illumination, and the observers' viewpoint. Progress is further limited by the scarcity of large\-scale, realistic datasets, which are essential for understanding behavioral patterns. To address this gap, we introduce a new benchmark dataset for the detection and segmentation of Western bluebirds \(Sialia Mexicana\), comprising over 6,000 labeled images from 41 recording sessions. The dataset features high\-resolution \(4K\) in\-the\-wild images in which birds occupy only a small fraction of the image. We evaluated supervised detectors, open\-vocabulary models under zero\-shot and fine\-tuned settings, and segmentation approaches. Supervised detectors remain the most reliable overall, with Faster R\-CNN achieving the highest detection mAP and RT\-DETR offering the best precision\-recall trade\-off. Open\-vocabulary models perform poorly in zero\-shot settings; however, fine\-tuning substantially improves their performance, with YOLO\-World becoming competitive with supervised methods and achieving the highest precision, F1\-score, and mAP@0.5. For segmentation, supervised methods significantly outperform Grounded\-SAM and SAM 3: Mask R\-CNN achieves the highest mask mAP, while YOLOv8\-Seg provides the best precision and fastest inference. A diagnostic analysis further shows that failures are not explained by object size alone, but by a combination of apparent scale, brightness, contrast, clutter, blur, crowding, and recording\-session variation. Overall, our findings highlight the difficulty of zero\-shot bird detection in cluttered ecological scenes and underscore the importance of domain adaptation in small\-object settings.
+>
+> 🔗 [阅读论文](http://arxiv.org/abs/2610.07802v1)
+
+---
+
+> ### 3. AUTOPILOT An Advanced Perception, Localization and Path Planning Techniques for Autonomous Vehicles Using YOLOv7 and MiDaS
+>
+> | 属性 | 内容 |
+> |:---:|:---|
+> | 📅 发布日期 | 2026-10-05 |
+> | 👤 作者 | Harshkumar Devmurari |
+>
+> **📄 英文摘要：**
+> Self driving vehicles have emerged as a reliable technology that has the capability to transform transportation and mobility. The development of self driving cars requires significant advances in a number of areas, including perception, localization, decision making, and control. This research paper is based on the project implementation of the combination of object detection using YOLO \(You Only Look Once\), depth sensing using MiDaS for the localization and perception of obstacles, perspective transform, and decision making for path planning in self driving cars. The contemporary state of the technology for object detection, depth sensing, localization, and path planning evaluates the performance of the combined system through simulations and experiments. The results show that the combination of YOLO and MiDaS provides a new robust system for object detection and depth sensing. This research paper contributes to the advancement of self driving car technology and provides new and innovative approaches to the perception and localization of obstacles in the environment. Keywords: YOLO, MiDaS, perception, localization, decision making
+>
+> 🔗 [阅读论文](http://arxiv.org/abs/2610.06232v1)
+
+---
+
+> ### 4. Vision\-enabled detection of safety helmet compliance in construction zones
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -28,7 +70,7 @@
 
 ---
 
-> ### 2. BeeWhere: Segmenting Bumble Bee Colonies to Quantify Behavioral Effects
+> ### 5. BeeWhere: Segmenting Bumble Bee Colonies to Quantify Behavioral Effects
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -39,48 +81,6 @@
 > Social bees are important pollinators that support biodiversity and crop pollination globally and serve as important model systems for collective behavior, but scalable measurement of individual\- and colony\-level behavior remains difficult in dense, occluded nest environments. Existing monitoring workflows use fiducial tags \(e.g., ArUco\) to preserve individual identity, yet tag\-based tracking can fail when markers are obscured and provide limited information about body extent, spatial context, and untagged individuals. We present BeeWhere, an AI\-assisted annotation and analysis workflow that combines ArUco detections with deep\-learnt instance segmentations to quantify bumble bee behavior from high\-resolution colony images and videos. Using bumble bee \(Bombus impatiens\) microcolonies as a test case, we annotate 483 frames containing 8,443 bee instances. We additionally annotate pollen balls, nest structures, and chamber boundaries, and train YOLO instance segmentation models for downstream behavioral analysis. Instance segmentations enable quantification of important behavioral metrics based on body contours, including nearest\-neighbor distance, proximity to nest structures, spatial occupancy within the nest, and detection counts over time. We apply the BeeWhere models to tag\-based tracking in an exploratory validation study assessing the behavioral impacts of neonicotinoid pesticide exposure. BeeWhere increased detection rates compared to tag\-based tracking, particularly when bees were partially obscured or under challenging imaging conditions, and also captured treatment\-associated changes in bee spatial organization not captured using tag\-based tracking alone. These results suggest that instance segmentation can complement fiducial\-marker tracking by recovering behaviorally meaningful signals under challenging colony conditions.
 >
 > 🔗 [阅读论文](http://arxiv.org/abs/2610.03051v1)
-
----
-
-> ### 3. HandAnthro: Automated Hand Anthropometry from a Single Image
->
-> | 属性 | 内容 |
-> |:---:|:---|
-> | 📅 发布日期 | 2026-09-29 |
-> | 👤 作者 | Fan Zhou |
->
-> **📄 英文摘要：**
-> Hand anthropometry supports protective\-glove design, but existing measurement methods often require trained operators, specialized hardware, or manual landmarking. We present HandAnthro, which estimates 44 projected hand dimensions from a smartphone photograph of a palm\-up hand on US letter\-size paper. The pipeline reconstructs wrist\-occluded paper boundaries for rectification, whitens non\-hand pixels, and refines 41 anthropometry\-specific landmarks from a fine\-tuned You Only Look Once \(YOLO\) pose model using image\-specific geometry and contours. Controlled evaluation comprised 720 captures from 45 held\-out participants, each contributing 16 images across two smartphones, two backgrounds, two angles, and two nominal illumination settings. HandAnthro produced complete outputs for 704 captures \(97.8%\); among these, mean absolute error \(MAE\) was 3.80 mm per dimension against two trained operators' caliper measurements. Regional MAEs were 2.48 mm for non\-thumb fingers, 6.04 mm for thumbs, and 6.17 mm for palm and wrist. In a researcher\-assisted mobile\-app pilot, automated batch processing returned all 44 dimensions for 260 of 268 retained, researcher\-screened firefighter images \(97.0%\). A descriptive, unpaired comparison with an independent national firefighter reference yielded a mean absolute difference of 2.40 mm across 28 sex\-by\-dimension group\-mean contrasts. These results characterize controlled measurement performance and researcher\-assisted field feasibility for future distributed hand\-anthropometry studies.
->
-> 🔗 [阅读论文](http://arxiv.org/abs/2609.37855v1)
-
----
-
-> ### 4. ByteTraX: Enhancing the ByteTrack Architecture with Optimised Thresholding
->
-> | 属性 | 内容 |
-> |:---:|:---|
-> | 📅 发布日期 | 2026-09-29 |
-> | 👤 作者 | Thomas A. O'Shea\-Wheller |
->
-> **📄 英文摘要：**
-> The ByteTrack algorithm is a widely used and computationally efficient multi\-object tracking architecture. Its core innovation lies in the combination of lenient bounding box associations with tracklet similarity matching to robustly deal with object occlusions. However, this strategy is nevertheless vulnerable to erroneous track reclassification and identity switching, as detection confidence scores dictate association priority. To address this, I present a simple enhancement of the ByteTrack architecture\-\-named ByteTraX\-\-that optimises track continuity via a single unified matching threshold, while penalising identity switches through stringent track initiation criteria. This approach achieves consistently improved performance across a range of diverse benchmarks including GMOT\-40, LC\-MOT, SportsMOT, TeamTrack, DAMUNT, and DeepSea\-MOT, while simultaneously increasing processing speed by >10%. Specifically, results demonstrate a >40% reduction in identity switches, accompanied by mean increases in HOTA of 3.6, IDF1 of 5.6, and FPS of 6.3. As such, adoption of the ByteTraX algorithm has the potential to substantially enhance tracking performance over the ByteTrack baseline, while retaining the efficiency needed for real\-time deployment. To facilitate usage, I provide the source code, integration functionality for the YOLO family of object detection models, and deployment instructions via an open source repository.
->
-> 🔗 [阅读论文](http://arxiv.org/abs/2609.37801v2)
-
----
-
-> ### 5. A Multi\-Dataset Benchmark of YOLO\-Based Weed Detection in Precision Agriculture
->
-> | 属性 | 内容 |
-> |:---:|:---|
-> | 📅 发布日期 | 2026-09-27 |
-> | 👤 作者 | Hristina Zdraveska |
->
-> **📄 英文摘要：**
-> Weed detection is an important component of precision agriculture, enabling site\-specific weed management and reducing unnecessary herbicide use. Although deep learning methods have achieved strong results for crop and weed detection, many studies rely on single\-dataset evaluation, making it difficult to assess robustness across different agricultural domains. This paper presents a multi\-dataset benchmark of deep object detectors for weed detection in precision agriculture, with a focused evaluation of YOLO26 models. We evaluate nano, small, and medium variants on seven public weed\-detection datasets covering different crops, weed species, field conditions, acquisition setups, and annotation protocols. The models are compared in terms of detection accuracy, model complexity, inference latency, FPS, and model size. In addition to in\-dataset evaluation, we investigate cross\-domain generalization using a unified one\-class weed setup and evaluate multi\-source training using the combined training subsets from all datasets. The results show that YOLO26 achieves strong in\-dataset performance, with YOLO26m obtaining the highest average accuracy and YOLO26s providing the best practical accuracy\-efficiency trade\-off. However, cross\-domain performance decreases substantially, with YOLO26s dropping from an average in\-domain mAP$\_\{50:95\}$ of 0.603 to 0.148 in the off\-domain setting. Multi\-source training improves performance on several datasets, but does not fully eliminate domain shift. Overall, the benchmark highlights the importance of dataset diversity, domain similarity, and target\-domain adaptation for robust weed detection in real\-world precision agriculture applications.
->
-> 🔗 [阅读论文](http://arxiv.org/abs/2609.33991v1)
 
 ---
 
