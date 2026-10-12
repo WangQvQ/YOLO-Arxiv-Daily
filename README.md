@@ -14,7 +14,21 @@
 
 ## 📑 论文列表
 
-> ### 1. Post\-Training Semantic Lifting for 3D Gaussian Splatting: Separating Detector, Lifting and Representation Error
+> ### 1. JMT\-YOLO: Multi\-task Domain Adaptation via Segmentation\-Guided Consistency Learning
+>
+> | 属性 | 内容 |
+> |:---:|:---|
+> | 📅 发布日期 | 2026-10-09 |
+> | 👤 作者 | Zhenhua Yu |
+>
+> **📄 英文摘要：**
+> Domain adaptive object detection \(DAOD\) aims to reduce performance degradation due to distribution shifts between training \(source\) and testing \(target\) datasets. However, owing to insufficient modeling of fine\-grained features and limited instance\-level alignment, existing approaches become less effective under complex environmental conditions, such as extreme weather conditions and object occlusion. We overcome these challenges by proposing JMT\-YOLO, a novel joint multi\-task learning framework for DAOD. JMT\-YOLO is based on the Mean Teacher architecture. It introduces an auxiliary semantic segmentation task and a masking mechanism to enhance the modeling of foreground\-background semantic boundaries in the target domain. Specifically, fine\-grained feature degradation is reduced by introducing a multiscale context\-aware segmentation head equipped with a dense connection structure to effectively capture local and global contextual features. A mask\-consistency loss is formulated by applying random masking operations to target images, thereby guiding the network to learn structural context and improving instance\-level feature alignment. Extensive experiments on three benchmark domain adaptation tasks \(Pascal VOC to Clipart1k, Cityscapes to Foggy Cityscapes, and KITTI to Cityscapes\) demonstrate that JMT\-YOLO achieves detection performances of 46.9%, 57.3%, and 61.0%, respectively. These results demonstrate superior performance over existing state\-of\-the\-art and baseline methods, thereby validating the effectiveness and generalization of JMT\-YOLO.
+>
+> 🔗 [阅读论文](http://arxiv.org/abs/2610.12901v1)
+
+---
+
+> ### 2. Post\-Training Semantic Lifting for 3D Gaussian Splatting: Separating Detector, Lifting and Representation Error
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -28,7 +42,7 @@
 
 ---
 
-> ### 2. Towards benchmarking Western Bluebird detection in the wild
+> ### 3. Towards benchmarking Western Bluebird detection in the wild
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -42,7 +56,7 @@
 
 ---
 
-> ### 3. AUTOPILOT An Advanced Perception, Localization and Path Planning Techniques for Autonomous Vehicles Using YOLOv7 and MiDaS
+> ### 4. AUTOPILOT An Advanced Perception, Localization and Path Planning Techniques for Autonomous Vehicles Using YOLOv7 and MiDaS
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -56,7 +70,7 @@
 
 ---
 
-> ### 4. Vision\-enabled detection of safety helmet compliance in construction zones
+> ### 5. Vision\-enabled detection of safety helmet compliance in construction zones
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -67,20 +81,6 @@
 > In the rapidly evolving field of construction management, worker safety remains a top priority. This paper introduces an innovative vision\-based system for real\-time detection of helmet compliance, specifically designed for construction sites, utilizing advanced computer vision techniques and machine learning algorithms within the YOLO \(you only look once\) framework. Our system leverages high\-resolution video feeds from strategically positioned cameras to monitor adherence to safety regulations regarding helmet usage. By employing deep learning methodologies, the system effectively identifies individuals not wearing helmets, thereby significantly mitigating the risk of head injuries among workers. Our training and validation results revealed an impressive precision exceeding 97% at mAP@0.5 for both helmeted and non\-helmeted individuals. Furthermore, our experiments demonstrate exceptional detection accuracy, demonstrating the system's resilience under varying lighting conditions and diverse worker movements. The consistent decrease in loss and improvement in metrics throughout training validates the effectiveness of the YOLOv8 model in enhancing recognition performance. The implications of this research extend beyond mere regulatory compliance, opening avenues for innovative applications in occupational safety management. This study highlights the critical role of technology in protecting lives and lays the groundwork for future advancements in smart construction environments.
 >
 > 🔗 [阅读论文](http://arxiv.org/abs/2610.05756v1)
-
----
-
-> ### 5. BeeWhere: Segmenting Bumble Bee Colonies to Quantify Behavioral Effects
->
-> | 属性 | 内容 |
-> |:---:|:---|
-> | 📅 发布日期 | 2026-10-02 |
-> | 👤 作者 | Roberta Hunt |
->
-> **📄 英文摘要：**
-> Social bees are important pollinators that support biodiversity and crop pollination globally and serve as important model systems for collective behavior, but scalable measurement of individual\- and colony\-level behavior remains difficult in dense, occluded nest environments. Existing monitoring workflows use fiducial tags \(e.g., ArUco\) to preserve individual identity, yet tag\-based tracking can fail when markers are obscured and provide limited information about body extent, spatial context, and untagged individuals. We present BeeWhere, an AI\-assisted annotation and analysis workflow that combines ArUco detections with deep\-learnt instance segmentations to quantify bumble bee behavior from high\-resolution colony images and videos. Using bumble bee \(Bombus impatiens\) microcolonies as a test case, we annotate 483 frames containing 8,443 bee instances. We additionally annotate pollen balls, nest structures, and chamber boundaries, and train YOLO instance segmentation models for downstream behavioral analysis. Instance segmentations enable quantification of important behavioral metrics based on body contours, including nearest\-neighbor distance, proximity to nest structures, spatial occupancy within the nest, and detection counts over time. We apply the BeeWhere models to tag\-based tracking in an exploratory validation study assessing the behavioral impacts of neonicotinoid pesticide exposure. BeeWhere increased detection rates compared to tag\-based tracking, particularly when bees were partially obscured or under challenging imaging conditions, and also captured treatment\-associated changes in bee spatial organization not captured using tag\-based tracking alone. These results suggest that instance segmentation can complement fiducial\-marker tracking by recovering behaviorally meaningful signals under challenging colony conditions.
->
-> 🔗 [阅读论文](http://arxiv.org/abs/2610.03051v1)
 
 ---
 
