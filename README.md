@@ -14,7 +14,49 @@
 
 ## 📑 论文列表
 
-> ### 1. JMT\-YOLO: Multi\-task Domain Adaptation via Segmentation\-Guided Consistency Learning
+> ### 1. Identifying Planetary Nebulae Candidates from IPHAS and VPHAS\+ Surveys via YOLO Deep Learning Models
+>
+> | 属性 | 内容 |
+> |:---:|:---|
+> | 📅 发布日期 | 2026-10-14 |
+> | 👤 作者 | Titouan Sérandour |
+>
+> **📄 英文摘要：**
+> We present a deep learning detection method capable of effectively identifying planetary nebulae \(PNe\) on IPHAS and VPHAS\+ surveys. Our detection pipeline is based on the YOLO architecture and is adaptable to other datasets. Using the HiPS system, we preprocess and augment the $r$, $i$, and $Hα$ bands to produce two red, green, and blue \(RGB\) image datasets: \(1\) $640 times 640$ px images at full resolution, and \(2\) $1 280 times 1 280$ px images designed to capture extended objects up to $0.2$ deg. Images of $sim 2600$ PNe are labelled using the HASH database. The loss function and evaluation metrics are adapted to the diffuse and low\-contrast nature of PNe; a very low intersection over union \(IoU\) threshold \($1%$\) is used. A $k$\-fold cross validation shows that the YOLOv12m model achieves an average precision of $0.979$ on the first dataset. At a confidence threshold of $0.15$, it achieves a precision rate of $98.7%$ and a recall rate of $97.4%$. We deployed our system \(on $1280 times 1280$ images\) on the full surveys' coverage \($sim 3755$ deg$^2$\), and present a preliminary analysis of the detection results. The system is robust against artifacts such as CCD corner defects and HiPS tile joints. Our convolutional\-neural\-network\-based model achieved excellent results on the test set, comparable to\-or exceeding\-that of a recent Swin Transformer approach. However, a challenge persists when applying deep learning models to extensive and densely populated Galactic fields: the development of an automated system that can effectively discriminate PNe from mimics that human experts are able to distinguish \(e.g., H II regions\). We outline possible improvements for future work.
+>
+> 🔗 [阅读论文](http://arxiv.org/abs/2610.19760v1)
+
+---
+
+> ### 2. Augmenting Real\-time Visualization in Minimally Invasive Surgery with Particle Filtering and Depth\-Aware Occlusion Handling
+>
+> | 属性 | 内容 |
+> |:---:|:---|
+> | 📅 发布日期 | 2026-10-13 |
+> | 👤 作者 | Anuska Sarkar |
+>
+> **📄 英文摘要：**
+> We present a real\-time, hybrid framework for occlusion handling and depth\-aware tracking in minimally invasive surgeries \(MIS\). Occlusions caused by surgical instruments often obscure the region of interest \(ROI\), affecting surgical precision. To address this, our approach integrates enhanced You Only Look Once \(YOLO\) based detection, Particle Filtering \(PF\), and monocular depth estimation using Multiple Depth Estimation Accuracy with Single Network \(MiDaS\). Occlusion is detected using a distance\-based threshold between instruments and ROI. Experimental results demonstrate robust instrument detection with a confidence score of 0.85, effective occlusion event handling, and accurate depth prediction with an MAE of 0.34 cm and RMSE of 0.53 cm. Independent phantom\-based validation against stereo depth measurements yielded an MAE of 0.65 cm and RMSE of 0.66 cm. The framework further achieved an occlusion detection accuracy of 81.95% while maintaining real\-time performance at 38.7 FPS. Preliminary surgeon feedback indicates that the proposed visualization framework is clinically relevant and holds promise for future intraoperative image\-guided navigation and decision support in MIS.
+>
+> 🔗 [阅读论文](http://arxiv.org/abs/2610.18422v1)
+
+---
+
+> ### 3. Squeeze\-Aware\-YOLO: Early Channel Recalibration and Multi\-Scale Fusion for Real\-Time Traffic Sign Detection
+>
+> | 属性 | 内容 |
+> |:---:|:---|
+> | 📅 发布日期 | 2026-10-11 |
+> | 👤 作者 | Mizbaul Haque Maruf |
+>
+> **📄 英文摘要：**
+> Traffic sign detection plays a vital role in intelligent transportation systems, supporting the safe operation of advanced driver assistance systems and autonomous vehicles. Despite significant progress in real\-time object detection, accurately identifying traffic signs under challenging conditions remains difficult. Variations in lighting, adverse weather, motion blur, and partial occlusion often reduce detection performance, especially for small or visually degraded signs where important spatial information can be lost. To address these challenges, we propose Squeeze\-Aware\-YOLO, a lightweight traffic sign detection framework that introduces a multi\-branch bottleneck module combining convolutional kernels of different sizes with a Squeeze\-and\-Excitation mechanism to improve feature extraction and adaptive channel weighting. In addition, we integrate the Multi\-Branch Auxiliary Feature Pyramid Network and Re\-parameterized Heterogeneous Multi\-Scale modules to strengthen multi\-scale feature representation and feature fusion while preserving real\-time inference efficiency for practical deployment. The proposed approach is evaluated on the Bangladeshi Traffic Sign Detection Dataset, the CSUST Chinese Traffic Sign Detection Benchmark 2021, and the German Traffic Sign Detection Benchmark, achieving mAP@0.5 scores of 74.7%, 79.4%, and 84.0%, respectively, while consistently outperforming recent state\-of\-the\-art YOLO\-based traffic sign detectors. These findings demonstrate that combining multi\-scale receptive fields, channel attention, and enhanced feature fusion enables more accurate and robust traffic sign detection while maintaining the computational efficiency required for real\-world deployment.
+>
+> 🔗 [阅读论文](http://arxiv.org/abs/2610.15604v1)
+
+---
+
+> ### 4. JMT\-YOLO: Multi\-task Domain Adaptation via Segmentation\-Guided Consistency Learning
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -28,7 +70,7 @@
 
 ---
 
-> ### 2. Post\-Training Semantic Lifting for 3D Gaussian Splatting: Separating Detector, Lifting and Representation Error
+> ### 5. Post\-Training Semantic Lifting for 3D Gaussian Splatting: Separating Detector, Lifting and Representation Error
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -39,48 +81,6 @@
 > The same Gaussian of a 3D Gaussian Splatting model is seen from many views, and these views do not always agree on the class it belongs to. The Gaussian may be occluded in some of them, and the confidence of the detector is not the same from one view to another. The ground truth, on the other hand, is given as an annotated mesh, because two training runs do not produce the same Gaussians. In this work, we propose a post\-training lifting method that works with one target class at a time and combines the information coming from all the views. Target and non\-target evidence are accumulated simultaneously, weighted by the visibility of each Gaussian in each view. After that, the Gaussians are filtered with two thresholds: a main threshold $β$ selects the high\-confidence seeds, and a lower one $γβ$ adds the connected components around them. For the evaluation, the labels are transferred from the Gaussians to the mesh vertices that are both visible and annotated. With this design, we can separate three sources of error: the 2D detector, the lifting and the transfer between representations. The thresholds and the transfer operator are chosen on seven Replica validation scenes, and the method is evaluated on ten held\-out ScanNet\+\+ scenes with the same values for every scene and class. The mean mIoU on the validation scenes was 0.93 with masks from the dataset annotations and 0.65 with YOLO masks, and on the ScanNet\+\+ test scenes it was 0.80 and 0.54. Compared with thresholding the evidence per view, as a previous version of the method did, the fraction improves the test mIoU by 0.24 and makes it possible to use a single threshold for all the classes and scenes of both datasets. Finally, the error analysis shows that most of the remaining error comes from the detector.
 >
 > 🔗 [阅读论文](http://arxiv.org/abs/2610.08756v1)
-
----
-
-> ### 3. Towards benchmarking Western Bluebird detection in the wild
->
-> | 属性 | 内容 |
-> |:---:|:---|
-> | 📅 发布日期 | 2026-10-06 |
-> | 👤 作者 | Estela Monserrat Arriaga Santana |
->
-> **📄 英文摘要：**
-> Bird monitoring in natural environments is challenging due to the small size of some species of birds relative to the scene, background clutter, variability in illumination, and the observers' viewpoint. Progress is further limited by the scarcity of large\-scale, realistic datasets, which are essential for understanding behavioral patterns. To address this gap, we introduce a new benchmark dataset for the detection and segmentation of Western bluebirds \(Sialia Mexicana\), comprising over 6,000 labeled images from 41 recording sessions. The dataset features high\-resolution \(4K\) in\-the\-wild images in which birds occupy only a small fraction of the image. We evaluated supervised detectors, open\-vocabulary models under zero\-shot and fine\-tuned settings, and segmentation approaches. Supervised detectors remain the most reliable overall, with Faster R\-CNN achieving the highest detection mAP and RT\-DETR offering the best precision\-recall trade\-off. Open\-vocabulary models perform poorly in zero\-shot settings; however, fine\-tuning substantially improves their performance, with YOLO\-World becoming competitive with supervised methods and achieving the highest precision, F1\-score, and mAP@0.5. For segmentation, supervised methods significantly outperform Grounded\-SAM and SAM 3: Mask R\-CNN achieves the highest mask mAP, while YOLOv8\-Seg provides the best precision and fastest inference. A diagnostic analysis further shows that failures are not explained by object size alone, but by a combination of apparent scale, brightness, contrast, clutter, blur, crowding, and recording\-session variation. Overall, our findings highlight the difficulty of zero\-shot bird detection in cluttered ecological scenes and underscore the importance of domain adaptation in small\-object settings.
->
-> 🔗 [阅读论文](http://arxiv.org/abs/2610.07802v1)
-
----
-
-> ### 4. AUTOPILOT An Advanced Perception, Localization and Path Planning Techniques for Autonomous Vehicles Using YOLOv7 and MiDaS
->
-> | 属性 | 内容 |
-> |:---:|:---|
-> | 📅 发布日期 | 2026-10-05 |
-> | 👤 作者 | Harshkumar Devmurari |
->
-> **📄 英文摘要：**
-> Self driving vehicles have emerged as a reliable technology that has the capability to transform transportation and mobility. The development of self driving cars requires significant advances in a number of areas, including perception, localization, decision making, and control. This research paper is based on the project implementation of the combination of object detection using YOLO \(You Only Look Once\), depth sensing using MiDaS for the localization and perception of obstacles, perspective transform, and decision making for path planning in self driving cars. The contemporary state of the technology for object detection, depth sensing, localization, and path planning evaluates the performance of the combined system through simulations and experiments. The results show that the combination of YOLO and MiDaS provides a new robust system for object detection and depth sensing. This research paper contributes to the advancement of self driving car technology and provides new and innovative approaches to the perception and localization of obstacles in the environment. Keywords: YOLO, MiDaS, perception, localization, decision making
->
-> 🔗 [阅读论文](http://arxiv.org/abs/2610.06232v1)
-
----
-
-> ### 5. Vision\-enabled detection of safety helmet compliance in construction zones
->
-> | 属性 | 内容 |
-> |:---:|:---|
-> | 📅 发布日期 | 2026-10-05 |
-> | 👤 作者 | Tri Nhut Do\* |
->
-> **📄 英文摘要：**
-> In the rapidly evolving field of construction management, worker safety remains a top priority. This paper introduces an innovative vision\-based system for real\-time detection of helmet compliance, specifically designed for construction sites, utilizing advanced computer vision techniques and machine learning algorithms within the YOLO \(you only look once\) framework. Our system leverages high\-resolution video feeds from strategically positioned cameras to monitor adherence to safety regulations regarding helmet usage. By employing deep learning methodologies, the system effectively identifies individuals not wearing helmets, thereby significantly mitigating the risk of head injuries among workers. Our training and validation results revealed an impressive precision exceeding 97% at mAP@0.5 for both helmeted and non\-helmeted individuals. Furthermore, our experiments demonstrate exceptional detection accuracy, demonstrating the system's resilience under varying lighting conditions and diverse worker movements. The consistent decrease in loss and improvement in metrics throughout training validates the effectiveness of the YOLOv8 model in enhancing recognition performance. The implications of this research extend beyond mere regulatory compliance, opening avenues for innovative applications in occupational safety management. This study highlights the critical role of technology in protecting lives and lays the groundwork for future advancements in smart construction environments.
->
-> 🔗 [阅读论文](http://arxiv.org/abs/2610.05756v1)
 
 ---
 
