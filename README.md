@@ -14,7 +14,21 @@
 
 ## 📑 论文列表
 
-> ### 1. Precision Cotton Disease Management: Leveraging UAV Imagery and Custom YOLO Deep Learning Framework for Enhanced Detection
+> ### 1. Plate\-YOLO: An End\-to\-End Object Detection Framework for Robust Astrometric Registration of Historical Plates
+>
+> | 属性 | 内容 |
+> |:---:|:---|
+> | 📅 发布日期 | 2026-10-19 |
+> | 👤 作者 | Quanfeng Xu |
+>
+> **📄 英文摘要：**
+> Historical astronomical plates provide a long temporal baseline for time\-domain astrophysics, but degradation and structural artifacts can hinder automated astrometric calibration. We present Plate\-YOLO, a framework that combines source detection and stellar classification in one detector and supplies source catalogs to a separate astrometric solver. The detector adapts YOLOv5 with Space\-to\-Depth feature rearrangement, SimAM attention, a high\-resolution P2 head, and a Normalized Wasserstein Distance loss for small bounding boxes. A Gaia\-guided fine\-tuning procedure uses initially solved plates to construct labels for a new archive. On 150 UBAI plates for which the conventional pipeline had failed, the Chinese\-trained model solved 40 plates, and target\-archive fine\-tuning recovered a further 106, giving an overall recovery rate of 146/150 \(97.3%\). In the reported hardware configuration, source extraction took 6.61 s per plate for Plate\-YOLO and 16.73 s for SExtractor. These results demonstrate the practical value of adapting source detection to degraded historical plates.
+>
+> 🔗 [阅读论文](http://arxiv.org/abs/2610.25677v1)
+
+---
+
+> ### 2. Precision Cotton Disease Management: Leveraging UAV Imagery and Custom YOLO Deep Learning Framework for Enhanced Detection
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -28,7 +42,7 @@
 
 ---
 
-> ### 2. Replay Pruning and Few\-Bit Integer Inference for Hardware\-Efficient Speed\-Sign Recognition
+> ### 3. Replay Pruning and Few\-Bit Integer Inference for Hardware\-Efficient Speed\-Sign Recognition
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -42,7 +56,7 @@
 
 ---
 
-> ### 3. napari\-TurboBox: Interactive Multi\-Viewer Bounding Box Annotation for AI\-Guided Volumetric Bioimaging
+> ### 4. napari\-TurboBox: Interactive Multi\-Viewer Bounding Box Annotation for AI\-Guided Volumetric Bioimaging
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -58,7 +72,7 @@
 
 ---
 
-> ### 4. Identifying Planetary Nebulae Candidates from IPHAS and VPHAS\+ Surveys via YOLO Deep Learning Models
+> ### 5. Identifying Planetary Nebulae Candidates from IPHAS and VPHAS\+ Surveys via YOLO Deep Learning Models
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -69,20 +83,6 @@
 > We present a deep learning detection method capable of effectively identifying planetary nebulae \(PNe\) on IPHAS and VPHAS\+ surveys. Our detection pipeline is based on the YOLO architecture and is adaptable to other datasets. Using the HiPS system, we preprocess and augment the $r$, $i$, and $Hα$ bands to produce two red, green, and blue \(RGB\) image datasets: \(1\) $640 times 640$ px images at full resolution, and \(2\) $1 280 times 1 280$ px images designed to capture extended objects up to $0.2$ deg. Images of $sim 2600$ PNe are labelled using the HASH database. The loss function and evaluation metrics are adapted to the diffuse and low\-contrast nature of PNe; a very low intersection over union \(IoU\) threshold \($1%$\) is used. A $k$\-fold cross validation shows that the YOLOv12m model achieves an average precision of $0.979$ on the first dataset. At a confidence threshold of $0.15$, it achieves a precision rate of $98.7%$ and a recall rate of $97.4%$. We deployed our system \(on $1280 times 1280$ images\) on the full surveys' coverage \($sim 3755$ deg$^2$\), and present a preliminary analysis of the detection results. The system is robust against artifacts such as CCD corner defects and HiPS tile joints. Our convolutional\-neural\-network\-based model achieved excellent results on the test set, comparable to\-or exceeding\-that of a recent Swin Transformer approach. However, a challenge persists when applying deep learning models to extensive and densely populated Galactic fields: the development of an automated system that can effectively discriminate PNe from mimics that human experts are able to distinguish \(e.g., H II regions\). We outline possible improvements for future work.
 >
 > 🔗 [阅读论文](http://arxiv.org/abs/2610.19760v1)
-
----
-
-> ### 5. Augmenting Real\-time Visualization in Minimally Invasive Surgery with Particle Filtering and Depth\-Aware Occlusion Handling
->
-> | 属性 | 内容 |
-> |:---:|:---|
-> | 📅 发布日期 | 2026-10-13 |
-> | 👤 作者 | Anuska Sarkar |
->
-> **📄 英文摘要：**
-> We present a real\-time, hybrid framework for occlusion handling and depth\-aware tracking in minimally invasive surgeries \(MIS\). Occlusions caused by surgical instruments often obscure the region of interest \(ROI\), affecting surgical precision. To address this, our approach integrates enhanced You Only Look Once \(YOLO\) based detection, Particle Filtering \(PF\), and monocular depth estimation using Multiple Depth Estimation Accuracy with Single Network \(MiDaS\). Occlusion is detected using a distance\-based threshold between instruments and ROI. Experimental results demonstrate robust instrument detection with a confidence score of 0.85, effective occlusion event handling, and accurate depth prediction with an MAE of 0.34 cm and RMSE of 0.53 cm. Independent phantom\-based validation against stereo depth measurements yielded an MAE of 0.65 cm and RMSE of 0.66 cm. The framework further achieved an occlusion detection accuracy of 81.95% while maintaining real\-time performance at 38.7 FPS. Preliminary surgeon feedback indicates that the proposed visualization framework is clinically relevant and holds promise for future intraoperative image\-guided navigation and decision support in MIS.
->
-> 🔗 [阅读论文](http://arxiv.org/abs/2610.18422v1)
 
 ---
 
