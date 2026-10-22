@@ -14,7 +14,51 @@
 
 ## 📑 论文列表
 
-> ### 1. Plate\-YOLO: An End\-to\-End Object Detection Framework for Robust Astrometric Registration of Historical Plates
+> ### 1. TEMPL: A Resource\-Efficient and Transparent Model\-Free Framework for Pseudo\-Label Generation in Material CT Scans
+>
+> | 属性 | 内容 |
+> |:---:|:---|
+> | 📅 发布日期 | 2026-10-20 |
+> | 👤 作者 | Ashiqur Rahman |
+>
+> **📄 英文摘要：**
+> The scarcity of large annotated datasets limits deep learning \(DL\) segmentation in material CT analysis. DL\-based pseudo\-labeling can help, but it is often computationally expensive and hard to interpret. We introduce a multi\-stage, model\-free framework that generates pseudo\-labels directly from grayscale CT scans. It combines thresholding, morphological dilation, and a custom breadth\-first search region\-growing algorithm to produce polygonal annotations without pre\-trained weights, labeled data, or a GPU. We compare it against the zero\-shot Segment Anything Model \(SAM\), a fully supervised 3D U\-Net, and classical baselines. On a dendrite dataset with ground truth, our method reaches 63.19% IoU versus 10.74% for zero\-shot SAM, with four times the instance recall at 0.5 IoU \(33.3% versus 8.3%\). The supervised 3D U\-Net serves as a reference ceiling that requires expert labels. On a silica sand specimen, YOLO models trained on our labels performed comparably to models trained on SAM labels in a qualitative comparison. Across 1,053 extracted grains, the median equivalent diameter was 163.8 micrometers, near the specimen's known 106 to 150 micrometers sieve range, compared with 219.5 micrometers for SAM, whose labels merge adjacent particles and add spurious detections. A sensitivity analysis shows a stable operating range for the key threshold and a sharp, predictable failure point linked to phase contrast. Our method needs 15s per image on a standard CPU versus 28s for SAM on a GPU. These results support our transparent approach as a tool for annotation bootstrapping and microstructural quantification in resource\-limited settings.
+>
+> 🔗 [阅读论文](http://arxiv.org/abs/2610.28974v1)
+
+---
+
+> ### 2. Sketch2Sim: an end\-to\-end modular framework for hand\-drawn circuit analysis
+>
+> | 属性 | 内容 |
+> |:---:|:---|
+> | 📅 发布日期 | 2026-10-20 |
+> | 👤 作者 | Mohammad Kawsar |
+>
+> **📄 英文摘要：**
+> This study proposes a sketch\-to\-simulation system to solve handwritten circuit diagrams. The system converts raw images into a Simulation Program with Integrated Circuit Emphasis \(SPICE\)\-compatible netlist and automatically calculates the circuit's nodal voltages and currents. Another objective is to propose a holistic framework that benefits students and educators by enhancing the teaching and learning experience of electric circuits and expediting engineering design reviews. This article presents a multistage pipeline that converts raw photographs of handwritten electric circuits into executable SPICE\-like netlists, providing a solution. A dataset of 1,000 hand\-drawn Resistor\-Inductor\-Capacitor \(RLC\) circuits was curated and annotated for components, text regions, and character recognition. The proposed system decomposes a circuit diagram into three stages: \(i\) dual You Only Look Once \(YOLO\)\-based detectors for components and text regions, \(ii\) a Convolutional Recurrent Neural Network \(CRNN\) with Connectionist Temporal Classification \(CTC\) and Optical Character Recognition \(OCR\)\-based domain\-aware symbol value extraction, and \(iii\) image processing with thresholding, skeletonization, and Density\-Based Spatial Clustering of Applications with Noise \(DBSCAN\) to automatically identify nodes and map them with corresponding components. The proposed system produces the netlist and solves the circuit. The qualitative and quantitative ablation studies on modular stages, as well as end\-to\-end tests, demonstrate robust performance across various handwriting styles, lighting conditions, and clutter.This study serves as an interactive learning aid and practical tool for professionals, providing a comprehensive user interface \(UI\), enabling rapid digitization of circuit sketches for study, design, prototyping, or troubleshooting.
+>
+> 🔗 [阅读论文](http://arxiv.org/abs/2610.28836v1)
+
+---
+
+> ### 3. DocLayout\-YOLO: Axis\-Attentive Document Layout Detector with Mesh\-Guided Synthetic Pretraining
+>
+> | 属性 | 内容 |
+> |:---:|:---|
+> | 📅 发布日期 | 2026-10-20 |
+> | 👤 作者 | Zhiyuan Zhao |
+>
+> **📄 英文摘要：**
+> Accurate and efficient document layout analysis is critical for modern document parsing systems. However, although the YOLO framework represents a leading paradigm for the real\-time detector, its adaptation to heterogeneous documents remains underexplored. To address this gap, we propose DocLayout\-YOLO, a document\-specialized real\-time detector that integrates diverse synthetic document pretraining and page\-axis context modeling. From the data perspective, we introduce MeshLayout\-1M, a synthetic pretraining corpus generated by the proposed Mesh\-candidate BestFit algorithm, which provides large\-scale and diverse document layouts for pretraining and improves adaptation to heterogeneous document scenarios. From the model perspective, we propose Page\-Axis Layout Attention \(PALA\), which captures long\-range dependencies along the horizontal and vertical page axes while remaining computationally efficient. Extensive experiments demonstrate that DocLayout\-YOLO achieves state\-of\-the\-art performance on four heterogeneous document benchmarks, obtaining 72.4%/75.5%/96.0%/73.1% mAP50:95 on D4LA, M6Doc, HJDataset, and PRIMA\-LAD, respectively. Compared with existing real\-time detectors, DocLayout\-YOLO establishes a superior accuracy\-efficiency trade\-off in document layout analysis. Code, model, and data are available at https://github.com/opendatalab/DocLayout\-YOLO/tree/release\-v2.
+>
+> **💻 代码链接：** https://github.com/opendatalab/DocLayout-YOLO/tree/release-v2.
+>
+> 🔗 [阅读论文](http://arxiv.org/abs/2610.28171v1)
+
+---
+
+> ### 4. Plate\-YOLO: An End\-to\-End Object Detection Framework for Robust Astrometric Registration of Historical Plates
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -28,7 +72,7 @@
 
 ---
 
-> ### 2. Precision Cotton Disease Management: Leveraging UAV Imagery and Custom YOLO Deep Learning Framework for Enhanced Detection
+> ### 5. Precision Cotton Disease Management: Leveraging UAV Imagery and Custom YOLO Deep Learning Framework for Enhanced Detection
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -39,50 +83,6 @@
 > Cotton sustains the textile economies of over 80 countries with an annual yield of 113 million bales, yet 30\-60% of yield losses are still attributed to viral, bacterial, and fungal diseases that remain undetected until manual field scouting. To address this critical issue, the integration of Unmanned Aerial Vehicle \(UAV\) imagery with deep learning offers a scalable early\-warning system; however, existing models suffer from low early\-stage accuracy, poor transferability, and high computational cost. In this paper, we propose Cotton\-Vision, a fully convolutional single\-stage detector that synergizes three lightweight architectural innovations: Ghost Bottleneck modules for a 20% parameter reduction, Efficient Channel Attention \(ECA\) for adaptive feature recalibration, and Cross\-Stage Partial \(CSP\) fusion for enriched gradient flow. The network is trained on a novel dataset collected across seven cotton fields in the Punjab province of Pakistan, comprising over 2,700 high\-resolution drone images. Extensive data augmentation \(rotation, shear, exposure, and saturation\) expands the dataset to 11,704 training samples. On a held\-out test set, Cotton\-Vision achieves a precision of 97.7%, a recall of 77.7%, an mAP@50 of 85.6%, and an mAP@50\-95 of 76.6%. These results represent a 10\-20% improvement in precision, recall, and mAP over state\-of\-the\-art baselines, including YOLOv5, YOLOv8, YOLOv11, YOLOv12, RT\-DETR, and RF\-DETR. Through a comprehensive ablation study, we demonstrate that each proposed architectural enhancement contributes to the model's superior performance, yielding a 12\-16% mAP improvement over the baseline architecture. Our findings confirm that this synergy of lightweight and attention\-based modules provides a robust, computationally viable solution for early cotton disease detection.
 >
 > 🔗 [阅读论文](http://arxiv.org/abs/2610.24182v1)
-
----
-
-> ### 3. Replay Pruning and Few\-Bit Integer Inference for Hardware\-Efficient Speed\-Sign Recognition
->
-> | 属性 | 内容 |
-> |:---:|:---|
-> | 📅 发布日期 | 2026-10-16 |
-> | 👤 作者 | Se Un Park |
->
-> **📄 英文摘要：**
-> Speed\-limit sign recognition on an automotive camera system\-on\-chip \(SoC\) must fit a detector and a classifier \(the reader\) into the memory, arithmetic, and energy budgets of the device. In our two\-stage recognizer, the detector, a YOLO\-family network with ReLU and hard\-sigmoid operators, is compressed by channel replay: an iterative pruning cascade identifies the channels to remove, the recorded deletions are replayed on the original task\-trained network, the parent, and one continuous knowledge\-distillation recovery follows. On a YOLOv5n, replay removes 60.3% of the parameters at the accuracy of the parent and, in validation mAP50\-95 over five matched seeds, outperforms iterative pruning and training from scratch, and its per\-step variant \(per\-step replay\) is the most accurate pruning method. On a YOLOv8n, replay and per\-step replay outperform every other method and the unpruned parent. The reader, a five\-layer CNN with 18k parameters, and the post\-processing of the YOLOv5n and YOLOv8n heads use integer arithmetic only. With 4\-bit weights and 8\-bit activations \(W4A8\), the reader matches FP32 accuracy in 12.1 KB of on\-chip memory, and an executable streaming model reproduces the INT8 class predictions of its runtime on all 9,850 test crops. On a Jetson AGX Orin, INT8 is faster than FP16 only in the implicit formulation of TensorRT, and the replay detector runs fastest on the deep\-learning accelerator \(DLA\). Trained on public data only, the combined system of 0.72 M parameters recognizes 95.2% of the signs of a held\-out automotive camera at 90% precision and 94 frames per second.
->
-> 🔗 [阅读论文](http://arxiv.org/abs/2610.22811v1)
-
----
-
-> ### 4. napari\-TurboBox: Interactive Multi\-Viewer Bounding Box Annotation for AI\-Guided Volumetric Bioimaging
->
-> | 属性 | 内容 |
-> |:---:|:---|
-> | 📅 发布日期 | 2026-10-14 |
-> | 👤 作者 | Nils Friederich |
->
-> **📄 英文摘要：**
-> Promptable segmentation models turn one 3D bounding box into an instance mask. Box placement therefore limits how fast microscopy volumes with thousands of objects are annotated. Each box must be checked in several synchronized viewers, but napari\-bbox shares no state between viewers. An edit must update every viewer and slows down with more boxes. napari\-TurboBox instead holds one shared copy of the boxes for all viewers. In a four\-viewer layout, napari\-TurboBox needs a few milliseconds per mouse move to update the three slice viewers up to $10^4$ boxes. The same update in napari\-bbox leaves the 33 ms budget beyond about $10^3$ boxes and takes 159 ms at $10^4$. Boxes stay axis\-aligned and export to COCO and YOLO as per\-slice 2D boxes.   napari\-TurboBox is a pure\-Python plugin for napari 0.6.6 to 0.9. The code is available at https://github.com/N\-Friederich/napari\-turbobox under the Apache 2.0 licence, and version 0.1.0 is archived at https://doi.org/10.5281/zenodo.23090828 on Zenodo.
->
-> **💻 代码链接：** https://github.com/N-Friederich/napari-turbobox，https://doi.org/10.5281/zenodo.23090828
->
-> 🔗 [阅读论文](http://arxiv.org/abs/2610.22413v1)
-
----
-
-> ### 5. Identifying Planetary Nebulae Candidates from IPHAS and VPHAS\+ Surveys via YOLO Deep Learning Models
->
-> | 属性 | 内容 |
-> |:---:|:---|
-> | 📅 发布日期 | 2026-10-14 |
-> | 👤 作者 | Titouan Sérandour |
->
-> **📄 英文摘要：**
-> We present a deep learning detection method capable of effectively identifying planetary nebulae \(PNe\) on IPHAS and VPHAS\+ surveys. Our detection pipeline is based on the YOLO architecture and is adaptable to other datasets. Using the HiPS system, we preprocess and augment the $r$, $i$, and $Hα$ bands to produce two red, green, and blue \(RGB\) image datasets: \(1\) $640 times 640$ px images at full resolution, and \(2\) $1 280 times 1 280$ px images designed to capture extended objects up to $0.2$ deg. Images of $sim 2600$ PNe are labelled using the HASH database. The loss function and evaluation metrics are adapted to the diffuse and low\-contrast nature of PNe; a very low intersection over union \(IoU\) threshold \($1%$\) is used. A $k$\-fold cross validation shows that the YOLOv12m model achieves an average precision of $0.979$ on the first dataset. At a confidence threshold of $0.15$, it achieves a precision rate of $98.7%$ and a recall rate of $97.4%$. We deployed our system \(on $1280 times 1280$ images\) on the full surveys' coverage \($sim 3755$ deg$^2$\), and present a preliminary analysis of the detection results. The system is robust against artifacts such as CCD corner defects and HiPS tile joints. Our convolutional\-neural\-network\-based model achieved excellent results on the test set, comparable to\-or exceeding\-that of a recent Swin Transformer approach. However, a challenge persists when applying deep learning models to extensive and densely populated Galactic fields: the development of an automated system that can effectively discriminate PNe from mimics that human experts are able to distinguish \(e.g., H II regions\). We outline possible improvements for future work.
->
-> 🔗 [阅读论文](http://arxiv.org/abs/2610.19760v1)
 
 ---
 
