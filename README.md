@@ -14,7 +14,37 @@
 
 ## 📑 论文列表
 
-> ### 1. TEMPL: A Resource\-Efficient and Transparent Model\-Free Framework for Pseudo\-Label Generation in Material CT Scans
+> ### 1. Shifted Window Temporal Transformer for YOLO\-Guided Phase Recognition in Laparoscopic Cholecystectomy Surgery
+>
+> | 属性 | 内容 |
+> |:---:|:---|
+> | 📅 发布日期 | 2026-10-26 |
+> | 👤 作者 | Sheekar Banerjee |
+>
+> **📄 英文摘要：**
+> Intelligent operating rooms require accurate awareness of surgical workflow for better intra\-operative decisions, teamwork, and surgical documentation. Therefore, accurately recognizing surgical phase during surgery is crucial. However, previous artificial intelligence\-based methods provide fluctuating predictions for the transitions, restricting their clinical use. To address this challenge, we propose a clinically meaningful framework that integrates a Swin Transformer and Temporal Transformer Encoder \(TTE\) for effective surgical phase recognition and a parallel YOLOv11s network for real\-time surgical instrument localization. To avoid phase flickering and to produce stable workflow predictions, a causal temporal smoothing is applied. The proposed framework is tested on the Cholec80 dataset for the simultaneous recognition of the surgical phases and instruments. The overall phase recognition accuracy of this model was 92%, and the macro average F1\-score was 0.86. This performance surpasses CNN based methods such as EndoNet \(81.7%\) and SV\-RCNet \(85.3%\), as well as temporal convolutional and transformer\-based approaches including TeCNO \(88.6%\), Trans\-SVNet \(90.9%\), and LoViT \(91.5%\). Besides, the module of instrument detection achieved mAP@0.5 = 0.863. The reliability of the results is confirmed, obtaining a high recognition rate of the workflows, and a high accuracy of the localization of the instruments. The proposed framework can serve as a foundation for intelligent surgical assistance, enriching situation awareness, and potential robotic surgery applications. Code will be made publicly available at: https://github.com/ac005sheekar/LapChol\-Surgery\-Swin\-Cholec80
+>
+> **💻 代码链接：** https://github.com/ac005sheekar/LapChol-Surgery-Swin-Cholec80
+>
+> 🔗 [阅读论文](http://arxiv.org/abs/2610.35005v1)
+
+---
+
+> ### 2. AIPC: Evidence\-Guided Agent Workflows for PyTorch Project Deployment
+>
+> | 属性 | 内容 |
+> |:---:|:---|
+> | 📅 发布日期 | 2026-10-26 |
+> | 👤 作者 | Zhanwei Wu |
+>
+> **📄 英文摘要：**
+> Deploying and optimizing a PyTorch inference project on a dedicated accelerator, especially an on\-device NPU, requires more than using a framework device API as with CUDA. The project must be converted into hardware\-runtime artifacts and adapted to the target toolchain and application interface. Differences in model formats, quantization flows, operator support, and toolchain interfaces create cross\-layer problems spanning PyTorch/ONNX models, toolchains, runtimes, and device execution. LLM Agents can invoke tools to address such problems, but may drift because of insufficient domain knowledge, large configuration and repair spaces, or poor path selection.   We propose AIPC \(AI Porting & Conversion\), an Agent method for deploying PyTorch inference projects. AIPC combines structured Skills with toolchain, runtime, and profiling evidence to drive cross\-layer diagnosis and repair, organizing model adaptation, artifact building, on\-target execution, accuracy repair, and performance optimization into one deployment flow. We evaluate AIPC on the on\-device NPU path of Qualcomm QAIRT across vision, speech, LLM, and diffusion models. In two optimization cases, 6/7 Skill\-arm Whisper\-Small runs meet predefined accuracy and latency criteria versus 0/6 control runs, while YOLO\-Worldv2 achieves a 2.791x end\-to\-end speedup versus 1.599x for the control. Under a pre\-fixed deployment contract, Skill, tool permissions, and check conditions, some runs achieve zero in\-run human intervention \(0\-HITL\). We also examine Qwen3.8\-27B as a locally deployable model for driving an Agent workflow.
+>
+> 🔗 [阅读论文](http://arxiv.org/abs/2610.34890v1)
+
+---
+
+> ### 3. TEMPL: A Resource\-Efficient and Transparent Model\-Free Framework for Pseudo\-Label Generation in Material CT Scans
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -28,7 +58,7 @@
 
 ---
 
-> ### 2. Sketch2Sim: an end\-to\-end modular framework for hand\-drawn circuit analysis
+> ### 4. Sketch2Sim: an end\-to\-end modular framework for hand\-drawn circuit analysis
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -42,7 +72,7 @@
 
 ---
 
-> ### 3. DocLayout\-YOLO: Axis\-Attentive Document Layout Detector with Mesh\-Guided Synthetic Pretraining
+> ### 5. DocLayout\-YOLO: Axis\-Attentive Document Layout Detector with Mesh\-Guided Synthetic Pretraining
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -55,34 +85,6 @@
 > **💻 代码链接：** https://github.com/opendatalab/DocLayout-YOLO/tree/release-v2.
 >
 > 🔗 [阅读论文](http://arxiv.org/abs/2610.28171v1)
-
----
-
-> ### 4. Plate\-YOLO: An End\-to\-End Object Detection Framework for Robust Astrometric Registration of Historical Plates
->
-> | 属性 | 内容 |
-> |:---:|:---|
-> | 📅 发布日期 | 2026-10-19 |
-> | 👤 作者 | Quanfeng Xu |
->
-> **📄 英文摘要：**
-> Historical astronomical plates provide a long temporal baseline for time\-domain astrophysics, but degradation and structural artifacts can hinder automated astrometric calibration. We present Plate\-YOLO, a framework that combines source detection and stellar classification in one detector and supplies source catalogs to a separate astrometric solver. The detector adapts YOLOv5 with Space\-to\-Depth feature rearrangement, SimAM attention, a high\-resolution P2 head, and a Normalized Wasserstein Distance loss for small bounding boxes. A Gaia\-guided fine\-tuning procedure uses initially solved plates to construct labels for a new archive. On 150 UBAI plates for which the conventional pipeline had failed, the Chinese\-trained model solved 40 plates, and target\-archive fine\-tuning recovered a further 106, giving an overall recovery rate of 146/150 \(97.3%\). In the reported hardware configuration, source extraction took 6.61 s per plate for Plate\-YOLO and 16.73 s for SExtractor. These results demonstrate the practical value of adapting source detection to degraded historical plates.
->
-> 🔗 [阅读论文](http://arxiv.org/abs/2610.25677v1)
-
----
-
-> ### 5. Precision Cotton Disease Management: Leveraging UAV Imagery and Custom YOLO Deep Learning Framework for Enhanced Detection
->
-> | 属性 | 内容 |
-> |:---:|:---|
-> | 📅 发布日期 | 2026-10-16 |
-> | 👤 作者 | 1. Anwar Iqbal\*1 aiqbal. rime23smme@student. nust. edu. pk 2. Kunwar Faraz Ahmad Khan1 kunwar. faraz@smme. nust. edu. pk 3. Shahbaz Khan1 shahbaz. khan@smme. nust. edu. pk 4. Khawaja Fahad Iqbal1 fahad. iqbal@smme. nust. edu. pk 5. Sara Ali1 |
->
-> **📄 英文摘要：**
-> Cotton sustains the textile economies of over 80 countries with an annual yield of 113 million bales, yet 30\-60% of yield losses are still attributed to viral, bacterial, and fungal diseases that remain undetected until manual field scouting. To address this critical issue, the integration of Unmanned Aerial Vehicle \(UAV\) imagery with deep learning offers a scalable early\-warning system; however, existing models suffer from low early\-stage accuracy, poor transferability, and high computational cost. In this paper, we propose Cotton\-Vision, a fully convolutional single\-stage detector that synergizes three lightweight architectural innovations: Ghost Bottleneck modules for a 20% parameter reduction, Efficient Channel Attention \(ECA\) for adaptive feature recalibration, and Cross\-Stage Partial \(CSP\) fusion for enriched gradient flow. The network is trained on a novel dataset collected across seven cotton fields in the Punjab province of Pakistan, comprising over 2,700 high\-resolution drone images. Extensive data augmentation \(rotation, shear, exposure, and saturation\) expands the dataset to 11,704 training samples. On a held\-out test set, Cotton\-Vision achieves a precision of 97.7%, a recall of 77.7%, an mAP@50 of 85.6%, and an mAP@50\-95 of 76.6%. These results represent a 10\-20% improvement in precision, recall, and mAP over state\-of\-the\-art baselines, including YOLOv5, YOLOv8, YOLOv11, YOLOv12, RT\-DETR, and RF\-DETR. Through a comprehensive ablation study, we demonstrate that each proposed architectural enhancement contributes to the model's superior performance, yielding a 12\-16% mAP improvement over the baseline architecture. Our findings confirm that this synergy of lightweight and attention\-based modules provides a robust, computationally viable solution for early cotton disease detection.
->
-> 🔗 [阅读论文](http://arxiv.org/abs/2610.24182v1)
 
 ---
 
