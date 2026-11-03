@@ -14,7 +14,51 @@
 
 ## 📑 论文列表
 
-> ### 1. Shifted Window Temporal Transformer for YOLO\-Guided Phase Recognition in Laparoscopic Cholecystectomy Surgery
+> ### 1. ROD\-Dataset: A Pedestrian\-Perspective Benchmark of Urban Obstacle Classes for YOLO\-Based Detection
+>
+> | 属性 | 内容 |
+> |:---:|:---|
+> | 📅 发布日期 | 2026-10-31 |
+> | 👤 作者 | Abtin Zandi |
+>
+> **📄 英文摘要：**
+> Two groups of pedestrians face avoidable risk on the city sidewalk: people living with visual impairment, who reach an obstacle before anything warns them, and people walking with divided attention, who register a hazard late or not at all. A vision system can warn them only about obstacles it has learned to recognize, so its training data limits the protection it offers. No suitable training set exists: public benchmarks are recorded from vehicles, aerial platforms, or fixed rigs, general\-purpose detectors omit the street furniture that causes trips, and pedestrian\-focused collections are confined to single regions with incompatible class schemes. This paper introduces the Real\-time Obstacle Detection \(ROD\) dataset: more than 24,000 images and 40,000 annotated obstacles across 25 classes, from vehicles and people to the stairs, manholes, traffic cones, and benches that general\-purpose detectors overlook. Because street furniture differs between cities, ROD unifies twenty\-nine public collections onto one taxonomy and adds eye\-level imagery from two contrasting cities on two continents, Tehran and Toronto. Every label is human\-verified, and each capture campaign is admitted only after a compact detector shows it can learn the class. Six lightweight YOLO detectors \(nano and tiny variants\) benchmarked on ROD all exceed 0.86 recall; YOLO12n attains the highest recall \(0.889\), YOLO26n the highest precision \(0.925\), and YOLOv9t the best mAP@0.50 \(0.882\) with the fewest parameters. Because the recall and mAP rankings disagree, selecting a model by mAP does not minimize missed obstacles, so per\-class recall is reported for all 25 classes.
+>
+> 🔗 [阅读论文](http://arxiv.org/abs/2611.00681v1)
+
+---
+
+> ### 2. Communication\-Efficient Model\-Distributed Inference for CBRS Radar Detection at the Edge
+>
+> | 属性 | 内容 |
+> |:---:|:---|
+> | 📅 发布日期 | 2026-10-31 |
+> | 👤 作者 | Teng Li |
+>
+> **📄 英文摘要：**
+> The Citizens Broadband Radio Service \(CBRS\) shares the 3550\-3700 MHz band between incumbent radar systems and commercial LTE/5G users, so radar activity must be detected accurately and promptly. Spectrogram\-based YOLO detectors can localize coexisting radar and cellular signals, but running them on resource\-constrained edge devices is challenging. Model\-distributed inference \(MDI\) can increase throughput by partitioning a model across edge devices. Using an end\-to\-end pipeline from raw I/Q samples to on\-device detection, we show that partitioning recent YOLO generations incurs high activation\-transfer costs due to their multi\-scale structures. To reduce these costs, we propose CEDAR, a communication\-efficient, edge\-distributed architecture for radar detection. Its RF\-aware detector, CEDAR\-YOLO, removes YOLO's multi\-scale neck and two of its three detection scales, leaving a single\-scale path with independently configured frequency and time resolutions, which lowers the communication cost of partitioning. Its compression\-aware MDI framework, CEDAR\-MDI, integrates lightweight activation compressors and selects, for each compressor, the partition that minimizes the pipeline bottleneck. On an NVIDIA Jetson Orin Nano testbed with real\-world over\-the\-air data, CEDAR\-YOLO reduces the parameter count by 35\-57% and model inference time by 16\-33%, and CEDAR\-MDI achieves up to $3.27times$ the throughput of single\-device inference, with detection quality preserved in both cases.
+>
+> 🔗 [阅读论文](http://arxiv.org/abs/2611.00625v1)
+
+---
+
+> ### 3. Directional Dual\-Head Supervision for Real\-Time Source\-Free Polyp Segmentation
+>
+> | 属性 | 内容 |
+> |:---:|:---|
+> | 📅 发布日期 | 2026-10-30 |
+> | 👤 作者 | Hai\-Dang Nguyen |
+>
+> **📄 英文摘要：**
+> Source\-free domain adaptation \(SFDA\) is critical for medical image segmentation as it adapts a model to an unlabeled target domain without accessing source data, thereby preserving data privacy. However, its effectiveness is often limited by confirmation bias: self\-training models tend to miss small polyps, hallucinate foreground, and produce imprecise contours. We propose MedRT\-SFSeg, a real\-time SFDA framework built on a dual\-head one\-to\-one/one\-to\-many YOLO segmentation architecture. Mask\-DHF fuses precision\- and recall\-oriented predictions into stable pseudo\-instances, while DURR uses the sign of pixel\-level dual\-head disagreement as a directional cue to expand or shrink masks, and additionally recovers missed instances and suppresses hallucinations. Seg\-MARD further regularizes feature representations through mask\-guided, region\-stratified sampling. Experiments on bidirectional adaptation between Kvasir\-SEG and CVC\-ClinicDB show that MedRT\-SFSeg achieves 80.43%/80.77% Dice and 5.53/8.44 mm ASD, improving the non\-adapted baseline by 7.7 and 9.8 Dice points while running at more than 62 FPS end\-to\-end. These results suggest that segmentation\-aware dual\-head supervision can improve pseudo\-label quality without sacrificing real\-time inference. Project page: https://danielnguyen\-05.github.io/MedRT\-SFSeg
+>
+> **💻 代码链接：** https://danielnguyen-05.github.io/MedRT-SFSeg
+>
+> 🔗 [阅读论文](http://arxiv.org/abs/2611.00238v1)
+
+---
+
+> ### 4. Shifted Window Temporal Transformer for YOLO\-Guided Phase Recognition in Laparoscopic Cholecystectomy Surgery
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -30,7 +74,7 @@
 
 ---
 
-> ### 2. AIPC: Evidence\-Guided Agent Workflows for PyTorch Project Deployment
+> ### 5. AIPC: Evidence\-Guided Agent Workflows for PyTorch Project Deployment
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -41,50 +85,6 @@
 > Deploying and optimizing a PyTorch inference project on a dedicated accelerator, especially an on\-device NPU, requires more than using a framework device API as with CUDA. The project must be converted into hardware\-runtime artifacts and adapted to the target toolchain and application interface. Differences in model formats, quantization flows, operator support, and toolchain interfaces create cross\-layer problems spanning PyTorch/ONNX models, toolchains, runtimes, and device execution. LLM Agents can invoke tools to address such problems, but may drift because of insufficient domain knowledge, large configuration and repair spaces, or poor path selection.   We propose AIPC \(AI Porting & Conversion\), an Agent method for deploying PyTorch inference projects. AIPC combines structured Skills with toolchain, runtime, and profiling evidence to drive cross\-layer diagnosis and repair, organizing model adaptation, artifact building, on\-target execution, accuracy repair, and performance optimization into one deployment flow. We evaluate AIPC on the on\-device NPU path of Qualcomm QAIRT across vision, speech, LLM, and diffusion models. In two optimization cases, 6/7 Skill\-arm Whisper\-Small runs meet predefined accuracy and latency criteria versus 0/6 control runs, while YOLO\-Worldv2 achieves a 2.791x end\-to\-end speedup versus 1.599x for the control. Under a pre\-fixed deployment contract, Skill, tool permissions, and check conditions, some runs achieve zero in\-run human intervention \(0\-HITL\). We also examine Qwen3.8\-27B as a locally deployable model for driving an Agent workflow.
 >
 > 🔗 [阅读论文](http://arxiv.org/abs/2610.34890v1)
-
----
-
-> ### 3. TEMPL: A Resource\-Efficient and Transparent Model\-Free Framework for Pseudo\-Label Generation in Material CT Scans
->
-> | 属性 | 内容 |
-> |:---:|:---|
-> | 📅 发布日期 | 2026-10-20 |
-> | 👤 作者 | Ashiqur Rahman |
->
-> **📄 英文摘要：**
-> The scarcity of large annotated datasets limits deep learning \(DL\) segmentation in material CT analysis. DL\-based pseudo\-labeling can help, but it is often computationally expensive and hard to interpret. We introduce a multi\-stage, model\-free framework that generates pseudo\-labels directly from grayscale CT scans. It combines thresholding, morphological dilation, and a custom breadth\-first search region\-growing algorithm to produce polygonal annotations without pre\-trained weights, labeled data, or a GPU. We compare it against the zero\-shot Segment Anything Model \(SAM\), a fully supervised 3D U\-Net, and classical baselines. On a dendrite dataset with ground truth, our method reaches 63.19% IoU versus 10.74% for zero\-shot SAM, with four times the instance recall at 0.5 IoU \(33.3% versus 8.3%\). The supervised 3D U\-Net serves as a reference ceiling that requires expert labels. On a silica sand specimen, YOLO models trained on our labels performed comparably to models trained on SAM labels in a qualitative comparison. Across 1,053 extracted grains, the median equivalent diameter was 163.8 micrometers, near the specimen's known 106 to 150 micrometers sieve range, compared with 219.5 micrometers for SAM, whose labels merge adjacent particles and add spurious detections. A sensitivity analysis shows a stable operating range for the key threshold and a sharp, predictable failure point linked to phase contrast. Our method needs 15s per image on a standard CPU versus 28s for SAM on a GPU. These results support our transparent approach as a tool for annotation bootstrapping and microstructural quantification in resource\-limited settings.
->
-> 🔗 [阅读论文](http://arxiv.org/abs/2610.28974v1)
-
----
-
-> ### 4. Sketch2Sim: an end\-to\-end modular framework for hand\-drawn circuit analysis
->
-> | 属性 | 内容 |
-> |:---:|:---|
-> | 📅 发布日期 | 2026-10-20 |
-> | 👤 作者 | Mohammad Kawsar |
->
-> **📄 英文摘要：**
-> This study proposes a sketch\-to\-simulation system to solve handwritten circuit diagrams. The system converts raw images into a Simulation Program with Integrated Circuit Emphasis \(SPICE\)\-compatible netlist and automatically calculates the circuit's nodal voltages and currents. Another objective is to propose a holistic framework that benefits students and educators by enhancing the teaching and learning experience of electric circuits and expediting engineering design reviews. This article presents a multistage pipeline that converts raw photographs of handwritten electric circuits into executable SPICE\-like netlists, providing a solution. A dataset of 1,000 hand\-drawn Resistor\-Inductor\-Capacitor \(RLC\) circuits was curated and annotated for components, text regions, and character recognition. The proposed system decomposes a circuit diagram into three stages: \(i\) dual You Only Look Once \(YOLO\)\-based detectors for components and text regions, \(ii\) a Convolutional Recurrent Neural Network \(CRNN\) with Connectionist Temporal Classification \(CTC\) and Optical Character Recognition \(OCR\)\-based domain\-aware symbol value extraction, and \(iii\) image processing with thresholding, skeletonization, and Density\-Based Spatial Clustering of Applications with Noise \(DBSCAN\) to automatically identify nodes and map them with corresponding components. The proposed system produces the netlist and solves the circuit. The qualitative and quantitative ablation studies on modular stages, as well as end\-to\-end tests, demonstrate robust performance across various handwriting styles, lighting conditions, and clutter.This study serves as an interactive learning aid and practical tool for professionals, providing a comprehensive user interface \(UI\), enabling rapid digitization of circuit sketches for study, design, prototyping, or troubleshooting.
->
-> 🔗 [阅读论文](http://arxiv.org/abs/2610.28836v1)
-
----
-
-> ### 5. DocLayout\-YOLO: Axis\-Attentive Document Layout Detector with Mesh\-Guided Synthetic Pretraining
->
-> | 属性 | 内容 |
-> |:---:|:---|
-> | 📅 发布日期 | 2026-10-20 |
-> | 👤 作者 | Zhiyuan Zhao |
->
-> **📄 英文摘要：**
-> Accurate and efficient document layout analysis is critical for modern document parsing systems. However, although the YOLO framework represents a leading paradigm for the real\-time detector, its adaptation to heterogeneous documents remains underexplored. To address this gap, we propose DocLayout\-YOLO, a document\-specialized real\-time detector that integrates diverse synthetic document pretraining and page\-axis context modeling. From the data perspective, we introduce MeshLayout\-1M, a synthetic pretraining corpus generated by the proposed Mesh\-candidate BestFit algorithm, which provides large\-scale and diverse document layouts for pretraining and improves adaptation to heterogeneous document scenarios. From the model perspective, we propose Page\-Axis Layout Attention \(PALA\), which captures long\-range dependencies along the horizontal and vertical page axes while remaining computationally efficient. Extensive experiments demonstrate that DocLayout\-YOLO achieves state\-of\-the\-art performance on four heterogeneous document benchmarks, obtaining 72.4%/75.5%/96.0%/73.1% mAP50:95 on D4LA, M6Doc, HJDataset, and PRIMA\-LAD, respectively. Compared with existing real\-time detectors, DocLayout\-YOLO establishes a superior accuracy\-efficiency trade\-off in document layout analysis. Code, model, and data are available at https://github.com/opendatalab/DocLayout\-YOLO/tree/release\-v2.
->
-> **💻 代码链接：** https://github.com/opendatalab/DocLayout-YOLO/tree/release-v2.
->
-> 🔗 [阅读论文](http://arxiv.org/abs/2610.28171v1)
 
 ---
 
