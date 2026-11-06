@@ -14,7 +14,21 @@
 
 ## 📑 论文列表
 
-> ### 1. Comprehensive Evaluation of Monocular and Multi\-view 3D Human Pose Estimation Models for Fitness Exercise Analysis
+> ### 1. Energy\-Aware Open\-Vocabulary Detection Scheduling for Low\-Power Robotic Autonomy
+>
+> | 属性 | 内容 |
+> |:---:|:---|
+> | 📅 发布日期 | 2026-11-05 |
+> | 👤 作者 | Abdul Basit |
+>
+> **📄 英文摘要：**
+> Open\-vocabulary object detection \(OVD\) lets robots search for run\-time object queries, but fixed\-rate inference spends embedded compute on low\-value frames during idle motion, map revisits, or stable viewpoints. This paper presents an energy\-aware OVD scheduler for low\-power mobile robots. The scheduler uses odometry, map change, and detector confidence to switch among low\-, mid\-, and high\-power YOLO\-World\-S modes on a Jetson Orin Nano. We evaluate the energy\-quality trade\-off on an AgileX LIMO using 40 real navigation trials: two target objects, five placements per target\-policy pair, and four perception policies. Across bottle and cup trials, the scheduler records 8/10 mission success compared with 7/10 for each fixed\-rate baseline, while reducing mean Jetson input power \(a Jetson\-side power\-draw metric\) by 5.2% relative to an 8 Hz high\-rate baseline and lowering achieved OVD call rate by 34.0%. It does not minimize mission\-window Jetson input energy because longer missions can erase instantaneous power savings. A separate 60 s stationary microbenchmark isolates the perception workload: the scheduler lowers mean power from 8.045 W to 7.301 W and energy from 484.7 J to 438.1 J relative to the 8 Hz baseline. These results support robot\-state\-aware OVD scheduling as a promising power\-management mechanism with competitive task reliability, while showing that mission\-window Jetson input energy must be read together with task progress and runtime.
+>
+> 🔗 [阅读论文](http://arxiv.org/abs/2611.07663v1)
+
+---
+
+> ### 2. Comprehensive Evaluation of Monocular and Multi\-view 3D Human Pose Estimation Models for Fitness Exercise Analysis
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -28,7 +42,7 @@
 
 ---
 
-> ### 2. Attention Residual U\-Net for Enhanced Cross\-Dataset Polyp Localization in Endoscopy
+> ### 3. Attention Residual U\-Net for Enhanced Cross\-Dataset Polyp Localization in Endoscopy
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -42,7 +56,7 @@
 
 ---
 
-> ### 3. ROD\-Dataset: A Pedestrian\-Perspective Benchmark of Urban Obstacle Classes for YOLO\-Based Detection
+> ### 4. ROD\-Dataset: A Pedestrian\-Perspective Benchmark of Urban Obstacle Classes for YOLO\-Based Detection
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -56,7 +70,7 @@
 
 ---
 
-> ### 4. Communication\-Efficient Model\-Distributed Inference for CBRS Radar Detection at the Edge
+> ### 5. Communication\-Efficient Model\-Distributed Inference for CBRS Radar Detection at the Edge
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -67,22 +81,6 @@
 > The Citizens Broadband Radio Service \(CBRS\) shares the 3550\-3700 MHz band between incumbent radar systems and commercial LTE/5G users, so radar activity must be detected accurately and promptly. Spectrogram\-based YOLO detectors can localize coexisting radar and cellular signals, but running them on resource\-constrained edge devices is challenging. Model\-distributed inference \(MDI\) can increase throughput by partitioning a model across edge devices. Using an end\-to\-end pipeline from raw I/Q samples to on\-device detection, we show that partitioning recent YOLO generations incurs high activation\-transfer costs due to their multi\-scale structures. To reduce these costs, we propose CEDAR, a communication\-efficient, edge\-distributed architecture for radar detection. Its RF\-aware detector, CEDAR\-YOLO, removes YOLO's multi\-scale neck and two of its three detection scales, leaving a single\-scale path with independently configured frequency and time resolutions, which lowers the communication cost of partitioning. Its compression\-aware MDI framework, CEDAR\-MDI, integrates lightweight activation compressors and selects, for each compressor, the partition that minimizes the pipeline bottleneck. On an NVIDIA Jetson Orin Nano testbed with real\-world over\-the\-air data, CEDAR\-YOLO reduces the parameter count by 35\-57% and model inference time by 16\-33%, and CEDAR\-MDI achieves up to $3.27times$ the throughput of single\-device inference, with detection quality preserved in both cases.
 >
 > 🔗 [阅读论文](http://arxiv.org/abs/2611.00625v1)
-
----
-
-> ### 5. Directional Dual\-Head Supervision for Real\-Time Source\-Free Polyp Segmentation
->
-> | 属性 | 内容 |
-> |:---:|:---|
-> | 📅 发布日期 | 2026-10-30 |
-> | 👤 作者 | Hai\-Dang Nguyen |
->
-> **📄 英文摘要：**
-> Source\-free domain adaptation \(SFDA\) is critical for medical image segmentation as it adapts a model to an unlabeled target domain without accessing source data, thereby preserving data privacy. However, its effectiveness is often limited by confirmation bias: self\-training models tend to miss small polyps, hallucinate foreground, and produce imprecise contours. We propose MedRT\-SFSeg, a real\-time SFDA framework built on a dual\-head one\-to\-one/one\-to\-many YOLO segmentation architecture. Mask\-DHF fuses precision\- and recall\-oriented predictions into stable pseudo\-instances, while DURR uses the sign of pixel\-level dual\-head disagreement as a directional cue to expand or shrink masks, and additionally recovers missed instances and suppresses hallucinations. Seg\-MARD further regularizes feature representations through mask\-guided, region\-stratified sampling. Experiments on bidirectional adaptation between Kvasir\-SEG and CVC\-ClinicDB show that MedRT\-SFSeg achieves 80.43%/80.77% Dice and 5.53/8.44 mm ASD, improving the non\-adapted baseline by 7.7 and 9.8 Dice points while running at more than 62 FPS end\-to\-end. These results suggest that segmentation\-aware dual\-head supervision can improve pseudo\-label quality without sacrificing real\-time inference. Project page: https://danielnguyen\-05.github.io/MedRT\-SFSeg
->
-> **💻 代码链接：** https://danielnguyen-05.github.io/MedRT-SFSeg
->
-> 🔗 [阅读论文](http://arxiv.org/abs/2611.00238v1)
 
 ---
 
