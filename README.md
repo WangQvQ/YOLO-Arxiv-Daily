@@ -14,7 +14,35 @@
 
 ## 📑 论文列表
 
-> ### 1. Energy\-Aware Open\-Vocabulary Detection Scheduling for Low\-Power Robotic Autonomy
+> ### 1. UAV\-Based Computer Vision for Cattle Detection and Feed Bunk Spatial Analysis
+>
+> | 属性 | 内容 |
+> |:---:|:---|
+> | 📅 发布日期 | 2026-11-06 |
+> | 👤 作者 | Pedro Oliveira Torrente |
+>
+> **📄 英文摘要：**
+> Beef cattle production is central to Brazilian agribusiness and faces growing demands for efficiency, sustainability, and animal welfare. Precision Livestock Farming \(PLF\) offers tools to address these challenges, particularly through monitoring feeding\-related spatial patterns in confined systems. Feeding management plays a decisive role in animal performance, yet its evaluation still relies largely on subjective, labor\-intensive visual inspections that are hard to scale and prone to bias. This work proposes a computer vision framework based on Unmanned Aerial Vehicles \(UAVs\) to quantify cattle alignment and spatial dispersion at the feed bunk under real\-world feedlot conditions. A UAV dataset was collected during flight campaigns at a commercial feedlot in Mato Grosso do Sul, Brazil. Images were manually annotated into cattle head and cattle back classes to support object detection and image\-level spatial analysis of cattle distribution. You Only Look Once \(YOLO\) models, namely YOLOv8 and YOLOv11, were evaluated, with YOLOv8 small used for the downstream spatial analysis. The feed bunk region was segmented using the Segment Anything Model \(SAM\), and geometric metrics based on detected head positions were developed to characterize alignment, spacing regularity, and clustering. The selected detector achieved 84.30% mAP50 and 35.50% mAP50\-95, with an inference time of approximately 2.7 ms per image on an NVIDIA RTX 5060 Ti GPU. The resulting metrics distinguished representative regular and irregular spatial distributions by Root Mean Square Deviation \- RMSD \(1.06 m and 4.26 m\), Coefficient of Variation \- CV \(42.70% and 96.31%\), and clustering \(0 and 2 clusters\), respectively. These findings indicate that the proposed approach can provide indicators for assessing feed bunk spatial patterns in PLF.
+>
+> 🔗 [阅读论文](http://arxiv.org/abs/2611.08928v1)
+
+---
+
+> ### 2. Computer Vision by YOLOs for Detection of Major Diseases in Vietnamese Custard Apple Using Fruit Imagery
+>
+> | 属性 | 内容 |
+> |:---:|:---|
+> | 📅 发布日期 | 2026-11-06 |
+> | 👤 作者 | Tri Nhut Do |
+>
+> **📄 英文摘要：**
+> Amid Vietnam rapid digital transformation in agriculture, the integration of artificial intelligence technologies for identifying, monitoring, and predicting crop pests and diseases has emerged as an inevitable trend.
+>
+> 🔗 [阅读论文](http://arxiv.org/abs/2611.08886v1)
+
+---
+
+> ### 3. Energy\-Aware Open\-Vocabulary Detection Scheduling for Low\-Power Robotic Autonomy
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -28,7 +56,7 @@
 
 ---
 
-> ### 2. Comprehensive Evaluation of Monocular and Multi\-view 3D Human Pose Estimation Models for Fitness Exercise Analysis
+> ### 4. Comprehensive Evaluation of Monocular and Multi\-view 3D Human Pose Estimation Models for Fitness Exercise Analysis
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -42,7 +70,7 @@
 
 ---
 
-> ### 3. Attention Residual U\-Net for Enhanced Cross\-Dataset Polyp Localization in Endoscopy
+> ### 5. Attention Residual U\-Net for Enhanced Cross\-Dataset Polyp Localization in Endoscopy
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -53,34 +81,6 @@
 > Precise localization of pathologies in endoscopy is a critical task in medical imaging, with deep learning \(DL\) frameworks now serving as the primary methodology for automated lesion detection. Today, generic object detection methods, such as YOLO, provide state\-of\-the\-art performance in this context. However, their robustness often decreases under real\-world clinical conditions due to variations across endoscopic devices, intestinal content, dataset bias, and the presence of small or low\-contrast lesions. Motivated by these challenges, we propose a novel polyp detection framework based on a Attention Residual U\-Net offering enhanced polyp localization. Instead of directly regressing bounding boxes from global feature representations, the proposed method learns lesion\-focused spatial representations and converts them into bounding\-box predictions during inference. Unlike conventional encoder\-decoder localization frameworks that directly propagate all encoder activations into the decoding pathway, the proposed method selectively suppresses irrelevant background responses before feature reconstruction. This encourages the network to focus on lesion\-relevant spatial evidence under heterogeneous imaging conditions. To achieve this, the framework integrates residual feature propagation, attention\-guided encoder filtering, and multi\-scale contextual learning. The proposed framework was evaluated on multiple public endoscopic datasets acquired using different devices. The comparative experimental results validate its effectiveness over the relevant state\-of\-the\-art methods, with an improvement up to 22.0% in terms of the area under the receiving operating characteristic \(AUC\).
 >
 > 🔗 [阅读论文](http://arxiv.org/abs/2611.02726v1)
-
----
-
-> ### 4. ROD\-Dataset: A Pedestrian\-Perspective Benchmark of Urban Obstacle Classes for YOLO\-Based Detection
->
-> | 属性 | 内容 |
-> |:---:|:---|
-> | 📅 发布日期 | 2026-10-31 |
-> | 👤 作者 | Abtin Zandi |
->
-> **📄 英文摘要：**
-> Two groups of pedestrians face avoidable risk on the city sidewalk: people living with visual impairment, who reach an obstacle before anything warns them, and people walking with divided attention, who register a hazard late or not at all. A vision system can warn them only about obstacles it has learned to recognize, so its training data limits the protection it offers. No suitable training set exists: public benchmarks are recorded from vehicles, aerial platforms, or fixed rigs, general\-purpose detectors omit the street furniture that causes trips, and pedestrian\-focused collections are confined to single regions with incompatible class schemes. This paper introduces the Real\-time Obstacle Detection \(ROD\) dataset: more than 24,000 images and 40,000 annotated obstacles across 25 classes, from vehicles and people to the stairs, manholes, traffic cones, and benches that general\-purpose detectors overlook. Because street furniture differs between cities, ROD unifies twenty\-nine public collections onto one taxonomy and adds eye\-level imagery from two contrasting cities on two continents, Tehran and Toronto. Every label is human\-verified, and each capture campaign is admitted only after a compact detector shows it can learn the class. Six lightweight YOLO detectors \(nano and tiny variants\) benchmarked on ROD all exceed 0.86 recall; YOLO12n attains the highest recall \(0.889\), YOLO26n the highest precision \(0.925\), and YOLOv9t the best mAP@0.50 \(0.882\) with the fewest parameters. Because the recall and mAP rankings disagree, selecting a model by mAP does not minimize missed obstacles, so per\-class recall is reported for all 25 classes.
->
-> 🔗 [阅读论文](http://arxiv.org/abs/2611.00681v1)
-
----
-
-> ### 5. Communication\-Efficient Model\-Distributed Inference for CBRS Radar Detection at the Edge
->
-> | 属性 | 内容 |
-> |:---:|:---|
-> | 📅 发布日期 | 2026-10-31 |
-> | 👤 作者 | Teng Li |
->
-> **📄 英文摘要：**
-> The Citizens Broadband Radio Service \(CBRS\) shares the 3550\-3700 MHz band between incumbent radar systems and commercial LTE/5G users, so radar activity must be detected accurately and promptly. Spectrogram\-based YOLO detectors can localize coexisting radar and cellular signals, but running them on resource\-constrained edge devices is challenging. Model\-distributed inference \(MDI\) can increase throughput by partitioning a model across edge devices. Using an end\-to\-end pipeline from raw I/Q samples to on\-device detection, we show that partitioning recent YOLO generations incurs high activation\-transfer costs due to their multi\-scale structures. To reduce these costs, we propose CEDAR, a communication\-efficient, edge\-distributed architecture for radar detection. Its RF\-aware detector, CEDAR\-YOLO, removes YOLO's multi\-scale neck and two of its three detection scales, leaving a single\-scale path with independently configured frequency and time resolutions, which lowers the communication cost of partitioning. Its compression\-aware MDI framework, CEDAR\-MDI, integrates lightweight activation compressors and selects, for each compressor, the partition that minimizes the pipeline bottleneck. On an NVIDIA Jetson Orin Nano testbed with real\-world over\-the\-air data, CEDAR\-YOLO reduces the parameter count by 35\-57% and model inference time by 16\-33%, and CEDAR\-MDI achieves up to $3.27times$ the throughput of single\-device inference, with detection quality preserved in both cases.
->
-> 🔗 [阅读论文](http://arxiv.org/abs/2611.00625v1)
 
 ---
 
