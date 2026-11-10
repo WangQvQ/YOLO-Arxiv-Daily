@@ -14,7 +14,35 @@
 
 ## 📑 论文列表
 
-> ### 1. UAV\-Based Computer Vision for Cattle Detection and Feed Bunk Spatial Analysis
+> ### 1. Query\-Only Prompt\-Agnostic Attacks on Visual In\-Context Learning
+>
+> | 属性 | 内容 |
+> |:---:|:---|
+> | 📅 发布日期 | 2026-11-08 |
+> | 👤 作者 | Xiao Hu |
+>
+> **📄 英文摘要：**
+> Visual In\-Context Learning \(VICL\) enables promptable segmentation by conditioning RGB predictions on visual demonstrations, making it attractive for auto\-labeling, but its robustness under query\-only access and unknown deployment prompts remains underexplored. We study query\-only, prompt\-agnostic targeted attacks where the attacker observes only returned RGB outputs, without access to model internals or deployment prompts. Treating prompt\-conditioned RGB rendering as a distinct attack surface, we introduce two appearance\-space attacks: Color Hijack \(CH\) drives foreground colors toward the background to suppress visibility, while Task Hijack \(TH\) collapses instance\-distinguishing colors toward a shared color assignment. To transfer across unseen prompts, we propose a Self\-Prompt Surrogate \(SPS\) constructed from the clean query and its output. In a paired, matched\-budget SegGPT comparison, SPS outperforms the Random\-Prompt Surrogate \(RPS\), reducing CH instance foreground retention from 0.918 to 0.155 and TH palette\-aware tolerance distance from 0.345 to 0.225. Across four VICL models on COCO and HierText, CH suppresses foregrounds across semantic\-, instance\-, and text\-style outputs, while TH collapses instance colors under held\-out deployment prompts. After palette\-based decoding, TH also reduces the decoded instance count and mask retention while increasing instance merges. Finally, at 30% corruption, CH\-corrupted annotations from a publicly accessible VICL\-based auto\-labeling pipeline reduce downstream YOLO\-seg mAP50 from 0.761 to 0.281.
+>
+> 🔗 [阅读论文](http://arxiv.org/abs/2611.11116v1)
+
+---
+
+> ### 2. Keyline Detection with YOLO: Runway Perception for Vision\-Based Aircraft Landing
+>
+> | 属性 | 内容 |
+> |:---:|:---|
+> | 📅 发布日期 | 2026-11-06 |
+> | 👤 作者 | Leander Fritsch |
+>
+> **📄 英文摘要：**
+> Modern object detectors can predict keypoints as per\-object geometric features, but keypoints are inherently vulnerable to occlusion and truncation. Object edges can provide complementary information, often remaining observable even when partially occluded or when their defining endpoints leave the field of view. We therefore introduce object keyline detection, the task of predicting a fixed, semantically ordered set of infinite lines per object instance. Unlike the outputs of general line\-segment detectors, each keyline is associated with an object instance and identified by a semantic index, providing a line\-level analog of keypoints. To solve this task, we extend YOLO with keyline prediction parameterized in continuous Hesse\-normal form $\[ρ,cosθ,sinθ\]$, and introduce Object Keyline Similarity \(OKLS\), which serves as an evaluation metric, target assignment signal, and regression loss. We instantiate this formulation on runway perception in vision\-based landing, a motivating example containing semantic linear features that remain partially observable throughout the approach. Experiments show that our representation achieves the highest detection accuracy among four evaluated line parameterizations, and keylines integrate directly into standard YOLO heads as additional output channels without degrading keypoint performance or adding meaningful latency.
+>
+> 🔗 [阅读论文](http://arxiv.org/abs/2611.09316v1)
+
+---
+
+> ### 3. UAV\-Based Computer Vision for Cattle Detection and Feed Bunk Spatial Analysis
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -28,7 +56,7 @@
 
 ---
 
-> ### 2. Computer Vision by YOLOs for Detection of Major Diseases in Vietnamese Custard Apple Using Fruit Imagery
+> ### 4. Computer Vision by YOLOs for Detection of Major Diseases in Vietnamese Custard Apple Using Fruit Imagery
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -42,7 +70,7 @@
 
 ---
 
-> ### 3. Energy\-Aware Open\-Vocabulary Detection Scheduling for Low\-Power Robotic Autonomy
+> ### 5. Energy\-Aware Open\-Vocabulary Detection Scheduling for Low\-Power Robotic Autonomy
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -53,34 +81,6 @@
 > Open\-vocabulary object detection \(OVD\) lets robots search for run\-time object queries, but fixed\-rate inference spends embedded compute on low\-value frames during idle motion, map revisits, or stable viewpoints. This paper presents an energy\-aware OVD scheduler for low\-power mobile robots. The scheduler uses odometry, map change, and detector confidence to switch among low\-, mid\-, and high\-power YOLO\-World\-S modes on a Jetson Orin Nano. We evaluate the energy\-quality trade\-off on an AgileX LIMO using 40 real navigation trials: two target objects, five placements per target\-policy pair, and four perception policies. Across bottle and cup trials, the scheduler records 8/10 mission success compared with 7/10 for each fixed\-rate baseline, while reducing mean Jetson input power \(a Jetson\-side power\-draw metric\) by 5.2% relative to an 8 Hz high\-rate baseline and lowering achieved OVD call rate by 34.0%. It does not minimize mission\-window Jetson input energy because longer missions can erase instantaneous power savings. A separate 60 s stationary microbenchmark isolates the perception workload: the scheduler lowers mean power from 8.045 W to 7.301 W and energy from 484.7 J to 438.1 J relative to the 8 Hz baseline. These results support robot\-state\-aware OVD scheduling as a promising power\-management mechanism with competitive task reliability, while showing that mission\-window Jetson input energy must be read together with task progress and runtime.
 >
 > 🔗 [阅读论文](http://arxiv.org/abs/2611.07663v1)
-
----
-
-> ### 4. Comprehensive Evaluation of Monocular and Multi\-view 3D Human Pose Estimation Models for Fitness Exercise Analysis
->
-> | 属性 | 内容 |
-> |:---:|:---|
-> | 📅 发布日期 | 2026-11-02 |
-> | 👤 作者 | Néstor Ortega |
->
-> **📄 英文摘要：**
-> Three\-dimensional human pose estimation has become a fundamental component of computer vision systems for sports analytics, rehabilitation, and motion understanding. Although recent deep learning approaches have achieved remarkable accuracy on standard benchmarks, their performance under realistic sports scenarios remains insufficiently studied. Furthermore, the trade\-offs between recent monocular and multi\-view approaches, as well as the benefits of post\-processing techniques for improving temporal consistency, have not been systematically evaluated on fitness\-oriented datasets. This paper evaluates recent state\-of\-the\-art 3D human pose estimation methods on Fit3D, a dataset of synchronized multi\-view recordings of a wide variety of fitness exercises with accurate ground\-truth annotations. We study two recent monocular lifting approaches, TCPFormer and PoseMamba\-L, and a multi\-view model, MVGFormer, under a unified evaluation protocol. To investigate the influence of the input data, monocular methods are evaluated using ground\-truth keypoints and detections generated by recent 2D pose estimators, RTMPose and YOLO\-Pose. Additionally, we analyze the effectiveness of three temporal filters for reducing prediction jitter while preserving motion dynamics. Experimental results provide a detailed comparison of accuracy, temporal consistency, and robustness to imperfect 2D detections across the evaluated methods. Our analysis highlights the impact of detector quality on lifting\-based approaches, compares transformer\- and state\-space\-based temporal architectures, and discusses the practical trade\-offs between monocular and multi\-view systems for fitness motion analysis. Our results show that 2D detection quality, temporal modeling, and post\-processing must be considered jointly in pose estimation pipelines for exercise analysis.
->
-> 🔗 [阅读论文](http://arxiv.org/abs/2611.02929v1)
-
----
-
-> ### 5. Attention Residual U\-Net for Enhanced Cross\-Dataset Polyp Localization in Endoscopy
->
-> | 属性 | 内容 |
-> |:---:|:---|
-> | 📅 发布日期 | 2026-11-02 |
-> | 👤 作者 | Romil Imtiaz |
->
-> **📄 英文摘要：**
-> Precise localization of pathologies in endoscopy is a critical task in medical imaging, with deep learning \(DL\) frameworks now serving as the primary methodology for automated lesion detection. Today, generic object detection methods, such as YOLO, provide state\-of\-the\-art performance in this context. However, their robustness often decreases under real\-world clinical conditions due to variations across endoscopic devices, intestinal content, dataset bias, and the presence of small or low\-contrast lesions. Motivated by these challenges, we propose a novel polyp detection framework based on a Attention Residual U\-Net offering enhanced polyp localization. Instead of directly regressing bounding boxes from global feature representations, the proposed method learns lesion\-focused spatial representations and converts them into bounding\-box predictions during inference. Unlike conventional encoder\-decoder localization frameworks that directly propagate all encoder activations into the decoding pathway, the proposed method selectively suppresses irrelevant background responses before feature reconstruction. This encourages the network to focus on lesion\-relevant spatial evidence under heterogeneous imaging conditions. To achieve this, the framework integrates residual feature propagation, attention\-guided encoder filtering, and multi\-scale contextual learning. The proposed framework was evaluated on multiple public endoscopic datasets acquired using different devices. The comparative experimental results validate its effectiveness over the relevant state\-of\-the\-art methods, with an improvement up to 22.0% in terms of the area under the receiving operating characteristic \(AUC\).
->
-> 🔗 [阅读论文](http://arxiv.org/abs/2611.02726v1)
 
 ---
 
