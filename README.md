@@ -14,7 +14,37 @@
 
 ## 📑 论文列表
 
-> ### 1. Query\-Only Prompt\-Agnostic Attacks on Visual In\-Context Learning
+> ### 1. When Does Sliced Inference Pay Off? Resolution, Tiling and Dense Fusion for Small Object Detection
+>
+> | 属性 | 内容 |
+> |:---:|:---|
+> | 📅 发布日期 | 2026-11-09 |
+> | 👤 作者 | Stefan Becker |
+>
+> **📄 英文摘要：**
+> Sliced inference such as SAHI is the standard remedy for small objects in high\-resolution imagery, but its gains are usually measured against low\-resolution baselines. We revisit sliced inference with scale as the explicit variable and ask when tiling actually pays off. We compare seven dense detectors from four families on VisDrone and DOTA, under pre\-specified hypotheses, calibration\-only tuning and a single evaluation on held\-out test data. Two findings emerge. First, much of the benefit attributed to slicing is a resolution effect: on VisDrone, a single pass trained at a higher resolution outperforms tiling with box fusion \(merging decoded boxes\) for every detector that could be trained at that resolution, and at equal compute a higher resolution helps more than a larger model. Second, tiles carry complementary information that box fusion wastes. We introduce SCAHI \(Slicing with Coverage\-Aware Hyper Inference\), which accumulates the dense outputs of all passes with weights that give every image position the same total coverage, and reads objects off a peak grid fine enough to keep crowded neighbours apart. On identical passes, SCAHI outperforms box fusion for every YOLO detector on both datasets and matches it for FCOS. On DOTA, whose images far exceed the resolution a single pass can be trained at, tiles with SCAHI beat the best single pass for every detector, by 4.3 to 5.6 mAP50 at 2048 px, and replacing only SAHI's merge step by SCAHI adds 2.3 to 4.0 mAP50. An ablation attributes the gain to the border weighting and the resolution of the peak grid. Source code is available at https://github.com/beckerio/scahi.
+>
+> **💻 代码链接：** https://github.com/beckerio/scahi.
+>
+> 🔗 [阅读论文](http://arxiv.org/abs/2611.12657v1)
+
+---
+
+> ### 2. Compute Regeneration through Re\-Productization: Reorganizing Retired Edge AI Silicon into a Delivered Multilingual Service Robot
+>
+> | 属性 | 内容 |
+> |:---:|:---|
+> | 📅 发布日期 | 2026-11-08 |
+> | 👤 作者 | Hongyu Luo |
+>
+> **📄 英文摘要：**
+> Useful edge hardware can lose product support while retaining substantial computation. We treat this as systems design: compute regeneration here means re\-productization, retaining the compute module while redesigning the surrounding product organization. Our case is GEdgeBot, a multilingual service robot built around a retired 32 GB Jetson AGX Xavier. A source\-grounded inventory shows the box alone supplies inference, while the combined system exposes five on\-device AI services, a seven\-language speech chain, three sensing domains, and one deterministic seven\-byte control boundary. AI and orchestration stay on the Xavier; finite motor\-pulse generation on an STM32F407. Audits cover the six\-mode control state machine, readiness barriers and sound orientation. Historical single\-prototype measurements report 1,782 MB GPU memory with YOLO, Whisper\-small, and NLLB\-200 resident, a direct\-control p99 deviation rising from 0.24 to 49.93 ms under concurrent AI load, and six of six trigger\-to\-follow demonstrations at 4.35 s mean latency, with conversational voice unavailable. A November campaign restores an isolated inference stack, re\-measures AI workloads, and repeats control\-frame runs. Driving two execution organisations with the same 6,000 measured 50 ms frame intervals shows the finite\-pulse boundary removes host jitter from the pulse train but not the command start phase; its stopping bound is host\-enforced, while the MCU 16\-bit pulse field is unclamped. A six\-check static audit exposes a host\-\-MCU queue mismatch, and a 14\-scenario replay executes the audited main\(\) dispatcher across six modes with zero physical device opens and 54 contract\-checked frames. Results support an existence claim and a reproducible architectural hypothesis, not fleet\-level reliability. The 208 direct\-control ratio remains unreplicated; MCU waveform capture and on\-site fault injection remain open.
+>
+> 🔗 [阅读论文](http://arxiv.org/abs/2611.11698v1)
+
+---
+
+> ### 3. Query\-Only Prompt\-Agnostic Attacks on Visual In\-Context Learning
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -28,7 +58,7 @@
 
 ---
 
-> ### 2. Keyline Detection with YOLO: Runway Perception for Vision\-Based Aircraft Landing
+> ### 4. Keyline Detection with YOLO: Runway Perception for Vision\-Based Aircraft Landing
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -42,7 +72,7 @@
 
 ---
 
-> ### 3. UAV\-Based Computer Vision for Cattle Detection and Feed Bunk Spatial Analysis
+> ### 5. UAV\-Based Computer Vision for Cattle Detection and Feed Bunk Spatial Analysis
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -53,34 +83,6 @@
 > Beef cattle production is central to Brazilian agribusiness and faces growing demands for efficiency, sustainability, and animal welfare. Precision Livestock Farming \(PLF\) offers tools to address these challenges, particularly through monitoring feeding\-related spatial patterns in confined systems. Feeding management plays a decisive role in animal performance, yet its evaluation still relies largely on subjective, labor\-intensive visual inspections that are hard to scale and prone to bias. This work proposes a computer vision framework based on Unmanned Aerial Vehicles \(UAVs\) to quantify cattle alignment and spatial dispersion at the feed bunk under real\-world feedlot conditions. A UAV dataset was collected during flight campaigns at a commercial feedlot in Mato Grosso do Sul, Brazil. Images were manually annotated into cattle head and cattle back classes to support object detection and image\-level spatial analysis of cattle distribution. You Only Look Once \(YOLO\) models, namely YOLOv8 and YOLOv11, were evaluated, with YOLOv8 small used for the downstream spatial analysis. The feed bunk region was segmented using the Segment Anything Model \(SAM\), and geometric metrics based on detected head positions were developed to characterize alignment, spacing regularity, and clustering. The selected detector achieved 84.30% mAP50 and 35.50% mAP50\-95, with an inference time of approximately 2.7 ms per image on an NVIDIA RTX 5060 Ti GPU. The resulting metrics distinguished representative regular and irregular spatial distributions by Root Mean Square Deviation \- RMSD \(1.06 m and 4.26 m\), Coefficient of Variation \- CV \(42.70% and 96.31%\), and clustering \(0 and 2 clusters\), respectively. These findings indicate that the proposed approach can provide indicators for assessing feed bunk spatial patterns in PLF.
 >
 > 🔗 [阅读论文](http://arxiv.org/abs/2611.08928v1)
-
----
-
-> ### 4. Computer Vision by YOLOs for Detection of Major Diseases in Vietnamese Custard Apple Using Fruit Imagery
->
-> | 属性 | 内容 |
-> |:---:|:---|
-> | 📅 发布日期 | 2026-11-06 |
-> | 👤 作者 | Tri Nhut Do |
->
-> **📄 英文摘要：**
-> Amid Vietnam rapid digital transformation in agriculture, the integration of artificial intelligence technologies for identifying, monitoring, and predicting crop pests and diseases has emerged as an inevitable trend.
->
-> 🔗 [阅读论文](http://arxiv.org/abs/2611.08886v1)
-
----
-
-> ### 5. Energy\-Aware Open\-Vocabulary Detection Scheduling for Low\-Power Robotic Autonomy
->
-> | 属性 | 内容 |
-> |:---:|:---|
-> | 📅 发布日期 | 2026-11-05 |
-> | 👤 作者 | Abdul Basit |
->
-> **📄 英文摘要：**
-> Open\-vocabulary object detection \(OVD\) lets robots search for run\-time object queries, but fixed\-rate inference spends embedded compute on low\-value frames during idle motion, map revisits, or stable viewpoints. This paper presents an energy\-aware OVD scheduler for low\-power mobile robots. The scheduler uses odometry, map change, and detector confidence to switch among low\-, mid\-, and high\-power YOLO\-World\-S modes on a Jetson Orin Nano. We evaluate the energy\-quality trade\-off on an AgileX LIMO using 40 real navigation trials: two target objects, five placements per target\-policy pair, and four perception policies. Across bottle and cup trials, the scheduler records 8/10 mission success compared with 7/10 for each fixed\-rate baseline, while reducing mean Jetson input power \(a Jetson\-side power\-draw metric\) by 5.2% relative to an 8 Hz high\-rate baseline and lowering achieved OVD call rate by 34.0%. It does not minimize mission\-window Jetson input energy because longer missions can erase instantaneous power savings. A separate 60 s stationary microbenchmark isolates the perception workload: the scheduler lowers mean power from 8.045 W to 7.301 W and energy from 484.7 J to 438.1 J relative to the 8 Hz baseline. These results support robot\-state\-aware OVD scheduling as a promising power\-management mechanism with competitive task reliability, while showing that mission\-window Jetson input energy must be read together with task progress and runtime.
->
-> 🔗 [阅读论文](http://arxiv.org/abs/2611.07663v1)
 
 ---
 
