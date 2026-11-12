@@ -26,7 +26,7 @@
 >
 > **💻 代码链接：** https://github.com/beckerio/scahi.
 >
-> 🔗 [阅读论文](http://arxiv.org/abs/2611.12657v1)
+> 🔗 [阅读论文](http://arxiv.org/abs/2611.12657v2)
 
 ---
 
