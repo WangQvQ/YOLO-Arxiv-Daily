@@ -14,7 +14,35 @@
 
 ## 📑 论文列表
 
-> ### 1. What Limits Thermal Infrared Drone Detection? A Cross\-Dataset Benchmark Analysis
+> ### 1. Aerial Person Detection under Edge Constraints: Held\-Out Evaluation and Edge\-Ground Verification
+>
+> | 属性 | 内容 |
+> |:---:|:---|
+> | 📅 发布日期 | 2026-11-15 |
+> | 👤 作者 | Raghu Venkat |
+>
+> **📄 英文摘要：**
+> A search drone sees a missing person as a few pixels, carries a small computer, and shares a narrow radio link. We study person detection under those limits; the primary evaluations were declared before they ran, and later analyses are marked exploratory. In an exploratory comparison, holding out recording blocks inferred from thermal frame identifiers cut recall at a fixed false\-alarm target from 32.7% to 12.3%. With nothing tuned on test blocks, a 46,000\-parameter detector gated by a contrast cue finds 10.4% of people against 5.7% for the same network applied everywhere. A standard detector, YOLO11n, trained under the same folds finds 54.5% at a similar false\-alarm rate for about eleven times the arithmetic, and on our 4K field footage at 117 m has a walking person among its top 16 detections in up to 92% of frames against 74% for our board. Run alone, YOLO11n's thresholds set at one location overshot their false\-alarm target 1.7 to 3.4 times at new locations, and its best configuration at altitude cost 4 to 24 standard passes per frame. Re\-scoring its 16 best crops \(154 KB per frame\) with an 842,000\-parameter ground model, thresholds frozen on a validation location, raised recall from 44.9% to 53.7% against the same 16 crops with YOLO's own scores; in a post hoc paired analysis over 15 test locations the gain was \+8.8 points \[\+2.4, \+12.5\]. Pooled false detections fell from 0.86 to 0.64 per frame, but that paired change was not distinguishable from zero. Coverage of a still person in earth tones was very low for both detectors in the clips we flew.
+>
+> 🔗 [阅读论文](http://arxiv.org/abs/2611.20127v1)
+
+---
+
+> ### 2. Toward On\-Device Markerless 6DoF Tracking of a Physical Manipulative on a Mixed\-Reality Headset: A Preliminary Study
+>
+> | 属性 | 内容 |
+> |:---:|:---|
+> | 📅 发布日期 | 2026-11-13 |
+> | 👤 作者 | Guangxi Feng |
+>
+> **📄 英文摘要：**
+> AR\-Classroom uses physical models and virtual overlays to help learners explore spatial transformations. To align these overlays on a standalone headset, we developed a markerless six\-degree\-of\-freedom\(6DoF\) tracker for a LEGO airplane on the Meta Quest 3. A compact YOLO model trained on synthetic Unity renders predicts 20 keypoints from dynamic RGB crops resized to 128 by 128 pixels. A perspective\-n\-point solver estimates the airplane's pose from these predictions and the corresponding 3D landmarks. In a paired evaluation on 1,000 synthetic validation images, cropping guided by ground\-truth boxes increased the detection rate on annotated images from 32.5 to 46.2 percent. Mean keypoint F1 increased from 42.9 to 44.6 percent, with lower keypoint precision in the cropped view. In preliminary headset tests, 2 Hz was the highest tested tracking target at which the application maintained approximately 72 frames per second. A headset demonstration illustrates virtual overlay alignment with the physical airplane before and after a manual rotation. Quantitative 6DoF pose accuracy on real headset footage will be measured in future work.
+>
+> 🔗 [阅读论文](http://arxiv.org/abs/2611.18438v1)
+
+---
+
+> ### 3. What Limits Thermal Infrared Drone Detection? A Cross\-Dataset Benchmark Analysis
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -28,7 +56,7 @@
 
 ---
 
-> ### 2. When Does Sliced Inference Pay Off? Resolution, Tiling and Dense Fusion for Small Object Detection
+> ### 4. When Does Sliced Inference Pay Off? Resolution, Tiling and Dense Fusion for Small Object Detection
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -44,7 +72,7 @@
 
 ---
 
-> ### 3. Compute Regeneration through Re\-Productization: Reorganizing Retired Edge AI Silicon into a Delivered Multilingual Service Robot
+> ### 5. Compute Regeneration through Re\-Productization: Reorganizing Retired Edge AI Silicon into a Delivered Multilingual Service Robot
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -55,34 +83,6 @@
 > Useful edge hardware can lose product support while retaining substantial computation. We treat this as systems design: compute regeneration here means re\-productization, retaining the compute module while redesigning the surrounding product organization. Our case is GEdgeBot, a multilingual service robot built around a retired 32 GB Jetson AGX Xavier. A source\-grounded inventory shows the box alone supplies inference, while the combined system exposes five on\-device AI services, a seven\-language speech chain, three sensing domains, and one deterministic seven\-byte control boundary. AI and orchestration stay on the Xavier; finite motor\-pulse generation on an STM32F407. Audits cover the six\-mode control state machine, readiness barriers and sound orientation. Historical single\-prototype measurements report 1,782 MB GPU memory with YOLO, Whisper\-small, and NLLB\-200 resident, a direct\-control p99 deviation rising from 0.24 to 49.93 ms under concurrent AI load, and six of six trigger\-to\-follow demonstrations at 4.35 s mean latency, with conversational voice unavailable. A November campaign restores an isolated inference stack, re\-measures AI workloads, and repeats control\-frame runs. Driving two execution organisations with the same 6,000 measured 50 ms frame intervals shows the finite\-pulse boundary removes host jitter from the pulse train but not the command start phase; its stopping bound is host\-enforced, while the MCU 16\-bit pulse field is unclamped. A six\-check static audit exposes a host\-\-MCU queue mismatch, and a 14\-scenario replay executes the audited main\(\) dispatcher across six modes with zero physical device opens and 54 contract\-checked frames. Results support an existence claim and a reproducible architectural hypothesis, not fleet\-level reliability. The 208 direct\-control ratio remains unreplicated; MCU waveform capture and on\-site fault injection remain open.
 >
 > 🔗 [阅读论文](http://arxiv.org/abs/2611.11698v2)
-
----
-
-> ### 4. Query\-Only Prompt\-Agnostic Attacks on Visual In\-Context Learning
->
-> | 属性 | 内容 |
-> |:---:|:---|
-> | 📅 发布日期 | 2026-11-08 |
-> | 👤 作者 | Xiao Hu |
->
-> **📄 英文摘要：**
-> Visual In\-Context Learning \(VICL\) enables promptable segmentation by conditioning RGB predictions on visual demonstrations, making it attractive for auto\-labeling, but its robustness under query\-only access and unknown deployment prompts remains underexplored. We study query\-only, prompt\-agnostic targeted attacks where the attacker observes only returned RGB outputs, without access to model internals or deployment prompts. Treating prompt\-conditioned RGB rendering as a distinct attack surface, we introduce two appearance\-space attacks: Color Hijack \(CH\) drives foreground colors toward the background to suppress visibility, while Task Hijack \(TH\) collapses instance\-distinguishing colors toward a shared color assignment. To transfer across unseen prompts, we propose a Self\-Prompt Surrogate \(SPS\) constructed from the clean query and its output. In a paired, matched\-budget SegGPT comparison, SPS outperforms the Random\-Prompt Surrogate \(RPS\), reducing CH instance foreground retention from 0.918 to 0.155 and TH palette\-aware tolerance distance from 0.345 to 0.225. Across four VICL models on COCO and HierText, CH suppresses foregrounds across semantic\-, instance\-, and text\-style outputs, while TH collapses instance colors under held\-out deployment prompts. After palette\-based decoding, TH also reduces the decoded instance count and mask retention while increasing instance merges. Finally, at 30% corruption, CH\-corrupted annotations from a publicly accessible VICL\-based auto\-labeling pipeline reduce downstream YOLO\-seg mAP50 from 0.761 to 0.281.
->
-> 🔗 [阅读论文](http://arxiv.org/abs/2611.11116v1)
-
----
-
-> ### 5. Keyline Detection with YOLO: Runway Perception for Vision\-Based Aircraft Landing
->
-> | 属性 | 内容 |
-> |:---:|:---|
-> | 📅 发布日期 | 2026-11-06 |
-> | 👤 作者 | Leander Fritsch |
->
-> **📄 英文摘要：**
-> Modern object detectors can predict keypoints as per\-object geometric features, but keypoints are inherently vulnerable to occlusion and truncation. Object edges can provide complementary information, often remaining observable even when partially occluded or when their defining endpoints leave the field of view. We therefore introduce object keyline detection, the task of predicting a fixed, semantically ordered set of infinite lines per object instance. Unlike the outputs of general line\-segment detectors, each keyline is associated with an object instance and identified by a semantic index, providing a line\-level analog of keypoints. To solve this task, we extend YOLO with keyline prediction parameterized in continuous Hesse\-normal form $\[ρ,cosθ,sinθ\]$, and introduce Object Keyline Similarity \(OKLS\), which serves as an evaluation metric, target assignment signal, and regression loss. We instantiate this formulation on runway perception in vision\-based landing, a motivating example containing semantic linear features that remain partially observable throughout the approach. Experiments show that our representation achieves the highest detection accuracy among four evaluated line parameterizations, and keylines integrate directly into standard YOLO heads as additional output channels without degrading keypoint performance or adding meaningful latency.
->
-> 🔗 [阅读论文](http://arxiv.org/abs/2611.09316v1)
 
 ---
 
