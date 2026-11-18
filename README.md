@@ -14,7 +14,65 @@
 
 ## 📑 论文列表
 
-> ### 1. Aerial Person Detection under Edge Constraints: Held\-Out Evaluation and Edge\-Ground Verification
+> ### 1. UnrealEvent: Synthetic Dataset Generation and Annotation for Event\-Based Vision
+>
+> | 属性 | 内容 |
+> |:---:|:---|
+> | 📅 发布日期 | 2026-11-17 |
+> | 👤 作者 | Yentel Schoovaerts |
+>
+> **📄 英文摘要：**
+> Event\-based cameras provide high temporal resolution, low power consumption, and a high dynamic range, but progress in event\-based object detection remains constrained by the scarcity of annotated training data. To solve this issue, this paper introduces the tool UnrealEvent, a synthetic dataset\-generation pipeline implemented in Unreal Engine 5.5. The pipeline combines a V2E\-inspired event\-frame generator with EasySynth semantic\-rendering passes, allowing rendered level sequences to be converted into paired event representations and YOLO\-format bounding\-box annotations without manual labeling. Events are generated from per\-pixel log\-luminance differences between consecutive frames, with contrast thresholds sampled independently from a normal distribution to emulate the fabrication\-induced threshold mismatch of real sensors. Using this pipeline, we provide a synthetic dataset and evaluate YOLOv8 detectors under synthetic, zero\-shot real, and real fine\-tuning training on eTraM. The results show strong in\-domain synthetic performance but a substantial synthetic\-to\-real gap, especially for pedestrians. Fine\-tuning on a small real subset improves real\-domain performance, while the remaining gap highlights the importance of asset diversity and sensor calibration.
+>
+> 🔗 [阅读论文](http://arxiv.org/abs/2611.23078v1)
+
+---
+
+> ### 2. RoadAnnoter: An AI\-Assisted Desktop Tool for Semantic Segmentation Annotation of Road\-Scene Images
+>
+> | 属性 | 内容 |
+> |:---:|:---|
+> | 📅 发布日期 | 2026-11-17 |
+> | 👤 作者 | Nazmul Haque |
+>
+> **📄 英文摘要：**
+> Accurate semantic segmentation of road\-scene images is essential for road safety research; however, polygon\-level annotation remains labor\-intensive and limits labelled dataset development. This study presents RoadAnnoter v1.0, an open\-source desktop application integrating six human\-in\-the\-loop annotation modes: manual polygon delineation, SAM Prompt, Smart Select, Edge Fill, pretrained semantic segmentation using Cityscapes\-trained SegFormer models, and task\-specific segmentation using TinySegNet, a lightweight MobileNetV3\-Small\-based network trained with accumulated annotator\-generated labels. SAM\-based modes use promptable segmentation with SAM and MobileSAM, while Edge Fill combines Canny edge detection with colour\-similarity\-based flood filling in CIELAB colour space. SegFormer generates suggestions for common road\-scene categories, whereas TinySegNet supports adaptation to project\-specific features through iterative training. All six modes use a shared mask\-to\-polygon pipeline comprising morphological processing, Gaussian smoothing, contour extraction, and Douglas\-Peucker simplification; annotations are exported in YOLO segmentation format. RoadAnnoter was used to annotate Google Street View images from recorded road accident locations in Bangladesh for a vision\-language model\-based investigation of free\-flow speed estimation. Qualitative assessment across representative scenes demonstrated the complementary applicability of the annotation modes to diverse feature geometries. Visual comparison with Roboflow indicated similar qualitative boundary characteristics for principal road\-scene regions, although no quantitative accuracy assessment was conducted. RoadAnnoter provides a locally operated framework for developing road\-scene segmentation datasets for transportation engineering and road safety research.
+>
+> 🔗 [阅读论文](http://arxiv.org/abs/2611.22884v1)
+
+---
+
+> ### 3. Technical Report of Mobile Manipulator Robot for Industrial Environments
+>
+> | 属性 | 内容 |
+> |:---:|:---|
+> | 📅 发布日期 | 2026-11-17 |
+> | 👤 作者 | Aria Dadnavi |
+>
+> **📄 英文摘要：**
+> This paper presents the design and implementation of Auriga Robotics' mobile manipulator robot, developed at the Robotics and Intelligent Automation Laboratory, Department of Electrical Engineering, Shahid Beheshti University. Hereafter, this platform is referred to as the @Work Robot. The robot targets industrial tasks, with an emphasis on improving efficiency in repetitive or hazardous work environments. It uses a 4\-wheel Mecanum drive for omnidirectional movement and a 5\-degree\-of\-freedom manipulator arm with a 3D\-printed gripper for object handling and navigation. The electronics consist of custom PCB boards built around ESP32 microcontrollers, together with an NVIDIA Jetson Orin NX that handles high\-level processing and real\-time system control. On the software side, Hector SLAM provides mapping and localization, A\* handles path planning, and YOLO performs real\-time object detection. These modules draw on fused sensor data to deliver robust navigation and reliable collision avoidance. Overall, the system shows effective hardware\-software integration, with consistent performance in autonomous navigation, object handling, and task execution in industrial\-like settings.
+>
+> 🔗 [阅读论文](http://arxiv.org/abs/2611.22852v1)
+
+---
+
+> ### 4. Counting What Matters: Reducing Redundant Object Detections in Overlapping UAV Mapping Imagery for Disaster Response
+>
+> | 属性 | 内容 |
+> |:---:|:---|
+> | 📅 发布日期 | 2026-11-16 |
+> | 👤 作者 | Max Schulte |
+>
+> **📄 英文摘要：**
+> UAV mapping flights enable rapid aerial reconnaissance of large\-scale incident sites in civil protection. However, the image overlap required for orthophoto generation causes every physical object to be detected multiple times across images, while dynamic objects may be omitted from or duplicated in the resulting orthomosaic. Analysis based on the orthophoto alone is therefore structurally insufficient. We address this by detecting objects on the individual images and merging redundant detections across them. This task lies between multi\-object tracking and re\-identification, as mapping flights form temporally ordered but sparsely sampled sequences with object reappearances across flight strips. We fine\-tune YOLO detectors on a new domain\-specific nadir dataset from real civil protection operations, roughly doubling mAP50 over the previous system, and propose re\-identification approaches based on 3D positions from sparse reconstruction, DINOv3 appearance embeddings, and their combination via constrained greedy clustering. %On four manually annotated real\-world mapping flights, the combined weighted multi\-pass approach achieves the best trade\-off between association accuracy and count error. On four manually annotated real\-world mapping flights, an association\-only evaluation using ground\-truth detections shows that the combined weighted multi\-pass approach provides the best trade\-off between association quality and count error. It is integrated into the open\-source web application ARGUS and visualized as verifiable, correctable object groups for first responders. https://github.com/RoblabWh/argus
+>
+> **💻 代码链接：** https://github.com/RoblabWh/argus
+>
+> 🔗 [阅读论文](http://arxiv.org/abs/2611.21076v1)
+
+---
+
+> ### 5. Aerial Person Detection under Edge Constraints: Held\-Out Evaluation and Edge\-Ground Verification
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -25,64 +83,6 @@
 > A search drone sees a missing person as a few pixels, carries a small computer, and shares a narrow radio link. We study person detection under those limits; the primary evaluations were declared before they ran, and later analyses are marked exploratory. In an exploratory comparison, holding out recording blocks inferred from thermal frame identifiers cut recall at a fixed false\-alarm target from 32.7% to 12.3%. With nothing tuned on test blocks, a 46,000\-parameter detector gated by a contrast cue finds 10.4% of people against 5.7% for the same network applied everywhere. A standard detector, YOLO11n, trained under the same folds finds 54.5% at a similar false\-alarm rate for about eleven times the arithmetic, and on our 4K field footage at 117 m has a walking person among its top 16 detections in up to 92% of frames against 74% for our board. Run alone, YOLO11n's thresholds set at one location overshot their false\-alarm target 1.7 to 3.4 times at new locations, and its best configuration at altitude cost 4 to 24 standard passes per frame. Re\-scoring its 16 best crops \(154 KB per frame\) with an 842,000\-parameter ground model, thresholds frozen on a validation location, raised recall from 44.9% to 53.7% against the same 16 crops with YOLO's own scores; in a post hoc paired analysis over 15 test locations the gain was \+8.8 points \[\+2.4, \+12.5\]. Pooled false detections fell from 0.86 to 0.64 per frame, but that paired change was not distinguishable from zero. Coverage of a still person in earth tones was very low for both detectors in the clips we flew.
 >
 > 🔗 [阅读论文](http://arxiv.org/abs/2611.20127v1)
-
----
-
-> ### 2. Toward On\-Device Markerless 6DoF Tracking of a Physical Manipulative on a Mixed\-Reality Headset: A Preliminary Study
->
-> | 属性 | 内容 |
-> |:---:|:---|
-> | 📅 发布日期 | 2026-11-13 |
-> | 👤 作者 | Guangxi Feng |
->
-> **📄 英文摘要：**
-> AR\-Classroom uses physical models and virtual overlays to help learners explore spatial transformations. To align these overlays on a standalone headset, we developed a markerless six\-degree\-of\-freedom\(6DoF\) tracker for a LEGO airplane on the Meta Quest 3. A compact YOLO model trained on synthetic Unity renders predicts 20 keypoints from dynamic RGB crops resized to 128 by 128 pixels. A perspective\-n\-point solver estimates the airplane's pose from these predictions and the corresponding 3D landmarks. In a paired evaluation on 1,000 synthetic validation images, cropping guided by ground\-truth boxes increased the detection rate on annotated images from 32.5 to 46.2 percent. Mean keypoint F1 increased from 42.9 to 44.6 percent, with lower keypoint precision in the cropped view. In preliminary headset tests, 2 Hz was the highest tested tracking target at which the application maintained approximately 72 frames per second. A headset demonstration illustrates virtual overlay alignment with the physical airplane before and after a manual rotation. Quantitative 6DoF pose accuracy on real headset footage will be measured in future work.
->
-> 🔗 [阅读论文](http://arxiv.org/abs/2611.18438v1)
-
----
-
-> ### 3. What Limits Thermal Infrared Drone Detection? A Cross\-Dataset Benchmark Analysis
->
-> | 属性 | 内容 |
-> |:---:|:---|
-> | 📅 发布日期 | 2026-11-12 |
-> | 👤 作者 | Tamara R. Lenhard |
->
-> **📄 英文摘要：**
-> Thermal infrared \(IR\) imaging enables drone detection with reduced dependence on ambient illumination, supporting continuous surveillance beyond the limitations of visible\-spectrum sensing. However, substantial and often undocumented variability in camera systems, processing pipelines, and annotation practices across public IR drone datasets complicates the assessment of detector performance and cross\-domain generalization. To examine these sources of variability and their implications for drone detection, we systematically characterize existing IR datasets and establish an artifact taxonomy reflecting their origins across the acquisition and processing pipeline, encompassing optical and sensor effects, tone mapping and image enhancement, and recording\-related artifacts. Focusing on long\-wave IR data, we investigate the impact of training data composition and model characteristics on YOLO\-based detection performance, generalization, and condition\-dependent failure modes. Our results demonstrate that detection performance is governed more strongly by training data composition than by YOLO generation or model capacity, while cross\-dataset generalization exhibits pronounced asymmetries. Even the best\-performing configuration fails to detect over 40% of drones, with elevated miss rates for very small targets, cluttered urban backgrounds, and thermal crossover, highlighting the shortcomings of existing datasets.
->
-> 🔗 [阅读论文](http://arxiv.org/abs/2611.16724v1)
-
----
-
-> ### 4. When Does Sliced Inference Pay Off? Resolution, Tiling and Dense Fusion for Small Object Detection
->
-> | 属性 | 内容 |
-> |:---:|:---|
-> | 📅 发布日期 | 2026-11-09 |
-> | 👤 作者 | Stefan Becker |
->
-> **📄 英文摘要：**
-> Sliced inference such as SAHI is the standard remedy for small objects in high\-resolution imagery, but its gains are usually measured against low\-resolution baselines. We revisit sliced inference with scale as the explicit variable and ask when tiling actually pays off. We compare seven dense detectors from four families on VisDrone and DOTA, under pre\-specified hypotheses, calibration\-only tuning and a single evaluation on held\-out test data. Two findings emerge. First, much of the benefit attributed to slicing is a resolution effect: on VisDrone, a single pass trained at a higher resolution outperforms tiling with box fusion \(merging decoded boxes\) for every detector that could be trained at that resolution, and at equal compute a higher resolution helps more than a larger model. Second, tiles carry complementary information that box fusion wastes. We introduce SCAHI \(Slicing with Coverage\-Aware Hyper Inference\), which accumulates the dense outputs of all passes with weights that give every image position the same total coverage, and reads objects off a peak grid fine enough to keep crowded neighbours apart. On identical passes, SCAHI outperforms box fusion for every YOLO detector on both datasets and matches it for FCOS. On DOTA, whose images far exceed the resolution a single pass can be trained at, tiles with SCAHI beat the best single pass for every detector, by 4.3 to 5.6 mAP50 at 2048 px, and replacing only SAHI's merge step by SCAHI adds 2.3 to 4.0 mAP50. An ablation attributes the gain to the border weighting and the resolution of the peak grid. Source code is available at https://github.com/beckerio/scahi.
->
-> **💻 代码链接：** https://github.com/beckerio/scahi.
->
-> 🔗 [阅读论文](http://arxiv.org/abs/2611.12657v3)
-
----
-
-> ### 5. Compute Regeneration through Re\-Productization: Reorganizing Retired Edge AI Silicon into a Delivered Multilingual Service Robot
->
-> | 属性 | 内容 |
-> |:---:|:---|
-> | 📅 发布日期 | 2026-11-08 |
-> | 👤 作者 | Hongyu Luo |
->
-> **📄 英文摘要：**
-> Useful edge hardware can lose product support while retaining substantial computation. We treat this as systems design: compute regeneration here means re\-productization, retaining the compute module while redesigning the surrounding product organization. Our case is GEdgeBot, a multilingual service robot built around a retired 32 GB Jetson AGX Xavier. A source\-grounded inventory shows the box alone supplies inference, while the combined system exposes five on\-device AI services, a seven\-language speech chain, three sensing domains, and one deterministic seven\-byte control boundary. AI and orchestration stay on the Xavier; finite motor\-pulse generation on an STM32F407. Audits cover the six\-mode control state machine, readiness barriers and sound orientation. Historical single\-prototype measurements report 1,782 MB GPU memory with YOLO, Whisper\-small, and NLLB\-200 resident, a direct\-control p99 deviation rising from 0.24 to 49.93 ms under concurrent AI load, and six of six trigger\-to\-follow demonstrations at 4.35 s mean latency, with conversational voice unavailable. A November campaign restores an isolated inference stack, re\-measures AI workloads, and repeats control\-frame runs. Driving two execution organisations with the same 6,000 measured 50 ms frame intervals shows the finite\-pulse boundary removes host jitter from the pulse train but not the command start phase; its stopping bound is host\-enforced, while the MCU 16\-bit pulse field is unclamped. A six\-check static audit exposes a host\-\-MCU queue mismatch, and a 14\-scenario replay executes the audited main\(\) dispatcher across six modes with zero physical device opens and 54 contract\-checked frames. Results support an existence claim and a reproducible architectural hypothesis, not fleet\-level reliability. The 208 direct\-control ratio remains unreplicated; MCU waveform capture and on\-site fault injection remain open.
->
-> 🔗 [阅读论文](http://arxiv.org/abs/2611.11698v2)
 
 ---
 
