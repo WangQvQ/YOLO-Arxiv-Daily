@@ -14,7 +14,23 @@
 
 ## 📑 论文列表
 
-> ### 1. UnrealEvent: Synthetic Dataset Generation and Annotation for Event\-Based Vision
+> ### 1. Enhancing Active Learning Performance with Initial Data Selection Based on Foundation Models
+>
+> | 属性 | 内容 |
+> |:---:|:---|
+> | 📅 发布日期 | 2026-11-18 |
+> | 👤 作者 | Mohammad Mirzaee |
+>
+> **📄 英文摘要：**
+> In active object detection, selecting the initial labeled pool is essential, especially in complex datasets with expensive labeling and low resource budget. This study presents an active learning framework designed to optimize the initial training cycle of active learning for the object detection task. Our approach diverges from traditional methods by utilizing feature\-based clustering from the YOLO\-World model and refining images based on objectness scores rather than relying on uncertainty sampling in the initial cycle. This approach focuses on finding samples with various features and emphasizes training in areas where the foundation model is most confident. Doing so helps the model better understand different types of objects. For subsequent cycles, we employ a consistency\-based sampling technique to maintain the robustness of the training process. To evaluate our method, we use two complex datasets called Aquarium and NWPU VHR\-10, which are well known for their diverse object sizes and challenging conditions. In the NWPU dataset, our method increases mAP50 by an average of 6.6% in image\-based evaluation. Moreover, the image refinement method shows an improvement of approximately 11% in object\-based evaluation. The results show improvements in model performance and labeling time, demonstrating the advantages of using foundation models in early cycles of active learning. An implementation of the algorithm is available at https://github.com/Mhrshd\-fllh/ALBoost\-FM
+>
+> **💻 代码链接：** https://github.com/Mhrshd-fllh/ALBoost-FM
+>
+> 🔗 [阅读论文](http://arxiv.org/abs/2611.24384v1)
+
+---
+
+> ### 2. UnrealEvent: Synthetic Dataset Generation and Annotation for Event\-Based Vision
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -28,7 +44,7 @@
 
 ---
 
-> ### 2. RoadAnnoter: An AI\-Assisted Desktop Tool for Semantic Segmentation Annotation of Road\-Scene Images
+> ### 3. RoadAnnoter: An AI\-Assisted Desktop Tool for Semantic Segmentation Annotation of Road\-Scene Images
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -42,7 +58,7 @@
 
 ---
 
-> ### 3. Technical Report of Mobile Manipulator Robot for Industrial Environments
+> ### 4. Technical Report of Mobile Manipulator Robot for Industrial Environments
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -56,7 +72,7 @@
 
 ---
 
-> ### 4. Counting What Matters: Reducing Redundant Object Detections in Overlapping UAV Mapping Imagery for Disaster Response
+> ### 5. Counting What Matters: Reducing Redundant Object Detections in Overlapping UAV Mapping Imagery for Disaster Response
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -69,20 +85,6 @@
 > **💻 代码链接：** https://github.com/RoblabWh/argus
 >
 > 🔗 [阅读论文](http://arxiv.org/abs/2611.21076v1)
-
----
-
-> ### 5. Aerial Person Detection under Edge Constraints: Held\-Out Evaluation and Edge\-Ground Verification
->
-> | 属性 | 内容 |
-> |:---:|:---|
-> | 📅 发布日期 | 2026-11-15 |
-> | 👤 作者 | Raghu Venkat |
->
-> **📄 英文摘要：**
-> A search drone sees a missing person as a few pixels, carries a small computer, and shares a narrow radio link. We study person detection under those limits; the primary evaluations were declared before they ran, and later analyses are marked exploratory. In an exploratory comparison, holding out recording blocks inferred from thermal frame identifiers cut recall at a fixed false\-alarm target from 32.7% to 12.3%. With nothing tuned on test blocks, a 46,000\-parameter detector gated by a contrast cue finds 10.4% of people against 5.7% for the same network applied everywhere. A standard detector, YOLO11n, trained under the same folds finds 54.5% at a similar false\-alarm rate for about eleven times the arithmetic, and on our 4K field footage at 117 m has a walking person among its top 16 detections in up to 92% of frames against 74% for our board. Run alone, YOLO11n's thresholds set at one location overshot their false\-alarm target 1.7 to 3.4 times at new locations, and its best configuration at altitude cost 4 to 24 standard passes per frame. Re\-scoring its 16 best crops \(154 KB per frame\) with an 842,000\-parameter ground model, thresholds frozen on a validation location, raised recall from 44.9% to 53.7% against the same 16 crops with YOLO's own scores; in a post hoc paired analysis over 15 test locations the gain was \+8.8 points \[\+2.4, \+12.5\]. Pooled false detections fell from 0.86 to 0.64 per frame, but that paired change was not distinguishable from zero. Coverage of a still person in earth tones was very low for both detectors in the clips we flew.
->
-> 🔗 [阅读论文](http://arxiv.org/abs/2611.20127v1)
 
 ---
 
