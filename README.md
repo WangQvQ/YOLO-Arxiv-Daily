@@ -14,7 +14,21 @@
 
 ## 📑 论文列表
 
-> ### 1. Enhancing Active Learning Performance with Initial Data Selection Based on Foundation Models
+> ### 1. Generalization of Text Line Segmentation for HTR in Historical Documents
+>
+> | 属性 | 内容 |
+> |:---:|:---|
+> | 📅 发布日期 | 2026-11-18 |
+> | 👤 作者 | Gayan H. Pathirage |
+>
+> **📄 英文摘要：**
+> In this paper we investigate the generalization capability of state\-of\-the\-art object detection models \(Hi\-SAM, YOLO, and RT\-DETR\) for the automatic segmentation of text lines in historical documents. Generalization is needed because it is not practical for museums and archives to produce large amounts of labeled samples for each new collection. We also evaluate the few\-shot setting by fine\-tuning the networks with only a small number of training samples per target dataset. To this end, we use nine different datasets that differ significantly in visual layout and language. Additionally, we discuss why mean average precision \(mAP\), a classic evaluation metric for object detection, is insufficient for assessing the quality of a text line segmentation model. Depending on the dataset, our CRNN models achieve character error rates \(CER\) ranging from 2.48% to 7.07% per page for the segmented text lines. This is sufficient for reading comprehension and simple text searches. Finally, we quantify the resource and time requirements of training and inference in different use case settings. This forms the basis for more informed decisions about model and hardware choices based on available resources.
+>
+> 🔗 [阅读论文](http://arxiv.org/abs/2611.24726v1)
+
+---
+
+> ### 2. Enhancing Active Learning Performance with Initial Data Selection Based on Foundation Models
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -30,7 +44,7 @@
 
 ---
 
-> ### 2. UnrealEvent: Synthetic Dataset Generation and Annotation for Event\-Based Vision
+> ### 3. UnrealEvent: Synthetic Dataset Generation and Annotation for Event\-Based Vision
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -44,7 +58,7 @@
 
 ---
 
-> ### 3. RoadAnnoter: An AI\-Assisted Desktop Tool for Semantic Segmentation Annotation of Road\-Scene Images
+> ### 4. RoadAnnoter: An AI\-Assisted Desktop Tool for Semantic Segmentation Annotation of Road\-Scene Images
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -58,7 +72,7 @@
 
 ---
 
-> ### 4. Technical Report of Mobile Manipulator Robot for Industrial Environments
+> ### 5. Technical Report of Mobile Manipulator Robot for Industrial Environments
 >
 > | 属性 | 内容 |
 > |:---:|:---|
@@ -69,22 +83,6 @@
 > This paper presents the design and implementation of Auriga Robotics' mobile manipulator robot, developed at the Robotics and Intelligent Automation Laboratory, Department of Electrical Engineering, Shahid Beheshti University. Hereafter, this platform is referred to as the @Work Robot. The robot targets industrial tasks, with an emphasis on improving efficiency in repetitive or hazardous work environments. It uses a 4\-wheel Mecanum drive for omnidirectional movement and a 5\-degree\-of\-freedom manipulator arm with a 3D\-printed gripper for object handling and navigation. The electronics consist of custom PCB boards built around ESP32 microcontrollers, together with an NVIDIA Jetson Orin NX that handles high\-level processing and real\-time system control. On the software side, Hector SLAM provides mapping and localization, A\* handles path planning, and YOLO performs real\-time object detection. These modules draw on fused sensor data to deliver robust navigation and reliable collision avoidance. Overall, the system shows effective hardware\-software integration, with consistent performance in autonomous navigation, object handling, and task execution in industrial\-like settings.
 >
 > 🔗 [阅读论文](http://arxiv.org/abs/2611.22852v1)
-
----
-
-> ### 5. Counting What Matters: Reducing Redundant Object Detections in Overlapping UAV Mapping Imagery for Disaster Response
->
-> | 属性 | 内容 |
-> |:---:|:---|
-> | 📅 发布日期 | 2026-11-16 |
-> | 👤 作者 | Max Schulte |
->
-> **📄 英文摘要：**
-> UAV mapping flights enable rapid aerial reconnaissance of large\-scale incident sites in civil protection. However, the image overlap required for orthophoto generation causes every physical object to be detected multiple times across images, while dynamic objects may be omitted from or duplicated in the resulting orthomosaic. Analysis based on the orthophoto alone is therefore structurally insufficient. We address this by detecting objects on the individual images and merging redundant detections across them. This task lies between multi\-object tracking and re\-identification, as mapping flights form temporally ordered but sparsely sampled sequences with object reappearances across flight strips. We fine\-tune YOLO detectors on a new domain\-specific nadir dataset from real civil protection operations, roughly doubling mAP50 over the previous system, and propose re\-identification approaches based on 3D positions from sparse reconstruction, DINOv3 appearance embeddings, and their combination via constrained greedy clustering. %On four manually annotated real\-world mapping flights, the combined weighted multi\-pass approach achieves the best trade\-off between association accuracy and count error. On four manually annotated real\-world mapping flights, an association\-only evaluation using ground\-truth detections shows that the combined weighted multi\-pass approach provides the best trade\-off between association quality and count error. It is integrated into the open\-source web application ARGUS and visualized as verifiable, correctable object groups for first responders. https://github.com/RoblabWh/argus
->
-> **💻 代码链接：** https://github.com/RoblabWh/argus
->
-> 🔗 [阅读论文](http://arxiv.org/abs/2611.21076v1)
 
 ---
 
